@@ -1,0 +1,296 @@
+{
+  "source": "Connected Gumroad creator account",
+  "account": "Emad Alshayeb",
+  "verified_at": "2026-11-08",
+  "product_count": 32,
+  "products": [
+    {
+      "name": "GLOBAL ART & IMAGINATION",
+      "price_usd": 17.99,
+      "url": "https://alshayebemad.gumroad.com/l/xvccaj",
+      "permalink": "xvccaj",
+      "published": true,
+      "is_bundle": true,
+      "category": "Collection"
+    },
+    {
+      "name": "THE ART OF ELEGANCE & SERENITY",
+      "price_usd": 19.99,
+      "url": "https://alshayebemad.gumroad.com/l/oubirh",
+      "permalink": "oubirh",
+      "published": true,
+      "is_bundle": true,
+      "category": "Collection"
+    },
+    {
+      "name": "EGYPTIAN & COPTIC HERITAGE",
+      "price_usd": 12.99,
+      "url": "https://alshayebemad.gumroad.com/l/hqpird",
+      "permalink": "hqpird",
+      "published": true,
+      "is_bundle": true,
+      "category": "Collection"
+    },
+    {
+      "name": "THE HUMANITY LEGACY",
+      "price_usd": 24.99,
+      "url": "https://alshayebemad.gumroad.com/l/wdtvt",
+      "permalink": "wdtvt",
+      "published": true,
+      "is_bundle": true,
+      "category": "Collection"
+    },
+    {
+      "name": "THE ART OF STILLNESS",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/THEARTOFSTILLNESS",
+      "permalink": "mxrljy",
+      "published": true,
+      "is_bundle": false,
+      "category": "Elegance"
+    },
+    {
+      "name": "GEOMETRY OF ELEGANCE",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/GEOMETRYOFELEGANCE",
+      "permalink": "gusqyc",
+      "published": true,
+      "is_bundle": false,
+      "category": "Elegance"
+    },
+    {
+      "name": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/EternalEgypt",
+      "permalink": "wjxgxb",
+      "published": true,
+      "is_bundle": false,
+      "category": "Heritage"
+    },
+    {
+      "name": "A BOND BEYOND WORDS  The Beauty of Unconditional Love",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/ABONDBEYONDWORDS",
+      "permalink": "kjclzu",
+      "published": true,
+      "is_bundle": false,
+      "category": "Humanity"
+    },
+    {
+      "name": "CITIES OF TOMORROW   Where Innovation Meets Imagination",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/CITIESOFTOMORROW",
+      "permalink": "aenwi",
+      "published": true,
+      "is_bundle": false,
+      "category": "Global"
+    },
+    {
+      "name": "NATURE'S MAJESTY   The Timeless Beauty of Nature",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/NATURESMAJESTY",
+      "permalink": "gynmhv",
+      "published": true,
+      "is_bundle": false,
+      "category": "Global"
+    },
+    {
+      "name": "MEDITERRANEAN DREAMS",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/MEDITERRANEANDREAMS",
+      "permalink": "jrsgce",
+      "published": true,
+      "is_bundle": false,
+      "category": "Elegance"
+    },
+    {
+      "name": "SILENT HORIZONS .",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/SILENTHORIZONS",
+      "permalink": "ukxrmq",
+      "published": true,
+      "is_bundle": false,
+      "category": "Elegance"
+    },
+    {
+      "name": "GOLDEN FLOW   The Art of Timeless Luxury",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/GOLDENFLOW",
+      "permalink": "yhkokf",
+      "published": true,
+      "is_bundle": false,
+      "category": "Elegance"
+    },
+    {
+      "name": "BEYOND THE UNIVERSE 🌏 ",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/nxkxyq",
+      "permalink": "nxkxyq",
+      "published": true,
+      "is_bundle": false,
+      "category": "Global"
+    },
+    {
+      "name": "A Shelter of Love ♥ ",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/AShelterofLove",
+      "permalink": "mzlqxg",
+      "published": true,
+      "is_bundle": false,
+      "category": "Humanity"
+    },
+    {
+      "name": "The Celestial Garden – A Dance Beneath the Moon",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/etqsav",
+      "permalink": "etqsav",
+      "published": true,
+      "is_bundle": false,
+      "category": "Elegance"
+    },
+    {
+      "name": "THE GOLDEN VEIL OF SERENITY",
+      "price_usd": 7,
+      "url": "https://alshayebemad.gumroad.com/l/TheGoldenVeilofSerenity",
+      "permalink": "vwrllor",
+      "published": true,
+      "is_bundle": false,
+      "category": "Elegance"
+    },
+    {
+      "name": "THE HAND THAT HOLDS TOMORROW",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/gkwadk",
+      "permalink": "gkwadk",
+      "published": true,
+      "is_bundle": false,
+      "category": "Humanity"
+    },
+    {
+      "name": "THE GOLDEN THREAD OF HUMANITY",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/THEGOLDENTHREADOFHUMANITY",
+      "permalink": "rglfun",
+      "published": true,
+      "is_bundle": false,
+      "category": "Humanity"
+    },
+    {
+      "name": "ROOTS OF TENDERNESS ♥ ",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/ROOTSOFTENDERNESS",
+      "permalink": "cotnkm",
+      "published": true,
+      "is_bundle": false,
+      "category": "Humanity"
+    },
+    {
+      "name": "AURELLE 👑 ",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/AURELLE",
+      "permalink": "kaztbw",
+      "published": true,
+      "is_bundle": false,
+      "category": "Elegance"
+    },
+    {
+      "name": "THE ART OF INNER PEACE",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/THEARTOFINNERPEACE",
+      "permalink": "cuitvq",
+      "published": true,
+      "is_bundle": false,
+      "category": "Elegance"
+    },
+    {
+      "name": "SERENITY 🤍",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/SERENITY",
+      "permalink": "rabhc",
+      "published": true,
+      "is_bundle": false,
+      "category": "Elegance"
+    },
+    {
+      "name": "THE TREE THAT REFUSED TO DIE",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/THETREETHATREFUSEDTODIE",
+      "permalink": "ycltf",
+      "published": true,
+      "is_bundle": false,
+      "category": "Humanity"
+    },
+    {
+      "name": "THE LIGHT WE LEAVE EACH OTHER 🕯 ",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/bctcdz",
+      "permalink": "bctcdz",
+      "published": true,
+      "is_bundle": false,
+      "category": "Humanity"
+    },
+    {
+      "name": "A STAIRWAY OF HANDS ✊️",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/msuzc",
+      "permalink": "msuzc",
+      "published": true,
+      "is_bundle": false,
+      "category": "Humanity"
+    },
+    {
+      "name": "THE LEGACY OF GENERATIONS",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/THELEGACYOFGENERATIONS",
+      "permalink": "tzlsv",
+      "published": true,
+      "is_bundle": false,
+      "category": "Humanity"
+    },
+    {
+      "name": "The Mediterranean Muse",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/TheMediterraneanMuse",
+      "permalink": "bgqxwm",
+      "published": true,
+      "is_bundle": false,
+      "category": "Elegance"
+    },
+    {
+      "name": "Last Cry of Earth 🌏 ",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/LastCryofEarth",
+      "permalink": "aedllm",
+      "published": true,
+      "is_bundle": false,
+      "category": "Humanity"
+    },
+    {
+      "name": "THE GOLDEN GAZE 👁 ",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/TheGoldenGaze",
+      "permalink": "smuewa",
+      "published": true,
+      "is_bundle": false,
+      "category": "Heritage"
+    },
+    {
+      "name": "The Queen Of The Nile 👑 ",
+      "price_usd": 7,
+      "url": "https://alshayebemad.gumroad.com/l/TheQueenOfTheNile",
+      "permalink": "jzjbrg",
+      "published": true,
+      "is_bundle": false,
+      "category": "Heritage"
+    },
+    {
+      "name": "The Coptic Soul of Egypt",
+      "price_usd": 7,
+      "url": "https://alshayebemad.gumroad.com/l/TheCopticSoulofEgypt",
+      "permalink": "csyqhm",
+      "published": true,
+      "is_bundle": false,
+      "category": "Heritage"
+    }
+  ]
+}
