@@ -1,0 +1,52 @@
+name: Publish HALL OF GREATNESS storefront
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  validate-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out storefront repository
+        uses: actions/checkout@v4
+      - name: Validate product catalogue
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
+          products = data["products"]
+          assert len(products) == 32, f"Expected 32 products, got {len(products)}"
+          assert sum(bool(p["is_bundle"]) for p in products) == 4
+          assert all(p.get("url", "").startswith("https://") for p in products)
+          assert all(p.get("published") for p in products)
+          print("Catalogue OK: 32 published products, including 4 bundles.")
+          PY
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p _site
+          cp index.html catalog-data.json _site/
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: validate-and-build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
