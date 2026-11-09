@@ -2,7 +2,7 @@
   "source": "Public Gumroad product page (no OAuth)",
   "account": "Emad Alshayeb",
   "verified_at": "2026-11-09",
-  "product_count": 33,
+  "product_count": 32,
   "products": [
     {
       "name": "GLOBAL ART & IMAGINATION",
@@ -123,18 +123,6 @@
       "landing_slug": "eternal-egypt",
       "cover_url": "https://public-files.gumroad.com/90bys6rmfmhecvxewwoq2r5hij7w",
       "summary": "Bring the enduring spirit of ancient Egypt into your space. Eternal Egypt celebrates the majesty of a civilization shaped by monumental architecture, the Nile, and an extraordinary cultural legacy. Designed as a striking digital art print for lovers of Egyptian heritage, history, and timeless interiors."
-    },
-    {
-      "name": "A BOND BEYOND WORDS  The Beauty of Unconditional Love",
-      "price_usd": 5,
-      "url": "https://alshayebemad.gumroad.com/l/ABONDBEYONDWORDS",
-      "permalink": "kjclzu",
-      "published": true,
-      "is_bundle": false,
-      "category": "Humanity",
-      "landing_slug": "a-bond-beyond-words",
-      "cover_url": "https://public-files.gumroad.com/5j1iy0qhwuqvnoohbgsgs6rxety4",
-      "summary": "A Bond Beyond Words celebrates the rare, wordless connection between a child and a loyal companion. A warm, uplifting artwork about trust, friendship, innocence, and unconditional love—created to bring a sense of tenderness to family spaces and the homes of animal lovers."
     },
     {
       "name": "CITIES OF TOMORROW   Where Innovation Meets Imagination",
@@ -426,7 +414,7 @@
     },
     {
       "name": "THE NILE'S ETERNAL GRACE",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/THENILESETERNALGRACE",
       "permalink": "jvffaq",
       "published": true,
