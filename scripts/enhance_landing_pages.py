@@ -136,6 +136,17 @@ for path in pages:
             raise SystemExit(f"Missing closing CTA section: {path}")
         page = page.replace('<section class="closing"', DETAILS + '\n<section class="closing"', 1)
     page = room_showcase(page, path)
+    # Add consistent search/social metadata and trust links to every product landing page.
+    social = """<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HALL OF GREATNESS | Digital Art">
+<meta name="twitter:description" content="Discover meaningful printable art from HALL OF GREATNESS.">
+"""
+    if 'name="twitter:card"' not in page:
+        page = page.replace("</head>", social + "\\n</head>", 1)
+    if 'class="footer-links"' not in page:
+        links = """<nav class="footer-links" aria-label="Information and support"><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../contact.html">Contact</a><a href="https://alshayebemad.gumroad.com/" target="_blank" rel="noopener">Gumroad store ↗</a></nav>"""
+        page = re.sub(r'(</footer>)', links + r'\\n\\1', page, count=1)
+        page = page.replace("</style>", ".footer-links{display:flex;gap:16px;flex-wrap:wrap;align-items:center}.footer-links a{color:var(--gold);text-decoration:none;min-height:44px;display:inline-flex;align-items:center;font-size:12px}\\n</style>", 1)
     path.write_text(page, encoding="utf-8")
 
-print(f"Updated {len(pages)} landing pages: removed duplicated room scenes and black image backing; preserved artwork proportions.")
+print(f"Updated {len(pages)} landing pages: artwork proportions, buyer guidance, SEO metadata, and trust navigation.")
