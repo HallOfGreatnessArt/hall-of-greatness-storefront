@@ -6,7 +6,7 @@ on:
     - cron: "*/15 * * * *"
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -73,6 +73,19 @@ jobs:
           cp index.html catalog-data.json _site/
           cp -R landing _site/
           echo "Storefront artifact prepared with all product landing pages."
+
+      - name: Persist newly synced catalogue and landing pages
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog-data.json landing/
+          if git diff --cached --quiet; then
+            echo "No catalogue or landing-page changes to persist."
+          else
+            git commit -m "Sync newly published Gumroad products"
+            git push
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
