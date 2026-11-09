@@ -33,6 +33,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install Playwright browser for public page rendering
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
       - name: Import one public product without OAuth
         env:
           PRODUCT_URL: ${{ github.event.inputs.product_url || 'https://alshayebemad.gumroad.com/l/ABONDBEYONDWORDS' }}
