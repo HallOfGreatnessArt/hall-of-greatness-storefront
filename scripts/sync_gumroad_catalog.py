@@ -108,6 +108,17 @@ def product_url(product: dict, permalink: str) -> str:
     return STORE_BASE + permalink
 
 
+def product_identity_url(value: object) -> str:
+    """Return a stable Gumroad product path for duplicate detection."""
+    if not isinstance(value, str) or not value.startswith("https://"):
+        return ""
+    parsed = urlparse(value)
+    host = (parsed.hostname or "").lower()
+    if host == "gumroad.com" or host.endswith(".gumroad.com"):
+        return parsed.path.rstrip("/").lower()
+    return ""
+
+
 def price_in_usd(product: dict) -> float:
     currency = str(product.get("currency") or "usd").lower()
     if currency != "usd":
@@ -190,7 +201,11 @@ def fetch_products(token: str) -> list[dict]:
 
 def sync(products: list[dict], catalog: dict) -> list[str]:
     existing = catalog.setdefault("products", [])
-    known = {str(p.get("permalink")) for p in existing if p.get("permalink")}
+    known = {str(p.get("permalink")).strip().lower() for p in existing if p.get("permalink")}
+    known_urls = {
+        identity for p in existing
+        if (identity := product_identity_url(p.get("url")))
+    }
     used_slugs = {str(p.get("landing_slug")) for p in existing if p.get("landing_slug")}
     added = []
 
@@ -198,7 +213,12 @@ def sync(products: list[dict], catalog: dict) -> list[str]:
         if product.get("published") is not True:
             continue
         permalink = extract_permalink(product)
-        if not permalink or permalink in known:
+        incoming_url = product_identity_url(product_url(product, permalink)) if permalink else ""
+        if (
+            not permalink
+            or permalink.strip().lower() in known
+            or (incoming_url and incoming_url in known_urls)
+        ):
             continue
         try:
             record = build_record(product, used_slugs)
@@ -206,7 +226,10 @@ def sync(products: list[dict], catalog: dict) -> list[str]:
             print(f"::warning::Skipping {product.get('name', permalink)}: {exc}")
             continue
         existing.append(record)
-        known.add(permalink)
+        known.add(permalink.strip().lower())
+        record_url_identity = product_identity_url(record.get("url"))
+        if record_url_identity:
+            known_urls.add(record_url_identity)
         used_slugs.add(record["landing_slug"])
         added.append(record["name"])
 
