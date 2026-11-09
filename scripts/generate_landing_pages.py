@@ -74,7 +74,37 @@ def render(product):
 .note{{font-size:12px;color:var(--muted);margin-top:12px}}.section{{padding:42px 0;border-top:1px solid var(--line)}}.section h2{{font:34px Georgia;font-weight:400;margin:8px 0 16px}}.section p{{max-width:820px;color:var(--muted);font:18px/1.85 Georgia}}
 .contents{{columns:2;max-width:850px;padding-left:22px;color:var(--muted)}}.contents li{{padding:5px 0;break-inside:avoid}}.contents a{{color:#efd99e;text-decoration:none}}.closing{{text-align:center;padding:54px 12px 68px}}.closing h2{{font:clamp(30px,4vw,46px) Georgia;font-weight:400}}.closing p{{color:var(--muted);font:18px Georgia;max-width:650px;margin:0 auto 24px}}
 footer{{padding:24px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:12px}}
-@media(max-width:760px){{.hero{{grid-template-columns:1fr;gap:24px;padding:42px 0}}.art{{max-width:620px;margin:auto}}.hero h1{{font-size:44px}}.sub{{font-size:19px}}.contents{{columns:1}}}}
+@media(max-width:760px){{.hero{{grid-template-columns:1fr;gap:24px;padding:42px 0}}.art{{max-width:620px;margin:auto}}.hero h1{{font-size:44px}}.sub{{font-size:19px}}.contents{{columns:1}}}}\n
+/* Consistent mobile usability */
+html{{scroll-padding-top:16px;-webkit-text-size-adjust:100%}}
+body{{min-width:320px;overflow-x:hidden}}
+img{{max-width:100%;height:auto}}
+a:focus-visible,.btn:focus-visible{{outline:3px solid var(--gold);outline-offset:3px}}
+header a.back,.btn{{min-height:44px;display:inline-flex;align-items:center;justify-content:center}}
+@media(max-width:760px){{
+ .wrap{{width:calc(100% - 32px)}}
+ header{{padding:16px 0;gap:10px}}
+ .brand{{font-size:15px;letter-spacing:2px}}
+ header a.back{{font-size:12px;padding:8px 0}}
+ .hero{{padding:32px 0;gap:22px}}
+ .hero h1{{font-size:clamp(34px,8vw,44px);line-height:1.12;overflow-wrap:anywhere}}
+ .eyebrow{{font-size:10px;letter-spacing:2px;line-height:1.5}}
+ .desc,.section p{{font-size:16px;line-height:1.75}}
+ .art{{width:100%;padding:7px}}
+ .art img{{width:100%;height:auto;max-height:none;object-fit:contain}}
+ .btn{{width:100%;text-align:center;padding:14px 16px;line-height:1.45}}
+ .section{{padding:30px 0}}
+ .section h2,.room-showcase h2{{font-size:clamp(25px,6vw,30px);line-height:1.2}}
+ .purchase-strip,.print-panel{{grid-template-columns:1fr}}
+ .purchase-chip{{text-align:left}}
+ .artwork-display{{min-height:0;padding:18px 10px}}
+ .artwork-frame{{max-width:100%;padding:6px}}
+ .room-artwork{{max-width:100%;max-height:60vh;width:auto}}
+ .closing{{padding:38px 10px 48px}}
+ .closing p{{font-size:16px;line-height:1.65}}
+ footer{{font-size:11px;line-height:1.6}}
+}}
+
 </style></head>
 <body><div class="wrap">
 <header><a class="brand" href="../../index.html">HALL OF <span>GREATNESS</span></a><a class="back" href="../../index.html">← Return to the gallery</a></header>
