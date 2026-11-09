@@ -69,8 +69,8 @@ jobs:
               assert 'id="printing"' in page, f"Missing buyer print guidance: {path}"
               assert "Digital download" in page, f"Missing digital product clarity: {path}"
               assert 'id="room-showcase"' in page, f"Missing room mockup section: {path}"
-              assert page.count('class="room-artwork"') == 2, f"Expected living-room and office mockups: {path}"
-              assert page.count(p["cover_url"]) >= 3, f"Original cover not reused in both mockups: {path}"
+              assert page.count('class="room-artwork"') == 1, f"Expected one clean, proportion-preserving artwork presentation: {path}"
+              assert page.count(p["cover_url"]) >= 2, f"Original cover missing from hero or artwork presentation: {path}"
           pages = list(Path("landing").glob("*/index.html"))
           assert len(pages) == len(published), f"Expected {len(published)} landing pages, found {len(pages)}"
           print(f"Landing pages OK: {len(pages)} pages; titles, covers, and exact Gumroad URLs verified.")
