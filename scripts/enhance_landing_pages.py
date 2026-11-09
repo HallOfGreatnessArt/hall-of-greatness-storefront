@@ -142,11 +142,11 @@ for path in pages:
 <meta name="twitter:description" content="Discover meaningful printable art from HALL OF GREATNESS.">
 """
     if 'name="twitter:card"' not in page:
-        page = page.replace("</head>", social + "\\n</head>", 1)
+        page = page.replace("</head>", social + "\n</head>", 1)
     if 'class="footer-links"' not in page:
         links = """<nav class="footer-links" aria-label="Information and support"><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../contact.html">Contact</a><a href="https://alshayebemad.gumroad.com/" target="_blank" rel="noopener">Gumroad store ↗</a></nav>"""
-        page = re.sub(r'(</footer>)', links + r'\\n\\1', page, count=1)
-        page = page.replace("</style>", ".footer-links{display:flex;gap:16px;flex-wrap:wrap;align-items:center}.footer-links a{color:var(--gold);text-decoration:none;min-height:44px;display:inline-flex;align-items:center;font-size:12px}\\n</style>", 1)
+        page = re.sub(r'(</footer>)', links + r'\n\1', page, count=1)
+        page = page.replace("</style>", ".footer-links{display:flex;gap:16px;flex-wrap:wrap;align-items:center}.footer-links a{color:var(--gold);text-decoration:none;min-height:44px;display:inline-flex;align-items:center;font-size:12px}\n</style>", 1)
     path.write_text(page, encoding="utf-8")
 
 print(f"Updated {len(pages)} landing pages: artwork proportions, buyer guidance, SEO metadata, and trust navigation.")
