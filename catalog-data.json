@@ -2,7 +2,7 @@
   "source": "Public Gumroad product page (no OAuth)",
   "account": "Emad Alshayeb",
   "verified_at": "2026-11-09",
-  "product_count": 32,
+  "product_count": 33,
   "products": [
     {
       "name": "THE ART OF ELEGANCE & SERENITY",
@@ -442,6 +442,30 @@
         "printing": "Print the supplied files with your preferred print provider; check the included dimensions before choosing a size",
         "usage": "Please follow the usage terms included with the download",
         "bundle_item_count": "Bundle collection; individual artworks listed below"
+      },
+      "description_source": "Public Gumroad product page; no OAuth"
+    },
+    {
+      "name": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization",
+      "price_usd": 5.0,
+      "url": "https://alshayebemad.gumroad.com/l/EternalEgypt",
+      "permalink": "wjxgxb",
+      "published": true,
+      "is_bundle": false,
+      "bundle_contents": [],
+      "bundle_item_names": [],
+      "category": "Heritage",
+      "landing_slug": "eternal-egypt-the-timeless-spirit-of-an-ancient-civilization",
+      "cover_url": "https://public-files.gumroad.com/90bys6rmfmhecvxewwoq2r5hij7w",
+      "summary": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...",
+      "full_description": "Share\n\nETERNAL EGYPT\n\nThe Timeless Spirit of an Ancient Civilization\n\nBring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a digital artwork inspired by the monumental presence of the pyramids, the Great Sphinx, and the timeless landscape of the Nile.\n\nCreated for those who feel a connection to history, cultural memory, and the artistic legacy of Egypt, this composition offers more than a decorative image. It evokes the scale, mystery, and continuity of a civilization whose visual language continues to inspire the world.\n\nIts heritage-inspired atmosphere makes it a distinctive focal point for contemporary homes, private studies, offices, hotels, cultural spaces, and interiors that celebrate history and art.\n\nWHY IT BELONGS IN YOUR SPACE\n\nA visual tribute to the enduring cultural legacy of ancient Egypt.\n\nA distinctive heritage-inspired accent for modern and classic interiors.\n\nA meaningful choice for collectors and admirers of Egyptian history.\n\nAn expressive digital artwork that can be printed and framed to suit your space.\n\nDIGITAL PRODUCT INFORMATION\n\nThis is a digital download. No physical painting, printed poster, or frame will be shipped. Download the files supplied with your purchase and review their included format, dimensions, and usage terms before printing. Colors may vary slightly depending on your screen, printer, and chosen material.\n\nETERNAL EGYPT — A Civilization in Memory. A Legacy Beyond Time.\n\nHALL OF GREATNESS\n\nART PRINT & SEARCH DETAILS\n\nDiscover this ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization digital art print for printable wall art, distinctive home décor, and thoughtfully designed interiors. A downloadable artwork for personal display, with printing options chosen to suit the supplied file and your space.",
+      "product_details": {
+        "files_included": "4 files · JPG, PDF, PNG, TXT · 9.1 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download after purchase",
+        "physical_item": "No physical print or frame will be shipped",
+        "printing": "Print the supplied files with your preferred print provider; check the included dimensions before choosing a size",
+        "usage": "Follow the personal-use and other license terms included with the download"
       },
       "description_source": "Public Gumroad product page; no OAuth"
     }
