@@ -2,6 +2,8 @@ name: Publish HALL OF GREATNESS storefront
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: read
@@ -19,6 +21,13 @@ jobs:
       - name: Check out storefront repository
         uses: actions/checkout@v4
 
+      - name: Sync newly published Gumroad products
+        env:
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+        run: |
+          set -euo pipefail
+          python scripts/sync_gumroad_catalog.py
+
       - name: Validate catalogue and generate landing pages
         run: |
           set -euo pipefail
@@ -29,9 +38,7 @@ jobs:
           products = data["products"]
           published = [p for p in products if p.get("published")]
           bundles = [p for p in published if p.get("is_bundle")]
-          assert len(products) == 33, f"Expected 33 catalogue records, got {len(products)}"
-          assert len(published) == 33, f"Expected 33 published products, got {len(published)}"
-          assert len(bundles) == 4, f"Expected 4 published bundles, got {len(bundles)}"
+          assert len(products) == len(published), "Catalogue must contain published products only"
           assert all(p.get("url", "").startswith("https://") for p in published)
           assert all(p.get("landing_slug") and p.get("cover_url", "").startswith("https://") and p.get("summary") for p in published)
           slugs = [p["landing_slug"] for p in published]
