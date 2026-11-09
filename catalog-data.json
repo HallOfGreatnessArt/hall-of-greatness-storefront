@@ -2,7 +2,7 @@
   "source": "Public Gumroad product page (no OAuth)",
   "account": "Emad Alshayeb",
   "verified_at": "2026-11-09",
-  "product_count": 33,
+  "product_count": 32,
   "products": [
     {
       "name": "THE ART OF ELEGANCE & SERENITY",
@@ -90,18 +90,6 @@
       "landing_slug": "geometry-of-elegance",
       "cover_url": "https://public-files.gumroad.com/h7049wok2yrili1z34cbv3x5aw4z",
       "summary": "Geometry of Elegance celebrates the meeting of architectural form, natural texture, and contemporary luxury. Emerald tones, ivory surfaces, sculptural geometry, and golden accents create a refined abstract artwork for sophisticated homes, offices, and hospitality interiors."
-    },
-    {
-      "name": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization",
-      "price_usd": 5,
-      "url": "https://alshayebemad.gumroad.com/l/EternalEgypt",
-      "permalink": "wjxgxb",
-      "published": true,
-      "is_bundle": false,
-      "category": "Heritage",
-      "landing_slug": "eternal-egypt",
-      "cover_url": "https://public-files.gumroad.com/90bys6rmfmhecvxewwoq2r5hij7w",
-      "summary": "Bring the enduring spirit of ancient Egypt into your space. Eternal Egypt celebrates the majesty of a civilization shaped by monumental architecture, the Nile, and an extraordinary cultural legacy. Designed as a striking digital art print for lovers of Egyptian heritage, history, and timeless interiors."
     },
     {
       "name": "CITIES OF TOMORROW   Where Innovation Meets Imagination",
