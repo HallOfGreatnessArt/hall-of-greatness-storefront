@@ -71,7 +71,7 @@ jobs:
           assert product.get("full_description"), "Full product description was not imported"
           assert product.get("product_details", {}).get("delivery"), "Delivery details missing"
           if product.get("is_bundle"):
-              assert len(product.get("bundle_contents", [])) >= 6, "Expected at least six linked bundle artworks"
+              assert len(product.get("bundle_contents", [])) == 7, f"Expected exactly seven linked bundle artworks, found {len(product.get('bundle_contents', []))}"
               assert "This collection" in text or "Inside this collection" in text
               for permalink in product["bundle_contents"]:
                   item = next(p for p in data["products"] if p["permalink"] == permalink)
