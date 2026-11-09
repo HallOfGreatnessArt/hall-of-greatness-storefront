@@ -92,8 +92,8 @@ pages = sorted((ROOT / "landing").glob("*/index.html"))
 for path in pages:
     page = path.read_text(encoding="utf-8")
     if "</style>" in page:
-        page = re.sub(r'/\\* Buyer clarity and print guidance \\*/.*?(?=</style>)', '', page, flags=re.S)
-        page = page.replace("</style>", STYLE + "\\n</style>", 1)
+        page = re.sub(r'/\* Buyer clarity and print guidance \*/.*?(?=</style>)', '', page, flags=re.S)
+        page = page.replace("</style>", STYLE + "\n</style>", 1)
     if 'class="purchase-strip"' not in page:
         start = page.find('<section class="hero"')
         end = page.find("</section>", start)
@@ -103,7 +103,7 @@ for path in pages:
     if 'id="printing"' not in page:
         if '<section class="closing"' not in page:
             raise SystemExit(f"Missing closing CTA section: {path}")
-        page = page.replace('<section class="closing"', DETAILS + '\\n<section class="closing"', 1)
+        page = page.replace('<section class="closing"', DETAILS + '\n<section class="closing"', 1)
     page = room_showcase(page, path)
     path.write_text(page, encoding="utf-8")
 
