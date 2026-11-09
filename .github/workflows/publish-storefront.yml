@@ -92,9 +92,24 @@ jobs:
           pages = list(Path("landing").glob("*/index.html"))
           assert len(pages) == len(published), f"Expected {len(published)} landing pages, found {len(pages)}"
           print(f"Landing pages OK: {len(pages)} pages; titles, covers, and exact Gumroad URLs verified.")
+          home = Path("index.html").read_text(encoding="utf-8")
+          for link in ("privacy.html", "terms.html", "contact.html"):
+              assert f'href="./{link}"' in home, f"Missing homepage trust link: {link}"
+              assert Path(link).is_file(), f"Missing information page: {link}"
+          for meta in ('property="og:title"', 'property="og:description"', 'name="twitter:card"', 'rel="canonical"'):
+              assert meta in home, f"Missing homepage SEO metadata: {meta}"
+          for p in published:
+              page = (Path("landing") / p["landing_slug"] / "index.html").read_text(encoding="utf-8")
+              for link in ("../../privacy.html", "../../terms.html", "../../contact.html"):
+                  assert link in page, f"Missing landing-page trust link in {p['landing_slug']}"
+              assert 'name="twitter:card"' in page, f"Missing social metadata in {p['landing_slug']}"
+          assert Path("robots.txt").is_file() and Path("sitemap.xml").is_file()
+          assert "Sitemap: " in Path("robots.txt").read_text(encoding="utf-8")
+          assert len(list(Path("sitemap.xml").read_text(encoding="utf-8").split("<loc>"))) - 1 == len(published) + 1
+          print("Trust and SEO checks OK: legal/contact pages, social metadata, robots.txt, and sitemap.")
           PY
           mkdir -p _site
-          cp index.html catalog-data.json robots.txt sitemap.xml _site/
+          cp index.html catalog-data.json robots.txt sitemap.xml privacy.html terms.html contact.html _site/
           cp -R landing _site/
           echo "Storefront artifact prepared with all product landing pages."
 
