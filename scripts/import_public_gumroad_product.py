@@ -153,7 +153,7 @@ def extract_full_description(parser, rendered_text, article_h2=None):
             description_heading = next((heading for heading in reversed(article_h2) if heading.strip()), "")
             if description_heading and description_heading in text:
                 text = text.split(description_heading, 1)[1]
-                text = description_heading + "\\n" + text
+                text = description_heading + "\n" + text
         if "Add to wishlist" in text:
             text = text.split("Add to wishlist", 1)[1]
         for marker in ("EXPLORE OUR COLLECTION", "More from this creator"):
@@ -188,11 +188,12 @@ def normalize_title(value):
     return re.sub(r"[^a-z0-9]+", " ", clean(value).lower()).strip()
 
 def resolve_bundle_items(item_names, full_description, products):
-    names = list(item_names)
     if "WHAT'S INCLUDED" in full_description.upper():
         section = re.split(r"WHAT'S INCLUDED", full_description, flags=re.I, maxsplit=1)[1]
         section = re.split(r"WHERE IT BELONGS|DIGITAL DOWNLOAD|WHY YOU", section, flags=re.I, maxsplit=1)[0]
-        names.extend(line.strip(" •-–") for line in section.splitlines() if line.strip())
+        names = [line.strip(" •-–") for line in section.splitlines() if line.strip()]
+    else:
+        names = list(item_names)
     resolved = []
     unresolved = []
     seen = set()
