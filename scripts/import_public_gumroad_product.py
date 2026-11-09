@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Import one public Gumroad product, including its public description and buyer details, without OAuth."""
+"""Import one public Gumroad product, including its public description and buyer details, without OAuth.
+Version: full-description-test-2."""
 from __future__ import annotations
 import argparse, html, json, re, sys, urllib.request
 from html.parser import HTMLParser
