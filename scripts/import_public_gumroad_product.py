@@ -234,7 +234,8 @@ def main():
         raw_price = str(schema["offers"].get("price", ""))
         currency = str(schema["offers"].get("priceCurrency", currency)).upper()
 
-    is_bundle = "This bundle contains" in rendered_text\n    full_description = extract_full_description(parser, rendered_text, article_h2)
+    is_bundle = "This bundle contains" in rendered_text
+    full_description = extract_full_description(parser, rendered_text, article_h2)
     article_text = clean(rendered_text or " ".join(parser.article_parts))
     product_details = {
         "files_included": "",
@@ -246,7 +247,9 @@ def main():
     }
     includes_match = re.search(r"Includes:\s*(.*?)(?=I want this!|Already bought this\?|Product type|$)", article_text, re.I)
     if includes_match:
-        product_details["files_included"] = clean(includes_match.group(1))\n    if is_bundle:\n        product_details["bundle_item_count"] = "Bundle collection; individual artworks listed below"
+        product_details["files_included"] = clean(includes_match.group(1))
+    if is_bundle:
+        product_details["bundle_item_count"] = "Bundle collection; individual artworks listed below"
     product_details = {key: value for key, value in product_details.items() if value}
 
     missing = [key for key, value in {
@@ -271,12 +274,16 @@ def main():
         slug = f"{base_slug}-{suffix}"
         suffix += 1
 
-    bundle_contents, bundle_item_names = resolve_bundle_items(article_h4, full_description, data["products"]) if is_bundle else ([], [])\n    product = {\n        "name": name,
+    bundle_contents, bundle_item_names = resolve_bundle_items(article_h4, full_description, data["products"]) if is_bundle else ([], [])
+    product = {
+        "name": name,
         "price_usd": float(raw_price),
         "url": final_url,
         "permalink": permalink,
         "published": True,
-        "is_bundle": is_bundle,\n        "bundle_contents": bundle_contents,\n        "bundle_item_names": bundle_item_names,
+        "is_bundle": is_bundle,
+        "bundle_contents": bundle_contents,
+        "bundle_item_names": bundle_item_names,
         "category": category_for(name, full_description),
         "landing_slug": slug,
         "cover_url": image,
