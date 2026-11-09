@@ -44,6 +44,8 @@ jobs:
           set -euo pipefail
           python scripts/import_public_gumroad_product.py --url "$PRODUCT_URL"
       - name: Generate and validate the landing page
+        env:
+          EXPECTED_PERMALINK: ${{ github.event.inputs.expected_permalink || 'xvccaj' }}
         run: |
           set -euo pipefail
           python scripts/generate_landing_pages.py
@@ -51,9 +53,10 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
-          import html
+          import html, os
           data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
-          product = next(p for p in data["products"] if p["permalink"] == "kjclzu")
+          expected = os.environ["EXPECTED_PERMALINK"]
+          product = next(p for p in data["products"] if p["permalink"] == expected)
           page = Path("landing") / product["landing_slug"] / "index.html"
           assert page.is_file(), f"Landing page was not generated: {page}"
           text = html.unescape(page.read_text(encoding="utf-8"))
@@ -61,15 +64,22 @@ jobs:
           assert product["url"] in text
           assert product["cover_url"] in text
           assert f'{product["price_usd"]:.2f}' in text
-          assert "Some Friendships Are Felt by the Heart" in product["full_description"]
-          assert product["product_details"].get("files_included", "").startswith("1 file")
-          assert "ZIP" in product["product_details"].get("files_included", "")
-          assert "Instant digital download" in product["product_details"].get("delivery", "")
-          assert "personal-use" in product["product_details"].get("usage", "").lower()
-          assert "Some Friendships Are Felt by the Heart" in text
-          assert "Product specifications" in text
-          assert "Files included" in text
-          print(f"PASS: {product['name']} | full description + buyer details | {page}")
+          assert product.get("full_description"), "Full product description was not imported"
+          assert product.get("product_details", {}).get("delivery"), "Delivery details missing"
+          if product.get("is_bundle"):
+              assert len(product.get("bundle_contents", [])) >= 6, "Expected at least six linked bundle artworks"
+              assert "This collection" in text or "Inside this collection" in text
+              for permalink in product["bundle_contents"]:
+                  item = next(p for p in data["products"] if p["permalink"] == permalink)
+                  assert item["name"].strip() in text, f"Bundle item missing from landing page: {item['name']}"
+              print(f"PASS: {product['name']} | bundle items={len(product['bundle_contents'])} | {page}")
+          else:
+              included = product.get("product_details", {}).get("files_included", "")
+              assert included, "Multi-file product file list missing"
+              assert "4 files" in included and all(fmt in included for fmt in ("JPG", "PDF", "PNG", "TXT")), included
+              assert "9.1 MB" in included, included
+              assert included in text
+              print(f"PASS: {product['name']} | multi-file package={included} | {page}")
           PY
       - name: Commit test catalogue and page to isolated branch
         run: |
