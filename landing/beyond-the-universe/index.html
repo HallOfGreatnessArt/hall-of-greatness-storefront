@@ -22,6 +22,18 @@
 .contents{columns:2;max-width:850px;padding-left:22px;color:var(--muted)}.contents li{padding:5px 0;break-inside:avoid}.contents a{color:#efd99e;text-decoration:none}.closing{text-align:center;padding:54px 12px 68px}.closing h2{font:clamp(30px,4vw,46px) Georgia;font-weight:400}.closing p{color:var(--muted);font:18px Georgia;max-width:650px;margin:0 auto 24px}
 footer{padding:24px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:12px}
 @media(max-width:760px){.hero{grid-template-columns:1fr;gap:24px;padding:42px 0}.art{max-width:620px;margin:auto}.hero h1{font-size:44px}.sub{font-size:19px}.contents{columns:1}}
+
+/* Buyer clarity and print guidance */
+.purchase-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:-12px 0 38px}
+.purchase-chip{border:1px solid var(--line);background:var(--panel);padding:13px 15px;text-align:center;color:#e8ddca;font-size:12px;letter-spacing:.3px}
+.purchase-chip strong{display:block;color:var(--gold);font:16px Georgia;margin-bottom:3px}
+.print-panel{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 8px}
+.print-step{border:1px solid var(--line);background:var(--panel);padding:18px}
+.print-step b{display:block;color:var(--gold);font:18px Georgia;margin-bottom:7px}
+.print-step p{font:14px/1.7 Arial,sans-serif!important;margin:0;color:var(--muted)}
+.digital-reminder{font-size:13px!important;border-left:2px solid var(--gold);padding:10px 16px;background:#1d1a15}
+@media(max-width:760px){.purchase-strip,.print-panel{grid-template-columns:1fr;gap:8px}.purchase-chip{text-align:left}.print-step{padding:15px}}
+
 </style></head>
 <body><div class="wrap">
 <header><a class="brand" href="../../index.html">HALL OF <span>GREATNESS</span></a><a class="back" href="../../index.html">← Return to the gallery</a></header>
@@ -30,10 +42,29 @@ footer{padding:24px 0;border-top:1px solid var(--line);display:flex;justify-cont
 <div class="price">$5.00 <span style="font:12px Arial;color:var(--muted)">· Digital download</span></div>
 <a class="btn" href="https://alshayebemad.gumroad.com/l/nxkxyq" target="_blank" rel="noopener noreferrer">Explore &amp; Get the Artwork ↗</a><p class="note">Secure checkout and digital delivery on Gumroad.</p></div>
 <div class="art"><img src="https://public-files.gumroad.com/wwvo2eo4rn5gv97kazjdsra9eaii" alt="BEYOND THE UNIVERSE 🌏 digital artwork" loading="eager" fetchpriority="high"></div></section>
+
+<div class="purchase-strip" aria-label="Digital product information">
+  <div class="purchase-chip"><strong>Digital download</strong>Access your files after checkout</div>
+  <div class="purchase-chip"><strong>Print your way</strong>Choose a size suited to your space</div>
+  <div class="purchase-chip"><strong>Made to display</strong>For homes, studios, and meaningful spaces</div>
+</div>
+
 <section class="section"><div class="eyebrow">The meaning behind the artwork</div><h2>More than decoration. A feeling that stays.</h2><p>Step into a luminous vision of the cosmos. Beyond the Universe celebrates the mystery, scale, and wonder of space through a dreamlike digital artwork inspired by galaxies, celestial light, and infinite possibility. A captivating statement print for modern interiors and curious minds.</p><p>Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.</p></section>
 
 <section class="section"><div class="eyebrow">Where it belongs</div><h2>Art that finds its place</h2><p>An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.</p></section>
 <section class="section"><div class="eyebrow">Before you purchase</div><h2>Digital download details</h2><p>This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.</p></section>
+
+<section class="section" id="printing">
+  <div class="eyebrow">From download to display</div>
+  <h2>Make the artwork part of your space</h2>
+  <div class="print-panel">
+    <div class="print-step"><b>01 · Purchase</b><p>Complete your secure checkout on Gumroad. Your purchase is for a digital product.</p></div>
+    <div class="print-step"><b>02 · Download</b><p>Access the files supplied with this product through Gumroad and review the included specifications.</p></div>
+    <div class="print-step"><b>03 · Print</b><p>Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.</p></div>
+  </div>
+  <p class="digital-reminder"><strong>Please note:</strong> No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.</p>
+</section>
+
 <section class="closing"><h2>Let your space tell a story.</h2><p>Choose art that reflects what you value—and let its meaning live with you.</p><a class="btn" href="https://alshayebemad.gumroad.com/l/nxkxyq" target="_blank" rel="noopener noreferrer">Get BEYOND THE UNIVERSE 🌏 ↗</a></section>
 </main>
 <footer><span><strong>HALL OF GREATNESS</strong><br>Art with a Soul. A Message Without Borders.</span><span>Digital artwork · Instant download through Gumroad</span></footer>
