@@ -113,22 +113,54 @@ def fetch_public_page(url):
     parsed = urlparse(url)
     if parsed.scheme != "https" or parsed.hostname != STORE_HOST or not parsed.path.startswith("/l/"):
         raise ValueError(f"Only public product URLs on https://{STORE_HOST}/l/... are allowed")
-    request = urllib.request.Request(url, headers={"User-Agent": "HALL-OF-GREATNESS-public-catalog-import/2.0"})
-    with urllib.request.urlopen(request, timeout=30) as response:
-        final_url = response.geturl()
-        body = response.read(10_000_000).decode("utf-8", errors="replace")
-    if urlparse(final_url).hostname != STORE_HOST:
-        raise ValueError("The product URL redirected outside the approved Gumroad storefront")
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError as error:
+        raise RuntimeError("Playwright is required for rendered public product-page extraction") from error
+    with sync_playwright() as playwright:
+        browser = playwright.chromium.launch(headless=True)
+        page = browser.new_page(viewport={"width": 1440, "height": 1000})
+        response = page.goto(url, wait_until="domcontentloaded", timeout=60000)
+        page.locator("main").wait_for(state="visible", timeout=30000)
+        try:
+            page.wait_for_load_state("networkidle", timeout=15000)
+        except Exception:
+            pass
+        final_url = page.url
+        if urlparse(final_url).hostname != STORE_HOST:
+            browser.close()
+            raise ValueError("The product URL redirected outside the approved Gumroad storefront")
+        rendered_text = page.locator("main").inner_text(timeout=15000)
+        body = page.content()
+        browser.close()
+    if response is not None and response.status >= 400:
+        raise ValueError(f"Public product page returned HTTP {response.status}")
     parser = ProductPageParser()
     parser.feed(body)
-    return parser, final_url
+    return parser, final_url, rendered_text
 
 def detail_between(text, start, end):
     pattern = rf"{re.escape(start)}\s*:?\s*(.*?)(?={re.escape(end)}\s*:?\s*|$)"
     match = re.search(pattern, text, flags=re.I | re.S)
     return clean(match.group(1)) if match else ""
 
-def extract_full_description(parser):
+def extract_full_description(parser, rendered_text):
+    if rendered_text:
+        text = rendered_text
+        if "Add to wishlist" in text:
+            text = text.split("Add to wishlist", 1)[1]
+        for marker in ("EXPLORE OUR COLLECTION", "More from this creator"):
+            if marker in text:
+                text = text.split(marker, 1)[0]
+        lines = [clean(line) for line in text.splitlines()]
+        excluded = ("i want this!", "already bought this?", "add to wishlist", "https://schema.org/")
+        candidates = [
+            line for line in lines
+            if line and line.lower() not in ("usd", "in stock")
+            and not line.startswith("$")
+            and not any(token in line.lower() for token in excluded)
+        ]
+        return "\n\n".join(dict.fromkeys(candidates)).strip()
     excluded = (
         "https://schema.org/", "already bought this?", "i want this!", "add to wishlist",
         "product type", "delivery", "physical item", "printing", "usage",
@@ -143,9 +175,7 @@ def extract_full_description(parser):
         if re.match(r"^\d+\s+file\b", value, re.I) or value.lower().startswith("includes:"):
             continue
         candidates.append(value)
-    # Keep complete paragraph copy, not the deliberately shortened Open Graph preview.
-    result = "\n\n".join(dict.fromkeys(candidates))
-    return result.strip()
+    return "\n\n".join(dict.fromkeys(candidates)).strip()
 
 def main():
     ap = argparse.ArgumentParser()
@@ -153,7 +183,7 @@ def main():
     ap.add_argument("--catalog", default="catalog-data.json")
     args = ap.parse_args()
 
-    parser, final_url = fetch_public_page(args.url)
+    parser, final_url, rendered_text = fetch_public_page(args.url)
     meta = parser.meta
     schema = schema_product(parser)
 
@@ -171,8 +201,8 @@ def main():
         raw_price = str(schema["offers"].get("price", ""))
         currency = str(schema["offers"].get("priceCurrency", currency)).upper()
 
-    full_description = extract_full_description(parser)
-    article_text = clean(" ".join(parser.article_parts))
+    full_description = extract_full_description(parser, rendered_text)
+    article_text = clean(rendered_text or " ".join(parser.article_parts))
     product_details = {
         "files_included": "",
         "product_type": detail_between(article_text, "Product type", "Delivery"),
