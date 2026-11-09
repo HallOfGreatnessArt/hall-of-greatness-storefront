@@ -3,17 +3,6 @@
 <style>
 :root{--bg:#11110f;--panel:#1d1a15;--ink:#f5efe3;--muted:#c0b5a2;--gold:#dfbd75;--line:#493d2b}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#554222 0,transparent 48%),var(--bg);color:var(--ink);font:16px/1.7 Arial,sans-serif}.wrap{width:min(1080px,92%);margin:auto}header{padding:22px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center}.brand{font:17px Georgia;letter-spacing:3px;color:var(--ink);text-decoration:none}.brand span{color:var(--gold)}header a.back{color:var(--muted);font-size:12px;text-decoration:none}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:64px 0}.eyebrow{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase}.hero h1{font:clamp(38px,5vw,64px)/1.08 Georgia;margin:18px 0}.sub{font:italic 22px/1.45 Georgia;color:#efd99e}.desc{color:var(--muted);font:18px/1.8 Georgia}.art{border:1px solid var(--line);padding:10px;background:var(--panel);box-shadow:0 22px 70px #0008}.art img{width:100%;display:block;max-height:620px;object-fit:contain}.price{font:28px Georgia;color:var(--gold);margin:18px 0}.btn{display:inline-block;padding:15px 23px;background:var(--gold);color:#17140e;text-decoration:none;text-transform:uppercase;letter-spacing:1.2px;font-size:11px;font-weight:bold}.note{font-size:12px;color:var(--muted);margin-top:12px}.section{padding:42px 0;border-top:1px solid var(--line)}.section h2{font:34px Georgia;font-weight:400;margin:8px 0 16px}.section p{max-width:820px;color:var(--muted);font:18px/1.85 Georgia}.uses{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}.use{padding:18px;background:var(--panel);border:1px solid var(--line);color:#e8ddca;font:16px Georgia}.closing{text-align:center;padding:54px 12px 68px}.closing h2{font:clamp(30px,4vw,46px) Georgia;font-weight:400}.closing p{color:var(--muted);font:18px Georgia;max-width:650px;margin:0 auto 24px}.disclaimer{font-size:12px!important;line-height:1.7!important}footer{padding:24px 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:12px}footer strong{color:var(--gold)}@media(max-width:760px){.hero{grid-template-columns:1fr;gap:24px;padding:42px 0}.art{max-width:620px;margin:auto}.uses{grid-template-columns:1fr}.hero h1{font-size:44px}.sub{font-size:20px}} 
 
-/* Buyer clarity and print guidance */
-.purchase-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:-12px 0 38px}
-.purchase-chip{border:1px solid var(--line);background:var(--panel);padding:13px 15px;text-align:center;color:#e8ddca;font-size:12px;letter-spacing:.3px}
-.purchase-chip strong{display:block;color:var(--gold);font:16px Georgia;margin-bottom:3px}
-.print-panel{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0 8px}
-.print-step{border:1px solid var(--line);background:var(--panel);padding:18px}
-.print-step b{display:block;color:var(--gold);font:18px Georgia;margin-bottom:7px}
-.print-step p{font:14px/1.7 Arial,sans-serif!important;margin:0;color:var(--muted)}
-.digital-reminder{font-size:13px!important;border-left:2px solid var(--gold);padding:10px 16px;background:#1d1a15}
-@media(max-width:760px){.purchase-strip,.print-panel{grid-template-columns:1fr;gap:8px}.purchase-chip{text-align:left}.print-step{padding:15px}}
-
 
 /* Buyer clarity and print guidance */
 .purchase-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:-12px 0 38px}
@@ -25,32 +14,21 @@
 .print-step p{font:14px/1.7 Arial,sans-serif!important;margin:0;color:var(--muted)}
 .digital-reminder{font-size:13px!important;border-left:2px solid var(--gold);padding:10px 16px;background:#1d1a15}
 
-/* Premium interior mockups using the untouched original artwork image */
+/* Clean artwork display: retain the image's native aspect ratio and avoid black letterboxing */
 .room-showcase{padding:42px 0 54px;border-top:1px solid var(--line)}
 .room-showcase .room-intro{text-align:center;max-width:720px;margin:0 auto 24px}
 .room-showcase h2{font:34px Georgia;font-weight:400;margin:8px 0 12px}
 .room-showcase .room-intro p{color:var(--muted);font:16px/1.7 Georgia}
-.room-mockups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.room-scene{position:relative;isolation:isolate;overflow:hidden;min-height:330px;aspect-ratio:4/3;border:1px solid #66543a;background:linear-gradient(180deg,#d7c5a5 0%,#c6ad88 72%,#6d5945 72%,#594633 100%)}
-.room-scene.office{background:linear-gradient(180deg,#b7a68d 0%,#9e8b70 72%,#493b2d 72%,#30271f 100%)}
-.room-scene:before{content:"";position:absolute;inset:0 0 28%;z-index:-1;background:repeating-linear-gradient(90deg,transparent 0 32%,#ffffff0b 32.2% 32.5%),linear-gradient(110deg,#ffffff25,transparent 55%)}
-.room-scene:after{content:"";position:absolute;left:0;right:0;bottom:0;height:28%;z-index:-1;background:linear-gradient(180deg,#705b45,#342a22);box-shadow:0 -5px 16px #2a201633}
-.room-window{position:absolute;left:5%;top:9%;width:17%;height:43%;border:8px solid #eee0c6;background:linear-gradient(145deg,#dce6e4,#a9bfc0 55%,#e8d9bd);box-shadow:0 5px 15px #0002}
-.office .room-window{left:auto;right:5%;width:14%;height:38%;background:linear-gradient(145deg,#d8d9d2,#a7b2ad)}
-.room-frame{position:absolute;left:50%;top:8%;transform:translateX(-50%);height:64%;width:39%;padding:12px;background:linear-gradient(135deg,#f7e8c8,#a47c3f 30%,#ead7ad 52%,#78562e 100%);box-shadow:0 13px 26px #24190d66,0 2px 5px #fff8 inset}
-.room-frame:before{content:"";position:absolute;inset:6px;border:1px solid #72552e;pointer-events:none}
-.room-artwork{display:block;width:100%;height:100%;object-fit:contain;background:#171512}
-.room-sofa{position:absolute;left:13%;right:13%;bottom:0;height:27%;border-radius:28px 28px 0 0;background:linear-gradient(180deg,#b7a18a,#796653);box-shadow:0 -8px 15px #251b1430}
-.room-sofa:before,.room-sofa:after{content:"";position:absolute;bottom:0;width:13%;height:82%;background:#8e7964;border-radius:12px 12px 0 0}
-.room-sofa:before{left:-7%}.room-sofa:after{right:-7%}
-.room-table{position:absolute;left:39%;bottom:8%;width:22%;height:8%;border-radius:50%;background:#493728;box-shadow:0 16px 0 -5px #30251c}
-.office .room-sofa{left:8%;right:8%;height:14%;border-radius:3px;background:linear-gradient(180deg,#654f3c,#3d3025)}
-.office .room-table{left:17%;width:66%;height:7%;bottom:13%;border-radius:3px;background:#533c2a;box-shadow:0 23px 0 -8px #2a2018}
-.room-caption{position:absolute;left:0;right:0;bottom:8px;text-align:center;color:#fff4df;text-shadow:0 1px 3px #000;font:11px Arial;letter-spacing:2px;text-transform:uppercase}
+.artwork-display{min-height:300px;display:flex;align-items:center;justify-content:center;padding:28px 18px;background:radial-gradient(ellipse at 50% 35%,#e6d9c2 0%,#c8b89d 58%,#8d7b62 100%);border:1px solid #8b7552;box-shadow:inset 0 0 55px #38281722}
+.artwork-frame{display:inline-flex;align-items:center;justify-content:center;max-width:92%;padding:12px;background:linear-gradient(135deg,#fff1d3,#9a7139 24%,#f1dfb9 48%,#75512c 75%,#e6c88f);box-shadow:0 16px 34px #24190d70,0 2px 5px #fff9 inset}
+.room-artwork{display:block;width:auto;height:auto;max-width:min(100%,520px);max-height:440px;object-fit:contain;background:transparent;box-shadow:0 0 0 1px #6f5735}
 @media(max-width:760px){
- .purchase-strip,.print-panel,.room-mockups{grid-template-columns:1fr;gap:8px}
+ .purchase-strip,.print-panel{grid-template-columns:1fr;gap:8px}
  .purchase-chip{text-align:left}.print-step{padding:15px}
- .room-scene{min-height:270px}.room-showcase h2{font-size:29px}
+ .artwork-display{min-height:240px;padding:18px 10px}
+ .artwork-frame{max-width:96%;padding:8px}
+ .room-artwork{max-width:100%;max-height:360px}
+ .room-showcase h2{font-size:29px}
 }
 
 </style></head><body><div class="wrap">
@@ -60,23 +38,12 @@
 
 <section class="room-showcase" id="room-showcase">
   <div class="room-intro">
-    <div class="eyebrow">See it in your space</div>
-    <h2>Imagine the artwork on your wall</h2>
-    <p>Two interior settings show how the original artwork can complement an elegant home or a refined workspace. The artwork itself is kept unchanged.</p>
+    <div class="eyebrow">Artwork presentation</div>
+    <h2>See the artwork in a refined frame</h2>
+    <p>The artwork is shown once, with its original proportions preserved and no artificial black bars.</p>
   </div>
-  <div class="room-mockups">
-    <div class="room-scene living" role="img" aria-label="Living room presentation of The Legacy of Generations digital artwork">
-      <div class="room-window"></div>
-      <div class="room-frame"><img class="room-artwork" src="https://public-files.gumroad.com/j9dg5oywnngihhreld0u34mrefpi" alt="The Legacy of Generations digital artwork displayed in a framed living room mockup" loading="lazy"></div>
-      <div class="room-sofa"></div><div class="room-table"></div>
-      <div class="room-caption">Elegant living room</div>
-    </div>
-    <div class="room-scene office" role="img" aria-label="Office presentation of The Legacy of Generations digital artwork">
-      <div class="room-window"></div>
-      <div class="room-frame"><img class="room-artwork" src="https://public-files.gumroad.com/j9dg5oywnngihhreld0u34mrefpi" alt="The Legacy of Generations digital artwork displayed in a framed office mockup" loading="lazy"></div>
-      <div class="room-sofa"></div><div class="room-table"></div>
-      <div class="room-caption">Refined office</div>
-    </div>
+  <div class="artwork-display">
+    <div class="artwork-frame"><img class="room-artwork" src="https://public-files.gumroad.com/j9dg5oywnngihhreld0u34mrefpi" alt="The Legacy of Generations digital artwork shown in a refined frame" loading="lazy"></div>
   </div>
 </section>
 
