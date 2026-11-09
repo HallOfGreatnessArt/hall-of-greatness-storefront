@@ -2,7 +2,7 @@
   "source": "Public Gumroad product page (no OAuth)",
   "account": "Emad Alshayeb",
   "verified_at": "2026-11-09",
-  "product_count": 32,
+  "product_count": 33,
   "products": [
     {
       "name": "THE ART OF ELEGANCE & SERENITY",
@@ -422,6 +422,38 @@
         "physical_item": "No physical print or frame will be shipped",
         "printing": "Print the supplied files with your preferred print provider; check the included dimensions before choosing a size",
         "usage": "Follow the personal-use and other license terms included with the download"
+      },
+      "description_source": "Public Gumroad product page; no OAuth"
+    },
+    {
+      "name": "GLOBAL ART & IMAGINATION",
+      "price_usd": 17.99,
+      "url": "https://alshayebemad.gumroad.com/l/xvccaj",
+      "permalink": "xvccaj",
+      "published": true,
+      "is_bundle": true,
+      "bundle_contents": [
+        "nxkxyq",
+        "etqsav",
+        "aenwi",
+        "gynmhv",
+        "jrsgce",
+        "bgqxwm",
+        "gusqyc"
+      ],
+      "bundle_item_names": [],
+      "category": "Elegance",
+      "landing_slug": "global-art-imagination",
+      "cover_url": "https://public-files.gumroad.com/atz0i1o4ih9cfhfzwtvqz5nh5et5",
+      "summary": "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...",
+      "full_description": "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS\n\nTravel beyond the familiar through a collection of seven digital artworks inspired by cosmic wonder, celestial beauty, visionary architecture, nature, and the Mediterranean spirit. Each piece opens a different visual world, bringing curiosity, movement, and imagination into contemporary spaces.\n\nFrom the mystery of the universe to the cities we dream of building, from magnificent natural landscapes to expressive coastal visions, this collection celebrates the many ways art can expand our sense of possibility.\n\nWHAT'S INCLUDED\n\nBeyond the Universe\n\nThe Celestial Garden\n\nCities of Tomorrow\n\nNature's Majesty\n\nMediterranean Dreams\n\nThe Mediterranean Muse\n\nGeometry of Elegance\n\nWHERE IT BELONGS\n\nA distinctive collection for living rooms, offices, creative studios, hotels, restaurants, reception areas, and interiors that welcome expressive art and conversation-starting décor.\n\nDIGITAL DOWNLOAD\n\nThis is a digital product. No physical artwork or frame will be shipped. Download the files included in the bundle and review their formats, dimensions, and usage terms before printing. Select a print size and material appropriate for the supplied files. Colors may vary slightly between screens and printed results.\n\nDiscover art without borders. Let imagination shape your world.\n\nHALL OF GREATNESS — Art Without Boundaries.",
+      "product_details": {
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download after purchase",
+        "physical_item": "No physical print or frame will be shipped",
+        "printing": "Print the supplied files with your preferred print provider; check the included dimensions before choosing a size",
+        "usage": "Please follow the usage terms included with the download",
+        "bundle_item_count": "Bundle collection; individual artworks listed below"
       },
       "description_source": "Public Gumroad product page; no OAuth"
     }
