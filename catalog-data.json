@@ -2,7 +2,7 @@
   "source": "Connected Gumroad creator account",
   "account": "Emad Alshayeb",
   "verified_at": "2026-11-09",
-  "product_count": 33,
+  "product_count": 34,
   "products": [
     {
       "name": "GLOBAL ART & IMAGINATION",
@@ -435,6 +435,18 @@
       "landing_slug": "the-niles-eternal-grace",
       "cover_url": "https://public-files.gumroad.com/zjb3wra5vtosnxvq7qh92oot2k5p",
       "summary": "Bring the timeless elegance of the Nile and Egypt’s rich heritage into your space with this high-resolution printable wall art."
+    },
+    {
+      "name": "THE NILE'S ETERNAL GRACE",
+      "price_usd": 5.0,
+      "url": "https://alshayebemad.gumroad.com/l/THENILESETERNALGRACE",
+      "permalink": "THENILESETERNALGRACE",
+      "published": true,
+      "is_bundle": false,
+      "category": "Heritage",
+      "landing_slug": "the-nile-s-eternal-grace",
+      "cover_url": "https://public-files.gumroad.com/cbx485pdnhr6e5n0er3sg9rlmmk0",
+      "summary": "A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden light, ancient stone, lotus blossoms, and the distant pyramids come together in an artwork that evokes heritage, grace, and belonging."
     }
   ],
   "metadata_updated_at": "2026-11-09"
