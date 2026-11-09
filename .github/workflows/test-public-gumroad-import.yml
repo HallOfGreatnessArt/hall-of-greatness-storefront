@@ -12,7 +12,7 @@ on:
       product_url:
         description: Public Gumroad product URL to import
         required: true
-        default: "https://alshayebemad.gumroad.com/l/THENILESETERNALGRACE"
+        default: "https://alshayebemad.gumroad.com/l/ABONDBEYONDWORDS"
 
 permissions:
   contents: write
@@ -35,7 +35,7 @@ jobs:
           python-version: "3.12"
       - name: Import one public product without OAuth
         env:
-          PRODUCT_URL: ${{ github.event.inputs.product_url || 'https://alshayebemad.gumroad.com/l/THENILESETERNALGRACE' }}
+          PRODUCT_URL: ${{ github.event.inputs.product_url || 'https://alshayebemad.gumroad.com/l/ABONDBEYONDWORDS' }}
         run: |
           set -euo pipefail
           python scripts/import_public_gumroad_product.py --url "$PRODUCT_URL"
@@ -49,7 +49,7 @@ jobs:
           from pathlib import Path
           import html
           data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
-          product = next(p for p in data["products"] if p["permalink"] == "jvffaq")
+          product = next(p for p in data["products"] if p["permalink"] == "kjclzu")
           page = Path("landing") / product["landing_slug"] / "index.html"
           assert page.is_file(), f"Landing page was not generated: {page}"
           text = html.unescape(page.read_text(encoding="utf-8"))
@@ -57,7 +57,15 @@ jobs:
           assert product["url"] in text
           assert product["cover_url"] in text
           assert f'{product["price_usd"]:.2f}' in text
-          print(f"PASS: {product['name']} | price={product['price_usd']:.2f} | {page}")
+          assert "Some Friendships Are Felt by the Heart" in product["full_description"]
+          assert product["product_details"].get("files_included", "").startswith("1 file")
+          assert "ZIP" in product["product_details"].get("files_included", "")
+          assert "Instant digital download" in product["product_details"].get("delivery", "")
+          assert "personal-use" in product["product_details"].get("usage", "").lower()
+          assert "Some Friendships Are Felt by the Heart" in text
+          assert "Product specifications" in text
+          assert "Files included" in text
+          print(f"PASS: {product['name']} | full description + buyer details | {page}")
           PY
       - name: Commit test catalogue and page to isolated branch
         run: |
