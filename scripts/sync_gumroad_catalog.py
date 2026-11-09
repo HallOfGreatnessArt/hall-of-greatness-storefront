@@ -89,16 +89,15 @@ def extract_cover(product: dict) -> str:
 
 
 def extract_permalink(product: dict) -> str:
-    value = product.get("custom_permalink") or product.get("permalink")
-    if value:
-        return str(value).strip().strip("/")
+    # Prefer Gumroad's public product URL; custom_permalink is only a fallback.
     for key in ("short_url", "url"):
         value = product.get(key)
         if isinstance(value, str):
             path = urlparse(value).path.rstrip("/")
             if "/l/" in path:
                 return path.split("/l/", 1)[1]
-    return ""
+    value = product.get("permalink") or product.get("custom_permalink")
+    return str(value).strip().strip("/") if value else ""
 
 
 def product_url(product: dict, permalink: str) -> str:
@@ -140,6 +139,9 @@ def build_record(product: dict, used_slugs: set[str]) -> dict:
         raise ValueError(f"could not create a unique landing slug for {name}")
 
     is_bundle = bool(product.get("is_bundle", False))
+    bundle_contents = product.get("bundle_contents") or product.get("bundle_products")
+    if is_bundle and not (isinstance(bundle_contents, list) and bundle_contents):
+        raise ValueError("bundle contents were not supplied by the product-list response; skipping until verified")
     record = {
         "name": name,
         "price_usd": price_in_usd(product),
@@ -153,12 +155,10 @@ def build_record(product: dict, used_slugs: set[str]) -> dict:
         "summary": summary,
     }
     if is_bundle:
-        contents = product.get("bundle_contents") or product.get("bundle_products")
-        if isinstance(contents, list) and contents:
-            record["bundle_contents"] = [
-                item.get("permalink") if isinstance(item, dict) else str(item)
-                for item in contents
-            ]
+        record["bundle_contents"] = [
+            item.get("permalink") if isinstance(item, dict) else str(item)
+            for item in bundle_contents
+        ]
     return record
 
 
@@ -200,7 +200,11 @@ def sync(products: list[dict], catalog: dict) -> list[str]:
         permalink = extract_permalink(product)
         if not permalink or permalink in known:
             continue
-        record = build_record(product, used_slugs)
+        try:
+            record = build_record(product, used_slugs)
+        except ValueError as exc:
+            print(f"::warning::Skipping {product.get('name', permalink)}: {exc}")
+            continue
         existing.append(record)
         known.add(permalink)
         used_slugs.add(record["landing_slug"])
