@@ -59,7 +59,7 @@ DETAILS = """
 """
 
 def room_showcase(page, path):
-    match = re.search(r'<div class="art">\\s*<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"[^>]*>', page)
+    match = re.search(r'<div class="art">.*?<img\b[^>]*\bsrc="([^"]+)"[^>]*\balt="([^"]*)"', page, flags=re.S)
     if not match:
         raise SystemExit(f"Could not locate original artwork image: {path}")
     src, alt = match.group(1), match.group(2)
@@ -81,11 +81,11 @@ def room_showcase(page, path):
     marker = '<div class="purchase-strip"'
     if marker in page:
         pos = page.find(marker)
-        return page[:pos] + section + "\\n" + page[pos:]
+        return page[:pos] + section + "\n" + page[pos:]
     marker = '<section class="section" id="printing">'
     if marker in page:
         pos = page.find(marker)
-        return page[:pos] + section + "\\n" + page[pos:]
+        return page[:pos] + section + "\n" + page[pos:]
     raise SystemExit(f"Could not find insertion point for artwork display: {path}")
 
 pages = sorted((ROOT / "landing").glob("*/index.html"))
@@ -99,7 +99,7 @@ for path in pages:
         end = page.find("</section>", start)
         if start < 0 or end < 0:
             raise SystemExit(f"Missing hero section: {path}")
-        page = page[:end + len("</section>")] + "\\n" + STRIP + page[end + len("</section>"):]
+        page = page[:end + len("</section>")] + "\n" + STRIP + page[end + len("</section>"):]
     if 'id="printing"' not in page:
         if '<section class="closing"' not in page:
             raise SystemExit(f"Missing closing CTA section: {path}")
