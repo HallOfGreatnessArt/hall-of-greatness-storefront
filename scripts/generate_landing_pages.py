@@ -39,6 +39,7 @@ def render(product):
         "physical_item": "Physical item",
         "printing": "Printing",
         "usage": "Usage and license",
+        "bundle_item_count": "Collection contents",
     }
     details_html = "".join(
         f'<p><strong>{esc(detail_labels.get(key, key.replace("_", " ").title()))}:</strong> {esc(value)}</p>'
