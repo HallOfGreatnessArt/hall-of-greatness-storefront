@@ -12,7 +12,11 @@ on:
       product_url:
         description: Public Gumroad product URL to import
         required: true
-        default: "https://alshayebemad.gumroad.com/l/ABONDBEYONDWORDS"
+        default: "https://alshayebemad.gumroad.com/l/xvccaj"
+      expected_permalink:
+        description: Gumroad permalink expected in the imported catalogue
+        required: true
+        default: "xvccaj"
 
 permissions:
   contents: write
@@ -39,7 +43,7 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Import one public product without OAuth
         env:
-          PRODUCT_URL: ${{ github.event.inputs.product_url || 'https://alshayebemad.gumroad.com/l/ABONDBEYONDWORDS' }}
+          PRODUCT_URL: ${{ github.event.inputs.product_url || 'https://alshayebemad.gumroad.com/l/xvccaj' }}
         run: |
           set -euo pipefail
           python scripts/import_public_gumroad_product.py --url "$PRODUCT_URL"
