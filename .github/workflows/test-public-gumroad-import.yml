@@ -1,0 +1,72 @@
+name: Test public Gumroad import without OAuth
+
+on:
+  push:
+    branches:
+      - test/public-gumroad-import-no-oauth
+    paths:
+      - "scripts/import_public_gumroad_product.py"
+      - ".github/workflows/test-public-gumroad-import.yml"
+  workflow_dispatch:
+    inputs:
+      product_url:
+        description: Public Gumroad product URL to import
+        required: true
+        default: "https://alshayebemad.gumroad.com/l/THENILESETERNALGRACE"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-gumroad-import-test
+  cancel-in-progress: false
+
+jobs:
+  import-one-public-product:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out isolated test branch
+        uses: actions/checkout@v4
+        with:
+          ref: test/public-gumroad-import-no-oauth
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Import one public product without OAuth
+        env:
+          PRODUCT_URL: \${{ github.event.inputs.product_url || 'https://alshayebemad.gumroad.com/l/THENILESETERNALGRACE' }}
+        run: |
+          set -euo pipefail
+          python scripts/import_public_gumroad_product.py --url "$PRODUCT_URL"
+      - name: Generate and validate the landing page
+        run: |
+          set -euo pipefail
+          python scripts/generate_landing_pages.py
+          python scripts/enhance_landing_pages.py
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
+          product = next(p for p in data["products"] if p["permalink"] == "jvffaq")
+          page = Path("landing") / product["landing_slug"] / "index.html"
+          assert page.is_file(), f"Landing page was not generated: {page}"
+          text = page.read_text(encoding="utf-8")
+          assert product["name"] in text
+          assert product["url"] in text
+          assert product["cover_url"] in text
+          assert f'{product["price_usd"]:.2f}' in text
+          print(f"PASS: {product['name']} | price={product['price_usd']:.2f} | {page}")
+          PY
+      - name: Commit test catalogue and page to isolated branch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog-data.json landing/
+          if git diff --cached --quiet; then
+            echo "No changes to commit; product may already exist."
+          else
+            git commit -m "Test no-OAuth import for one public Gumroad product"
+            git push origin HEAD:test/public-gumroad-import-no-oauth
+          fi
