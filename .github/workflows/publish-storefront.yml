@@ -48,6 +48,7 @@ jobs:
           print(f"Catalogue OK: {len(published)} published products ({len(published)-len(bundles)} individual artworks + {len(bundles)} bundles); drafts excluded.")
           PY
           python scripts/generate_landing_pages.py
+          python scripts/enhance_landing_pages.py
 
       - name: Validate all product landing pages
         run: |
@@ -65,6 +66,8 @@ jobs:
               assert p["cover_url"] in page, f"Wrong or missing cover: {path}"
               assert p["url"] in page, f"Wrong or missing Gumroad link: {path}"
               assert "HALL OF GREATNESS" in page, f"Missing brand: {path}"
+              assert 'id="printing"' in page, f"Missing buyer print guidance: {path}"
+              assert "Digital download" in page, f"Missing digital product clarity: {path}"
           pages = list(Path("landing").glob("*/index.html"))
           assert len(pages) == len(published), f"Expected {len(published)} landing pages, found {len(pages)}"
           print(f"Landing pages OK: {len(pages)} pages; titles, covers, and exact Gumroad URLs verified.")
