@@ -25,11 +25,12 @@ jobs:
           from pathlib import Path
           data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
           products = data["products"]
-          assert len(products) == 32, f"Expected 32 products, got {len(products)}"
+          assert len(products) == 33, f"Expected 33 products, got {len(products)}"
           assert sum(bool(p["is_bundle"]) for p in products) == 4
           assert all(p.get("url", "").startswith("https://") for p in products)
           assert all(p.get("published") for p in products)
-          print("Catalogue OK: 32 published products, including 4 bundles.")
+          assert sum(bool(p["is_bundle"]) for p in products) == 4
+          print("Catalogue OK: 33 published products, including 4 bundles.")
           PY
       - name: Prepare Pages artifact
         run: |
