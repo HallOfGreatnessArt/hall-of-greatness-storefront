@@ -63,8 +63,8 @@ jobs:
           for url in urls:
               lines.append(f'  <url><loc>{url}</loc></url>')
           lines.append('</urlset>')
-          Path("sitemap.xml").write_text("\\n".join(lines) + "\\n", encoding="utf-8")
-          Path("robots.txt").write_text("User-agent: *\\nAllow: /\\nSitemap: " + base + "sitemap.xml\\n", encoding="utf-8")
+          Path("sitemap.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
+          Path("robots.txt").write_text("User-agent: *\nAllow: /\nSitemap: " + base + "sitemap.xml\n", encoding="utf-8")
           print(f"SEO files generated: {len(urls)} canonical URLs.")
           PY
 
