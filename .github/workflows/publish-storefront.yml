@@ -32,10 +32,30 @@ jobs:
           assert sum(bool(p["is_bundle"]) for p in products) == 4
           print("Catalogue OK: 33 published products, including 4 bundles.")
           PY
-      - name: Prepare Pages artifact
+      - name: Validate and prepare storefront pages
         run: |
+          set -euo pipefail
+          pages=(
+            "last-cry-of-earth"
+            "a-stairway-of-hands"
+            "the-art-of-inner-peace"
+            "the-legacy-of-generations"
+            "the-hand-that-holds-tomorrow"
+            "the-golden-thread-of-humanity"
+          )
+          test -d landing
+          for page in "${pages[@]}"; do
+            file="landing/$page/index.html"
+            test -s "$file" || { echo "Missing landing page: $file"; exit 1; }
+            grep -Eqi '<title>[^<]+</title>' "$file" || { echo "Missing page title: $file"; exit 1; }
+            grep -Eqi '<img[^>]+src=' "$file" || { echo "Missing artwork image: $file"; exit 1; }
+            grep -Eqi 'gumroad\.com/' "$file" || { echo "Missing Gumroad purchase link: $file"; exit 1; }
+          done
           mkdir -p _site
           cp index.html catalog-data.json _site/
+          cp -R landing _site/
+          test "$(find _site/landing -mindepth 2 -maxdepth 2 -name index.html | wc -l)" -eq "${#pages[@]}"
+          echo "Storefront OK: main page, catalogue, and ${#pages[@]} landing pages are included."
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
