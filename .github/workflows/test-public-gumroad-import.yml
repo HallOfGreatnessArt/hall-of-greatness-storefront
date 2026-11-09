@@ -12,11 +12,11 @@ on:
       product_url:
         description: Public Gumroad product URL to import
         required: true
-        default: "https://alshayebemad.gumroad.com/l/xvccaj"
+        default: "https://alshayebemad.gumroad.com/l/EternalEgypt"
       expected_permalink:
         description: Gumroad permalink expected in the imported catalogue
         required: true
-        default: "xvccaj"
+        default: "wjxgxb"
 
 permissions:
   contents: write
@@ -43,13 +43,13 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Import one public product without OAuth
         env:
-          PRODUCT_URL: ${{ github.event.inputs.product_url || 'https://alshayebemad.gumroad.com/l/xvccaj' }}
+          PRODUCT_URL: ${{ github.event.inputs.product_url || 'https://alshayebemad.gumroad.com/l/EternalEgypt' }}
         run: |
           set -euo pipefail
           python scripts/import_public_gumroad_product.py --url "$PRODUCT_URL"
       - name: Generate and validate the landing page
         env:
-          EXPECTED_PERMALINK: ${{ github.event.inputs.expected_permalink || 'xvccaj' }}
+          EXPECTED_PERMALINK: ${{ github.event.inputs.expected_permalink || 'wjxgxb' }}
         run: |
           set -euo pipefail
           python scripts/generate_landing_pages.py
