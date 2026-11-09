@@ -4,7 +4,7 @@ A mobile-first, responsive storefront for the HALL OF GREATNESS digital art cata
 
 ## Contents
 - `index.html` — dark-and-gold gallery with collection highlights, artwork search, category filters, and artist introduction.
-- `catalog-data.json` — catalogue of 32 published Gumroad products: 4 bundles and 28 individual artworks.
+- `catalog-data.json` — catalogue of 33 published Gumroad products: 4 bundles and 29 individual artworks.
 - `.github/workflows/publish-storefront.yml` — manually triggered GitHub Pages build and deployment workflow.
 
 ## Product links and account integrity
