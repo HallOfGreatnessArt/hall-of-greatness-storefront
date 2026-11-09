@@ -1,0 +1,87 @@
+name: Discover and import new public Gumroad products without OAuth
+
+on:
+  push:
+    branches:
+      - test/public-gumroad-import-no-oauth
+    paths:
+      - "scripts/discover_public_gumroad_products.py"
+      - ".github/workflows/discover-public-gumroad-products.yml"
+  workflow_dispatch:
+  schedule:
+    # GitHub scheduled workflows run from the default branch only.
+    # This schedule becomes active after this workflow is reviewed and merged to main.
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-gumroad-discovery-import
+  cancel-in-progress: false
+
+jobs:
+  discover-import-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out isolated test branch
+        uses: actions/checkout@v4
+        with:
+          ref: test/public-gumroad-import-no-oauth
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install browser extraction dependencies
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Discover newly published public products and import without OAuth
+        run: |
+          set -euo pipefail
+          python scripts/discover_public_gumroad_products.py
+      - name: Generate and enhance landing pages
+        run: |
+          set -euo pipefail
+          python scripts/generate_landing_pages.py
+          python scripts/enhance_landing_pages.py
+      - name: Verify discovery, catalogue, and landing-page results
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path("public-gumroad-discovery-report.json").read_text(encoding="utf-8"))
+          catalog = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
+          by_permalink = {p["permalink"]: p for p in catalog["products"]}
+          assert report["public_products_discovered"] >= report["public_products_total"] or report["public_products_total"] == 0
+          for permalink in report["new_products_imported"]:
+              product = by_permalink[permalink]
+              assert product.get("full_description"), f"Full description missing: {permalink}"
+              assert product.get("url", "").startswith("https://alshayebemad.gumroad.com/l/")
+              assert product.get("cover_url")
+              page = Path("landing") / product["landing_slug"] / "index.html"
+              assert page.is_file(), f"Landing page missing: {page}"
+              html = page.read_text(encoding="utf-8")
+              assert product["name"] in html
+              assert product["url"] in html
+              assert product["cover_url"] in html
+              assert f'{product["price_usd"]:.2f}' in html
+          print(
+              "PASS: public discovery -> no-OAuth import -> catalogue -> landing page | "
+              f"public={report['public_products_discovered']} | "
+              f"new={report['new_products_discovered']} | imported={len(report['new_products_imported'])}"
+          )
+          PY
+      - name: Commit changes only to isolated test branch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog-data.json landing/ public-gumroad-discovery-report.json
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Discover and import newly published public Gumroad products"
+            git push origin HEAD:test/public-gumroad-import-no-oauth
+          fi
