@@ -131,22 +131,29 @@ def fetch_public_page(url):
             browser.close()
             raise ValueError("The product URL redirected outside the approved Gumroad storefront")
         rendered_text = page.locator("main").inner_text(timeout=15000)
+        article_h2 = page.locator("main article h2").all_text_contents()
+        article_h4 = page.locator("main article h4").all_text_contents()
         body = page.content()
         browser.close()
     if response is not None and response.status >= 400:
         raise ValueError(f"Public product page returned HTTP {response.status}")
     parser = ProductPageParser()
     parser.feed(body)
-    return parser, final_url, rendered_text
+    return parser, final_url, rendered_text, article_h2, article_h4
 
 def detail_between(text, start, end):
     pattern = rf"{re.escape(start)}\s*:?\s*(.*?)(?={re.escape(end)}\s*:?\s*|$)"
     match = re.search(pattern, text, flags=re.I | re.S)
     return clean(match.group(1)) if match else ""
 
-def extract_full_description(parser, rendered_text):
+def extract_full_description(parser, rendered_text, article_h2=None):
     if rendered_text:
         text = rendered_text
+        if "This bundle contains" in text and article_h2:
+            description_heading = next((heading for heading in reversed(article_h2) if heading.strip()), "")
+            if description_heading and description_heading in text:
+                text = text.split(description_heading, 1)[1]
+                text = description_heading + "\\n" + text
         if "Add to wishlist" in text:
             text = text.split("Add to wishlist", 1)[1]
         for marker in ("EXPLORE OUR COLLECTION", "More from this creator"):
@@ -177,13 +184,39 @@ def extract_full_description(parser, rendered_text):
         candidates.append(value)
     return "\n\n".join(dict.fromkeys(candidates)).strip()
 
+def normalize_title(value):
+    return re.sub(r"[^a-z0-9]+", " ", clean(value).lower()).strip()
+
+def resolve_bundle_items(item_names, full_description, products):
+    names = list(item_names)
+    if "WHAT'S INCLUDED" in full_description.upper():
+        section = re.split(r"WHAT'S INCLUDED", full_description, flags=re.I, maxsplit=1)[1]
+        section = re.split(r"WHERE IT BELONGS|DIGITAL DOWNLOAD|WHY YOU", section, flags=re.I, maxsplit=1)[0]
+        names.extend(line.strip(" •-–") for line in section.splitlines() if line.strip())
+    resolved = []
+    unresolved = []
+    seen = set()
+    for name in names:
+        candidate = normalize_title(name)
+        if not candidate or candidate in {"qty 1", "0 0 0"} or re.fullmatch(r"\$?\d+(?:\.\d+)?", candidate):
+            continue
+        match = next((p for p in products if candidate in normalize_title(p.get("name", "")) or normalize_title(p.get("name", "")) in candidate), None)
+        if match:
+            permalink = match.get("permalink")
+            if permalink and permalink not in seen:
+                resolved.append(permalink)
+                seen.add(permalink)
+        elif name not in unresolved and len(candidate.split()) >= 2:
+            unresolved.append(clean(name))
+    return resolved, unresolved
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--url", required=True)
     ap.add_argument("--catalog", default="catalog-data.json")
     args = ap.parse_args()
 
-    parser, final_url, rendered_text = fetch_public_page(args.url)
+    parser, final_url, rendered_text, article_h2, article_h4 = fetch_public_page(args.url)
     meta = parser.meta
     schema = schema_product(parser)
 
@@ -201,7 +234,7 @@ def main():
         raw_price = str(schema["offers"].get("price", ""))
         currency = str(schema["offers"].get("priceCurrency", currency)).upper()
 
-    full_description = extract_full_description(parser, rendered_text)
+    is_bundle = "This bundle contains" in rendered_text\n    full_description = extract_full_description(parser, rendered_text, article_h2)
     article_text = clean(rendered_text or " ".join(parser.article_parts))
     product_details = {
         "files_included": "",
@@ -213,7 +246,7 @@ def main():
     }
     includes_match = re.search(r"Includes:\s*(.*?)(?=I want this!|Already bought this\?|Product type|$)", article_text, re.I)
     if includes_match:
-        product_details["files_included"] = clean(includes_match.group(1))
+        product_details["files_included"] = clean(includes_match.group(1))\n    if is_bundle:\n        product_details["bundle_item_count"] = "Bundle collection; individual artworks listed below"
     product_details = {key: value for key, value in product_details.items() if value}
 
     missing = [key for key, value in {
@@ -238,13 +271,12 @@ def main():
         slug = f"{base_slug}-{suffix}"
         suffix += 1
 
-    product = {
-        "name": name,
+    bundle_contents, bundle_item_names = resolve_bundle_items(article_h4, full_description, data["products"]) if is_bundle else ([], [])\n    product = {\n        "name": name,
         "price_usd": float(raw_price),
         "url": final_url,
         "permalink": permalink,
         "published": True,
-        "is_bundle": False,
+        "is_bundle": is_bundle,\n        "bundle_contents": bundle_contents,\n        "bundle_item_names": bundle_item_names,
         "category": category_for(name, full_description),
         "landing_slug": slug,
         "cover_url": image,
