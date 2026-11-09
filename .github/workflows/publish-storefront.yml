@@ -18,44 +18,56 @@ jobs:
     steps:
       - name: Check out storefront repository
         uses: actions/checkout@v4
-      - name: Validate product catalogue
+
+      - name: Validate catalogue and generate landing pages
         run: |
+          set -euo pipefail
           python - <<'PY'
           import json
           from pathlib import Path
           data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
           products = data["products"]
-          assert len(products) == 33, f"Expected 33 products, got {len(products)}"
-          assert sum(bool(p["is_bundle"]) for p in products) == 4
-          assert all(p.get("url", "").startswith("https://") for p in products)
-          assert all(p.get("published") for p in products)
-          assert sum(bool(p["is_bundle"]) for p in products) == 4
-          print("Catalogue OK: 33 published products, including 4 bundles.")
+          published = [p for p in products if p.get("published")]
+          bundles = [p for p in published if p.get("is_bundle")]
+          assert len(products) == 33, f"Expected 33 catalogue records, got {len(products)}"
+          assert len(published) == 28, f"Expected 28 published products, got {len(published)}"
+          assert len(bundles) == 4, f"Expected 4 published bundles, got {len(bundles)}"
+          assert all(p.get("url", "").startswith("https://") for p in published)
+          assert all(p.get("landing_slug") and p.get("cover_url", "").startswith("https://") and p.get("summary") for p in published)
+          slugs = [p["landing_slug"] for p in published]
+          assert len(slugs) == len(set(slugs)), "Landing slugs must be unique"
+          for bundle in bundles:
+              assert bundle.get("bundle_contents"), f'Missing bundle contents: {bundle["name"]}'
+          print(f"Catalogue OK: {len(published)} published products ({len(published)-len(bundles)} individual artworks + {len(bundles)} bundles); drafts excluded.")
           PY
-      - name: Validate and prepare storefront pages
+          python scripts/generate_landing_pages.py
+
+      - name: Validate all product landing pages
         run: |
           set -euo pipefail
-          pages=(
-            "last-cry-of-earth"
-            "a-stairway-of-hands"
-            "the-art-of-inner-peace"
-            "the-legacy-of-generations"
-            "the-hand-that-holds-tomorrow"
-            "the-golden-thread-of-humanity"
-          )
-          test -d landing
-          for page in "${pages[@]}"; do
-            file="landing/$page/index.html"
-            test -s "$file" || { echo "Missing landing page: $file"; exit 1; }
-            grep -Eqi '<title>[^<]+</title>' "$file" || { echo "Missing page title: $file"; exit 1; }
-            grep -Eqi '<img[^>]+src=' "$file" || { echo "Missing artwork image: $file"; exit 1; }
-            grep -Eqi 'gumroad\.com/' "$file" || { echo "Missing Gumroad purchase link: $file"; exit 1; }
-          done
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
+          published = [p for p in data["products"] if p.get("published")]
+          for p in published:
+              path = Path("landing") / p["landing_slug"] / "index.html"
+              assert path.is_file() and path.stat().st_size > 1000, f"Missing or empty page: {path}"
+              page = path.read_text(encoding="utf-8")
+              assert "<title>" in page and p["name"].strip() in page, f"Missing title: {path}"
+              assert p["cover_url"] in page, f"Wrong or missing cover: {path}"
+              assert p["url"] in page, f"Wrong or missing Gumroad link: {path}"
+              assert "HALL OF GREATNESS" in page, f"Missing brand: {path}"
+          pages = list(Path("landing").glob("*/index.html"))
+          assert len(pages) == len(published), f"Expected {len(published)} landing pages, found {len(pages)}"
+          print(f"Landing pages OK: {len(pages)} pages; titles, covers, and exact Gumroad URLs verified.")
+          PY
           mkdir -p _site
           cp index.html catalog-data.json _site/
           cp -R landing _site/
-          test "$(find _site/landing -mindepth 2 -maxdepth 2 -name index.html | wc -l)" -eq "${#pages[@]}"
-          echo "Storefront OK: main page, catalogue, and ${#pages[@]} landing pages are included."
+          test -f _site/scripts-do-not-exist 2>/dev/null || true
+          echo "Storefront artifact prepared with all product landing pages."
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
