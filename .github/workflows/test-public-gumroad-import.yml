@@ -47,11 +47,12 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
+          import html
           data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
           product = next(p for p in data["products"] if p["permalink"] == "jvffaq")
           page = Path("landing") / product["landing_slug"] / "index.html"
           assert page.is_file(), f"Landing page was not generated: {page}"
-          text = page.read_text(encoding="utf-8")
+          text = html.unescape(page.read_text(encoding="utf-8"))
           assert product["name"] in text
           assert product["url"] in text
           assert product["cover_url"] in text
