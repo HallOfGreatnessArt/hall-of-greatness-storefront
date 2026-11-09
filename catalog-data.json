@@ -1,8 +1,8 @@
 {
   "source": "Connected Gumroad creator account",
   "account": "Emad Alshayeb",
-  "verified_at": "2026-11-08",
-  "product_count": 32,
+  "verified_at": "2026-11-09",
+  "product_count": 33,
   "products": [
     {
       "name": "GLOBAL ART & IMAGINATION",
@@ -288,6 +288,15 @@
       "price_usd": 7,
       "url": "https://alshayebemad.gumroad.com/l/TheCopticSoulofEgypt",
       "permalink": "csyqhm",
+      "published": true,
+      "is_bundle": false,
+      "category": "Heritage"
+    },
+    {
+      "name": "THE NILE'S ETERNAL GRACE",
+      "price_usd": 5,
+      "url": "https://alshayebemad.gumroad.com/l/THENILESETERNALGRACE",
+      "permalink": "jvffaq",
       "published": true,
       "is_bundle": false,
       "category": "Heritage"
