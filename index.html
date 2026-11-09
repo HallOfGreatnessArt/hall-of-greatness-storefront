@@ -17,16 +17,7 @@
 <section class="section" id="artist"><div class="about"><div class="eyebrow">Behind the gallery</div><h2 style="font:32px Georgia;font-weight:400">About the Artist</h2><p>HALL OF GREATNESS brings together an artistic practice rooted in sculpture, experimentation, and digital transformation. Each work offers more than decoration: an atmosphere, a memory, or a human story.</p><p>From Egyptian and Coptic heritage to universal themes of compassion, dignity, hope, and imagination, the gallery invites you to experience art in your own way.</p></div></section></main>
 <footer><span><span class="gold">HALL OF GREATNESS</span><br>Meaningful art. Lasting presence.</span><span>Digital products · Instant download through Gumroad<br>© 2026 Hall of Greatness</span></footer></div>
 <script>
-const covers={
-"GLOBAL ART & IMAGINATION":"https://public-files.gumroad.com/atz0i1o4ih9cfhfzwtvqz5nh5et5",
-"THE ART OF ELEGANCE & SERENITY":"https://public-files.gumroad.com/h096mba1nxbkb5aapauhf3784wmv",
-"EGYPTIAN & COPTIC HERITAGE":"https://public-files.gumroad.com/umxeci4fcks0a8q342ws38wokal4",
-"THE HUMANITY LEGACY":"https://public-files.gumroad.com/3olk2gpiz1ayvcfoekrdx2o4ua5l",
-"Last Cry of Earth 🌏 ":"https://public-files.gumroad.com/seespc0rnc1yu7plx3m3s5wcl7p7",
-"THE GOLDEN GAZE 👁 ":"https://public-files.gumroad.com/43wo8layi3fi9vxs4fn4yvojgk84",
-"The Queen Of The Nile 👑 ":"https://public-files.gumroad.com/6f44pgz849niaowmdjd50z7w503q",
-"The Coptic Soul of Egypt":"https://public-files.gumroad.com/ekiic516hdrvnnscycxhz226gjeg"
-};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const money=n=>"$"+Number(n).toFixed(2);
 async function init(){
@@ -35,11 +26,11 @@ async function init(){
  const catalog=await response.json();
  const products=catalog.products.filter(p=>p.published);
  const bundles=products.filter(p=>p.is_bundle),works=products.filter(p=>!p.is_bundle);
- document.getElementById("bundles").innerHTML=bundles.map(p=>'<article class="bundle"><img loading="lazy" src="'+(covers[p.name]||"")+'" alt="'+esc(p.name)+' collection cover"><div><h3>'+esc(p.name)+'</h3><strong>'+money(p.price_usd)+'</strong><p><a href="'+p.url+'" target="_blank" rel="noopener">Explore collection ↗</a></p></div></article>').join("");
+ document.getElementById("bundles").innerHTML=bundles.map(p=>'<article class="bundle"><img loading="lazy" src="'+(p.cover_url||"")+'" alt="'+esc(p.name)+' collection cover"><div><h3>'+esc(p.name)+'</h3><strong>'+money(p.price_usd)+'</strong><p><a href="'+p.url+'" target="_blank" rel="noopener">Explore collection ↗</a></p></div></article>').join("");
  const cats=["All",...new Set(works.map(p=>p.category).filter(Boolean))];let chosen="All";const host=document.getElementById("filters");
  host.innerHTML=cats.map(c=>'<button class="'+(c==="All"?"active":"")+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join("");
  function draw(){const q=document.getElementById("search").value.trim().toLowerCase();const shown=works.filter(p=>(chosen==="All"||p.category===chosen)&&p.name.toLowerCase().includes(q));
- document.getElementById("works").innerHTML=shown.length?shown.map(p=>'<article class="work"><div class="art">'+(covers[p.name]?'<img loading="lazy" src="'+covers[p.name]+'" alt="'+esc(p.name)+' artwork">':'<span>'+esc(p.name)+'</span>')+'</div><div class="info"><h3>'+esc(p.name)+'</h3><div class="tag">'+esc(p.category)+' · Printable digital art</div><div class="bottom"><strong>'+money(p.price_usd)+'</strong><a href="'+p.url+'" target="_blank" rel="noopener">View artwork ↗</a></div></div></article>').join(""):'<p>No artworks match your search.</p>';}
+ document.getElementById("works").innerHTML=shown.length?shown.map(p=>'<article class="work"><div class="art">'+(p.cover_url?'<img loading="lazy" src="'+p.cover_url+'" alt="'+esc(p.name)+' artwork">':'<span>'+esc(p.name)+'</span>')+'</div><div class="info"><h3>'+esc(p.name)+'</h3><div class="tag">'+esc(p.category)+' · Printable digital art</div><div class="bottom"><strong>'+money(p.price_usd)+'</strong><a href="'+p.url+'" target="_blank" rel="noopener">View artwork ↗</a></div></div></article>').join(""):'<p>No artworks match your search.</p>';}
  host.addEventListener("click",e=>{const b=e.target.closest("button[data-c]");if(!b)return;chosen=b.dataset.c;host.querySelectorAll("button").forEach(x=>x.classList.toggle("active",x===b));draw();});
  document.getElementById("search").addEventListener("input",draw);draw();
 }
