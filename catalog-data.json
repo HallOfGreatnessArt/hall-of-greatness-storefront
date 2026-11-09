@@ -2,29 +2,8 @@
   "source": "Public Gumroad product page (no OAuth)",
   "account": "Emad Alshayeb",
   "verified_at": "2026-11-09",
-  "product_count": 33,
+  "product_count": 32,
   "products": [
-    {
-      "name": "GLOBAL ART & IMAGINATION",
-      "price_usd": 17.99,
-      "url": "https://alshayebemad.gumroad.com/l/xvccaj",
-      "permalink": "xvccaj",
-      "published": true,
-      "is_bundle": true,
-      "category": "Collection",
-      "landing_slug": "global-art-imagination",
-      "cover_url": "https://public-files.gumroad.com/atz0i1o4ih9cfhfzwtvqz5nh5et5",
-      "summary": "Seven imaginative artworks inspired by the cosmos, future cities, nature, and Mediterranean beauty—an expressive digital collection for curious minds and creative spaces.",
-      "bundle_contents": [
-        "nxkxyq",
-        "etqsav",
-        "aenwi",
-        "gynmhv",
-        "jrsgce",
-        "bgqxwm",
-        "gusqyc"
-      ]
-    },
     {
       "name": "THE ART OF ELEGANCE & SERENITY",
       "price_usd": 19.99,
@@ -426,7 +405,7 @@
     },
     {
       "name": "A BOND BEYOND WORDS The Beauty of Unconditional Love",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/ABONDBEYONDWORDS",
       "permalink": "kjclzu",
       "published": true,
