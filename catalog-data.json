@@ -1,8 +1,8 @@
 {
-  "source": "Test fixture based on main catalogue; selected product intentionally removed before public-page import",
+  "source": "Public Gumroad product page (no OAuth)",
   "account": "Emad Alshayeb",
   "verified_at": "2026-11-09",
-  "product_count": 32,
+  "product_count": 33,
   "products": [
     {
       "name": "GLOBAL ART & IMAGINATION",
@@ -423,6 +423,18 @@
       "landing_slug": "the-coptic-soul-of-egypt",
       "cover_url": "https://public-files.gumroad.com/ekiic516hdrvnnscycxhz226gjeg",
       "summary": "The Coptic Soul of Egypt is a contemporary artistic interpretation inspired by the visual heritage, symbolism, and cultural memory of Coptic Egypt. Created for those who value the meeting of history, identity, and artistic expression, it makes a meaningful statement in homes, offices, galleries, and cultural spaces."
+    },
+    {
+      "name": "THE NILE'S ETERNAL GRACE",
+      "price_usd": 5.0,
+      "url": "https://alshayebemad.gumroad.com/l/THENILESETERNALGRACE",
+      "permalink": "jvffaq",
+      "published": true,
+      "is_bundle": false,
+      "category": "Heritage",
+      "landing_slug": "the-nile-s-eternal-grace",
+      "cover_url": "https://public-files.gumroad.com/zjb3wra5vtosnxvq7qh92oot2k5p",
+      "summary": "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden..."
     }
   ],
   "metadata_updated_at": "2026-11-09"
