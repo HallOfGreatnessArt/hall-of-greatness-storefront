@@ -1,100 +1,237 @@
 #!/usr/bin/env python3
-"""Import one public Gumroad product into a test storefront catalogue without OAuth."""
+"""Import one public Gumroad product, including its public description and buyer details, without OAuth."""
 from __future__ import annotations
 import argparse, html, json, re, sys, urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse
+
 STORE_HOST = "alshayebemad.gumroad.com"
 
-class MetadataParser(HTMLParser):
+class ProductPageParser(HTMLParser):
     def __init__(self):
-        super().__init__(); self.meta={}; self.title_parts=[]; self.in_title=False; self.json_ld=[]; self.in_json=False; self.script=[]
+        super().__init__()
+        self.meta = {}
+        self.title_parts = []
+        self.in_title = False
+        self.json_ld = []
+        self.in_json = False
+        self.script_parts = []
+        self.article_depth = 0
+        self.paragraph_depth = 0
+        self.paragraph_parts = []
+        self.paragraphs = []
+        self.article_parts = []
+
     def handle_starttag(self, tag, attrs):
-        a=dict(attrs)
-        if tag.lower()=="meta":
-            k=a.get("property") or a.get("name") or a.get("itemprop"); v=a.get("content")
-            if k and v: self.meta[k.lower()]=html.unescape(v.strip())
-        elif tag.lower()=="title": self.in_title=True
-        elif tag.lower()=="script" and a.get("type","").lower()=="application/ld+json":
-            self.in_json=True; self.script=[]
+        attrs = dict(attrs)
+        tag = tag.lower()
+        if tag == "meta":
+            key = attrs.get("property") or attrs.get("name") or attrs.get("itemprop")
+            value = attrs.get("content")
+            if key and value:
+                self.meta[key.lower()] = html.unescape(value.strip())
+        elif tag == "title":
+            self.in_title = True
+        elif tag == "script" and attrs.get("type", "").lower() == "application/ld+json":
+            self.in_json = True
+            self.script_parts = []
+        elif tag == "article":
+            self.article_depth += 1
+        elif tag == "p" and self.article_depth:
+            if self.paragraph_depth == 0:
+                self.paragraph_parts = []
+            self.paragraph_depth += 1
+
     def handle_endtag(self, tag):
-        if tag.lower()=="title": self.in_title=False
-        elif tag.lower()=="script" and self.in_json:
-            self.json_ld.append("".join(self.script)); self.in_json=False; self.script=[]
+        tag = tag.lower()
+        if tag == "title":
+            self.in_title = False
+        elif tag == "script" and self.in_json:
+            self.json_ld.append("".join(self.script_parts))
+            self.in_json = False
+            self.script_parts = []
+        elif tag == "p" and self.article_depth and self.paragraph_depth:
+            self.paragraph_depth -= 1
+            if self.paragraph_depth == 0:
+                value = clean(" ".join(self.paragraph_parts))
+                if value:
+                    self.paragraphs.append(value)
+        elif tag == "article" and self.article_depth:
+            self.article_depth -= 1
+
     def handle_data(self, data):
-        if self.in_title: self.title_parts.append(data)
-        if self.in_json: self.script.append(data)
+        if self.in_title:
+            self.title_parts.append(data)
+        if self.in_json:
+            self.script_parts.append(data)
+        if self.article_depth:
+            self.article_parts.append(data)
+        if self.article_depth and self.paragraph_depth:
+            self.paragraph_parts.append(data)
 
-def walk(v):
-    if isinstance(v,dict):
-        yield v
-        for x in v.values(): yield from walk(x)
-    elif isinstance(v,list):
-        for x in v: yield from walk(x)
+def clean(value):
+    return re.sub(r"\s+", " ", html.unescape(str(value or ""))).strip()
 
-def schema_product(p):
-    for raw in p.json_ld:
-        try: parsed=json.loads(raw)
-        except json.JSONDecodeError: continue
+def walk(value):
+    if isinstance(value, dict):
+        yield value
+        for child in value.values():
+            yield from walk(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from walk(child)
+
+def schema_product(parser):
+    for raw in parser.json_ld:
+        try:
+            parsed = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
         for obj in walk(parsed):
-            t=obj.get("@type",[]); t=[t] if isinstance(t,str) else t
-            if any(str(x).lower()=="product" for x in t): return obj
+            kind = obj.get("@type", [])
+            kind = [kind] if isinstance(kind, str) else kind
+            if any(str(item).lower() == "product" for item in kind):
+                return obj
     return {}
 
-def slugify(s): return re.sub(r"[^a-z0-9]+","-",s.lower()).strip("-") or "new-artwork"
+def slugify(value):
+    return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-") or "new-artwork"
 
-def category_for(name, desc):
-    s=f"{name} {desc}".lower()
-    if any(w in s for w in ("egypt","egyptian","nile","coptic","roman","heritage","pharaoh")): return "Heritage"
-    if any(w in s for w in ("humanity","compassion","generation","child","earth","hands","hope","legacy","tree")): return "Humanity"
-    if any(w in s for w in ("elegance","serenity","peace","golden","luxury","celestial","garden","grace")): return "Elegance"
+def category_for(name, description):
+    value = f"{name} {description}".lower()
+    if any(word in value for word in ("egypt", "egyptian", "nile", "coptic", "roman", "heritage", "pharaoh")):
+        return "Heritage"
+    if any(word in value for word in ("humanity", "compassion", "generation", "child", "earth", "hands", "hope", "legacy", "tree", "friendship", "love")):
+        return "Humanity"
+    if any(word in value for word in ("elegance", "serenity", "peace", "golden", "luxury", "celestial", "garden", "grace")):
+        return "Elegance"
     return "Global"
 
-def fetch(url):
-    u=urlparse(url)
-    if u.scheme!="https" or u.hostname!=STORE_HOST or not u.path.startswith("/l/"):
-        raise ValueError("Only public product URLs on the approved Gumroad storefront are allowed")
-    req=urllib.request.Request(url,headers={"User-Agent":"HALL-OF-GREATNESS-public-catalog-import/1.0"})
-    with urllib.request.urlopen(req,timeout=30) as r:
-        final=r.geturl(); body=r.read(8_000_000).decode("utf-8",errors="replace")
-    if urlparse(final).hostname!=STORE_HOST: raise ValueError("Redirect outside approved Gumroad storefront")
-    p=MetadataParser(); p.feed(body)
-    return p,final
+def fetch_public_page(url):
+    parsed = urlparse(url)
+    if parsed.scheme != "https" or parsed.hostname != STORE_HOST or not parsed.path.startswith("/l/"):
+        raise ValueError(f"Only public product URLs on https://{STORE_HOST}/l/... are allowed")
+    request = urllib.request.Request(url, headers={"User-Agent": "HALL-OF-GREATNESS-public-catalog-import/2.0"})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        final_url = response.geturl()
+        body = response.read(10_000_000).decode("utf-8", errors="replace")
+    if urlparse(final_url).hostname != STORE_HOST:
+        raise ValueError("The product URL redirected outside the approved Gumroad storefront")
+    parser = ProductPageParser()
+    parser.feed(body)
+    return parser, final_url
+
+def detail_between(text, start, end):
+    pattern = rf"{re.escape(start)}\s*:?\s*(.*?)(?={re.escape(end)}\s*:?\s*|$)"
+    match = re.search(pattern, text, flags=re.I | re.S)
+    return clean(match.group(1)) if match else ""
+
+def extract_full_description(parser):
+    excluded = (
+        "https://schema.org/", "already bought this?", "i want this!", "add to wishlist",
+        "product type", "delivery", "physical item", "printing", "usage",
+    )
+    candidates = []
+    for paragraph in parser.paragraphs:
+        value = clean(paragraph)
+        if not value or value.lower() in ("usd", "in stock") or value.startswith("$"):
+            continue
+        if any(token in value.lower() for token in excluded):
+            continue
+        if re.match(r"^\d+\s+file\b", value, re.I) or value.lower().startswith("includes:"):
+            continue
+        candidates.append(value)
+    # Keep complete paragraph copy, not the deliberately shortened Open Graph preview.
+    result = "\n\n".join(dict.fromkeys(candidates))
+    return result.strip()
 
 def main():
-    ap=argparse.ArgumentParser()
-    ap.add_argument("--url",required=True); ap.add_argument("--catalog",default="catalog-data.json")
-    args=ap.parse_args()
-    p,final=fetch(args.url); m=p.meta; schema=schema_product(p)
-    name=(m.get("og:title") or m.get("twitter:title") or schema.get("name") or "".join(p.title_parts)).strip()
-    desc=(m.get("og:description") or m.get("description") or schema.get("description") or "").strip()
-    image=m.get("og:image") or m.get("twitter:image")
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--url", required=True)
+    ap.add_argument("--catalog", default="catalog-data.json")
+    args = ap.parse_args()
+
+    parser, final_url = fetch_public_page(args.url)
+    meta = parser.meta
+    schema = schema_product(parser)
+
+    name = clean(meta.get("og:title") or meta.get("twitter:title") or schema.get("name") or "".join(parser.title_parts))
+    summary = clean(meta.get("og:description") or meta.get("description") or schema.get("description"))
+    image = meta.get("og:image") or meta.get("twitter:image")
     if not image:
-        im=schema.get("image"); image=im if isinstance(im,str) else (im[0] if isinstance(im,list) and im else "")
-    match=re.search(r"/l/([^/?#]+)",final)
-    permalink=m.get("product:retailer_item_id") or (match.group(1) if match else "")
-    raw_price=m.get("product:price:amount"); currency=m.get("product:price:currency","USD").upper()
-    if not raw_price and isinstance(schema.get("offers"),dict):
-        raw_price=str(schema["offers"].get("price","")); currency=str(schema["offers"].get("priceCurrency",currency)).upper()
-    missing=[k for k,v in {"name":name,"description":desc,"image":image,"product id":permalink,"price":raw_price}.items() if not v]
-    if missing: raise ValueError("Public page lacks required fields: "+", ".join(missing))
-    if currency!="USD": raise ValueError("Expected USD, got "+currency)
-    data=json.loads(Path(args.catalog).read_text(encoding="utf-8"))
-    existing=next((x for x in data["products"] if x.get("permalink")==permalink),None)
+        schema_image = schema.get("image")
+        image = schema_image if isinstance(schema_image, str) else (schema_image[0] if isinstance(schema_image, list) and schema_image else "")
+    match = re.search(r"/l/([^/?#]+)", final_url)
+    permalink = meta.get("product:retailer_item_id") or (match.group(1) if match else "")
+    raw_price = meta.get("product:price:amount")
+    currency = meta.get("product:price:currency", "USD").upper()
+    if not raw_price and isinstance(schema.get("offers"), dict):
+        raw_price = str(schema["offers"].get("price", ""))
+        currency = str(schema["offers"].get("priceCurrency", currency)).upper()
+
+    full_description = extract_full_description(parser)
+    article_text = clean(" ".join(parser.article_parts))
+    product_details = {
+        "files_included": "",
+        "product_type": detail_between(article_text, "Product type", "Delivery"),
+        "delivery": detail_between(article_text, "Delivery", "Physical item"),
+        "physical_item": detail_between(article_text, "Physical item", "Printing"),
+        "printing": detail_between(article_text, "Printing", "Usage"),
+        "usage": detail_between(article_text, "Usage", "Add to wishlist"),
+    }
+    includes_match = re.search(r"Includes:\s*(.*?)(?=I want this!|Already bought this\?|Product type|$)", article_text, re.I)
+    if includes_match:
+        product_details["files_included"] = clean(includes_match.group(1))
+    product_details = {key: value for key, value in product_details.items() if value}
+
+    missing = [key for key, value in {
+        "product name": name, "short summary": summary, "cover image": image,
+        "product identifier": permalink, "price": raw_price, "full description": full_description,
+    }.items() if not value]
+    if missing:
+        raise ValueError("Public page did not expose required fields: " + ", ".join(missing))
+    if currency != "USD":
+        raise ValueError(f"Expected USD product price, found {currency}")
+
+    data = json.loads(Path(args.catalog).read_text(encoding="utf-8"))
+    existing = next((product for product in data["products"] if product.get("permalink") == permalink), None)
     if existing:
-        print(json.dumps({"status":"already_present","product":existing},ensure_ascii=False,indent=2)); return
-    slug=slugify(name); used={x.get("landing_slug") for x in data["products"]}; base=slug; n=2
-    while slug in used: slug=f"{base}-{n}"; n+=1
-    product={"name":name,"price_usd":float(raw_price),"url":final,"permalink":permalink,"published":True,
-             "is_bundle":False,"category":category_for(name,desc),"landing_slug":slug,"cover_url":image,"summary":desc[:420]}
-    data["products"].append(product); data["product_count"]=len(data["products"])
-    data["source"]="Public Gumroad product page (no OAuth)"
-    Path(args.catalog).write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(json.dumps({"status":"imported","product":product},ensure_ascii=False,indent=2))
+        print(json.dumps({"status": "already_present", "product": existing}, ensure_ascii=False, indent=2))
+        return
+
+    slug = slugify(name)
+    used_slugs = {product.get("landing_slug") for product in data["products"]}
+    base_slug, suffix = slug, 2
+    while slug in used_slugs:
+        slug = f"{base_slug}-{suffix}"
+        suffix += 1
+
+    product = {
+        "name": name,
+        "price_usd": float(raw_price),
+        "url": final_url,
+        "permalink": permalink,
+        "published": True,
+        "is_bundle": False,
+        "category": category_for(name, full_description),
+        "landing_slug": slug,
+        "cover_url": image,
+        "summary": summary[:420],
+        "full_description": full_description,
+        "product_details": product_details,
+        "description_source": "Public Gumroad product page; no OAuth",
+    }
+    data["products"].append(product)
+    data["product_count"] = len(data["products"])
+    data["source"] = "Public Gumroad product page (no OAuth)"
+    Path(args.catalog).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"status": "imported", "product": product}, ensure_ascii=False, indent=2))
     print("PUBLIC_GUMROAD_IMPORT_OK")
 
-if __name__=="__main__":
-    try: main()
-    except Exception as e:
-        print("PUBLIC_GUMROAD_IMPORT_FAILED: "+str(e),file=sys.stderr); raise
+if __name__ == "__main__":
+    try:
+        main()
+    except Exception as error:
+        print(f"PUBLIC_GUMROAD_IMPORT_FAILED: {error}", file=sys.stderr)
+        raise
