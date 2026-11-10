@@ -45,7 +45,7 @@ def main() -> None:
                 item["http_status"] = response.status if response else None
                 item["final_url"] = page.url
                 item["page_title"] = (page.title() or "")[:240]
-                body = re.sub(r"\\s+", " ", (page.locator("body").inner_text(timeout=10000) or "")).strip()
+                body = re.sub(r"\s+", " ", (page.locator("body").inner_text(timeout=10000) or "")).strip()
                 low = body.lower()
                 title_match = str(product.get("name") or "").strip().lower() in low
                 permalink_match = str(product.get("permalink") or "").lower() in page.url.lower()
