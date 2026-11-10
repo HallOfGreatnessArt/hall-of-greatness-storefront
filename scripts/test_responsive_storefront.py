@@ -34,6 +34,10 @@ def inspect_page(page, path, widths, expected_product=False):
     page.wait_for_timeout(350)
     page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
     page.wait_for_timeout(900)
+    try:
+        page.wait_for_function("Array.from(document.images).every(image => image.complete)", timeout=15000)
+    except Exception:
+        pass
     page.evaluate("window.scrollTo(0, 0)")
     page.wait_for_timeout(150)
 
@@ -60,6 +64,17 @@ def inspect_page(page, path, widths, expected_product=False):
     if expected_product:
         schema = page.locator('script#product-jsonld').count()
         record(schema == 1, f"{path}: expected exactly one Product JSON-LD block")
+        if schema == 1:
+            try:
+                parsed_schema = json.loads(page.locator('script#product-jsonld').inner_text())
+                record(parsed_schema.get("@type") == "Product", f"{path}: invalid Product structured data")
+            except (ValueError, TypeError):
+                record(False, f"{path}: Product structured data is not valid JSON")
+        record(bool(page.locator('meta[property="og:url"]').get_attribute("content")),
+               f"{path}: missing Open Graph canonical URL")
+        for name in ("twitter:card", "twitter:title", "twitter:description", "twitter:image"):
+            record(page.locator(f'meta[name="{name}"]').count() == 1,
+                   f"{path}: expected exactly one {name} metadata tag")
 
     for width in widths:
         page.set_viewport_size({"width": width, "height": 900 if width >= 768 else 844})
@@ -90,9 +105,22 @@ def main():
             home_cards = page.locator("#works .work").count()
             record(home_cards >= len([x for x in PUBLISHED if not x.get("is_bundle")]),
                    f"Homepage gallery did not render the expected artwork cards ({home_cards})")
+            first_artwork = next(x for x in PUBLISHED if not x.get("is_bundle"))
+            search = page.locator("#search")
+            search.fill(first_artwork["name"])
+            record(page.locator("#works .work").count() >= 1, "Artwork title search did not return its matching item")
+            search.fill("no-such-artwork-query")
+            record(page.locator("#works .work").count() == 0, "Empty search results did not clear the gallery")
+            search.fill("")
+            category = first_artwork.get("category")
+            if category:
+                page.locator("#filters button").filter(has_text=category).first.click()
+                record(page.locator("#works .work").count() >= 1, "Artwork category filter returned no matching items")
             for product in PUBLISHED:
                 path = f"landing/{product['landing_slug']}/index.html"
                 inspect_page(page, path, PRODUCT_WIDTHS, expected_product=True)
+                buy_links = page.locator(f'a[href="{product["url"]}"]').count()
+                record(buy_links >= 1, f"{path}: verified Gumroad purchase link is missing")
             browser.close()
     finally:
         server.shutdown()
