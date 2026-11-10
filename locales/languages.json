@@ -2,325 +2,485 @@
   "provider": "Google Cloud Translation v2",
   "translation_mode": "on-demand during GitHub Actions builds; cached by source hash",
   "languages": [
-  {
-    "code": "ar",
-    "name": "العربية",
-    "rtl": true
-  },
-  {
-    "code": "bg",
-    "name": "Български",
-    "rtl": false
-  },
-  {
-    "code": "bn",
-    "name": "বাংলা",
-    "rtl": false
-  },
-  {
-    "code": "ca",
-    "name": "Català",
-    "rtl": false
-  },
-  {
-    "code": "cs",
-    "name": "Čeština",
-    "rtl": false
-  },
-  {
-    "code": "da",
-    "name": "Dansk",
-    "rtl": false
-  },
-  {
-    "code": "de",
-    "name": "Deutsch",
-    "rtl": false
-  },
-  {
-    "code": "el",
-    "name": "Ελληνικά",
-    "rtl": false
-  },
-  {
-    "code": "en",
-    "name": "English",
-    "rtl": false
-  },
-  {
-    "code": "es",
-    "name": "Español",
-    "rtl": false
-  },
-  {
-    "code": "et",
-    "name": "Eesti",
-    "rtl": false
-  },
-  {
-    "code": "fa",
-    "name": "فارسی",
-    "rtl": true
-  },
-  {
-    "code": "fi",
-    "name": "Suomi",
-    "rtl": false
-  },
-  {
-    "code": "fr",
-    "name": "Français",
-    "rtl": false
-  },
-  {
-    "code": "gu",
-    "name": "ગુજરાતી",
-    "rtl": false
-  },
-  {
-    "code": "he",
-    "name": "עברית",
-    "rtl": true
-  },
-  {
-    "code": "hi",
-    "name": "हिन्दी",
-    "rtl": false
-  },
-  {
-    "code": "hr",
-    "name": "Hrvatski",
-    "rtl": false
-  },
-  {
-    "code": "hu",
-    "name": "Magyar",
-    "rtl": false
-  },
-  {
-    "code": "id",
-    "name": "Bahasa Indonesia",
-    "rtl": false
-  },
-  {
-    "code": "is",
-    "name": "Íslenska",
-    "rtl": false
-  },
-  {
-    "code": "it",
-    "name": "Italiano",
-    "rtl": false
-  },
-  {
-    "code": "ja",
-    "name": "日本語",
-    "rtl": false
-  },
-  {
-    "code": "jv",
-    "name": "Basa Jawa",
-    "rtl": false
-  },
-  {
-    "code": "ka",
-    "name": "ქართული",
-    "rtl": false
-  },
-  {
-    "code": "kk",
-    "name": "Қазақша",
-    "rtl": false
-  },
-  {
-    "code": "km",
-    "name": "ខ្មែរ",
-    "rtl": false
-  },
-  {
-    "code": "kn",
-    "name": "ಕನ್ನಡ",
-    "rtl": false
-  },
-  {
-    "code": "ko",
-    "name": "한국어",
-    "rtl": false
-  },
-  {
-    "code": "lo",
-    "name": "ລາວ",
-    "rtl": false
-  },
-  {
-    "code": "lt",
-    "name": "Lietuvių",
-    "rtl": false
-  },
-  {
-    "code": "lv",
-    "name": "Latviešu",
-    "rtl": false
-  },
-  {
-    "code": "ml",
-    "name": "മലയാളം",
-    "rtl": false
-  },
-  {
-    "code": "mr",
-    "name": "मराठी",
-    "rtl": false
-  },
-  {
-    "code": "ms",
-    "name": "Bahasa Melayu",
-    "rtl": false
-  },
-  {
-    "code": "my",
-    "name": "မြန်မာ",
-    "rtl": false
-  },
-  {
-    "code": "ne",
-    "name": "नेपाली",
-    "rtl": false
-  },
-  {
-    "code": "nl",
-    "name": "Nederlands",
-    "rtl": false
-  },
-  {
-    "code": "no",
-    "name": "Norsk",
-    "rtl": false
-  },
-  {
-    "code": "pa",
-    "name": "ਪੰਜਾਬੀ",
-    "rtl": false
-  },
-  {
-    "code": "pl",
-    "name": "Polski",
-    "rtl": false
-  },
-  {
-    "code": "pt",
-    "name": "Português",
-    "rtl": false
-  },
-  {
-    "code": "ro",
-    "name": "Română",
-    "rtl": false
-  },
-  {
-    "code": "ru",
-    "name": "Русский",
-    "rtl": false
-  },
-  {
-    "code": "si",
-    "name": "සිංහල",
-    "rtl": false
-  },
-  {
-    "code": "sk",
-    "name": "Slovenčina",
-    "rtl": false
-  },
-  {
-    "code": "sl",
-    "name": "Slovenščina",
-    "rtl": false
-  },
-  {
-    "code": "sq",
-    "name": "Shqip",
-    "rtl": false
-  },
-  {
-    "code": "sr",
-    "name": "Српски",
-    "rtl": false
-  },
-  {
-    "code": "su",
-    "name": "Basa Sunda",
-    "rtl": false
-  },
-  {
-    "code": "sv",
-    "name": "Svenska",
-    "rtl": false
-  },
-  {
-    "code": "sw",
-    "name": "Kiswahili",
-    "rtl": false
-  },
-  {
-    "code": "ta",
-    "name": "தமிழ்",
-    "rtl": false
-  },
-  {
-    "code": "te",
-    "name": "తెలుగు",
-    "rtl": false
-  },
-  {
-    "code": "th",
-    "name": "ไทย",
-    "rtl": false
-  },
-  {
-    "code": "tl",
-    "name": "Filipino",
-    "rtl": false
-  },
-  {
-    "code": "tr",
-    "name": "Türkçe",
-    "rtl": false
-  },
-  {
-    "code": "uk",
-    "name": "Українська",
-    "rtl": false
-  },
-  {
-    "code": "ur",
-    "name": "اردو",
-    "rtl": true
-  },
-  {
-    "code": "uz",
-    "name": "O‘zbek",
-    "rtl": false
-  },
-  {
-    "code": "vi",
-    "name": "Tiếng Việt",
-    "rtl": false
-  },
-  {
-    "code": "zh-CN",
-    "name": "简体中文",
-    "rtl": false
-  },
-  {
-    "code": "zh-TW",
-    "name": "繁體中文",
-    "rtl": false
-  },
-  {
-    "code": "zu",
-    "name": "isiZulu",
-    "rtl": false
-  }
-]
+    {
+      "code": "en",
+      "name": "English",
+      "rtl": false
+    },
+    {
+      "code": "af",
+      "name": "Afrikaans",
+      "rtl": false
+    },
+    {
+      "code": "ig",
+      "name": "Asụsụ Igbo",
+      "rtl": false
+    },
+    {
+      "code": "az",
+      "name": "Azərbaycanca",
+      "rtl": false
+    },
+    {
+      "code": "id",
+      "name": "Bahasa Indonesia",
+      "rtl": false
+    },
+    {
+      "code": "ms",
+      "name": "Bahasa Melayu",
+      "rtl": false
+    },
+    {
+      "code": "jv",
+      "name": "Basa Jawa",
+      "rtl": false
+    },
+    {
+      "code": "su",
+      "name": "Basa Sunda",
+      "rtl": false
+    },
+    {
+      "code": "bs",
+      "name": "Bosanski",
+      "rtl": false
+    },
+    {
+      "code": "ca",
+      "name": "Català",
+      "rtl": false
+    },
+    {
+      "code": "ceb",
+      "name": "Cebuano",
+      "rtl": false
+    },
+    {
+      "code": "cs",
+      "name": "Čeština",
+      "rtl": false
+    },
+    {
+      "code": "ny",
+      "name": "Chichewa",
+      "rtl": false
+    },
+    {
+      "code": "co",
+      "name": "Corsu",
+      "rtl": false
+    },
+    {
+      "code": "cy",
+      "name": "Cymraeg",
+      "rtl": false
+    },
+    {
+      "code": "da",
+      "name": "Dansk",
+      "rtl": false
+    },
+    {
+      "code": "de",
+      "name": "Deutsch",
+      "rtl": false
+    },
+    {
+      "code": "et",
+      "name": "Eesti",
+      "rtl": false
+    },
+    {
+      "code": "es",
+      "name": "Español",
+      "rtl": false
+    },
+    {
+      "code": "eo",
+      "name": "Esperanto",
+      "rtl": false
+    },
+    {
+      "code": "eu",
+      "name": "Euskara",
+      "rtl": false
+    },
+    {
+      "code": "tl",
+      "name": "Filipino",
+      "rtl": false
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "rtl": false
+    },
+    {
+      "code": "fy",
+      "name": "Frysk",
+      "rtl": false
+    },
+    {
+      "code": "ga",
+      "name": "Gaeilge",
+      "rtl": false
+    },
+    {
+      "code": "gd",
+      "name": "Gàidhlig",
+      "rtl": false
+    },
+    {
+      "code": "gl",
+      "name": "Galego",
+      "rtl": false
+    },
+    {
+      "code": "ha",
+      "name": "Hausa",
+      "rtl": false
+    },
+    {
+      "code": "hr",
+      "name": "Hrvatski",
+      "rtl": false
+    },
+    {
+      "code": "xh",
+      "name": "isiXhosa",
+      "rtl": false
+    },
+    {
+      "code": "zu",
+      "name": "isiZulu",
+      "rtl": false
+    },
+    {
+      "code": "is",
+      "name": "Íslenska",
+      "rtl": false
+    },
+    {
+      "code": "it",
+      "name": "Italiano",
+      "rtl": false
+    },
+    {
+      "code": "sw",
+      "name": "Kiswahili",
+      "rtl": false
+    },
+    {
+      "code": "ht",
+      "name": "Kreyòl ayisyen",
+      "rtl": false
+    },
+    {
+      "code": "lv",
+      "name": "Latviešu",
+      "rtl": false
+    },
+    {
+      "code": "lb",
+      "name": "Lëtzebuergesch",
+      "rtl": false
+    },
+    {
+      "code": "lt",
+      "name": "Lietuvių",
+      "rtl": false
+    },
+    {
+      "code": "hu",
+      "name": "Magyar",
+      "rtl": false
+    },
+    {
+      "code": "mg",
+      "name": "Malagasy",
+      "rtl": false
+    },
+    {
+      "code": "mi",
+      "name": "Māori",
+      "rtl": false
+    },
+    {
+      "code": "nl",
+      "name": "Nederlands",
+      "rtl": false
+    },
+    {
+      "code": "no",
+      "name": "Norsk",
+      "rtl": false
+    },
+    {
+      "code": "uz",
+      "name": "O‘zbek",
+      "rtl": false
+    },
+    {
+      "code": "pl",
+      "name": "Polski",
+      "rtl": false
+    },
+    {
+      "code": "pt",
+      "name": "Português",
+      "rtl": false
+    },
+    {
+      "code": "ro",
+      "name": "Română",
+      "rtl": false
+    },
+    {
+      "code": "st",
+      "name": "Sesotho",
+      "rtl": false
+    },
+    {
+      "code": "sq",
+      "name": "Shqip",
+      "rtl": false
+    },
+    {
+      "code": "sk",
+      "name": "Slovenčina",
+      "rtl": false
+    },
+    {
+      "code": "sl",
+      "name": "Slovenščina",
+      "rtl": false
+    },
+    {
+      "code": "so",
+      "name": "Soomaali",
+      "rtl": false
+    },
+    {
+      "code": "fi",
+      "name": "Suomi",
+      "rtl": false
+    },
+    {
+      "code": "sv",
+      "name": "Svenska",
+      "rtl": false
+    },
+    {
+      "code": "vi",
+      "name": "Tiếng Việt",
+      "rtl": false
+    },
+    {
+      "code": "tr",
+      "name": "Türkçe",
+      "rtl": false
+    },
+    {
+      "code": "yo",
+      "name": "Yorùbá",
+      "rtl": false
+    },
+    {
+      "code": "el",
+      "name": "Ελληνικά",
+      "rtl": false
+    },
+    {
+      "code": "bg",
+      "name": "Български",
+      "rtl": false
+    },
+    {
+      "code": "ky",
+      "name": "Кыргызча",
+      "rtl": false
+    },
+    {
+      "code": "kk",
+      "name": "Қазақша",
+      "rtl": false
+    },
+    {
+      "code": "mk",
+      "name": "Македонски",
+      "rtl": false
+    },
+    {
+      "code": "mn",
+      "name": "Монгол",
+      "rtl": false
+    },
+    {
+      "code": "ru",
+      "name": "Русский",
+      "rtl": false
+    },
+    {
+      "code": "sr",
+      "name": "Српски",
+      "rtl": false
+    },
+    {
+      "code": "tt",
+      "name": "Татарча",
+      "rtl": false
+    },
+    {
+      "code": "uk",
+      "name": "Українська",
+      "rtl": false
+    },
+    {
+      "code": "ka",
+      "name": "ქართული",
+      "rtl": false
+    },
+    {
+      "code": "he",
+      "name": "עברית",
+      "rtl": true
+    },
+    {
+      "code": "ug",
+      "name": "ئۇيغۇرچە",
+      "rtl": true
+    },
+    {
+      "code": "ur",
+      "name": "اردو",
+      "rtl": true
+    },
+    {
+      "code": "ar",
+      "name": "العربية",
+      "rtl": true
+    },
+    {
+      "code": "ps",
+      "name": "پښتو",
+      "rtl": true
+    },
+    {
+      "code": "sd",
+      "name": "سنڌي",
+      "rtl": true
+    },
+    {
+      "code": "fa",
+      "name": "فارسی",
+      "rtl": true
+    },
+    {
+      "code": "am",
+      "name": "አማርኛ",
+      "rtl": false
+    },
+    {
+      "code": "ne",
+      "name": "नेपाली",
+      "rtl": false
+    },
+    {
+      "code": "mr",
+      "name": "मराठी",
+      "rtl": false
+    },
+    {
+      "code": "hi",
+      "name": "हिन्दी",
+      "rtl": false
+    },
+    {
+      "code": "bn",
+      "name": "বাংলা",
+      "rtl": false
+    },
+    {
+      "code": "pa",
+      "name": "ਪੰਜਾਬੀ",
+      "rtl": false
+    },
+    {
+      "code": "gu",
+      "name": "ગુજરાતી",
+      "rtl": false
+    },
+    {
+      "code": "or",
+      "name": "ଓଡ଼ିଆ",
+      "rtl": false
+    },
+    {
+      "code": "ta",
+      "name": "தமிழ்",
+      "rtl": false
+    },
+    {
+      "code": "te",
+      "name": "తెలుగు",
+      "rtl": false
+    },
+    {
+      "code": "kn",
+      "name": "ಕನ್ನಡ",
+      "rtl": false
+    },
+    {
+      "code": "ml",
+      "name": "മലയാളം",
+      "rtl": false
+    },
+    {
+      "code": "si",
+      "name": "සිංහල",
+      "rtl": false
+    },
+    {
+      "code": "th",
+      "name": "ไทย",
+      "rtl": false
+    },
+    {
+      "code": "lo",
+      "name": "ລາວ",
+      "rtl": false
+    },
+    {
+      "code": "my",
+      "name": "မြန်မာ",
+      "rtl": false
+    },
+    {
+      "code": "km",
+      "name": "ខ្មែរ",
+      "rtl": false
+    },
+    {
+      "code": "ko",
+      "name": "한국어",
+      "rtl": false
+    },
+    {
+      "code": "ja",
+      "name": "日本語",
+      "rtl": false
+    },
+    {
+      "code": "zh-CN",
+      "name": "简体中文",
+      "rtl": false
+    },
+    {
+      "code": "zh-TW",
+      "name": "繁體中文",
+      "rtl": false
+    }
+  ]
 }
