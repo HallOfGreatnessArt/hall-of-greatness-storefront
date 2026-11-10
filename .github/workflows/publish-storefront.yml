@@ -67,7 +67,7 @@ jobs:
           from pathlib import Path
           base = "https://hallofgreatnessart.github.io/hall-of-greatness-storefront/"
           data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
-          urls = [base]
+          urls = [base, base + "privacy.html", base + "terms.html", base + "contact.html"]
           for product in data["products"]:
               if product.get("published") and product.get("landing_slug"):
                   urls.append(base + "landing/" + product["landing_slug"].strip("/") + "/")
@@ -118,7 +118,7 @@ jobs:
               assert 'name="twitter:card"' in page, f"Missing social metadata in {p['landing_slug']}"
           assert Path("robots.txt").is_file() and Path("sitemap.xml").is_file()
           assert "Sitemap: " in Path("robots.txt").read_text(encoding="utf-8")
-          assert len(list(Path("sitemap.xml").read_text(encoding="utf-8").split("<loc>"))) - 1 == len(published) + 1
+          assert len(list(Path("sitemap.xml").read_text(encoding="utf-8").split("<loc>"))) - 1 == len(published) + 4
           print("Trust and SEO checks OK: legal/contact pages, social metadata, robots.txt, and sitemap.")
           PY
           mkdir -p _site
