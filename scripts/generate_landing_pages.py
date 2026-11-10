@@ -28,6 +28,23 @@ def money(value):
 def render(product):
     title = product["name"].strip()
     summary = product["summary"].strip()
+    full_description = product.get("full_description", "").strip()
+    description_paragraphs = [part.strip() for part in full_description.split("\n\n") if part.strip()]
+    full_description_html = "".join(f"<p>{esc(part)}</p>" for part in description_paragraphs)
+    product_details = product.get("product_details", {})
+    detail_labels = {
+        "files_included": "Files included",
+        "product_type": "Product type",
+        "delivery": "Delivery",
+        "physical_item": "Physical item",
+        "printing": "Printing",
+        "usage": "Usage and license",
+        "bundle_item_count": "Collection contents",
+    }
+    details_html = "".join(
+        f'<p><strong>{esc(detail_labels.get(key, key.replace("_", " ").title()))}:</strong> {esc(value)}</p>'
+        for key, value in product_details.items() if value
+    )
     cover = product["cover_url"].strip()
     url = product["url"].strip()
     slug = product["landing_slug"].strip()
@@ -114,6 +131,8 @@ header a.back,.btn{{min-height:44px;display:inline-flex;align-items:center;justi
 <a class="btn" href="{esc(url)}" target="_blank" rel="noopener noreferrer">Explore &amp; Get the Artwork ↗</a><p class="note">Secure checkout and digital delivery on Gumroad.</p></div>
 <div class="art"><img src="{esc(cover)}" alt="{esc(title)} digital artwork" loading="eager" fetchpriority="high"></div></section>
 <section class="section"><div class="eyebrow">The meaning behind the artwork</div><h2>More than decoration. A feeling that stays.</h2><p>{esc(summary)}</p><p>Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.</p></section>
+{f"""<section class="section" id="full-description"><div class="eyebrow">Complete artwork story</div><h2>Full product description</h2>{full_description_html}</section>""" if full_description_html else ""}
+{f"""<section class="section" id="product-details"><div class="eyebrow">What is included</div><h2>Product specifications</h2>{details_html}</section>""" if details_html else ""}
 {contents_html}
 <section class="section"><div class="eyebrow">Where it belongs</div><h2>Art that finds its place</h2><p>{esc(USAGE.get(category, USAGE["Global"]))}</p></section>
 <section class="section"><div class="eyebrow">Before you purchase</div><h2>Digital download details</h2><p>{esc(digital_note)}</p></section>
