@@ -12,6 +12,9 @@ on:
       - "scripts/generate_landing_pages.py"
       - "scripts/enhance_landing_pages.py"
       - "scripts/generate_sitemap.py"
+      - "scripts/translate_catalog.py"
+      - "locales/**"
+      - "assets/i18n.js"
   workflow_dispatch:
   schedule:
     - cron: "*/15 * * * *"
@@ -42,6 +45,16 @@ jobs:
         run: |
           set -euo pipefail
           python scripts/discover_public_gumroad_products.py
+
+      - name: Generate and refresh multilingual UI and product translations
+        if: ${{ secrets.GOOGLE_TRANSLATE_API_KEY != '' }}
+        env:
+          GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
+        run: python scripts/translate_catalog.py
+
+      - name: Warn when translation service is not configured
+        if: ${{ secrets.GOOGLE_TRANSLATE_API_KEY == '' }}
+        run: echo "::warning::Add GOOGLE_TRANSLATE_API_KEY as a repository Actions secret to automatically translate new and updated products into all configured languages."
 
       - name: Validate catalogue and generate landing pages
         run: |
