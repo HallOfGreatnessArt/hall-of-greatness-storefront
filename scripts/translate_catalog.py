@@ -77,11 +77,24 @@ for lang in REG:
     target=CODE_MAP.get(code,code)
     path=ROOT/"locales"/(code+".json")
     old=json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    ui_hash=digest(ui)
+    products=old.setdefault("products",{})
+    pending=[]
+    for p in CAT["products"]:
+        if not p.get("published"): continue
+        key=p["permalink"]
+        fields={k:p.get(k) for k in ("summary","full_description","category") if p.get(k)}
+        fields["product_details"]=p.get("product_details") or {}
+        if products.get(key,{}).get("_source_hash")!=digest(fields):
+            pending.append((p,key,fields))
+    needs_ui=old.get("_ui_source_hash")!=ui_hash
+    if not needs_ui and not pending:
+        print(f"Up to date: {code}; no model installation needed.")
+        continue
     translator=get_translator(target)
     if translator is None:
         continue
-    ui_hash=digest(ui)
-    if old.get("_ui_source_hash")!=ui_hash:
+    if needs_ui:
         keys=list(ui)
         raw=[re.sub(r"<[^>]+>","",ui[k]) if "<" in ui[k] else ui[k] for k in keys]
         vals=translate_many(raw,code)
@@ -91,15 +104,8 @@ for lang in REG:
             translated["heroTitle"]="<em>"+translated["heroTitle"]+"</em>"
         old["ui"]=translated
         old["_ui_source_hash"]=ui_hash
-    products=old.setdefault("products",{})
-    for p in CAT["products"]:
-        if not p.get("published"): continue
-        key=p["permalink"]
-        fields={k:p.get(k) for k in ("summary","full_description","category") if p.get(k)}
-        details=p.get("product_details") or {}
-        fields["product_details"]=details
+    for p,key,fields in pending:
         source_hash=digest(fields)
-        if products.get(key,{}).get("_source_hash")==source_hash: continue
         flat=[]; flat_keys=[]
         for k,v in fields.items():
             if k=="product_details":
