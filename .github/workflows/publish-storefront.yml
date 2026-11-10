@@ -65,20 +65,34 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
+          from xml.sax.saxutils import escape
           base = "https://hallofgreatnessart.github.io/hall-of-greatness-storefront/"
           data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
+          published = [p for p in data["products"] if p.get("published") and p.get("landing_slug")]
           urls = [base, base + "privacy.html", base + "terms.html", base + "contact.html"]
-          for product in data["products"]:
-              if product.get("published") and product.get("landing_slug"):
-                  urls.append(base + "landing/" + product["landing_slug"].strip("/") + "/")
           lines = ['<?xml version="1.0" encoding="UTF-8"?>',
-                   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+                   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+                   'xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">']
           for url in urls:
-              lines.append(f'  <url><loc>{url}</loc></url>')
+              lines.append(f'  <url><loc>{escape(url)}</loc></url>')
+          for product in published:
+              page_url = base + "landing/" + product["landing_slug"].strip("/") + "/"
+              image_url = escape(product["cover_url"])
+              image_title = escape(product["name"].strip())
+              image_caption = escape(product.get("summary", "").strip())
+              lines.append("  <url>")
+              lines.append(f"    <loc>{escape(page_url)}</loc>")
+              lines.append("    <image:image>")
+              lines.append(f"      <image:loc>{image_url}</image:loc>")
+              lines.append(f"      <image:title>{image_title}</image:title>")
+              if image_caption:
+                  lines.append(f"      <image:caption>{image_caption}</image:caption>")
+              lines.append("    </image:image>")
+              lines.append("  </url>")
           lines.append('</urlset>')
           Path("sitemap.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
           Path("robots.txt").write_text("User-agent: *\nAllow: /\nSitemap: " + base + "sitemap.xml\n", encoding="utf-8")
-          print(f"SEO files generated: {len(urls)} canonical URLs.")
+          print(f"SEO files generated: {len(urls) + len(published)} URLs, including {len(published)} product image entries.")
           PY
 
       - name: Validate all product landing pages
