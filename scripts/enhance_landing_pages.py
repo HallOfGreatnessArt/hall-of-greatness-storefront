@@ -119,9 +119,27 @@ def room_showcase(page, path):
         return page[:pos] + section + "\n" + page[pos:]
     raise SystemExit(f"Could not find insertion point for artwork display: {path}")
 
+CATALOG = json.loads((ROOT / "catalog-data.json").read_text(encoding="utf-8"))
+PRODUCT_BY_SLUG = {p.get("landing_slug"): p for p in CATALOG.get("products", []) if p.get("published")}
 pages = sorted((ROOT / "landing").glob("*/index.html"))
 for path in pages:
     page = path.read_text(encoding="utf-8")
+    product = PRODUCT_BY_SLUG.get(path.parent.name, {})
+    permalink = str(product.get("permalink", ""))
+    if permalink:
+        page = re.sub(r"<body\\b", f'<body data-product-permalink="{permalink}"', page, count=1, flags=re.I)
+    if 'id="hog-page-language"' not in page:
+        selector = '<label class="language-label" for="hog-page-language">Language</label><select id="hog-page-language" aria-label="Choose language"><option value="auto">🌐 Auto</option></select>'
+        page = page.replace("</header>", selector + "</header>", 1)
+        page = page.replace("</style>", '.language-label{margin-left:auto;color:var(--muted);font-size:11px}#hog-page-language{max-width:190px;min-height:44px;padding:8px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:4px}@media(max-width:760px){#hog-page-language{max-width:100%}}\n</style>', 1)
+    if 'data-hog-summary' not in page:
+        page = page.replace('<p class="desc">', '<p class="desc" data-hog-summary>', 1)
+    if 'data-hog-category' not in page:
+        page = re.sub(r'(<section class="hero"[^>]*>\\s*<div>\\s*<div class="eyebrow")', r'\\1 data-hog-category', page, count=1)
+    page = page.replace('id="full-description"', 'id="full-description" data-hog-full-description')
+    page = page.replace('id="product-details"', 'id="product-details" data-hog-product-details')
+    if 'landing-i18n.js' not in page:
+        page = page.replace("</body>", '<script src="../../assets/landing-i18n.js" defer></script>\\n</body>', 1)
     if "</style>" in page:
         page = re.sub(r'/\* Buyer clarity and print guidance \*/.*?(?=</style>)', '', page, flags=re.S)
         page = page.replace("</style>", STYLE + "\n</style>", 1)
