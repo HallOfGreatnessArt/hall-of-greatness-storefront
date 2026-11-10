@@ -21,12 +21,16 @@ jobs:
       - name: Check out storefront repository
         uses: actions/checkout@v4
 
-      - name: Sync newly published Gumroad products
-        env:
-          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+      - name: Install Playwright for public Gumroad discovery
         run: |
           set -euo pipefail
-          python scripts/sync_gumroad_catalog.py
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+
+      - name: Discover and import newly published public Gumroad products without OAuth
+        run: |
+          set -euo pipefail
+          python scripts/discover_public_gumroad_products.py
 
       - name: Validate catalogue and generate landing pages
         run: |
@@ -118,7 +122,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog-data.json landing/
+          git add catalog-data.json landing/ public-gumroad-discovery-report.json
           if git diff --cached --quiet; then
             echo "No catalogue or landing-page changes to persist."
           else
