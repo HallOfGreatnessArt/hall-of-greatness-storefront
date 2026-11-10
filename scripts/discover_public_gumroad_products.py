@@ -1,13 +1,25 @@
 #!/usr/bin/env python3
-"""Discover newly published products from the public Gumroad profile and import them without OAuth."""
+"""Discover public Gumroad products and import new items without OAuth.
+
+Gumroad's public profile no longer consistently exposes the legacy #gumroad-data
+node. Prefer that structured payload when available; otherwise fall back to public
+product links rendered on the profile and explicitly supplied one-time seed URLs.
+"""
 from __future__ import annotations
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
+from urllib.parse import urljoin, urlparse
 from playwright.sync_api import sync_playwright
 
 PROFILE_URL = "https://alshayebemad.gumroad.com/"
+STORE_HOST = "alshayebemad.gumroad.com"
+# One-time bootstrap for the newly published product supplied by the store owner.
+SEED_PRODUCT_URLS = [
+    "https://alshayebemad.gumroad.com/l/THECLOCKMAKERSDREAM",
+]
 CATALOG_PATH = Path("catalog-data.json")
 REPORT_PATH = Path("public-gumroad-discovery-report.json")
 
@@ -28,54 +40,66 @@ def find_catalog_payload(value):
                 return found
     return None
 
+def permalink_from_url(url):
+    parsed = urlparse(url)
+    if parsed.scheme != "https" or parsed.hostname != STORE_HOST:
+        return None
+    match = re.fullmatch(r"/l/([^/]+)/?", parsed.path)
+    return match.group(1) if match else None
+
 def discover_public_products():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
         response = page.goto(PROFILE_URL, wait_until="domcontentloaded", timeout=60000)
-        page.locator("#gumroad-data").wait_for(state="attached", timeout=30000)
-        raw = page.locator("#gumroad-data").text_content()
+        if response is not None and response.status >= 400:
+            browser.close()
+            raise RuntimeError(f"Public Gumroad profile returned HTTP {response.status}")
+        # Give the public profile a short opportunity to render its product cards.
+        try:
+            page.locator("a[href*='/l/']").first.wait_for(state="attached", timeout=15000)
+        except Exception:
+            pass
+        raw = page.locator("#gumroad-data").text_content() if page.locator("#gumroad-data").count() else None
+        links = page.locator("a[href*='/l/']").evaluate_all(
+            "(els) => els.map(a => a.href).filter(Boolean)"
+        )
         browser.close()
-    if response is not None and response.status >= 400:
-        raise RuntimeError(f"Public Gumroad profile returned HTTP {response.status}")
-    payload = find_catalog_payload(json.loads(raw or "{}"))
-    if not payload:
-        raise RuntimeError("Could not find the documented #gumroad-data catalogue payload")
-    products = list(payload["products"])
-    total = int(payload.get("products_total", payload.get("productsTotal", len(products))))
-    offset = len(products)
-    # Gumroad profile pages expose the newest 100 products initially. Page safely if the
-    # public profile reports more; do not silently mistake a partial list for a full scan.
-    while offset < total:
-        batch = page_more_products(offset)
-        if not batch:
-            raise RuntimeError(f"Public profile pagination stopped at {offset} of {total} products")
-        products.extend(batch)
-        offset += len(batch)
-    if len(products) < total:
-        raise RuntimeError(f"Incomplete public catalogue: found {len(products)} of {total}")
+
+    products = []
+    total = 0
+    if raw:
+        try:
+            payload = find_catalog_payload(json.loads(raw or "{}"))
+        except json.JSONDecodeError:
+            payload = None
+        if payload:
+            products = list(payload["products"])
+            total = int(payload.get("products_total", payload.get("productsTotal", len(products))))
+    # Fallback for Gumroad's current public profile rendering, which exposes product links
+    # but may omit the old #gumroad-data catalogue element.
+    if not products:
+        seen_urls = set()
+        for url in links:
+            permalink = permalink_from_url(url)
+            canonical = f"https://{STORE_HOST}/l/{permalink}" if permalink else None
+            if canonical and canonical not in seen_urls:
+                products.append({"permalink": permalink, "url": canonical})
+                seen_urls.add(canonical)
+        total = len(products)
+
+    for url in SEED_PRODUCT_URLS:
+        permalink = permalink_from_url(url)
+        if not permalink:
+            raise RuntimeError(f"Refusing invalid seeded product URL: {url}")
+        if not any(p.get("permalink") == permalink for p in products):
+            products.append({"permalink": permalink, "url": url})
     unique = {}
     for product in products:
         permalink = product.get("permalink")
         if permalink:
             unique[permalink] = product
     return list(unique.values()), total
-
-def page_more_products(offset):
-    # A separate browser session uses Gumroad's documented public-profile pagination bridge.
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-        page.goto(PROFILE_URL, wait_until="domcontentloaded", timeout=60000)
-        page.locator("#gumroad-data").wait_for(state="attached", timeout=30000)
-        result = page.evaluate("""async (offset) => {
-          if (!window.gumroadProducts?.request) throw new Error("Gumroad public pagination bridge unavailable");
-          const result = await window.gumroadProducts.request({offset, limit: 100});
-          if (!result?.success) throw new Error("Gumroad public pagination request failed");
-          return result.products || [];
-        }""", offset)
-        browser.close()
-        return result
 
 def main():
     catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
@@ -85,8 +109,8 @@ def main():
     imported = []
     for item in new_products:
         permalink = item["permalink"]
-        url = item.get("url") or f"https://alshayebemad.gumroad.com/l/{permalink}"
-        if not url.startswith("https://alshayebemad.gumroad.com/l/"):
+        url = item.get("url") or f"https://{STORE_HOST}/l/{permalink}"
+        if not url.startswith(f"https://{STORE_HOST}/l/"):
             raise RuntimeError(f"Refusing non-storefront product URL for {permalink}: {url}")
         print(f"DISCOVERED_NEW_PUBLIC_PRODUCT: {permalink} | {item.get('name', '')}", flush=True)
         subprocess.run(
