@@ -93,7 +93,7 @@ jobs:
               # without requiring one exact decimal presentation.
               amount = f'{float(product["price_usd"]):g}'
               amount_pattern = re.escape(amount) + r'(?:0*)?(?![0-9])'
-              assert re.search(r'\\$\\s*' + amount_pattern, html), f"Price missing from landing page: {permalink}"
+              assert re.search(r'\$\s*' + amount_pattern, html), f"Price missing from landing page: {permalink}"
               checked += 1
 
           print(
