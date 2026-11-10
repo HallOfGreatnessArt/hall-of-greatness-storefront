@@ -192,6 +192,15 @@ for path in pages:
     product = products_by_slug.get(path.parent.name)
     canonical_match = re.search(r'<link\b[^>]*\brel=["\']canonical["\'][^>]*\bhref=["\']([^"\']+)["\']', page, flags=re.I)
     canonical = html_lib.unescape(canonical_match.group(1)) if canonical_match else ""
+    if not canonical:
+        canonical = "https://hallofgreatnessart.github.io/hall-of-greatness-storefront/landing/" + path.parent.name + "/"
+    canonical_pattern = re.compile(
+        r'<link\b(?=[^>]*\brel=["\']canonical["\'])[^>]*>\s*',
+        flags=re.I,
+    )
+    page = canonical_pattern.sub("", page)
+    canonical_tag = f'<link rel="canonical" href="{html_lib.escape(canonical, quote=True)}">\n'
+    page = page.replace("</head>", canonical_tag + "</head>", 1)
     title_match = re.search(r'<title>(.*?)</title>', page, flags=re.I | re.S)
     page_title = html_lib.unescape(re.sub(r"\s+", " ", title_match.group(1))).strip() if title_match else "HALL OF GREATNESS | Digital Art"
     og_title = get_meta_value(page, "property", "og:title") or page_title
