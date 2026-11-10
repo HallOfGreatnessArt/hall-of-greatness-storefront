@@ -98,8 +98,8 @@ def room_showcase(page, path):
 <section class="room-showcase" id="room-showcase">
   <div class="room-intro">
     <div class="eyebrow">Artwork presentation</div>
-    <h2>See the artwork in a refined frame</h2>
-    <p>The artwork is shown once, with its original proportions preserved and no artificial black bars.</p>
+    <h2>Imagine it in a refined frame</h2>
+    <p>A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.</p>
   </div>
   <div class="artwork-display">
     <div class="artwork-frame"><img class="room-artwork" src="{src}" alt="{alt} shown in a refined frame" loading="lazy"></div>
