@@ -24,9 +24,13 @@ def translate_many(values, target):
     # Google Cloud Translation v2 accepts a q array.
     data=urllib.parse.urlencode([("q",v) for v in vals]+[("target",target),("format","text")]).encode()
     req=urllib.request.Request("https://translation.googleapis.com/language/translate/v2?key="+urllib.parse.quote(API),data=data,headers={"Content-Type":"application/x-www-form-urlencoded"})
-    with urllib.request.urlopen(req,timeout=45) as response:
-        payload=json.loads(response.read().decode("utf-8"))
-    return [x["translatedText"] for x in payload["data"]["translations"]]
+    try:
+        with urllib.request.urlopen(req,timeout=45) as response:
+            payload=json.loads(response.read().decode("utf-8"))
+        return [x["translatedText"] for x in payload["data"]["translations"]]
+    except Exception as exc:
+        print(f"WARNING: translation request failed for {target}: {exc}")
+        return None
 
 def digest(obj):
     return hashlib.sha256(json.dumps(obj,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
@@ -40,6 +44,9 @@ for lang in REG:
     if old.get("_ui_source_hash")!=ui_hash:
         keys=list(ui)
         vals=translate_many([re.sub(r"<[^>]+>","",ui[k]) if "<" in ui[k] else ui[k] for k in keys],code)
+        if vals is None:
+            print(f"Skipping {code}; keeping English fallback and any previously cached translations.")
+            continue
         # Restore the two intentional emphasis tags in the hero headline.
         translated=dict(zip(keys,vals))
         if "<em>" in ui.get("heroTitle",""):
@@ -65,6 +72,9 @@ for lang in REG:
             else:
                 flat_keys.append((k,None)); flat.append(str(v))
         translated=translate_many(flat,code)
+        if translated is None:
+            print(f"Skipping product {key} for {code}; previous cache remains unchanged.")
+            continue
         item={}
         for (k,dk),value in zip(flat_keys,translated):
             if k=="detail": item.setdefault("product_details",{})[dk]=value
