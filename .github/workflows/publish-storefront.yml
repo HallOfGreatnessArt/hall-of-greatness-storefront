@@ -121,6 +121,7 @@ jobs:
           PY
           mkdir -p _site
           cp index.html catalog-data.json robots.txt sitemap.xml privacy.html terms.html contact.html _site/
+          cp -R assets locales _site/
           cp -R landing _site/
           echo "Storefront artifact prepared with all product landing pages."
 
@@ -129,7 +130,7 @@ jobs:
           set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog-data.json landing/ public-gumroad-discovery-report.json
+          git add catalog-data.json landing/ locales/ public-gumroad-discovery-report.json
           if git diff --cached --quiet; then
             echo "No catalogue or landing-page changes to persist."
           else
