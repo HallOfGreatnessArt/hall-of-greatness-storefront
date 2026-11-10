@@ -104,8 +104,28 @@ def discover_public_products():
 def main():
     catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
     known = {p.get("permalink") for p in catalog.get("products", [])}
+    catalog_products = catalog.get("products", [])
     public_products, public_total = discover_public_products()
-    new_products = [p for p in public_products if p.get("permalink") not in known]
+
+    def matching_catalog_product(discovered):
+        permalink = discovered.get("permalink")
+        discovered_path = urlparse(discovered.get("url", "")).path.rstrip("/").lower()
+        return next(
+            (
+                product for product in catalog_products
+                if product.get("permalink") == permalink
+                or urlparse(product.get("url", "")).path.rstrip("/").lower() == discovered_path
+            ),
+            None,
+        )
+
+    # Revisit existing entries only when their full public description is missing.
+    # This repairs older catalogue records once, without re-importing them forever.
+    new_products = []
+    for item in public_products:
+        existing = matching_catalog_product(item)
+        if existing is None or not existing.get("full_description"):
+            new_products.append(item)
     imported = []
     for item in new_products:
         permalink = item["permalink"]
