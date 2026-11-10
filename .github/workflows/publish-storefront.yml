@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - ".github/workflows/publish-storefront.yml"
+      - "index.html"
       - "scripts/discover_public_gumroad_products.py"
       - "scripts/import_public_gumroad_product.py"
       - "scripts/generate_landing_pages.py"
