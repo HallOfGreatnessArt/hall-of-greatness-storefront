@@ -33,11 +33,8 @@ def inspect_page(page, path, widths, expected_product=False):
 
     page.wait_for_timeout(350)
     page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
-    page.wait_for_timeout(900)
-    try:
-        page.wait_for_function("Array.from(document.images).every(image => image.complete)", timeout=15000)
-    except Exception:
-        pass
+    # Give lazy-loaded CDN artwork a short, bounded window to finish after scrolling.
+    page.wait_for_timeout(1800)
     page.evaluate("window.scrollTo(0, 0)")
     page.wait_for_timeout(150)
 
