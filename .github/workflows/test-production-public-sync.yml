@@ -1,0 +1,73 @@
+name: Test production public Gumroad sync without OAuth
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publish-storefront.yml"
+      - ".github/workflows/test-production-public-sync.yml"
+      - "scripts/discover_public_gumroad_products.py"
+      - "scripts/import_public_gumroad_product.py"
+      - "scripts/generate_landing_pages.py"
+      - "scripts/enhance_landing_pages.py"
+
+permissions:
+  contents: read
+
+jobs:
+  test-public-sync-and-storefront-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out proposed production changes
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright for public Gumroad pages
+        run: |
+          set -euo pipefail
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Discover and import public Gumroad products without OAuth
+        run: |
+          set -euo pipefail
+          python scripts/discover_public_gumroad_products.py
+      - name: Generate landing pages
+        run: |
+          set -euo pipefail
+          python scripts/generate_landing_pages.py
+          python scripts/enhance_landing_pages.py
+      - name: Validate discovery, catalogue, and storefront build
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path("public-gumroad-discovery-report.json").read_text(encoding="utf-8"))
+          data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
+          products = data["products"]
+          published = [p for p in products if p.get("published")]
+          assert products and len(products) == len(published), "Catalogue contains drafts or is empty"
+          assert len({p["permalink"] for p in published}) == len(published), "Duplicate product permalinks"
+          assert len({p["landing_slug"] for p in published}) == len(published), "Duplicate landing slugs"
+          assert report["public_products_discovered"] >= report["public_products_total"] or report["public_products_total"] == 0
+          for permalink in report["new_products_imported"]:
+              product = next((p for p in products if p.get("permalink") == permalink), None)
+              assert product and product.get("full_description"), f"Imported product lacks full description: {permalink}"
+          for product in published:
+              page_path = Path("landing") / product["landing_slug"] / "index.html"
+              assert page_path.is_file() and page_path.stat().st_size > 1000, f"Missing landing page: {page_path}"
+              page = page_path.read_text(encoding="utf-8")
+              assert product["url"] in page, f"Gumroad URL missing: {product['name']}"
+              assert product["cover_url"] in page, f"Cover missing: {product['name']}"
+              assert "HALL OF GREATNESS" in page, f"Brand missing: {product['name']}"
+              assert 'id="printing"' in page, f"Print guidance missing: {product['name']}"
+              assert 'id="room-showcase"' in page, f"Room showcase missing: {product['name']}"
+          print(
+              "PASS: no-OAuth public discovery -> import -> catalogue -> landing pages | "
+              f"published={len(published)} | public_discovered={report['public_products_discovered']} | "
+              f"imported_or_repaired={len(report['new_products_imported'])}"
+          )
+          PY
