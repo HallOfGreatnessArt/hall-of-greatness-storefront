@@ -88,7 +88,12 @@ jobs:
               assert normalized_title in normalized_page, f"Product title missing from landing page: {permalink}"
               assert product["url"] in html, f"Gumroad link missing from landing page: {permalink}"
               assert product["cover_url"] in html, f"Cover missing from landing page: {permalink}"
-              assert f'{product["price_usd"]:.2f}' in html, f"Price missing from landing page: {permalink}"
+              # Custom pages may format whole-dollar prices as "$5" while
+              # generated pages use "$5.00"; validate the displayed amount
+              # without requiring one exact decimal presentation.
+              amount = f'{float(product["price_usd"]):g}'
+              amount_pattern = re.escape(amount) + r'(?:0*)?(?![0-9])'
+              assert re.search(r'\\$\\s*' + amount_pattern, html), f"Price missing from landing page: {permalink}"
               checked += 1
 
           print(
