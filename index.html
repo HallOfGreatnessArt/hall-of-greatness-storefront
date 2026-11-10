@@ -298,8 +298,18 @@ section[id]{scroll-margin-top:20px}
  .art-mockup .mock-frame img{max-height:180px}
 }
 
+
+/* International language selector */
+.header-tools{display:flex;align-items:center;gap:8px;margin-left:auto}
+#language-select{min-height:40px;max-width:180px;padding:8px 30px 8px 11px;border:1px solid var(--gold);border-radius:6px;background:#1c1a16;color:var(--ink);font:13px Arial,sans-serif;cursor:pointer}
+#language-select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+[dir="rtl"] body{text-align:right}
+[dir="rtl"] header,[dir="rtl"] footer{direction:rtl}
+[dir="rtl"] .header-tools{margin-left:0;margin-right:auto}
+@media(max-width:760px){.header-tools{margin-left:0}#language-select{max-width:100%;width:100%}}
 </style></head><body><div class="wrap">
-<header><div class="logo">HALL OF <span>GREATNESS</span></div><nav aria-label="Main navigation"><a href="#featured">Featured</a><a href="#collections">Collections</a><a href="#gallery">Gallery</a><a href="#artist">Artist</a></nav></header>
+<header><div class="logo">HALL OF <span>GREATNESS</span></div><div class="header-tools"><label class="sr-only" for="language-select">Choose language</label><select id="language-select" aria-label="Choose language"><option value="auto">🌐 Auto</option><option value="en">English</option><option value="ar">العربية</option><option value="fr">Français</option><option value="hi">हिन्दी</option><option value="bn">বাংলা</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="es">Español</option><option value="de">Deutsch</option><option value="pt">Português</option><option value="ru">Русский</option><option value="ja">日本語</option><option value="it">Italiano</option></select></div><nav aria-label="Main navigation"><a href="#featured">Featured</a><a href="#collections">Collections</a><a href="#gallery">Gallery</a><a href="#artist">Artist</a></nav></header>
 <main><section class="hero"><div class="eyebrow">A curated world of printable art</div><h1>Art that carries<br><em>a story.</em></h1><p>Discover a gallery shaped by imagination, heritage, human connection, and the timeless beauty of art. Meaningful digital works, ready to become part of your space.</p><a class="btn" href="#collections">Explore collections</a><a class="btn" href="#gallery" style="background:transparent;color:var(--gold);border:1px solid var(--gold)">Discover the gallery</a></section>
 <section class="section" id="featured"><div class="head"><div class="eyebrow">The stories visitors return to</div><h2>Featured artworks</h2><p>Six meaningful works. Six different ways to bring art and human feeling into your space.</p></div><div class="featured-grid">
 <article class="featured-card"><div class="art-mockup scene-living" role="img" aria-label="Last Cry of Earth artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/seespc0rnc1yu7plx3m3s5wcl7p7" alt="Last Cry of Earth artwork"></div></div><div class="copy"><h3>Last Cry of Earth</h3><p>A wounded planet, countless hands, and a shared responsibility to protect tomorrow.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/LastCryofEarth" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
@@ -332,4 +342,4 @@ async function init(){
  document.getElementById("search").addEventListener("input",draw);draw();
 }
 init().catch(err=>{document.getElementById("works").textContent="The gallery catalogue is temporarily unavailable. Please refresh the page.";console.error(err);});
-</script></body></html>
+</script><script src="./assets/i18n.js" defer></script></body></html>
