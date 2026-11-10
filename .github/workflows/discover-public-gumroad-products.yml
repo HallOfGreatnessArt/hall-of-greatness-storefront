@@ -1,0 +1,117 @@
+name: Discover and import new public Gumroad products without OAuth
+
+on:
+  push:
+    branches:
+      - test/public-gumroad-import-no-oauth
+    paths:
+      - "scripts/discover_public_gumroad_products.py"
+      - "scripts/import_public_gumroad_product.py"
+      - ".github/workflows/discover-public-gumroad-products.yml"
+  workflow_dispatch:
+  schedule:
+    # GitHub scheduled workflows run from the default branch only.
+    # This schedule becomes active after this workflow is reviewed and merged to main.
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gumroad-test-branch-writer
+  # Revalidate after syncing the latest main branch.
+  cancel-in-progress: false
+
+jobs:
+  discover-import-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out isolated test branch
+        uses: actions/checkout@v4
+        with:
+          ref: test/public-gumroad-import-no-oauth
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install browser extraction dependencies
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Discover newly published public products and import without OAuth
+        run: |
+          set -euo pipefail
+          python scripts/discover_public_gumroad_products.py
+      - name: Generate and enhance landing pages
+        run: |
+          set -euo pipefail
+          python scripts/generate_landing_pages.py
+          python scripts/enhance_landing_pages.py
+      - name: Verify discovery, catalogue, and landing-page results
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          import re
+          import html as html_lib
+          from pathlib import Path
+          from urllib.parse import urlparse
+
+          report = json.loads(Path("public-gumroad-discovery-report.json").read_text(encoding="utf-8"))
+          catalog = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
+          products = catalog["products"]
+
+          assert report["public_products_discovered"] >= report["public_products_total"] or report["public_products_total"] == 0
+
+          checked = 0
+          for permalink in report["new_products_imported"]:
+              # Existing catalogue entries may use Gumroad's short permalink rather
+              # than the public custom URL slug discovered on the profile.
+              matches = [
+                  p for p in products
+                  if p.get("permalink") == permalink
+                  or urlparse(p.get("url", "")).path.rstrip("/").split("/")[-1].lower() == permalink.lower()
+              ]
+              assert matches, f"Product missing from catalogue: {permalink}"
+              product = matches[0]
+              assert product.get("full_description"), f"Full description missing: {permalink}"
+              assert product.get("url", "").startswith("https://alshayebemad.gumroad.com/l/")
+              assert product.get("cover_url"), f"Cover missing: {permalink}"
+              slug = product.get("landing_slug")
+              assert slug, f"Landing slug missing: {permalink}"
+              page = Path("landing") / slug / "index.html"
+              assert page.is_file(), f"Landing page missing: {page}"
+              html = page.read_text(encoding="utf-8")
+              # Existing custom landing pages may omit decorative emoji or use
+              # typography/spacing variants in their visible title.
+              normalized_page = re.sub(r"[^a-z0-9]+", " ", html_lib.unescape(html).lower()).strip()
+              normalized_title = re.sub(r"[^a-z0-9]+", " ", product["name"].lower()).strip()
+              assert normalized_title in normalized_page, f"Product title missing from landing page: {permalink}"
+              assert product["url"] in html, f"Gumroad link missing from landing page: {permalink}"
+              assert product["cover_url"] in html, f"Cover missing from landing page: {permalink}"
+              # Custom pages may format whole-dollar prices as "$5" while
+              # generated pages use "$5.00"; validate the displayed amount
+              # without requiring one exact decimal presentation.
+              amount = f'{float(product["price_usd"]):g}'
+              amount_pattern = re.escape(amount) + r'(?:0*)?(?![0-9])'
+              assert re.search(r'\$\s*' + amount_pattern, html), f"Price missing from landing page: {permalink}"
+              checked += 1
+
+          print(
+              "PASS: public discovery -> no-OAuth import -> catalogue -> landing page | "
+              f"public={report['public_products_discovered']} | "
+              f"checked={checked} | newly_discovered={report['new_products_discovered']}"
+          )
+          PY
+      - name: Commit changes only to isolated test branch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog-data.json landing/ public-gumroad-discovery-report.json
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Discover and import newly published public Gumroad products"
+            git push origin HEAD:test/public-gumroad-import-no-oauth
+          fi
