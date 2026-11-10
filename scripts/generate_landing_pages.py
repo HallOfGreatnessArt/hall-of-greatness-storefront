@@ -29,6 +29,7 @@ def render(product):
     title = product["name"].strip()
     summary = product["summary"].strip()
     full_description = product.get("full_description", "").strip()
+    full_description = re.sub(r"^\s*Share\s*(?:\r?\n)+", "", full_description, flags=re.I)
     description_paragraphs = [part.strip() for part in full_description.split("\n\n") if part.strip()]
     full_description_html = "".join(f"<p>{esc(part)}</p>" for part in description_paragraphs)
     product_details = product.get("product_details", {})
