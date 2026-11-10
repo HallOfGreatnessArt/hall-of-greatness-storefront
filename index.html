@@ -111,16 +111,48 @@ section[id]{scroll-margin-top:20px}
   *,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
 }
 
+
+/* Programmatic room mockups — original artwork files remain unchanged */
+.art-mockup{
+  aspect-ratio:4/3; width:100%; display:flex; align-items:center; justify-content:center;
+  position:relative; overflow:hidden; isolation:isolate;
+  background:
+    linear-gradient(180deg,transparent 0 78%,#5b4630 78.2%,#332719 100%),
+    radial-gradient(ellipse at 50% 45%,#f0e3ca 0%,#d8c7a9 58%,#a88e6c 100%);
+}
+.art-mockup:before{
+  content:"";position:absolute;inset:0 0 22%;z-index:-1;
+  background:linear-gradient(90deg,#ffffff16,transparent 18% 82%,#4b39231c),
+    repeating-linear-gradient(90deg,transparent 0 48px,#7b63421a 49px 50px);
+}
+.art-mockup:after{
+  content:"";position:absolute;left:15%;right:15%;bottom:12%;height:8%;
+  background:#24190f;filter:blur(8px);opacity:.35;border-radius:50%;z-index:-1;
+}
+.art-mockup .mock-frame{
+  width:39%;height:76%;padding:6px;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#fff0c8,#a77b3d 24%,#f1dfb9 48%,#76512d 76%,#e7c98e);
+  box-shadow:0 12px 22px #24190d75,0 1px 3px #fff9 inset;
+  transform:translateY(-2%);
+}
+.art-mockup .mock-frame img{
+  display:block;width:100%;height:100%;max-width:100%;max-height:100%;
+  aspect-ratio:auto;object-fit:contain;background:#17140e;
+  box-shadow:0 0 0 1px #725a38;
+}
+.featured-card .art-mockup,.bundle .art-mockup{border-bottom:1px solid var(--line)}
+@media(max-width:520px){.art-mockup .mock-frame{width:43%;height:72%;padding:4px}}
+
 </style></head><body><div class="wrap">
 <header><div class="logo">HALL OF <span>GREATNESS</span></div><nav aria-label="Main navigation"><a href="#featured">Featured</a><a href="#collections">Collections</a><a href="#gallery">Gallery</a><a href="#artist">Artist</a></nav></header>
 <main><section class="hero"><div class="eyebrow">A curated world of printable art</div><h1>Art that carries<br><em>a story.</em></h1><p>Discover a gallery shaped by imagination, heritage, human connection, and the timeless beauty of art. Meaningful digital works, ready to become part of your space.</p><a class="btn" href="#collections">Explore collections</a><a class="btn" href="#gallery" style="background:transparent;color:var(--gold);border:1px solid var(--gold)">Discover the gallery</a></section>
 <section class="section" id="featured"><div class="head"><div class="eyebrow">The stories visitors return to</div><h2>Featured artworks</h2><p>Six meaningful works. Six different ways to bring art and human feeling into your space.</p></div><div class="featured-grid">
-<article class="featured-card"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/seespc0rnc1yu7plx3m3s5wcl7p7" alt="Last Cry of Earth artwork"><div class="copy"><h3>Last Cry of Earth</h3><p>A wounded planet, countless hands, and a shared responsibility to protect tomorrow.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/LastCryofEarth" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
-<article class="featured-card"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/gcesxw6bzhkcznrymevn61fp0gb5" alt="A Stairway of Hands artwork"><div class="copy"><h3>A Stairway of Hands</h3><p>A child rises toward the light, supported by the compassion of many generations.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/msuzc" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
-<article class="featured-card"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/8zkq0hy4b5newv9q2v3ofmpjwhdx" alt="The Art of Inner Peace artwork"><div class="copy"><h3>The Art of Inner Peace</h3><p>Sculptural elegance and golden light express the quiet strength of inner balance.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/THEARTOFINNERPEACE" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
-<article class="featured-card"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/j9dg5oywnngihhreld0u34mrefpi" alt="The Legacy of Generations artwork"><div class="copy"><h3>The Legacy of Generations</h3><p>A tribute to love, sacrifice, and the world we hold in trust for those who follow.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/THELEGACYOFGENERATIONS" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
-<article class="featured-card"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/ufm0cxg08cs7fhlgl0zazutgh5lk" alt="The Hand That Holds Tomorrow artwork"><div class="copy"><h3>The Hand That Holds Tomorrow</h3><p>A seedling held in human hands becomes a symbol of renewal and shared care.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/gkwadk" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
-<article class="featured-card"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/e62wdy1b966kn6j0pixrp3t83oyv" alt="The Golden Thread of Humanity artwork"><div class="copy"><h3>The Golden Thread of Humanity</h3><p>Two distinct identities, joined by a golden symbol of our shared human dignity.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/THEGOLDENTHREADOFHUMANITY" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
+<article class="featured-card"><div class="art-mockup" role="img" aria-label="Last Cry of Earth artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/seespc0rnc1yu7plx3m3s5wcl7p7" alt="Last Cry of Earth artwork"></div></div><div class="copy"><h3>Last Cry of Earth</h3><p>A wounded planet, countless hands, and a shared responsibility to protect tomorrow.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/LastCryofEarth" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
+<article class="featured-card"><div class="art-mockup" role="img" aria-label="A Stairway of Hands artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/gcesxw6bzhkcznrymevn61fp0gb5" alt="A Stairway of Hands artwork"></div></div><div class="copy"><h3>A Stairway of Hands</h3><p>A child rises toward the light, supported by the compassion of many generations.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/msuzc" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
+<article class="featured-card"><div class="art-mockup" role="img" aria-label="The Art of Inner Peace artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/8zkq0hy4b5newv9q2v3ofmpjwhdx" alt="The Art of Inner Peace artwork"></div></div><div class="copy"><h3>The Art of Inner Peace</h3><p>Sculptural elegance and golden light express the quiet strength of inner balance.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/THEARTOFINNERPEACE" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
+<article class="featured-card"><div class="art-mockup" role="img" aria-label="The Legacy of Generations artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/j9dg5oywnngihhreld0u34mrefpi" alt="The Legacy of Generations artwork"></div></div><div class="copy"><h3>The Legacy of Generations</h3><p>A tribute to love, sacrifice, and the world we hold in trust for those who follow.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/THELEGACYOFGENERATIONS" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
+<article class="featured-card"><div class="art-mockup" role="img" aria-label="The Hand That Holds Tomorrow artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/ufm0cxg08cs7fhlgl0zazutgh5lk" alt="The Hand That Holds Tomorrow artwork"></div></div><div class="copy"><h3>The Hand That Holds Tomorrow</h3><p>A seedling held in human hands becomes a symbol of renewal and shared care.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/gkwadk" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
+<article class="featured-card"><div class="art-mockup" role="img" aria-label="The Golden Thread of Humanity artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/e62wdy1b966kn6j0pixrp3t83oyv" alt="The Golden Thread of Humanity artwork"></div></div><div class="copy"><h3>The Golden Thread of Humanity</h3><p>Two distinct identities, joined by a golden symbol of our shared human dignity.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/THEGOLDENTHREADOFHUMANITY" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
 </div></section>
 <section class="section" id="collections"><div class="head"><div class="eyebrow">Curated collections</div><h2>Discover the collections</h2><p>Curated journeys through art, culture, and emotion. Explore a collection or go straight to its secure checkout.</p></div><div class="bundles" id="bundles"></div></section>
 <section class="section" id="gallery"><div class="head"><div class="eyebrow">The complete gallery</div><h2>Individual artworks</h2><p>Search by artwork title, theme, or category. Preview the story or go directly to the digital download.</p></div><div class="tools"><input id="search" type="search" placeholder="Search titles and themes..." aria-label="Search artwork titles and descriptions"><p id="result-count" class="result-count" aria-live="polite"></p><div class="filters" id="filters" role="group" aria-label="Filter artworks by category"></div></div><div class="grid" id="works" aria-live="polite" aria-relevant="additions text"></div></section>
@@ -135,7 +167,7 @@ async function init(){
  const catalog=await response.json();
  const products=catalog.products.filter(p=>p.published && p.landing_slug && p.url);
  const bundles=products.filter(p=>p.is_bundle),works=products.filter(p=>!p.is_bundle);
- document.getElementById("bundles").innerHTML=bundles.map(p=>'<article class="bundle"><img loading="lazy" decoding="async" src="'+(p.cover_url||"")+'" alt="'+esc(p.name)+' collection cover"><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.summary)+'</p><strong>'+money(p.price_usd)+'</strong><div class="bundle-actions"><a href="./landing/'+encodeURIComponent(p.landing_slug)+'/">Explore collection ↗</a><a class="primary" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">Buy collection ↗</a></div></div></article>').join("");
+ document.getElementById("bundles").innerHTML=bundles.map(p=>'<article class="bundle"><div class="art-mockup" role="img" aria-label="'+esc(p.name)+' collection shown in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="'+(p.cover_url||"")+'" alt="'+esc(p.name)+' collection cover"></div></div><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.summary)+'</p><strong>'+money(p.price_usd)+'</strong><div class="bundle-actions"><a href="./landing/'+encodeURIComponent(p.landing_slug)+'/">Explore collection ↗</a><a class="primary" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">Buy collection ↗</a></div></div></article>').join("");
  const cats=["All",...new Set(works.map(p=>p.category).filter(Boolean))];let chosen="All";const host=document.getElementById("filters");
  host.innerHTML=cats.map(c=>'<button class="'+(c==="All"?"active":"")+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join("");
  function draw(){const q=document.getElementById("search").value.trim().toLowerCase();const shown=works.filter(p=>(chosen==="All"||p.category===chosen)&&[p.name,p.summary,p.category].some(v=>String(v||"").toLowerCase().includes(q)));
