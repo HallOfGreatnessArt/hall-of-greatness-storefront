@@ -201,16 +201,113 @@ section[id]{scroll-margin-top:20px}
   .art-mockup .mock-frame{width:67%;padding:7px}
 }
 
+
+/* REAL INTERIOR-STYLE PRODUCT STAGING — living rooms and executive offices */
+.art-mockup{
+  --wall:#b8a58b;
+  position:relative;isolation:isolate;overflow:hidden;
+  min-height:250px;aspect-ratio:4/3;
+  display:flex;align-items:center;justify-content:center;
+  background:
+    linear-gradient(180deg,transparent 0 73%,#574334 73.2%,#34271f 100%),
+    radial-gradient(ellipse at 50% 8%,#fff5dc 0%,#e8d8bb 38%,#b7a184 100%);
+}
+.art-mockup:before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:
+    linear-gradient(90deg,transparent 0 5%,#5b402522 5.2% 5.7%,transparent 5.9% 94%,#5b402522 94.2% 94.7%,transparent 95%),
+    linear-gradient(180deg,#fff9e4aa 0%,transparent 8% 70%,#1b120d22 70.2% 100%),
+    repeating-linear-gradient(90deg,transparent 0 24%,#6c53331a 24.2% 24.6%,transparent 24.8% 49.5%);
+}
+.art-mockup:after{
+  content:"";position:absolute;z-index:0;pointer-events:none;
+  left:4%;right:4%;bottom:0;height:29%;
+  background:
+    radial-gradient(ellipse at 50% 100%,#b39a79 0 42%,transparent 43%),
+    linear-gradient(180deg,transparent 0 17%,#34251c 18% 24%,#5a4030 25% 100%);
+  opacity:.95;
+}
+/* A warm, elegant living room: architectural wall, soft daylight and a low sofa */
+.art-mockup.scene-living{
+  background:
+    radial-gradient(ellipse at 50% 17%,#fff2d3a8 0%,transparent 40%),
+    linear-gradient(180deg,transparent 0 72%,#4a3428 72.2%,#241a15 100%),
+    linear-gradient(90deg,#9b846b 0%,#d8c5a8 19%,#e9dcc5 50%,#d2bea0 81%,#90775e 100%);
+}
+.art-mockup.scene-living:before{
+  inset:0 0 22%;
+  background:
+    linear-gradient(90deg,transparent 0 7%,#6f52362b 7.2% 7.8%,transparent 8% 92%,#6f52362b 92.2% 92.8%,transparent 93%),
+    linear-gradient(90deg,transparent 0 17%,#fff7e4 17.2% 17.8%,#c1a987 18% 18.6%,transparent 18.8% 81.2%,#c1a987 81.4% 82%,#fff7e4 82.2% 82.8%,transparent 83%),
+    linear-gradient(180deg,#fff7e455,transparent 60%,#4b362522);
+  box-shadow:inset 0 0 55px #46301f33;
+}
+.art-mockup.scene-living:after{
+  left:0;right:0;bottom:0;height:31%;
+  background:
+    radial-gradient(ellipse at 50% 100%,#b59a77 0 39%,transparent 40%),
+    linear-gradient(180deg,transparent 0 7%,#30221b 8% 15%,#745541 16% 31%,#3e2b21 32% 100%);
+  clip-path:polygon(0 18%,18% 12%,28% 17%,34% 0,66% 0,72% 17%,82% 12%,100% 18%,100% 100%,0 100%);
+  opacity:1;
+}
+/* A refined executive office: dark timber, shelving and restrained brass details */
+.art-mockup.scene-office{
+  background:
+    radial-gradient(ellipse at 50% 16%,#f2dca55c 0%,transparent 38%),
+    linear-gradient(180deg,transparent 0 73%,#251a13 73.2%,#120e0b 100%),
+    linear-gradient(90deg,#211a15 0%,#4b3828 18%,#3b2d22 50%,#4b3828 82%,#1d1712 100%);
+}
+.art-mockup.scene-office:before{
+  inset:0 0 24%;
+  background:
+    repeating-linear-gradient(90deg,transparent 0 16%,#c29a5520 16.2% 16.7%,#120d0928 16.9% 17.3%,transparent 17.5% 33%),
+    linear-gradient(180deg,#17110c55,transparent 45%,#08060455),
+    linear-gradient(90deg,#08060455,transparent 25% 75%,#08060455);
+  box-shadow:inset 0 0 65px #0009;
+}
+.art-mockup.scene-office:after{
+  left:0;right:0;bottom:0;height:27%;
+  background:
+    linear-gradient(180deg,#bd9653 0 3%,#533a25 4% 17%,#24180f 18% 100%);
+  clip-path:polygon(0 25%,22% 25%,26% 0,74% 0,78% 25%,100% 25%,100% 100%,0 100%);
+}
+/* The artwork is the hero: clean image area, precise mat and a slim gilt frame */
+.art-mockup .mock-frame{
+  position:relative;z-index:2;width:52%;max-width:300px;height:auto;
+  padding:9px;background:linear-gradient(135deg,#fff1c9,#9c7137 16%,#e8c985 31%,#6f4b24 48%,#f5dfa8 65%,#8c612c 82%,#f8e8c1);
+  border:1px solid #f8e9c9;
+  box-shadow:0 0 0 2px #332216,0 0 0 4px #c4a05d,0 0 0 6px #2c1d12,
+    0 18px 32px #090604aa,0 4px 9px #fff8e3a8 inset;
+  transform:translateY(-5%);
+}
+.art-mockup .mock-frame img{
+  display:block;width:100%;height:auto;max-height:230px;object-fit:contain;
+  background:#17130f;box-shadow:0 0 0 1px #6d512e;
+}
+/* Keep the gallery identity in the site chrome, never add a new watermark layer */
+.art-mockup .watermark,.art-mockup [data-watermark],.art-mockup .brand-watermark{display:none!important}
+.featured-card .art-mockup,.bundle .art-mockup,.work .art-mockup{border-bottom:1px solid #80653d}
+@media(min-width:900px){
+ .art-mockup{min-height:290px}
+ .art-mockup .mock-frame{width:48%;max-width:310px;padding:11px}
+ .art-mockup .mock-frame img{max-height:260px}
+}
+@media(max-width:520px){
+ .art-mockup{min-height:190px}
+ .art-mockup .mock-frame{width:59%;padding:7px}
+ .art-mockup .mock-frame img{max-height:180px}
+}
+
 </style></head><body><div class="wrap">
 <header><div class="logo">HALL OF <span>GREATNESS</span></div><nav aria-label="Main navigation"><a href="#featured">Featured</a><a href="#collections">Collections</a><a href="#gallery">Gallery</a><a href="#artist">Artist</a></nav></header>
 <main><section class="hero"><div class="eyebrow">A curated world of printable art</div><h1>Art that carries<br><em>a story.</em></h1><p>Discover a gallery shaped by imagination, heritage, human connection, and the timeless beauty of art. Meaningful digital works, ready to become part of your space.</p><a class="btn" href="#collections">Explore collections</a><a class="btn" href="#gallery" style="background:transparent;color:var(--gold);border:1px solid var(--gold)">Discover the gallery</a></section>
 <section class="section" id="featured"><div class="head"><div class="eyebrow">The stories visitors return to</div><h2>Featured artworks</h2><p>Six meaningful works. Six different ways to bring art and human feeling into your space.</p></div><div class="featured-grid">
-<article class="featured-card"><div class="art-mockup" role="img" aria-label="Last Cry of Earth artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/seespc0rnc1yu7plx3m3s5wcl7p7" alt="Last Cry of Earth artwork"></div></div><div class="copy"><h3>Last Cry of Earth</h3><p>A wounded planet, countless hands, and a shared responsibility to protect tomorrow.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/LastCryofEarth" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
-<article class="featured-card"><div class="art-mockup" role="img" aria-label="A Stairway of Hands artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/gcesxw6bzhkcznrymevn61fp0gb5" alt="A Stairway of Hands artwork"></div></div><div class="copy"><h3>A Stairway of Hands</h3><p>A child rises toward the light, supported by the compassion of many generations.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/msuzc" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
-<article class="featured-card"><div class="art-mockup" role="img" aria-label="The Art of Inner Peace artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/8zkq0hy4b5newv9q2v3ofmpjwhdx" alt="The Art of Inner Peace artwork"></div></div><div class="copy"><h3>The Art of Inner Peace</h3><p>Sculptural elegance and golden light express the quiet strength of inner balance.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/THEARTOFINNERPEACE" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
-<article class="featured-card"><div class="art-mockup" role="img" aria-label="The Legacy of Generations artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/j9dg5oywnngihhreld0u34mrefpi" alt="The Legacy of Generations artwork"></div></div><div class="copy"><h3>The Legacy of Generations</h3><p>A tribute to love, sacrifice, and the world we hold in trust for those who follow.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/THELEGACYOFGENERATIONS" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
-<article class="featured-card"><div class="art-mockup" role="img" aria-label="The Hand That Holds Tomorrow artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/ufm0cxg08cs7fhlgl0zazutgh5lk" alt="The Hand That Holds Tomorrow artwork"></div></div><div class="copy"><h3>The Hand That Holds Tomorrow</h3><p>A seedling held in human hands becomes a symbol of renewal and shared care.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/gkwadk" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
-<article class="featured-card"><div class="art-mockup" role="img" aria-label="The Golden Thread of Humanity artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/e62wdy1b966kn6j0pixrp3t83oyv" alt="The Golden Thread of Humanity artwork"></div></div><div class="copy"><h3>The Golden Thread of Humanity</h3><p>Two distinct identities, joined by a golden symbol of our shared human dignity.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/THEGOLDENTHREADOFHUMANITY" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
+<article class="featured-card"><div class="art-mockup scene-living" role="img" aria-label="Last Cry of Earth artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/seespc0rnc1yu7plx3m3s5wcl7p7" alt="Last Cry of Earth artwork"></div></div><div class="copy"><h3>Last Cry of Earth</h3><p>A wounded planet, countless hands, and a shared responsibility to protect tomorrow.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/LastCryofEarth" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
+<article class="featured-card"><div class="art-mockup scene-living" role="img" aria-label="A Stairway of Hands artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/gcesxw6bzhkcznrymevn61fp0gb5" alt="A Stairway of Hands artwork"></div></div><div class="copy"><h3>A Stairway of Hands</h3><p>A child rises toward the light, supported by the compassion of many generations.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/msuzc" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
+<article class="featured-card"><div class="art-mockup scene-living" role="img" aria-label="The Art of Inner Peace artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/8zkq0hy4b5newv9q2v3ofmpjwhdx" alt="The Art of Inner Peace artwork"></div></div><div class="copy"><h3>The Art of Inner Peace</h3><p>Sculptural elegance and golden light express the quiet strength of inner balance.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/THEARTOFINNERPEACE" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
+<article class="featured-card"><div class="art-mockup scene-living" role="img" aria-label="The Legacy of Generations artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/j9dg5oywnngihhreld0u34mrefpi" alt="The Legacy of Generations artwork"></div></div><div class="copy"><h3>The Legacy of Generations</h3><p>A tribute to love, sacrifice, and the world we hold in trust for those who follow.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/THELEGACYOFGENERATIONS" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
+<article class="featured-card"><div class="art-mockup scene-office" role="img" aria-label="The Hand That Holds Tomorrow artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/ufm0cxg08cs7fhlgl0zazutgh5lk" alt="The Hand That Holds Tomorrow artwork"></div></div><div class="copy"><h3>The Hand That Holds Tomorrow</h3><p>A seedling held in human hands becomes a symbol of renewal and shared care.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/gkwadk" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
+<article class="featured-card"><div class="art-mockup scene-office" role="img" aria-label="The Golden Thread of Humanity artwork presented in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="https://public-files.gumroad.com/e62wdy1b966kn6j0pixrp3t83oyv" alt="The Golden Thread of Humanity artwork"></div></div><div class="copy"><h3>The Golden Thread of Humanity</h3><p>Two distinct identities, joined by a golden symbol of our shared human dignity.</p><a class="buy" href="https://alshayebemad.gumroad.com/l/THEGOLDENTHREADOFHUMANITY" target="_blank" rel="noopener"><strong>$5</strong> Explore artwork ↗</a></div></article>
 </div></section>
 <section class="section" id="collections"><div class="head"><div class="eyebrow">Curated collections</div><h2>Discover the collections</h2><p>Curated journeys through art, culture, and emotion. Explore a collection or go straight to its secure checkout.</p></div><div class="bundles" id="bundles"></div></section>
 <section class="section" id="gallery"><div class="head"><div class="eyebrow">The complete gallery</div><h2>Individual artworks</h2><p>Search by artwork title, theme, or category. Preview the story or go directly to the digital download.</p></div><div class="tools"><input id="search" type="search" placeholder="Search titles and themes..." aria-label="Search artwork titles and descriptions"><p id="result-count" class="result-count" aria-live="polite"></p><div class="filters" id="filters" role="group" aria-label="Filter artworks by category"></div></div><div class="grid" id="works" aria-live="polite" aria-relevant="additions text"></div></section>
@@ -225,12 +322,12 @@ async function init(){
  const catalog=await response.json();
  const products=catalog.products.filter(p=>p.published && p.landing_slug && p.url);
  const bundles=products.filter(p=>p.is_bundle),works=products.filter(p=>!p.is_bundle);
- document.getElementById("bundles").innerHTML=bundles.map(p=>'<article class="bundle"><div class="art-mockup" role="img" aria-label="'+esc(p.name)+' collection shown in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="'+(p.cover_url||"")+'" alt="'+esc(p.name)+' collection cover"></div></div><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.summary)+'</p><strong>'+money(p.price_usd)+'</strong><div class="bundle-actions"><a href="./landing/'+encodeURIComponent(p.landing_slug)+'/">Explore collection ↗</a><a class="primary" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">Buy collection ↗</a></div></div></article>').join("");
+ document.getElementById("bundles").innerHTML=bundles.map(p=>'<article class="bundle"><div class="art-mockup scene-living" role="img" aria-label="'+esc(p.name)+' collection shown in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="'+(p.cover_url||"")+'" alt="'+esc(p.name)+' collection cover"></div></div><div><h3>'+esc(p.name)+'</h3><p>'+esc(p.summary)+'</p><strong>'+money(p.price_usd)+'</strong><div class="bundle-actions"><a href="./landing/'+encodeURIComponent(p.landing_slug)+'/">Explore collection ↗</a><a class="primary" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">Buy collection ↗</a></div></div></article>').join("");
  const cats=["All",...new Set(works.map(p=>p.category).filter(Boolean))];let chosen="All";const host=document.getElementById("filters");
  host.innerHTML=cats.map(c=>'<button class="'+(c==="All"?"active":"")+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join("");
  function draw(){const q=document.getElementById("search").value.trim().toLowerCase();const shown=works.filter(p=>(chosen==="All"||p.category===chosen)&&[p.name,p.summary,p.category].some(v=>String(v||"").toLowerCase().includes(q)));
  document.getElementById("result-count").textContent=shown.length+" of "+works.length+" artworks";
- document.getElementById("works").innerHTML=shown.length?shown.map(p=>'<article class="work"><div class="art-mockup" role="img" aria-label="'+esc(p.name)+' artwork displayed in a premium gold frame"><div class="mock-frame">'+(p.cover_url?'<img loading="lazy" decoding="async" src="'+p.cover_url+'" alt="'+esc(p.name)+' artwork">':'<span>'+esc(p.name)+'</span>')+'</div></div><div class="info"><h3>'+esc(p.name)+'</h3><div class="tag">'+esc(p.category)+' · Printable digital art</div><p class="summary">'+esc(p.summary)+'</p><div class="format">Digital file · Print in a size suited to your space</div><div class="actions"><strong>'+money(p.price_usd)+'</strong><a class="story" href="./landing/'+encodeURIComponent(p.landing_slug)+'/">Discover story ↗</a><a href="'+p.url+'" target="_blank" rel="noopener">Buy download ↗</a></div></div></article>').join(""):'<p>No artworks match your search.</p>';}
+ document.getElementById("works").innerHTML=shown.length?shown.map(p=>'<article class="work"><div class="art-mockup '+(p.category==="Global"?"scene-office":"scene-living")+' role="img" aria-label="'+esc(p.name)+' artwork displayed in a premium gold frame"><div class="mock-frame">'+(p.cover_url?'<img loading="lazy" decoding="async" src="'+p.cover_url+'" alt="'+esc(p.name)+' artwork">':'<span>'+esc(p.name)+'</span>')+'</div></div><div class="info"><h3>'+esc(p.name)+'</h3><div class="tag">'+esc(p.category)+' · Printable digital art</div><p class="summary">'+esc(p.summary)+'</p><div class="format">Digital file · Print in a size suited to your space</div><div class="actions"><strong>'+money(p.price_usd)+'</strong><a class="story" href="./landing/'+encodeURIComponent(p.landing_slug)+'/">Discover story ↗</a><a href="'+p.url+'" target="_blank" rel="noopener">Buy download ↗</a></div></div></article>').join(""):'<p>No artworks match your search.</p>';}
  host.addEventListener("click",e=>{const b=e.target.closest("button[data-c]");if(!b)return;chosen=b.dataset.c;host.querySelectorAll("button").forEach(x=>x.classList.toggle("active",x===b));draw();});
  document.getElementById("search").addEventListener("input",draw);draw();
 }
