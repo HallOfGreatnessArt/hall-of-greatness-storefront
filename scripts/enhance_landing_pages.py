@@ -239,7 +239,7 @@ for path in pages:
         schema_json = json.dumps(schema, ensure_ascii=False).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
         page = page.replace(
             "</head>",
-            '<script type="application/ld+json" id="product-jsonld">' + schema_json + '</script>\\n</head>',
+            '<script type="application/ld+json" id="product-jsonld">' + schema_json + '</script>\n</head>',
             1,
         )
     path.write_text(page, encoding="utf-8")
