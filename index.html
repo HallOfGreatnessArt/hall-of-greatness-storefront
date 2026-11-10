@@ -145,6 +145,62 @@ section[id]{scroll-margin-top:20px}
 .featured-card .art-mockup,.bundle .art-mockup{border-bottom:1px solid var(--line)}
 @media(max-width:520px){.art-mockup .mock-frame{width:64%;padding:7px}}
 
+
+/* Museum-grade presentation: charcoal gallery walls, warm spotlights and refined gilt frames */
+.art-mockup{
+  aspect-ratio:4/3;
+  background:
+    radial-gradient(ellipse 34% 76% at 50% 35%,#a58a5a55 0%,#6b573b30 42%,transparent 78%),
+    linear-gradient(180deg,#292722 0%,#211f1b 72%,#171613 100%);
+  border-bottom:1px solid #6e572f;
+}
+.art-mockup:before{
+  inset:0;
+  z-index:0;
+  opacity:.62;
+  background:
+    linear-gradient(90deg,transparent 0 8%,#c4a66b12 8.15%,transparent 8.35% 91.65%,#c4a66b12 91.85%,transparent 92%),
+    repeating-linear-gradient(90deg,transparent 0 32%,#d8b66b0b 32.15%,transparent 32.35% 67.65%,#d8b66b0b 67.85%,transparent 68%),
+    radial-gradient(ellipse 35% 90% at 50% 0%,#f4dfb455,transparent 75%);
+}
+.art-mockup:after{
+  left:8%;right:8%;bottom:7%;height:12%;
+  z-index:0;
+  background:radial-gradient(ellipse,#000000b0 0%,#00000045 48%,transparent 75%);
+  filter:blur(12px);
+  opacity:.72;
+}
+.art-mockup .mock-frame{
+  position:relative;
+  z-index:1;
+  width:58%;
+  padding:9px;
+  background:linear-gradient(135deg,#f5e3b6 0%,#8b622d 12%,#e7c77f 24%,#65451f 38%,#f4dfa9 52%,#8c632e 68%,#f8e8c3 83%,#70491f 100%);
+  border:1px solid #f3dfb1;
+  box-shadow:
+    0 0 0 2px #3a2918,
+    0 0 0 4px #b48a49,
+    0 0 0 6px #17130e,
+    0 14px 28px #000000a8,
+    0 0 34px #e5c47b22,
+    inset 0 1px 2px #fff8e5;
+  transform:translateY(-1%);
+}
+.art-mockup .mock-frame img{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:100%;
+  max-height:72vh;
+  object-fit:contain;
+  aspect-ratio:auto;
+  background:#17140e;
+  box-shadow:0 0 0 1px #5c4527;
+}
+@media(max-width:520px){
+  .art-mockup .mock-frame{width:67%;padding:7px}
+}
+
 </style></head><body><div class="wrap">
 <header><div class="logo">HALL OF <span>GREATNESS</span></div><nav aria-label="Main navigation"><a href="#featured">Featured</a><a href="#collections">Collections</a><a href="#gallery">Gallery</a><a href="#artist">Artist</a></nav></header>
 <main><section class="hero"><div class="eyebrow">A curated world of printable art</div><h1>Art that carries<br><em>a story.</em></h1><p>Discover a gallery shaped by imagination, heritage, human connection, and the timeless beauty of art. Meaningful digital works, ready to become part of your space.</p><a class="btn" href="#collections">Explore collections</a><a class="btn" href="#gallery" style="background:transparent;color:var(--gold);border:1px solid var(--gold)">Discover the gallery</a></section>
