@@ -130,11 +130,11 @@ section[id]{scroll-margin-top:20px}
   background:#24190f;filter:blur(8px);opacity:.35;border-radius:50%;z-index:-1;
 }
 .art-mockup .mock-frame{
-  width:42%;height:auto;padding:9px;display:block;flex:0 1 auto;
-  background:linear-gradient(135deg,#fff7dc 0%,#c69a52 13%,#f8e6b8 25%,#8c642f 42%,#f3d99f 58%,#775126 78%,#e8c987 100%);
-  border:1px solid #f6dfaa;
-  box-shadow:0 0 0 2px #5a3b1b,0 0 0 4px #c7a15d,0 0 0 6px #3d2a18,
-    0 18px 34px #160e08a6,0 2px 5px #fff9 inset;
+  width:56%;height:auto;padding:10px;display:block;flex:0 1 auto;
+  background:linear-gradient(135deg,#fff9e8 0%,#b98538 10%,#f7e4b5 20%,#805522 34%,#f4d99d 49%,#9a6b2d 63%,#f8e8c2 78%,#70491f 91%,#e8c987 100%);
+  border:1px solid #f8e6bd;
+  box-shadow:0 0 0 2px #493018,0 0 0 4px #d2ae69,0 0 0 6px #352313,
+    0 20px 38px #160e08b8,0 2px 6px #fff9 inset,0 0 18px #f0d69a55;
   transform:translateY(-2%);
 }
 .art-mockup .mock-frame img{
@@ -143,7 +143,7 @@ section[id]{scroll-margin-top:20px}
   box-shadow:0 0 0 1px #6f522c;
 }
 .featured-card .art-mockup,.bundle .art-mockup{border-bottom:1px solid var(--line)}
-@media(max-width:520px){.art-mockup .mock-frame{width:54%;padding:6px}}
+@media(max-width:520px){.art-mockup .mock-frame{width:64%;padding:7px}}
 
 </style></head><body><div class="wrap">
 <header><div class="logo">HALL OF <span>GREATNESS</span></div><nav aria-label="Main navigation"><a href="#featured">Featured</a><a href="#collections">Collections</a><a href="#gallery">Gallery</a><a href="#artist">Artist</a></nav></header>
@@ -174,7 +174,7 @@ async function init(){
  host.innerHTML=cats.map(c=>'<button class="'+(c==="All"?"active":"")+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join("");
  function draw(){const q=document.getElementById("search").value.trim().toLowerCase();const shown=works.filter(p=>(chosen==="All"||p.category===chosen)&&[p.name,p.summary,p.category].some(v=>String(v||"").toLowerCase().includes(q)));
  document.getElementById("result-count").textContent=shown.length+" of "+works.length+" artworks";
- document.getElementById("works").innerHTML=shown.length?shown.map(p=>'<article class="work"><div class="art">'+(p.cover_url?'<img loading="lazy" decoding="async" src="'+p.cover_url+'" alt="'+esc(p.name)+' artwork">':'<span>'+esc(p.name)+'</span>')+'</div><div class="info"><h3>'+esc(p.name)+'</h3><div class="tag">'+esc(p.category)+' · Printable digital art</div><p class="summary">'+esc(p.summary)+'</p><div class="format">Digital file · Print in a size suited to your space</div><div class="actions"><strong>'+money(p.price_usd)+'</strong><a class="story" href="./landing/'+encodeURIComponent(p.landing_slug)+'/">Discover story ↗</a><a href="'+p.url+'" target="_blank" rel="noopener">Buy download ↗</a></div></div></article>').join(""):'<p>No artworks match your search.</p>';}
+ document.getElementById("works").innerHTML=shown.length?shown.map(p=>'<article class="work"><div class="art-mockup" role="img" aria-label="'+esc(p.name)+' artwork displayed in a premium gold frame"><div class="mock-frame">'+(p.cover_url?'<img loading="lazy" decoding="async" src="'+p.cover_url+'" alt="'+esc(p.name)+' artwork">':'<span>'+esc(p.name)+'</span>')+'</div></div><div class="info"><h3>'+esc(p.name)+'</h3><div class="tag">'+esc(p.category)+' · Printable digital art</div><p class="summary">'+esc(p.summary)+'</p><div class="format">Digital file · Print in a size suited to your space</div><div class="actions"><strong>'+money(p.price_usd)+'</strong><a class="story" href="./landing/'+encodeURIComponent(p.landing_slug)+'/">Discover story ↗</a><a href="'+p.url+'" target="_blank" rel="noopener">Buy download ↗</a></div></div></article>').join(""):'<p>No artworks match your search.</p>';}
  host.addEventListener("click",e=>{const b=e.target.closest("button[data-c]");if(!b)return;chosen=b.dataset.c;host.querySelectorAll("button").forEach(x=>x.classList.toggle("active",x===b));draw();});
  document.getElementById("search").addEventListener("input",draw);draw();
 }
