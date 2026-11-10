@@ -15,6 +15,7 @@ on:
       - "scripts/translate_catalog.py"
       - "locales/**"
       - "assets/i18n.js"
+      - "assets/landing-i18n.js"
   workflow_dispatch:
   schedule:
     - cron: "*/15 * * * *"
