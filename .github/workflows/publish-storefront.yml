@@ -47,15 +47,11 @@ jobs:
           set -euo pipefail
           python scripts/discover_public_gumroad_products.py
 
+      - name: Install free open-source translation engine
+        run: python -m pip install --disable-pip-version-check argostranslate
+
       - name: Generate and refresh multilingual UI and product translations
-        env:
-          GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
-        run: |
-          if [ -n "$GOOGLE_TRANSLATE_API_KEY" ]; then
-            python scripts/translate_catalog.py
-          else
-            echo "::warning::Add GOOGLE_TRANSLATE_API_KEY as a repository Actions secret to automatically translate new and updated products into all configured languages."
-          fi
+        run: python scripts/translate_catalog.py
 
       - name: Validate catalogue and generate landing pages
         run: |
