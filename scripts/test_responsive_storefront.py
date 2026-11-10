@@ -56,6 +56,8 @@ def inspect_page(page, path, widths, expected_product=False):
     record(bool(metadata["title"]), f"{path}: missing document title")
     record(bool(metadata["description"]), f"{path}: missing meta description")
     record(bool(metadata["canonical"]), f"{path}: missing canonical URL")
+    record(page.locator('link[rel="canonical"]').count() == 1,
+           f"{path}: expected exactly one canonical link")
     for image in metadata["images"]:
         record(bool(image["alt"]), f"{path}: image missing alt text: {image['src']}")
         if not image["loaded"]:
@@ -70,8 +72,11 @@ def inspect_page(page, path, widths, expected_product=False):
                 record(parsed_schema.get("@type") == "Product", f"{path}: invalid Product structured data")
             except (ValueError, TypeError):
                 record(False, f"{path}: Product structured data is not valid JSON")
-        record(bool(page.locator('meta[property="og:url"]').get_attribute("content")),
-               f"{path}: missing Open Graph canonical URL")
+        og_url = page.locator('meta[property="og:url"]')
+        record(og_url.count() == 1, f"{path}: expected exactly one Open Graph canonical URL")
+        if og_url.count() == 1:
+            record(og_url.get_attribute("content") == metadata["canonical"],
+                   f"{path}: Open Graph URL does not match canonical URL")
         for name in ("twitter:card", "twitter:title", "twitter:description", "twitter:image"):
             record(page.locator(f'meta[name="{name}"]').count() == 1,
                    f"{path}: expected exactly one {name} metadata tag")
