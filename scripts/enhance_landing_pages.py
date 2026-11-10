@@ -127,7 +127,7 @@ for path in pages:
     product = PRODUCT_BY_SLUG.get(path.parent.name, {})
     permalink = str(product.get("permalink", ""))
     if permalink:
-        page = re.sub(r"<body\\b", f'<body data-product-permalink="{permalink}"', page, count=1, flags=re.I)
+        page = page.replace("<body>", f'<body data-product-permalink="{permalink}"', 1)
     if 'id="hog-page-language"' not in page:
         selector = '<label class="language-label" for="hog-page-language">Language</label><select id="hog-page-language" aria-label="Choose language"><option value="auto">🌐 Auto</option></select>'
         page = page.replace("</header>", selector + "</header>", 1)
@@ -135,7 +135,7 @@ for path in pages:
     if 'data-hog-summary' not in page:
         page = page.replace('<p class="desc">', '<p class="desc" data-hog-summary>', 1)
     if 'data-hog-category' not in page:
-        page = re.sub(r'(<section class="hero"[^>]*>\\s*<div>\\s*<div class="eyebrow")', r'\\1 data-hog-category', page, count=1)
+        page = page.replace('<div class="eyebrow">', '<div class="eyebrow" data-hog-category>', 1)
     page = page.replace('id="full-description"', 'id="full-description" data-hog-full-description')
     page = page.replace('id="product-details"', 'id="product-details" data-hog-product-details')
     if 'landing-i18n.js' not in page:
