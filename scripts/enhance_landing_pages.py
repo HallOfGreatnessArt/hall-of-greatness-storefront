@@ -187,6 +187,8 @@ def set_meta_tag(page, attribute, key, value):
 
 for path in pages:
     page = path.read_text(encoding="utf-8")
+    # Decode images asynchronously without changing their source, dimensions, or artwork.
+    page = re.sub(r'<img\\b(?![^>]*\\bdecoding=)', '<img decoding="async"', page, flags=re.I)
     product = products_by_slug.get(path.parent.name)
     canonical_match = re.search(r'<link\b[^>]*\brel=["\']canonical["\'][^>]*\bhref=["\']([^"\']+)["\']', page, flags=re.I)
     canonical = html_lib.unescape(canonical_match.group(1)) if canonical_match else ""
