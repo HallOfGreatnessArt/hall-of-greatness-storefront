@@ -75,7 +75,7 @@ jobs:
               "sm": "http://www.sitemaps.org/schemas/sitemap/0.9",
               "img": "http://www.google.com/schemas/sitemap-image/1.1",
           }
-          image_entries = sitemap.findall("sm:url/sm:image", ns)
+          image_entries = sitemap.findall("sm:url/img:image", ns)
           assert len(image_entries) == len(published), (
               f"Expected {len(published)} image sitemap entries, found {len(image_entries)}"
           )
