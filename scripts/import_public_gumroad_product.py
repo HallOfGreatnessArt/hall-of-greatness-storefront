@@ -318,7 +318,7 @@ def main():
         if changed:
             data["product_count"] = len(data["products"])
             data["source"] = "Public Gumroad product page (no OAuth)"
-            Path(args.catalog).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+            Path(args.catalog).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(json.dumps({
             "status": "updated_existing" if changed else "already_complete",
             "permalink": existing.get("permalink"),
