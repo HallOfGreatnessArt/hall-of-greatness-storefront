@@ -263,9 +263,69 @@ def main():
         raise ValueError(f"Expected USD product price, found {currency}")
 
     data = json.loads(Path(args.catalog).read_text(encoding="utf-8"))
-    existing = next((product for product in data["products"] if product.get("permalink") == permalink), None)
+    requested_path = urlparse(final_url).path.rstrip("/").lower()
+    existing = next(
+        (
+            product for product in data["products"]
+            if product.get("permalink") == permalink
+            or urlparse(product.get("url", "")).path.rstrip("/").lower() == requested_path
+        ),
+        None,
+    )
+
     if existing:
-        print(json.dumps({"status": "already_present", "product": existing}, ensure_ascii=False, indent=2))
+        # Refresh missing public-page fields without overwriting owner-curated
+        # titles, summaries, prices, URLs, artwork, categories, or landing slugs.
+        changed = False
+        fill_values = {
+            "name": name,
+            "summary": summary[:420],
+            "cover_url": image,
+            "full_description": full_description,
+            "price_usd": float(raw_price),
+            "url": final_url,
+            "permalink": permalink,
+            "category": category_for(name, full_description),
+            "is_bundle": is_bundle,
+        }
+        for key, value in fill_values.items():
+            if (existing.get(key) is None or existing.get(key) == "" or existing.get(key) == []) and value not in (None, ""):
+                existing[key] = value
+                changed = True
+
+        current_details = existing.setdefault("product_details", {})
+        for key, value in product_details.items():
+            if value and not current_details.get(key):
+                current_details[key] = value
+                changed = True
+
+        if "bundle_contents" not in existing and is_bundle:
+            resolved, unresolved = resolve_bundle_items(article_h4, full_description, data["products"])
+            existing["bundle_contents"] = resolved
+            existing["bundle_item_names"] = unresolved
+            changed = True
+
+        if not existing.get("landing_slug"):
+            slug = slugify(existing.get("name") or name)
+            used_slugs = {p.get("landing_slug") for p in data["products"] if p is not existing}
+            base_slug, suffix = slug, 2
+            while slug in used_slugs:
+                slug = f"{base_slug}-{suffix}"
+                suffix += 1
+            existing["landing_slug"] = slug
+            changed = True
+
+        if changed:
+            data["product_count"] = len(data["products"])
+            data["source"] = "Public Gumroad product page (no OAuth)"
+            Path(args.catalog).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+        print(json.dumps({
+            "status": "updated_existing" if changed else "already_complete",
+            "permalink": existing.get("permalink"),
+            "full_description_added": bool(existing.get("full_description")),
+            "product": existing,
+        }, ensure_ascii=False, indent=2))
+        print("PUBLIC_GUMROAD_IMPORT_REFRESH_OK")
         return
 
     slug = slugify(name)
