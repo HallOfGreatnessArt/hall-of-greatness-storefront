@@ -165,33 +165,44 @@ products_by_slug = {
 
 def get_meta_value(page, attribute, key):
     pattern = re.compile(
-        r'<meta\\b(?=[^>]*\\b' + re.escape(attribute) +
-        r'\\s*=\\s*["\\\']' + re.escape(key) + r'["\\\'])[^>]*>',
+        r'<meta\b(?=[^>]*\b' + re.escape(attribute) +
+        r'\s*=\s*["\']' + re.escape(key) + r'["\'])[^>]*>',
         flags=re.I,
     )
     match = pattern.search(page)
     if not match:
         return ""
-    content = re.search(r'\\bcontent\\s*=\\s*(["\\\'])(.*?)\\1', match.group(0), flags=re.I | re.S)
+    content = re.search(r'\bcontent\s*=\s*(["\'])(.*?)\1', match.group(0), flags=re.I | re.S)
     return html_lib.unescape(content.group(2)).strip() if content else ""
 
 def set_meta_tag(page, attribute, key, value):
     pattern = re.compile(
-        r'<meta\\b(?=[^>]*\\b' + re.escape(attribute) +
-        r'\\s*=\\s*["\\\']' + re.escape(key) + r'["\\\'])[^>]*>\\s*',
+        r'<meta\b(?=[^>]*\b' + re.escape(attribute) +
+        r'\s*=\s*["\']' + re.escape(key) + r'["\'])[^>]*>\s*',
         flags=re.I,
     )
     page = pattern.sub("", page)
-    tag = f'<meta {attribute}="{html_lib.escape(key, quote=True)}" content="{html_lib.escape(value, quote=True)}">\\n'
+    tag = f'<meta {attribute}="{html_lib.escape(key, quote=True)}" content="{html_lib.escape(value, quote=True)}">\n'
     return page.replace("</head>", tag + "</head>", 1)
 
 for path in pages:
     page = path.read_text(encoding="utf-8")
+    # Decode images asynchronously without changing their source, dimensions, or artwork.
+    page = re.sub(r'<img\b(?![^>]*\bdecoding=)', '<img decoding="async"', page, flags=re.I)
     product = products_by_slug.get(path.parent.name)
-    canonical_match = re.search(r'<link\\b[^>]*\\brel=["\\\']canonical["\\\'][^>]*\\bhref=["\\\']([^"\\\']+)["\\\']', page, flags=re.I)
+    canonical_match = re.search(r'<link\b[^>]*\brel=["\']canonical["\'][^>]*\bhref=["\']([^"\']+)["\']', page, flags=re.I)
     canonical = html_lib.unescape(canonical_match.group(1)) if canonical_match else ""
+    if not canonical:
+        canonical = "https://hallofgreatnessart.github.io/hall-of-greatness-storefront/landing/" + path.parent.name + "/"
+    canonical_pattern = re.compile(
+        r'<link\b(?=[^>]*\brel=["\']canonical["\'])[^>]*>\s*',
+        flags=re.I,
+    )
+    page = canonical_pattern.sub("", page)
+    canonical_tag = f'<link rel="canonical" href="{html_lib.escape(canonical, quote=True)}">\n'
+    page = page.replace("</head>", canonical_tag + "</head>", 1)
     title_match = re.search(r'<title>(.*?)</title>', page, flags=re.I | re.S)
-    page_title = html_lib.unescape(re.sub(r"\\s+", " ", title_match.group(1))).strip() if title_match else "HALL OF GREATNESS | Digital Art"
+    page_title = html_lib.unescape(re.sub(r"\s+", " ", title_match.group(1))).strip() if title_match else "HALL OF GREATNESS | Digital Art"
     og_title = get_meta_value(page, "property", "og:title") or page_title
     description = get_meta_value(page, "name", "description")
     social_description = get_meta_value(page, "property", "og:description") or description
@@ -213,7 +224,7 @@ for path in pages:
         page = set_meta_tag(page, "name", "twitter:image", image_url)
 
     schema_pattern = re.compile(
-        r'<script\\b(?=[^>]*\\bid=["\\\']product-jsonld["\\\'])[^>]*>.*?</script>\\s*',
+        r'<script\b(?=[^>]*\bid=["\']product-jsonld["\'])[^>]*>.*?</script>\s*',
         flags=re.I | re.S,
     )
     page = schema_pattern.sub("", page)
@@ -237,7 +248,7 @@ for path in pages:
         schema_json = json.dumps(schema, ensure_ascii=False).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
         page = page.replace(
             "</head>",
-            '<script type="application/ld+json" id="product-jsonld">' + schema_json + '</script>\\n</head>',
+            '<script type="application/ld+json" id="product-jsonld">' + schema_json + '</script>\n</head>',
             1,
         )
     path.write_text(page, encoding="utf-8")

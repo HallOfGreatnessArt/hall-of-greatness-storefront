@@ -11,6 +11,8 @@ on:
       - "scripts/import_public_gumroad_product.py"
       - "scripts/generate_landing_pages.py"
       - "scripts/enhance_landing_pages.py"
+      - "scripts/generate_sitemap.py"
+      - "scripts/test_responsive_storefront.py"
 
 permissions:
   contents: read
@@ -39,12 +41,15 @@ jobs:
           set -euo pipefail
           python scripts/generate_landing_pages.py
           python scripts/enhance_landing_pages.py
+          python scripts/generate_sitemap.py
+          python scripts/test_responsive_storefront.py
       - name: Validate discovery, catalogue, and storefront build
         run: |
           set -euo pipefail
           python - <<'PY'
           import json
           from pathlib import Path
+          import xml.etree.ElementTree as ET
           report = json.loads(Path("public-gumroad-discovery-report.json").read_text(encoding="utf-8"))
           data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
           products = data["products"]
@@ -65,6 +70,21 @@ jobs:
               assert "HALL OF GREATNESS" in page, f"Brand missing: {product['name']}"
               assert 'id="printing"' in page, f"Print guidance missing: {product['name']}"
               assert 'id="room-showcase"' in page, f"Room showcase missing: {product['name']}"
+          sitemap = ET.parse("sitemap.xml").getroot()
+          ns = {
+              "sm": "http://www.sitemaps.org/schemas/sitemap/0.9",
+              "img": "http://www.google.com/schemas/sitemap-image/1.1",
+          }
+          image_entries = sitemap.findall("sm:url/img:image", ns)
+          assert len(image_entries) == len(published), (
+              f"Expected {len(published)} image sitemap entries, found {len(image_entries)}"
+          )
+          image_urls = {
+              item.findtext("img:loc", namespaces=ns)
+              for item in image_entries
+          }
+          assert image_urls == {p["cover_url"] for p in published}, "Image sitemap URLs differ from the verified catalogue"
+          assert "Sitemap: " in Path("robots.txt").read_text(encoding="utf-8")
           print(
               "PASS: no-OAuth public discovery -> import -> catalogue -> landing pages | "
               f"published={len(published)} | public_discovered={report['public_products_discovered']} | "

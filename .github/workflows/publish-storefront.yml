@@ -10,6 +10,7 @@ on:
       - "scripts/import_public_gumroad_product.py"
       - "scripts/generate_landing_pages.py"
       - "scripts/enhance_landing_pages.py"
+      - "scripts/generate_sitemap.py"
   workflow_dispatch:
   schedule:
     - cron: "*/15 * * * *"
@@ -63,23 +64,7 @@ jobs:
           python scripts/generate_landing_pages.py
           python scripts/enhance_landing_pages.py
           python - <<'PY'
-          import json
-          from pathlib import Path
-          base = "https://hallofgreatnessart.github.io/hall-of-greatness-storefront/"
-          data = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
-          urls = [base, base + "privacy.html", base + "terms.html", base + "contact.html"]
-          for product in data["products"]:
-              if product.get("published") and product.get("landing_slug"):
-                  urls.append(base + "landing/" + product["landing_slug"].strip("/") + "/")
-          lines = ['<?xml version="1.0" encoding="UTF-8"?>',
-                   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
-          for url in urls:
-              lines.append(f'  <url><loc>{url}</loc></url>')
-          lines.append('</urlset>')
-          Path("sitemap.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
-          Path("robots.txt").write_text("User-agent: *\nAllow: /\nSitemap: " + base + "sitemap.xml\n", encoding="utf-8")
-          print(f"SEO files generated: {len(urls)} canonical URLs.")
-          PY
+          python scripts/generate_sitemap.py
 
       - name: Validate all product landing pages
         run: |
