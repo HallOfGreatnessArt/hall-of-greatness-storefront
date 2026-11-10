@@ -6,6 +6,7 @@ on:
       - test/public-gumroad-import-no-oauth
     paths:
       - "scripts/discover_public_gumroad_products.py"
+      - "scripts/import_public_gumroad_product.py"
       - ".github/workflows/discover-public-gumroad-products.yml"
   workflow_dispatch:
   schedule:
