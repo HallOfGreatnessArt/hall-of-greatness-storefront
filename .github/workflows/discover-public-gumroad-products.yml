@@ -51,26 +51,43 @@ jobs:
           python - <<'PY'
           import json
           from pathlib import Path
+          from urllib.parse import urlparse
+
           report = json.loads(Path("public-gumroad-discovery-report.json").read_text(encoding="utf-8"))
           catalog = json.loads(Path("catalog-data.json").read_text(encoding="utf-8"))
-          by_permalink = {p["permalink"]: p for p in catalog["products"]}
+          products = catalog["products"]
+
           assert report["public_products_discovered"] >= report["public_products_total"] or report["public_products_total"] == 0
+
+          checked = 0
           for permalink in report["new_products_imported"]:
-              product = by_permalink[permalink]
+              # Existing catalogue entries may use Gumroad's short permalink rather
+              # than the public custom URL slug discovered on the profile.
+              matches = [
+                  p for p in products
+                  if p.get("permalink") == permalink
+                  or urlparse(p.get("url", "")).path.rstrip("/").split("/")[-1].lower() == permalink.lower()
+              ]
+              assert matches, f"Product missing from catalogue: {permalink}"
+              product = matches[0]
               assert product.get("full_description"), f"Full description missing: {permalink}"
               assert product.get("url", "").startswith("https://alshayebemad.gumroad.com/l/")
-              assert product.get("cover_url")
-              page = Path("landing") / product["landing_slug"] / "index.html"
+              assert product.get("cover_url"), f"Cover missing: {permalink}"
+              slug = product.get("landing_slug")
+              assert slug, f"Landing slug missing: {permalink}"
+              page = Path("landing") / slug / "index.html"
               assert page.is_file(), f"Landing page missing: {page}"
               html = page.read_text(encoding="utf-8")
-              assert product["name"] in html
-              assert product["url"] in html
-              assert product["cover_url"] in html
-              assert f'{product["price_usd"]:.2f}' in html
+              assert product["name"] in html, f"Product title missing from landing page: {permalink}"
+              assert product["url"] in html, f"Gumroad link missing from landing page: {permalink}"
+              assert product["cover_url"] in html, f"Cover missing from landing page: {permalink}"
+              assert f'{product["price_usd"]:.2f}' in html, f"Price missing from landing page: {permalink}"
+              checked += 1
+
           print(
               "PASS: public discovery -> no-OAuth import -> catalogue -> landing page | "
               f"public={report['public_products_discovered']} | "
-              f"new={report['new_products_discovered']} | imported={len(report['new_products_imported'])}"
+              f"checked={checked} | newly_discovered={report['new_products_discovered']}"
           )
           PY
       - name: Commit changes only to isolated test branch
