@@ -4,7 +4,7 @@ A mobile-first, responsive storefront for the HALL OF GREATNESS digital art cata
 
 ## Contents
 - `index.html` — dark-and-gold gallery with featured works, live product covers, collections, search, and category filters.
-- `catalog-data.json` — verified snapshot of 33 published Gumroad products: 29 individual artworks and 4 bundles. Unpublished drafts are excluded.
+- `catalog-data.json` — catalogue snapshot of 34 product records: 30 individual artworks and 4 bundles; public Gumroad visibility must be checked separately. Unpublished drafts are excluded.
 - `landing/` — individual product and collection landing pages.
 - `scripts/generate_landing_pages.py` — creates missing landing pages from the verified catalogue while preserving existing hand-crafted pages.
 - `.github/workflows/publish-storefront.yml` — scheduled (every 15 minutes) and manually triggered catalogue sync, page generation, validation, and GitHub Pages deployment.
