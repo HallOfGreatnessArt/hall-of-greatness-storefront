@@ -18,7 +18,7 @@ on:
       - "assets/landing-i18n.js"
   workflow_dispatch:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "17 3 * * *"
 
 permissions:
   contents: write
@@ -27,7 +27,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   validate-and-build:
