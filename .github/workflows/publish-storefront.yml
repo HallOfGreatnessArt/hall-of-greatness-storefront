@@ -47,14 +47,14 @@ jobs:
           python scripts/discover_public_gumroad_products.py
 
       - name: Generate and refresh multilingual UI and product translations
-        if: ${{ secrets.GOOGLE_TRANSLATE_API_KEY != '' }}
         env:
           GOOGLE_TRANSLATE_API_KEY: ${{ secrets.GOOGLE_TRANSLATE_API_KEY }}
-        run: python scripts/translate_catalog.py
-
-      - name: Warn when translation service is not configured
-        if: ${{ secrets.GOOGLE_TRANSLATE_API_KEY == '' }}
-        run: echo "::warning::Add GOOGLE_TRANSLATE_API_KEY as a repository Actions secret to automatically translate new and updated products into all configured languages."
+        run: |
+          if [ -n "$GOOGLE_TRANSLATE_API_KEY" ]; then
+            python scripts/translate_catalog.py
+          else
+            echo "::warning::Add GOOGLE_TRANSLATE_API_KEY as a repository Actions secret to automatically translate new and updated products into all configured languages."
+          fi
 
       - name: Validate catalogue and generate landing pages
         run: |
