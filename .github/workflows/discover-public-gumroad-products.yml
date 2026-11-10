@@ -51,6 +51,8 @@ jobs:
           set -euo pipefail
           python - <<'PY'
           import json
+          import re
+          import html as html_lib
           from pathlib import Path
           from urllib.parse import urlparse
 
@@ -79,7 +81,11 @@ jobs:
               page = Path("landing") / slug / "index.html"
               assert page.is_file(), f"Landing page missing: {page}"
               html = page.read_text(encoding="utf-8")
-              assert product["name"] in html, f"Product title missing from landing page: {permalink}"
+              # Existing custom landing pages may omit decorative emoji or use
+              # typography/spacing variants in their visible title.
+              normalized_page = re.sub(r"[^a-z0-9]+", " ", html_lib.unescape(html).lower()).strip()
+              normalized_title = re.sub(r"[^a-z0-9]+", " ", product["name"].lower()).strip()
+              assert normalized_title in normalized_page, f"Product title missing from landing page: {permalink}"
               assert product["url"] in html, f"Gumroad link missing from landing page: {permalink}"
               assert product["cover_url"] in html, f"Cover missing from landing page: {permalink}"
               assert f'{product["price_usd"]:.2f}' in html, f"Price missing from landing page: {permalink}"
