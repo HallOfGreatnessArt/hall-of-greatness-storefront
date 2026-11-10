@@ -23,7 +23,7 @@ permissions:
 
 concurrency:
   group: gumroad-test-branch-writer
-  # Revalidate after syncing the latest main branch.
+  # Post-sync validation after merge cac03f8.
   cancel-in-progress: false
 
 jobs:
