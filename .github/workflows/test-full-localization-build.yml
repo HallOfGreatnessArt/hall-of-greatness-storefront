@@ -76,7 +76,9 @@ jobs:
         run: python scripts/translate_landing_pages.py
 
       - name: Require complete coverage for all registered languages
-        run: python scripts/validate_translation_coverage.py | tee translation-coverage-report.txt
+        run: |
+          set -euo pipefail
+          python scripts/validate_translation_coverage.py | tee translation-coverage-report.txt
 
       - name: Preserve selected locale samples for inspection
         if: always()
