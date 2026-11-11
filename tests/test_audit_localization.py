@@ -81,5 +81,12 @@ class LocalizationAuditTests(unittest.TestCase):
         self.assertEqual(report["summary"]["duplicate_language_codes"], ["fr"])
 
 
+    def test_translation_engine_metadata_matches_implementation(self):
+        repository_root = Path(__file__).resolve().parents[1]
+        registry = json.loads((repository_root / "locales/languages.json").read_text(encoding="utf-8"))
+        implementation = (repository_root / "scripts/translate_catalog.py").read_text(encoding="utf-8")
+        self.assertIn("Argos Translate", registry.get("provider", ""))
+        self.assertIn("argostranslate.translate", implementation)
+
 if __name__ == "__main__":
     unittest.main()
