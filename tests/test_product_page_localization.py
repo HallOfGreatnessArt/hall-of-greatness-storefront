@@ -1,3 +1,4 @@
+import html
 import json
 import re
 import unittest
@@ -43,7 +44,10 @@ class ProductPageLocalizationTests(unittest.TestCase):
             self.assertTrue(page_path.is_file(), str(page_path))
             page = page_path.read_text(encoding="utf-8")
             self.assertRegex(page, r'<body\s+data-product-permalink="[^"]+">')
-            self.assertGreaterEqual(page.count("data-hog-summary"), 2, product["landing_slug"])
+            summary = html.escape(product["summary"].strip(), quote=False)
+            matches = re.findall(r'<p([^>]*)>' + re.escape(summary) + r'</p>', page)
+            self.assertGreaterEqual(len(matches), 1, product["landing_slug"])
+            self.assertTrue(all("data-hog-summary" in attrs for attrs in matches), product["landing_slug"])
             self.assertIn('id="printing"', page)
             self.assertIn('id="room-showcase"', page)
 
