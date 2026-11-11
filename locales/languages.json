@@ -1,6 +1,6 @@
 {
-  "provider": "Google Cloud Translation v2",
-  "translation_mode": "on-demand during GitHub Actions builds; cached by source hash",
+  "provider": "Argos Translate (open-source translation models)",
+  "translation_mode": "on-demand during GitHub Actions builds; Argos models are cached by source hash; unsupported language pairs retain English fallback",
   "languages": [
     {
       "code": "en",
