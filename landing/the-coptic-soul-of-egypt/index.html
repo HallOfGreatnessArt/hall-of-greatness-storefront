@@ -131,6 +131,23 @@ header a.back,.btn{min-height:44px;display:inline-flex;align-items:center;justif
 }
 
 
+
+/* Final artwork-first refinement: one clear hero image, native proportions, no dark letterbox */
+.art{
+  padding:14px;
+  background:linear-gradient(135deg,#f4e4c1 0%,#9c7137 12%,#e8c985 25%,#63451f 39%,#f3dfb0 53%,#8a612d 69%,#f8e8c5 84%,#70491f 100%);
+  border:1px solid #f3dfb1;
+  box-shadow:0 0 0 2px #382718,0 0 0 4px #bd9653,0 24px 60px #0009;
+}
+.art img{
+  display:block;width:100%;height:auto;max-height:720px;object-fit:contain;
+  background:transparent;box-shadow:0 0 0 1px #72552d;
+}
+@media(max-width:760px){
+ .art{padding:8px}
+ .art img{max-height:none;width:100%;height:auto;object-fit:contain}
+}
+
 </style>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<link rel="canonical" href="https://hallofgreatnessart.github.io/hall-of-greatness-storefront/landing/the-coptic-soul-of-egypt/">
 <meta property="og:url" content="https://hallofgreatnessart.github.io/hall-of-greatness-storefront/landing/the-coptic-soul-of-egypt/">
 <meta name="description" content="The Coptic Soul of Egypt is a contemporary artistic interpretation inspired by the visual heritage, symbolism, and cultural memory of Coptic Egypt. Created for those who value the meeting of history, identity, and artistic expression, it makes a mean">
@@ -150,16 +167,7 @@ header a.back,.btn{min-height:44px;display:inline-flex;align-items:center;justif
 <div class="art"><img decoding="async" src="https://public-files.gumroad.com/ekiic516hdrvnnscycxhz226gjeg" alt="The Coptic Soul of Egypt digital artwork" loading="eager" fetchpriority="high"></div></section>
 
 
-<section class="room-showcase" id="room-showcase">
-  <div class="room-intro">
-    <div class="eyebrow">Artwork presentation</div>
-    <h2>Imagine it in a refined frame</h2>
-    <p>A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.</p>
-  </div>
-  <div class="artwork-display">
-    <div class="artwork-frame"><img decoding="async" class="room-artwork" src="https://public-files.gumroad.com/ekiic516hdrvnnscycxhz226gjeg" alt="The Coptic Soul of Egypt digital artwork shown in a refined frame" loading="lazy"></div>
-  </div>
-</section>
+
 
 <div class="purchase-strip" aria-label="Digital product information">
   <div class="purchase-chip"><strong>Digital download</strong>Access your files after checkout</div>
