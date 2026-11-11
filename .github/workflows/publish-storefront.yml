@@ -123,6 +123,52 @@ jobs:
           assert "Sitemap: " in Path("robots.txt").read_text(encoding="utf-8")
           assert len(list(Path("sitemap.xml").read_text(encoding="utf-8").split("<loc>"))) - 1 == len(published) + 4
           print("Trust and SEO checks OK: legal/contact pages, social metadata, robots.txt, and sitemap.")
+
+          import re
+          import xml.etree.ElementTree as ET
+          from html.parser import HTMLParser
+
+          class HTMLSmokeParser(HTMLParser):
+              def error(self, message):
+                  raise AssertionError(message)
+
+          # Strictly guard against malformed or duplicated document head tags.
+          home = Path("index.html").read_text(encoding="utf-8")
+          assert home.count("<head>") == 1, "Homepage must contain exactly one opening <head> tag"
+          assert home.count("</head>") == 1, "Homepage must contain exactly one closing </head> tag"
+          HTMLSmokeParser(convert_charrefs=True).feed(home)
+
+          # Validate SEO-critical structure on every generated landing page.
+          for p in published:
+              path = Path("landing") / p["landing_slug"] / "index.html"
+              page = path.read_text(encoding="utf-8")
+              assert page.count("<head>") == 1 and page.count("</head>") == 1, f"Malformed head tags: {path}"
+              HTMLSmokeParser(convert_charrefs=True).feed(page)
+              assert 'rel="canonical"' in page, f"Missing canonical: {path}"
+              assert 'name="description"' in page, f"Missing meta description: {path}"
+              assert not re.search(r'<meta[^>]+name=["\\']robots["\\'][^>]+noindex', page, re.I), f"Unexpected noindex: {path}"
+              assert "<title>" in page and "</title>" in page, f"Missing title: {path}"
+
+          # Parse sitemap as XML (not just text) and verify all expected URLs.
+          sitemap_path = Path("sitemap.xml")
+          tree = ET.parse(sitemap_path)
+          root = tree.getroot()
+          ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9",
+                "image": "http://www.google.com/schemas/sitemap-image/1.1"}
+          assert root.tag == "{http://www.sitemaps.org/schemas/sitemap/0.9}urlset", "Unexpected sitemap root"
+          locs = [node.text for node in root.findall("sm:url/sm:loc", ns)]
+          assert len(locs) == len(set(locs)), "Duplicate sitemap URLs"
+          expected = {"https://hallofgreatnessart.github.io/hall-of-greatness-storefront/"}
+          expected.update("https://hallofgreatnessart.github.io/hall-of-greatness-storefront/" + x for x in ("privacy.html", "terms.html", "contact.html"))
+          expected.update("https://hallofgreatnessart.github.io/hall-of-greatness-storefront/landing/" + p["landing_slug"].strip("/") + "/" for p in published)
+          assert set(locs) == expected, f"Sitemap URL mismatch: expected {len(expected)}, found {len(locs)}"
+          image_entries = root.findall("sm:url/sm:image/image", ns)
+          assert len(image_entries) == len(published), f"Expected {len(published)} image sitemap entries, found {len(image_entries)}"
+
+          robots = Path("robots.txt").read_text(encoding="utf-8")
+          assert "User-agent: *" in robots and "Allow: /" in robots
+          assert "Sitemap: https://hallofgreatnessart.github.io/hall-of-greatness-storefront/sitemap.xml" in robots
+          print(f"HTML/SEO/XML validation OK: homepage + {len(published)} landing pages; {len(locs)} sitemap URLs; {len(image_entries)} image entries.")
           PY
           mkdir -p _site
           cp index.html catalog-data.json robots.txt sitemap.xml privacy.html terms.html contact.html _site/
