@@ -13,7 +13,7 @@ import shutil
 import subprocess
 
 
-TARGET_CODE_MAP = {"zh-CN": "zh", "zh-TW": "zh"}
+TARGET_CODE_MAP = {}
 
 
 def crispasr_binary() -> str | None:
