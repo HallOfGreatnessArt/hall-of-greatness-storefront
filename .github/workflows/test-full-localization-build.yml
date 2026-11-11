@@ -17,6 +17,7 @@ on:
       - "scripts/validate_translation_coverage.py"
       - "scripts/generate_landing_pages.py"
       - "scripts/enhance_landing_pages.py"
+      - "tests/browser/test_product_page_localization.py"
 
 permissions:
   contents: read
@@ -79,6 +80,14 @@ jobs:
         run: |
           set -euo pipefail
           python scripts/validate_translation_coverage.py | tee translation-coverage-report.txt
+
+      - name: Install free headless browser for localized-page verification
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.56.0
+          python -m playwright install chromium
+
+      - name: Verify Spanish and Arabic pages in a real browser
+        run: python tests/browser/test_product_page_localization.py
 
       - name: Preserve selected locale samples for inspection
         if: always()
