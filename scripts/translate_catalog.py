@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Free offline localization using open-source Argos Translate models.
+"""Free offline localization using Argos Translate with MADLAD-400 fallback.
 
-Only language pairs present in the upstream Argos package index are translated.
-Other registered languages safely retain English fallback until a model exists.
+Argos handles installed direct language pairs; MADLAD-400 fills unsupported pairs.
+Both run locally on CPU with open-source models and no paid translation API.
 New/changed products are translated automatically during storefront builds.
 """
 import hashlib, json, re
