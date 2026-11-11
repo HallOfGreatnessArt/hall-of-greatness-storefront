@@ -15,7 +15,7 @@ class LocalizationAuditTests(unittest.TestCase):
         (self.root / "assets").mkdir()
         (self.root / "locales").mkdir()
         (self.root / "assets/i18n.js").write_text(
-            'const M={"en":{"nav":"Gallery","hero":"Art"}};\\nconst map=',
+            'const M={"en":{"nav":"Gallery","hero":"Art"}};\nconst map=',
             encoding="utf-8",
         )
         (self.root / "locales/languages.json").write_text(
