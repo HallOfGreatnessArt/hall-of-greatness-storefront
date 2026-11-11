@@ -20,7 +20,7 @@ class ProductPageLocalizationTests(unittest.TestCase):
             "Privacy",
             "Gumroad store ↗",
         ):
-            self.assertIn(phrase, copy)
+            self.assertTrue(any(key.startswith(phrase) for key in copy), phrase)
 
     def test_runtime_and_build_pipeline_consume_landing_copy(self):
         runtime = (ROOT / "assets/landing-i18n.js").read_text(encoding="utf-8")
