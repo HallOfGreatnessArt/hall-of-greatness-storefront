@@ -1,10 +1,13 @@
 import html
 import json
 import re
+import sys
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from translate_landing_pages import extract_page_copy
 
 
 class ProductPageLocalizationTests(unittest.TestCase):
@@ -22,6 +25,19 @@ class ProductPageLocalizationTests(unittest.TestCase):
             "Gumroad store ↗",
         ):
             self.assertTrue(any(key.startswith(phrase) for key in copy), phrase)
+
+    def test_artwork_specific_extractor_keeps_story_and_skips_brand_title_and_shared_copy(self):
+        sample = """<!doctype html><html><head><title>Sample</title></head><body>
+        <span class="brand">HALL OF GREATNESS</span><h1>SAMPLE ARTWORK</h1>
+        <p>A unique story about courage, memory, and renewal.</p>
+        <p>Digital download</p><div class="price">$5.00</div>
+        <a>Explore &amp; Get the Artwork ↗</a></body></html>"""
+        extracted = extract_page_copy(sample, ["SAMPLE ARTWORK"])
+        self.assertIn("A unique story about courage, memory, and renewal.", extracted)
+        self.assertNotIn("SAMPLE ARTWORK", extracted)
+        self.assertNotIn("HALL OF GREATNESS", extracted)
+        self.assertNotIn("Digital download", extracted)
+        self.assertNotIn("$5.00", extracted)
 
     def test_runtime_and_build_pipeline_consume_landing_copy(self):
         runtime = (ROOT / "assets/landing-i18n.js").read_text(encoding="utf-8")
