@@ -167,7 +167,7 @@ jobs:
           expected.update("https://hallofgreatnessart.github.io/hall-of-greatness-storefront/" + x for x in ("privacy.html", "terms.html", "contact.html"))
           expected.update("https://hallofgreatnessart.github.io/hall-of-greatness-storefront/landing/" + p["landing_slug"].strip("/") + "/" for p in published)
           assert set(locs) == expected, f"Sitemap URL mismatch: expected {len(expected)}, found {len(locs)}"
-          image_entries = root.findall("sm:url/sm:image/image", ns)
+          image_entries = root.findall("sm:url/image:image", ns)
           assert len(image_entries) == len(published), f"Expected {len(published)} image sitemap entries, found {len(image_entries)}"
 
           robots = Path("robots.txt").read_text(encoding="utf-8")
