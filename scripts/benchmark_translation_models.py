@@ -95,8 +95,8 @@ def main() -> int:
     batch_results = []
     for case_id, markers in batch_specs:
         batch_text = (
-            f"{markers[0]}\\nDiscover meaningful digital artworks inspired by heritage and imagination.\\n"
-            f"{markers[1]}\\nBring timeless printable art into your home."
+            f"{markers[0]}\nDiscover meaningful digital artworks inspired by heritage and imagination.\n"
+            f"{markers[1]}\nBring timeless printable art into your home."
         )
         batch_result = run_one(
             binary, "madlad400", "madlad", "auto", "es",
@@ -130,6 +130,10 @@ def main() -> int:
         "quality_targets": QUALITY_TARGETS,
         "engine_summaries": by_engine,
         "results": results,
+        "batch_marker_tests": [
+            {"case": item["case"], "preserved": item["batch_markers_preserved"], "return_code": item["return_code"], "output": item["stdout"]}
+            for item in batch_results
+        ],
         "failures": failures,
     }
     (args.output / "translation-model-benchmark.json").write_text(
@@ -152,7 +156,7 @@ def main() -> int:
             output = (item["stdout"] or item["stderr"]).replace("|", "\\|").replace("\n", " ")[:180]
             md.append(f"| {item['engine']} | {item['target']} | {item['case']} | {item['return_code']} | {item['elapsed_seconds']} | {output} |")
     (args.output / "translation-model-benchmark.md").write_text("\n".join(md) + "\n", encoding="utf-8")
-    print(json.dumps({"targets": len(all_targets), "engines": by_engine}, ensure_ascii=False))
+    print(json.dumps({"targets": len(all_targets), "engines": by_engine, "batch_marker_tests": report["batch_marker_tests"]}, ensure_ascii=False))
     # Keep the report available even when some registry codes are not supported.
     return 0
 
