@@ -16,6 +16,7 @@ on:
       - "locales/**"
       - "assets/i18n.js"
       - "assets/landing-i18n.js"
+      - "assets/landing-copy.json"
   workflow_dispatch:
   schedule:
     - cron: "17 3 * * *"
