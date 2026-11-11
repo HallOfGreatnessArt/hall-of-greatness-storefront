@@ -11,6 +11,8 @@ from pathlib import Path
 import argostranslate.package
 import argostranslate.translate
 
+from localization_policy import MACHINE_GENERATED_UNREVIEWED, is_product_editorially_reviewed
+
 ROOT=Path(__file__).resolve().parents[1]
 REG=json.loads((ROOT/"locales/languages.json").read_text(encoding="utf-8"))["languages"]
 CAT=json.loads((ROOT/"catalog-data.json").read_text(encoding="utf-8"))
@@ -80,19 +82,27 @@ for lang in REG:
     ui_hash=digest(ui)
     products=old.setdefault("products",{})
     pending=[]
+    review_required=[]
     for p in CAT["products"]:
         if not p.get("published"): continue
         key=p["permalink"]
         fields={k:p.get(k) for k in ("summary","full_description","category") if p.get(k)}
         fields["product_details"]=p.get("product_details") or {}
-        if products.get(key,{}).get("_source_hash")!=digest(fields):
-            pending.append((p,key,fields))
+        existing=products.get(key,{})
+        source_hash=digest(fields)
+        if existing.get("_source_hash")!=source_hash:
+            if is_product_editorially_reviewed(existing):
+                review_required.append(key)
+            else:
+                pending.append((p,key,fields))
     reviewed_ui = old.get("_ui_reviewed") is True and bool(old.get("ui"))
     if reviewed_ui and old.get("_ui_source_hash") != ui_hash:
         print(f"REVIEW REQUIRED: {code} source UI changed; preserving reviewed translation.")
     needs_ui=old.get("_ui_source_hash")!=ui_hash and not reviewed_ui
+    if review_required:
+        print(f"REVIEW REQUIRED: {code}; preserving {len(review_required)} editorially reviewed product translation(s): {', '.join(review_required)}")
     if not needs_ui and not pending:
-        print(f"Up to date: {code}; no model installation needed.")
+        print(f"No machine translation work for {code}; reviewed content preserved.")
         continue
     translator=get_translator(target)
     if translator is None:
@@ -126,6 +136,7 @@ for lang in REG:
             if k=="detail": item.setdefault("product_details",{})[dk]=value
             else: item[k]=value
         item["_source_hash"]=source_hash
+        item["_review_status"]=MACHINE_GENERATED_UNREVIEWED
         products[key]=item
     path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
