@@ -18,6 +18,7 @@ source=(ROOT/"assets/i18n.js").read_text(encoding="utf-8")
 match=re.search(r"const M=(\{[\s\S]*?\});\nconst map=",source)
 if not match: raise SystemExit("Could not locate canonical UI dictionary.")
 ui=json.loads(match.group(1))["en"]
+landing_ui=json.loads((ROOT/"assets/landing-copy.json").read_text(encoding="utf-8"))
 
 # Argos package language codes are not always identical to BCP-47 storefront tags.
 CODE_MAP={"zh-CN":"zh","zh-TW":"zh","pt":"pt","fa":"fa","he":"he","ar":"ar"}
@@ -88,10 +89,15 @@ for lang in REG:
         if products.get(key,{}).get("_source_hash")!=digest(fields):
             pending.append((p,key,fields))
     reviewed_ui = old.get("_ui_reviewed") is True and bool(old.get("ui"))
+    landing_hash=digest(landing_ui)
+    reviewed_landing = old.get("_landing_ui_reviewed") is True and bool(old.get("landing_ui"))
+    needs_landing = old.get("_landing_ui_source_hash") != landing_hash and not reviewed_landing
+    if reviewed_landing and old.get("_landing_ui_source_hash") != landing_hash:
+        print(f"REVIEW REQUIRED: {code} landing-page copy changed; preserving reviewed translation.")
     if reviewed_ui and old.get("_ui_source_hash") != ui_hash:
         print(f"REVIEW REQUIRED: {code} source UI changed; preserving reviewed translation.")
     needs_ui=old.get("_ui_source_hash")!=ui_hash and not reviewed_ui
-    if not needs_ui and not pending:
+    if not needs_ui and not pending and not needs_landing:
         print(f"Up to date: {code}; no model installation needed.")
         continue
     translator=get_translator(target)
@@ -110,6 +116,15 @@ for lang in REG:
         old["_ui_translation_status"]="machine-generated-unreviewed"
     if reviewed_ui:
         old["_ui_translation_status"]="editorially-reviewed"
+    if needs_landing:
+        keys=list(landing_ui)
+        vals=translate_many([landing_ui[k] for k in keys],code)
+        if vals is not None:
+            old["landing_ui"]=dict(zip(keys,vals))
+            old["_landing_ui_source_hash"]=landing_hash
+            old["_landing_ui_translation_status"]="machine-generated-unreviewed"
+    elif reviewed_landing:
+        old["_landing_ui_translation_status"]="editorially-reviewed"
     for p,key,fields in pending:
         source_hash=digest(fields)
         flat=[]; flat_keys=[]
