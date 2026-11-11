@@ -38,3 +38,5 @@ jobs:
 # Isolated test workflow; never deploys or writes to production.
 
 # Re-run tests whenever the audit implementation changes.
+
+# QA-only workflow; artifact is a report, not a deployment input.
