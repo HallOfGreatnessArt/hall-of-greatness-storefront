@@ -1,0 +1,77 @@
+name: Sitemap HTTP Diagnostics
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sitemap-http-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check sitemap with normal client
+        shell: bash
+        run: |
+          set -euo pipefail
+          URL="https://hallofgreatnessart.github.io/hall-of-greatness-storefront/sitemap.xml"
+          mkdir -p diagnostics
+          STATUS=$(curl --location --silent --show-error --max-time 30 \
+            --dump-header diagnostics/normal-headers.txt \
+            --output diagnostics/normal-sitemap.xml \
+            --write-out '%{http_code}' "$URL")
+          echo "NORMAL_HTTP_STATUS=$STATUS"
+          echo "NORMAL_FINAL_URL=$(curl --location --silent --show-error --max-time 30 --output /dev/null --write-out '%{url_effective}' "$URL")"
+          echo "NORMAL_RESPONSE_HEADERS:"
+          cat diagnostics/normal-headers.txt
+          test "$STATUS" = "200"
+
+      - name: Check sitemap with Googlebot user agent
+        shell: bash
+        run: |
+          set -euo pipefail
+          URL="https://hallofgreatnessart.github.io/hall-of-greatness-storefront/sitemap.xml"
+          STATUS=$(curl --location --silent --show-error --max-time 30 \
+            --user-agent 'Googlebot' \
+            --dump-header diagnostics/googlebot-headers.txt \
+            --output diagnostics/googlebot-sitemap.xml \
+            --write-out '%{http_code}' "$URL")
+          echo "GOOGLEBOT_HTTP_STATUS=$STATUS"
+          echo "GOOGLEBOT_RESPONSE_HEADERS:"
+          cat diagnostics/googlebot-headers.txt
+          test "$STATUS" = "200"
+
+      - name: Validate XML and compare responses
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import hashlib
+          import xml.etree.ElementTree as ET
+          from pathlib import Path
+
+          normal = Path("diagnostics/normal-sitemap.xml").read_bytes()
+          googlebot = Path("diagnostics/googlebot-sitemap.xml").read_bytes()
+          for label, data in (("NORMAL", normal), ("GOOGLEBOT", googlebot)):
+              root = ET.fromstring(data)
+              ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+              urls = root.findall("sm:url", ns)
+              print(f"{label}_XML_VALID=true")
+              print(f"{label}_ROOT={root.tag}")
+              print(f"{label}_URL_COUNT={len(urls)}")
+              print(f"{label}_BYTE_COUNT={len(data)}")
+              print(f"{label}_SHA256={hashlib.sha256(data).hexdigest()}")
+          if normal != googlebot:
+              raise SystemExit("FAIL: Normal and Googlebot responses differ")
+          print("NORMAL_AND_GOOGLEBOT_BODIES_IDENTICAL=true")
+          PY
+
+      - name: Upload diagnostic evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitemap-http-diagnostics
+          path: diagnostics/
+          if-no-files-found: warn
+          retention-days: 7
