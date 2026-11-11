@@ -68,7 +68,7 @@ class ProductPageLocalizationTests(unittest.TestCase):
         self.assertTrue(all(len(group) == 2 for group in groups))
 
         def fake_madlad(text, target):
-            matches = re.findall(r"(ZXQHOGSEGMENT\d{6}QXZ)\n(.*?)(?=\nZXQHOGSEGMENT|\\Z)", text, flags=re.S)
+            matches = re.findall(r"(ZXQHOGSEGMENT\d{6}QXZ)\n(.*?)(?=\nZXQHOGSEGMENT|\Z)", text, flags=re.S)
             if matches:
                 return "\n".join(f"{marker}\nTranslated {part}" for marker, part in matches)
             return "Translated " + text
