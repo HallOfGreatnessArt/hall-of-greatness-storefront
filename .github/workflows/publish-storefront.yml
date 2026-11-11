@@ -124,29 +124,34 @@ jobs:
           assert len(list(Path("sitemap.xml").read_text(encoding="utf-8").split("<loc>"))) - 1 == len(published) + 4
           print("Trust and SEO checks OK: legal/contact pages, social metadata, robots.txt, and sitemap.")
 
-          import re
           import xml.etree.ElementTree as ET
           from html.parser import HTMLParser
 
           class HTMLSmokeParser(HTMLParser):
-              def error(self, message):
-                  raise AssertionError(message)
+              def __init__(self):
+                  super().__init__(convert_charrefs=True)
+                  self.metas = []
+              def handle_starttag(self, tag, attrs):
+                  if tag == "meta":
+                      self.metas.append(dict(attrs))
 
           # Strictly guard against malformed or duplicated document head tags.
           home = Path("index.html").read_text(encoding="utf-8")
           assert home.count("<head>") == 1, "Homepage must contain exactly one opening <head> tag"
           assert home.count("</head>") == 1, "Homepage must contain exactly one closing </head> tag"
-          HTMLSmokeParser(convert_charrefs=True).feed(home)
+          home_parser = HTMLSmokeParser()
+          home_parser.feed(home)
 
           # Validate SEO-critical structure on every generated landing page.
           for p in published:
               path = Path("landing") / p["landing_slug"] / "index.html"
               page = path.read_text(encoding="utf-8")
               assert page.count("<head>") == 1 and page.count("</head>") == 1, f"Malformed head tags: {path}"
-              HTMLSmokeParser(convert_charrefs=True).feed(page)
+              page_parser = HTMLSmokeParser()
+              page_parser.feed(page)
               assert 'rel="canonical"' in page, f"Missing canonical: {path}"
               assert 'name="description"' in page, f"Missing meta description: {path}"
-              assert not re.search(r'<meta[^>]+name=["\\']robots["\\'][^>]+noindex', page, re.I), f"Unexpected noindex: {path}"
+              assert not any(meta.get("name", "").lower() == "robots" and "noindex" in meta.get("content", "").lower() for meta in page_parser.metas), f"Unexpected noindex: {path}"
               assert "<title>" in page and "</title>" in page, f"Missing title: {path}"
 
           # Parse sitemap as XML (not just text) and verify all expected URLs.
