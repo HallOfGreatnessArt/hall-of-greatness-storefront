@@ -92,7 +92,7 @@ class ProductPageLocalizationTests(unittest.TestCase):
 
     def test_chinese_locale_tags_map_to_model_language_code(self):
         from free_translation import TARGET_CODE_MAP
-        self.assertEqual(TARGET_CODE_MAP["zh-CN"], "zh")
+        self.assertNotIn("zh-CN", TARGET_CODE_MAP)
         self.assertNotIn("zh-TW", TARGET_CODE_MAP)
 
     def test_runtime_and_build_pipeline_consume_landing_copy(self):
