@@ -138,7 +138,7 @@ for path in pages:
         page = page.replace('<p class="desc">', '<p class="desc" data-hog-summary>', 1)
     # The artwork summary appears in both the hero and the meaning section.
     # Mark every exact copy so the full narrative changes language together.
-    summary_html = html.escape(str(product.get("summary", "")).strip(), quote=False)
+    summary_html = html.escape(str(product.get("summary", "")).strip(), quote=True)
     if summary_html:
         paragraph = re.compile(r'<p(?![^>]*\bdata-hog-summary)([^>]*)>' + re.escape(summary_html) + r'</p>')
         page = paragraph.sub(lambda match: '<p' + match.group(1) + ' data-hog-summary>' + summary_html + '</p>', page)
