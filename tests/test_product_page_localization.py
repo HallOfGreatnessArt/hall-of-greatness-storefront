@@ -42,7 +42,7 @@ class ProductPageLocalizationTests(unittest.TestCase):
             page_path = ROOT / "landing" / product["landing_slug"] / "index.html"
             self.assertTrue(page_path.is_file(), str(page_path))
             page = page_path.read_text(encoding="utf-8")
-            self.assertRegex(page, r'<body\\s+data-product-permalink="[^"]+">')
+            self.assertRegex(page, r'<body\s+data-product-permalink="[^"]+">')
             self.assertGreaterEqual(page.count("data-hog-summary"), 2, product["landing_slug"])
             self.assertIn('id="printing"', page)
             self.assertIn('id="room-showcase"', page)
