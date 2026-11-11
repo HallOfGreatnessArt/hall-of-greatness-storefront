@@ -45,7 +45,7 @@ def main():
                 )
                 page.goto(
                     f"{base}/landing/{product['landing_slug']}/",
-                    wait_until="networkidle",
+                    wait_until="domcontentloaded",
                 )
                 page.wait_for_function(
                     """([lang, direction]) =>
