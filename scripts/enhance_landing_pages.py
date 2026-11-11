@@ -3,6 +3,7 @@
 
 The catalogue cover is never cropped, stretched, or duplicated as two different mockups.
 """
+import json
 import re
 from pathlib import Path
 
@@ -172,7 +173,6 @@ print(f"Updated {len(pages)} landing pages: artwork proportions, buyer guidance,
 
 # Product-level search and social metadata. Values are sourced from the verified catalogue.
 import html as html_lib
-import json
 
 catalog = json.loads((ROOT / "catalog-data.json").read_text(encoding="utf-8"))
 products_by_slug = {
