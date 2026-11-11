@@ -61,6 +61,8 @@ def main():
                 assert "HALL OF GREATNESS" in body_text, f"{language}: brand was changed"
                 assert product["name"].strip() in body_text, f"{language}: artwork title was changed"
                 assert "Humanity" not in body_text, f"{language}: artwork category remained English"
+                for english_heading in ("The meaning behind the artwork", "Digital download details", "Before you purchase", "From download to display"):
+                    assert english_heading not in body_text, f"{language}: shared heading remained English: {english_heading}"
                 assert "Files included" not in body_text, f"{language}: product-detail label remained English"
                 assert "Product type" not in body_text, f"{language}: product type label remained English"
                 assert "No physical print or frame will be shipped" not in body_text, f"{language}: buyer detail remained English"
