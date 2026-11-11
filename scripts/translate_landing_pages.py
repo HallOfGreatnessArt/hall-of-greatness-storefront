@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Translate visible, artwork-specific landing-page copy with installed free Argos models.
+"""Translate visible artwork-specific landing-page copy with free local models.
 
-Runs after landing pages have been generated and enhanced. It stores page-specific
-translations separately from the existing UI and catalogue translations.
+Runs after landing pages have been generated and enhanced. Argos is preferred;
+MADLAD-400 fills unsupported pairs. Page copy stays separate from existing UI
+and catalogue translation data, preserving backward compatibility.
 """
 from __future__ import annotations
 
