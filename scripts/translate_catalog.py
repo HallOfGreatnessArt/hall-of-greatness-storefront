@@ -22,7 +22,7 @@ ui=json.loads(match.group(1))["en"]
 landing_ui=json.loads((ROOT/"assets/landing-copy.json").read_text(encoding="utf-8"))
 
 # Argos package language codes are not always identical to BCP-47 storefront tags.
-CODE_MAP={"zh-CN":"zh","zh-TW":"zh","pt":"pt","fa":"fa","he":"he","ar":"ar"}
+CODE_MAP={"zh-CN":"zh","pt":"pt","fa":"fa","he":"he","ar":"ar"}
 def digest(obj):
     return hashlib.sha256(json.dumps(obj,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
 
