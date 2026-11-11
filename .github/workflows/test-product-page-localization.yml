@@ -10,6 +10,7 @@ on:
       - "scripts/translate_catalog.py"
       - "scripts/translate_landing_pages.py"
       - "scripts/free_translation.py"
+      - "locales/languages.json"
       - "scripts/enhance_landing_pages.py"
       - "scripts/generate_landing_pages.py"
       - "tests/test_product_page_localization.py"
