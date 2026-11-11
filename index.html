@@ -308,6 +308,29 @@ section[id]{scroll-margin-top:20px}
 [dir="rtl"] header,[dir="rtl"] footer{direction:rtl}
 [dir="rtl"] .header-tools{margin-left:0;margin-right:auto}
 @media(max-width:760px){.header-tools{margin-left:0}#language-select{max-width:100%;width:100%}}
+
+/* Artwork-first gallery standard: enlarge the artwork, preserve its ratio, remove black matte */
+.art-mockup .mock-frame{
+  width:68%;max-width:360px;padding:8px;
+  background:linear-gradient(135deg,#f5e7c9 0%,#9a7138 14%,#e9ca85 28%,#694820 43%,#f4dfad 57%,#8c622e 72%,#f8e8c4 88%,#70491f 100%);
+  border:1px solid #f3dfb1;
+  box-shadow:0 0 0 2px #342316,0 0 0 4px #bd9653,0 16px 30px #0009;
+  transform:none;
+}
+.art-mockup .mock-frame img{
+  display:block;width:100%;height:auto;max-width:100%;max-height:270px;
+  object-fit:contain;aspect-ratio:auto;background:transparent;
+  box-shadow:0 0 0 1px #6a4e2b;
+}
+@media(min-width:900px){
+ .art-mockup .mock-frame{width:64%;max-width:390px;padding:10px}
+ .art-mockup .mock-frame img{max-height:300px}
+}
+@media(max-width:520px){
+ .art-mockup .mock-frame{width:74%;max-width:300px;padding:6px}
+ .art-mockup .mock-frame img{max-height:220px}
+}
+
 </style></head><body><div class="wrap">
 <header><div class="logo">HALL OF <span>GREATNESS</span></div><div class="header-tools"><label class="sr-only" for="language-select">Choose language</label><select id="language-select" aria-label="Choose language"><option value="auto">🌐 Auto</option><option value="en">English</option><option value="ar">العربية</option><option value="fr">Français</option><option value="hi">हिन्दी</option><option value="bn">বাংলা</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="es">Español</option><option value="de">Deutsch</option><option value="pt">Português</option><option value="ru">Русский</option><option value="ja">日本語</option><option value="it">Italiano</option></select></div><nav aria-label="Main navigation"><a href="#featured">Featured</a><a href="#collections">Collections</a><a href="#gallery">Gallery</a><a href="#artist">Artist</a></nav></header>
 <main><section class="hero"><div class="eyebrow">A curated world of printable art</div><h1>Art that carries<br><em>a story.</em></h1><p>Discover a gallery shaped by imagination, heritage, human connection, and the timeless beauty of art. Meaningful digital works, ready to become part of your space.</p><a class="btn" href="#collections">Explore collections</a><a class="btn" href="#gallery" style="background:transparent;color:var(--gold);border:1px solid var(--gold)">Discover the gallery</a></section>
