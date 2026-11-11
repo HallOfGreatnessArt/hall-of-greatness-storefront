@@ -11,7 +11,7 @@ from threading import Thread
 
 from playwright.sync_api import sync_playwright
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "scripts"))
 from translate_landing_pages import extract_page_copy
 
