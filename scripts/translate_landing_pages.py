@@ -11,6 +11,8 @@ import json
 from html.parser import HTMLParser
 from pathlib import Path
 
+from free_translation import has_fallback_engine, translate_text
+
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = json.loads((ROOT / "locales/languages.json").read_text(encoding="utf-8"))
@@ -103,15 +105,12 @@ def main():
         if not code or code == "en":
             continue
         locale_path = ROOT / "locales" / (code + ".json")
-        if not locale_path.is_file():
-            print(f"NO LOCALE FILE: {code}; leaving English source copy intact.")
-            continue
+        locale_data = json.loads(locale_path.read_text(encoding="utf-8")) if locale_path.is_file() else {}
         translator = installed_translator(code, installed)
-        if translator is None:
-            print(f"NO INSTALLED FREE MODEL: en -> {code}; leaving English source copy intact.")
+        if translator is None and not has_fallback_engine():
+            print(f"NO FREE MODEL AVAILABLE: en -> {code}; leaving English source copy intact.")
             continue
 
-        locale_data = json.loads(locale_path.read_text(encoding="utf-8"))
         page_translations = locale_data.setdefault("landing_pages", {})
         changed = False
 
@@ -145,7 +144,9 @@ def main():
                             token = f"ZXQHOGTITLE{title_index}QXZ"
                             working_text = working_text.replace(title, token)
                             protected.append((token, title))
-                    result = translator.translate(working_text)
+                    result = translate_text(working_text, code, translator)
+                    if result is None:
+                        raise RuntimeError("Argos and MADLAD-400 could not translate this text")
                     for token, title in protected:
                         result = result.replace(token, title)
                     translated[source_text] = result
