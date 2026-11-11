@@ -1,0 +1,46 @@
+name: Benchmark free translation models (isolated)
+
+on:
+  push:
+    branches:
+      - feat/translation-model-benchmark-phase2
+    paths:
+      - "scripts/benchmark_translation_models.py"
+      - ".github/workflows/benchmark-free-translation-models.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  translation-model-benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Check out isolated benchmark branch
+        uses: actions/checkout@v4
+      - name: Download pinned CPU benchmark runtime
+        run: |
+          mkdir -p .benchmark/bin benchmark-results
+          curl --fail --location --retry 3 \
+            https://github.com/CrispStrobe/CrispASR/releases/download/v0.8.53/crispasr-linux-x86_64.tar.gz \
+            -o /tmp/crispasr.tar.gz
+          tar -tzf /tmp/crispasr.tar.gz | head -40
+          tar -xzf /tmp/crispasr.tar.gz -C .benchmark
+          BIN="$(find .benchmark -type f -name crispasr -perm -u+x | head -1)"
+          test -n "$BIN"
+          echo "CRISPASR_BIN=$GITHUB_WORKSPACE/$BIN" >> "$GITHUB_ENV"
+          "$GITHUB_WORKSPACE/$BIN" --version || true
+      - name: Run M2M100, MADLAD-400 and OPUS-MT smoke tests
+        run: |
+          python scripts/benchmark_translation_models.py \
+            --binary "$CRISPASR_BIN" \
+            --output benchmark-results \
+            --timeout 900
+      - name: Upload raw benchmark outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: free-translation-model-benchmark
+          path: benchmark-results/
+          if-no-files-found: warn
