@@ -94,7 +94,7 @@ def main():
         product for product in CATALOG.get("products", [])
         if product.get("published") and product.get("permalink") and product.get("landing_slug")
     ]
-    titles = [str(product.get("name", "")).strip() for product in CATALOG.get("products", [])]
+    titles = [str(product.get("name", "")).strip() for product in CATALOG.get("products", [])] + ["HALL OF GREATNESS"]
     installed = argostranslate.translate.get_installed_languages()
     total_updates = 0
 
