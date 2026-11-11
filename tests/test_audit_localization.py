@@ -3,9 +3,11 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from audit_localization import audit, digest, product_source_fields
+from audit_localization import audit
+from audit_translation_engine_coverage import build_coverage
 
 
 class LocalizationAuditTests(unittest.TestCase):
@@ -80,6 +82,19 @@ class LocalizationAuditTests(unittest.TestCase):
         report = audit(self.root)
         self.assertEqual(report["summary"]["duplicate_language_codes"], ["fr"])
 
+
+    def test_argos_coverage_maps_and_reports_target_collisions(self):
+        languages = [
+            {"code": "en", "name": "English"},
+            {"code": "zh-CN", "name": "Simplified Chinese"},
+            {"code": "zh-TW", "name": "Traditional Chinese"},
+            {"code": "xx", "name": "Example"},
+        ]
+        packages = [SimpleNamespace(from_code="en", to_code="zh")]
+        report = build_coverage(languages, packages)
+        self.assertEqual(report["summary"]["model_listed"], 2)
+        self.assertEqual(report["summary"]["no_model_listed"], 1)
+        self.assertEqual(report["target_code_collisions"]["zh"], ["zh-CN", "zh-TW"])
 
     def test_translation_engine_metadata_matches_implementation(self):
         repository_root = Path(__file__).resolve().parents[1]
