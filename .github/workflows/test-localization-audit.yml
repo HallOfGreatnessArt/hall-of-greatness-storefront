@@ -28,3 +28,5 @@ jobs:
         run: python scripts/audit_localization.py --format summary
 
 # Isolated test workflow; never deploys or writes to production.
+
+# Re-run tests whenever the audit implementation changes.
