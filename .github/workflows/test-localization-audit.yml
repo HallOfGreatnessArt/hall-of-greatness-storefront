@@ -6,6 +6,7 @@ on:
       - feat/localization-quality-audit-phase1
     paths:
       - "scripts/audit_localization.py"
+      - "scripts/audit_translation_engine_coverage.py"
       - "tests/test_audit_localization.py"
       - ".github/workflows/test-localization-audit.yml"
 
@@ -24,15 +25,23 @@ jobs:
           python-version: "3.12"
       - name: Run fixture tests
         run: python -m unittest discover -s tests -v
+      - name: Install translation engine for model inventory
+        run: python -m pip install --disable-pip-version-check argostranslate
       - name: Run read-only audit against repository
         run: |
           python scripts/audit_localization.py > localization-audit-report.json
           python scripts/audit_localization.py --format summary
-      - name: Upload localization audit report
+      - name: Check Argos model coverage without translating content
+        run: |
+          python scripts/audit_translation_engine_coverage.py > translation-engine-coverage.json
+          python scripts/audit_translation_engine_coverage.py --summary
+      - name: Upload localization audit reports
         uses: actions/upload-artifact@v4
         with:
-          name: localization-audit-report
-          path: localization-audit-report.json
+          name: localization-audit-reports
+          path: |
+            localization-audit-report.json
+            translation-engine-coverage.json
           if-no-files-found: error
 
 # Isolated test workflow; never deploys or writes to production.
