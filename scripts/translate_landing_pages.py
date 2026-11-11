@@ -11,7 +11,6 @@ import json
 from html.parser import HTMLParser
 from pathlib import Path
 
-import argostranslate.translate
 
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = json.loads((ROOT / "locales/languages.json").read_text(encoding="utf-8"))
@@ -89,6 +88,8 @@ def installed_translator(code, installed):
 
 
 def main():
+    import argostranslate.translate
+
     products = [
         product for product in CATALOG.get("products", [])
         if product.get("published") and product.get("permalink") and product.get("landing_slug")
