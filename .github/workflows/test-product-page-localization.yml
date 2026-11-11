@@ -1,0 +1,38 @@
+name: Product-page localization regression tests
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "assets/landing-copy.json"
+      - "assets/landing-i18n.js"
+      - "scripts/translate_catalog.py"
+      - "scripts/enhance_landing_pages.py"
+      - "scripts/generate_landing_pages.py"
+      - "tests/test_product_page_localization.py"
+      - ".github/workflows/test-product-page-localization.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  localization-regression:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate Python and JavaScript syntax
+        run: |
+          python -m py_compile scripts/translate_catalog.py scripts/enhance_landing_pages.py scripts/generate_landing_pages.py
+          node --check assets/landing-i18n.js
+      - name: Rebuild product pages with additive localization markers
+        run: |
+          python scripts/generate_landing_pages.py
+          python scripts/enhance_landing_pages.py
+      - name: Run product-page localization regression tests
+        run: python -m unittest tests/test_product_page_localization.py
