@@ -28,7 +28,7 @@ jobs:
           python-version: "3.12"
       - name: Validate Python and JavaScript syntax
         run: |
-          python -m py_compile scripts/translate_catalog.py scripts/enhance_landing_pages.py scripts/generate_landing_pages.py
+          python -m py_compile scripts/translate_catalog.py scripts/translate_landing_pages.py scripts/enhance_landing_pages.py scripts/generate_landing_pages.py
           node --check assets/landing-i18n.js
       - name: Rebuild product pages with additive localization markers
         run: |
