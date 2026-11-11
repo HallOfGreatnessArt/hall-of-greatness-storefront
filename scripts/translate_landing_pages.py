@@ -52,6 +52,7 @@ class VisibleCopyParser(HTMLParser):
             or tag in SKIP_TAGS
             or "brand" in classes
             or "price" in classes
+            or any(key in attrs for key in ("data-hog-summary", "data-hog-category", "data-hog-full-description", "data-hog-product-details"))
         )
         if tag not in VOID_TAGS:
             self.stack.append((tag, skip))
