@@ -109,6 +109,7 @@ class ProductPageLocalizationTests(unittest.TestCase):
         self.assertIn('data.landing_ui||{}', runtime)
         self.assertIn("originalTextNodes", runtime)
         self.assertIn("data.landing_pages||{}", runtime)
+        self.assertIn("sort((a,b)=>b[0].length-a[0].length)", runtime)
         self.assertIn("if(p.summary)", runtime)
         self.assertIn("if(p.category)", runtime)
         self.assertIn("data.product_detail_labels||{}", runtime)
