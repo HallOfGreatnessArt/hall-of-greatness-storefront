@@ -1,6 +1,6 @@
 {
-  "provider": "Google Cloud Translation v2",
-  "translation_mode": "on-demand during GitHub Actions builds; cached by source hash",
+  "provider": "Argos Translate + MADLAD-400 (local open-source models)",
+  "translation_mode": "offline CPU translation during GitHub Actions builds; free models cached by source hash; no paid API or key",
   "languages": [
     {
       "code": "en",
