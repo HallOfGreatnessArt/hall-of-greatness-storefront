@@ -6,8 +6,9 @@ from pathlib import Path
 from types import SimpleNamespace
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from audit_localization import audit
+from audit_localization import audit, digest, product_source_fields
 from audit_translation_engine_coverage import build_coverage
+from localization_policy import should_regenerate_product
 
 
 class LocalizationAuditTests(unittest.TestCase):
@@ -82,6 +83,31 @@ class LocalizationAuditTests(unittest.TestCase):
         report = audit(self.root)
         self.assertEqual(report["summary"]["duplicate_language_codes"], ["fr"])
 
+
+    def test_editorially_reviewed_product_is_not_regenerated(self):
+        reviewed = {"_source_hash": "old", "_review_status": "editorially-reviewed"}
+        machine = {"_source_hash": "old", "_review_status": "machine-generated-unreviewed"}
+        self.assertFalse(should_regenerate_product(reviewed, "new"))
+        self.assertTrue(should_regenerate_product(machine, "new"))
+        self.assertFalse(should_regenerate_product(machine, "old"))
+
+    def test_audit_counts_product_reviews_individually(self):
+        (self.root / "locales/fr.json").write_text(
+            json.dumps({
+                "ui": {"nav": "Galerie", "hero": "Art"},
+                "products": {"p1": {
+                    "summary": "Bonjour", "category": "Art",
+                    "_source_hash": digest(product_source_fields(self.product)),
+                    "_review_status": "editorially-reviewed",
+                }},
+            }),
+            encoding="utf-8",
+        )
+        report = audit(self.root)
+        fr = next(item for item in report["languages"] if item["code"] == "fr")
+        self.assertEqual(fr["products_review_status"], "editorially-reviewed")
+        self.assertEqual(fr["counts"]["editorially_reviewed_products"], 1)
+        self.assertEqual(report["summary"]["editorially_reviewed_product_entries"], 1)
 
     def test_argos_coverage_maps_and_reports_target_collisions(self):
         languages = [
