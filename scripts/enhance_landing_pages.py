@@ -140,7 +140,7 @@ for path in pages:
     # Mark every exact copy so the full narrative changes language together.
     summary_html = html.escape(str(product.get("summary", "")).strip(), quote=False)
     if summary_html:
-        paragraph = re.compile(r'<p(?![^>]*\\bdata-hog-summary)([^>]*)>' + re.escape(summary_html) + r'</p>')
+        paragraph = re.compile(r'<p(?![^>]*\bdata-hog-summary)([^>]*)>' + re.escape(summary_html) + r'</p>')
         page = paragraph.sub(lambda match: '<p' + match.group(1) + ' data-hog-summary>' + summary_html + '</p>', page)
     if 'data-hog-category' not in page:
         page = page.replace('<div class="eyebrow">', '<div class="eyebrow" data-hog-category>', 1)
