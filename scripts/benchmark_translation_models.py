@@ -40,7 +40,7 @@ def run_one(binary, engine_id, backend, model, target, case, timeout):
             check=False, env={**os.environ, "OMP_NUM_THREADS": "4"},
         )
         return {
-            "engine": engine_id, "backend": backend, "model": model,
+            "engine": engine_id, "backend": backend, "model": model_arg,
             "target": target, "case": case["id"],
             "return_code": completed.returncode,
             "elapsed_seconds": round(time.monotonic() - started, 2),
@@ -89,8 +89,8 @@ def main() -> int:
     # Verify that MADLAD preserves safe separators used by the production batch translator.
     batch_markers = ["ZXQHOGSEGMENT000000QXZ", "ZXQHOGSEGMENT000001QXZ"]
     batch_text = (
-        f"{batch_markers[0]}\\nDiscover meaningful digital artworks inspired by heritage and imagination.\\n"
-        f"{batch_markers[1]}\\nBring timeless printable art into your home."
+        f"{batch_markers[0]}\nDiscover meaningful digital artworks inspired by heritage and imagination.\n"
+        f"{batch_markers[1]}\nBring timeless printable art into your home."
     )
     batch_result = run_one(
         binary, "madlad400", "madlad", "auto", "es",
