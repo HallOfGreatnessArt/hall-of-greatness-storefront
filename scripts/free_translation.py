@@ -107,7 +107,7 @@ def _chunks(indexed_texts, max_words=300):
 
 
 def _translate_batch(chunk, target):
-    markers = [(index, f"ZXQHOGSEGMENT{index:06d}QXZ", text) for index, text in chunk]
+    markers = [(index, f"[{position + 1}]", text) for position, (index, text) in enumerate(chunk)]
     combined = "\n".join(f"{marker}\n{text}" for _, marker, text in markers)
     output = _madlad_translate(combined, target)
     if not output:
