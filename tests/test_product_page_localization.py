@@ -44,10 +44,11 @@ class ProductPageLocalizationTests(unittest.TestCase):
             self.assertTrue(page_path.is_file(), str(page_path))
             page = page_path.read_text(encoding="utf-8")
             self.assertRegex(page, r'<body\s+data-product-permalink="[^"]+">')
-            summary = html.escape(product["summary"].strip(), quote=True)
-            matches = re.findall(r'<p([^>]*)>' + re.escape(summary) + r'</p>', page)
+            paragraphs = re.findall(r'<p([^>]*)>(.*?)</p>', page, flags=re.S)
+            matches = [(attrs, html.unescape(body).strip()) for attrs, body in paragraphs
+                       if html.unescape(body).strip() == product["summary"].strip()]
             self.assertGreaterEqual(len(matches), 1, product["landing_slug"])
-            self.assertTrue(all("data-hog-summary" in attrs for attrs in matches), product["landing_slug"])
+            self.assertTrue(all("data-hog-summary" in attrs for attrs, _ in matches), product["landing_slug"])
             self.assertIn('id="printing"', page)
             self.assertIn('id="room-showcase"', page)
 
