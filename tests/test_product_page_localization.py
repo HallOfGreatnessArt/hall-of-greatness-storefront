@@ -57,7 +57,7 @@ class ProductPageLocalizationTests(unittest.TestCase):
             madlad.assert_called_once_with("Hello", "fr")
 
     def test_madlad_batch_translation_preserves_original_order(self):
-        markers = ["ZXQHOGSEGMENT000000QXZ", "ZXQHOGSEGMENT000001QXZ"]
+        markers = ["[1]", "[2]"]
         output = f"{markers[0]}\nUno.\n{markers[1]}\nDos."
         with patch("free_translation._madlad_translate", return_value=output):
             self.assertEqual(translate_texts(["One.", "Two."], "es", None), ["Uno.", "Dos."])
@@ -72,7 +72,7 @@ class ProductPageLocalizationTests(unittest.TestCase):
         self.assertTrue(all(len(group) == 2 for group in groups))
 
         def fake_madlad(text, target):
-            matches = re.findall(r"(ZXQHOGSEGMENT\d{6}QXZ)\n(.*?)(?=\nZXQHOGSEGMENT|\Z)", text, flags=re.S)
+            matches = re.findall(r"(\[\d+\])\n(.*?)(?=\n\[\d+\]|\Z)", text, flags=re.S)
             if matches:
                 return "\n".join(f"{marker}\nTranslated {part}" for marker, part in matches)
             return "Translated " + text
