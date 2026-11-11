@@ -2,6 +2,11 @@ name: Sitemap HTTP Diagnostics
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - diagnostics/sitemap-http-check
+    paths:
+      - .github/workflows/sitemap-http-diagnostics.yml
 
 permissions:
   contents: read
@@ -22,7 +27,6 @@ jobs:
             --output diagnostics/normal-sitemap.xml \
             --write-out '%{http_code}' "$URL")
           echo "NORMAL_HTTP_STATUS=$STATUS"
-          echo "NORMAL_FINAL_URL=$(curl --location --silent --show-error --max-time 30 --output /dev/null --write-out '%{url_effective}' "$URL")"
           echo "NORMAL_RESPONSE_HEADERS:"
           cat diagnostics/normal-headers.txt
           test "$STATUS" = "200"
@@ -33,7 +37,7 @@ jobs:
           set -euo pipefail
           URL="https://hallofgreatnessart.github.io/hall-of-greatness-storefront/sitemap.xml"
           STATUS=$(curl --location --silent --show-error --max-time 30 \
-            --user-agent 'Googlebot' \
+            --user-agent 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)' \
             --dump-header diagnostics/googlebot-headers.txt \
             --output diagnostics/googlebot-sitemap.xml \
             --write-out '%{http_code}' "$URL")
@@ -42,28 +46,38 @@ jobs:
           cat diagnostics/googlebot-headers.txt
           test "$STATUS" = "200"
 
-      - name: Validate XML and compare responses
+      - name: Validate XML, content type, and compare responses
         shell: bash
         run: |
           set -euo pipefail
           python - <<'PY'
           import hashlib
+          import re
           import xml.etree.ElementTree as ET
           from pathlib import Path
 
-          normal = Path("diagnostics/normal-sitemap.xml").read_bytes()
-          googlebot = Path("diagnostics/googlebot-sitemap.xml").read_bytes()
-          for label, data in (("NORMAL", normal), ("GOOGLEBOT", googlebot)):
+          def inspect(label, headers_path, body_path):
+              headers = Path(headers_path).read_text(errors="replace")
+              content_types = re.findall(r"(?im)^content-type:\s*(.+)$", headers)
+              final_content_type = content_types[-1].strip() if content_types else "NOT_RETURNED"
+              data = Path(body_path).read_bytes()
               root = ET.fromstring(data)
               ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
               urls = root.findall("sm:url", ns)
+              print(f"{label}_CONTENT_TYPE={final_content_type}")
               print(f"{label}_XML_VALID=true")
               print(f"{label}_ROOT={root.tag}")
               print(f"{label}_URL_COUNT={len(urls)}")
               print(f"{label}_BYTE_COUNT={len(data)}")
               print(f"{label}_SHA256={hashlib.sha256(data).hexdigest()}")
+              if "xml" not in final_content_type.lower():
+                  raise SystemExit(f"FAIL: {label} response Content-Type is not XML")
+              return data
+
+          normal = inspect("NORMAL", "diagnostics/normal-headers.txt", "diagnostics/normal-sitemap.xml")
+          googlebot = inspect("GOOGLEBOT", "diagnostics/googlebot-headers.txt", "diagnostics/googlebot-sitemap.xml")
           if normal != googlebot:
-              raise SystemExit("FAIL: Normal and Googlebot responses differ")
+              raise SystemExit("FAIL: Normal and Googlebot response bodies differ")
           print("NORMAL_AND_GOOGLEBOT_BODIES_IDENTICAL=true")
           PY
 
