@@ -26,3 +26,5 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Run read-only audit against repository
         run: python scripts/audit_localization.py --format summary
+
+# Isolated test workflow; never deploys or writes to production.
