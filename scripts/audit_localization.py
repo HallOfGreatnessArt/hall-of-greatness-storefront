@@ -141,8 +141,15 @@ def audit(root: Path) -> dict[str, Any]:
                     missing_product_fields.append(f"{permalink}:{field}")
                 elif source_value and translated_value == source_value:
                     english_product_fields.append(f"{permalink}:{field}")
+            source_details = product.get("product_details") or {}
+            translated_details = translated.get("product_details") or {}
+            for detail_key, source_value in source_details.items():
+                translated_value = translated_details.get(detail_key)
+                if source_value and not translated_value:
+                    missing_product_fields.append(f"{permalink}:product_details.{detail_key}")
+                elif source_value and translated_value == source_value:
+                    english_product_fields.append(f"{permalink}:product_details.{detail_key}")
 
-        rtl_mismatch = bool(data.get("_rtl")) and bool(data.get("_rtl")) != row["expected_rtl"]
         ui_reviewed = data.get("_ui_reviewed") is True and bool(ui)
         products_reviewed = data.get("_products_reviewed") is True and bool(products)
         row["ui_review_status"] = "editorially-reviewed" if ui_reviewed else "unreviewed"
@@ -197,6 +204,11 @@ def audit(root: Path) -> dict[str, Any]:
         "unregistered_locale_files": len(unregistered_files),
         "editorially_reviewed_ui": sum(x["ui_review_status"] == "editorially-reviewed" for x in rows),
         "editorially_reviewed_products": sum(x["products_review_status"] == "editorially-reviewed" for x in rows),
+        "ui_values_identical_to_english": sum(x["counts"].get("ui_values_identical_to_english", 0) for x in rows),
+        "product_fields_identical_to_english": sum(x["counts"].get("product_fields_identical_to_english", 0) for x in rows),
+        "stale_product_translations": sum(x["counts"].get("stale_product_translations", 0) for x in rows),
+        "missing_product_fields": sum(x["counts"].get("missing_product_fields", 0) for x in rows),
+        "rtl_languages_requiring_runtime_tests": sum(bool(x.get("rtl_runtime_test_required")) for x in rows),
         "technical_pass": sum(x["technical_status"] == "pass" for x in rows),
         "technical_warning": sum(x["technical_status"] == "warning" for x in rows),
         "technical_fail": sum(x["technical_status"] == "fail" for x in rows),
