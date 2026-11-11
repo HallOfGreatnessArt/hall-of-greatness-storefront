@@ -15,6 +15,7 @@ on:
       - "scripts/translate_catalog.py"
       - "scripts/translate_landing_pages.py"
       - "scripts/free_translation.py"
+      - "scripts/validate_translation_coverage.py"
       - "locales/**"
       - "assets/i18n.js"
       - "assets/landing-i18n.js"
@@ -106,6 +107,7 @@ jobs:
           python scripts/generate_landing_pages.py
           python scripts/enhance_landing_pages.py
           python scripts/translate_landing_pages.py
+          python scripts/validate_translation_coverage.py
           python scripts/generate_sitemap.py
 
       - name: Validate all product landing pages
