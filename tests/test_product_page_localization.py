@@ -8,6 +8,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from translate_landing_pages import extract_page_copy
+from free_translation import translate_text
+from unittest.mock import Mock, patch
 
 
 class ProductPageLocalizationTests(unittest.TestCase):
@@ -39,6 +41,28 @@ class ProductPageLocalizationTests(unittest.TestCase):
         self.assertNotIn("Digital download", extracted)
         self.assertNotIn("$5.00", extracted)
 
+    def test_argos_is_preferred_and_madlad_is_used_when_argos_is_missing(self):
+        argos = Mock()
+        argos.translate.return_value = "Traduction Argos"
+        with patch("free_translation._madlad_translate") as madlad:
+            self.assertEqual(translate_text("Hello", "fr", argos), "Traduction Argos")
+            madlad.assert_not_called()
+
+        with patch("free_translation._madlad_translate", return_value="Traduction MADLAD") as madlad:
+            self.assertEqual(translate_text("Hello", "fr", None), "Traduction MADLAD")
+            madlad.assert_called_once_with("Hello", "fr")
+
+    def test_madlad_is_used_when_argos_throws(self):
+        argos = Mock()
+        argos.translate.side_effect = RuntimeError("missing or broken Argos model")
+        with patch("free_translation._madlad_translate", return_value="Traduction MADLAD"):
+            self.assertEqual(translate_text("Hello", "fr", argos), "Traduction MADLAD")
+
+    def test_chinese_locale_tags_map_to_model_language_code(self):
+        from free_translation import TARGET_CODE_MAP
+        self.assertEqual(TARGET_CODE_MAP["zh-CN"], "zh")
+        self.assertEqual(TARGET_CODE_MAP["zh-TW"], "zh")
+
     def test_runtime_and_build_pipeline_consume_landing_copy(self):
         runtime = (ROOT / "assets/landing-i18n.js").read_text(encoding="utf-8")
         translator = (ROOT / "scripts/translate_catalog.py").read_text(encoding="utf-8")
@@ -51,6 +75,10 @@ class ProductPageLocalizationTests(unittest.TestCase):
         self.assertIn('assets/landing-copy.json', translator)
         self.assertIn('old["landing_ui"]', translator)
         self.assertIn("summary_html", enhancer)
+        free_engine = (ROOT / "scripts/free_translation.py").read_text(encoding="utf-8")
+        self.assertIn("madlad", free_engine)
+        self.assertIn("has_fallback_engine", translator)
+        self.assertIn("has_fallback_engine", page_translator)
         self.assertIn("VisibleCopyParser", page_translator)
         self.assertIn("extract_page_copy", page_translator)
         self.assertIn("landing_pages", page_translator)
