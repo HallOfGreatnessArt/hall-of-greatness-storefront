@@ -31,9 +31,10 @@ def main():
     try:
         with sync_playwright() as playwright:
             browser = playwright.chromium.launch(headless=True)
-            page = browser.new_page()
 
             for language, expected_direction in (("es", "ltr"), ("ar", "rtl")):
+                context = browser.new_context()
+                page = context.new_page()
                 product = products["the-tree-that-refused-to-die"]
                 page_path = ROOT / "landing" / product["landing_slug"] / "index.html"
                 page_html = page_path.read_text(encoding="utf-8")
@@ -59,6 +60,7 @@ def main():
 
                 assert "HALL OF GREATNESS" in body_text, f"{language}: brand was changed"
                 assert product["name"].strip() in body_text, f"{language}: artwork title was changed"
+                assert "Humanity" not in body_text, f"{language}: artwork category remained English"
                 assert "Files included" not in body_text, f"{language}: product-detail label remained English"
                 assert "Product type" not in body_text, f"{language}: product type label remained English"
                 assert "No physical print or frame will be shipped" not in body_text, f"{language}: buyer detail remained English"
@@ -71,6 +73,7 @@ def main():
                     f"Browser localization passed: {language}, dir={expected_direction}, "
                     f"{len(source_texts)} artwork-specific source strings checked."
                 )
+                context.close()
             browser.close()
     finally:
         server.shutdown()
