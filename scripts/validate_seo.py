@@ -69,7 +69,7 @@ expected = {BASE, BASE + "privacy.html", BASE + "terms.html", BASE + "contact.ht
 expected.update(BASE + "landing/" + p["landing_slug"].strip("/") + "/" for p in published)
 assert len(locs) == len(set(locs)), "Duplicate sitemap URLs"
 assert set(locs) == expected, f"Sitemap mismatch: expected {len(expected)} URLs, got {len(locs)}"
-image_entries = root.findall("sm:url/sm:image/image", sm)
+image_entries = root.findall("sm:url/image:image", sm)
 assert len(image_entries) == len(published), f"Expected {len(published)} image entries, got {len(image_entries)}"
 
 print(f"SEO validation passed: homepage + {len(published)} landing pages.")
