@@ -15,6 +15,8 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from localization_policy import is_product_editorially_reviewed
+
 
 def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -151,9 +153,11 @@ def audit(root: Path) -> dict[str, Any]:
                     english_product_fields.append(f"{permalink}:product_details.{detail_key}")
 
         ui_reviewed = data.get("_ui_reviewed") is True and bool(ui)
-        products_reviewed = data.get("_products_reviewed") is True and bool(products)
+        reviewed_product_keys = sorted(key for key, item in products.items() if is_product_editorially_reviewed(item))
+        products_reviewed = bool(published) and len(reviewed_product_keys) == len(published)
+        product_review_status = "editorially-reviewed" if products_reviewed else ("partially-reviewed" if reviewed_product_keys else "unreviewed")
         row["ui_review_status"] = "editorially-reviewed" if ui_reviewed else "unreviewed"
-        row["products_review_status"] = "editorially-reviewed" if products_reviewed else "unreviewed"
+        row["products_review_status"] = product_review_status
         row["counts"] = {
             "ui_keys": len(ui),
             "canonical_ui_keys": len(canonical),
@@ -163,6 +167,7 @@ def audit(root: Path) -> dict[str, Any]:
             "ui_values_identical_to_english": len(english_ui),
             "published_products_expected": len(published),
             "products_present": len(products),
+            "editorially_reviewed_products": len(reviewed_product_keys),
             "missing_products": len(missing_products),
             "stale_product_translations": len(stale_products),
             "missing_product_fields": len(missing_product_fields),
@@ -174,6 +179,7 @@ def audit(root: Path) -> dict[str, Any]:
             "blank_ui_values": blank_ui,
             "ui_values_identical_to_english": english_ui,
             "missing_products": missing_products,
+            "editorially_reviewed_products": reviewed_product_keys,
             "stale_product_translations": stale_products,
             "missing_product_fields": missing_product_fields,
             "product_fields_identical_to_english": english_product_fields,
@@ -203,7 +209,8 @@ def audit(root: Path) -> dict[str, Any]:
         "missing_locale_files": len(missing_files),
         "unregistered_locale_files": len(unregistered_files),
         "editorially_reviewed_ui": sum(x["ui_review_status"] == "editorially-reviewed" for x in rows),
-        "editorially_reviewed_products": sum(x["products_review_status"] == "editorially-reviewed" for x in rows),
+        "fully_reviewed_product_locales": sum(x["products_review_status"] == "editorially-reviewed" for x in rows),
+        "editorially_reviewed_product_entries": sum(x["counts"].get("editorially_reviewed_products", 0) for x in rows),
         "ui_values_identical_to_english": sum(x["counts"].get("ui_values_identical_to_english", 0) for x in rows),
         "product_fields_identical_to_english": sum(x["counts"].get("product_fields_identical_to_english", 0) for x in rows),
         "stale_product_translations": sum(x["counts"].get("stale_product_translations", 0) for x in rows),
