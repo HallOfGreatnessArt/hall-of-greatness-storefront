@@ -62,21 +62,21 @@ class ProductPageLocalizationTests(unittest.TestCase):
         import re
         from free_translation import _split_long_text
 
-        source = (" ".join(["first"] * 300)) + "\\n\\n" + (" ".join(["second"] * 300))
+        source = (" ".join(["first"] * 300)) + "\n\n" + (" ".join(["second"] * 300))
         groups = _split_long_text(source)
         self.assertEqual(len(groups), 2)
         self.assertTrue(all(len(group) == 2 for group in groups))
 
         def fake_madlad(text, target):
-            matches = re.findall(r"(ZXQHOGSEGMENT\\d{6}QXZ)\\n(.*?)(?=\\nZXQHOGSEGMENT|\\Z)", text, flags=re.S)
+            matches = re.findall(r"(ZXQHOGSEGMENT\d{6}QXZ)\n(.*?)(?=\nZXQHOGSEGMENT|\\Z)", text, flags=re.S)
             if matches:
-                return "\\n".join(f"{marker}\\nTranslated {part}" for marker, part in matches)
+                return "\n".join(f"{marker}\nTranslated {part}" for marker, part in matches)
             return "Translated " + text
 
         with patch("free_translation._madlad_translate", side_effect=fake_madlad):
             result = translate_texts([source], "es", None)
         self.assertIsNotNone(result)
-        self.assertEqual(result[0].count("\\n\\n"), 1)
+        self.assertEqual(result[0].count("\n\n"), 1)
         self.assertTrue(result[0].startswith("Translated"))
         self.assertIn("Translated", result[0])
 
