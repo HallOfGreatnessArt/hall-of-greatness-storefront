@@ -53,3 +53,5 @@ jobs:
 # QA-only workflow; artifact is a report, not a deployment input.
 
 # Include translation-model coverage inventory in the same isolated QA run.
+
+# Verify reviewed product copy is preserved when catalogue source changes.
