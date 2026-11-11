@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from translate_landing_pages import extract_page_copy
-from free_translation import translate_text
+from free_translation import translate_text, translate_texts
 from unittest.mock import Mock, patch
 
 
@@ -51,6 +51,16 @@ class ProductPageLocalizationTests(unittest.TestCase):
         with patch("free_translation._madlad_translate", return_value="Traduction MADLAD") as madlad:
             self.assertEqual(translate_text("Hello", "fr", None), "Traduction MADLAD")
             madlad.assert_called_once_with("Hello", "fr")
+
+    def test_madlad_batch_translation_preserves_original_order(self):
+        markers = ["ZXQHOGSEGMENT000000QXZ", "ZXQHOGSEGMENT000001QXZ"]
+        output = f"{markers[0]}\\nUno.\\n{markers[1]}\\nDos."
+        with patch("free_translation._madlad_translate", return_value=output):
+            self.assertEqual(translate_texts(["One.", "Two."], "es", None), ["Uno.", "Dos."])
+
+    def test_madlad_batch_marker_mismatch_falls_back_to_individual_texts(self):
+        with patch("free_translation._madlad_translate", side_effect=["unusable combined output", "Uno.", "Dos."]):
+            self.assertEqual(translate_texts(["One.", "Two."], "es", None), ["Uno.", "Dos."])
 
     def test_madlad_is_used_when_argos_throws(self):
         argos = Mock()
