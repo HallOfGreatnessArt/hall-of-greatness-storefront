@@ -17,7 +17,8 @@ async function init(){
   const lang=code==="auto"?auto():code;let data={};
   if(lang!=="en"){try{const r=await fetch("../../locales/"+encodeURIComponent(lang)+".json");if(r.ok)data=await r.json();}catch(e){}}
   const p=(data.products||{})[permalink]||{};
-  const landing=data.landing_ui||{};
+  const pageCopy=(data.landing_pages||{})[permalink]||{};
+  const landing={...(data.landing_ui||{}),...pageCopy};
   originalTextNodes.forEach(({node,original})=>{if(node.isConnected){let value=original;Object.entries(landing).forEach(([source,translated])=>{if(source!=="Get"&&source&&value.includes(source))value=value.split(source).join(translated);});node.nodeValue=value;}});
   document.documentElement.lang=lang;
   const rtl=(registry.find(x=>x.code===lang)||{}).rtl||false;
