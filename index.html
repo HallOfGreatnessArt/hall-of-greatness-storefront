@@ -331,6 +331,25 @@ section[id]{scroll-margin-top:20px}
  .art-mockup .mock-frame img{max-height:220px}
 }
 
+
+/* Accessible sticky gallery navigation: stays visible without taking extra layout space */
+html{scroll-padding-top:104px}
+section[id]{scroll-margin-top:104px}
+.wrap>header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(17,17,15,.97);
+  -webkit-backdrop-filter:blur(12px);
+  backdrop-filter:blur(12px);
+  box-shadow:0 8px 22px rgba(0,0,0,.22);
+}
+@media(max-width:760px){
+  html{scroll-padding-top:158px}
+  section[id]{scroll-margin-top:158px}
+  .wrap>header{padding-top:12px;padding-bottom:12px}
+}
+
 </style></head><body><div class="wrap">
 <header><div class="logo">HALL OF <span>GREATNESS</span></div><div class="header-tools"><label class="sr-only" for="language-select">Choose language</label><select id="language-select" aria-label="Choose language"><option value="auto">🌐 Auto</option><option value="en">English</option><option value="ar">العربية</option><option value="fr">Français</option><option value="hi">हिन्दी</option><option value="bn">বাংলা</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="es">Español</option><option value="de">Deutsch</option><option value="pt">Português</option><option value="ru">Русский</option><option value="ja">日本語</option><option value="it">Italiano</option></select></div><nav aria-label="Main navigation"><a href="#featured">Featured</a><a href="#collections">Collections</a><a href="#gallery">Gallery</a><a href="#artist">Artist</a></nav></header>
 <main><section class="hero"><div class="eyebrow">A curated world of printable art</div><h1>Art that carries<br><em>a story.</em></h1><p>Discover a gallery shaped by imagination, heritage, human connection, and the timeless beauty of art. Meaningful digital works, ready to become part of your space.</p><a class="btn" href="#collections">Explore collections</a><a class="btn" href="#gallery" style="background:transparent;color:var(--gold);border:1px solid var(--gold)">Discover the gallery</a></section>
