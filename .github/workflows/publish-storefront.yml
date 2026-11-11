@@ -14,6 +14,7 @@ on:
       - "scripts/generate_sitemap.py"
       - "scripts/translate_catalog.py"
       - "scripts/translate_landing_pages.py"
+      - "scripts/free_translation.py"
       - "locales/**"
       - "assets/i18n.js"
       - "assets/landing-i18n.js"
@@ -56,6 +57,26 @@ jobs:
             ~/.local/share/argos-translate
             ~/.local/cache/argos-translate
           key: argos-models-v1-${{ runner.os }}-global
+
+      - name: Cache free MADLAD-400 translation model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/crispasr
+          key: madlad400-crispasr-v0.8.53-${{ runner.os }}-cpu
+
+      - name: Install pinned CPU-only free translation runtime
+        run: |
+          set -euo pipefail
+          mkdir -p .tools/crispasr
+          curl --fail --location --retry 3 \
+            https://github.com/CrispStrobe/CrispASR/releases/download/v0.8.53/crispasr-linux-x86_64.tar.gz \
+            -o /tmp/crispasr.tar.gz
+          echo "3396d49473642d1097b667270b54125279bdca740b735e15c3c96c1b32f787c0  /tmp/crispasr.tar.gz" | sha256sum --check
+          tar -xzf /tmp/crispasr.tar.gz -C .tools/crispasr
+          BIN="$(find .tools/crispasr -type f -name crispasr -perm -u+x | head -1)"
+          test -n "$BIN"
+          echo "CRISPASR_BIN=$GITHUB_WORKSPACE/$BIN" >> "$GITHUB_ENV"
+          "$GITHUB_WORKSPACE/$BIN" --version
 
       - name: Install free open-source translation engine
         run: python -m pip install --disable-pip-version-check argostranslate
