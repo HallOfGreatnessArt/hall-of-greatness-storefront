@@ -1,0 +1,97 @@
+name: Full free multilingual localization build (isolated)
+
+on:
+  push:
+    branches:
+      - feat/product-page-i18n-coverage
+    paths:
+      - ".github/workflows/test-full-localization-build.yml"
+      - "assets/i18n.js"
+      - "assets/landing-copy.json"
+      - "assets/landing-i18n.js"
+      - "catalog-data.json"
+      - "locales/**"
+      - "scripts/free_translation.py"
+      - "scripts/translate_catalog.py"
+      - "scripts/translate_landing_pages.py"
+      - "scripts/validate_translation_coverage.py"
+      - "scripts/generate_landing_pages.py"
+      - "scripts/enhance_landing_pages.py"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: full-free-localization-build
+  cancel-in-progress: false
+
+jobs:
+  full-localization:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Check out isolated localization branch
+        uses: actions/checkout@v4
+
+      - name: Cache free Argos models
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.local/share/argos-translate
+            ~/.local/cache/argos-translate
+          key: argos-models-v1-${{ runner.os }}-global
+
+      - name: Cache free MADLAD-400 model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/crispasr
+          key: madlad400-crispasr-v0.8.53-${{ runner.os }}-cpu
+
+      - name: Install pinned CPU-only MADLAD runtime
+        run: |
+          set -euo pipefail
+          mkdir -p .tools/crispasr
+          curl --fail --location --retry 3 \
+            https://github.com/CrispStrobe/CrispASR/releases/download/v0.8.53/crispasr-linux-x86_64.tar.gz \
+            -o /tmp/crispasr.tar.gz
+          echo "3396d49473642d1097b667270b54125279bdca740b735e15c3c96c1b32f787c0  /tmp/crispasr.tar.gz" | sha256sum --check
+          tar -xzf /tmp/crispasr.tar.gz -C .tools/crispasr
+          BIN="$(find .tools/crispasr -type f -name crispasr -perm -u+x | head -1)"
+          test -n "$BIN"
+          echo "CRISPASR_BIN=$GITHUB_WORKSPACE/$BIN" >> "$GITHUB_ENV"
+          "$GITHUB_WORKSPACE/$BIN" --version
+
+      - name: Install free Argos Python engine
+        run: python -m pip install --disable-pip-version-check argostranslate
+
+      - name: Translate all shared UI and catalogue fields
+        run: python scripts/translate_catalog.py
+
+      - name: Generate and enhance every product page
+        run: |
+          python scripts/generate_landing_pages.py
+          python scripts/enhance_landing_pages.py
+
+      - name: Translate every artwork-specific narrative
+        run: python scripts/translate_landing_pages.py
+
+      - name: Require complete coverage for all registered languages
+        run: python scripts/validate_translation_coverage.py | tee translation-coverage-report.txt
+
+      - name: Preserve selected locale samples for inspection
+        if: always()
+        run: |
+          mkdir -p translation-samples
+          for code in es fr ar he ig bn hi zh-CN zh-TW; do
+            if [ -f "locales/$code.json" ]; then cp "locales/$code.json" translation-samples/; fi
+          done
+
+      - name: Upload isolated translation coverage evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: full-free-localization-build-evidence
+          path: |
+            translation-coverage-report.txt
+            translation-samples/
+          if-no-files-found: warn
