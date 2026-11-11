@@ -1,0 +1,28 @@
+name: Test localization audit (non-production)
+
+on:
+  push:
+    branches:
+      - feat/localization-quality-audit-phase1
+    paths:
+      - "scripts/audit_localization.py"
+      - "tests/test_audit_localization.py"
+      - ".github/workflows/test-localization-audit.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  localization-audit-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out audit branch
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run fixture tests
+        run: python -m unittest discover -s tests -v
+      - name: Run read-only audit against repository
+        run: python scripts/audit_localization.py --format summary
