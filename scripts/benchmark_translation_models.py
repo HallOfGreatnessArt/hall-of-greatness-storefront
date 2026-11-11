@@ -20,16 +20,19 @@ QUALITY_TARGETS = ["fr", "es", "he"]
 ENGINES = [
     ("m2m100", "m2m100", "auto", QUALITY_TARGETS),
     ("madlad400", "madlad", "auto", None),
-    ("opus_mt", "marian", "auto", QUALITY_TARGETS),
+    ("opus_mt", "marian", None, QUALITY_TARGETS),
 ]
 
 
 def run_one(binary, engine_id, backend, model, target, case, timeout):
+    model_arg = model or f"opus-mt-en-{target}"
     command = [
-        str(binary), "--backend", backend, "-m", model,
+        str(binary), "--backend", backend, "-m", model_arg,
         "--text", case["text"], "-sl", "en", "-tl", target,
         "--beam-size", "1",
     ]
+    if engine_id == "opus_mt":
+        command.append("--auto-download")
     started = time.monotonic()
     try:
         completed = subprocess.run(
@@ -82,6 +85,19 @@ def main() -> int:
                     "engine": engine_id, "target": target, "case": case["id"],
                     "return_code": item["return_code"], "seconds": item["elapsed_seconds"],
                 }), flush=True)
+
+    # Verify that MADLAD preserves safe separators used by the production batch translator.
+    batch_markers = ["ZXQHOGSEGMENT000000QXZ", "ZXQHOGSEGMENT000001QXZ"]
+    batch_text = (
+        f"{batch_markers[0]}\\nDiscover meaningful digital artworks inspired by heritage and imagination.\\n"
+        f"{batch_markers[1]}\\nBring timeless printable art into your home."
+    )
+    batch_result = run_one(
+        binary, "madlad400", "madlad", "auto", "es",
+        {"id": "batch-boundary-markers", "text": batch_text}, args.timeout,
+    )
+    batch_result["batch_markers_preserved"] = all(marker in batch_result["stdout"] for marker in batch_markers)
+    results.append(batch_result)
 
     failures = [
         f"{x['engine']}/{x['target']}/{x['case']}: exit {x['return_code']}"
