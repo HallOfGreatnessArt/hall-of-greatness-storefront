@@ -10,7 +10,7 @@ from pathlib import Path
 
 import argostranslate.package
 import argostranslate.translate
-from free_translation import has_fallback_engine, translate_text
+from free_translation import has_fallback_engine, translate_texts
 
 ROOT=Path(__file__).resolve().parents[1]
 REG=json.loads((ROOT/"locales/languages.json").read_text(encoding="utf-8"))["languages"]
@@ -66,14 +66,10 @@ def translate_many(values, target):
     if translator is None and not has_fallback_engine():
         print(f"NO FREE MODEL AVAILABLE: {target}; retaining English fallback.")
         return None
-    result=[]
-    for value in values:
-        # Argos is preferred; MADLAD-400 fills unsupported language pairs.
-        translated=translate_text(str(value), target, translator)
-        if translated is None:
-            print(f"All free translation engines failed for {target}; retaining previous locale data.")
-            return None
-        result.append(translated)
+    # Keep the Argos-first order while batching all unsupported pairs through MADLAD.
+    result=translate_texts([str(value) for value in values], target, translator)
+    if result is None:
+        print(f"All free translation engines failed for {target}; retaining previous locale data.")
     return result
 
 for lang in REG:
