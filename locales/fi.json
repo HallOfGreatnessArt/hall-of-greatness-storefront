@@ -1,0 +1,332 @@
+{
+  "products": {
+    "oubirh": {
+      "summary": "Kahdeksan hienostunutta taideteosta, jotka yhdistävät kultaisia aksentteja, rauhallisia muotoja, eleganttia abstraktiota ja visuaalista harmoniaa kehittyneille nykysisustuksille.",
+      "category": "Kokoelma",
+      "_source_hash": "85810573c609f032749049f0af3efd548b47b50b60c74fae8bbbcb5e0cfaaf2c"
+    },
+    "hqpird": {
+      "summary": "Kolme ainutlaatuista taideteosta, jotka juhlivat Egyptin ja koptiperinnön kestävää henkeä, kulttuurimuistia ja Egyptin ajatonta kauneutta.",
+      "category": "Kokoelma",
+      "_source_hash": "bbee15015588f3854edb7cce4f6ee745a63ecba99e41de9335d42b77a925b26e"
+    },
+    "wdtvt": {
+      "summary": "Kymmenen voimakasta taideteosta myötätunnosta, sietokyvystä, ihmisyhteydestä ja toivosta. Täydellinen tulostettava taidekokoelma mielekkäisiin tiloihin ja huomaavaisiin sisuksiin.",
+      "category": "Kokoelma",
+      "_source_hash": "0beaa1225adf5643d8bf3173e7f93d6f8ebe7ebb067e86674e4e8e27bf908560"
+    },
+    "mxrljy": {
+      "summary": "Taito Stillness kutsuu sinua hidastamaan ja löytämään uudelleen kauneuden hiljainen hetki. Meditatiiviset muodot, lootuskukat, virtaava vesi ja lämmin kultainen valo innostavat tätä seesteistä digitaalista taidetta, joka tuo mietiskelevän ilmapiirin hyvinvointitiloihin ja hienoihin sisätiloihin.",
+      "category": "Eleganssi",
+      "_source_hash": "adcd68bc42846100ab6f13044e8972c34ee7fe07d1f4702b4d1d9fdc7b14e78c"
+    },
+    "gusqyc": {
+      "summary": "Geometria Elegance juhlistaa kokousta arkkitehtoninen muoto, luonnollinen rakenne, ja nykyajan ylellisyyttä. Smaragdisävyt, norsunluun pinnat, veistoksen geometria ja kultainen aksentti luovat hienostuneen abstraktin taiteen hienostuneita koteja, toimistoja ja vieraanvaraisuutta sisustus.",
+      "category": "Eleganssi",
+      "_source_hash": "84014823691b93211841d3dbcf2452a78fd435d388b74dad7f7febe4d752c69f"
+    },
+    "aenwi": {
+      "summary": "Kuvittele kaupunki, joka on mahdollisuuksien muovaama. Huomisen kaupungit on visionäärinen digitaalinen taideteos, jossa juhlitaan arkkitehtonista mielikuvitusta, innovointia ja inhimillistä halua rakentaa valoisampaa tulevaisuutta. Hätkähdyttävä lausunto tulostus nykykoteihin, luoviin studioihin, teknologiatiloihin ja nykyaikaisiin toimistoihin.",
+      "category": "Maailmanlaajuinen",
+      "_source_hash": "e2173f80b274ea619b175b5480c483771929f3d1c9a75ce2893eea0775e30e96"
+    },
+    "gynmhv": {
+      "summary": "Anna luonnon hiljaisen suuruuden muuttaa tilaasi. Luonnon majesteetti juhlii vuorten, vesiputousten, metsien ja valoisan veden restauratiivista kauneutta elävässä maisemateoksessa, joka herättää vapauden, uudistumisen ja tyyneyden. Virkistävä lausunto kotien ja vieraanvaraisuus sisustus.",
+      "category": "Maailmanlaajuinen",
+      "_source_hash": "e6e5a3263c07964a62266c9dbbc5d1e7eb389514c1ade5780eebc6e4228f4b2e"
+    },
+    "jrsgce": {
+      "summary": "Tuo lämpö Välimeren paeta arjen ympäristöön. Mediterranean Dreams vangitsee romanssi rannikkoarkkitehtuurin, loistavat siniset vedet, kukkivat terassit, ja kulta-tunnin valo. Toivottava digitaalinen taidetuloste koteihin, huviloihin, kahviloihin ja matkailuinspiroituihin sisätiloihin.",
+      "category": "Eleganssi",
+      "_source_hash": "f26a8d189f4afe6a0a7a8d671fcbd37c54bd461cdba3f4d15d77243c056e17e5"
+    },
+    "ukxrmq": {
+      "summary": "Etsi rauhallinen hetki hiljaisen vuoristohorisontin kauneudesta. Hiljainen Horizons on luontoa innoittava digitaalinen taideteos, jonka muotona ovat vielä vesi, kaukaiset huiput, pehmeä aamuvalo ja uudistumisen tunne. Hienostunut maisema-aksentti rauhallisiin koteihin, toimistoihin ja hyvinvointitiloihin.",
+      "category": "Eleganssi",
+      "_source_hash": "003e93a0d92367744addfb51152fe6da6c27ac08144b5c89e1e73dd7fec007c7"
+    },
+    "yhkokf": {
+      "summary": "Golden Flow tuo marmorin luonnollisen draaman ja kullan eleganssin nykyaikaiseen abstraktiin koostumukseen. Virtaus tumma ja kevyt muodot luovat syvyyttä, liikettä, ja aliarvioitu ylellisyyttä... ilmeikkään digitaalisen taiteen tulostaminen hienostunut moderni sisustus.",
+      "category": "Eleganssi",
+      "_source_hash": "fc65d52d8cd76ff8b23097321c08f7ca24b70659818dea5dda62f894d09e4c9c"
+    },
+    "nxkxyq": {
+      "summary": "Astu kosmoksen valovisioon. Maailmankaikkeuden takana juhlitaan avaruuden mysteeriä, mittakaavaa ja ihmettä galaksien, taivaallisen valon ja äärettömän mahdollisuuden inspiroimalla unelmallisella digitaalisella taideteoksella. Kiintoisa lausunto tulostus modernin sisustuksen ja uteliaiden mielien.",
+      "category": "Maailmanlaajuinen",
+      "_source_hash": "16177585eb4768f120133dcd37a54ecc8a9108c42b39834cfe2e329ac00623d3"
+    },
+    "mzlqxg": {
+      "summary": "Rakkauden turvakoti vangitsee pienen eleen, jolla on kestävä merkitys: vanhempi varmistaa, ettei lapsi koskaan kohtaa sadetta yksin. Kamppailee hehkuvaa kaupunki-iltaa vastaan, tämä tunteellinen taideteos juhlistaa suojaa, luottamusta, perhettä ja ehdotonta rakkautta.",
+      "category": "Ihmiskunta",
+      "_source_hash": "5c0e78bf9d27136335daa7e34ccf9da42dc590a56d083c83815407b47244dac0"
+    },
+    "etqsav": {
+      "summary": "Valoisa kuu, väri, liike ja ystävyys kohtaavat Taivaallisessa puutarhassa. Tämä unimainen taideteos juhlistaa yksilöllisyyttä, yhteisiä matkoja, vapautta ja naisellista armoa elävän fantasian maailmassa. Erikoinen lausuntopainatus ilmekkäisiin, mielikuvituksellisiin sisätiloihin.",
+      "category": "Eleganssi",
+      "_source_hash": "79723050f56e46edb2f774883a51d0a22ea883d9b80d00bd2c223954ce0c9346"
+    },
+    "vwrllor": {
+      "summary": "Serenityn kultainen veili on hiljaisen voiman, arvokkuuden ja ajattoman eleganssin muotokuva. Rikkaat mustat muodot ja valoisa kulta luovat mietiskelevän visuaalisen läsnäolon.",
+      "category": "Eleganssi",
+      "_source_hash": "3fbd51fc0b3144dfae0749e5c04814f34b8c72ab9c458a6ae346494c7a678894"
+    },
+    "gkwadk": {
+      "summary": "Ihmisen käsissä olevasta taimesta tulee uudistumisen ja yhteisen huolenpidon symboli.",
+      "category": "Ihmiskunta",
+      "_source_hash": "b3d3ed2cdc9e6333f7aaf330e1821220c7ad12874771ec45ca02ca1fc18fbd9f"
+    },
+    "rglfun": {
+      "summary": "Kaksi identiteettiä, joihin liittyy yhteisen ihmisarvomme kultainen symboli.",
+      "category": "Ihmiskunta",
+      "_source_hash": "7621f26df00b476963956773c9499fcec7b87189855fb05b55ebef7cd33c4268"
+    },
+    "cotnkm": {
+      "summary": "Hellyyden juuret ovat kunnianosoitus rakkaudelle, josta tulee osa meitä. Äitiä ja lasta kuvaavan veistoksellisen vision kautta taideteoksessa juhlitaan suojelua, uhrauksia, kuulumista ja hellyyden kestäviä juuria. Se on erittäin tärkeä osa perhetiloja ja harkittuja kokoelmia.",
+      "category": "Ihmiskunta",
+      "_source_hash": "89071cfe9a0d1d8d3c14646a7e82629d42e4e1b858b782ebe96d94ff24be625e"
+    },
+    "kaztbw": {
+      "summary": "AURELLE muuttaa kahvin jokapäiväisen rituaalin runolliseksi läsnäolon, naisellisen eleganssin ja hiljaisen ylellisyyden juhlaksi. Valoisa kulta, syvä musta ja lämmin kahvisävyt luovat erottuvan digitaalisen taiteen tyylikkäisiin koteihin, kahvinkulmiin, boutique-kahviloihin ja nykyajan sisuksiin.",
+      "category": "Eleganssi",
+      "_source_hash": "50f25bf7ff18b06b831f14e21450ee7562896355ad94503c70b68b66a14178bb"
+    },
+    "cuitvq": {
+      "summary": "Veistoksellinen eleganssi ja kultainen valo ilmentävät sisäisen tasapainon hiljaista voimaa.",
+      "category": "Eleganssi",
+      "_source_hash": "2ccb896bdf8f18e66ce1bc1ca17fecfdd6eed315302fe2ee1d2ef8c5532b18b4"
+    },
+    "rabhc": {
+      "summary": "Serenity on visuaalinen meditaatio sietokyvystä, tasapainosta ja hiljaisesta voimasta, joka elää sisällä. Sen kaunis abstrakti muoto ja kultainen puolikuu luovat tyylikkään keskipisteen tiloille, jotka on omistettu pohdinnalle, rauhalliselle ja nykyiselle suunnittelulle.",
+      "category": "Eleganssi",
+      "_source_hash": "3e36120477fa3535261c200c5e9210726bf08cb1968d35b25965f08e276b936f"
+    },
+    "ycltf": {
+      "summary": "Kuolemaan luopunut puu kertoo tarinan sietokyvystä: jopa raunioiden keskellä elämä voi löytää tien eteenpäin. Sen juurista tulee siltoja rikkinäisten paikkojen välillä, jolloin selviytyminen muuttuu yhteydeksi ja uudistumiseksi. Merkityksellinen lausuntoteos jokaiselle, joka uskoo toivon voivan kasvaa uudelleen.",
+      "full_description": "PUU, JOKA EI KUOLLUT\n\nJopa rauniot, elämä löytää keinon.\n\nEntä jos suurin toivon symboli ei olisi ihmiskunnan rakentama muistomerkki vaan elävä puu, joka kieltäytyi antautumasta?\n\nKuvittele kaupunki, joka on menettänyt äänensä. Rakennukset ovat kaatuneet, kadut ovat kadonneet raunioiden alta, ja ihmiselämän jäljet näyttävät haihtuneen hiljaisiksi. Kuitenkin, tämän unohdetun paikan sydämessä, yksi ainutlaatuinen puu elää edelleen.\n\nSen juuret eivät etsi vain maaperää. Ne kurottavat rikkinäisten seinien yli, syleilevät rikkinäisiä rakenteita, venyttävät jakautuneita rakennuksia, muuttaen tuhoa yhteyteen. Sen oksat nousevat kohti taivasta kantaen tuoreita vihreitä lehtiä kultaisen valon alla, joka murtuu pilvien läpi.\n\nTämä on enemmän kuin luonnon kohtaus, joka valtaa tuhotun kaupungin. Se on liikuttava tarina ihmishengestä.\n\nPuu edustaa jokaista ihmistä, joka on kärsinyt vastoinkäymisistä sallimatta vaikeuksien määritellä tulevaisuuttaan. Se puhuu niiden puolesta, jotka ovat menettäneet lähes kaiken, mutta silti löytää voimaa aloittaa uudelleen. Niille, jotka ovat haavoittaneet elämän, mutta eivät ole antaneet sydämensä tulla tyhjiksi. Niille, jotka ymmärtävät, että selviytyminen ei ole vain pysyä hengissä... se on löytää rohkeutta kasvaa uudelleen.\n\nSen juuret symboloivat sietokykyä: näkymätöntä voimaa, joka pitää meidät yhdessä, kun kaikki ympärillämme hajoaa. Niiden sillat edustavat sovintoa, yhteyttä ja mahdollisuutta rakentaa uudelleen suhteita ja yhteisöjä jakautumisen ja menetyksen jälkeen.\n\nVihreä katos on lupaus, ettei tuhon tarvitse olla viimeinen luku. Linnut nousevat taivaalle muistuttaa meitä siitä, että vapaus ja uudistuminen voivat palata, jopa synkkien vuodenaikojen jälkeen.\n\nJa kultainen valo raunioiden takana tarjoaa hiljaisen mutta voimakkaan viestin: tulevaisuus ei riipu siitä, mikä on tuhottu, vaan siitä, mikä vielä on rohkeutta kasvaa.\n\nTämä taide kertoo kaikille, jotka ovat kohdanneet vaikean luvun elämässä, jokaiselle, joka on rakentanut uudelleen menetyksen jälkeen, ja jokaiselle, joka uskoo, että toivoa ei ole puute vaikeuksia, vaan voimaa jatkaa siitä huolimatta.\n\nSe on mielekäs lausuntokappale olohuoneeseen, toimistoon, kirjastoon, luovaan studioon tai mihin tahansa tilaan, jossa sietokyky, uudistuminen ja inspiraatio ansaitsevat paikan. Se voi myös tulla huomaavainen lahja joku aloittaa uuden luvun, voittaa vastoinkäymiset, tai löytää rohkeutta nousta uudelleen.\n\nAnna tämän puun muistuttaa sinua siitä, että menneisyytesi ei tarvitse rajoittaa tulevaisuuttasi. Vaikka elämä jättäisi sinut raunioiden ympäröimänä, - jokin sinussa voi yhä kasvaa.\n\nSinua ei määrittele se, mikä hajosi ympärilläsi. Sinut määrittelee se, mikä sinussa vielä kasvaa.\n\nIHMÄLLISYYS\n\nTaidetta sielun kanssa. Viesti ilman rajoja.\n\nTAIDEPAININ JA HAKUA KOSKEVAT TIEDOT\n\nTutustu tähän THE TREE, ETTÄ EPÄÄ DIE digitaalista taidetta tulostaa tulostettava seinä taidetta, erottuva koti sisustus, ja harkittu sisustus. Ladattava taideteos henkilökohtaiseen näyttöön, jossa tulostusvalinnat valitaan toimitettavan tiedoston ja tilan mukaan.",
+      "category": "Ihmiskunta",
+      "product_details": {
+        "files_included": "1 tiedosto · ZIP · 29,1 MB",
+        "product_type": "Digitaalisen taideteoksen lataus",
+        "delivery": "Välitön digitaalinen lataus oston jälkeen",
+        "physical_item": "Fyysistä tulostamista tai kehystä ei lähetetä",
+        "printing": "Tulosta toimitetut tiedostot haluamallasi tulostuspalveluntarjoajalla; tarkista mukana olevat mitat ennen koon valintaa",
+        "usage": "Seuraa henkilökohtaisen käytön ja muiden lisenssiehtojen mukana lataus"
+      },
+      "_source_hash": "d9bff692f10639a5edca9063641cbb3c31081b0579c89bb9cc9635499e614060"
+    },
+    "bctcdz": {
+      "summary": "Valo Me jätämme Jokainen toinen kunnioittaa ystävällisyyttä, viisautta ja rohkeutta siirtynyt sukupolvesta toiseen. Hohtavasta lyhdystä tulee symboli toivosta, jonka saamme ja jonka haluamme jakaa. Muuttava taideteos koteihin, toimistoihin ja mielekkäisiin lahjoihin.",
+      "full_description": "VALO, JOITA JÄTTÄÄ YHTEEN\n\nSuurin valo on se, jonka ohi menemme.\n\nJotkut valot valaisevat hetken. Toiset on tarkoitettu valaisemaan sukupolvia.\n\nOn hiljainen totuus, joka yhdistää jokaisen ihmiselämän: kukaan meistä ei aloita matkaamme täysin valossa. Jossain matkan varrella, joku ottaa yhteyttä meihin vanhempi, opettaja, muukalainen, ystävä, tai joku, jonka ystävällisyyttä emme saa koskaan unohtaa. He tarjoavat meille jotakin, joka auttaa meitä löytämään tiemme: hieman toivoa, pala viisautta, teko myötätuntoa, tai vain rohkeutta jatkaa.\n\nEräänä päivänä huomaamme, että saamamme valo on nyt meidän.\n\nVALO JÄTTÄMISTÄ ON taiteellinen kunnianosoitus tälle ainutlaatuiselle inhimilliselle perinnölle - näkymättömälle perinnölle ystävällisyydestä, tiedosta, rakkaudesta, rohkeudesta ja toivosta, joka siirtyy sukupolvesta toiseen.\n\nKoostumuksen ytimessä antiikkinen kultainen lyhty siirtyy käsiparista toiseen. Sen ympärillä eri-ikäisten ja sukupolvien kasvot kohtaavat yhteisen yhteyden hetken. Vanhukset edustavat edeltäjiemme viisautta ja kokemusta. Nuoremmat sukupolvet ilmentävät lupausta siitä, mitä on vielä tulossa. Niiden välillä lyhty tulee voimakas symboli jatkuvuuden: muistutus siitä, että ihmiskunnan suurimpia saavutuksia ei mitata vain mitä me rakennamme, vaan myös se, mitä annamme toisillemme.\n\nYmpäröivä pimeys ja kaukainen kultainen horisontti syventävät kohtauksen merkitystä. Ne edustavat elämän epävarmuutta, kohtaamiamme haasteita ja mahdollisuutta valoisampaan tulevaisuuteen, kun päätämme seistä yhdessä. Kasvoja valaiseva lämmin valo ja käsien tavoittaminen muuttavat yksinkertaisen eleen joksikin universaaliksi: usko siihen, ettei aitoa ystävällisyyttä ole koskaan menetetty.\n\nTämä taideteos kutsuu henkilökohtaisen heijastuksen:\n\nKuka toi valoa elämääsi, kun tarvitsit sitä eniten? Kenen polusta voisi tulla kirkkaampi, koska haluat antaa tänään jotain?\n\nSen viesti kuuluu kaikille iästä, kansalaisuudesta, kulttuurista tai taustasta riippumatta. Olemme kaikki saaneet jotain muilta, ja meillä kaikilla on jotain merkityksellistä annettavaa.\n\nEnemmän kuin taidetta. Tarkoituksen arvo.\n\nTämä taideteos on suunniteltu olemaan enemmän kuin koristeellinen lausunto, ja se tuo lämpöä, syvyyttä ja inhimillistä yhteyttä sen asuintilaan. Siitä voi tulla mielekäs läsnäolo olohuoneessa, tutkimuksessa, toimistossa tai missä tahansa paikassa, jossa inspiraatiota ja heijastusta arvostetaan.\n\nSe tekee myös huomaavaisen lahjan henkilölle, joka uskoo ystävällisyyteen, perheeseen, kiitollisuuteen, inhimilliseen yhteyteen ja kestävän toivon voimaan.\n\nKoska tärkeimmät asiat, jotka jätämme taaksemme, eivät ole aina asioita, joita voimme pitää. Joskus ne ovat elämää, johon olemme koskettaneet, sydämet, joita olemme rohkaisseet, ja valo, jota olemme auttaneet toisia löytämään sisällään.\n\nJaettu valo ei ole koskaan kadotettu valo. Se on valo, joka elää.\n\nIHMISVASTUUT\n\nKoska ihmiskunta On suurin mestariteos, jonka voimme jättää taaksemme.\n\nIHMÄLLISYYS\n\nTaidetta sielun kanssa. Viesti ilman rajoja.\n\nTAIDEPAININ JA HAKUA KOSKEVAT TIEDOT\n\nTutustu tähän THE LIGHT WE LET VE WE WE WE WE WE WE WE WEW OF  Ladattava taideteos henkilökohtaiseen näyttöön, jossa tulostusvalinnat valitaan toimitettavan tiedoston ja tilan mukaan.",
+      "category": "Ihmiskunta",
+      "product_details": {
+        "files_included": "1 tiedosto · ZIP · 27.5 MB",
+        "product_type": "Digitaalisen taideteoksen lataus",
+        "delivery": "Välitön digitaalinen lataus oston jälkeen",
+        "physical_item": "Fyysistä tulostamista tai kehystä ei lähetetä",
+        "printing": "Tulosta toimitetut tiedostot haluamallasi tulostuspalveluntarjoajalla; tarkista mukana olevat mitat ennen koon valintaa",
+        "usage": "Seuraa henkilökohtaisen käytön ja muiden lisenssiehtojen mukana lataus"
+      },
+      "_source_hash": "6fb6b36e97f6c6a45e6f2b988972dcc4dc6ed88e314b292990945b1ee19d2a6d"
+    },
+    "msuzc": {
+      "summary": "Lapsi nousee kohti valoa, jota tukee monien sukupolvien myötätunto.",
+      "full_description": "KÄDENVASTA\n\nTulevaisuuden rakentaa monet kädet.\n\nYhdenkään lapsen ei pitäisi kiivetä yksin huomiseen.\n\nPortaat ovat symbolinen solidaarisuuden, huolenpidon ja hiljaisten tukitoimien juhla, jotka muuttavat elämää. Sydämessään lapsi astuu kohti valoa portaissa, jotka ovat ihmiskädet. Jokainen käsi edustaa henkilöä, uhrausta, ystävällisyyttä tai panosta, joka auttaa jotakuta toista nousemaan.\n\nIHMISTUTKIMUS\n\nKädet eivät kuulu yhteen ikään tai ammattiin. He puhuvat vanhempien, opettajien, työntekijöiden, hoitajien, naapureiden ja sukupolvien puolesta, joiden ponnisteluja ei useinkaan nähdä. Lapsi edustaa jokaista nuorta, joka kantaa unelmaa, joka tarvitsee rohkaisua, mahdollisuuksia ja suojelua.\n\nLiike pimeydestä kohti kultaista valoa antaa kuvalle sen emotionaalisen voiman. Toivo ei ole passiivista odottamista; se on jotain, mitä ihmiset rakentavat toisilleen, anteliaita toimia kerrallaan.\n\nAinutlaatuinen lausunto tilastasi.\n\nNäytä tämä työ perhekodissa, toimistossa, koulussa, kirjastossa, studiossa tai yhteisön tiloissa muistutuksena siitä, että ihmisarvo ja mahdollisuudet kasvavat, kun ihmiset seisovat yhdessä. Se on myös huomaavainen lahja opettajille, vanhemmille, mentoreille ja jokaiselle, joka uskoo seuraavan sukupolven lupaukseen.\n\nYksi lapsi. Lukemattomia auttavia käsiä. Tulevaisuus rakennettu yhdessä.\n\nDIGITAALINEN ARTWORK\n\nDigitaalinen lataus; fyysistä tulostamista tai kehystä ei lähetetä.\n\nLataa tämän tuotteen mukana toimitetut tiedostot oston jälkeen.\n\nTarkista mukana olevat tiedostotiedot, tulostusopas ja henkilökohtainen käyttölupa ennen tulostamista.\n\nValitse tulostuskoko ja palvelu, joka vastaa toimitettuja tiedostoja.\n\nTuo kotiin taideteos ja tarina. Valitse Lataa Taideteos tehdä siitä osa tilaa.\n\nHienoa taidetta sielun kanssa. Viesti ilman rajoja.",
+      "category": "Ihmiskunta",
+      "product_details": {
+        "files_included": "1 tiedosto · ZIP · 8,6 MB",
+        "product_type": "Digitaalisen taideteoksen lataus",
+        "delivery": "Välitön digitaalinen lataus oston jälkeen",
+        "physical_item": "Fyysistä tulostamista tai kehystä ei lähetetä",
+        "printing": "Tulosta toimitetut tiedostot haluamallasi tulostuspalveluntarjoajalla; tarkista mukana olevat mitat ennen koon valintaa",
+        "usage": "Seuraa henkilökohtaisen käytön ja muiden lisenssiehtojen mukana lataus"
+      },
+      "_source_hash": "b963b309b0892c055876d7451b6a8bc36190e3b1d23c99420a1c588817cba9ac"
+    },
+    "tzlsv": {
+      "summary": "Kunnianosoitus rakkaudelle, uhraukselle ja maailmalle, jota pidämme luotettavana seuraajillemme.",
+      "full_description": "SUKUPUOLTEN VAKAUS\n\nTästä päivästä tulee heidän huominen.\n\nSuurin perintömme voi olla maailma, jonka jätämme jonkun toisen käsiin.\n\nSukupolvien perintö tutkii ennen meitä tulleiden ja seuraavien välistä sidettä. Se on heijastus perheestä, muistista, uhrauksesta ja vastuusta siirtää eteenpäin muutakin kuin omaisuutta: seuraavan sukupolven arvoista tulevaisuutta.\n\nRakastan sitä, että näytän siltä.\n\nTeos puhuu vanhempien sukupolvien tuomasta viisaudesta ja nuorten mahdollisuudesta. Niiden välillä on yhteinen velvollisuus säilyttää se, mikä ylläpitää elämää, korjata se, mikä on vahingoittunut, ja tehdä valintoja, joita ohjaavat pikemminkin huolet kuin mukavuus.\n\nSen syvempi viesti on sekä intiimi että universaali. Perhe voi olla kuulumisen lähde, mutta vastuu ulottuu perheen ulkopuolelle ja yhdistää yhteisöjä ja sukupolvia heidän jakamansa maailman läpi.\n\nJÄLJELLÄ JÄLJELLÄ\n\nLaita tämä taideteos perheen asuintilaan, opiskeluun, toimistoon, koulutusympäristöön tai paikkaan, jossa kunnioitetaan muistoa ja tulevaisuutta. Se on huomaavainen lahja vanhemmille, isovanhemmille, mentoreille ja ihmisille, jotka uskovat, että hoito on perintö.\n\nMeillä ei ole tulevaisuutta. Luotamme niihin, jotka tulevat peräämme.\n\nDIGITAALINEN ARTWORK\n\nDigitaalinen lataus; fyysistä tulostamista tai kehystä ei lähetetä.\n\nLataa tämän tuotteen mukana toimitetut tiedostot oston jälkeen.\n\nTarkista mukana olevat tiedostotiedot, tulostusopas ja henkilökohtainen käyttölupa ennen tulostamista.\n\nValitse tulostuskoko ja palvelu, joka vastaa toimitettuja tiedostoja.\n\nTuo kotiin taideteos ja tarina. Valitse Lataa Taideteos tehdä siitä osa tilaa.\n\nHienoa taidetta sielun kanssa. Viesti ilman rajoja.",
+      "category": "Ihmiskunta",
+      "product_details": {
+        "files_included": "1 tiedosto · ZIP · 23,1 Mt",
+        "product_type": "Digitaalisen taideteoksen lataus",
+        "delivery": "Välitön digitaalinen lataus oston jälkeen",
+        "physical_item": "Fyysistä tulostamista tai kehystä ei lähetetä",
+        "printing": "Tulosta toimitetut tiedostot haluamallasi tulostuspalveluntarjoajalla; tarkista mukana olevat mitat ennen koon valintaa",
+        "usage": "Seuraa henkilökohtaisen käytön ja muiden lisenssiehtojen mukana lataus"
+      },
+      "_source_hash": "85dbcd535bbf5b49e8e3d1f629b11e1c1044b6806e4066780e78dd7693e99981"
+    },
+    "bgqxwm": {
+      "summary": "Välimeren muusa kokoaa yhteen näkyvän muotokuvan, geometrisen muodon ja Välimeren valovoiman. Rikas sininen, lämmin kulta ja rohkea väri luovat erottuvan nykytaiteen keräilijöille ja sisustuksille, jotka toivottavat yksilöllisyyden tervetulleeksi.",
+      "full_description": "Välimeren muusan muotokuva Kulta, meri ja mysteeri\n\nJossa kultainen valo kohtaa syvän sinisen meren, kiehtova muusa syntyy maailma geometrinen kauneus ja Välimeren unelmia.\n\nVälimeren muusa on ilmeikäs, nykyaikainen kubisti-inspiroitu taideteos, jossa yhdistyvät silmiinpistävä naisellinen muotokuva ja rannikkoarkkitehtuurin ajaton houkutus, aurinkoiset vedet, kaukaiset vuoret ja hehkuva kultainen aurinko.\n\nRich safiiri blues, teksturoitu kulta, lämmin norsunluu, dramaattisia mustia muotoja, ja elävä crimson huulet luovat rohkea visuaalinen harmonia. Jokainen kulmikas muoto paljastaa erilaisen näkökulman, kun taas lumoava merenranta kohtaus kutsuu mielikuvituksen vaeltamaan todellisuuden ja taiteellisen fantasian välillä.\n\nTyylikäs, salaperäinen ja täynnä luonnetta oleva taideteos muuttaa seinän yksilöllisyyden ja hienostuneen maun ilmaisuksi.\n\nTäydellinen\n\nYlelliset olohuoneet ja nykyaikaiset kodit\n\nToimeenpanotoimistot ja luovat studiot\n\nBoutique hotellit ja tyylikkäät vastaanottotilat\n\nModernit huoneistot ja kuratut sisätilat\n\nTaiteen ystävät etsivät erottuva lausunto kappaletta\n\nVälimeren muusa on enemmän kuin seinän sisustus. Se on taiteen, arkkitehtuurin, värin ja mielikuvituksen tapaaminen.\n\nTaiteellinen luomus HANKUSTA.\n\nTAIDEPAININ JA HAKUA KOSKEVAT TIEDOT\n\nTutustu tähän Mediterranean museon digitaalista taidetta painettu seinätaidetta, erottuva koti sisustus, ja harkittu sisustus. Ladattava taideteos henkilökohtaiseen näyttöön, jossa tulostusvalinnat valitaan toimitettavan tiedoston ja tilan mukaan.",
+      "category": "Eleganssi",
+      "product_details": {
+        "files_included": "1 tiedosto · ZIP · 19,0 MB",
+        "product_type": "Digitaalisen taideteoksen lataus",
+        "delivery": "Välitön digitaalinen lataus oston jälkeen",
+        "physical_item": "Fyysistä tulostamista tai kehystä ei lähetetä",
+        "printing": "Tulosta toimitetut tiedostot haluamallasi tulostuspalveluntarjoajalla; tarkista mukana olevat mitat ennen koon valintaa",
+        "usage": "Seuraa henkilökohtaisen käytön ja muiden lisenssiehtojen mukana lataus"
+      },
+      "_source_hash": "af1fb435d85020fb7dfffd341b525734bf626e5bde25a5492169ffa49b1059c6"
+    },
+    "aedllm": {
+      "summary": "Haavoittunut planeetta, lukemattomat kädet - ja yhteinen vastuu suojella huomenna.",
+      "full_description": "Viimeinen maailmankaikkeus\n\nYksi Maa. Yksi ihmiskunta. Yksi tulevaisuus.\n\nJotkut kuvat koristavat seinän. Toiset kysyvät, millaisen maailman jätämme taaksemme.\n\nIHMISYYDEN LIGACY-kokoelmasta Maan viimeinen itku muuttaa planeettamme voimakkaaksi haavoittuvuuden, vastuun ja toivon symboliksi. Ihmisen kädet kerääntyvät ympäri murtunutta maailmaa, joka ilmaisee totuuden, joka ylittää jokaisen rajan: Maapallo ei kuulu yhdellekään kansakunnalle tai sukupolvelle, ja sen tulevaisuus riippuu meistä kaikista.\n\nKAKSI MAHDOLLISTA TULEVAISUUTTA\n\nToinen puoli koostumus herättää kustannukset laiminlyödä maa, teollisuuden savu, vaurioituneet ekosysteemit, ja maisema paineenalainen. Toinen avautuu uudistumiseen: vihreä kasvu, kirkas vesi, puhdas energia ja kultaisen auringonnousun lämpö. Vastakohta ei ole vain tumma vastaan valo. Se on valinta antautumisen ja vastuun välillä.\n\nMaapalloa ympäröivät monet kädet edustavat eri-ikäisiä ihmisiä, kulttuureja ja taustoja. Yhdessä niistä tulee visuaalinen lupaus siitä, että merkityksellinen muutos on yhteinen inhimillinen yritys.\n\nMiksi se on tärkeää?\n\nTämä työ on ihmisille, jotka välittävät luonnollisesta maailmasta, tulevista sukupolvista ja taiteen voimasta aloittaa tärkeitä keskusteluja. Siitä voi tulla huomaavainen yhteyspiste kodissa, toimistossa, koulutustilassa, galleriassa tai ympäristökeskeisessä ympäristössä.\n\nAnna muurin kantaa viesti: tulevaisuus on yhä meidän.\n\nDIGITAALINEN ARTWORK\n\nDigitaalinen lataus; fyysistä tulostamista tai kehystä ei lähetetä.\n\nLataa tämän tuotteen mukana toimitetut tiedostot oston jälkeen.\n\nTarkista mukana olevat tiedostotiedot, tulostusopas ja henkilökohtainen käyttölupa ennen tulostamista.\n\nValitse tulostuskoko ja palvelu, joka vastaa toimitettuja tiedostoja.\n\nTuo kotiin taideteos ja tarina. Valitse Lataa Taideteos tehdä siitä osa tilaa.\n\nHienoa taidetta sielun kanssa. Viesti ilman rajoja.",
+      "category": "Ihmiskunta",
+      "product_details": {
+        "files_included": "1 tiedosto · ZIP · 24,6 Mt",
+        "product_type": "Digitaalisen taideteoksen lataus",
+        "delivery": "Välitön digitaalinen lataus oston jälkeen",
+        "physical_item": "Fyysistä tulostamista tai kehystä ei lähetetä",
+        "printing": "Tulosta toimitetut tiedostot haluamallasi tulostuspalveluntarjoajalla; tarkista mukana olevat mitat ennen koon valintaa",
+        "usage": "Seuraa henkilökohtaisen käytön ja muiden lisenssiehtojen mukana lataus"
+      },
+      "_source_hash": "1b778b5e9598b900f314bd014e2126505fb284bc853987ad799e788064ade832"
+    },
+    "smuewa": {
+      "summary": "Golden Gaze vetää katsojan maailmaan, jossa näkyvä geometria, Välimeren ilmapiiri ja valoisa väri. Hätkähdyttävä nykyaikainen muotokuva taideteos suunniteltu tuomaan mysteeri, luonne, ja taiteellinen ero modernin sisustus.",
+      "full_description": "Kultainen katse Kulta, meri & Ajaton mysteeri\n\nLöydä taide, joka vangitsee silmän ja inspiroi mielikuvitusta.\n\nGolden Gaze on alkuperäinen digitaalinen taideteos HALL OF GREATNESS -kokoelmasta, joka yhdistää nykyaikaiset kubisti-inspiroidut muodot Välimeren maisemien ajattomaan kauneuteen.\n\nKiinnostava naisellinen muotokuva syntyy rohkeiden geometristen muotojen, valoisa kultaisten tekstuurien, syvän safiirin blues, lämmin norsunluu ja silmiinpistävä crimson aksentti. Lumoava meripihkasilmä vetää sinut aurinkoisten merien, valkorannikon arkkitehtuurin, lentävien lintujen ja veistosmuotojen maailmaan.\n\nTämä ilmaisullinen koostumus tuo yhteen mysteerin, eleganssin ja modernin taiteellisen energian, joka luo erottuvan keskipisteen hienostuneita sisustus.\n\nMiksi rakastat tätä taidetta\n\nDistinctive Artistic Style: Contemporary cubist-inspired design expressive geometric muotoja.\n\nRich Color Paletti: Kulta, safiiri sininen, hiili, norsunluu, ja crimson luoda silmiinpistävä visuaalinen kontrasti.\n\nElegantti sisustusaksentti: Suunniteltu täydentämään nykyaikaisia ja ylellisiä tiloja.\n\nJoustava näyttö Valitse haluamasi kehys, tulostusmateriaali ja sopiva koko.\n\nDigitaalinen Convenience: Lataa mukana olevat tiedostot ja järjestä tulostus haluamallasi palvelulla.\n\nTäydellinen\n\nYlelliset olohuoneet ja modernit kodit\n\nToimeenpanotoimistot ja luovat studiot\n\nBoutique hotellit ja tyylikkäät vastaanottotilat\n\nNykyaikainen huoneistot ja kuratut sisätilat\n\nTaiteen ystävät etsivät erottuva koriste lausuma\n\nAjatellut lahjat modernin taiteen ihailijoille\n\nMitä saat?\n\nLadattava digitaalinen taidepaketti, joka sisältää tässä tuoteluettelossa mainitut tiedostot sekä asiakkaan tulostusohjeet ja henkilökohtaisen käytön lisenssin.\n\nTuotetiedot\n\nTaideteoksen otsikko: Kultainen katse\n\nKokoelma: SUURUUS\n\nTyyli: Contemporary Cubist-Inspired Art\n\nSuunta: muotokuva\n\nKuvasuhde: 2:3\n\nTuotetyyppi: Digitaalinen taideteos tulostusta varten\n\nFyysinen toimitus: Ei mitään\n\nTulosta & näyttö\n\nTulosta taideteos ammattimaisella tulostuspalvelulla haluamallasi sopivalla materiaalilla, kuten hienopaperilla tai kankaalla. Valitse kehys ja viimeistely, joka täydentää sisustus.\n\nLopullinen tulostuskoko ja laatu riippuvat toimitettujen tiedostojen resoluutiosta ja valitun tulostuspalvelun ominaisuuksista. Värit voivat vaihdella hieman näyttöjen ja painotuotteiden välillä.\n\nHuomaa: Tämä on digitaalinen tuote. Fyysistä maalausta, kehystä tai painettua esinettä ei lähetetä. Huonemallit ovat havainnollisia näyttöesimerkkejä; ladattavat taidetiedostot ovat tulostamiseen tarkoitettu tuote.\n\nKäyttöehdot\n\nOstoksesi on tarkoitettu vain henkilökohtaiseen käyttöön. Voit tulostaa taideteoksen omaan kotiisi tai toimistoosi ja näyttää fyysisen jäljen henkilökohtaisena lahjana. Et saa myydä, jakaa, jakaa, alilisensoida tai kaupallisesti kopioida digitaalisia tiedostoja ilman erillistä kirjallista lupaa.\n\nTAIDEPAININ JA HAKUA KOSKEVAT TIEDOT\n\nTutustu tähän THE GOLDEN GAZE -digitaaliseen taiteeseen painettuna seinätaiteena, erottuvana kodin sisustuksena ja harkitusti sisustettuina. Ladattava taideteos henkilökohtaiseen näyttöön, jossa tulostusvalinnat valitaan toimitettavan tiedoston ja tilan mukaan.",
+      "category": "Perintö",
+      "product_details": {
+        "files_included": "1 tiedosto · ZIP · 22,4 Mt",
+        "product_type": "Digitaalisen taideteoksen lataus",
+        "delivery": "Välitön digitaalinen lataus oston jälkeen",
+        "physical_item": "Fyysistä tulostamista tai kehystä ei lähetetä",
+        "printing": "Tulosta toimitetut tiedostot haluamallasi tulostuspalveluntarjoajalla; tarkista mukana olevat mitat ennen koon valintaa",
+        "usage": "Seuraa henkilökohtaisen käytön ja muiden lisenssiehtojen mukana lataus"
+      },
+      "_source_hash": "bc5775f40dbc520fc6c48e9b41f3d7b8b577c56471e899302b456db982f635ec"
+    },
+    "jzjbrg": {
+      "summary": "Tuo muinaisen Egyptin majesteetti ja mysteeri avaruuteenne Niilin kuningattaren kanssa. Egyptin kestävän taiteellisen perinnön innoittamana tämä digitaalinen taideteos lisää kuninkaallista kulttuurista läsnäoloa koteihin, toimistoihin, hotelleihin ja kuratoituihin sisätiloihin.",
+      "full_description": "NILEN KUNINGATAR\n\nRegal Tribute muinaisen Egyptin taiteelliseen perintöön\n\nTuo muinaisen Egyptin mysteeri, arvokkuus ja kestävä kauneus ympäristöönne Niilin kuningattaren kanssa, digitaalinen taideteos, jonka inspiroi yksi historian merkittävimmistä sivilisaatioista.\n\nTämä teos on luotu egyptiläisen perinnön ihailijoille ja erottuvalle ilmaisutaiteelle. Se kutsuu katsojan yhdistämään symboliikan, käsityötaidon, mielikuvituksen ja kestävän kiehtomuksen muovaamaan perintöön Niilin ja muinaisen Egyptin maailman kanssa.\n\nAVARUUDEN VÄHIMMÄISTYS\n\nNiilin kuningatar voi tulla silmiinpistäväksi keskipisteeksi tyylikkäissä olohuoneissa, yksityisissä opinnoissa, johtotehtävissä, putiikissa, vastaanottotiloissa ja kuratoiduissa sisätiloissa. Se on myös huomaavainen valinta keräilijöille ja kaikille, jotka tuntevat vetoa egyptiläiseen taiteeseen ja kulttuuriseen muotoiluun.\n\nDIGITAALISET HAETIEDOT\n\nTämä on digitaalinen tuote. Fyysistä maalausta, painettua julistetta tai kehystä ei lähetetä. Kun olet ostanut, lataa listalle annetut tiedostot ja tarkista niiden sisältämät muodot, mitat ja käyttöehdot ennen tulostamista. Valitse tulosteen koko ja materiaali, joka sopii toimitettuun tiedostoon ja haluamaasi näyttöön. Värit voivat vaihdella hieman näyttöjen ja tulostettujen tulosten välillä.\n\nNILEN KUNINGATAR - muinaisen maailman regaalinen kaiku.\n\nIHMÄLLISYYS\n\nTAIDEPAININ JA HAKUA KOSKEVAT TIEDOT\n\nTutustu tähän The Queen Of The Nile -digitaaliseen taiteeseen tulostettavalle seinätaiteelle, erottuvalle kodin sisustukselle ja harkitusti suunnitelluille sisuksille. Ladattava taideteos henkilökohtaiseen näyttöön, jossa tulostusvalinnat valitaan toimitettavan tiedoston ja tilan mukaan.",
+      "category": "Perintö",
+      "product_details": {
+        "files_included": "1 tiedosto · ZIP · 44,0 MB",
+        "product_type": "Digitaalisen taideteoksen lataus",
+        "delivery": "Välitön digitaalinen lataus oston jälkeen",
+        "physical_item": "Fyysistä tulostamista tai kehystä ei lähetetä",
+        "printing": "Tulosta toimitetut tiedostot haluamallasi tulostuspalveluntarjoajalla; tarkista mukana olevat mitat ennen koon valintaa",
+        "usage": "Seuraa henkilökohtaisen käytön ja muiden lisenssiehtojen mukana lataus"
+      },
+      "_source_hash": "a4497ccda79c60d5130d5f8f09b9c6acc088280a4d67c8ca9e65d4ff49de7d69"
+    },
+    "csyqhm": {
+      "summary": "Egyptin koptinen sielu on nykyajan taiteellinen tulkinta, jonka inspiraationa on koptisen Egyptin visuaalinen perintö, symboliikka ja kulttuurinen muisti. Se on luotu niille, jotka arvostavat historian, identiteetin ja taiteellisen ilmaisun kohtaamista, se antaa mielekkään lausunnon kodeissa, toimistoissa, gallerioissa ja kulttuuritiloissa.",
+      "full_description": "EGYPTIN KUPINEN sielu\n\nNykytaiteellinen tribuutti koptiperintöön\n\nTutustu Egyptin koptiperinnön henkilökohtaiseen taiteelliseen tulkintaan Egyptin koptisen sielun kautta, digitaaliseen taiteeseen, jonka inspiraationa on visuaalinen muisti, symbolinen kieli ja koptitaiteeseen liittyvä kulttuurinen ilmapiiri.\n\nSen sijaan, että tämä teos esittäytyisi arkeologisena kopiona tai tietyn historiallisen ikonin kopiona, se lähestyy perintöä nykytaiteellisen linssin kautta. Se yhdistää kulttuurimuistin ja modernin visuaalisen ilmeen kutsua pohtimaan identiteettiä, jatkuvuutta, uskoa, ja rikkaus Egyptin kerrostunut historia.\n\nMielenkiintoista taidetta arvostaville teos tarjoaa muutakin kuin koristelua: se luo yhteyden erottuvaan kulttuuriperinteeseen ja sen pysyvään asemaan Egyptin tarinassa.\n\nSOVELLETAAN TIETEELLISIIN PUOLIIN\n\nHarkittu lisä koteihin, yksityisiin opintoihin, toimistoihin, gallerioihin, kulttuurisiin sisätiloihin ja tiloihin, joissa arvostetaan Egyptin kulttuuriperintöä ja taiteellista ilmaisua. Se voi myös olla mielekäs lahja kopti-inspiroidun ja egyptiläisen kulttuuritaiteen ihailijoille.\n\nDIGITAALIT TUOTETIEDOT\n\nTämä on digitaalinen lataus. Fyysistä maalausta, painettua julistetta tai kehystä ei lähetetä. Tarkistakaa listauksen mukana toimitetut tiedostot, mukaan lukien niiden muodot, mitat ja käyttöehdot ennen tulostuksen järjestämistä. Värit voivat vaihdella hieman näytön, tulostimen ja valitun materiaalin mukaan.\n\nEGYPTIN KUMPPANIN KYSYMYKSEN KYSYMYKSET . Taide on kuviteltu uudelleen.\n\nIHMÄLLISYYS\n\nTAIDEPAININ JA HAKUA KOSKEVAT TIEDOT\n\nTutustu tämä Koptinen sielu Egyptin digitaalinen taideprintti tulostettava seinä taidetta, erottuva koti sisustus, ja harkittu sisustus. Ladattava taideteos henkilökohtaiseen näyttöön, jossa tulostusvalinnat valitaan toimitettavan tiedoston ja tilan mukaan.",
+      "category": "Perintö",
+      "product_details": {
+        "files_included": "1 tiedosto · ZIP · 60,1 MB",
+        "product_type": "Digitaalisen taideteoksen lataus",
+        "delivery": "Välitön digitaalinen lataus oston jälkeen",
+        "physical_item": "Fyysistä tulostamista tai kehystä ei lähetetä",
+        "printing": "Tulosta toimitetut tiedostot haluamallasi tulostuspalveluntarjoajalla; tarkista mukana olevat mitat ennen koon valintaa",
+        "usage": "Seuraa henkilökohtaisen käytön ja muiden lisenssiehtojen mukana lataus"
+      },
+      "_source_hash": "2eca69141928e3e01281fed2b39524d668bb838241b109042d8477d2e941b1b2"
+    },
+    "jvffaq": {
+      "summary": "NILEN ULKOINEN GRACE juhlistaa Egyptin ajatonta kauneutta, tuoden yhteen kuninkaallisen läsnäolon ja Niilin kestävän rytmin. Perinnöllistä digitaalista taidetta tiloja, jotka arvostavat Egyptin kulttuuria ja ajatonta eleganssia.",
+      "category": "Perintö",
+      "_source_hash": "b061cdc5a55b2e444a09cd7d8c3d8d1eb73ad3315fe38b35610ca590b595c16e"
+    },
+    "kjclzu": {
+      "summary": "Sanan takana oleva side juhlistaa harvinaista, sanatonta yhteyttä lapsen ja uskollisen kumppanin välillä. Lämmin, kohottava taideteos luottamuksesta, ystävyydestä, viattomuudesta ja ehdottomasta rakkaudesta luoden hellyyden tunteen perhetiloihin ja eläinten ystävien koteihin.",
+      "full_description": "BOND BEYOND MERKINTÄ\n\nEhdottoman rakkauden kauneus\n\nJotkut ystävät ovat Tuntenut Heart, ei selittää sanoja.\n\nJuhlitaan ainutlaatuista yhteyttä lapsen ja rakkaan koiran välillä A Bond Beyond Words, sydäntä lämmittävä taideteos, joka vangitsee puhtaimmat ilmaisut ystävyys, uskollisuus, viattomuus, ja ehdoton rakkaus.\n\nKultaiseen auringonvaloon kylvettyyn kauniiseen puutarhaan sijoitettuna tämä koskettava kohtaus kuvaa hellästi iloista kultaista noutajaansa. Heidän rauhanomaiset ilmeensä ja läheisyytensä paljastavat erityistä luottamusta, onnea ja kumppanuutta.\n\nYmpäröivät eloisat kukat, rehevä vihreä ruoho, viehättävä puinen linnunpönttö, ja lämmin hehku luonnon, koostumus luo ilmapiirin täynnä hellyyttä, mukavuutta ja lapsuuden muistoja.\n\nJokainen yksityiskohta auttaa kaunis muistutus, että rakkaus ei aina tarvitse sanoja. Joskus yksinkertainen syleily kertoo kaiken.\n\nEnemmän kuin koristeprintti, Bond Beyond Words on juhlistaa kauniita suhteita, jotka tekevät elämästä merkityksellisempää.\n\nMiksi rakastat tätä Arthoria?\n\nSydäntä lämmittävä Tarina: Kaunis ystävyys lapsen ja hänen uskollisen koiransa välillä.\n\nEmotional Connection: juhlii ystävällisyyttä, luottamusta, kumppanuutta, ja ehdotonta rakkautta.\n\nKultainen-tunti Kauneus: Lämmin auringonvalo luo rauhallisen ja kohottavan ilmapiirin.\n\nVibrant Garden Lisätiedot: Värikkäät kukat ja luonnon ympäristö tuovat tuoreutta ja elämää koostumus.\n\nAjaton valitus: mielekäs taideteos, joka resonoi lasten, vanhempien, perheiden ja eläinten ystävien kanssa.\n\nAjattelevainen Lahja Idea: Ihana valinta jokaiselle, joka arvostaa erityistä side ihmisten ja lemmikkien.\n\n\n\nLasten makuuhuoneet ja leikkihuoneet.\n\nPerheen olohuoneet ja tervetuloa käytävät.\n\nLastentarhat ja lukukulmia.\n\nEläinklinikat ja eläinhoitolat.\n\nEläinsuojia ja adoptiokeskuksia.\n\nPerhehotelleja ja tervetuloa vieraanvaraisuus tilat.\n\nKoulut, lastenhoitokeskukset, ja yhteisötilat.\n\nLemmikkien rakastavaiset ja perheet juhlivat ystävyyden iloa.\n\nMitä sinä saat?\n\nDigitaalinen latauspaketti sisältää:\n\nAlkuperäinen digitaalinen taideteos PNG-muodossa.\n\nValmisteltu laadukas 2:3 muotokuva JPG tulostustiedosto.\n\nSuositellut tulostuskoon vaihtoehdot.\n\nPDF-tulostus- ja kokoamisopas.\n\nStart TÄSTÄ tiedoston lataus- ja tulostusohjeet.\n\nSelkeää tietoa kuvan resoluutiosta ja käyttöehdoista.\n\nSUOSITELLUT PAININTKOKOT\n\nTaideteoksessa on monipuolinen 2:3 muotokuvasuhde ja se soveltuu:\n\n4 × 6 tuumaa\n\n8 × 12 tuumaa\n\n12 × 18 tuumaa\n\n16 × 24 tuumaa\n\n20 × 30 tuumaa\n\nParas visuaalinen kokemus, suosittelemme premium matta, satiini, tai hieno taidetta paperi.\n\nTÄRKEÄÄ TIEDOT\n\nTämä on digitaalinen lataus. Fyysistä taidetta tai kehystä ei lähetetä.\n\nVärit voivat vaihdella hieman näytön, tulostimen ja paperin mukaan.\n\nDigitaaliset tiedostot on tarkoitettu henkilökohtaiseen käyttöön, ellei erillistä kaupallista lisenssiä osteta.\n\nKaupallinen näyttö yrityksissä ja julkisissa tiloissa edellyttää asianmukaista kaupallista lupaa.\n\nDigitaalisia tiedostoja ei saa jälleenmyydä, jakaa tai jakaa.\n\nVähän rakkautta.\n\nTuo kotiin kaunis muistutus lojaaliudesta, ystävyydestä ja ehdotonta rakkautta, joka tekee päivästä kirkkaamman.\n\nAntakaa Bondin täyttää tilanne lämmöllä, onnella ja ystävyyden ajattomalla magialla, jota ei tarvitse selittää.\n\nYksi sydän. Kaksi sielua. Loputon rakkaus.\n\nTAIDEPAININ JA HAKUA KOSKEVAT TIEDOT\n\nTutustu tähän BOND BEYOND Words The Beauty of Unconditional Love digitaalinen taideprint tulostaa seinätaiteen, erottuva koti sisustus, ja harkittu sisustus. Ladattava taideteos henkilökohtaiseen näyttöön, jossa tulostusvalinnat valitaan toimitettavan tiedoston ja tilan mukaan.",
+      "category": "Ihmiskunta",
+      "product_details": {
+        "files_included": "1 tiedosto · ZIP · 7,8 Mt",
+        "product_type": "Digitaalisen taideteoksen lataus",
+        "delivery": "Välitön digitaalinen lataus oston jälkeen",
+        "physical_item": "Fyysistä tulostamista tai kehystä ei lähetetä",
+        "printing": "Tulosta toimitetut tiedostot haluamallasi tulostuspalveluntarjoajalla; tarkista mukana olevat mitat ennen koon valintaa",
+        "usage": "Seuraa henkilökohtaisen käytön ja muiden lisenssiehtojen mukana lataus"
+      },
+      "_source_hash": "af7fd1018209d1a0c50074203cc6c678ce973ea18a6dd07595de274e8d12da36"
+    },
+    "xvccaj": {
+      "summary": "Seitsemän mielikuvituksellista taideteosta, jotka innoittavat kosmosta, tulevia kaupunkeja, luontoa ja Välimeren kauneutta.",
+      "full_description": "MAAILMANLAAJUINEN TAIDE JA KUULEMUS\n\nMatkustaa pidemmälle tutun läpi seitsemän digitaalisen taideteoksen kokoelman, jonka inspiroivat kosminen ihme, taivaallinen kauneus, visionaarinen arkkitehtuuri, luonto ja Välimeren henki. Jokainen teos avaa erilaisen visuaalisen maailman, joka tuo uteliaisuutta, liikettä ja mielikuvitusta nykytiloihin.\n\nMaailmankaikkeuden mysteeristä kaupunkeihin, joista uneksimme rakentaa, upeista luonnonmaisemista ilmekkäisiin rannikkonäkyihin, tämä kokoelma juhlii monia tapoja, joilla taide voi laajentaa mahdollisuuksiamme.\n\nMikä on sisäänrakennettu?\n\nMaailmankaikkeuden takana\n\nTaivaallinen puutarha\n\nHuomisen kaupungit\n\nLuonnon majesteetti\n\nVälimeren unet\n\nVälimeren muusa\n\nEleganssin geometria\n\nMissä se ON?\n\nErinomainen kokoelma olohuoneita, toimistoja, luovia studioita, hotelleja, ravintoloita, vastaanottotiloja ja sisustuksia, jotka toivottavat tervetulleeksi ilmaisutaiteen ja keskustelulähtöisen sisustuksen.\n\nDIGITAALIHAKEMUS\n\nTämä on digitaalinen tuote. Fyysistä taidetta tai kehystä ei lähetetä. Lataa nippuun sisältyvät tiedostot ja tarkista niiden muodot, mitat ja käyttöehdot ennen tulostamista. Valitse toimitetuille tiedostoille sopiva tulostuskoko ja materiaali. Värit voivat vaihdella hieman näyttöjen ja tulostettujen tulosten välillä.\n\nTutustu taiteeseen ilman rajoja. Anna mielikuvituksen muokata maailmaasi.\n\nLoistavaa taidetta ilman rajoja.",
+      "category": "Eleganssi",
+      "product_details": {
+        "product_type": "Digitaalisen taideteoksen lataus",
+        "delivery": "Välitön digitaalinen lataus oston jälkeen",
+        "physical_item": "Fyysistä tulostamista tai kehystä ei lähetetä",
+        "printing": "Tulosta toimitetut tiedostot haluamallasi tulostuspalveluntarjoajalla; tarkista mukana olevat mitat ennen koon valintaa",
+        "usage": "Noudata ladatun tiedoston käyttöehtoja",
+        "bundle_item_count": "Bundle-kokoelma; jäljempänä luetellut yksittäiset taideteokset"
+      },
+      "_source_hash": "d8641c6b467679268bbf7fa3a052b8f3d1afec3f69b284f8c9413088a02c671d"
+    },
+    "wjxgxb": {
+      "summary": "Tuokaa muinaisen Egyptin kestävä henki avaruuteenne. Ikuinen Egypti juhlistaa sivilisaation majesteettisuutta, joka on monumentaalisen arkkitehtuurin, Niilin ja poikkeuksellisen kulttuurisen perinnön muovaama. Suunniteltu silmiinpistävään digitaaliseen taidegrafiikkaan Egyptin perinnön, historian ja ajattoman sisustuksen ystäville.",
+      "full_description": "ULKOINEN EGYPTI\n\nMuinaisen sivilisaation ajaton henki\n\nTuokaa muinaisen Egyptin kestävä suuruus ympäristöönne Iankaikkisen Egyptin kanssa, digitaalinen taideteos, joka on innoittanut pyramidien, suuren sfinksin ja Niilin ajattoman maiseman monumentaalista läsnäoloa.\n\nLuotu niille, jotka tuntevat yhteyden historiaan, kulttuurinen muisti, ja taiteellinen perintö Egyptin, tämä koostumus tarjoaa enemmän kuin koristekuva. Se herättää sivilisaation mittakaavan, mysteerin ja jatkuvuuden, jonka visuaalinen kieli innoittaa maailmaa.\n\nSen perinnöllinen ilmapiiri tekee siitä erityisen keskipisteen nykykodeille, yksityisille opinnoille, toimistoille, hotelleille, kulttuuritiloille sekä historiaa ja taidetta juhliville sisäosille.\n\n- Miksi se kuuluu tilaasi?\n\nVisuaalinen kunnianosoitus muinaisen Egyptin kestävälle kulttuuriperinnölle.\n\nErikoinen perinnöllinen korostus moderniin ja klassiseen sisustukseen.\n\nMerkityksellinen valinta Egyptin historian keräilijöille ja ihailijoille.\n\nIlmaiseva digitaalinen taideteos, joka voidaan tulostaa ja kehystää tilaasi sopivaksi.\n\nDIGITAALIT TUOTETIEDOT\n\nTämä on digitaalinen lataus. Fyysistä maalausta, painettua julistetta tai kehystä ei lähetetä. Lataa ostoksesi mukana toimitetut tiedostot ja tarkista niiden mukana olevat muoto, mitat ja käyttöehdot ennen tulostamista. Värit voivat vaihdella hieman näytön, tulostimen ja valitun materiaalin mukaan.\n\nUlkoinen EGYPT  Perintöä ajan takaa.\n\nIHMÄLLISYYS\n\nTAIDEPAININ JA HAKUA KOSKEVAT TIEDOT\n\nLöydä tämä ULKOINEN EGYPTI Muinaisen sivilisaation ajaton henki - digitaalisen taiteen tulostus tulostettavaan seinätaiteeseen, erottuvaan kodin sisustukseen ja harkitusti suunniteltuihin sisustuksiin. Ladattava taideteos henkilökohtaiseen näyttöön, jossa tulostusvalinnat valitaan toimitettavan tiedoston ja tilan mukaan.",
+      "category": "Perintö",
+      "product_details": {
+        "files_included": "4 tiedostoa · JPG, PDF, PNG, TXT · 9,1 MB",
+        "product_type": "Digitaalisen taideteoksen lataus",
+        "delivery": "Välitön digitaalinen lataus oston jälkeen",
+        "physical_item": "Fyysistä tulostamista tai kehystä ei lähetetä",
+        "printing": "Tulosta toimitetut tiedostot haluamallasi tulostuspalveluntarjoajalla; tarkista mukana olevat mitat ennen koon valintaa",
+        "usage": "Seuraa henkilökohtaisen käytön ja muiden lisenssiehtojen mukana lataus"
+      },
+      "_source_hash": "af4bb9b510bcc457b6750421a6f2d14b3beabca71579f4cd5f83484617097abe"
+    },
+    "fgdpqp": {
+      "summary": "Kuvitellussa työpajassa aikaa ei mitata, vaan veistetään. KLOCKMAKERIN unelma muuttaa vaihteet, taivaalliset mekanismit ja mahdottomat välineet runolliseksi muistin, keksinnön ja ajan kulumisen meditaatioksi. Tapaaminen höyrypunk mielikuvitus ja symbolinen surrealismi.",
+      "full_description": "Kuvitellussa työpajassa aikaa ei mitata, vaan veistetään. KLOCKMAKERIN unelma muuttaa vaihteet, taivaalliset mekanismit ja mahdottomat välineet runolliseksi muistin, keksinnön ja ajan kulumisen meditaatioksi. Tapaaminen höyrypunk mielikuvitus ja symbolinen surrealismi. Kiinnostava valinta kirjastoihin, opintoihin, toimistoihin ja design-led sisustukseen. Digitaalinen lataus toimitetaan ZIP-tiedostona. Tarkista mukana olevat tiedostot ja tekniset tiedot oston jälkeen ennen tulostuskoon valintaa.",
+      "category": "Eleganssi",
+      "product_details": {
+        "files_included": "1 tiedosto · ZIP · 36,8 Mt"
+      },
+      "_source_hash": "30ab80fd3d5210fdd5ec47f8f60c9b5f121908831ac3a07129ffe69e98b6bb2c"
+    }
+  },
+  "ui": {
+    "navFeatured": "Käytössä",
+    "navCollections": "Kokoelmat",
+    "navGallery": "Galleria",
+    "navArtist": "Taiteilija",
+    "eyebrow": "Kuorrutettu taidemaailma",
+    "heroTitle": "<em>Taide, joka kantaa tarinaa.</em>",
+    "heroText": "Tutustu galleria muotoutuu mielikuvitusta, perintö, ihmisen yhteys, ja ajaton kauneus taidetta. Merkityksellisiä digitaalisia teoksia, valmiina tulemaan osaksi tilaasi.",
+    "explore": "Tutki kokoelmia",
+    "discover": "Tutustu galleria",
+    "featuredEyebrow": "Tarinat vierailijat palaavat",
+    "featuredTitle": "Esitetyt taideteokset",
+    "featuredText": "Kuusi merkittävää teosta. Kuusi eri tapaa tuoda taidetta ja ihmisten tunteita avaruuteen.",
+    "collectionsEyebrow": "Kuormatut kokoelmat",
+    "collectionsTitle": "Tutustu kokoelmiin",
+    "collectionsText": "Kuratoidut matkat taiteen, kulttuurin ja tunteiden läpi. Tutki kokoelma tai mene suoraan sen turvallinen kassalle.",
+    "galleryEyebrow": "Koko galleria",
+    "galleryTitle": "Yksittäiset taideteokset",
+    "galleryText": "Etsi taideteoksen otsikon, teeman tai luokan mukaan. Esikatsele tarinaa tai mene suoraan digitaaliseen lataukseen.",
+    "search": "Etsi nimiä ja teemoja...",
+    "artistEyebrow": "Gallerian takana",
+    "artistTitle": "Artistista",
+    "artistP1": "On taiteilija takana HALL OF GREATNESS, riippumaton digitaalinen taidegalleria tuo alkuperäisiä visuaalisia tarinoita maailmanlaajuiselle yleisölle.",
+    "artistP2": "Hänen taiteellinen käytäntönsä tuo yhteen veistoksen, kokeilun ja digitaalisen muutoksen. Jokainen teos tarjoaa muutakin kuin koristeen: tunnelman, muiston tai ihmistarinan.",
+    "artistP3": "Egyptin ja koptiperinnöstä universaaliin teemaan myötätunto, arvokkuus, toivo ja mielikuvitus, galleria kutsuu sinut kokemaan taidetta omalla tavallasi.",
+    "tagline": "Merkillistä taidetta. Kestävä läsnäolo.",
+    "digital": "Digitaaliset tuotteet · Nopea lataus Gumroad",
+    "privacy": "Yksityisyys",
+    "terms": "Ehdot",
+    "contact": "Yhteystiedot",
+    "gumroad": "Gumroad-kauppa ...",
+    "exploreArt": "Tutki taidetta",
+    "discoverStory": "Tutustu tarinaan",
+    "buyDownload": "Osta lataus",
+    "buyCollection": "Osta kokoelma",
+    "exploreCollection": "Tutki kokoelmaa",
+    "printable": "Tulostettava digitaalinen taide",
+    "format": "Digitaalinen tiedosto · Tulosta tilaasi sopivassa koossa",
+    "noResults": "Mikään taideteos ei vastaa hakuasi.",
+    "catalogError": "Gallerialuettelo on tilapäisesti saatavilla. Virkistä sivua.",
+    "all": "Kaikki",
+    "of": "/",
+    "artworks": "taideteokset",
+    "choose": "Valitse kieli"
+  },
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f"
+}
