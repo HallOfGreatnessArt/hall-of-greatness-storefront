@@ -100,6 +100,7 @@ class ProductPageLocalizationTests(unittest.TestCase):
         translator = (ROOT / "scripts/translate_catalog.py").read_text(encoding="utf-8")
         enhancer = (ROOT / "scripts/enhance_landing_pages.py").read_text(encoding="utf-8")
         page_translator = (ROOT / "scripts/translate_landing_pages.py").read_text(encoding="utf-8")
+        coverage_validator = (ROOT / "scripts/validate_translation_coverage.py").read_text(encoding="utf-8")
         workflow = (ROOT / ".github/workflows/publish-storefront.yml").read_text(encoding="utf-8")
         self.assertIn('data.landing_ui||{}', runtime)
         self.assertIn("originalTextNodes", runtime)
@@ -114,6 +115,8 @@ class ProductPageLocalizationTests(unittest.TestCase):
         self.assertIn("VisibleCopyParser", page_translator)
         self.assertIn("extract_page_copy", page_translator)
         self.assertIn("landing_pages", page_translator)
+        self.assertIn("missing_page_copy", coverage_validator)
+        self.assertIn("validate_translation_coverage.py", workflow)
         self.assertIn('data-hog-summary', enhancer)
         self.assertIn('assets/landing-copy.json', workflow)
 
