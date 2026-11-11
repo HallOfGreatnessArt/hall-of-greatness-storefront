@@ -1,0 +1,39 @@
+name: SEO and sitemap validation
+
+on:
+  push:
+    branches:
+      - "fix/**"
+    paths:
+      - "index.html"
+      - "catalog-data.json"
+      - "landing/**"
+      - "scripts/**"
+      - ".github/workflows/seo-validation.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "index.html"
+      - "catalog-data.json"
+      - "landing/**"
+      - "scripts/**"
+      - ".github/workflows/seo-validation.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Generate landing pages and sitemap
+        run: |
+          set -euo pipefail
+          python scripts/generate_landing_pages.py
+          python scripts/enhance_landing_pages.py
+          python scripts/generate_sitemap.py
+      - name: Validate HTML, SEO metadata, robots.txt and sitemap XML
+        run: python scripts/validate_seo.py
