@@ -6,6 +6,8 @@ on:
       - feat/localization-quality-audit-phase1
     paths:
       - "scripts/audit_localization.py"
+      - "scripts/localization_policy.py"
+      - "scripts/translate_catalog.py"
       - "scripts/audit_translation_engine_coverage.py"
       - "tests/test_audit_localization.py"
       - ".github/workflows/test-localization-audit.yml"
