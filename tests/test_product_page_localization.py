@@ -31,7 +31,7 @@ class ProductPageLocalizationTests(unittest.TestCase):
     def test_artwork_specific_extractor_keeps_story_and_skips_brand_title_and_shared_copy(self):
         sample = """<!doctype html><html><head><title>Sample</title></head><body>
         <span class="brand">HALL OF GREATNESS</span><h1>SAMPLE ARTWORK</h1>
-        <p>A unique story about courage, memory, and renewal.</p>
+        <p>A unique story about courage, memory, and renewal.</p>\n        <p data-hog-summary>catalog summary placeholder</p>\n        <div data-hog-category>category placeholder</div>\n        <div data-hog-full-description><p>long description placeholder</p></div>\n        <div data-hog-product-details><p>product detail placeholder</p></div>
         <p>Digital download</p><div class="price">$5.00</div>
         <a>Explore &amp; Get the Artwork ↗</a></body></html>"""
         extracted = extract_page_copy(sample, ["SAMPLE ARTWORK"])
@@ -40,6 +40,10 @@ class ProductPageLocalizationTests(unittest.TestCase):
         self.assertNotIn("HALL OF GREATNESS", extracted)
         self.assertNotIn("Digital download", extracted)
         self.assertNotIn("$5.00", extracted)
+        self.assertNotIn("catalog summary placeholder", extracted)
+        self.assertNotIn("category placeholder", extracted)
+        self.assertNotIn("long description placeholder", extracted)
+        self.assertNotIn("product detail placeholder", extracted)
 
     def test_argos_is_preferred_and_madlad_is_used_when_argos_is_missing(self):
         argos = Mock()
@@ -105,6 +109,8 @@ class ProductPageLocalizationTests(unittest.TestCase):
         self.assertIn('data.landing_ui||{}', runtime)
         self.assertIn("originalTextNodes", runtime)
         self.assertIn("data.landing_pages||{}", runtime)
+        self.assertIn("if(p.summary)", runtime)
+        self.assertIn("if(p.category)", runtime)
         self.assertIn('assets/landing-copy.json', translator)
         self.assertIn('old["landing_ui"]', translator)
         self.assertIn("summary_html", enhancer)
