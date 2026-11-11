@@ -54,7 +54,7 @@ class ProductPageLocalizationTests(unittest.TestCase):
 
     def test_madlad_batch_translation_preserves_original_order(self):
         markers = ["ZXQHOGSEGMENT000000QXZ", "ZXQHOGSEGMENT000001QXZ"]
-        output = f"{markers[0]}\\nUno.\\n{markers[1]}\\nDos."
+        output = f"{markers[0]}\nUno.\n{markers[1]}\nDos."
         with patch("free_translation._madlad_translate", return_value=output):
             self.assertEqual(translate_texts(["One.", "Two."], "es", None), ["Uno.", "Dos."])
 
