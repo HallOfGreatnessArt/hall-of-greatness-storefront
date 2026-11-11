@@ -11,7 +11,7 @@ import json
 from html.parser import HTMLParser
 from pathlib import Path
 
-from free_translation import has_fallback_engine, translate_text
+from free_translation import has_fallback_engine, translate_texts
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -133,29 +133,29 @@ def main():
                 print(f"REVIEW REQUIRED: {code}/{permalink}; preserving reviewed page copy.")
                 continue
 
-            translated = {}
-            failed = None
+            working_texts = []
+            protected_titles = []
             for source_text in source_texts:
-                try:
-                    protected = []
-                    working_text = source_text
-                    for title_index, title in enumerate(titles):
-                        if title and title in working_text:
-                            token = f"ZXQHOGTITLE{title_index}QXZ"
-                            working_text = working_text.replace(title, token)
-                            protected.append((token, title))
-                    result = translate_text(working_text, code, translator)
-                    if result is None:
-                        raise RuntimeError("Argos and MADLAD-400 could not translate this text")
-                    for token, title in protected:
-                        result = result.replace(token, title)
-                    translated[source_text] = result
-                except Exception as exc:
-                    failed = exc
-                    break
-            if failed is not None or len(translated) != len(source_texts):
-                print(f"TRANSLATION FAILED: {code}/{permalink}; preserving prior complete copy. {failed}")
+                working_text = source_text
+                protected = []
+                for title_index, title in enumerate(titles):
+                    if title and title in working_text:
+                        token = f"ZXQHOGTITLE{title_index}QXZ"
+                        working_text = working_text.replace(title, token)
+                        protected.append((token, title))
+                working_texts.append(working_text)
+                protected_titles.append(protected)
+
+            translated_values = translate_texts(working_texts, code, translator)
+            if translated_values is None or len(translated_values) != len(source_texts):
+                print(f"TRANSLATION FAILED: {code}/{permalink}; preserving prior complete copy.")
                 continue
+
+            translated = {}
+            for source_text, result, protected in zip(source_texts, translated_values, protected_titles):
+                for token, title in protected:
+                    result = result.replace(token, title)
+                translated[source_text] = result
 
             translated["_source_hash"] = source_hash
             translated["_review_status"] = MACHINE
