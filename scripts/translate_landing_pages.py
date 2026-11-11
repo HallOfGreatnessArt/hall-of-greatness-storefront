@@ -137,7 +137,17 @@ def main():
             failed = None
             for source_text in source_texts:
                 try:
-                    translated[source_text] = translator.translate(source_text)
+                    protected = []
+                    working_text = source_text
+                    for title_index, title in enumerate(titles):
+                        if title and title in working_text:
+                            token = f"ZXQHOGTITLE{title_index}QXZ"
+                            working_text = working_text.replace(title, token)
+                            protected.append((token, title))
+                    result = translator.translate(working_text)
+                    for token, title in protected:
+                        result = result.replace(token, title)
+                    translated[source_text] = result
                 except Exception as exc:
                     failed = exc
                     break
