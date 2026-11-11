@@ -86,18 +86,26 @@ def main() -> int:
                     "return_code": item["return_code"], "seconds": item["elapsed_seconds"],
                 }), flush=True)
 
-    # Verify that MADLAD preserves safe separators used by the production batch translator.
-    batch_markers = ["ZXQHOGSEGMENT000000QXZ", "ZXQHOGSEGMENT000001QXZ"]
-    batch_text = (
-        f"{batch_markers[0]}\nDiscover meaningful digital artworks inspired by heritage and imagination.\n"
-        f"{batch_markers[1]}\nBring timeless printable art into your home."
-    )
-    batch_result = run_one(
-        binary, "madlad400", "madlad", "auto", "es",
-        {"id": "batch-boundary-markers", "text": batch_text}, args.timeout,
-    )
-    batch_result["batch_markers_preserved"] = all(marker in batch_result["stdout"] for marker in batch_markers)
-    results.append(batch_result)
+    # Test several low-token boundary styles for reliable MADLAD batching.
+    batch_specs = [
+        ("bracketed-numbers", ["[1]", "[2]"]),
+        ("numbered-list", ["1)", "2)"]),
+        ("hash-markers", ["###1###", "###2###"]),
+    ]
+    batch_results = []
+    for case_id, markers in batch_specs:
+        batch_text = (
+            f"{markers[0]}\\nDiscover meaningful digital artworks inspired by heritage and imagination.\\n"
+            f"{markers[1]}\\nBring timeless printable art into your home."
+        )
+        batch_result = run_one(
+            binary, "madlad400", "madlad", "auto", "es",
+            {"id": f"batch-{case_id}", "text": batch_text}, args.timeout,
+        )
+        batch_result["batch_markers_preserved"] = all(marker in batch_result["stdout"] for marker in markers)
+        batch_results.append(batch_result)
+        results.append(batch_result)
+
 
     failures = [
         f"{x['engine']}/{x['target']}/{x['case']}: exit {x['return_code']}"
