@@ -67,6 +67,7 @@ def main():
                 assert "Product type" not in body_text, f"{language}: product type label remained English"
                 assert "No physical print or frame will be shipped" not in body_text, f"{language}: buyer detail remained English"
                 assert "The Tree That Refused to Die tells a story of resilience" not in body_text, f"{language}: summary remained English"
+                assert "What if the greatest symbol of hope was not a monument built by humanity" not in body_text, f"{language}: full artwork narrative remained English"
                 for source_text in source_texts:
                     assert source_text not in body_text, (
                         f"{language}: visible page narrative remained in English: {source_text[:100]}"
