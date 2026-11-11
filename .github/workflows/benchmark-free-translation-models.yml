@@ -12,6 +12,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: translation-model-benchmark
+  cancel-in-progress: true
+
 jobs:
   translation-model-benchmark:
     runs-on: ubuntu-latest
@@ -36,7 +40,7 @@ jobs:
           python scripts/benchmark_translation_models.py \
             --binary "$CRISPASR_BIN" \
             --output benchmark-results \
-            --timeout 900
+            --timeout 90
       - name: Upload raw benchmark outputs
         if: always()
         uses: actions/upload-artifact@v4
