@@ -45,7 +45,7 @@ a:focus-visible,.btn:focus-visible{outline:3px solid var(--gold);outline-offset:
 header a.back,.btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
 @media(max-width:760px){
  .wrap{width:calc(100% - 32px)}
- header{padding:16px 0;gap:10px}
+ header{padding:16px 0;gap:10px;flex-wrap:wrap}
  .brand{font-size:15px;letter-spacing:2px}
  header a.back{font-size:12px;padding:8px 0}
  .hero{padding:32px 0;gap:22px}
