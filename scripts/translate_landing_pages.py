@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = json.loads((ROOT / "locales/languages.json").read_text(encoding="utf-8"))
 CATALOG = json.loads((ROOT / "catalog-data.json").read_text(encoding="utf-8"))
 SHARED_COPY = json.loads((ROOT / "assets/landing-copy.json").read_text(encoding="utf-8"))
-CODE_MAP = {"zh-CN": "zh", "zh-TW": "zh"}
+CODE_MAP = {"zh-CN": "zh"}
 REVIEWED = "editorially-reviewed"
 MACHINE = "machine-generated-unreviewed"
 SKIP_TAGS = {"head", "script", "style", "title", "h1", "select", "option"}
