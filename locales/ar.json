@@ -328,5 +328,8 @@
     "artworks": "عملاً فنياً",
     "choose": "اختر اللغة"
   },
-  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f"
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "_ui_reviewed": true,
+  "_ui_translation_status": "editorially-reviewed",
+  "_ui_review_note": "Arabic storefront interface reviewed and protected from automatic machine-translation overwrite."
 }

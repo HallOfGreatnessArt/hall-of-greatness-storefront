@@ -87,7 +87,10 @@ for lang in REG:
         fields["product_details"]=p.get("product_details") or {}
         if products.get(key,{}).get("_source_hash")!=digest(fields):
             pending.append((p,key,fields))
-    needs_ui=old.get("_ui_source_hash")!=ui_hash
+    reviewed_ui = old.get("_ui_reviewed") is True and bool(old.get("ui"))
+    if reviewed_ui and old.get("_ui_source_hash") != ui_hash:
+        print(f"REVIEW REQUIRED: {code} source UI changed; preserving reviewed translation.")
+    needs_ui=old.get("_ui_source_hash")!=ui_hash and not reviewed_ui
     if not needs_ui and not pending:
         print(f"Up to date: {code}; no model installation needed.")
         continue
@@ -104,6 +107,9 @@ for lang in REG:
             translated["heroTitle"]="<em>"+translated["heroTitle"]+"</em>"
         old["ui"]=translated
         old["_ui_source_hash"]=ui_hash
+        old["_ui_translation_status"]="machine-generated-unreviewed"
+    if reviewed_ui:
+        old["_ui_translation_status"]="editorially-reviewed"
     for p,key,fields in pending:
         source_hash=digest(fields)
         flat=[]; flat_keys=[]
