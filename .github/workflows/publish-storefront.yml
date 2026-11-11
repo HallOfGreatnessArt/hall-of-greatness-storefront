@@ -40,7 +40,7 @@ jobs:
         run: |
           set -euo pipefail
           python -m pip install playwright==1.56.0
-          python -m playwright install --with-deps chromium
+          python -m playwright install chromium
 
       - name: Discover and import newly published public Gumroad products without OAuth
         run: |
