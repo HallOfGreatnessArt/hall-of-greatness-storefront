@@ -8,6 +8,7 @@ on:
       - "assets/landing-copy.json"
       - "assets/landing-i18n.js"
       - "scripts/translate_catalog.py"
+      - "scripts/translate_landing_pages.py"
       - "scripts/enhance_landing_pages.py"
       - "scripts/generate_landing_pages.py"
       - "tests/test_product_page_localization.py"
