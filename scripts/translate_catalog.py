@@ -20,6 +20,15 @@ match=re.search(r"const M=(\{[\s\S]*?\});\nconst map=",source)
 if not match: raise SystemExit("Could not locate canonical UI dictionary.")
 ui=json.loads(match.group(1))["en"]
 landing_ui=json.loads((ROOT/"assets/landing-copy.json").read_text(encoding="utf-8"))
+detail_labels={
+    "files_included":"Files included",
+    "product_type":"Product type",
+    "delivery":"Delivery",
+    "physical_item":"Physical item",
+    "printing":"Printing",
+    "usage":"Usage",
+    "bundle_item_count":"Items in bundle",
+}
 
 # Argos package language codes are not always identical to BCP-47 storefront tags.
 CODE_MAP={"zh-CN":"zh","pt":"pt","fa":"fa","he":"he","ar":"ar"}
@@ -90,6 +99,8 @@ for lang in REG:
             pending.append((p,key,fields))
     reviewed_ui = old.get("_ui_reviewed") is True and bool(old.get("ui"))
     landing_hash=digest(landing_ui)
+    detail_labels_hash=digest(detail_labels)
+    needs_detail_labels=old.get("_product_detail_labels_source_hash")!=detail_labels_hash
     reviewed_landing = old.get("_landing_ui_reviewed") is True and bool(old.get("landing_ui"))
     needs_landing = old.get("_landing_ui_source_hash") != landing_hash and not reviewed_landing
     if reviewed_landing and old.get("_landing_ui_source_hash") != landing_hash:
@@ -97,7 +108,7 @@ for lang in REG:
     if reviewed_ui and old.get("_ui_source_hash") != ui_hash:
         print(f"REVIEW REQUIRED: {code} source UI changed; preserving reviewed translation.")
     needs_ui=old.get("_ui_source_hash")!=ui_hash and not reviewed_ui
-    if not needs_ui and not pending and not needs_landing:
+    if not needs_ui and not pending and not needs_landing and not needs_detail_labels:
         print(f"Up to date: {code}; no model installation needed.")
         continue
     translator=get_translator(target)
@@ -126,6 +137,13 @@ for lang in REG:
             old["_landing_ui_translation_status"]="machine-generated-unreviewed"
     elif reviewed_landing:
         old["_landing_ui_translation_status"]="editorially-reviewed"
+    if needs_detail_labels:
+        label_keys=list(detail_labels)
+        label_values=translate_many([detail_labels[key] for key in label_keys],code)
+        if label_values is not None:
+            old["product_detail_labels"]=dict(zip(label_keys,label_values))
+            old["_product_detail_labels_source_hash"]=detail_labels_hash
+            old["_product_detail_labels_translation_status"]="machine-generated-unreviewed"
     for p,key,fields in pending:
         source_hash=digest(fields)
         flat=[]; flat_keys=[]
