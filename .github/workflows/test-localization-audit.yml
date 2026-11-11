@@ -25,7 +25,15 @@ jobs:
       - name: Run fixture tests
         run: python -m unittest discover -s tests -v
       - name: Run read-only audit against repository
-        run: python scripts/audit_localization.py --format summary
+        run: |
+          python scripts/audit_localization.py > localization-audit-report.json
+          python scripts/audit_localization.py --format summary
+      - name: Upload localization audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: localization-audit-report
+          path: localization-audit-report.json
+          if-no-files-found: error
 
 # Isolated test workflow; never deploys or writes to production.
 
