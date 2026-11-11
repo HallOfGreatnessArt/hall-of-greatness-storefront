@@ -19,7 +19,8 @@ async function init(){
   const p=(data.products||{})[permalink]||{};
   const pageCopy=(data.landing_pages||{})[permalink]||{};
   const landing={...(data.landing_ui||{}),...pageCopy};
-  originalTextNodes.forEach(({node,original})=>{if(node.isConnected){let value=original;Object.entries(landing).forEach(([source,translated])=>{if(source!=="Get"&&source&&value.includes(source))value=value.split(source).join(translated);});node.nodeValue=value;}});
+  const translationEntries=Object.entries(landing).filter(([source])=>source&&source!=="Get"&&!source.startsWith("_")).sort((a,b)=>b[0].length-a[0].length);
+  originalTextNodes.forEach(({node,original})=>{if(node.isConnected){let value=original;translationEntries.forEach(([source,translated])=>{if(value.includes(source))value=value.split(source).join(translated);});node.nodeValue=value;}});
   document.documentElement.lang=lang;
   const rtl=(registry.find(x=>x.code===lang)||{}).rtl||false;
   document.documentElement.dir=rtl?"rtl":"ltr";
