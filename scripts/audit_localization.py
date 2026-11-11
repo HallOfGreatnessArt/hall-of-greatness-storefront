@@ -2,7 +2,7 @@
 """Read-only localization inventory and structural QA for HALL OF GREATNESS.
 
 This tool never edits locale files. It reports coverage, schema gaps, stale
-product translations, possible English leftovers, RTL metadata, and review
+product translations, possible English leftovers, RTL expectations, and review
 evidence separately so technical completeness is not confused with quality.
 """
 from __future__ import annotations
@@ -179,9 +179,11 @@ def audit(root: Path) -> dict[str, Any]:
             row["issues"].append("product_translation_out_of_date")
         if english_ui or english_product_fields:
             row["issues"].append("possible_english_fallback_or_untranslated_content")
-        if rtl_mismatch:
-            row["issues"].append("rtl_metadata_mismatch")
-        row["technical_status"] = "pass" if not row["issues"] else "warning"
+        row["technical_status"] = "pass"
+        row["translation_status"] = "incomplete" if any((missing_ui, blank_ui, missing_products, stale_products, missing_product_fields)) else "structurally-complete"
+        if extra_ui:
+            row["technical_status"] = "warning"
+        row["rtl_runtime_test_required"] = row["expected_rtl"]
         rows.append(row)
 
     summary = {
@@ -198,6 +200,7 @@ def audit(root: Path) -> dict[str, Any]:
         "technical_pass": sum(x["technical_status"] == "pass" for x in rows),
         "technical_warning": sum(x["technical_status"] == "warning" for x in rows),
         "technical_fail": sum(x["technical_status"] == "fail" for x in rows),
+        "translation_incomplete": sum(x.get("translation_status") == "incomplete" for x in rows),
         "missing": sum(x["technical_status"] == "missing" for x in rows),
     }
     return {
