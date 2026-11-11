@@ -14,6 +14,15 @@ def load_sources(root: Path):
     registry = json.loads((root / "locales/languages.json").read_text(encoding="utf-8"))
     catalog = json.loads((root / "catalog-data.json").read_text(encoding="utf-8"))
     landing_copy = json.loads((root / "assets/landing-copy.json").read_text(encoding="utf-8"))
+    detail_labels = {
+        "files_included": "Files included",
+        "product_type": "Product type",
+        "delivery": "Delivery",
+        "physical_item": "Physical item",
+        "printing": "Printing",
+        "usage": "Usage",
+        "bundle_item_count": "Items in bundle",
+    }
     i18n_source = (root / "assets/i18n.js").read_text(encoding="utf-8")
     match = re.search(r"const M=(\{[\s\S]*?\});\nconst map=", i18n_source)
     if not match:
@@ -45,6 +54,7 @@ def validate(root: Path):
 
         missing_ui = [key for key in ui if not isinstance(data.get("ui", {}).get(key), str) or not data["ui"][key].strip()]
         missing_landing_ui = [key for key in landing_copy if not isinstance(data.get("landing_ui", {}).get(key), str) or not data["landing_ui"][key].strip()]
+        missing_detail_labels = [key for key in detail_labels if not isinstance(data.get("product_detail_labels", {}).get(key), str) or not data["product_detail_labels"][key].strip()]
         missing_products = []
         missing_page_copy = []
         for product in products:
@@ -67,11 +77,13 @@ def validate(root: Path):
                 if not isinstance(page_map.get(source_text), str) or not page_map[source_text].strip():
                     missing_page_copy.append(f"{permalink}:{source_text[:70]}")
 
-        if missing_ui or missing_landing_ui or missing_products or missing_page_copy:
+        if missing_ui or missing_landing_ui or missing_detail_labels or missing_products or missing_page_copy:
             if missing_ui:
                 failures.append(f"{code}: {len(missing_ui)} shared UI translations missing")
             if missing_landing_ui:
                 failures.append(f"{code}: {len(missing_landing_ui)} shared product-page translations missing")
+            if missing_detail_labels:
+                failures.append(f"{code}: {len(missing_detail_labels)} product-detail labels missing")
             if missing_products:
                 failures.append(f"{code}: {len(missing_products)} catalogue fields missing")
             if missing_page_copy:
