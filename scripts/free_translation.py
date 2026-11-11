@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import functools
 import os
+import re
 import shutil
 import subprocess
 
@@ -36,24 +37,14 @@ def _madlad_translate(text: str, target: str) -> str | None:
         return None
     target = TARGET_CODE_MAP.get(target, target)
     command = [
-        binary,
-        "--backend", "madlad",
-        "-m", "auto",
-        "--text", text,
-        "-sl", "en",
-        "-tl", target,
-        "--beam-size", "1",
-        "--translate-max-tokens", "512",
-        "--threads", "4",
-        "--no-gpu",
+        binary, "--backend", "madlad", "-m", "auto",
+        "--text", text, "-sl", "en", "-tl", target,
+        "--beam-size", "1", "--translate-max-tokens", "1024",
+        "--threads", "4", "--no-gpu",
     ]
     try:
         result = subprocess.run(
-            command,
-            capture_output=True,
-            text=True,
-            timeout=240,
-            check=False,
+            command, capture_output=True, text=True, timeout=240, check=False,
             env={**os.environ, "OMP_NUM_THREADS": "4"},
         )
     except (OSError, subprocess.TimeoutExpired) as exc:
@@ -70,14 +61,77 @@ def _madlad_translate(text: str, target: str) -> str | None:
     return translated
 
 
+def _chunks(indexed_texts, max_words=300):
+    chunk = []
+    words = 0
+    for index, text in indexed_texts:
+        count = max(1, len(text.split()))
+        if chunk and words + count > max_words:
+            yield chunk
+            chunk, words = [], 0
+        chunk.append((index, text))
+        words += count
+    if chunk:
+        yield chunk
+
+
+def _translate_batch(chunk, target):
+    markers = [(index, f"ZXQHOGSEGMENT{index:06d}QXZ", text) for index, text in chunk]
+    combined = "\n".join(f"{marker}\n{text}" for _, marker, text in markers)
+    output = _madlad_translate(combined, target)
+    if not output:
+        return None
+    # Only accept batching if the model preserves every unique boundary marker.
+    positions = [output.find(marker) for _, marker, _ in markers]
+    if any(position < 0 for position in positions) or positions != sorted(positions):
+        return None
+    translated = {}
+    for item_index, (index, marker, _) in enumerate(markers):
+        start = positions[item_index] + len(marker)
+        end = positions[item_index + 1] if item_index + 1 < len(markers) else len(output)
+        value = output[start:end].strip(" \t\r\n:—-")
+        if not value:
+            return None
+        translated[index] = value
+    return translated
+
+
+def translate_texts(texts, target: str, argos_translator=None) -> list[str] | None:
+    """Translate a list efficiently; preserve order and use MADLAD for Argos gaps."""
+    source_texts = [str(value) for value in texts]
+    results: list[str | None] = [None] * len(source_texts)
+    pending = []
+    for index, source in enumerate(source_texts):
+        if argos_translator is not None:
+            try:
+                value = argos_translator.translate(source)
+                if value and value.strip():
+                    results[index] = value
+                    continue
+            except Exception as exc:
+                print(f"Argos translation failed for {target}; trying MADLAD-400: {exc}")
+        pending.append((index, source))
+
+    for chunk in _chunks(pending):
+        if len(chunk) == 1:
+            index, source = chunk[0]
+            results[index] = _madlad_translate(source, target)
+            continue
+        batch_result = _translate_batch(chunk, target)
+        if batch_result is not None:
+            for index, value in batch_result.items():
+                results[index] = value
+            continue
+        # A boundary-marker mismatch is not allowed to corrupt alignment.
+        for index, source in chunk:
+            results[index] = _madlad_translate(source, target)
+
+    if any(value is None for value in results):
+        return None
+    return [str(value) for value in results]
+
+
 def translate_text(text: str, target: str, argos_translator=None) -> str | None:
-    """Use Argos first, then MADLAD-400 if Argos is absent or fails."""
-    source = str(text)
-    if argos_translator is not None:
-        try:
-            translated = argos_translator.translate(source)
-            if translated and translated.strip():
-                return translated
-        except Exception as exc:
-            print(f"Argos translation failed for {target}; trying MADLAD-400: {exc}")
-    return _madlad_translate(source, target)
+    """Single-string convenience wrapper."""
+    values = translate_texts([str(text)], target, argos_translator)
+    return values[0] if values else None
