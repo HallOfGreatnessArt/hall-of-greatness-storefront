@@ -1,4 +1,4 @@
-name: Full free multilingual localization build (isolated)
+name: Full free multilingual localization build (staged)
 
 on:
   push:
@@ -18,6 +18,7 @@ on:
       - "scripts/generate_landing_pages.py"
       - "scripts/enhance_landing_pages.py"
       - "tests/browser/test_product_page_localization.py"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -27,9 +28,17 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  full-localization:
+  translate-locale-batches:
+    name: Translate locale batch ${{ matrix.batch }}
     runs-on: ubuntu-latest
     timeout-minutes: 360
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        batch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    env:
+      PYTHONUNBUFFERED: "1"
     steps:
       - name: Check out isolated localization branch
         uses: actions/checkout@v4
@@ -65,18 +74,77 @@ jobs:
       - name: Install free Argos Python engine
         run: python -m pip install --disable-pip-version-check argostranslate
 
-      - name: Translate all shared UI and catalogue fields
-        run: python scripts/translate_catalog.py
+      - name: Translate this locale batch with resumable checkpoints
+        run: |
+          set -euo pipefail
+          python scripts/translate_catalog.py --batch-index "${{ matrix.batch }}" --batch-count 12
 
-      - name: Generate and enhance every product page
+      - name: Generate and enhance product pages
         run: |
           python scripts/generate_landing_pages.py
           python scripts/enhance_landing_pages.py
 
-      - name: Translate every artwork-specific narrative
-        run: python scripts/translate_landing_pages.py
+      - name: Translate artwork-specific copy for this batch
+        run: |
+          python scripts/translate_landing_pages.py --batch-index "${{ matrix.batch }}" --batch-count 12
 
-      - name: Require complete coverage for all registered languages
+      - name: Collect only this batch's locale files
+        run: |
+          set -euo pipefail
+          mkdir -p locale-batch
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          registry = json.loads(Path("locales/languages.json").read_text(encoding="utf-8"))["languages"]
+          codes = [item["code"] for item in registry if item.get("code") != "en"]
+          batch_count = 12
+          batch_index = int("${{ matrix.batch }}")
+          size = (len(codes) + batch_count - 1) // batch_count
+          selected = codes[batch_index * size:(batch_index + 1) * size]
+          missing = []
+          for code in selected:
+              source = Path("locales") / f"{code}.json"
+              if source.is_file():
+                  (Path("locale-batch") / source.name).write_bytes(source.read_bytes())
+              else:
+                  missing.append(code)
+          print(f"Batch ${{ matrix.batch }} collected {len(selected) - len(missing)} locale files; missing: {missing}")
+          if missing:
+              raise SystemExit(f"Locale files missing for: {', '.join(missing)}")
+          PY
+
+      - name: Upload locale batch checkpoint
+        uses: actions/upload-artifact@v4
+        with:
+          name: locale-batch-${{ matrix.batch }}
+          path: locale-batch/*.json
+          if-no-files-found: error
+          retention-days: 14
+
+  verify-localized-storefront:
+    name: Merge locale checkpoints and verify storefront
+    needs: translate-locale-batches
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - name: Check out isolated localization branch
+        uses: actions/checkout@v4
+
+      - name: Download all locale batch checkpoints
+        uses: actions/download-artifact@v4
+        with:
+          pattern: locale-batch-*
+          path: locales
+          merge-multiple: true
+
+      - name: Generate final product pages
+        run: |
+          python scripts/generate_landing_pages.py
+          python scripts/enhance_landing_pages.py
+
+      - name: Validate complete translation coverage
         run: |
           set -euo pipefail
           python scripts/validate_translation_coverage.py | tee translation-coverage-report.txt
@@ -84,7 +152,7 @@ jobs:
       - name: Install free headless browser for localized-page verification
         run: |
           python -m pip install --disable-pip-version-check playwright==1.56.0
-          python -m playwright install chromium
+          python -m playwright install --with-deps chromium
 
       - name: Verify Spanish and Arabic pages in a real browser
         run: python tests/browser/test_product_page_localization.py
@@ -97,7 +165,7 @@ jobs:
             if [ -f "locales/$code.json" ]; then cp "locales/$code.json" translation-samples/; fi
           done
 
-      - name: Upload isolated translation coverage evidence
+      - name: Upload merged translation coverage evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
