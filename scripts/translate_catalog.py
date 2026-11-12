@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""Free offline localization using open-source Argos Translate models.
+"""Free offline localization using Argos Translate with MADLAD-400 fallback.
 
-Only language pairs present in the upstream Argos package index are translated.
-Other registered languages safely retain English fallback until a model exists.
+Argos handles installed direct language pairs; MADLAD-400 fills unsupported pairs.
+Both run locally on CPU with open-source models and no paid translation API.
 New/changed products are translated automatically during storefront builds.
 """
-import hashlib, json, re
+import argparse, hashlib, json, re
 from pathlib import Path
 
 import argostranslate.package
 import argostranslate.translate
+from free_translation import has_fallback_engine, translate_texts
 
 ROOT=Path(__file__).resolve().parents[1]
 REG=json.loads((ROOT/"locales/languages.json").read_text(encoding="utf-8"))["languages"]
@@ -18,11 +19,42 @@ source=(ROOT/"assets/i18n.js").read_text(encoding="utf-8")
 match=re.search(r"const M=(\{[\s\S]*?\});\nconst map=",source)
 if not match: raise SystemExit("Could not locate canonical UI dictionary.")
 ui=json.loads(match.group(1))["en"]
+landing_ui=json.loads((ROOT/"assets/landing-copy.json").read_text(encoding="utf-8"))
+detail_labels={
+    "files_included":"Files included",
+    "product_type":"Product type",
+    "delivery":"Delivery",
+    "physical_item":"Physical item",
+    "printing":"Printing",
+    "usage":"Usage",
+    "bundle_item_count":"Items in bundle",
+}
 
 # Argos package language codes are not always identical to BCP-47 storefront tags.
-CODE_MAP={"zh-CN":"zh","zh-TW":"zh","pt":"pt","fa":"fa","he":"he","ar":"ar"}
+CODE_MAP={"zh-CN":"zh","pt":"pt","fa":"fa","he":"he","ar":"ar"}
 def digest(obj):
     return hashlib.sha256(json.dumps(obj,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+
+
+def save_locale(path, data):
+    """Atomically checkpoint one locale so an interrupted stage can resume."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temporary.replace(path)
+
+
+def selected_language_codes():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--batch-index", type=int, default=0)
+    parser.add_argument("--batch-count", type=int, default=1)
+    args = parser.parse_args()
+    if args.batch_count < 1 or not 0 <= args.batch_index < args.batch_count:
+        parser.error("--batch-index must be within --batch-count")
+    codes = [item["code"] for item in REG if item.get("code") != "en"]
+    size = (len(codes) + args.batch_count - 1) // args.batch_count
+    start = args.batch_index * size
+    return set(codes[start:start + size])
 
 print("Refreshing the free Argos Translate model index...")
 argostranslate.package.update_package_index()
@@ -61,19 +93,21 @@ def get_translator(target):
 
 def translate_many(values, target):
     translator=get_translator(target)
-    if translator is None: return None
-    result=[]
-    for value in values:
-        # Argos splits longer content into sentence-sized segments internally.
-        try: result.append(translator.translate(str(value)))
-        except Exception as exc:
-            print(f"Translation failed for {target}: {exc}")
-            return None
+    if translator is None and not has_fallback_engine():
+        print(f"NO FREE MODEL AVAILABLE: {target}; retaining English fallback.")
+        return None
+    # Keep the Argos-first order while batching all unsupported pairs through MADLAD.
+    result=translate_texts([str(value) for value in values], target, translator)
+    if result is None:
+        print(f"All free translation engines failed for {target}; retaining previous locale data.")
     return result
+
+selected_codes = selected_language_codes()
+print(f"Selected locale batch: {sorted(selected_codes)}", flush=True)
 
 for lang in REG:
     code=lang["code"]
-    if code=="en": continue
+    if code not in selected_codes: continue
     target=CODE_MAP.get(code,code)
     path=ROOT/"locales"/(code+".json")
     old=json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
@@ -88,14 +122,22 @@ for lang in REG:
         if products.get(key,{}).get("_source_hash")!=digest(fields):
             pending.append((p,key,fields))
     reviewed_ui = old.get("_ui_reviewed") is True and bool(old.get("ui"))
+    landing_hash=digest(landing_ui)
+    detail_labels_hash=digest(detail_labels)
+    needs_detail_labels=old.get("_product_detail_labels_source_hash")!=detail_labels_hash
+    reviewed_landing = old.get("_landing_ui_reviewed") is True and bool(old.get("landing_ui"))
+    needs_landing = old.get("_landing_ui_source_hash") != landing_hash and not reviewed_landing
+    if reviewed_landing and old.get("_landing_ui_source_hash") != landing_hash:
+        print(f"REVIEW REQUIRED: {code} landing-page copy changed; preserving reviewed translation.")
     if reviewed_ui and old.get("_ui_source_hash") != ui_hash:
         print(f"REVIEW REQUIRED: {code} source UI changed; preserving reviewed translation.")
     needs_ui=old.get("_ui_source_hash")!=ui_hash and not reviewed_ui
-    if not needs_ui and not pending:
+    if not needs_ui and not pending and not needs_landing and not needs_detail_labels:
         print(f"Up to date: {code}; no model installation needed.")
         continue
     translator=get_translator(target)
-    if translator is None:
+    if translator is None and not has_fallback_engine():
+        print(f"NO FREE MODEL AVAILABLE: {code}; keeping English fallback.")
         continue
     if needs_ui:
         keys=list(ui)
@@ -108,8 +150,27 @@ for lang in REG:
         old["ui"]=translated
         old["_ui_source_hash"]=ui_hash
         old["_ui_translation_status"]="machine-generated-unreviewed"
+        save_locale(path, old)
     if reviewed_ui:
         old["_ui_translation_status"]="editorially-reviewed"
+    if needs_landing:
+        keys=list(landing_ui)
+        vals=translate_many([landing_ui[k] for k in keys],code)
+        if vals is not None:
+            old["landing_ui"]=dict(zip(keys,vals))
+            old["_landing_ui_source_hash"]=landing_hash
+            old["_landing_ui_translation_status"]="machine-generated-unreviewed"
+            save_locale(path, old)
+    elif reviewed_landing:
+        old["_landing_ui_translation_status"]="editorially-reviewed"
+    if needs_detail_labels:
+        label_keys=list(detail_labels)
+        label_values=translate_many([detail_labels[key] for key in label_keys],code)
+        if label_values is not None:
+            old["product_detail_labels"]=dict(zip(label_keys,label_values))
+            old["_product_detail_labels_source_hash"]=detail_labels_hash
+            old["_product_detail_labels_translation_status"]="machine-generated-unreviewed"
+            save_locale(path, old)
     for p,key,fields in pending:
         source_hash=digest(fields)
         flat=[]; flat_keys=[]
@@ -127,6 +188,6 @@ for lang in REG:
             else: item[k]=value
         item["_source_hash"]=source_hash
         products[key]=item
-    path.parent.mkdir(parents=True,exist_ok=True)
-    path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(f"Localized {code}: {len(products)} products")
+        save_locale(path, old)
+    save_locale(path, old)
+    print(f"Localized {code}: {len(products)} products", flush=True)

@@ -3,6 +3,7 @@
 
 The catalogue cover is never cropped, stretched, or duplicated as two different mockups.
 """
+import html
 import json
 import re
 from pathlib import Path
@@ -128,13 +129,19 @@ for path in pages:
     product = PRODUCT_BY_SLUG.get(path.parent.name, {})
     permalink = str(product.get("permalink", ""))
     if permalink:
-        page = page.replace("<body>", f'<body data-product-permalink="{permalink}"', 1)
+        page = re.sub(r'<body[^<]*?(?=<)', f'<body data-product-permalink="{permalink}">', page, count=1)
     if 'id="hog-page-language"' not in page:
         selector = '<label class="language-label" for="hog-page-language">Language</label><select id="hog-page-language" aria-label="Choose language"><option value="auto">🌐 Auto</option></select>'
         page = page.replace("</header>", selector + "</header>", 1)
         page = page.replace("</style>", '.language-label{margin-left:auto;color:var(--muted);font-size:11px}#hog-page-language{max-width:190px;min-height:44px;padding:8px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:4px}@media(max-width:760px){#hog-page-language{max-width:100%}}\n</style>', 1)
     if 'data-hog-summary' not in page:
         page = page.replace('<p class="desc">', '<p class="desc" data-hog-summary>', 1)
+    # The artwork summary appears in both the hero and the meaning section.
+    # Mark every exact copy so the full narrative changes language together.
+    summary_html = html.escape(str(product.get("summary", "")).strip(), quote=True)
+    if summary_html:
+        paragraph = re.compile(r'<p(?![^>]*\bdata-hog-summary)([^>]*)>' + re.escape(summary_html) + r'</p>')
+        page = paragraph.sub(lambda match: '<p' + match.group(1) + ' data-hog-summary>' + summary_html + '</p>', page)
     if 'data-hog-category' not in page:
         page = page.replace('<div class="eyebrow">', '<div class="eyebrow" data-hog-category>', 1)
     page = page.replace('id="full-description"', 'id="full-description" data-hog-full-description')
