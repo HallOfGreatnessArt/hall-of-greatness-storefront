@@ -41,7 +41,7 @@ def _madlad_translate(text: str, target: str) -> str | None:
     ]
     try:
         result = subprocess.run(
-            command, capture_output=True, text=True, timeout=240, check=False,
+            command, capture_output=True, text=True, timeout=90, check=False,
             env={**os.environ, "OMP_NUM_THREADS": "4"},
         )
     except (OSError, subprocess.TimeoutExpired) as exc:
