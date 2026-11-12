@@ -11,6 +11,8 @@ import os
 import re
 import shutil
 import subprocess
+import time
+from collections.abc import Callable
 
 
 TARGET_CODE_MAP = {}
@@ -126,8 +128,21 @@ def _translate_batch(chunk, target):
     return translated
 
 
-def translate_texts(texts, target: str, argos_translator=None) -> list[str] | None:
-    """Translate a list efficiently; preserve order and use MADLAD for Argos gaps."""
+def translate_texts(
+    texts,
+    target: str,
+    argos_translator=None,
+    progress_callback: Callable[[str], None] | None = None,
+) -> list[str] | None:
+    """Translate a list efficiently; optionally report per-item and fallback progress."""
+    def report(message):
+        if progress_callback is not None:
+            try:
+                progress_callback(message)
+            except Exception:
+                # Diagnostics must never interrupt or change translation results.
+                pass
+
     source_texts = [str(value) for value in texts]
     results: list[str | None] = [None] * len(source_texts)
     pending_parts = []
@@ -139,9 +154,13 @@ def translate_texts(texts, target: str, argos_translator=None) -> list[str] | No
                 value = argos_translator.translate(source)
                 if value and value.strip():
                     results[index] = value
+                    report(f"ARGOS item={index + 1}/{len(source_texts)} complete")
                     continue
             except Exception as exc:
+                report(f"ARGOS item={index + 1}/{len(source_texts)} failed; fallback=MADLAD error={exc}")
                 print(f"Argos translation failed for {target}; trying MADLAD-400: {exc}")
+            else:
+                report(f"ARGOS item={index + 1}/{len(source_texts)} unavailable; fallback=MADLAD")
 
         paragraphs = _split_long_text(source)
         part_layout[index] = paragraphs
@@ -152,18 +171,42 @@ def translate_texts(texts, target: str, argos_translator=None) -> list[str] | No
                 part_layout[index][paragraph_index][part_index] = (segment_id, part)
 
     translated_parts = {}
-    for chunk in _chunks(pending_parts):
+    chunks = list(_chunks(pending_parts))
+    for chunk_index, chunk in enumerate(chunks, start=1):
+        chunk_started = time.monotonic()
+        report(
+            f"MADLAD chunk={chunk_index}/{len(chunks)} start "
+            f"segments={len(chunk)} target={target}"
+        )
         if len(chunk) == 1:
             segment_id, source = chunk[0]
             translated_parts[segment_id] = _madlad_translate(source, target)
+            report(
+                f"MADLAD chunk={chunk_index}/{len(chunks)} complete "
+                f"elapsed_seconds={time.monotonic() - chunk_started:.1f} "
+                f"success={translated_parts[segment_id] is not None}"
+            )
             continue
         batch_result = _translate_batch(chunk, target)
         if batch_result is not None:
             translated_parts.update(batch_result)
+            report(
+                f"MADLAD chunk={chunk_index}/{len(chunks)} complete "
+                f"elapsed_seconds={time.monotonic() - chunk_started:.1f} "
+                f"success=true mode=batch"
+            )
             continue
         # A boundary-marker mismatch is not allowed to corrupt paragraph alignment.
-        for segment_id, source in chunk:
+        report(f"MADLAD chunk={chunk_index}/{len(chunks)} batch-markers-unusable; retrying individually")
+        for segment_index, (segment_id, source) in enumerate(chunk, start=1):
+            segment_started = time.monotonic()
             translated_parts[segment_id] = _madlad_translate(source, target)
+            report(
+                f"MADLAD retry chunk={chunk_index}/{len(chunks)} "
+                f"segment={segment_index}/{len(chunk)} "
+                f"elapsed_seconds={time.monotonic() - segment_started:.1f} "
+                f"success={translated_parts[segment_id] is not None}"
+            )
 
     for index, paragraphs in part_layout.items():
         rebuilt = []
