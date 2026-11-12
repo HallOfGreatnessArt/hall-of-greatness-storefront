@@ -157,6 +157,7 @@ def main():
         )
         page_translations = locale_data.setdefault("landing_pages", {})
         changed = False
+        locale_updates = 0
 
         for page_index, product in enumerate(products, start=1):
             page_started = time.monotonic()
@@ -231,6 +232,7 @@ def main():
             page_translations[permalink] = translated
             changed = True
             total_updates += 1
+            locale_updates += 1
             save_locale(locale_path, locale_data)
             log_progress(
                 f"PAGE COMPLETE locale={code} permalink={permalink} "
@@ -238,10 +240,6 @@ def main():
                 f"translated_blocks={len(translated_values)} checkpoint=saved"
             )
 
-        log_progress(
-            f"LOCALE PAGE END code={code} permalink={permalink} "
-            f"elapsed_seconds={time.monotonic() - page_started:.1f}"
-        )
 
         if changed:
             locale_path.write_text(
@@ -252,7 +250,7 @@ def main():
 
         log_progress(
             f"LOCALE COMPLETE code={code} elapsed_seconds={time.monotonic() - locale_started:.1f} "
-            f"updated_pages={sum(1 for item in page_translations.values() if item.get('_review_status') == MACHINE)}"
+            f"updated_pages={locale_updates}"
         )
 
     log_progress(f"BATCH COMPLETE locale_page_updates={total_updates}")
