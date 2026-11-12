@@ -172,6 +172,25 @@ def main():
         )
         imported.append(permalink)
 
+    catalog_after = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
+    catalog_after_products = catalog_after.get("products", [])
+    catalog_after_permalinks = {
+        str(product.get("permalink", "")).strip().lower()
+        for product in catalog_after_products
+        if product.get("permalink")
+    }
+    catalog_after_paths = {
+        urlparse(product.get("url", "")).path.rstrip("/").lower()
+        for product in catalog_after_products
+        if product.get("url")
+    }
+    unmatched_after_import = [
+        item.get("permalink")
+        for item in public_products
+        if str(item.get("permalink", "")).strip().lower() not in catalog_after_permalinks
+        and urlparse(item.get("url", "")).path.rstrip("/").lower() not in catalog_after_paths
+    ]
+    discovery_complete = public_total <= len(public_products) or public_total == 0
     report = {
         "profile_url": PROFILE_URL,
         "public_products_total": public_total,
@@ -179,12 +198,23 @@ def main():
         "catalog_products_before": len(known),
         "new_products_discovered": len(new_products),
         "new_products_imported": imported,
-        "catalog_products_after": len(json.loads(CATALOG_PATH.read_text(encoding="utf-8")).get("products", [])),
-        "discovery_complete": public_total <= len(public_products) or public_total == 0,
+        "catalog_products_after": len(catalog_after_products),
+        "discovery_complete": discovery_complete,
+        "unmatched_public_products_after_import": unmatched_after_import,
         "status": "imported" if imported else "no_new_products",
     }
     REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2), flush=True)
+    if not discovery_complete:
+        raise RuntimeError(
+            f"Public Gumroad discovery was incomplete: expected at least {public_total} products, "
+            f"found {len(public_products)}. See {REPORT_PATH}."
+        )
+    if unmatched_after_import:
+        raise RuntimeError(
+            "Published Gumroad products remain absent from the storefront catalogue: "
+            + ", ".join(map(str, unmatched_after_import))
+        )
     if imported:
         print("PUBLIC_GUMROAD_DISCOVERY_IMPORT_OK", flush=True)
     else:
