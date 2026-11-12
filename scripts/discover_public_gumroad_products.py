@@ -19,6 +19,7 @@ STORE_HOST = "alshayebemad.gumroad.com"
 # One-time bootstrap for the newly published product supplied by the store owner.
 SEED_PRODUCT_URLS = [
     "https://alshayebemad.gumroad.com/l/THECLOCKMAKERSDREAM",
+    "https://alshayebemad.gumroad.com/l/APRAYERFORTOMORROW",
 ]
 CATALOG_PATH = Path("catalog-data.json")
 REPORT_PATH = Path("public-gumroad-discovery-report.json")
