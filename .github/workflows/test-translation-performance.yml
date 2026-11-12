@@ -1,0 +1,31 @@
+name: Translation performance regression tests
+
+on:
+  push:
+    branches:
+      - feat/translation-performance-optimization
+    paths:
+      - "scripts/free_translation.py"
+      - "scripts/translate_landing_pages.py"
+      - "tests/test_translation_performance.py"
+      - ".github/workflows/test-translation-performance.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  translation-performance-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out optimization branch
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile translation scripts
+        run: python -m py_compile scripts/free_translation.py scripts/translate_landing_pages.py
+      - name: Run translation performance regression tests
+        run: python -m unittest discover -s tests -p "test_translation_performance.py" -v
