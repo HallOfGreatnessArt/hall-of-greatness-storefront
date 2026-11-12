@@ -18,7 +18,8 @@ on:
       - "assets/landing-i18n.js"
   workflow_dispatch:
   schedule:
-    - cron: "17 3 * * *"
+    # Keep the production catalogue in sync with newly published Gumroad products.
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
