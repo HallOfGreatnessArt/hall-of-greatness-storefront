@@ -16,6 +16,8 @@ from collections.abc import Callable
 
 
 TARGET_CODE_MAP = {}
+_TRANSLATION_FAILED = object()
+MAX_ADAPTIVE_SPLIT_DEPTH = 1
 
 
 def crispasr_binary() -> str | None:
@@ -30,10 +32,10 @@ def has_fallback_engine() -> bool:
 
 
 @functools.lru_cache(maxsize=8192)
-def _madlad_translate(text: str, target: str) -> str | None:
+def _madlad_translate(text: str, target: str) -> str | object:
     binary = crispasr_binary()
     if not binary:
-        return None
+        return _TRANSLATION_FAILED
     target = TARGET_CODE_MAP.get(target, target)
     command = [
         binary, "--backend", "madlad", "-m", "auto",
@@ -48,7 +50,7 @@ def _madlad_translate(text: str, target: str) -> str | None:
         )
     except (OSError, subprocess.TimeoutExpired) as exc:
         print(f"MADLAD fallback error for {target}: {exc}")
-        return None
+        return _TRANSLATION_FAILED
     translated = result.stdout.strip()
     if result.returncode != 0 or not translated:
         detail = result.stderr.strip().splitlines()
@@ -56,7 +58,7 @@ def _madlad_translate(text: str, target: str) -> str | None:
             f"MADLAD fallback unavailable for {target} "
             f"(exit {result.returncode}): {' | '.join(detail[-3:])}"
         )
-        return None
+        return _TRANSLATION_FAILED
     return translated
 
 
@@ -112,8 +114,8 @@ def _translate_batch(chunk, target):
     markers = [(index, f"[{position + 1}]", text) for position, (index, text) in enumerate(chunk)]
     combined = "\n".join(f"{marker}\n{text}" for _, marker, text in markers)
     output = _madlad_translate(combined, target)
-    if not output:
-        return None
+    if output is _TRANSLATION_FAILED or not output:
+        return _TRANSLATION_FAILED
     positions = [output.find(marker) for _, marker, _ in markers]
     if any(position < 0 for position in positions) or positions != sorted(positions):
         return None
@@ -126,6 +128,44 @@ def _translate_batch(chunk, target):
             return None
         translated[index] = value
     return translated
+
+
+def _translate_chunk_adaptive(chunk, target, report, depth=0):
+    """Translate one chunk, splitting it once when a batch fails or loses markers.
+
+    The bounded split avoids the former unbounded per-segment retry cascade after
+    a slow CPU batch. A failed leaf returns None so the caller can preserve the
+    previous complete page translation instead of writing partial/misaligned text.
+    """
+    if len(chunk) == 1:
+        segment_id, source = chunk[0]
+        value = _madlad_translate(source, target)
+        return {segment_id: value} if isinstance(value, str) and value.strip() else None
+
+    batch_result = _translate_batch(chunk, target)
+    if isinstance(batch_result, dict):
+        return batch_result
+
+    reason = "model-failure" if batch_result is _TRANSLATION_FAILED else "marker-mismatch"
+    if depth >= MAX_ADAPTIVE_SPLIT_DEPTH:
+        report(
+            f"MADLAD adaptive split stopped reason={reason} "
+            f"segments={len(chunk)} depth={depth}"
+        )
+        return None
+
+    midpoint = len(chunk) // 2
+    report(
+        f"MADLAD adaptive split reason={reason} "
+        f"segments={len(chunk)} left={midpoint} right={len(chunk) - midpoint}"
+    )
+    left = _translate_chunk_adaptive(chunk[:midpoint], target, report, depth + 1)
+    if left is None:
+        return None
+    right = _translate_chunk_adaptive(chunk[midpoint:], target, report, depth + 1)
+    if right is None:
+        return None
+    return {**left, **right}
 
 
 def translate_texts(
@@ -178,35 +218,22 @@ def translate_texts(
             f"MADLAD chunk={chunk_index}/{len(chunks)} start "
             f"segments={len(chunk)} target={target}"
         )
-        if len(chunk) == 1:
-            segment_id, source = chunk[0]
-            translated_parts[segment_id] = _madlad_translate(source, target)
+        translated = _translate_chunk_adaptive(chunk, target, report)
+        if translated is None:
+            for segment_id, _ in chunk:
+                translated_parts[segment_id] = None
             report(
-                f"MADLAD chunk={chunk_index}/{len(chunks)} complete "
-                f"elapsed_seconds={time.monotonic() - chunk_started:.1f} "
-                f"success={translated_parts[segment_id] is not None}"
+                f"MADLAD chunk={chunk_index}/{len(chunks)} failed "
+                f"elapsed_seconds={time.monotonic() - chunk_started:.1f}; "
+                "page will retain its previous complete translation"
             )
             continue
-        batch_result = _translate_batch(chunk, target)
-        if batch_result is not None:
-            translated_parts.update(batch_result)
-            report(
-                f"MADLAD chunk={chunk_index}/{len(chunks)} complete "
-                f"elapsed_seconds={time.monotonic() - chunk_started:.1f} "
-                f"success=true mode=batch"
-            )
-            continue
-        # A boundary-marker mismatch is not allowed to corrupt paragraph alignment.
-        report(f"MADLAD chunk={chunk_index}/{len(chunks)} batch-markers-unusable; retrying individually")
-        for segment_index, (segment_id, source) in enumerate(chunk, start=1):
-            segment_started = time.monotonic()
-            translated_parts[segment_id] = _madlad_translate(source, target)
-            report(
-                f"MADLAD retry chunk={chunk_index}/{len(chunks)} "
-                f"segment={segment_index}/{len(chunk)} "
-                f"elapsed_seconds={time.monotonic() - segment_started:.1f} "
-                f"success={translated_parts[segment_id] is not None}"
-            )
+        translated_parts.update(translated)
+        report(
+            f"MADLAD chunk={chunk_index}/{len(chunks)} complete "
+            f"elapsed_seconds={time.monotonic() - chunk_started:.1f} "
+            f"success=true mode=adaptive-batch"
+        )
 
     for index, paragraphs in part_layout.items():
         rebuilt = []
@@ -227,3 +254,38 @@ def translate_texts(
 def translate_text(text: str, target: str, argos_translator=None) -> str | None:
     values = translate_texts([str(text)], target, argos_translator)
     return values[0] if values else None
+
+
+
+def translate_texts_cached(
+    texts,
+    target: str,
+    argos_translator=None,
+    cache: dict | None = None,
+    progress_callback: Callable[[str], None] | None = None,
+) -> list[str] | None:
+    """Reuse successful translations for identical text within a target locale."""
+    if cache is None:
+        cache = {}
+    source_texts = [str(value) for value in texts]
+    keys = [(target, value) for value in source_texts]
+    missing = []
+    seen = set()
+    for key, value in zip(keys, source_texts):
+        if key not in cache and key not in seen:
+            missing.append(value)
+            seen.add(key)
+
+    if missing:
+        translated = translate_texts(
+            missing,
+            target,
+            argos_translator,
+            progress_callback=progress_callback,
+        )
+        if translated is None or len(translated) != len(missing):
+            return None
+        for value, result in zip(missing, translated):
+            cache[(target, value)] = result
+
+    return [cache[key] for key in keys]
