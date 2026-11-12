@@ -7,6 +7,7 @@ and catalogue translation data, preserving backward compatibility.
 """
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 from html.parser import HTMLParser
@@ -29,6 +30,25 @@ VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link",
 def digest(value):
     raw = json.dumps(value, ensure_ascii=False, sort_keys=True).encode("utf-8")
     return hashlib.sha256(raw).hexdigest()
+
+
+def selected_language_codes(registry):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--batch-index", type=int, default=0)
+    parser.add_argument("--batch-count", type=int, default=1)
+    args = parser.parse_args()
+    if args.batch_count < 1 or not 0 <= args.batch_index < args.batch_count:
+        parser.error("--batch-index must be within --batch-count")
+    codes = [item["code"] for item in registry.get("languages", []) if item.get("code") != "en"]
+    size = (len(codes) + args.batch_count - 1) // args.batch_count
+    start = args.batch_index * size
+    return set(codes[start:start + size])
+
+
+def save_locale(path, data):
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    temporary.replace(path)
 
 
 class VisibleCopyParser(HTMLParser):
@@ -101,10 +121,12 @@ def main():
     titles = [str(product.get("name", "")).strip() for product in CATALOG.get("products", [])] + ["HALL OF GREATNESS"]
     installed = argostranslate.translate.get_installed_languages()
     total_updates = 0
+    selected_codes = selected_language_codes(REGISTRY)
+    print(f"Selected page-copy locale batch: {sorted(selected_codes)}", flush=True)
 
     for language in REGISTRY.get("languages", []):
         code = language.get("code")
-        if not code or code == "en":
+        if code not in selected_codes:
             continue
         locale_path = ROOT / "locales" / (code + ".json")
         locale_data = json.loads(locale_path.read_text(encoding="utf-8")) if locale_path.is_file() else {}
@@ -164,13 +186,14 @@ def main():
             page_translations[permalink] = translated
             changed = True
             total_updates += 1
+            save_locale(locale_path, locale_data)
 
         if changed:
             locale_path.write_text(
                 json.dumps(locale_data, ensure_ascii=False, indent=2) + "\n",
                 encoding="utf-8",
             )
-            print(f"Updated artwork-specific page copy for {code}.")
+            print(f"Updated artwork-specific page copy for {code}.", flush=True)
 
     print(f"Artwork-specific localization complete: {total_updates} locale/product page updates.")
 
