@@ -5,7 +5,7 @@ Argos handles installed direct language pairs; MADLAD-400 fills unsupported pair
 Both run locally on CPU with open-source models and no paid translation API.
 New/changed products are translated automatically during storefront builds.
 """
-import hashlib, json, re
+import argparse, hashlib, json, re
 from pathlib import Path
 
 import argostranslate.package
@@ -34,6 +34,27 @@ detail_labels={
 CODE_MAP={"zh-CN":"zh","pt":"pt","fa":"fa","he":"he","ar":"ar"}
 def digest(obj):
     return hashlib.sha256(json.dumps(obj,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+
+
+def save_locale(path, data):
+    """Atomically checkpoint one locale so an interrupted stage can resume."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8")
+    temporary.replace(path)
+
+
+def selected_language_codes():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--batch-index", type=int, default=0)
+    parser.add_argument("--batch-count", type=int, default=1)
+    args = parser.parse_args()
+    if args.batch_count < 1 or not 0 <= args.batch_index < args.batch_count:
+        parser.error("--batch-index must be within --batch-count")
+    codes = [item["code"] for item in REG if item.get("code") != "en"]
+    size = (len(codes) + args.batch_count - 1) // args.batch_count
+    start = args.batch_index * size
+    return set(codes[start:start + size])
 
 print("Refreshing the free Argos Translate model index...")
 argostranslate.package.update_package_index()
@@ -81,9 +102,12 @@ def translate_many(values, target):
         print(f"All free translation engines failed for {target}; retaining previous locale data.")
     return result
 
+selected_codes = selected_language_codes()
+print(f"Selected locale batch: {sorted(selected_codes)}", flush=True)
+
 for lang in REG:
     code=lang["code"]
-    if code=="en": continue
+    if code not in selected_codes: continue
     target=CODE_MAP.get(code,code)
     path=ROOT/"locales"/(code+".json")
     old=json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
@@ -126,6 +150,7 @@ for lang in REG:
         old["ui"]=translated
         old["_ui_source_hash"]=ui_hash
         old["_ui_translation_status"]="machine-generated-unreviewed"
+        save_locale(path, old)
     if reviewed_ui:
         old["_ui_translation_status"]="editorially-reviewed"
     if needs_landing:
@@ -135,6 +160,7 @@ for lang in REG:
             old["landing_ui"]=dict(zip(keys,vals))
             old["_landing_ui_source_hash"]=landing_hash
             old["_landing_ui_translation_status"]="machine-generated-unreviewed"
+            save_locale(path, old)
     elif reviewed_landing:
         old["_landing_ui_translation_status"]="editorially-reviewed"
     if needs_detail_labels:
@@ -144,6 +170,7 @@ for lang in REG:
             old["product_detail_labels"]=dict(zip(label_keys,label_values))
             old["_product_detail_labels_source_hash"]=detail_labels_hash
             old["_product_detail_labels_translation_status"]="machine-generated-unreviewed"
+            save_locale(path, old)
     for p,key,fields in pending:
         source_hash=digest(fields)
         flat=[]; flat_keys=[]
@@ -161,6 +188,6 @@ for lang in REG:
             else: item[k]=value
         item["_source_hash"]=source_hash
         products[key]=item
-    path.parent.mkdir(parents=True,exist_ok=True)
-    path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(f"Localized {code}: {len(products)} products")
+        save_locale(path, old)
+    save_locale(path, old)
+    print(f"Localized {code}: {len(products)} products", flush=True)
