@@ -35,5 +35,6 @@ jobs:
           python scripts/generate_landing_pages.py
           python scripts/enhance_landing_pages.py
           python scripts/generate_sitemap.py
+          python scripts/validate_landing_pages.py
       - name: Validate HTML, SEO metadata, robots.txt and sitemap XML
         run: python scripts/validate_seo.py

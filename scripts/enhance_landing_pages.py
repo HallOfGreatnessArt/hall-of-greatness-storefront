@@ -128,7 +128,21 @@ for path in pages:
     product = PRODUCT_BY_SLUG.get(path.parent.name, {})
     permalink = str(product.get("permalink", ""))
     if permalink:
-        page = page.replace("<body>", f'<body data-product-permalink="{permalink}"', 1)
+        if not re.fullmatch(r"[A-Za-z0-9_-]+", permalink):
+            raise SystemExit(f"Invalid product permalink for {path}: {permalink!r}")
+        body_pattern = re.compile(r"<body\b([^><]*)(?:>|(?=<))", flags=re.I)
+        body_matches = list(body_pattern.finditer(page))
+        if len(body_matches) != 1:
+            raise SystemExit(f"Expected exactly one body opening tag in {path}; found {len(body_matches)}")
+        def repair_body_tag(match):
+            attrs = match.group(1)
+            attribute = re.compile(r"\sdata-product-permalink\s*=\s*(?:\"[^\"]*\"|'[^']*'|[^\s>]*)", flags=re.I)
+            if attribute.search(attrs):
+                attrs = attribute.sub(f' data-product-permalink="{permalink}"', attrs)
+            else:
+                attrs += f' data-product-permalink="{permalink}"'
+            return f"<body{attrs}>"
+        page = body_pattern.sub(repair_body_tag, page, count=1)
     if 'id="hog-page-language"' not in page:
         selector = '<label class="language-label" for="hog-page-language">Language</label><select id="hog-page-language" aria-label="Choose language"><option value="auto">🌐 Auto</option></select>'
         page = page.replace("</header>", selector + "</header>", 1)
@@ -139,8 +153,10 @@ for path in pages:
         page = page.replace('<div class="eyebrow">', '<div class="eyebrow" data-hog-category>', 1)
     page = page.replace('id="full-description"', 'id="full-description" data-hog-full-description')
     page = page.replace('id="product-details"', 'id="product-details" data-hog-product-details')
+    # Repair pages produced by older enhancer versions that emitted a literal \\n.
+    page = page.replace("</script>\\n</body>", "</script>\n</body>")
     if 'landing-i18n.js' not in page:
-        page = page.replace("</body>", '<script src="../../assets/landing-i18n.js" defer></script>\\n</body>', 1)
+        page = page.replace("</body>", '<script src="../../assets/landing-i18n.js" defer></script>\n</body>', 1)
     if "</style>" in page:
         page = re.sub(r'/\* Buyer clarity and print guidance \*/.*?(?=</style>)', '', page, flags=re.S)
         page = page.replace("</style>", STYLE + "\n</style>", 1)
