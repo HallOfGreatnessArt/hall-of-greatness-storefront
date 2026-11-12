@@ -17,7 +17,8 @@ from collections.abc import Callable
 
 TARGET_CODE_MAP = {}
 _TRANSLATION_FAILED = object()
-MAX_ADAPTIVE_SPLIT_DEPTH = 1
+_TRANSLATION_TIMEOUT = object()
+MAX_ADAPTIVE_SPLIT_DEPTH = 2
 
 
 def crispasr_binary() -> str | None:
@@ -48,7 +49,10 @@ def _madlad_translate(text: str, target: str) -> str | object:
             command, capture_output=True, text=True, timeout=90, check=False,
             env={**os.environ, "OMP_NUM_THREADS": "4"},
         )
-    except (OSError, subprocess.TimeoutExpired) as exc:
+    except subprocess.TimeoutExpired as exc:
+        print(f"MADLAD fallback timeout for {target} after {exc.timeout}s")
+        return _TRANSLATION_TIMEOUT
+    except OSError as exc:
         print(f"MADLAD fallback error for {target}: {exc}")
         return _TRANSLATION_FAILED
     translated = result.stdout.strip()
@@ -115,7 +119,7 @@ def _translate_batch(chunk, target):
     combined = "\n".join(f"{marker}\n{text}" for _, marker, text in markers)
     output = _madlad_translate(combined, target)
     if output is _TRANSLATION_FAILED or not output:
-        return _TRANSLATION_FAILED
+        return output if output is _TRANSLATION_TIMEOUT else _TRANSLATION_FAILED
     positions = [output.find(marker) for _, marker, _ in markers]
     if any(position < 0 for position in positions) or positions != sorted(positions):
         return None
@@ -146,7 +150,10 @@ def _translate_chunk_adaptive(chunk, target, report, depth=0):
     if isinstance(batch_result, dict):
         return batch_result
 
-    reason = "model-failure" if batch_result is _TRANSLATION_FAILED else "marker-mismatch"
+    if batch_result is _TRANSLATION_FAILED:
+        report(f"MADLAD chunk rejected reason=model-failure segments={len(chunk)}")
+        return None
+    reason = "timeout" if batch_result is _TRANSLATION_TIMEOUT else "marker-mismatch"
     if depth >= MAX_ADAPTIVE_SPLIT_DEPTH:
         report(
             f"MADLAD adaptive split stopped reason={reason} "
