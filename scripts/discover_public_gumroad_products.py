@@ -170,10 +170,28 @@ def main():
             [sys.executable, "scripts/import_public_gumroad_product.py", "--url", url],
             check=True,
         )
-        imported.append(permalink)
 
     catalog_after = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
     catalog_after_products = catalog_after.get("products", [])
+
+    # The URL slug visible on a public Gumroad page is not always the
+    # canonical product permalink stored in Gumroad metadata. Resolve every
+    # refreshed/imported item against the post-import catalogue by URL path,
+    # then report the canonical catalogue permalink for downstream checks.
+    imported = []
+    for item in new_products:
+        item_path = urlparse(item.get("url", "")).path.rstrip("/").lower()
+        matched = next(
+            (
+                product for product in catalog_after_products
+                if product.get("permalink") == item.get("permalink")
+                or urlparse(product.get("url", "")).path.rstrip("/").lower() == item_path
+            ),
+            None,
+        )
+        if matched and matched.get("permalink"):
+            imported.append(matched["permalink"])
+
     catalog_after_permalinks = {
         str(product.get("permalink", "")).strip().lower()
         for product in catalog_after_products
