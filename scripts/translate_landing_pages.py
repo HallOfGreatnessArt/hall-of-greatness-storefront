@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 
-from free_translation import has_fallback_engine, translate_texts
+from free_translation import has_fallback_engine, translate_texts_cached
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -156,6 +156,8 @@ def main():
             f"page_count={len(products)}"
         )
         page_translations = locale_data.setdefault("landing_pages", {})
+        # Reuse identical source blocks across artwork pages in this locale only.
+        translation_cache = {}
         changed = False
         locale_updates = 0
 
@@ -206,10 +208,11 @@ def main():
                 f"PAGE TRANSLATION START locale={code} permalink={permalink} "
                 f"text_blocks={len(working_texts)} engine={engine}"
             )
-            translated_values = translate_texts(
+            translated_values = translate_texts_cached(
                 working_texts,
                 code,
                 translator,
+                cache=translation_cache,
                 progress_callback=lambda message: log_progress(
                     f"TRANSLATION locale={code} permalink={permalink} {message}"
                 ),
@@ -242,10 +245,7 @@ def main():
 
 
         if changed:
-            locale_path.write_text(
-                json.dumps(locale_data, ensure_ascii=False, indent=2) + "\n",
-                encoding="utf-8",
-            )
+            # Each completed page was already atomically checkpointed by save_locale.
             log_progress(f"LOCALE CHECKPOINT code={code} file={locale_path.name} saved=true")
 
         log_progress(
