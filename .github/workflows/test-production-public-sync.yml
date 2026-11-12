@@ -12,6 +12,7 @@ on:
       - "scripts/generate_landing_pages.py"
       - "scripts/enhance_landing_pages.py"
       - "scripts/generate_sitemap.py"
+      - "scripts/validate_landing_pages.py"
       - "scripts/test_responsive_storefront.py"
 
 permissions:
@@ -42,6 +43,7 @@ jobs:
           python scripts/generate_landing_pages.py
           python scripts/enhance_landing_pages.py
           python scripts/generate_sitemap.py
+          python scripts/validate_landing_pages.py
           python scripts/test_responsive_storefront.py
       - name: Validate discovery, catalogue, and storefront build
         run: |
