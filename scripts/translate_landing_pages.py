@@ -10,6 +10,8 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import time
+from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -23,6 +25,14 @@ SHARED_COPY = json.loads((ROOT / "assets/landing-copy.json").read_text(encoding=
 CODE_MAP = {"zh-CN": "zh"}
 REVIEWED = "editorially-reviewed"
 MACHINE = "machine-generated-unreviewed"
+
+
+def log_progress(message):
+    """Emit timestamped, immediately flushed progress for live Actions logs."""
+    timestamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    print(f"[{timestamp}] {message}", flush=True)
+
+
 SKIP_TAGS = {"head", "script", "style", "title", "h1", "select", "option"}
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
 
@@ -120,41 +130,62 @@ def main():
     ]
     titles = [str(product.get("name", "")).strip() for product in CATALOG.get("products", [])] + ["HALL OF GREATNESS"]
     installed = argostranslate.translate.get_installed_languages()
+    installed_codes = sorted({language.code for language in installed})
     total_updates = 0
     selected_codes = selected_language_codes(REGISTRY)
-    print(f"Selected page-copy locale batch: {sorted(selected_codes)}", flush=True)
+    log_progress(
+        f"BATCH START selected_locales={sorted(selected_codes)} "
+        f"published_pages={len(products)} installed_argos_languages={installed_codes}"
+    )
 
     for language in REGISTRY.get("languages", []):
         code = language.get("code")
         if code not in selected_codes:
             continue
+        locale_started = time.monotonic()
         locale_path = ROOT / "locales" / (code + ".json")
         locale_data = json.loads(locale_path.read_text(encoding="utf-8")) if locale_path.is_file() else {}
         translator = installed_translator(code, installed)
+        engine = "argos" if translator is not None else "madlad-cpu-fallback"
         if translator is None and not has_fallback_engine():
-            print(f"NO FREE MODEL AVAILABLE: en -> {code}; leaving English source copy intact.")
+            log_progress(f"LOCALE SKIP code={code} reason=no-free-translation-engine")
             continue
 
+        log_progress(
+            f"LOCALE START code={code} engine={engine} "
+            f"page_count={len(products)}"
+        )
         page_translations = locale_data.setdefault("landing_pages", {})
         changed = False
 
-        for product in products:
+        for page_index, product in enumerate(products, start=1):
+            page_started = time.monotonic()
             permalink = product["permalink"]
             page_path = ROOT / "landing" / product["landing_slug"] / "index.html"
+            log_progress(
+                f"PAGE START locale={code} page={page_index}/{len(products)} "
+                f"permalink={permalink} slug={product['landing_slug']}"
+            )
             if not page_path.is_file():
-                print(f"MISSING PAGE: {product['landing_slug']}; skipped for {code}.")
+                log_progress(f"PAGE SKIP locale={code} permalink={permalink} reason=missing-html")
                 continue
             page_html = page_path.read_text(encoding="utf-8")
             source_texts = extract_page_copy(page_html, titles)
             if not source_texts:
+                log_progress(f"PAGE SKIP locale={code} permalink={permalink} reason=no-visible-copy")
                 continue
 
+            log_progress(
+                f"PAGE COPY locale={code} permalink={permalink} "
+                f"unique_text_blocks={len(source_texts)}"
+            )
             source_hash = digest(source_texts)
             existing = page_translations.get(permalink, {})
             if existing.get("_source_hash") == source_hash:
+                log_progress(f"PAGE SKIP locale={code} permalink={permalink} reason=source-unchanged")
                 continue
             if existing.get("_review_status") == REVIEWED:
-                print(f"REVIEW REQUIRED: {code}/{permalink}; preserving reviewed page copy.")
+                log_progress(f"PAGE SKIP locale={code} permalink={permalink} reason=editorially-reviewed")
                 continue
 
             working_texts = []
@@ -170,9 +201,23 @@ def main():
                 working_texts.append(working_text)
                 protected_titles.append(protected)
 
-            translated_values = translate_texts(working_texts, code, translator)
+            log_progress(
+                f"PAGE TRANSLATION START locale={code} permalink={permalink} "
+                f"text_blocks={len(working_texts)} engine={engine}"
+            )
+            translated_values = translate_texts(
+                working_texts,
+                code,
+                translator,
+                progress_callback=lambda message: log_progress(
+                    f"TRANSLATION locale={code} permalink={permalink} {message}"
+                ),
+            )
             if translated_values is None or len(translated_values) != len(source_texts):
-                print(f"TRANSLATION FAILED: {code}/{permalink}; preserving prior complete copy.")
+                log_progress(
+                    f"PAGE TRANSLATION FAILED locale={code} permalink={permalink}; "
+                    "preserving prior complete copy"
+                )
                 continue
 
             translated = {}
@@ -187,15 +232,30 @@ def main():
             changed = True
             total_updates += 1
             save_locale(locale_path, locale_data)
+            log_progress(
+                f"PAGE COMPLETE locale={code} permalink={permalink} "
+                f"elapsed_seconds={time.monotonic() - page_started:.1f} "
+                f"translated_blocks={len(translated_values)} checkpoint=saved"
+            )
+
+        log_progress(
+            f"LOCALE PAGE END code={code} permalink={permalink} "
+            f"elapsed_seconds={time.monotonic() - page_started:.1f}"
+        )
 
         if changed:
             locale_path.write_text(
                 json.dumps(locale_data, ensure_ascii=False, indent=2) + "\n",
                 encoding="utf-8",
             )
-            print(f"Updated artwork-specific page copy for {code}.", flush=True)
+            log_progress(f"LOCALE CHECKPOINT code={code} file={locale_path.name} saved=true")
 
-    print(f"Artwork-specific localization complete: {total_updates} locale/product page updates.")
+        log_progress(
+            f"LOCALE COMPLETE code={code} elapsed_seconds={time.monotonic() - locale_started:.1f} "
+            f"updated_pages={sum(1 for item in page_translations.values() if item.get('_review_status') == MACHINE)}"
+        )
+
+    log_progress(f"BATCH COMPLETE locale_page_updates={total_updates}")
 
 
 if __name__ == "__main__":
