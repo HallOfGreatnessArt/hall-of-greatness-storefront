@@ -118,8 +118,10 @@ def _translate_batch(chunk, target):
     markers = [(index, f"[{position + 1}]", text) for position, (index, text) in enumerate(chunk)]
     combined = "\n".join(f"{marker}\n{text}" for _, marker, text in markers)
     output = _madlad_translate(combined, target)
+    if output is _TRANSLATION_TIMEOUT:
+        return _TRANSLATION_TIMEOUT
     if output is _TRANSLATION_FAILED or not output:
-        return output if output is _TRANSLATION_TIMEOUT else _TRANSLATION_FAILED
+        return _TRANSLATION_FAILED
     positions = [output.find(marker) for _, marker, _ in markers]
     if any(position < 0 for position in positions) or positions != sorted(positions):
         return None
@@ -135,7 +137,7 @@ def _translate_batch(chunk, target):
 
 
 def _translate_chunk_adaptive(chunk, target, report, depth=0):
-    """Translate one chunk, splitting it once when a batch fails or loses markers.
+    """Translate one chunk, splitting boundedly when a batch times out or loses markers.
 
     The bounded split avoids the former unbounded per-segment retry cascade after
     a slow CPU batch. A failed leaf returns None so the caller can preserve the
