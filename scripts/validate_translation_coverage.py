@@ -31,11 +31,11 @@ def load_sources(root: Path):
     products = [item for item in catalog["products"] if item.get("published")]
     titles = [str(item.get("name", "")).strip() for item in catalog["products"]]
     titles.append("HALL OF GREATNESS")
-    return registry, ui, landing_copy, products, titles
+    return registry, ui, landing_copy, detail_labels, products, titles
 
 
 def validate(root: Path):
-    registry, ui, landing_copy, products, titles = load_sources(root)
+    registry, ui, landing_copy, detail_labels, products, titles = load_sources(root)
     failures = []
     completed = []
     for language in registry.get("languages", []):
