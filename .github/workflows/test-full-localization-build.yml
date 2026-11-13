@@ -1,47 +1,43 @@
-name: Full free multilingual localization build (staged)
+name: Full free multilingual localization build (resumable recovery)
 
 on:
-  push:
-    branches:
-      - feat/product-page-i18n-coverage
-    paths:
-      - ".github/workflows/test-full-localization-build.yml"
-      - "assets/i18n.js"
-      - "assets/landing-copy.json"
-      - "assets/landing-i18n.js"
-      - "catalog-data.json"
-      - "locales/**"
-      - "scripts/free_translation.py"
-      - "scripts/translate_catalog.py"
-      - "scripts/translate_landing_pages.py"
-      - "scripts/validate_translation_coverage.py"
-      - "scripts/generate_landing_pages.py"
-      - "scripts/enhance_landing_pages.py"
-      - "tests/browser/test_product_page_localization.py"
   workflow_dispatch:
+    inputs:
+      source_run_id:
+        description: "Previous run containing the 11 successful locale-batch artifacts"
+        required: true
+        type: string
+        default: "43164984750"
 
 permissions:
-  contents: read
+  contents: write
+  actions: read
 
 concurrency:
-  group: full-free-localization-build
-  cancel-in-progress: true
+  group: full-free-localization-recovery
+  cancel-in-progress: false
 
 jobs:
   translate-locale-batches:
-    name: Translate locale batch ${{ matrix.batch }}
+    name: Recover locale sub-batch ${{ matrix.batch }}
+    if: github.ref == 'refs/heads/feat/product-page-i18n-coverage'
     runs-on: ubuntu-latest
     timeout-minutes: 360
     strategy:
       fail-fast: false
-      max-parallel: 1
+      max-parallel: 2
       matrix:
-        batch: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+        # The failed original batch 10 covered locale indexes 80..87.
+        # With 48 balanced batches, indexes 40..43 cover those same locales
+        # in four smaller groups of two languages each.
+        batch: [40, 41, 42, 43]
     env:
       PYTHONUNBUFFERED: "1"
     steps:
       - name: Check out isolated localization branch
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - name: Cache free Argos models
         uses: actions/cache@v4
@@ -74,21 +70,20 @@ jobs:
       - name: Install free Argos Python engine
         run: python -m pip install --disable-pip-version-check argostranslate
 
-      - name: Translate this locale batch with resumable checkpoints
+      - name: Translate catalogue fields for this small sub-batch
         run: |
           set -euo pipefail
-          python scripts/translate_catalog.py --batch-index "${{ matrix.batch }}" --batch-count 12
+          python scripts/translate_catalog.py --batch-index "${{ matrix.batch }}" --batch-count 48
 
       - name: Generate and enhance product pages
         run: |
           python scripts/generate_landing_pages.py
           python scripts/enhance_landing_pages.py
 
-      - name: Translate artwork-specific copy for this batch
-        run: |
-          python scripts/translate_landing_pages.py --batch-index "${{ matrix.batch }}" --batch-count 12
+      - name: Translate artwork-specific copy for this small sub-batch
+        run: python scripts/translate_landing_pages.py --batch-index "${{ matrix.batch }}" --batch-count 48
 
-      - name: Collect only this batch's locale files
+      - name: Collect only this sub-batch locale files
         run: |
           set -euo pipefail
           mkdir -p locale-batch
@@ -97,7 +92,7 @@ jobs:
           from pathlib import Path
           registry = json.loads(Path("locales/languages.json").read_text(encoding="utf-8"))["languages"]
           codes = [item["code"] for item in registry if item.get("code") != "en"]
-          batch_count = 12
+          batch_count = 48
           batch_index = int("${{ matrix.batch }}")
           size = (len(codes) + batch_count - 1) // batch_count
           selected = codes[batch_index * size:(batch_index + 1) * size]
@@ -108,69 +103,142 @@ jobs:
                   (Path("locale-batch") / source.name).write_bytes(source.read_bytes())
               else:
                   missing.append(code)
-          print(f"Batch ${{ matrix.batch }} collected {len(selected) - len(missing)} locale files; missing: {missing}")
+          print(f"Sub-batch ${{ matrix.batch }} collected {len(selected) - len(missing)} locale files; missing: {missing}")
           if missing:
               raise SystemExit(f"Locale files missing for: {', '.join(missing)}")
           PY
 
-      - name: Upload locale batch checkpoint
+      - name: Upload recovered locale sub-batch checkpoint
         uses: actions/upload-artifact@v4
         with:
-          name: locale-batch-${{ matrix.batch }}
+          name: locale-resume-batch-${{ matrix.batch }}
           path: locale-batch/*.json
           if-no-files-found: error
-          retention-days: 14
+          retention-days: 30
 
   verify-localized-storefront:
-    name: Merge locale checkpoints and verify storefront
+    name: Restore all checkpoints, verify, and persist translations
+    if: always() && github.ref == 'refs/heads/feat/product-page-i18n-coverage'
     needs: translate-locale-batches
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     env:
       PYTHONUNBUFFERED: "1"
     steps:
       - name: Check out isolated localization branch
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
-      - name: Download all locale batch checkpoints
+      - name: Restore the 11 successful checkpoints from the previous run
+        id: restore_previous
         uses: actions/download-artifact@v4
         with:
+          run-id: ${{ inputs.source_run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           pattern: locale-batch-*
           path: locales
           merge-multiple: true
 
+      - name: Download any completed recovery sub-batches from this run
+        id: restore_recovery
+        if: always()
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          pattern: locale-resume-batch-*
+          path: locale-resume-batches
+          merge-multiple: true
+
+      - name: Merge recovered files into the permanent locale workspace
+        id: merge
+        if: always() && steps.restore_previous.outcome == 'success'
+        run: |
+          set -euo pipefail
+          mkdir -p locales
+          if [ -d locale-resume-batches ]; then
+            find locale-resume-batches -maxdepth 1 -type f -name '*.json' -exec cp -f {} locales/ \;
+          fi
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          registry = json.loads(Path("locales/languages.json").read_text(encoding="utf-8"))["languages"]
+          codes = [item["code"] for item in registry if item.get("code") != "en"]
+          missing = [code for code in codes if not (Path("locales") / f"{code}.json").is_file()]
+          print(f"Persistable locale files: {len(codes) - len(missing)}/{len(codes)}")
+          print(f"Missing locale files: {missing}")
+          Path("locale-checkpoint-summary.json").write_text(
+              json.dumps({"expected": len(codes), "present": len(codes)-len(missing), "missing": missing}, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8"
+          )
+          PY
+
       - name: Generate final product pages
+        if: steps.merge.outcome == 'success'
         run: |
           python scripts/generate_landing_pages.py
           python scripts/enhance_landing_pages.py
 
       - name: Validate complete translation coverage
+        id: coverage
+        if: steps.merge.outcome == 'success'
+        continue-on-error: true
         run: |
           set -euo pipefail
           python scripts/validate_translation_coverage.py | tee translation-coverage-report.txt
 
       - name: Install free headless browser for localized-page verification
+        if: steps.coverage.outcome == 'success'
         run: |
           python -m pip install --disable-pip-version-check playwright==1.56.0
           python -m playwright install --with-deps chromium
 
       - name: Verify Spanish and Arabic pages in a real browser
+        if: steps.coverage.outcome == 'success'
         run: python tests/browser/test_product_page_localization.py
 
       - name: Preserve selected locale samples for inspection
-        if: always()
+        if: always() && steps.merge.outcome == 'success'
         run: |
           mkdir -p translation-samples
-          for code in es fr ar he ig bn hi zh-CN zh-TW; do
+          for code in es fr ar he ig bn hi zh-CN zh-TW gu kn ml or si ta te th; do
             if [ -f "locales/$code.json" ]; then cp "locales/$code.json" translation-samples/; fi
           done
+
+      - name: Commit all recovered locale files permanently to the development branch
+        if: always() && steps.merge.outcome == 'success'
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add locales/*.json
+          if git diff --cached --quiet; then
+            echo "No locale changes to persist."
+          else
+            git commit -m "Persist recovered multilingual locale checkpoints"
+            git push origin "HEAD:${{ github.ref_name }}"
+          fi
 
       - name: Upload merged translation coverage evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: full-free-localization-build-evidence
+          name: recovered-localization-evidence
           path: |
             translation-coverage-report.txt
+            locale-checkpoint-summary.json
             translation-samples/
           if-no-files-found: warn
+          retention-days: 30
+
+      - name: Require complete coverage and browser verification
+        if: always()
+        run: |
+          if [ "${{ steps.coverage.outcome }}" != "success" ]; then
+            echo "Translation coverage is incomplete; recovered locale files were still persisted on the development branch."
+            exit 1
+          fi
+          if [ "${{ needs.translate-locale-batches.result }}" != "success" ]; then
+            echo "One or more recovery sub-batches failed."
+            exit 1
+          fi
