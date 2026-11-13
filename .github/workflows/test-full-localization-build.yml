@@ -1,6 +1,14 @@
 name: Full free multilingual localization build (resumable recovery)
 
 on:
+  # A one-time push of this workflow file to the isolated development branch
+  # starts recovery without requiring workflow_dispatch on the default branch.
+  # Later locale commits do not retrigger this workflow because of the path filter.
+  push:
+    branches:
+      - feat/product-page-i18n-coverage
+    paths:
+      - .github/workflows/test-full-localization-build.yml
   workflow_dispatch:
     inputs:
       source_run_id:
@@ -134,7 +142,7 @@ jobs:
         id: restore_previous
         uses: actions/download-artifact@v4
         with:
-          run-id: ${{ inputs.source_run_id }}
+          run-id: ${{ inputs.source_run_id || '43164984750' }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
           pattern: locale-batch-*
           path: locales
