@@ -1,0 +1,33 @@
+name: Validate translation coverage (development only)
+
+on:
+  push:
+    branches:
+      - feat/product-page-i18n-coverage
+    paths:
+      - scripts/validate_translation_coverage.py
+      - locales/**
+      - catalog-data.json
+      - assets/landing-copy.json
+      - assets/i18n.js
+      - landing/**
+
+permissions:
+  contents: read
+
+jobs:
+  validate-translation-coverage:
+    name: Validate all recovered locale files
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out development branch
+        uses: actions/checkout@v4
+        with:
+          ref: feat/product-page-i18n-coverage
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run full translation coverage validator
+        run: python scripts/validate_translation_coverage.py
