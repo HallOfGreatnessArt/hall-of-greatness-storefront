@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#171714">
+  <meta name="description" content="HALL OF GREATNESS — art that celebrates the greatness of humanity. Discover meaningful digital artworks inspired by heritage, dignity, hope, and the human spirit.">
+  <title>HALL OF GREATNESS — Art That Celebrates Humanity</title>
+  <style>
+500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap');
+
+:root {
+  color-scheme: light;
+  --bg: #f5f2eb;
+  --surface: #fffdf8;
+  --surface-2: #ebe5d8;
+  --ink: #211f1a;
+  --muted: #716b60;
+  --line: #d9d1c2;
+  --gold: #98763a;
+  --gold-soft: #c6a96b;
+  --dark-panel: #191a17;
+  --shadow: 0 24px 70px rgba(36, 29, 16, .12);
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: "Segoe UI", Arial, sans-serif;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #171815;
+  --surface: #20211d;
+  --surface-2: #292a24;
+  --ink: #f1ede3;
+  --muted: #b3ad9f;
+  --line: #3d3c33;
+  --gold: #d0b477;
+  --gold-soft: #a98b50;
+  --dark-panel: #11120f;
+  --shadow: 0 24px 70px rgba(0, 0, 0, .28);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+button, input { font: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
+.skip-link { position: absolute; top: -60px; left: 16px; z-index: 20; padding: 10px 14px; background: var(--surface); color: var(--ink); }
+.skip-link:focus { top: 12px; }
+.site-header { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 0 clamp(22px, 6vw, 92px); border-bottom: 1px solid var(--line); background: var(--bg); position: sticky; top: 0; z-index: 10; }
+.wordmark { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-size: 12px; letter-spacing: .17em; white-space: nowrap; }
+.wordmark strong { font-weight: 700; }
+.wordmark-crown { color: var(--gold); font-size: 22px; }
+.main-nav { display: flex; align-items: center; gap: clamp(16px, 3vw, 38px); }
+.main-nav a, .theme-toggle { color: var(--muted); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+.main-nav a:hover, .theme-toggle:hover { color: var(--gold); }
+.theme-toggle { border: 1px solid var(--line); background: transparent; border-radius: 99px; padding: 9px 13px; cursor: pointer; display: flex; gap: 8px; align-items: center; }
+.theme-icon { font-size: 15px; }
+.hero { min-height: 650px; padding: 100px clamp(22px, 9vw, 140px) 88px; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 8vw; position: relative; overflow: hidden; }
+.hero::before { content: ""; position: absolute; width: 520px; height: 520px; border: 1px solid var(--line); border-radius: 50%; right: -250px; top: 30px; opacity: .6; pointer-events: none; }
+.eyebrow, .section-kicker { color: var(--gold); font-size: 10px; letter-spacing: .2em; font-weight: 700; text-transform: uppercase; }
+.eyebrow span { display: inline-block; width: 24px; height: 1px; background: var(--gold); vertical-align: middle; margin-right: 8px; }
+.hero h1 { max-width: 680px; margin: 24px 0; font: 500 clamp(44px, 6vw, 82px)/1.08 var(--serif); letter-spacing: -.045em; }
+h1 em, h2 em { color: var(--gold); font-weight: 500; }
+.hero-intro { max-width: 470px; color: var(--muted); font-size: 15px; line-height: 1.9; }
+.text-link { display: inline-flex; gap: 22px; align-items: center; margin-top: 24px; padding-bottom: 9px; border-bottom: 1px solid var(--gold); color: var(--ink); text-decoration: none; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.text-link span { color: var(--gold); font-size: 18px; }
+.hero-art { justify-self: center; width: min(100%, 430px); position: relative; padding: 18px; background: var(--surface-2); box-shadow: var(--shadow); transform: rotate(1.5deg); }
+.art-frame { min-height: 440px; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at 50% 35%, #645638 0, #302d23 38%, #171916 78%); border: 1px solid rgba(207, 177, 112, .65); }
+.frame-inner { width: 100%; min-height: 390px; border: 1px solid rgba(207, 177, 112, .35); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #e7d5a8; text-align: center; }
+.frame-star { font-size: 34px; color: #d4b36e; }
+.frame-title { margin: 28px 0 18px; font: 500 clamp(30px, 4vw, 48px)/1.1 var(--serif); letter-spacing: .13em; }
+.frame-subtitle { font-size: 9px; letter-spacing: .28em; }
+.art-caption { margin: 14px 0 0; color: var(--muted); text-align: center; font: italic 13px var(--serif); }
+.hero-index { position: absolute; bottom: 30px; left: clamp(22px, 9vw, 140px); color: var(--muted); font-size: 9px; letter-spacing: .18em; }
+.section-wrap { padding: 105px clamp(22px, 9vw, 140px); }
+.story { background: var(--surface); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10vw; margin-top: 35px; align-items: start; }
+.story h2, .section-heading h2, .community h2 { margin: 0; font: 500 clamp(32px, 4.3vw, 57px)/1.2 var(--serif); letter-spacing: -.035em; }
+.story-copy { max-width: 570px; color: var(--muted); font-size: 14px; }
+.story-copy p:first-child { margin-top: 0; }
+.story-copy p { margin: 0 0 18px; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 42px; }
+.section-heading h2 { margin-top: 15px; }
+.section-number { color: var(--gold); font: italic 48px var(--serif); }
+.featured-card { display: grid; grid-template-columns: 1fr 1fr; background: var(--surface); border: 1px solid var(--line); box-shadow: var(--shadow); }
+.featured-art { min-height: 430px; padding: 28px; display: grid; place-items: center; background: var(--surface-2); }
+.featured-placeholder { width: min(100%, 360px); aspect-ratio: 4/5; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; color: #e8d5a6; background: radial-gradient(circle at 50% 40%, #8a744a, #39372c 55%, #1a1b17 100%); border: 1px solid var(--gold-soft); font: 500 27px/1.25 var(--serif); text-align: center; letter-spacing: .12em; }
+.featured-placeholder i { font-style: normal; color: #d4b36e; font-size: 30px; }
+.featured-copy { padding: clamp(32px, 6vw, 78px); align-self: center; }
+.featured-copy h3 { margin: 14px 0; font: 500 clamp(30px, 3.4vw, 45px)/1.15 var(--serif); }
+.featured-copy > p:not(.eyebrow) { max-width: 400px; color: var(--muted); font-size: 14px; line-height: 1.9; }
+.button-link { display: inline-flex; gap: 28px; margin-top: 18px; padding: 14px 19px; background: var(--dark-panel); color: #f5eddb; text-decoration: none; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.button-link span { color: #d4b36e; }
+.heading-note { max-width: 250px; margin: 0 0 7px; color: var(--muted); font-size: 12px; }
+.collection-filters { display: flex; flex-wrap: wrap; gap: 9px; margin: 0 0 28px; }
+.filter-chip { border: 1px solid var(--line); border-radius: 99px; padding: 9px 15px; color: var(--muted); background: transparent; cursor: pointer; font-size: 10px; letter-spacing: .06em; }
+.filter-chip:hover, .filter-chip.is-active { background: var(--dark-panel); color: #f5eddb; border-color: var(--dark-panel); }
+.catalogue-status { color: var(--muted); font-size: 12px; min-height: 22px; }
+.product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px 20px; }
+.product-card { min-width: 0; background: var(--surface); border: 1px solid var(--line); transition: transform .25s ease, box-shadow .25s ease; }
+.product-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.product-image { display: block; aspect-ratio: 4/3; overflow: hidden; background: var(--surface-2); position: relative; }
+.product-image img { width: 100%; height: 100%; object-fit: contain; display: block; transition: opacity .25s ease; background: var(--surface-2); }
+.product-card:hover .product-image img { opacity: .96; }
+.product-image-fallback { width: 100%; height: 100%; min-height: 170px; display: grid; place-items: center; padding: 22px; color: #e6d3a7; background: radial-gradient(circle at 50% 35%, #766544, #37352b 62%, #1c1d19); text-align: center; font: 500 20px/1.3 var(--serif); letter-spacing: .1em; }
+.product-info { padding: 18px 18px 20px; }
+.product-type { color: var(--gold); font-size: 9px; letter-spacing: .16em; text-transform: uppercase; }
+.product-title { display: block; min-height: 52px; margin: 8px 0 10px; font: 500 20px/1.25 var(--serif); text-decoration: none; }
+.product-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; border-top: 1px solid var(--line); padding-top: 13px; color: var(--muted); font-size: 11px; }
+.product-price { color: var(--ink); font-weight: 700; }
+.product-open { color: var(--gold); text-decoration: none; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+.load-more { border: 1px solid var(--gold); padding: 13px 22px; background: transparent; color: var(--ink); cursor: pointer; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+.load-more:hover { background: var(--dark-panel); color: #f5eddb; }
+.catalogue-actions { text-align: center; margin-top: 42px; }
+.community { background: var(--dark-panel); color: #f1eadb; padding: 100px 24px; text-align: center; }
+.community-inner { max-width: 680px; margin: 0 auto; }
+.community .eyebrow { color: #c9ad70; }
+.community h2 { margin: 18px 0; }
+.community h2 em { color: #d0b477; }
+.community-inner > p:not(.eyebrow) { max-width: 490px; margin: 0 auto 28px; color: #bdb6a7; font-size: 13px; }
+.follow-form { display: flex; max-width: 500px; margin: 0 auto; gap: 8px; flex-wrap: wrap; }
+.follow-form input { flex: 1 1 220px; min-width: 0; padding: 15px 16px; border: 1px solid #575345; background: #24251f; color: #fff; border-radius: 0; font-size: 12px; }
+.follow-form button { padding: 15px 18px; border: 1px solid #d0b477; background: #d0b477; color: #191a17; cursor: pointer; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.follow-message { flex-basis: 100%; min-height: 20px; margin: 4px 0 0; color: #d0b477; font-size: 11px; }
+.subscribe-fallback { display: inline-block; margin-top: 13px; color: #bdb6a7; font-size: 10px; }
+.site-footer { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 10px 24px; padding: 30px clamp(22px, 6vw, 92px); background: var(--bg); border-top: 1px solid var(--line); }
+.footer-wordmark { grid-column: 1; }
+.site-footer p { grid-column: 1; margin: 0; color: var(--muted); font: italic 13px var(--serif); }
+.site-footer > a:not(.wordmark) { grid-column: 2; grid-row: 1 / span 2; color: var(--gold); font-size: 11px; }
+.site-footer small { grid-column: 1 / -1; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 9px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 850px) {
+  .main-nav { display: none; }
+  .hero { min-height: auto; grid-template-columns: 1fr  .8fr; gap: 30px; padding-top: 80px; padding-bottom: 90px; }
+  .hero h1 { font-size: clamp(42px, 7vw, 64px); }
+  .art-frame { min-height: 350px; }
+  .frame-inner { min-height: 310px; }
+  .story-grid { gap: 5vw; }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .site-header { min-height: 68px; padding: 0 18px; }
+  .wordmark { font-size: 10px; letter-spacing: .12em; }
+  .theme-toggle { padding: 8px 10px; }
+  .hero { display: flex; flex-direction: column; align-items: stretch; padding: 65px 22px 85px; gap: 45px; }
+  .hero h1 { max-width: 530px; font-size: clamp(42px, 13vw, 60px); }
+  .hero-art { width: min(86%, 370px); align-self: center; }
+  .art-frame { min-height: 340px; }
+  .frame-inner { min-height: 300px; }
+  .hero-index { left: 22px; bottom: 28px; }
+  .section-wrap { padding: 72px 22px; }
+  .story-grid, .featured-card { grid-template-columns: 1fr; gap: 25px; }
+  .story h2, .section-heading h2, .community h2 { font-size: 38px; }
+  .section-heading { align-items: start; }
+  .section-number { font-size: 36px; }
+  .featured-art { min-height: 330px; }
+  .featured-copy { padding: 28px; }
+  .heading-note { display: none; }
+  .product-grid { grid-template-columns: 1fr 1fr; gap: 13px; }
+  .product-info { padding: 13px 12px 15px; }
+  .product-title { font-size: 16px; min-height: 60px; }
+  .product-meta { font-size: 10px; flex-wrap: wrap; }
+  .product-image-fallback { min-height: 130px; font-size: 16px; }
+  .collection-filters { gap: 7px; }
+  .filter-chip { padding: 8px 11px; font-size: 9px; }
+  .community { padding: 76px 22px; }
+  .follow-form { flex-direction: column; }
+  .follow-form input, .follow-form button { width: 100%; }
+  .site-footer { grid-template-columns: 1fr; }
+  .site-footer > a:not(.wordmark), .site-footer p, .footer-wordmark, .site-footer small { grid-column: 1; grid-row: auto; }
+  .site-footer > a:not(.wordmark) { margin-top: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+}
+
+@media (max-width: 380px) {
+  .product-grid { grid-template-columns: 1fr; gap: 18px; }
+  .product-image { aspect-ratio: 5 / 4; }
+  .product-title { min-height: 0; font-size: 19px; }
+  .product-info { padding: 16px; }
+}
+
+
+/* Sprint 03 — gallery-led presentation refinements */
+.hero { gap: clamp(38px, 7vw, 112px); }
+.hero-copy { position: relative; z-index: 1; }
+.hero-art { width: min(100%, 470px); padding: 15px; transform: rotate(.6deg); transition: transform .35s ease, box-shadow .35s ease; }
+.hero-art:hover { transform: rotate(0deg) translateY(-3px); box-shadow: 0 30px 80px rgba(36, 29, 16, .18); }
+.hero-art-link { display: block; color: inherit; text-decoration: none; }
+.hero-art-link:focus-visible { outline-offset: 7px; }
+.art-frame { min-height: 470px; overflow: hidden; }
+.frame-inner { min-height: 420px; }
+.hero-art img { display: block; width: 100%; height: 100%; min-height: 420px; max-height: 560px; object-fit: contain; background: #171714; }
+.art-caption { min-height: 20px; }
+.featured-art { overflow: hidden; }
+.featured-art > img { max-width: 100%; }
+.featured-art img { max-width: 100%; }
+.featured-art { background: linear-gradient(145deg, var(--surface-2), var(--surface)); }
+.featured-art img { width: 100%; height: 100%; max-height: 560px; object-fit: contain; }
+.product-card { overflow: hidden; }
+.product-image { aspect-ratio: 4 / 5; padding: 12px; }
+.product-image img { object-fit: contain; }
+.product-info { display: flex; flex-direction: column; min-height: 190px; }
+.product-description { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; margin: 0 0 14px; color: var(--muted); font-size: 12px; line-height: 1.65; }
+.product-meta { margin-top: auto; }
+.product-title { min-height: 0; }
+.collection-filters { padding-bottom: 5px; }
+.filter-chip { transition: background-color .2s ease, color .2s ease, border-color .2s ease; }
+.button-link, .load-more, .follow-form button { transition: transform .2s ease, opacity .2s ease, background-color .2s ease; }
+.button-link:hover, .follow-form button:hover { transform: translateY(-2px); }
+.catalogue-status { padding: 9px 0; }
+@media (max-width: 850px) {
+  .hero-art { max-width: 410px; }
+  .art-frame { min-height: 390px; }
+  .frame-inner { min-height: 350px; }
+  .hero-art img { min-height: 350px; }
+}
+@media (max-width: 600px) {
+  .hero-art { width: min(88%, 390px); }
+  .art-frame { min-height: 330px; }
+  .frame-inner { min-height: 290px; }
+  .hero-art img { min-height: 290px; max-height: 430px; }
+  .product-image { aspect-ratio: 4 / 5; padding: 7px; }
+  .product-info { min-height: 190px; }
+  .product-description { font-size: 11px; -webkit-line-clamp: 2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-art, .filter-chip, .button-link, .load-more, .follow-form button { transition: none; }
+}
+
+</style>
+  <script defer>
+(() => {
+  "use strict";
+
+  const root = document.documentElement;
+  const themeButton = document.querySelector(".theme-toggle");
+  const themeIcon = document.querySelector(".theme-icon");
+  const themeLabel = document.querySelector(".theme-label");
+  const grid = document.getElementById("product-grid");
+  const status = document.getElementById("catalogue-status");
+  const loadMoreButton = document.getElementById("load-more");
+  const filters = Array.from(document.querySelectorAll("[data-filter]"));
+  const state = { products: [], visible: 9, filter: "all", total: null, offset: 0, loading: false };
+
+  function setTheme(theme) {
+    const next = theme === "dark" ? "dark" : "light";
+    root.dataset.theme = next;
+    if (themeButton) {
+      themeButton.setAttribute("aria-pressed", String(next === "dark"));
+      themeButton.setAttribute("aria-label", next === "dark" ? "Switch to light theme" : "Switch to dark theme");
+    }
+    if (themeIcon) themeIcon.textContent = next === "dark" ? "☀" : "☾";
+    if (themeLabel) themeLabel.textContent = next === "dark" ? "Light" : "Dark";
+    try { localStorage.setItem("hog-profile-theme", next); } catch (_) {}
+  }
+
+  let preferredTheme = "light";
+  try {
+    const saved = localStorage.getItem("hog-profile-theme");
+    if (saved === "dark" || saved === "light") preferredTheme = saved;
+    else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) preferredTheme = "dark";
+  } catch (_) {}
+  setTheme(preferredTheme);
+  themeButton?.addEventListener("click", () => setTheme(root.dataset.theme === "dark" ? "light" : "dark"));
+
+  document.getElementById("year").textContent = String(new Date().getFullYear());
+
+  function readJsonBlock(id) {
+    const node = document.getElementById(id);
+    if (!node) return null;
+    try { return JSON.parse(node.textContent || "{}"); } catch (_) { return null; }
+  }
+
+  function permalinkOf(product) {
+    if (product.permalink) return String(product.permalink);
+    const url = product.url || product.short_url || "";
+    try { return new URL(url).pathname.split("/").filter(Boolean).pop() || ""; } catch (_) { return ""; }
+  }
+
+  function productUrl(product) {
+    if (typeof product.url === "string" && /^https:\/\//i.test(product.url)) {
+      try {
+        const parsed = new URL(product.url);
+        if (parsed.protocol === "https:" && (parsed.hostname === "gumroad.com" || parsed.hostname.endsWith(".gumroad.com"))) {
+          return parsed.href;
+        }
+      } catch (_) {}
+    }
+    const slug = permalinkOf(product);
+    return slug ? "https://alshayebemad.gumroad.com/l/" + encodeURIComponent(slug) : "https://alshayebemad.gumroad.com/";
+  }
+
+  function categoryOf(product) {
+    if (product.is_bundle) return "bundles";
+    const text = String(product.name || "").toLowerCase();
+    if (/egypt|coptic|nile|queen|heritage|mediterranean/.test(text)) return "heritage";
+    if (/human|hope|prayer|legacy|hands|embrace|kindness|shelter|tomorrow|light|mercy|earth|generations|faith|love/.test(text)) return "humanity";
+    if (/nature|garden|serenity|stillness|horizon|flower|universe/.test(text)) return "nature";
+    return "all";
+  }
+
+  // Verified cover URLs retrieved from the connected Gumroad product records.
+  // These are presentation fallbacks only; they do not change product assets in Gumroad.
+  const verifiedCovers = {
+    "gljhyf": "https://public-files.gumroad.com/wpd4w3sxnnectchbjgiiykpkv72v",
+    "wgojq": "https://public-files.gumroad.com/wbucc5zmflmidgt5fxbj9whhmn22",
+    "ngqan": "https://public-files.gumroad.com/5gm7pd9v98dzc6kf0ges87ocqfct",
+    "fgdpqp": "https://public-files.gumroad.com/ekd5gj6gzglae8ju4aytsgg7m8dz",
+    "jvffaq": "https://public-files.gumroad.com/zjb3wra5vtosnxvq7qh92oot2k5p",
+    "xvccaj": "https://public-files.gumroad.com/atz0i1o4ih9cfhfzwtvqz5nh5et5",
+    "oubirh": "https://public-files.gumroad.com/h096mba1nxbkb5aapauhf3784wmv",
+    "hqpird": "https://public-files.gumroad.com/umxeci4fcks0a8q342ws38wokal4",
+    "wdtvt": "https://public-files.gumroad.com/3olk2gpiz1ayvcfoekrdx2o4ua5l",
+    "mxrljy": "https://public-files.gumroad.com/dlms7xf20xsv2j72bugryp0pldq8",
+    "gusqyc": "https://public-files.gumroad.com/h7049wok2yrili1z34cbv3x5aw4z",
+    "wjxgxb": "https://public-files.gumroad.com/90bys6rmfmhecvxewwoq2r5hij7w",
+    "kjclzu": "https://public-files.gumroad.com/5j1iy0qhwuqvnoohbgsgs6rxety4",
+    "aenwi": "https://public-files.gumroad.com/xnom3svb1ysmz8n1m6216iade7ws",
+    "gynmhv": "https://public-files.gumroad.com/tg19sn3lejdx7l2agz0y8js2kr0q",
+    "jrsgce": "https://public-files.gumroad.com/jjfofunalfjzmirgf23fr9wvrl5c",
+    "ukxrmq": "https://public-files.gumroad.com/oagwyxw30tbvtx2fwuzxd2gtmfq2",
+    "yhkokf": "https://public-files.gumroad.com/zb15tdswuurqovegphs3ajhdwli9",
+    "nxkxyq": "https://public-files.gumroad.com/wwvo2eo4rn5gv97kazjdsra9eaii",
+    "mzlqxg": "https://public-files.gumroad.com/qylylr4iojafjbz0cfe050bcfmz0",
+    "etqsav": "https://public-files.gumroad.com/gcm3d95nya0pmgcc3664fvjrhndn",
+    "vwrllor": "https://public-files.gumroad.com/9v5hp71z94wnturioestnl5ijeya",
+    "gkwadk": "https://public-files.gumroad.com/ufm0cxg08cs7fhlgl0zazutgh5lk",
+    "cotnkm": "https://public-files.gumroad.com/c5bxy1p25lex9uk7s3wmhooo3rh8",
+    "kaztbw": "https://public-files.gumroad.com/f4hanfhnssw2xsbs5pu9fpte192l",
+    "cuitvq": "https://public-files.gumroad.com/8zkq0hy4b5newv9q2v3ofmpjwhdx",
+    "rabhc": "https://public-files.gumroad.com/hipzbvqo71rt9fv618nj390kzpm5",
+    "ycltf": "https://public-files.gumroad.com/k7psrjyppmz7ulvmri98flszl7s6",
+    "bctcdz": "https://public-files.gumroad.com/nke4b7iu7bp8i312odttlcrwzp9f",
+    "msuzc": "https://public-files.gumroad.com/gcesxw6bzhkcznrymevn61fp0gb5",
+    "tzlsv": "https://public-files.gumroad.com/j9dg5oywnngihhreld0u34mrefpi",
+    "bgqxwm": "https://public-files.gumroad.com/e6ksq0m2j1ajjeokqh3hsqvk6mon",
+    "aedllm": "https://public-files.gumroad.com/seespc0rnc1yu7plx3m3s5wcl7p7",
+    "smuewa": "https://public-files.gumroad.com/43wo8layi3fi9vxs4fn4yvojgk84",
+    "jzjbrg": "https://public-files.gumroad.com/6f44pgz849niaowmdjd50z7w503q",
+    "csyqhm": "https://public-files.gumroad.com/ekiic516hdrvnnscycxhz226gjeg"
+  };
+
+  function imageOf(product) {
+    const candidates = [
+      product.thumbnail_url,
+      product.thumbnail,
+      product.cover_url,
+      product.cover_image_url,
+      product.image_url,
+      Array.isArray(product.covers) ? product.covers[0]?.url : ""
+    ];
+    for (const candidate of candidates) {
+      if (typeof candidate !== "string" || !/^https:\/\//i.test(candidate)) continue;
+      try {
+        const host = new URL(candidate).hostname.toLowerCase();
+        if (host === "gumroad.com" || host.endsWith(".gumroad.com") || host.endsWith(".gumroadcdn.com") || host.endsWith(".gumroadusercontent.com") || host === "public-files.gumroad.com") return candidate;
+      } catch (_) {}
+    }
+    return verifiedCovers[permalinkOf(product)] || "";
+  }
+
+  function makeCard(product) {
+    const permalink = permalinkOf(product);
+    const url = productUrl(product);
+    const card = document.createElement("article");
+    card.className = "product-card";
+    card.dataset.category = categoryOf(product);
+
+    const imageLink = document.createElement("a");
+    imageLink.className = "product-image";
+    imageLink.href = url;
+    imageLink.target = "_blank";
+    imageLink.rel = "noopener";
+    imageLink.setAttribute("aria-label", "Explore " + (product.name || "artwork"));
+
+    const imageUrl = imageOf(product);
+    if (imageUrl) {
+      const image = document.createElement("img");
+      image.src = imageUrl;
+      image.alt = product.name ? String(product.name) : "HALL OF GREATNESS artwork";
+      image.loading = "lazy";
+      image.decoding = "async";
+      image.addEventListener("error", () => {
+        const fallback = document.createElement("div");
+        fallback.className = "product-image-fallback";
+        fallback.textContent = product.name || "HALL OF GREATNESS";
+        imageLink.replaceChildren(fallback);
+      }, { once: true });
+      imageLink.appendChild(image);
+    } else {
+      const fallback = document.createElement("div");
+      fallback.className = "product-image-fallback";
+      fallback.innerHTML = "<span>✦</span>";
+      fallback.append(document.createTextNode(product.name || "HALL OF GREATNESS"));
+      imageLink.appendChild(fallback);
+    }
+
+    const info = document.createElement("div");
+    info.className = "product-info";
+    const type = document.createElement("div");
+    type.className = "product-type";
+    type.textContent = product.is_bundle ? "Curated collection" : "Digital artwork";
+    const title = document.createElement("a");
+    title.className = "product-title";
+    title.href = url;
+    title.target = "_blank";
+    title.rel = "noopener";
+    title.textContent = product.name || "Explore artwork";
+    const description = document.createElement("p");
+    description.className = "product-description";
+    description.textContent = typeof product.description === "string"
+      ? product.description.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim()
+      : "";
+    description.hidden = !description.textContent;
+    const meta = document.createElement("div");
+    meta.className = "product-meta";
+    const open = document.createElement("a");
+    open.className = "product-open";
+    open.href = url;
+    open.target = "_blank";
+    open.rel = "noopener";
+    open.textContent = "Explore ↗";
+    meta.append(open);
+    info.append(type, title);
+    if (!description.hidden) info.append(description);
+    info.append(meta);
+    card.append(imageLink, info);
+    return card;
+  }
+
+  function filteredProducts() {
+    if (state.filter === "all") return state.products;
+    return state.products.filter(product => categoryOf(product) === state.filter);
+  }
+
+  function render() {
+    if (!grid) return;
+    const products = filteredProducts();
+    grid.replaceChildren();
+    products.slice(0, state.visible).forEach(product => grid.appendChild(makeCard(product)));
+    const totalLabel = state.total !== null && state.total > state.products.length
+      ? " Showing " + state.products.length + " of " + state.total + " available products."
+      : "";
+    status.textContent = products.length
+      ? "Showing " + Math.min(state.visible, products.length) + " of " + products.length + " artworks." + totalLabel
+      : "No published products are available in this collection yet.";
+    loadMoreButton.hidden = state.filter !== "all" || (state.visible >= state.products.length && !(state.total !== null && state.products.length < state.total));
+    loadMoreButton.disabled = state.loading;
+  }
+
+  function loadInitialCatalogue() {
+    const data = readJsonBlock("gumroad-data");
+    if (!data || !Array.isArray(data.products)) {
+      status.textContent = "The live Gumroad catalogue appears when this page is previewed or served on your Gumroad profile. No sample products are being substituted.";
+      return;
+    }
+    // Only products explicitly confirmed as published may enter the public gallery.
+    state.products = data.products.filter(product => product && product.published === true && product.archived !== true);
+    state.total = Number.isFinite(Number(data.products_total)) ? Number(data.products_total) : state.products.length;
+    state.offset = state.products.length;
+    render();
+    if (state.total > state.products.length) {
+      status.textContent += " More products are available; use Load more to request the next set.";
+    }
+    updateFeaturedFromCatalogue();
+  }
+
+  function updateFeaturedFromCatalogue() {
+    const featured = state.products.find(product => /the coptic soul of egypt/i.test(String(product.name || "")));
+    if (!featured) return;
+    const title = document.getElementById("featured-title");
+    const link = document.getElementById("featured-link");
+    const description = document.getElementById("featured-description");
+    const imageBox = document.getElementById("featured-image");
+    if (title) title.textContent = featured.name;
+    if (link) link.href = productUrl(featured);
+    if (description) description.textContent = "Discover this featured artwork from our Egyptian and Coptic heritage collection.";
+    const imageUrl = imageOf(featured);
+    // imageOf() already checks Gumroad image fields and the verifiedCovers fallback registry.
+    const featuredImageUrl = imageUrl;
+    const heroImageLink = document.getElementById("hero-art-link");
+    const heroImageFrame = document.getElementById("hero-art-frame");
+    const heroCaption = document.getElementById("hero-art-caption");
+    if (heroImageLink) {
+      heroImageLink.href = productUrl(featured);
+      heroImageLink.setAttribute("aria-label", "Explore " + featured.name);
+    }
+    if (featuredImageUrl && heroImageFrame) {
+      const heroFallback = heroImageFrame.cloneNode(true);
+      const heroImage = document.createElement("img");
+      heroImage.src = featuredImageUrl;
+      heroImage.alt = featured.name + " — featured HALL OF GREATNESS artwork";
+      heroImage.loading = "eager";
+      heroImage.decoding = "async";
+      heroImageFrame.replaceChildren(heroImage);
+      heroImage.addEventListener("error", () => {
+        heroImageFrame.replaceChildren(...Array.from(heroFallback.childNodes).map(node => node.cloneNode(true)));
+      }, { once: true });
+    }
+    if (heroCaption) heroCaption.textContent = "Featured artwork — " + featured.name;
+    if (featuredImageUrl && imageBox) {
+      const img = document.createElement("img");
+      img.src = featuredImageUrl;
+      img.alt = featured.name;
+      img.loading = "lazy";
+      img.decoding = "async";
+      img.style.cssText = "width:100%;height:100%;max-height:500px;object-fit:contain;display:block;";
+      img.addEventListener("error", () => {
+        const fallback = document.createElement("div");
+        fallback.className = "featured-placeholder";
+        const label = document.createElement("span");
+        label.textContent = "HALL OF GREATNESS";
+        const symbol = document.createElement("i");
+        symbol.textContent = "✦";
+        fallback.replaceChildren(label, symbol);
+        imageBox.replaceChildren(fallback);
+      }, { once: true });
+      imageBox.replaceChildren(img);
+    }
+  }
+
+  filters.forEach(button => {
+    button.addEventListener("click", () => {
+      state.filter = button.dataset.filter || "all";
+      state.visible = 9;
+      filters.forEach(item => {
+        const active = item === button;
+        item.classList.toggle("is-active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      render();
+    });
+  });
+
+  loadMoreButton?.addEventListener("click", async () => {
+    if (state.loading) return;
+    if (state.visible < state.products.length) {
+      state.visible += 9;
+      render();
+      return;
+    }
+    if (typeof window.gumroadProducts?.request !== "function" || state.total === null || state.offset >= state.total) {
+      status.textContent = "All products currently available in the Gumroad catalogue have been loaded.";
+      loadMoreButton.hidden = true;
+      return;
+    }
+    state.loading = true;
+    loadMoreButton.disabled = true;
+    status.textContent = "Loading more published artworks…";
+    try {
+      const response = await window.gumroadProducts.request({ offset: state.offset, limit: 100 });
+      if (!response || response.success !== true || !Array.isArray(response.products)) throw new Error("Catalogue request did not return products.");
+      const incoming = response.products.filter(product => product && product.published === true && product.archived !== true);
+      const known = new Set(state.products.map(product => permalinkOf(product)));
+      incoming.forEach(product => {
+        const key = permalinkOf(product);
+        if (!key || !known.has(key)) {
+          state.products.push(product);
+          if (key) known.add(key);
+        }
+      });
+      state.offset = Number.isFinite(Number(response.offset)) ? Number(response.offset) + incoming.length : state.products.length;
+      if (Number.isFinite(Number(response.productsTotal))) state.total = Number(response.productsTotal);
+      state.visible = state.products.length;
+      render();
+    } catch (error) {
+      status.textContent = "More products could not be loaded right now. Please try again later.";
+    } finally {
+      state.loading = false;
+      render();
+    }
+  });
+
+  loadInitialCatalogue();
+})();
+
+</script>
+</head>
+<body>
+<style id="preview-only-style">.preview-notice{position:relative;z-index:99;padding:9px 16px;text-align:center;background:#342b1c;color:#f6e8c6;font:600 11px/1.4 Arial,sans-serif;letter-spacing:.06em}.preview-notice strong{color:#e4c27b}</style><div class="preview-notice"><strong>PREVIEW ONLY</strong> · Temporary visual review · Not the live Gumroad store</div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="HALL OF GREATNESS home">
+      <span class="wordmark-crown" aria-hidden="true">✦</span>
+      <span>HALL OF <strong>GREATNESS</strong></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#story">Our story</a>
+      <a href="#collections">Collections</a>
+      <a href="#featured">Featured</a>
+      <a href="#community">Community</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+      <span class="theme-icon" aria-hidden="true">☾</span>
+      <span class="theme-label">Dark</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> ART • HUMANITY • LEGACY</p>
+        <h1>ART THAT GIVES FORM TO THE <em>STORIES WE SHARE</em></h1>
+        <p class="hero-intro">From Egyptian and Coptic heritage to universal stories of dignity, hope, and compassion, each work invites a deeper connection.</p>
+        <a class="text-link" href="#collections">Discover the collection <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art" aria-label="Featured HALL OF GREATNESS artwork">
+        <a class="hero-art-link" id="hero-art-link" href="https://alshayebemad.gumroad.com/l/TheCopticSoulofEgypt" target="_blank" rel="noopener" aria-label="Explore The Coptic Soul of Egypt">
+          <div class="art-frame" id="hero-art-frame">
+            <div class="frame-inner">
+              <span class="frame-star" aria-hidden="true">✦</span>
+              <span class="frame-title">THE HUMAN<br>SPIRIT</span>
+              <span class="frame-subtitle">ART WITH MEANING</span>
+            </div>
+          </div>
+        </a>
+        <p class="art-caption" id="hero-art-caption">A celebration of the stories that connect us.</p>
+      </div>
+      <div class="hero-index" aria-hidden="true">01 / THE COLLECTION</div>
+    </section>
+
+    <section class="story section-wrap" id="story">
+      <div class="section-kicker">01 — THE STORY BEHIND HALL OF GREATNESS</div>
+      <div class="story-grid">
+        <h2>Every artwork carries a message.<br><em>Every message has a story.</em></h2>
+        <div class="story-copy">
+          <p>Welcome to a world where art goes beyond beauty to tell stories, express emotions, and celebrate the human spirit.</p>
+          <p>HALL OF GREATNESS is a creative art collection dedicated to humanity, dignity, hope, compassion, courage, and the extraordinary connections that bring us together.</p>
+          <p>Discover meaningful digital artworks created to inspire your imagination, enrich your surroundings, and bring powerful human stories into your home or workplace.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured section-wrap" id="featured">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">02 — FEATURED ARTWORK</div>
+          <h2>A story rooted in <em>heritage.</em></h2>
+        </div>
+        <span class="section-number">01</span>
+      </div>
+      <article class="featured-card" id="featured-card">
+        <div class="featured-art" id="featured-image" aria-hidden="true">
+          <div class="featured-placeholder"><span>HALL OF<br>GREATNESS</span><i>✦</i></div>
+        </div>
+        <div class="featured-copy">
+          <p class="eyebrow">FEATURED FROM OUR COLLECTION</p>
+          <h3 id="featured-title">The Coptic Soul of Egypt</h3>
+          <p id="featured-description">A meaningful artistic journey through the spiritual memory and cultural heritage of Egypt.</p>
+          <a class="button-link" id="featured-link" href="https://alshayebemad.gumroad.com/l/TheCopticSoulofEgypt" target="_blank" rel="noopener">Explore the artwork <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="collections section-wrap" id="collections">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">03 — EXPLORE OUR COLLECTION</div>
+          <h2>Find the art that <em>speaks to you.</em></h2>
+        </div>
+        <p class="heading-note">Explore original digital artworks inspired by heritage, humanity, and the natural world.</p>
+      </div>
+      <div class="collection-filters" role="group" aria-label="Filter artworks">
+        <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">All works</button>
+        <button class="filter-chip" type="button" data-filter="heritage" aria-pressed="false">Egypt & heritage</button>
+        <button class="filter-chip" type="button" data-filter="humanity" aria-pressed="false">Humanity & hope</button>
+        <button class="filter-chip" type="button" data-filter="nature" aria-pressed="false">Nature & serenity</button>
+        <button class="filter-chip" type="button" data-filter="bundles" aria-pressed="false">Curated collections</button>
+      </div>
+      <p class="catalogue-status" id="catalogue-status" aria-live="polite">Loading published artworks…</p>
+      <div class="product-grid" id="product-grid"></div>
+      <div class="catalogue-actions">
+        <button class="load-more" id="load-more" type="button" hidden>Load more artworks <span aria-hidden="true">↓</span></button>
+      </div>
+    </section>
+
+    <section class="community" id="community">
+      <div class="community-inner">
+        <p class="eyebrow">04 — JOIN OUR CREATIVE COMMUNITY</p>
+        <h2>Stay close to the art.<br><em>Be part of the story.</em></h2>
+        <p>Receive news about new collections and meaningful works from HALL OF GREATNESS.</p>
+        <form class="follow-form" data-gumroad-follow>
+          <label class="visually-hidden" for="follow-email">Your email address</label>
+          <input id="follow-email" type="email" name="email" placeholder="Your email address" autocomplete="email" required>
+          <button type="submit">Join the community <span aria-hidden="true">↗</span></button>
+          <p class="follow-message" data-gumroad-follow-message aria-live="polite">Thank you for joining our creative community.</p>
+        </form>
+        <a class="subscribe-fallback" href="https://alshayebemad.gumroad.com/subscribe">Visit our Gumroad subscribe page</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="#top"><span class="wordmark-crown" aria-hidden="true">✦</span><span>HALL OF <strong>GREATNESS</strong></span></a>
+    <p>Art that celebrates the greatness of humanity.</p>
+    <a href="https://alshayebemad.gumroad.com/" target="_blank" rel="noopener">Visit our Gumroad store ↗</a>
+    <small>© <span id="year"></span> HALL OF GREATNESS. All artworks remain the property of their respective creator.</small>
+  </footer>
+  <script type="application/json" id="gumroad-data">{"products":[{"id":"hJC1i7ftv4cppNrHhVpdGg==","name":"AHLAN RAMADAN 🌙 ","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/AhlanRamadan","permalink":"gljhyf"},{"id":"5YC4oGUduoeuEdPkEidUtw==","name":"A PRAYER FOR TOMORROW","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/APRAYERFORTOMORROW","permalink":"wgojq"},{"id":"Ji6GsAAcE69Jd3vheuZJJQ==","name":"THE FIRST LIGHT","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/TheFirstLight","permalink":"ngqan"},{"id":"UP5kD2tlmbDZWELdIixVLA==","name":"THE CLOCKMAKER'S DREAM","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/THECLOCKMAKERSDREAM","permalink":"fgdpqp"},{"id":"vSJUBqBSsD7-3Ia7JsXlNA==","name":"THE NILE'S ETERNAL GRACE","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/THENILESETERNALGRACE","permalink":"jvffaq"},{"id":"XnT1_lYVVXtdEIYKF1mdtg==","name":"GLOBAL ART \u0026 IMAGINATION","price_cents":1799,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":true,"url":"https://alshayebemad.gumroad.com/l/xvccaj","permalink":"xvccaj"},{"id":"C0c5zrpgOECaZznkbOKp-Q==","name":"THE ART OF ELEGANCE \u0026 SERENITY","price_cents":1999,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":true,"url":"https://alshayebemad.gumroad.com/l/oubirh","permalink":"oubirh"},{"id":"ABna-8NYdXBbm6-625Hfug==","name":"EGYPTIAN \u0026 COPTIC HERITAGE","price_cents":1299,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":true,"url":"https://alshayebemad.gumroad.com/l/hqpird","permalink":"hqpird"},{"id":"5B1vgzIb-7CDb6nfAKn8AQ==","name":"THE HUMANITY LEGACY","price_cents":2499,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":true,"url":"https://alshayebemad.gumroad.com/l/wdtvt","permalink":"wdtvt"},{"id":"wj4gNMirvXquIeWmECmiMw==","name":"THE ART OF STILLNESS","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/THEARTOFSTILLNESS","permalink":"mxrljy"},{"id":"glzkebBPKZiPgtHCIA9v3w==","name":"GEOMETRY OF ELEGANCE","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/GEOMETRYOFELEGANCE","permalink":"gusqyc"},{"id":"oWtmV8IRL3RmX4ATGhIEPA==","name":"ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/EternalEgypt","permalink":"wjxgxb"},{"id":"fXSmNhJYvm4UPQVlg5WWpQ==","name":"A BOND BEYOND WORDS  The Beauty of Unconditional Love","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/ABONDBEYONDWORDS","permalink":"kjclzu"},{"id":"dAdzbPqi4OgYp668dj-_yg==","name":"CITIES OF TOMORROW   Where Innovation Meets Imagination","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/CITIESOFTOMORROW","permalink":"aenwi"},{"id":"p2ThfN_ui21j0HR5yrnw1Q==","name":"NATURE'S MAJESTY   The Timeless Beauty of Nature","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/NATURESMAJESTY","permalink":"gynmhv"},{"id":"4bf8N8pNQcYCO-2uSaQLNQ==","name":"MEDITERRANEAN DREAMS","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/MEDITERRANEANDREAMS","permalink":"jrsgce"},{"id":"htNNjnS6pehD2h3lcvjO7Q==","name":"SILENT HORIZONS .","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/SILENTHORIZONS","permalink":"ukxrmq"},{"id":"alDU8UF_hssFazdYlbc2Kw==","name":"GOLDEN FLOW   The Art of Timeless Luxury","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/GOLDENFLOW","permalink":"yhkokf"},{"id":"TD3X9rYTn8wjLdE2dnatlw==","name":"BEYOND THE UNIVERSE 🌏 ","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/nxkxyq","permalink":"nxkxyq"},{"id":"kRR9KVvKUe0GCeC8zyd-zg==","name":"A Shelter of Love ♥ ","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/AShelterofLove","permalink":"mzlqxg"},{"id":"FQyLJfrvy41xUG_FWyFOuw==","name":"The Celestial Garden – A Dance Beneath the Moon","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/etqsav","permalink":"etqsav"},{"id":"c7I8MRNqlxK9bKAdOGZ47w==","name":"THE GOLDEN VEIL OF SERENITY","price_cents":700,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/TheGoldenVeilofSerenity","permalink":"vwrllor"},{"id":"6jctmtngtfEDCIFhRbMK8w==","name":"THE HAND THAT HOLDS TOMORROW","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/gkwadk","permalink":"gkwadk"},{"id":"wszyWpOMZIUnzacb9V2K_A==","name":"ROOTS OF TENDERNESS ♥ ","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/ROOTSOFTENDERNESS","permalink":"cotnkm"},{"id":"CXlTJ6bSWMMJHX665xjwmg==","name":"AURELLE 👑 ","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/AURELLE","permalink":"kaztbw"},{"id":"qyeKXlkfLUTNezu_rcHZ0Q==","name":"THE ART OF INNER PEACE","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/THEARTOFINNERPEACE","permalink":"cuitvq"},{"id":"pcBbcoq0oPSBIWJw1HrrzA==","name":"SERENITY 🤍","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/SERENITY","permalink":"rabhc"},{"id":"ZQuipQZetGbc4T9ftvsbMA==","name":"THE TREE THAT REFUSED TO DIE","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/THETREETHATREFUSEDTODIE","permalink":"ycltf"},{"id":"g1v8f38a_PleNvleZaJKsw==","name":"THE LIGHT WE LEAVE EACH OTHER 🕯 ","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/bctcdz","permalink":"bctcdz"},{"id":"qaV_w1mwM7ibzl4FSQ6EgA==","name":"A STAIRWAY OF HANDS ✊️","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/msuzc","permalink":"msuzc"},{"id":"X9viRl9Kq20gr5UqjLbkIA==","name":"THE LEGACY OF GENERATIONS","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/THELEGACYOFGENERATIONS","permalink":"tzlsv"},{"id":"ZreM3dQaZTStkTIjpaRG_A==","name":"The Mediterranean Muse","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/TheMediterraneanMuse","permalink":"bgqxwm"},{"id":"XZOtlFanKB9RH2zBN8kx7A==","name":"Last Cry of Earth 🌏 ","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/LastCryofEarth","permalink":"aedllm"},{"id":"X3c9WPiB7UiVpRjdQ1O0VA==","name":"THE GOLDEN GAZE 👁 ","price_cents":500,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/TheGoldenGaze","permalink":"smuewa"},{"id":"DiQpi27TChh1ASqbU-3wGw==","name":"The Queen Of The Nile 👑 ","price_cents":700,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/TheQueenOfTheNile","permalink":"jzjbrg"},{"id":"51-86X1lLViB3_2q8JUKRg==","name":"The Coptic Soul of Egypt","price_cents":700,"currency":"usd","pay_what_you_want":false,"suggested_price_cents":null,"published":true,"is_bundle":false,"url":"https://alshayebemad.gumroad.com/l/TheCopticSoulofEgypt","permalink":"csyqhm"}],"products_total":36}</script>
+<script>document.querySelector('[data-gumroad-follow]')?.addEventListener('submit',function(e){e.preventDefault();const m=this.querySelector('[data-gumroad-follow-message]');if(m)m.textContent='Preview only — subscription is disabled in this temporary review.';});</script>
+</body>
+</html>
