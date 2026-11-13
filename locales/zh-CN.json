@@ -328,5 +328,382 @@
     "artworks": "艺术品",
     "choose": "选择语言"
   },
-  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f"
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "landing_ui": {
+    "← Return to the gallery": "回到画廊",
+    "Language": "语言",
+    "An original digital artwork from HALL OF GREATNESS": "原创数码艺术品,来自HALL OF Greatness",
+    "A curated collection of meaningful digital artworks": "收藏有意义的数字艺术品",
+    "Explore & Get the Artwork ↗": "探索并获取艺术作品 {}",
+    "Secure checkout and digital delivery on Gumroad.": "Gumroad上的安全检查和数字发送。",
+    "Artwork presentation": "艺术作品介绍",
+    "Imagine it in a refined frame": "想象一下在精细的构架中",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "第二个演示文稿帮助您将艺术品描绘成一个框式显示,同时保留其原始比例.",
+    "Digital download": "数字下载",
+    "Access your files after checkout": "退出后访问您的文件",
+    "Print your way": "请按你的方式",
+    "Choose a size suited to your space": "选择适合空间的大小",
+    "Made to display": "显示",
+    "For homes, studios, and meaningful spaces": "家庭、工作室和有意义的空间",
+    "The meaning behind the artwork": "艺术背后的意义",
+    "More than decoration. A feeling that stays.": "不只是装饰 一种会留下的感觉",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "是为希望周围环境反映故事,记忆,价值或美感的人创作的. 让这部作品成为你创造的氛围的一部分 以及你想要你保持的空间的感觉",
+    "Inside this collection": "里面的这个收藏",
+    "One collection. Many stories.": "一约集. 许多故事。",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "探索本馆藏品中的个别艺术品. 每部作品都有自己的性格,同时它们共同创造了更丰富的视觉旅程.",
+    "Complete artwork story": "完整的艺术故事",
+    "Full product description": "完整的产品说明",
+    "What is included": "包含的内容",
+    "Product specifications": "产品规格",
+    "Where it belongs": "属于何处",
+    "Art that finds its place": "找到位置的艺术",
+    "Before you purchase": "买之前",
+    "Digital download details": "数字下载细节",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "这是一个数字产品。 不运送任何实物艺术品或画框。 购买后,Gumroad提供访问本产品包含的文件. 请在印刷或使用艺术品之前审查所提供的文件规格和许可证。",
+    "From download to display": "从下载到显示",
+    "Make the artwork part of your space": "让艺术成为你空间的一部分",
+    "01 · Purchase": "01 采购",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "完成Gumroad的安全检查 你买的是数字产品",
+    "02 · Download": "02 下载",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "通过Gumroad查阅由该产品提供的文件,并审查包括的规格。",
+    "03 · Print": "03 印刷业",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "选择保存艺术原版比例的打印大小 。 本地打印专业人员可以帮助匹配所提供的文件的尺寸.",
+    "Please note:": "请注意:",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "没有运送任何实物艺术品或画框。 可用的文件格式、分辨率、比例和使用术语是在产品下载中说明的,包括许可证。",
+    "Let your space tell a story.": "让你的空间讲一个故事。",
+    "Choose art that reflects what you value—and let its meaning live with you.": "选择能反映你所珍视的艺术,",
+    "Get": "获取",
+    "Art with a Soul. A Message Without Borders.": "有灵魂的艺术 信息无国界。",
+    "Digital artwork · Instant download through Gumroad": "· 通过Gumroad即时下载",
+    "Privacy": "隐私",
+    "Terms": "术语",
+    "Contact": "联系人",
+    "Gumroad store ↗": "口香糖店... ... .",
+    "· Digital download": "数字下载"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "包含的文件",
+    "product_type": "产品类型",
+    "delivery": "交付",
+    "physical_item": "物理项目",
+    "printing": "打印",
+    "usage": "使用量",
+    "bundle_item_count": "捆绑物品"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "协调收集住宅,办公,酒店,美术馆,接待区,馆内装饰的艺术品.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "获取ZQHOGTITLE0Z",
+      "\\n": "编号( N)",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "协调收集住宅,办公,酒店,美术馆,接待区,馆内装饰的艺术品.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "获得ZQHOGTITLE1Z ↗",
+      "\\n": "编号( N)",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "一条不附带条件的爱情之美",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "协调收集住宅,办公,酒店,美术馆,接待区,馆内装饰的艺术品.",
+      "Get THE HUMANITY LEGACY ↗": "得到ZQHOGTITLE2QXZ↗",
+      "\\n": "编号( N)",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "对客厅,卧室,办公室,精品酒店,健康空间,以及被认为是室内的精品口音.",
+      "Get THE ART OF STILLNESS ↗": "获取ZQHOGTITLE3Z",
+      "\\n": "编号( N)",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "对客厅,卧室,办公室,精品酒店,健康空间,以及被认为是室内的精品口音.",
+      "Get GEOMETRY OF ELEGANCE ↗": "获取ZQHOGTITLE4Z",
+      "\\n": "编号( N)",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "为家庭,创意工作室,办公室,招待场所,以及由想象力塑造的内饰的表达式声明.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "获得ZQHOGTITLE5Z",
+      "\\n": "编号( N)",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "为家庭,创意工作室,办公室,招待场所,以及由想象力塑造的内饰的表达式声明.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "得到ZQHOGTITLE6Z ↗",
+      "\\n": "编号( N)",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "对客厅,卧室,办公室,精品酒店,健康空间,以及被认为是室内的精品口音.",
+      "Get MEDITERRANEAN DREAMS ↗": "得到ZQHOGTITLE7Z ↗",
+      "\\n": "编号( N)",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "对客厅,卧室,办公室,精品酒店,健康空间,以及被认为是室内的精品口音.",
+      "Get SILENT HORIZONS . ↗": "获得ZQHOGTITLE8Z",
+      "\\n": "编号( N)",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "对客厅,卧室,办公室,精品酒店,健康空间,以及被认为是室内的精品口音.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "得到ZQXHOGTITLE9 QXZ",
+      "\\n": "编号( N)",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "为家庭,创意工作室,办公室,招待场所,以及由想象力塑造的内饰的表达式声明.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "得到ZQHOGTITLE10Z ↗",
+      "\\n": "编号( N)",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "一个有意义的协调中心 家庭,办公室,教育空间,美术馆, 和人类故事重要的地方。",
+      "Get A Shelter of Love ♥ ↗": "得到ZQHOGTITLE11QXZ",
+      "\\n": "编号( N)",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "对客厅,卧室,办公室,精品酒店,健康空间,以及被认为是室内的精品口音.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "得到ZQHOGTITLE 12QXZ",
+      "\\n": "编号( N)",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "对客厅,卧室,办公室,精品酒店,健康空间,以及被认为是室内的精品口音.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "获取ZQHOGTITLE13Z",
+      "\\n": "编号( N)",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "一个星球。 一项责任。 无数可能性.",
+      "The story behind the image": "画面背后的故事",
+      "More than decoration. A human story.": "不只是装饰 一个人类的故事。",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "这只手代表我们采取行动的能力。 幼苗代表着脆弱的新生命;蝴蝶建议改变。 受损土地与复兴承诺之间的对比提醒我们,明天受到我们今天所选择的保护的影响。",
+      "Where the artwork belongs": "艺术品属于哪里",
+      "Created to live with meaning": "创造的有意义的生活",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "为家庭、办公室、学校、环境组织、接待区和创意空间发表引人注目的声明。",
+      "A distinctive focal point for considered interiors": "考虑内部的一个独特的联络点",
+      "A conversation piece with a message beyond trends": "一个有超越趋势的信息的对话片段",
+      "A thoughtful digital art choice for personal spaces": "个人空间深思熟虑的数字艺术选择",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "这是一个数字产品。 不运送任何实物打印或帧。 购买后下载Gumroad上提供的文件. 在打印前审查包括的文件规格、印刷指南和个人使用许可证。 选择适合所提供文件的打印大小和服务 。",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "选择一个能反映你所珍视的艺术,",
+      "Get The Hand That Holds Tomorrow ↗": "抓住明天的掌声",
+      "\\n": "编号( N)",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "不同面相. 一个人道 一个永恒的联系。",
+      "The story behind the image": "画面背后的故事",
+      "More than decoration. A human story.": "不只是装饰 一个人类的故事。",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "伊佛里和阿比迪安保留了每个面孔的独特性. 金线象征着共同的情感,希望,以及受到尊严对待的愿望. 团结并不要求相同;它始于我们承认彼此的人性。",
+      "Where the artwork belongs": "艺术品属于哪里",
+      "Created to live with meaning": "创造的有意义的生活",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "对当代住宅,行政办公,美术馆,接待场所,室内进行精细的阐述,重视文化对话和人文联系.",
+      "A distinctive focal point for considered interiors": "考虑内部的一个独特的联络点",
+      "A conversation piece with a message beyond trends": "一个有超越趋势的信息的对话片段",
+      "A thoughtful digital art choice for personal spaces": "个人空间深思熟虑的数字艺术选择",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "这是一个数字产品。 不运送任何实物打印或帧。 购买后下载Gumroad上提供的文件. 在打印前审查包括的文件规格、印刷指南和个人使用许可证。 选择适合所提供文件的打印大小和服务 。",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "选择一个能反映你所珍视的艺术,",
+      "Get The Golden Thread of Humanity ↗": "获得人类的黄金线索",
+      "\\n": "编号( N)",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "一个有意义的协调中心 家庭,办公室,教育空间,美术馆, 和人类故事重要的地方。",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "得到ZQHOGTITLE16 ZZ",
+      "\\n": "编号( N)",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "对客厅,卧室,办公室,精品酒店,健康空间,以及被认为是室内的精品口音.",
+      "Get AURELLE 👑 ↗": "获取ZQHOGTITLE17Z",
+      "\\n": "编号( N)",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "静静之美. 内之力.",
+      "The story behind the image": "画面背后的故事",
+      "More than decoration. A human story.": "不只是装饰 一个人类的故事。",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "一个由人组成的人物成为自我意识的象征. 金光建议整体;植物学细节提示更新. 这部作品提醒我们,力量不必大张旗鼓——平静可以是美的形态.",
+      "Where the artwork belongs": "艺术品属于哪里",
+      "Created to live with meaning": "创造的有意义的生活",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "一个优雅的客厅,私人办公室,接待区,酒店,健康空间,以及当代室内的焦点.",
+      "A distinctive focal point for considered interiors": "考虑内部的一个独特的联络点",
+      "A conversation piece with a message beyond trends": "一个有超越趋势的信息的对话片段",
+      "A thoughtful digital art choice for personal spaces": "个人空间深思熟虑的数字艺术选择",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "这是一个数字产品。 不运送任何实物打印或帧。 购买后下载Gumroad上提供的文件. 在打印前审查包括的文件规格、印刷指南和个人使用许可证。 选择适合所提供文件的打印大小和服务 。",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "选择一个能反映你所珍视的艺术,",
+      "Get The Art of Inner Peace ↗": "获得内心和平的艺术",
+      "\\n": "编号( N)",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "对客厅,卧室,办公室,精品酒店,健康空间,以及被认为是室内的精品口音.",
+      "Get SERENITY 🤍 ↗": "获取ZQQHOGTITLE19QXZ",
+      "\\n": "编号( N)",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "一个有意义的协调中心 家庭,办公室,教育空间,美术馆, 和人类故事重要的地方。",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "得到ZQHOGTITLE20Z ↗",
+      "\\n": "编号( N)",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "一个有意义的协调中心 家庭,办公室,教育空间,美术馆, 和人类故事重要的地方。",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "得到ZQHOGTITITLE21QXZ",
+      "\\n": "编号( N)",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "未来由许多手建立.",
+      "The story behind the image": "画面背后的故事",
+      "More than decoration. A human story.": "不只是装饰 一个人类的故事。",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "每只手代表着一种生活,一种仁慈,一种牺牲,或者一种提供的机会. 儿童代表每个梦想需要鼓励和支持的年轻人。 双手一起成为楼梯,希望成为我们彼此之间建造的东西。",
+      "Where the artwork belongs": "艺术品属于哪里",
+      "Created to live with meaning": "创造的有意义的生活",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "为家庭、学校、图书馆、办公室、工作室和庆祝教育和人类联系的空间提供有意义的声明。",
+      "A distinctive focal point for considered interiors": "考虑内部的一个独特的联络点",
+      "A conversation piece with a message beyond trends": "一个有超越趋势的信息的对话片段",
+      "A thoughtful digital art choice for personal spaces": "个人空间深思熟虑的数字艺术选择",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "这是一个数字产品。 不运送任何实物打印或帧。 购买后下载Gumroad上提供的文件. 在打印前审查包括的文件规格、印刷指南和个人使用许可证。 选择适合所提供文件的打印大小和服务 。",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "选择一个能反映你所珍视的艺术,",
+      "Get A Stairway of Hands ↗": "获得一个楼梯的手 {}",
+      "\\n": "编号( N)",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "我们今天所保护的就是他们的明天。",
+      "The story behind the image": "画面背后的故事",
+      "More than decoration. A human story.": "不只是装饰 一个人类的故事。",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "年长的一代有经验;年幼的一代有可能性。 他们之间有一个承诺:维护维持生命的事物,并传递一个与继承者相称的未来。 这是爱情表达的责任。",
+      "Where the artwork belongs": "艺术品属于哪里",
+      "Created to live with meaning": "创造的有意义的生活",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "为家庭、研究、办公室、教育空间 以及任何珍视记忆、家庭和未来的人准备的作品。",
+      "A distinctive focal point for considered interiors": "考虑内部的一个独特的联络点",
+      "A conversation piece with a message beyond trends": "一个有超越趋势的信息的对话片段",
+      "A thoughtful digital art choice for personal spaces": "个人空间深思熟虑的数字艺术选择",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "这是一个数字产品。 不运送任何实物打印或帧。 购买后下载Gumroad上提供的文件. 在打印前审查包括的文件规格、印刷指南和个人使用许可证。 选择适合所提供文件的打印大小和服务 。",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "选择一个能反映你所珍视的艺术,",
+      "Get The Legacy of Generations ↗": "获得世代的遗产",
+      "\\n": "编号( N)",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "对客厅,卧室,办公室,精品酒店,健康空间,以及被认为是室内的精品口音.",
+      "Get The Mediterranean Muse ↗": "获取ZQHOGTITLE24Z",
+      "\\n": "编号( N)",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "一个地球。 一个人类。 一个未来",
+      "The story behind the image": "画面背后的故事",
+      "More than decoration. A human story.": "不只是装饰 一个人类的故事。",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "环绕全球的双手代表着各个年龄和背景的人。 断裂的地貌说明了什么是危险;绿地平线和金光指向我们仍然可以保护的东西。 信息不是绝望。 显而易见,这是共同的责任。",
+      "Where the artwork belongs": "艺术品属于哪里",
+      "Created to live with meaning": "创造的有意义的生活",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "家庭、办公室、教育场所、美术馆和可持续环境的协调中心。",
+      "A distinctive focal point for considered interiors": "考虑内部的一个独特的联络点",
+      "A conversation piece with a message beyond trends": "一个有超越趋势的信息的对话片段",
+      "A thoughtful digital art choice for personal spaces": "个人空间深思熟虑的数字艺术选择",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "这是一个数字产品。 不运送任何实物打印或帧。 购买后下载Gumroad上提供的文件. 在打印前审查包括的文件规格、印刷指南和个人使用许可证。 选择适合所提供文件的打印大小和服务 。",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "选择一个能反映你所珍视的艺术,",
+      "Get Last Cry of Earth ↗": "获得地球最后的哭声",
+      "\\n": "编号( N)",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "家庭、私人学习、办公室、美术馆、博物馆、旅馆和文化空间都有明显的增加。",
+      "Get THE GOLDEN GAZE 👁 ↗": "获取ZQHOGTITLE26Z",
+      "\\n": "编号( N)",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "家庭、私人学习、办公室、美术馆、博物馆、旅馆和文化空间都有明显的增加。",
+      "Get The Queen Of The Nile 👑 ↗": "得到ZQHOGTITLE 27QXZ",
+      "\\n": "编号( N)",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "家庭、私人学习、办公室、美术馆、博物馆、旅馆和文化空间都有明显的增加。",
+      "Get The Coptic Soul of Egypt ↗": "获取ZQHOGTITLE28Z",
+      "\\n": "编号( N)",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "佐贺蒂特尔29Z 庆祝埃及无时无刻的美貌,这里静静的皇家存在尊严与尼罗河的永恒节奏相遇. 黄金...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "家庭、私人学习、办公室、美术馆、博物馆、旅馆和文化空间都有明显的增加。",
+      "Get THE NILE'S ETERNAL GRACE ↗": "得到ZQHOGTITITLE29QXZ",
+      "\\n": "编号( N)",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love 一些友情被心所感受,而不是用文字解释. 庆祝非凡的联系...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "一个有意义的协调中心 家庭,办公室,教育空间,美术馆, 和人类故事重要的地方。",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "获取ZQHOGTITLE 30Z",
+      "\\n": "编号( N)",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "ZQXHOGTITLE31Z ——七项艺术、有限世界 通过七件数码艺术品的收藏 超越熟悉的...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "对客厅,卧室,办公室,精品酒店,健康空间,以及被认为是室内的精品口音.",
+      "Get GLOBAL ART & IMAGINATION ↗": "获得ZQHOGTITLE31Z",
+      "\\n": "编号( N)",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "佐贺蒂蒂特尔32Z 将古埃及永恒的伟大 与永恒的埃及带入你的周围",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "家庭、私人学习、办公室、美术馆、博物馆、旅馆和文化空间都有明显的增加。",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "获取ZQHOGTITLE32Z",
+      "\\n": "编号( N)",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "在想象中的车间里,时间不是测量的而是雕刻的. THE CLOCKMAKER'S DREAM 变换齿轮,天体机制,和不可能的仪器......",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "对客厅,卧室,办公室,精品酒店,健康空间,以及被认为是室内的精品口音.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "获取ZQHOGTITLE33Z",
+      "\\n": "编号( N)",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
 }

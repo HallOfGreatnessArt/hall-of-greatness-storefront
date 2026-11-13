@@ -328,5 +328,382 @@
     "artworks": "opere d'arte",
     "choose": "Scegli la lingua"
   },
-  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f"
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "landing_ui": {
+    "← Return to the gallery": "← Torna alla galleria",
+    "Language": "Lingua",
+    "An original digital artwork from HALL OF GREATNESS": "Un'originale opera d'arte digitale di HALL OF GREATNESS",
+    "A curated collection of meaningful digital artworks": "Una collezione curata di opere d'arte digitali significative",
+    "Explore & Get the Artwork ↗": "Esplora e ottieni l'arte ↗",
+    "Secure checkout and digital delivery on Gumroad.": "Checkout sicuro e consegna digitale su Gumroad.",
+    "Artwork presentation": "Presentazione dell'opera",
+    "Imagine it in a refined frame": "Immaginatelo in una cornice raffinata",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "Una seconda presentazione ti aiuta a fotografare l'opera come display incorniciato, preservandone le proporzioni originali.",
+    "Digital download": "Scarica digitale",
+    "Access your files after checkout": "Accedere ai file dopo il checkout",
+    "Print your way": "Stampa la tua strada",
+    "Choose a size suited to your space": "Scegli una dimensione adatta al tuo spazio",
+    "Made to display": "Realizzato per display",
+    "For homes, studios, and meaningful spaces": "Per case, studi e spazi significativi",
+    "The meaning behind the artwork": "Il significato dietro l'opera",
+    "More than decoration. A feeling that stays.": "Più che decorazione. Una sensazione che rimane.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Creato per le persone che vogliono che i loro dintorni riflettano una storia, una memoria, un valore, o un senso di bellezza. Lascia che questo lavoro diventi parte dell'atmosfera che crei e la sensazione che vuoi che il tuo spazio tenga.",
+    "Inside this collection": "All'interno di questa collezione",
+    "One collection. Many stories.": "Una collezione. Molte storie.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Esplora le singole opere d'arte incluse in questa collezione curata. Ogni pezzo ha il suo carattere, mentre insieme creano un viaggio visivo più ricco.",
+    "Complete artwork story": "Storia completa dell'opera",
+    "Full product description": "Descrizione completa del prodotto",
+    "What is included": "Che cosa è incluso",
+    "Product specifications": "Specifiche del prodotto",
+    "Where it belongs": "Dove appartiene",
+    "Art that finds its place": "Arte che trova il suo posto",
+    "Before you purchase": "Prima di acquistare",
+    "Digital download details": "Dettagli di download digitali",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Questo è un prodotto digitale. Nessuna opera fisica o cornice verrà spedita. Dopo l'acquisto, Gumroad fornisce l'accesso ai file inclusi con questo prodotto. Si prega di rivedere le specifiche del file fornite e la licenza prima di stampare o utilizzare l'opera d'arte.",
+    "From download to display": "Dal download alla visualizzazione",
+    "Make the artwork part of your space": "Fai la parte d'arte del tuo spazio",
+    "01 · Purchase": "01 · Acquisto",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Completa il tuo checkout sicuro su Gumroad. Il vostro acquisto è per un prodotto digitale.",
+    "02 · Download": "02 · Scarica",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Accedere ai file forniti con questo prodotto attraverso Gumroad e rivedere le specifiche incluse.",
+    "03 · Print": "03 · Stampa",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Scegli una dimensione di stampa che conserva le proporzioni originali dell'opera. Un professionista di stampa locale può aiutare a abbinare le dimensioni al file fornito.",
+    "Please note:": "Nota:",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Nessuna opera fisica o cornice è spedita. Formati di file disponibili, risoluzione, proporzioni e termini di utilizzo sono quelli indicati nel download del prodotto e licenza inclusa.",
+    "Let your space tell a story.": "Lascia che il tuo spazio racconti una storia.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Scegli l'arte che riflette ciò che valore e lascia che il suo significato viva con te.",
+    "Get": "Vai!",
+    "Art with a Soul. A Message Without Borders.": "Arte con un'anima. Un messaggio senza frontiere.",
+    "Digital artwork · Instant download through Gumroad": "Arte digitale · Scaricare istantaneo attraverso Gumroad",
+    "Privacy": "Privacy",
+    "Terms": "Termini",
+    "Contact": "Contatto",
+    "Gumroad store ↗": "Gumroad store ↗",
+    "· Digital download": "· Scarica digitale"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "File inclusi",
+    "product_type": "Tipo di prodotto",
+    "delivery": "Consegna",
+    "physical_item": "Articolo fisico",
+    "printing": "Stampa",
+    "usage": "Utilizzo",
+    "bundle_item_count": "Articoli in bundle"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Una collezione d'arte coordinata per case, uffici, alberghi, gallerie, aree di accoglienza e interni curati.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Ottieni THE ART OF ELEGANCE & SERENITY ↗",
+      "\\n": "*",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Una collezione d'arte coordinata per case, uffici, alberghi, gallerie, aree di accoglienza e interni curati.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Ottieni EGYPTIAN & COPTIC HERITAGE ↗",
+      "\\n": "*",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "A BOND BEYOND WORDS La bellezza dell'amore incondizionato",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Una collezione d'arte coordinata per case, uffici, alberghi, gallerie, aree di accoglienza e interni curati.",
+      "Get THE HUMANITY LEGACY ↗": "Ottieni THE HUMANITY LEGACY ↗",
+      "\\n": "*",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un raffinato accento per soggiorni, camere da letto, uffici, boutique hotel, spazi benessere e interni considerati.",
+      "Get THE ART OF STILLNESS ↗": "Ottieni THE ART OF STILLNESS ↗",
+      "\\n": "*",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un raffinato accento per soggiorni, camere da letto, uffici, boutique hotel, spazi benessere e interni considerati.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Ottieni GEOMETRY OF ELEGANCE ↗",
+      "\\n": "*",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Una dichiarazione espressiva per le case, gli studi creativi, gli uffici, gli spazi dell'ospitalità e gli interni plasmati dall'immaginazione.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Ottieni CITIES OF TOMORROW   Where Innovation Meets Imagination ↗",
+      "\\n": "*",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Una dichiarazione espressiva per le case, gli studi creativi, gli uffici, gli spazi dell'ospitalità e gli interni plasmati dall'immaginazione.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Ottieni NATURE'S MAJESTY   The Timeless Beauty of Nature ↗",
+      "\\n": "*",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un raffinato accento per soggiorni, camere da letto, uffici, boutique hotel, spazi benessere e interni considerati.",
+      "Get MEDITERRANEAN DREAMS ↗": "Ottieni MEDITERRANEAN DREAMS ↗",
+      "\\n": "*",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un raffinato accento per soggiorni, camere da letto, uffici, boutique hotel, spazi benessere e interni considerati.",
+      "Get SILENT HORIZONS . ↗": "Ottieni SILENT HORIZONS . ↗",
+      "\\n": "*",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un raffinato accento per soggiorni, camere da letto, uffici, boutique hotel, spazi benessere e interni considerati.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Ottieni GOLDEN FLOW   The Art of Timeless Luxury ↗",
+      "\\n": "*",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Una dichiarazione espressiva per le case, gli studi creativi, gli uffici, gli spazi dell'ospitalità e gli interni plasmati dall'immaginazione.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "BEYOND THE UNIVERSE 🌏 ↗",
+      "\\n": "*",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Un punto focale significativo per case, uffici, spazi educativi, gallerie e luoghi dove le storie umane sono importanti.",
+      "Get A Shelter of Love ♥ ↗": "Ottieni A Shelter of Love ♥ ↗",
+      "\\n": "*",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un raffinato accento per soggiorni, camere da letto, uffici, boutique hotel, spazi benessere e interni considerati.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Ottenere The Celestial Garden – A Dance Beneath the Moon",
+      "\\n": "*",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un raffinato accento per soggiorni, camere da letto, uffici, boutique hotel, spazi benessere e interni considerati.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "THE GOLDEN VEIL OF SERENITY ↗",
+      "\\n": "*",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "Un pianeta. Una responsabilità. Innumerevoli possibilità.",
+      "The story behind the image": "La storia dietro l'immagine",
+      "More than decoration. A human story.": "Più che decorazione. Una storia umana.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "La mano rappresenta la nostra capacità di agire. La piantina sta per una nuova vita fragile; le farfalle suggeriscono la trasformazione. Il contrasto tra terra danneggiata e la promessa di rinnovamento ci ricorda che domani è influenzato da ciò che scegliamo di proteggere oggi.",
+      "Where the artwork belongs": "Dove appartiene l'opera",
+      "Created to live with meaning": "Creato per vivere con significato",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Una dichiarazione sorprendente per case, uffici, scuole, organizzazioni ambientali, aree di accoglienza e spazi creativi.",
+      "A distinctive focal point for considered interiors": "Un punto focale distintivo per interni considerati",
+      "A conversation piece with a message beyond trends": "Un pezzo di conversazione con un messaggio oltre le tendenze",
+      "A thoughtful digital art choice for personal spaces": "Una scelta artistica digitale premurosa per spazi personali",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Questo è un prodotto digitale. Nessuna stampa fisica o cornice verrà spedita. Dopo l'acquisto, scaricare i file forniti su Gumroad. Verificare le specifiche dei file inclusi, la guida di stampa e la licenza di uso personale prima della stampa. Scegli una dimensione di stampa e un servizio appropriato ai file forniti.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Scegli un'opera d'arte che rifletta ciò che vuoi e lasci vivere il suo significato con te.",
+      "Get The Hand That Holds Tomorrow ↗": "Ottenere la mano che tiene domani ↗",
+      "\\n": "*",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Visi diverse. Una sola umanità. Una connessione eterna.",
+      "The story behind the image": "La storia dietro l'immagine",
+      "More than decoration. A human story.": "Più che decorazione. Una storia umana.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Avorio e ossidiana preservare l'unicità di ogni volto. Il filo d'oro simboleggia emozioni condivise, speranze e il desiderio di essere trattato con dignità. L'unità non richiede la stessa cosa; inizia quando riconosciamo l'umanità dell'altro.",
+      "Where the artwork belongs": "Dove appartiene l'opera",
+      "Created to live with meaning": "Creato per vivere con significato",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Una raffinata dichiarazione per case contemporanee, uffici esecutivi, gallerie, spazi di accoglienza e interni che valorizzano il dialogo culturale e la connessione umana.",
+      "A distinctive focal point for considered interiors": "Un punto focale distintivo per interni considerati",
+      "A conversation piece with a message beyond trends": "Un pezzo di conversazione con un messaggio oltre le tendenze",
+      "A thoughtful digital art choice for personal spaces": "Una scelta artistica digitale premurosa per spazi personali",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Questo è un prodotto digitale. Nessuna stampa fisica o cornice verrà spedita. Dopo l'acquisto, scaricare i file forniti su Gumroad. Verificare le specifiche dei file inclusi, la guida di stampa e la licenza di uso personale prima della stampa. Scegli una dimensione di stampa e un servizio appropriato ai file forniti.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Scegli un'opera d'arte che rifletta ciò che vuoi e lasci vivere il suo significato con te.",
+      "Get The Golden Thread of Humanity ↗": "Ottieni il filo d'oro dell'umanità ↗",
+      "\\n": "*",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Un punto focale significativo per case, uffici, spazi educativi, gallerie e luoghi dove le storie umane sono importanti.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "ROOTS OF TENDERNESS ♥ ↗",
+      "\\n": "*",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un raffinato accento per soggiorni, camere da letto, uffici, boutique hotel, spazi benessere e interni considerati.",
+      "Get AURELLE 👑 ↗": "AURELLE 👑 ↗",
+      "\\n": "*",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "La bellezza della quiete. La forza dentro.",
+      "The story behind the image": "La storia dietro l'immagine",
+      "More than decoration. A human story.": "Più che decorazione. Una storia umana.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "Una figura umana composta diventa un simbolo di auto-consapevolezza. La luce dorata suggerisce l'integrità; i dettagli botanici suggeriscono il rinnovamento. Il lavoro ci ricorda che la forza non deve essere forte, e che la calma può essere una forma di bellezza.",
+      "Where the artwork belongs": "Dove appartiene l'opera",
+      "Created to live with meaning": "Creato per vivere con significato",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "Un elegante punto focale per soggiorni, uffici privati, aree di accoglienza, hotel, spazi benessere e interni contemporanei.",
+      "A distinctive focal point for considered interiors": "Un punto focale distintivo per interni considerati",
+      "A conversation piece with a message beyond trends": "Un pezzo di conversazione con un messaggio oltre le tendenze",
+      "A thoughtful digital art choice for personal spaces": "Una scelta artistica digitale premurosa per spazi personali",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Questo è un prodotto digitale. Nessuna stampa fisica o cornice verrà spedita. Dopo l'acquisto, scaricare i file forniti su Gumroad. Verificare le specifiche dei file inclusi, la guida di stampa e la licenza di uso personale prima della stampa. Scegli una dimensione di stampa e un servizio appropriato ai file forniti.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Scegli un'opera d'arte che rifletta ciò che vuoi e lasci vivere il suo significato con te.",
+      "Get The Art of Inner Peace ↗": "L'arte della pace interiore ↗",
+      "\\n": "*",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un raffinato accento per soggiorni, camere da letto, uffici, boutique hotel, spazi benessere e interni considerati.",
+      "Get SERENITY 🤍 ↗": "SERENITY 🤍 ↗",
+      "\\n": "*",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Un punto focale significativo per case, uffici, spazi educativi, gallerie e luoghi dove le storie umane sono importanti.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "THE TREE THAT REFUSED TO DIE ↗",
+      "\\n": "*",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Un punto focale significativo per case, uffici, spazi educativi, gallerie e luoghi dove le storie umane sono importanti.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "THE LIGHT WE LEAVE EACH OTHER 🕯 ↗",
+      "\\n": "*",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "Il futuro è costruito da molte mani.",
+      "The story behind the image": "La storia dietro l'immagine",
+      "More than decoration. A human story.": "Più che decorazione. Una storia umana.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Ogni mano rappresenta una vita, una gentilezza, un sacrificio, o un'opportunità offerta. Il bambino sta per ogni giovane persona i cui sogni hanno bisogno di incoraggiamento e sostegno. Insieme, le mani diventano una scala e la speranza diventa qualcosa che costruiamo l'uno per l'altro.",
+      "Where the artwork belongs": "Dove appartiene l'opera",
+      "Created to live with meaning": "Creato per vivere con significato",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Una dichiarazione significativa per case di famiglia, scuole, biblioteche, uffici, studi e spazi che celebrano l'educazione e la connessione umana.",
+      "A distinctive focal point for considered interiors": "Un punto focale distintivo per interni considerati",
+      "A conversation piece with a message beyond trends": "Un pezzo di conversazione con un messaggio oltre le tendenze",
+      "A thoughtful digital art choice for personal spaces": "Una scelta artistica digitale premurosa per spazi personali",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Questo è un prodotto digitale. Nessuna stampa fisica o cornice verrà spedita. Dopo l'acquisto, scaricare i file forniti su Gumroad. Verificare le specifiche dei file inclusi, la guida di stampa e la licenza di uso personale prima della stampa. Scegli una dimensione di stampa e un servizio appropriato ai file forniti.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Scegli un'opera d'arte che rifletta ciò che vuoi e lasci vivere il suo significato con te.",
+      "Get A Stairway of Hands ↗": "Ottenere una scala di mani ↗",
+      "\\n": "*",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Quello che proteggiamo oggi diventa il loro domani.",
+      "The story behind the image": "La storia dietro l'immagine",
+      "More than decoration. A human story.": "Più che decorazione. Una storia umana.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "La vecchia generazione porta esperienza; i più giovani portano possibilità. Tra di loro c'è una promessa: conservare ciò che sostiene la vita e trasmettere un futuro degno di coloro che la ereditano. Questo è l'amore espresso come responsabilità.",
+      "Where the artwork belongs": "Dove appartiene l'opera",
+      "Created to live with meaning": "Creato per vivere con significato",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "Un pezzo premuroso per case di famiglia, studi, uffici, spazi educativi, e chiunque valorizzi la memoria, la famiglia e il futuro.",
+      "A distinctive focal point for considered interiors": "Un punto focale distintivo per interni considerati",
+      "A conversation piece with a message beyond trends": "Un pezzo di conversazione con un messaggio oltre le tendenze",
+      "A thoughtful digital art choice for personal spaces": "Una scelta artistica digitale premurosa per spazi personali",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Questo è un prodotto digitale. Nessuna stampa fisica o cornice verrà spedita. Dopo l'acquisto, scaricare i file forniti su Gumroad. Verificare le specifiche dei file inclusi, la guida di stampa e la licenza di uso personale prima della stampa. Scegli una dimensione di stampa e un servizio appropriato ai file forniti.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Scegli un'opera d'arte che rifletta ciò che vuoi e lasci vivere il suo significato con te.",
+      "Get The Legacy of Generations ↗": "Ottieni l'eredità delle generazioni ↗",
+      "\\n": "*",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un raffinato accento per soggiorni, camere da letto, uffici, boutique hotel, spazi benessere e interni considerati.",
+      "Get The Mediterranean Muse ↗": "The Mediterranean Muse ↗",
+      "\\n": "*",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "Una Terra. Un'Umanità. Un futuro.",
+      "The story behind the image": "La storia dietro l'immagine",
+      "More than decoration. A human story.": "Più che decorazione. Una storia umana.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "Le mani che circondano il globo rappresentano persone di ogni età e sfondo. Il paesaggio fratturato parla di ciò che è a rischio; l'orizzonte verde e la luce dorata puntano verso ciò che possiamo ancora proteggere. Il messaggio non è disperazione. È responsabilità condivisa, resa visibile.",
+      "Where the artwork belongs": "Dove appartiene l'opera",
+      "Created to live with meaning": "Creato per vivere con significato",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "Un punto focale per case, uffici, spazi educativi, gallerie e ambienti dedicati alla sostenibilità.",
+      "A distinctive focal point for considered interiors": "Un punto focale distintivo per interni considerati",
+      "A conversation piece with a message beyond trends": "Un pezzo di conversazione con un messaggio oltre le tendenze",
+      "A thoughtful digital art choice for personal spaces": "Una scelta artistica digitale premurosa per spazi personali",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Questo è un prodotto digitale. Nessuna stampa fisica o cornice verrà spedita. Dopo l'acquisto, scaricare i file forniti su Gumroad. Verificare le specifiche dei file inclusi, la guida di stampa e la licenza di uso personale prima della stampa. Scegli una dimensione di stampa e un servizio appropriato ai file forniti.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Scegli un'opera d'arte che rifletta ciò che vuoi e lasci vivere il suo significato con te.",
+      "Get Last Cry of Earth ↗": "Get Last Cry of Earth ↗",
+      "\\n": "*",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Un'aggiunta distintiva a case, studi privati, uffici, gallerie, musei, alberghi e spazi culturali.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Ottieni THE GOLDEN GAZE 👁 ↗",
+      "\\n": "*",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Un'aggiunta distintiva a case, studi privati, uffici, gallerie, musei, alberghi e spazi culturali.",
+      "Get The Queen Of The Nile 👑 ↗": "Ottieni The Queen Of The Nile 👑 ↗",
+      "\\n": "*",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Un'aggiunta distintiva a case, studi privati, uffici, gallerie, musei, alberghi e spazi culturali.",
+      "Get The Coptic Soul of Egypt ↗": "Ottieni The Coptic Soul of Egypt ↗",
+      "\\n": "*",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE Una celebrazione della bellezza senza tempo dell'Egitto, dove la silenziosa dignità di una presenza regale incontra il ritmo eterno del Nilo. Golden...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Un'aggiunta distintiva a case, studi privati, uffici, gallerie, musei, alberghi e spazi culturali.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "THE NILE'S ETERNAL GRACE ↗",
+      "\\n": "*",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Alcune amicizie sono unite dal cuore, non spiegate dalle parole. Festeggia la straordinaria connessione...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Un punto focale significativo per case, uffici, spazi educativi, gallerie e luoghi dove le storie umane sono importanti.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "A BOND BEYOND WORDS The Beauty of Unconditional Love ↗",
+      "\\n": "*",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, MONDI LIMITLESS Viaggiate oltre la famiglia attraverso una raccolta di sette opere d'arte digitali ispirate al cosmico...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un raffinato accento per soggiorni, camere da letto, uffici, boutique hotel, spazi benessere e interni considerati.",
+      "Get GLOBAL ART & IMAGINATION ↗": "GLOBAL ART & IMAGINATION ↗",
+      "\\n": "*",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Portate la grandeur duratura dell'antico Egitto nei vostri dintorni con l'Egitto Eterno, un...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Un'aggiunta distintiva a case, studi privati, uffici, gallerie, musei, alberghi e spazi culturali.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Ottieni ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗",
+      "\\n": "*",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "All'interno di un laboratorio immaginato, il tempo non è misurato ma scolpito. THE CLOCKMAKER'S DREAM trasforma ingranaggi, meccanismi celesti e strumenti impossibili...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un raffinato accento per soggiorni, camere da letto, uffici, boutique hotel, spazi benessere e interni considerati.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "THE CLOCKMAKER'S DREAM ↗",
+      "\\n": "*",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
 }

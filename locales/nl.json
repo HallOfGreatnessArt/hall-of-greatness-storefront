@@ -328,5 +328,382 @@
     "artworks": "kunstwerken",
     "choose": "Taal kiezen"
   },
-  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f"
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "landing_ui": {
+    "← Return to the gallery": "← Terug naar de galerie",
+    "Language": "Taal",
+    "An original digital artwork from HALL OF GREATNESS": "Een origineel digitaal kunstwerk van HALL OF GREATNESS",
+    "A curated collection of meaningful digital artworks": "Een gecureerde collectie van betekenisvolle digitale kunstwerken",
+    "Explore & Get the Artwork ↗": "Verkennen en het kunstwerk ophalen",
+    "Secure checkout and digital delivery on Gumroad.": "Veilige kassa en digitale levering op Gumroad.",
+    "Artwork presentation": "Kunstwerkpresentatie",
+    "Imagine it in a refined frame": "Stel je voor in een verfijnd frame",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "Een tweede presentatie helpt je het artwork te zien als een ingelijst display, met behoud van de oorspronkelijke proporties.",
+    "Digital download": "Digitale download",
+    "Access your files after checkout": "Toegang tot uw bestanden na checkout",
+    "Print your way": "Print uw manier",
+    "Choose a size suited to your space": "Kies een maat die past bij uw ruimte",
+    "Made to display": "Gemaakt om te tonen",
+    "For homes, studios, and meaningful spaces": "Voor woningen, studio's en betekenisvolle ruimtes",
+    "The meaning behind the artwork": "De betekenis achter het kunstwerk",
+    "More than decoration. A feeling that stays.": "Meer dan decoratie. Een gevoel dat blijft.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Gemaakt voor mensen die willen dat hun omgeving een verhaal, een herinnering, een waarde of een gevoel van schoonheid weerspiegelt. Laat dit werk deel uitmaken van de sfeer die je creëert en het gevoel dat je wilt dat je ruimte vasthoudt.",
+    "Inside this collection": "In deze collectie",
+    "One collection. Many stories.": "Eén verzameling. Veel verhalen.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Ontdek de individuele kunstwerken uit deze gecureerde collectie. Elk stuk heeft zijn eigen karakter, terwijl ze samen een rijkere visuele reis creëren.",
+    "Complete artwork story": "Complete artwork story",
+    "Full product description": "Volledige productomschrijving",
+    "What is included": "Wat is inbegrepen",
+    "Product specifications": "Productspecificaties",
+    "Where it belongs": "Waar het hoort.",
+    "Art that finds its place": "Kunst die zijn plaats vindt",
+    "Before you purchase": "Voordat u koopt",
+    "Digital download details": "Digitale download details",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Dit is een digitaal product. Geen fysiek artwork of frame wordt verzonden. Na aankoop biedt Gumroad toegang tot de bestanden die bij dit product zijn inbegrepen. Bekijk a.u.b. de meegeleverde bestandsspecificaties en licentie voordat u het artwork afdrukt of gebruikt.",
+    "From download to display": "Van download naar weergave",
+    "Make the artwork part of your space": "Maak het artwork onderdeel van uw ruimte",
+    "01 · Purchase": "01 · Aankoop",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Voltooi uw beveiligde kassa op Gumroad. Uw aankoop is voor een digitaal product.",
+    "02 · Download": "02 · Downloaden",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Toegang tot de bestanden die met dit product worden geleverd via Gumroad en controleer de meegeleverde specificaties.",
+    "03 · Print": "03 · Afdrukken",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Kies een afdrukgrootte die de oorspronkelijke verhoudingen van het kunstwerk behoudt. Een lokale printprofessional kan helpen de afmetingen van het meegeleverde bestand aan te passen.",
+    "Please note:": "Let op:",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Geen fysiek artwork of frame wordt verzonden. Beschikbare bestandsformaten, resolutie, verhoudingen, en gebruiksvoorwaarden zijn die vermeld in het product te downloaden en opgenomen licentie.",
+    "Let your space tell a story.": "Laat je ruimte een verhaal vertellen.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Kies kunst die weerspiegelt wat u waardeert en laat de betekenis ervan bij u wonen.",
+    "Get": "Get",
+    "Art with a Soul. A Message Without Borders.": "Kunst met een Ziel. Een bericht zonder grenzen.",
+    "Digital artwork · Instant download through Gumroad": "Digitaal artwork · Direct downloaden via Gumroad",
+    "Privacy": "Privacy",
+    "Terms": "Voorwaarden",
+    "Contact": "Contactpersoon",
+    "Gumroad store ↗": "Gumroad store",
+    "· Digital download": "· Digitale download"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Inclusief bestanden",
+    "product_type": "Productsoort",
+    "delivery": "Levering",
+    "physical_item": "Fysiek item",
+    "printing": "Afdrukken",
+    "usage": "Gebruik",
+    "bundle_item_count": "Artikelen in bundel"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Een gecoördineerde kunstcollectie voor woningen, kantoren, hotels, galeries, ontvangstruimtes en curator interieurs.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Haal THE ART OF ELEGANCE & SERENITY",
+      "\\n": "%",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Een gecoördineerde kunstcollectie voor woningen, kantoren, hotels, galeries, ontvangstruimtes en curator interieurs.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Haal EGYPTIAN & COPTIC HERITAGE",
+      "\\n": "%",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "EEN BOND BEYOND WOORDEN De schoonheid van onvoorwaardelijke liefde",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Een gecoördineerde kunstcollectie voor woningen, kantoren, hotels, galeries, ontvangstruimtes en curator interieurs.",
+      "Get THE HUMANITY LEGACY ↗": "Haal THE HUMANITY LEGACY",
+      "\\n": "%",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Een verfijnd accent voor woonkamers, slaapkamers, kantoren, boetiekhotels, wellness ruimtes, en beschouwd interieurs.",
+      "Get THE ART OF STILLNESS ↗": "Haal THE ART OF STILLNESS",
+      "\\n": "%",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Een verfijnd accent voor woonkamers, slaapkamers, kantoren, boetiekhotels, wellness ruimtes, en beschouwd interieurs.",
+      "Get GEOMETRY OF ELEGANCE ↗": "GEOMETRY OF ELEGANCE ophalen",
+      "\\n": "%",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Een expressieve verklaring voor woningen, creatieve studio's, kantoren, gastvrije ruimtes en interieurs gevormd door verbeelding.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Haal CITIES OF TOMORROW   Where Innovation Meets Imagination",
+      "\\n": "%",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Een expressieve verklaring voor woningen, creatieve studio's, kantoren, gastvrije ruimtes en interieurs gevormd door verbeelding.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Haal NATURE'S MAJESTY   The Timeless Beauty of Nature",
+      "\\n": "%",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Een verfijnd accent voor woonkamers, slaapkamers, kantoren, boetiekhotels, wellness ruimtes, en beschouwd interieurs.",
+      "Get MEDITERRANEAN DREAMS ↗": "Haal MEDITERRANEAN DREAMS",
+      "\\n": "%",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Een verfijnd accent voor woonkamers, slaapkamers, kantoren, boetiekhotels, wellness ruimtes, en beschouwd interieurs.",
+      "Get SILENT HORIZONS . ↗": "Haal SILENT HORIZONS .",
+      "\\n": "%",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Een verfijnd accent voor woonkamers, slaapkamers, kantoren, boetiekhotels, wellness ruimtes, en beschouwd interieurs.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Haal GOLDEN FLOW   The Art of Timeless Luxury",
+      "\\n": "%",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Een expressieve verklaring voor woningen, creatieve studio's, kantoren, gastvrije ruimtes en interieurs gevormd door verbeelding.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Haal BEYOND THE UNIVERSE 🌏",
+      "\\n": "%",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Een belangrijk aandachtspunt voor huizen, kantoren, educatieve ruimtes, galerieën en plaatsen waar menselijke verhalen belangrijk zijn.",
+      "Get A Shelter of Love ♥ ↗": "A Shelter of Love ♥ ophalen",
+      "\\n": "%",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Een verfijnd accent voor woonkamers, slaapkamers, kantoren, boetiekhotels, wellness ruimtes, en beschouwd interieurs.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Haal The Celestial Garden – A Dance Beneath the Moon",
+      "\\n": "%",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Een verfijnd accent voor woonkamers, slaapkamers, kantoren, boetiekhotels, wellness ruimtes, en beschouwd interieurs.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Haal THE GOLDEN VEIL OF SERENITY",
+      "\\n": "%",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "Eén planeet. Eén verantwoordelijkheid. Talloze mogelijkheden.",
+      "The story behind the image": "Het verhaal achter de afbeelding",
+      "More than decoration. A human story.": "Meer dan decoratie. Een menselijk verhaal.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "De hand staat voor ons vermogen om te handelen. De zaailing staat voor fragiel nieuw leven; de vlinders suggereren transformatie. Het contrast tussen beschadigde grond en de belofte van vernieuwing herinnert ons eraan dat morgen wordt beïnvloed door wat we vandaag willen beschermen.",
+      "Where the artwork belongs": "Waar het kunstwerk hoort",
+      "Created to live with meaning": "Gemaakt om met betekenis te leven",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Een opvallende verklaring voor woningen, kantoren, scholen, milieuorganisaties, ontvangstruimten en creatieve ruimtes.",
+      "A distinctive focal point for considered interiors": "Een onderscheidend brandpunt voor overwogen interieurs",
+      "A conversation piece with a message beyond trends": "Een gespreksstuk met een boodschap voorbij trends",
+      "A thoughtful digital art choice for personal spaces": "Een attente digitale kunstkeuze voor persoonlijke ruimtes",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dit is een digitaal product. Geen fysieke afdruk of frame wordt verzonden. Na aankoop, download de bestanden geleverd op Gumroad. Bekijk de meegeleverde bestandsspecificaties, afdrukgids en persoonlijk gebruik licentie voordat u afdrukt. Kies een afdrukgrootte en service die past bij de meegeleverde bestanden.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Kies een kunstwerk dat weerspiegelt wat je waardeert en laat de betekenis ervan bij je wonen.",
+      "Get The Hand That Holds Tomorrow ↗": "Pak de hand die morgen vasthoudt.",
+      "\\n": "%",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Verschillende gezichten. Eén menselijkheid. Een eeuwige verbinding.",
+      "The story behind the image": "Het verhaal achter de afbeelding",
+      "More than decoration. A human story.": "Meer dan decoratie. Een menselijk verhaal.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Ivoor en obsidiaan behouden de uniciteit van elk gezicht. De gouden draad symboliseert gedeelde emoties, hoop en het verlangen om met waardigheid behandeld te worden. Eenheid vereist geen gelijkheid; het begint wanneer we elkaars menselijkheid herkennen.",
+      "Where the artwork belongs": "Waar het kunstwerk hoort",
+      "Created to live with meaning": "Gemaakt om met betekenis te leven",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Een verfijnde verklaring voor hedendaagse woningen, uitvoerende kantoren, galeries, ontvangstruimten en interieurs die waarde hechten aan culturele dialoog en menselijke verbinding.",
+      "A distinctive focal point for considered interiors": "Een onderscheidend brandpunt voor overwogen interieurs",
+      "A conversation piece with a message beyond trends": "Een gespreksstuk met een boodschap voorbij trends",
+      "A thoughtful digital art choice for personal spaces": "Een attente digitale kunstkeuze voor persoonlijke ruimtes",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dit is een digitaal product. Geen fysieke afdruk of frame wordt verzonden. Na aankoop, download de bestanden geleverd op Gumroad. Bekijk de meegeleverde bestandsspecificaties, afdrukgids en persoonlijk gebruik licentie voordat u afdrukt. Kies een afdrukgrootte en service die past bij de meegeleverde bestanden.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Kies een kunstwerk dat weerspiegelt wat je waardeert en laat de betekenis ervan bij je wonen.",
+      "Get The Golden Thread of Humanity ↗": "Get The Golden Thread of Humanity",
+      "\\n": "%",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Een belangrijk aandachtspunt voor huizen, kantoren, educatieve ruimtes, galerieën en plaatsen waar menselijke verhalen belangrijk zijn.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "ROOTS OF TENDERNESS ♥ ophalen",
+      "\\n": "%",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Een verfijnd accent voor woonkamers, slaapkamers, kantoren, boetiekhotels, wellness ruimtes, en beschouwd interieurs.",
+      "Get AURELLE 👑 ↗": "Haal AURELLE 👑",
+      "\\n": "%",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "De schoonheid van stilte. De kracht van binnenuit.",
+      "The story behind the image": "Het verhaal achter de afbeelding",
+      "More than decoration. A human story.": "Meer dan decoratie. Een menselijk verhaal.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "Een samengestelde menselijke figuur wordt een symbool van zelfbewustzijn. Gouden licht suggereert heelheid; botanische details wijzen op vernieuwing. Het werk herinnert ons eraan dat kracht niet luid hoeft te zijn en dat rust een vorm van schoonheid kan zijn.",
+      "Where the artwork belongs": "Waar het kunstwerk hoort",
+      "Created to live with meaning": "Gemaakt om met betekenis te leven",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "Een elegant brandpunt voor woonkamers, privé-kantoren, receptieruimtes, hotels, wellnessruimtes en eigentijdse interieurs.",
+      "A distinctive focal point for considered interiors": "Een onderscheidend brandpunt voor overwogen interieurs",
+      "A conversation piece with a message beyond trends": "Een gespreksstuk met een boodschap voorbij trends",
+      "A thoughtful digital art choice for personal spaces": "Een attente digitale kunstkeuze voor persoonlijke ruimtes",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dit is een digitaal product. Geen fysieke afdruk of frame wordt verzonden. Na aankoop, download de bestanden geleverd op Gumroad. Bekijk de meegeleverde bestandsspecificaties, afdrukgids en persoonlijk gebruik licentie voordat u afdrukt. Kies een afdrukgrootte en service die past bij de meegeleverde bestanden.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Kies een kunstwerk dat weerspiegelt wat je waardeert en laat de betekenis ervan bij je wonen.",
+      "Get The Art of Inner Peace ↗": "Get The Art of Inner Peace",
+      "\\n": "%",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Een verfijnd accent voor woonkamers, slaapkamers, kantoren, boetiekhotels, wellness ruimtes, en beschouwd interieurs.",
+      "Get SERENITY 🤍 ↗": "Haal SERENITY 🤍",
+      "\\n": "%",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Een belangrijk aandachtspunt voor huizen, kantoren, educatieve ruimtes, galerieën en plaatsen waar menselijke verhalen belangrijk zijn.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Haal THE TREE THAT REFUSED TO DIE",
+      "\\n": "%",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Een belangrijk aandachtspunt voor huizen, kantoren, educatieve ruimtes, galerieën en plaatsen waar menselijke verhalen belangrijk zijn.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Haal THE LIGHT WE LEAVE EACH OTHER 🕯",
+      "\\n": "%",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "De toekomst is gebouwd door vele handen.",
+      "The story behind the image": "Het verhaal achter de afbeelding",
+      "More than decoration. A human story.": "Meer dan decoratie. Een menselijk verhaal.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Elke hand vertegenwoordigt een leven, een vriendelijkheid, een offer, of een geboden kans. Het kind staat voor elke jongere wiens dromen aanmoediging en steun nodig hebben. Samen worden de handen een trap en wordt hoop iets wat we voor elkaar bouwen.",
+      "Where the artwork belongs": "Waar het kunstwerk hoort",
+      "Created to live with meaning": "Gemaakt om met betekenis te leven",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Een zinvolle verklaring voor familiewoningen, scholen, bibliotheken, kantoren, studio's en ruimtes die onderwijs en menselijke verbinding vieren.",
+      "A distinctive focal point for considered interiors": "Een onderscheidend brandpunt voor overwogen interieurs",
+      "A conversation piece with a message beyond trends": "Een gespreksstuk met een boodschap voorbij trends",
+      "A thoughtful digital art choice for personal spaces": "Een attente digitale kunstkeuze voor persoonlijke ruimtes",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dit is een digitaal product. Geen fysieke afdruk of frame wordt verzonden. Na aankoop, download de bestanden geleverd op Gumroad. Bekijk de meegeleverde bestandsspecificaties, afdrukgids en persoonlijk gebruik licentie voordat u afdrukt. Kies een afdrukgrootte en service die past bij de meegeleverde bestanden.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Kies een kunstwerk dat weerspiegelt wat je waardeert en laat de betekenis ervan bij je wonen.",
+      "Get A Stairway of Hands ↗": "Haal een trap van de handen",
+      "\\n": "%",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Wat we vandaag beschermen wordt hun morgen.",
+      "The story behind the image": "Het verhaal achter de afbeelding",
+      "More than decoration. A human story.": "Meer dan decoratie. Een menselijk verhaal.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "De oudere generatie draagt ervaring mee; de jongere heeft mogelijkheden. Tussen hen ligt een belofte: om wat het leven onderhoudt te behouden en een toekomst door te geven die waardig is voor degenen die het erven. Dit is liefde uitgedrukt als verantwoordelijkheid.",
+      "Where the artwork belongs": "Waar het kunstwerk hoort",
+      "Created to live with meaning": "Gemaakt om met betekenis te leven",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "Een attent stuk voor familiewoningen, studies, kantoren, educatieve ruimtes, en iedereen die waarde hecht aan geheugen, familie en de toekomst.",
+      "A distinctive focal point for considered interiors": "Een onderscheidend brandpunt voor overwogen interieurs",
+      "A conversation piece with a message beyond trends": "Een gespreksstuk met een boodschap voorbij trends",
+      "A thoughtful digital art choice for personal spaces": "Een attente digitale kunstkeuze voor persoonlijke ruimtes",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dit is een digitaal product. Geen fysieke afdruk of frame wordt verzonden. Na aankoop, download de bestanden geleverd op Gumroad. Bekijk de meegeleverde bestandsspecificaties, afdrukgids en persoonlijk gebruik licentie voordat u afdrukt. Kies een afdrukgrootte en service die past bij de meegeleverde bestanden.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Kies een kunstwerk dat weerspiegelt wat je waardeert en laat de betekenis ervan bij je wonen.",
+      "Get The Legacy of Generations ↗": "Get The Legacy of Generations",
+      "\\n": "%",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Een verfijnd accent voor woonkamers, slaapkamers, kantoren, boetiekhotels, wellness ruimtes, en beschouwd interieurs.",
+      "Get The Mediterranean Muse ↗": "The Mediterranean Muse ophalen",
+      "\\n": "%",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "Eén Aarde. Eén Mensheid. Eén toekomst.",
+      "The story behind the image": "Het verhaal achter de afbeelding",
+      "More than decoration. A human story.": "Meer dan decoratie. Een menselijk verhaal.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "De handen rondom de wereld vertegenwoordigen mensen van elke leeftijd en achtergrond. Het gebroken landschap spreekt over wat er in gevaar is; de groene horizon en het gouden licht wijzen naar wat we nog steeds kunnen beschermen. De boodschap is geen wanhoop. Het is gedeelde verantwoordelijkheid, zichtbaar gemaakt.",
+      "Where the artwork belongs": "Waar het kunstwerk hoort",
+      "Created to live with meaning": "Gemaakt om met betekenis te leven",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "Een nadenkend aandachtspunt voor woningen, kantoren, educatieve ruimtes, galeries en omgevingen die gewijd zijn aan duurzaamheid.",
+      "A distinctive focal point for considered interiors": "Een onderscheidend brandpunt voor overwogen interieurs",
+      "A conversation piece with a message beyond trends": "Een gespreksstuk met een boodschap voorbij trends",
+      "A thoughtful digital art choice for personal spaces": "Een attente digitale kunstkeuze voor persoonlijke ruimtes",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dit is een digitaal product. Geen fysieke afdruk of frame wordt verzonden. Na aankoop, download de bestanden geleverd op Gumroad. Bekijk de meegeleverde bestandsspecificaties, afdrukgids en persoonlijk gebruik licentie voordat u afdrukt. Kies een afdrukgrootte en service die past bij de meegeleverde bestanden.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Kies een kunstwerk dat weerspiegelt wat je waardeert en laat de betekenis ervan bij je wonen.",
+      "Get Last Cry of Earth ↗": "Get Last Cry of Earth",
+      "\\n": "%",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Een bijzondere aanvulling op woningen, privé studies, kantoren, galeries, musea, hotels en culturele ruimtes.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Haal THE GOLDEN GAZE 👁",
+      "\\n": "%",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Een bijzondere aanvulling op woningen, privé studies, kantoren, galeries, musea, hotels en culturele ruimtes.",
+      "Get The Queen Of The Nile 👑 ↗": "Haal The Queen Of The Nile 👑",
+      "\\n": "%",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Een bijzondere aanvulling op woningen, privé studies, kantoren, galeries, musea, hotels en culturele ruimtes.",
+      "Get The Coptic Soul of Egypt ↗": "The Coptic Soul of Egypt ophalen",
+      "\\n": "%",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE Een viering van Egypte's tijdloze schoonheid, waar de stille waardigheid van een koninklijke aanwezigheid het eeuwige ritme van de Nijl ontmoet. Goud...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Een bijzondere aanvulling op woningen, privé studies, kantoren, galeries, musea, hotels en culturele ruimtes.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "THE NILE'S ETERNAL GRACE ophalen",
+      "\\n": "%",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Sommige vriendschappen worden gevoeld door het hart, niet uitgelegd door woorden. Vier de buitengewone verbinding...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Een belangrijk aandachtspunt voor huizen, kantoren, educatieve ruimtes, galerieën en plaatsen waar menselijke verhalen belangrijk zijn.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Haal A BOND BEYOND WORDS The Beauty of Unconditional Love",
+      "\\n": "%",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION  Reis verder dan het vertrouwde door een verzameling van zeven digitale kunstwerken geïnspireerd door kosmische...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Een verfijnd accent voor woonkamers, slaapkamers, kantoren, boetiekhotels, wellness ruimtes, en beschouwd interieurs.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Haal GLOBAL ART & IMAGINATION",
+      "\\n": "%",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Breng de blijvende grootsheid van het oude Egypte in uw omgeving met Eeuwig Egypte, een...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Een bijzondere aanvulling op woningen, privé studies, kantoren, galeries, musea, hotels en culturele ruimtes.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Haal ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization",
+      "\\n": "%",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "In een ingebeelde werkplaats wordt tijd niet gemeten maar gebeeldhouwd. THE CLOCKMAKER'S DREAM transformeert tandwielen, hemelse mechanismen en onmogelijke instrumenten...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Een verfijnd accent voor woonkamers, slaapkamers, kantoren, boetiekhotels, wellness ruimtes, en beschouwd interieurs.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Haal THE CLOCKMAKER'S DREAM",
+      "\\n": "%",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
 }

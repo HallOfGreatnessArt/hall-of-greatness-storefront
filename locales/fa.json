@@ -328,5 +328,382 @@
     "artworks": "آثار هنری",
     "choose": "انتخاب زبان"
   },
-  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f"
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "landing_ui": {
+    "← Return to the gallery": "بازگشت به گالری",
+    "Language": "زبان زبان زبان",
+    "An original digital artwork from HALL OF GREATNESS": "یک اثر دیجیتالی اصلی از HALL OF Greatence",
+    "A curated collection of meaningful digital artworks": "مجموعه ای از آثار دیجیتالی معنادار",
+    "Explore & Get the Artwork ↗": "کاوش و دریافت هنر کار ↗",
+    "Secure checkout and digital delivery on Gumroad.": "پرداخت امن و تحویل دیجیتال در Goroad",
+    "Artwork presentation": "ارائه هنر",
+    "Imagine it in a refined frame": "تصور کنید که در یک فریم تصفیه شده",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "ارائه دوم به شما کمک می کند تا آثار هنری را به عنوان یک صفحه نمایش قالب بندی کنید، در حالی که نسبت های اصلی آن را حفظ کنید.",
+    "Digital download": "دانلود دیجیتال Digital download",
+    "Access your files after checkout": "دسترسی به فایل های خود پس از پرداخت",
+    "Print your way": "راه خود را چاپ کنید",
+    "Choose a size suited to your space": "یک اندازه مناسب برای فضای خود انتخاب کنید",
+    "Made to display": "ساخته شده برای نمایش",
+    "For homes, studios, and meaningful spaces": "برای خانه ها، استودیو ها و فضاهای معنادار",
+    "The meaning behind the artwork": "معنی پشت آثار هنری",
+    "More than decoration. A feeling that stays.": "بیشتر از دکوراسیون احساسی که باقی می ماند.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "ساخته شده برای افرادی که می خواهند محیط اطراف خود را منعکس کننده یک داستان، یک حافظه، یک ارزش، یا یک حس زیبایی است. اجازه دهید این کار بخشی از اتمسفری باشد که ایجاد می کنید و احساس می کنید که می خواهید فضای خود را نگه دارید.",
+    "Inside this collection": "داخل این مجموعه",
+    "One collection. Many stories.": "یک مجموعه بسیاری از داستان ها",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "کاوش آثار فردی شامل در این مجموعه منظم. هر قطعه دارای شخصیت خود است، در حالی که آنها با هم یک سفر بصری غنی تر ایجاد می کنند.",
+    "Complete artwork story": "داستان کامل آثار هنری",
+    "Full product description": "شرح محصول کامل",
+    "What is included": "آنچه شامل",
+    "Product specifications": "مشخصات محصول",
+    "Where it belongs": "جایی که تعلق دارد",
+    "Art that finds its place": "هنری که جایگاه خود را پیدا می کند",
+    "Before you purchase": "قبل از خرید",
+    "Digital download details": "جزئیات دانلود دیجیتال",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "این یک محصول دیجیتال است. هیچ اثر فیزیکی یا چارچوبی حمل نخواهد شد. پس از خرید، Goroad دسترسی به فایل های موجود با این محصول را فراهم می کند. لطفا مشخصات و مجوز فایل های ارائه شده قبل از چاپ یا استفاده از آثار هنری را بررسی کنید.",
+    "From download to display": "از دانلود تا نمایش",
+    "Make the artwork part of your space": "بخش آثار هنری فضای خود را بسازید",
+    "01 · Purchase": "خرید",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "پرداخت امن خود را در جاده انجام دهید. خرید شما برای یک محصول دیجیتال است.",
+    "02 · Download": "· دانلود",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "دسترسی به فایل های ارائه شده با این محصول از طریق Goroad و بررسی مشخصات موجود.",
+    "03 · Print": "· چاپ",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "یک اندازه چاپی را انتخاب کنید که نسبت های اصلی آثار هنری را حفظ کند. یک حرفه ای چاپ محلی می تواند به مطابقت ابعاد به فایل ارائه شده کمک کند.",
+    "Please note:": "لطفا توجه داشته باشید:",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "هیچ اثر فیزیکی یا چارچوبی حمل نمی شود. فرمت های فایل موجود، رزولوشن، نسبت ها و شرایط استفاده آنهایی هستند که در دانلود محصول و مجوز گنجانده شده اند.",
+    "Let your space tell a story.": "اجازه دهید فضای شما داستانی بگوید.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "هنری را انتخاب کنید که نشان دهنده ارزش شما باشد و اجازه دهید معنی آن با شما زندگی کند.",
+    "Get": "دریافت کنید",
+    "Art with a Soul. A Message Without Borders.": "هنر با روح پیام بدون مرز",
+    "Digital artwork · Instant download through Gumroad": "دانلود بازی های دیجیتال · Instant download از طریق Puroad",
+    "Privacy": "حریم خصوصی Privacy",
+    "Terms": "شرایط ضوابط",
+    "Contact": "تماس تلفنی",
+    "Gumroad store ↗": "فروشگاه Goroad",
+    "· Digital download": "دانلود دیجیتال Digital download"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "فایل های شامل",
+    "product_type": "نوع محصول",
+    "delivery": "تحویل",
+    "physical_item": "ماده فیزیکی",
+    "printing": "چاپ",
+    "usage": "استفاده از",
+    "bundle_item_count": "وسایل در بسته"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "مجموعه هنری هماهنگ برای خانه ها، ادارات، هتل ها، گالری ها، مناطق پذیرش و دکوراسیون داخلی.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE0QXZ",
+      "\\n": "\\n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "مجموعه هنری هماهنگ برای خانه ها، ادارات، هتل ها، گالری ها، مناطق پذیرش و دکوراسیون داخلی.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE1QXZ",
+      "\\n": "\\n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "BOND BEYOND WORDS زیبایی عشق بی قید و شرط",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "مجموعه هنری هماهنگ برای خانه ها، ادارات، هتل ها، گالری ها، مناطق پذیرش و دکوراسیون داخلی.",
+      "Get THE HUMANITY LEGACY ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE 2QXZ",
+      "\\n": "\\n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "یک لهجه تصفیه شده برای اتاق های نشیمن، اتاق خواب، دفاتر، هتل های بوتیک، فضاهای بهداشتی و داخلی در نظر گرفته شده است.",
+      "Get THE ART OF STILLNESS ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE3QXZ",
+      "\\n": "\\n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "یک لهجه تصفیه شده برای اتاق های نشیمن، اتاق خواب، دفاتر، هتل های بوتیک، فضاهای بهداشتی و داخلی در نظر گرفته شده است.",
+      "Get GEOMETRY OF ELEGANCE ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE4QXZ",
+      "\\n": "\\n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "یک بیانیه صریح برای خانه ها، استودیوهای خلاق، ادارات، فضاهای مهمان نوازی و داخلی شکل گرفته توسط تخیل.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE5QXZ",
+      "\\n": "\\n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "یک بیانیه صریح برای خانه ها، استودیوهای خلاق، ادارات، فضاهای مهمان نوازی و داخلی شکل گرفته توسط تخیل.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE6QXZ",
+      "\\n": "\\n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "یک لهجه تصفیه شده برای اتاق های نشیمن، اتاق خواب، دفاتر، هتل های بوتیک، فضاهای بهداشتی و داخلی در نظر گرفته شده است.",
+      "Get MEDITERRANEAN DREAMS ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE7QXZ",
+      "\\n": "\\n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "یک لهجه تصفیه شده برای اتاق های نشیمن، اتاق خواب، دفاتر، هتل های بوتیک، فضاهای بهداشتی و داخلی در نظر گرفته شده است.",
+      "Get SILENT HORIZONS . ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE8QXZ",
+      "\\n": "\\n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "یک لهجه تصفیه شده برای اتاق های نشیمن، اتاق خواب، دفاتر، هتل های بوتیک، فضاهای بهداشتی و داخلی در نظر گرفته شده است.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE9QXZ",
+      "\\n": "\\n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "یک بیانیه صریح برای خانه ها، استودیوهای خلاق، ادارات، فضاهای مهمان نوازی و داخلی شکل گرفته توسط تخیل.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "دانلود آهنگ جدید با نام HPQHOGTITLE10QXZ",
+      "\\n": "\\n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "نقطه کانونی معنی دار برای خانه ها، ادارات، فضاهای آموزشی، گالری ها و مکان هایی که داستان های انسانی مهم هستند.",
+      "Get A Shelter of Love ♥ ↗": "دانلود آهنگ جدید با نام HPQHOGTITLE11QXZ",
+      "\\n": "\\n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "یک لهجه تصفیه شده برای اتاق های نشیمن، اتاق خواب، دفاتر، هتل های بوتیک، فضاهای بهداشتی و داخلی در نظر گرفته شده است.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE12QXZ",
+      "\\n": "\\n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "یک لهجه تصفیه شده برای اتاق های نشیمن، اتاق خواب، دفاتر، هتل های بوتیک، فضاهای بهداشتی و داخلی در نظر گرفته شده است.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE13QXZ",
+      "\\n": "\\n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "یک سیاره یک مسئولیت امکانات بی شماری",
+      "The story behind the image": "داستان پشت تصویر",
+      "More than decoration. A human story.": "بیشتر از دکوراسیون داستان انسانی",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "دست نشان دهنده توانایی ما برای عمل است. جوانه زدن برای زندگی جدید شکننده است؛ پروانه ها نشان دهنده دگرگونی هستند. تضاد بین زمین آسیب دیده و وعده تجدید حیات به ما یادآوری می کند که فردا تحت تأثیر چیزی است که ما امروز انتخاب می کنیم.",
+      "Where the artwork belongs": "جایی که آثار هنری تعلق دارد",
+      "Created to live with meaning": "ساخته شده برای زندگی با معنا",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "یک بیانیه قابل توجه برای خانه ها، ادارات، مدارس، سازمان های زیست محیطی، مناطق پذیرش و فضاهای خلاق.",
+      "A distinctive focal point for considered interiors": "یک نقطه کانونی متمایز برای داخلی در نظر گرفته شده",
+      "A conversation piece with a message beyond trends": "یک قطعه مکالمه با یک پیام فراتر از روند",
+      "A thoughtful digital art choice for personal spaces": "انتخاب هنر دیجیتال متفکرانه برای فضاهای شخصی",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "این یک محصول دیجیتال است. هیچ چاپ فیزیکی یا قاب ارسال نخواهد شد. پس از خرید، فایل های ارائه شده در Goroad را دانلود کنید. بررسی مشخصات فایل، راهنمای چاپ و مجوز شخصی استفاده قبل از چاپ. اندازه چاپ و خدمات مناسب را برای فایل های عرضه شده انتخاب کنید.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "یک آثار هنری را انتخاب کنید که نشان دهنده ارزش شما باشد و اجازه دهید معنی آن با شما زندگی کند.",
+      "Get The Hand That Holds Tomorrow ↗": "دست هایی که فردا را نگه می دارد",
+      "\\n": "\\n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "چهره های مختلف یک انسانیت یک ارتباط ابدی",
+      "The story behind the image": "داستان پشت تصویر",
+      "More than decoration. A human story.": "بیشتر از دکوراسیون داستان انسانی",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "عاج و obsidian منحصر به فرد بودن هر صورت را حفظ می کنند. رشته طلایی نماد احساسات مشترک، امیدها و تمایل به درمان با عزت است. وحدت نیازی به یکسان بودن ندارد؛ زمانی شروع می شود که انسانیت یکدیگر را بشناسیم.",
+      "Where the artwork belongs": "جایی که آثار هنری تعلق دارد",
+      "Created to live with meaning": "ساخته شده برای زندگی با معنا",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "یک بیانیه اصلاح شده برای خانه های معاصر، ادارات اجرایی، گالری ها، فضاهای پذیرش و داخلی که ارزش گفتگوی فرهنگی و ارتباط انسانی را دارند.",
+      "A distinctive focal point for considered interiors": "یک نقطه کانونی متمایز برای داخلی در نظر گرفته شده",
+      "A conversation piece with a message beyond trends": "یک قطعه مکالمه با یک پیام فراتر از روند",
+      "A thoughtful digital art choice for personal spaces": "انتخاب هنر دیجیتال متفکرانه برای فضاهای شخصی",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "این یک محصول دیجیتال است. هیچ چاپ فیزیکی یا قاب ارسال نخواهد شد. پس از خرید، فایل های ارائه شده در Goroad را دانلود کنید. بررسی مشخصات فایل، راهنمای چاپ و مجوز شخصی استفاده قبل از چاپ. اندازه چاپ و خدمات مناسب را برای فایل های عرضه شده انتخاب کنید.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "یک آثار هنری را انتخاب کنید که نشان دهنده ارزش شما باشد و اجازه دهید معنی آن با شما زندگی کند.",
+      "Get The Golden Thread of Humanity ↗": "دانلود بازی The Golden Thread of Humanity",
+      "\\n": "\\n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "نقطه کانونی معنی دار برای خانه ها، ادارات، فضاهای آموزشی، گالری ها و مکان هایی که داستان های انسانی مهم هستند.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE16QXZ",
+      "\\n": "\\n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "یک لهجه تصفیه شده برای اتاق های نشیمن، اتاق خواب، دفاتر، هتل های بوتیک، فضاهای بهداشتی و داخلی در نظر گرفته شده است.",
+      "Get AURELLE 👑 ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE17QXZ",
+      "\\n": "\\n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "زیبایی سکون قدرت درون",
+      "The story behind the image": "داستان پشت تصویر",
+      "More than decoration. A human story.": "بیشتر از دکوراسیون داستان انسانی",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "یک شخصیت متشکل از انسان نماد خودآگاهی است. نور طلایی نشان می دهد تمامیت؛ جزئیات گیاه شناسی اشاره به تجدید. این کار به ما یادآوری می کند که قدرت نباید با صدای بلند باشد و آرامش می تواند نوعی زیبایی باشد.",
+      "Where the artwork belongs": "جایی که آثار هنری تعلق دارد",
+      "Created to live with meaning": "ساخته شده برای زندگی با معنا",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "نقطه کانونی ظریف برای اتاق های نشیمن، ادارات خصوصی، مناطق پذیرش، هتل ها، فضاهای سلامتی و فضای داخلی معاصر است.",
+      "A distinctive focal point for considered interiors": "یک نقطه کانونی متمایز برای داخلی در نظر گرفته شده",
+      "A conversation piece with a message beyond trends": "یک قطعه مکالمه با یک پیام فراتر از روند",
+      "A thoughtful digital art choice for personal spaces": "انتخاب هنر دیجیتال متفکرانه برای فضاهای شخصی",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "این یک محصول دیجیتال است. هیچ چاپ فیزیکی یا قاب ارسال نخواهد شد. پس از خرید، فایل های ارائه شده در Goroad را دانلود کنید. بررسی مشخصات فایل، راهنمای چاپ و مجوز شخصی استفاده قبل از چاپ. اندازه چاپ و خدمات مناسب را برای فایل های عرضه شده انتخاب کنید.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "یک آثار هنری را انتخاب کنید که نشان دهنده ارزش شما باشد و اجازه دهید معنی آن با شما زندگی کند.",
+      "Get The Art of Inner Peace ↗": "هنر صلح داخلی را دریافت کنید",
+      "\\n": "\\n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "یک لهجه تصفیه شده برای اتاق های نشیمن، اتاق خواب، دفاتر، هتل های بوتیک، فضاهای بهداشتی و داخلی در نظر گرفته شده است.",
+      "Get SERENITY 🤍 ↗": "دانلود آهنگ جدید با نام های PQHOGTITLE19QXZ",
+      "\\n": "\\n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "نقطه کانونی معنی دار برای خانه ها، ادارات، فضاهای آموزشی، گالری ها و مکان هایی که داستان های انسانی مهم هستند.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE20QXZ",
+      "\\n": "\\n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "نقطه کانونی معنی دار برای خانه ها، ادارات، فضاهای آموزشی، گالری ها و مکان هایی که داستان های انسانی مهم هستند.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE21QXZ",
+      "\\n": "\\n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "آینده توسط بسیاری از دست ها ساخته شده است.",
+      "The story behind the image": "داستان پشت تصویر",
+      "More than decoration. A human story.": "بیشتر از دکوراسیون داستان انسانی",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "هر دست نشان دهنده یک زندگی، مهربانی، قربانی یا یک فرصت ارائه شده است. کودک برای هر فردی که رویاهایش نیاز به تشویق و حمایت دارد، ایستاده است. با هم، دست ها به یک پله تبدیل می شوند و امید چیزی است که برای یکدیگر می سازیم.",
+      "Where the artwork belongs": "جایی که آثار هنری تعلق دارد",
+      "Created to live with meaning": "ساخته شده برای زندگی با معنا",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "یک بیانیه معنادار برای خانه های خانوادگی، مدارس، کتابخانه ها، دفاتر، استودیو ها و فضاهایی که آموزش و ارتباطات انسانی را جشن می گیرند.",
+      "A distinctive focal point for considered interiors": "یک نقطه کانونی متمایز برای داخلی در نظر گرفته شده",
+      "A conversation piece with a message beyond trends": "یک قطعه مکالمه با یک پیام فراتر از روند",
+      "A thoughtful digital art choice for personal spaces": "انتخاب هنر دیجیتال متفکرانه برای فضاهای شخصی",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "این یک محصول دیجیتال است. هیچ چاپ فیزیکی یا قاب ارسال نخواهد شد. پس از خرید، فایل های ارائه شده در Goroad را دانلود کنید. بررسی مشخصات فایل، راهنمای چاپ و مجوز شخصی استفاده قبل از چاپ. اندازه چاپ و خدمات مناسب را برای فایل های عرضه شده انتخاب کنید.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "یک آثار هنری را انتخاب کنید که نشان دهنده ارزش شما باشد و اجازه دهید معنی آن با شما زندگی کند.",
+      "Get A Stairway of Hands ↗": "یک راهرو از دست ها بگیرید",
+      "\\n": "\\n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "چیزی که امروز از آن محافظت می کنیم فردا است.",
+      "The story behind the image": "داستان پشت تصویر",
+      "More than decoration. A human story.": "بیشتر از دکوراسیون داستان انسانی",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "نسل مسن تر دارای تجربه است؛ جوان تر احتمال دارد. بین آنها وعده ای است برای حفظ آنچه که زندگی را حفظ می کند و آینده ای شایسته برای کسانی است که آن را به ارث می برند. این عشق به عنوان مسئولیت بیان می شود.",
+      "Where the artwork belongs": "جایی که آثار هنری تعلق دارد",
+      "Created to live with meaning": "ساخته شده برای زندگی با معنا",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "یک قطعه متفکرانه برای خانه های خانوادگی، مطالعات، ادارات، فضاهای آموزشی و هر کسی که به حافظه، خانواده و آینده ارزش می دهد.",
+      "A distinctive focal point for considered interiors": "یک نقطه کانونی متمایز برای داخلی در نظر گرفته شده",
+      "A conversation piece with a message beyond trends": "یک قطعه مکالمه با یک پیام فراتر از روند",
+      "A thoughtful digital art choice for personal spaces": "انتخاب هنر دیجیتال متفکرانه برای فضاهای شخصی",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "این یک محصول دیجیتال است. هیچ چاپ فیزیکی یا قاب ارسال نخواهد شد. پس از خرید، فایل های ارائه شده در Goroad را دانلود کنید. بررسی مشخصات فایل، راهنمای چاپ و مجوز شخصی استفاده قبل از چاپ. اندازه چاپ و خدمات مناسب را برای فایل های عرضه شده انتخاب کنید.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "یک آثار هنری را انتخاب کنید که نشان دهنده ارزش شما باشد و اجازه دهید معنی آن با شما زندگی کند.",
+      "Get The Legacy of Generations ↗": "میراث نسل ها را دریافت کنید",
+      "\\n": "\\n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "یک لهجه تصفیه شده برای اتاق های نشیمن، اتاق خواب، دفاتر، هتل های بوتیک، فضاهای بهداشتی و داخلی در نظر گرفته شده است.",
+      "Get The Mediterranean Muse ↗": "دانلود آهنگ جدید با نام HPQHOGTITLE24QXZ",
+      "\\n": "\\n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "یک زمین یک انسانیت یک آینده",
+      "The story behind the image": "داستان پشت تصویر",
+      "More than decoration. A human story.": "بیشتر از دکوراسیون داستان انسانی",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "دست های اطراف جهان نشان دهنده افراد هر سنی و پس زمینه است. چشم انداز شکسته از آنچه در معرض خطر است صحبت می کند؛ افق سبز و نقطه نور طلایی به سمت چیزی که هنوز می توانیم از آن محافظت کنیم. پیام ناامید کننده نیست. این مسئولیت مشترک است، قابل مشاهده است.",
+      "Where the artwork belongs": "جایی که آثار هنری تعلق دارد",
+      "Created to live with meaning": "ساخته شده برای زندگی با معنا",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "نقطه کانونی تفکر برانگیز برای خانه ها، ادارات، فضاهای آموزشی، گالری ها و محیط های اختصاص یافته به پایداری.",
+      "A distinctive focal point for considered interiors": "یک نقطه کانونی متمایز برای داخلی در نظر گرفته شده",
+      "A conversation piece with a message beyond trends": "یک قطعه مکالمه با یک پیام فراتر از روند",
+      "A thoughtful digital art choice for personal spaces": "انتخاب هنر دیجیتال متفکرانه برای فضاهای شخصی",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "این یک محصول دیجیتال است. هیچ چاپ فیزیکی یا قاب ارسال نخواهد شد. پس از خرید، فایل های ارائه شده در Goroad را دانلود کنید. بررسی مشخصات فایل، راهنمای چاپ و مجوز شخصی استفاده قبل از چاپ. اندازه چاپ و خدمات مناسب را برای فایل های عرضه شده انتخاب کنید.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "یک آثار هنری را انتخاب کنید که نشان دهنده ارزش شما باشد و اجازه دهید معنی آن با شما زندگی کند.",
+      "Get Last Cry of Earth ↗": "دانلود بازی The Last Cry of Earth",
+      "\\n": "\\n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "علاوه بر خانه ها، مطالعات خصوصی، ادارات، گالری ها، موزه ها، هتل ها و فضاهای فرهنگی.",
+      "Get THE GOLDEN GAZE 👁 ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE26QXZ",
+      "\\n": "\\n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "علاوه بر خانه ها، مطالعات خصوصی، ادارات، گالری ها، موزه ها، هتل ها و فضاهای فرهنگی.",
+      "Get The Queen Of The Nile 👑 ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE27QXZ",
+      "\\n": "\\n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "علاوه بر خانه ها، مطالعات خصوصی، ادارات، گالری ها، موزه ها، هتل ها و فضاهای فرهنگی.",
+      "Get The Coptic Soul of Egypt ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE28QXZ",
+      "\\n": "\\n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "xQHOGTITLE29QXZ جشن زیبایی بی زمان مصر، جایی که عزت آرام حضور برابری با ریتم ابدی نیل مطابقت دارد. طلایی ...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "علاوه بر خانه ها، مطالعات خصوصی، ادارات، گالری ها، موزه ها، هتل ها و فضاهای فرهنگی.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE29QXZ",
+      "\\n": "\\n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "زوج QHOGTITLE30QXZ برخی از دوستی ها توسط قلب پر شده اند و نه توسط کلمات توضیح داده شده است. ارتباط فوق العاده را جشن بگیرید ...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "نقطه کانونی معنی دار برای خانه ها، ادارات، فضاهای آموزشی، گالری ها و مکان هایی که داستان های انسانی مهم هستند.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE30QXZ",
+      "\\n": "\\n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "HPQHOGTITLE31QXZ - SEVEN ARTWORKS، LIMITLESS سفر فراتر از آشنا از طریق مجموعه ای از هفت آثار دیجیتال الهام گرفته از کیهانی",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "یک لهجه تصفیه شده برای اتاق های نشیمن، اتاق خواب، دفاتر، هتل های بوتیک، فضاهای بهداشتی و داخلی در نظر گرفته شده است.",
+      "Get GLOBAL ART & IMAGINATION ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE31QXZ",
+      "\\n": "\\n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "xQHOGTITLE32QXZ شکوه پایدار مصر باستان را با مصر ابدی به اطراف خود بیاورید، یک ...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "علاوه بر خانه ها، مطالعات خصوصی، ادارات، گالری ها، موزه ها، هتل ها و فضاهای فرهنگی.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "دانلود آهنگ جدید با نام های HPQHOGTITLE32QXZ",
+      "\\n": "\\n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "در داخل یک کارگاه تصور شده، زمان اندازه گیری نمی شود، بلکه مجسمه سازی می شود. xQHOGTITLE33QXZ دنده ها، مکانیسم های آسمانی و ابزارهای غیر ممکن را تغییر می دهد.",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "یک لهجه تصفیه شده برای اتاق های نشیمن، اتاق خواب، دفاتر، هتل های بوتیک، فضاهای بهداشتی و داخلی در نظر گرفته شده است.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "دانلود آهنگ جدید با نام های PQHOGTITLE33QXZ",
+      "\\n": "\\n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
 }

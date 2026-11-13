@@ -1,0 +1,696 @@
+{
+  "products": {
+    "oubirh": {
+      "summary": "Awọn iṣẹ-ṣiṣe 8 ti o ni itara ti o mu awọn abuda ọba, awọn ọna ti o ni itara, awọn abuda ti o ni itara, ati iṣọkan ti o ni itara fun awọn ibi ipamọ ti o ni itara.",
+      "category": "Àwọn Àkọsílẹ̀",
+      "_source_hash": "85810573c609f032749049f0af3efd548b47b50b60c74fae8bbbcb5e0cfaaf2c"
+    },
+    "hqpird": {
+      "summary": "Awọn iṣẹ-iṣere mẹta ti o yatọ ti o ṣe ayẹyẹ ẹmi ti o wa titi ti Egipti ati ẹbi Coptic, iranti aṣa, ati ẹwa ti o ti kọja ti Egipti.",
+      "category": "Ikole.",
+      "_source_hash": "bbee15015588f3854edb7cce4f6ee745a63ecba99e41de9335d42b77a925b26e"
+    },
+    "wdtvt": {
+      "summary": "Awọn iṣẹ-iṣe ti o ni agbara mẹrin nipa ifẹ, igbẹkẹle, ibatan eniyan, ati ireti. Ikole-iṣe ti o le tẹjade ni kikun fun awọn aaye ti o ni itumọ ati awọn ibi-iṣọ ti o ni itumọ.",
+      "category": "Ikole",
+      "_source_hash": "0beaa1225adf5643d8bf3173e7f93d6f8ebe7ebb067e86674e4e8e27bf908560"
+    },
+    "mxrljy": {
+      "summary": "Ojú-iṣẹ́ tí a kò lè fi hàn ojú́ kọ́ọ̀kan rẹ̀ nípa ìmọ̀ràn tí o bá jẹ́ pé o lè fi ìmọ̀ràn rẹ̀ hàn lẹ́ẹ̀kan lẹ́ẹ̀kan. O tí a fi ìmọ̀ràn tí o ǹfi ìgbọ́wọ́ hàn, ẹ̀yẹ̀ lotus, omi tí ǹfi omi hàn, àtí ọ̀ruǹ ọ̀wọ́, iṣẹ́ ọ̀fẹ́ dijitalì yìí tí o tì ǹfi ìmọ̀ràn hàn",
+      "category": "Ìṣàfarawé",
+      "_source_hash": "adcd68bc42846100ab6f13044e8972c34ee7fe07d1f4702b4d1d9fdc7b14e78c"
+    },
+    "gusqyc": {
+      "summary": "Geometry of Elegance ṣe ayẹyẹ ipade ti awọn ọna ẹlẹwa, awọn ohun elo ti o ni ẹwa, ati awọn ohun ọṣọ ti o ni ẹwa. Awọn awọ emerald, awọn oju ibori, awọn geometry ti o ni ẹwa, ati awọn aṣọ ọba ṣe iṣẹ-ọṣọ ti o ni ẹwa fun awọn ile, awọn ọfiisi ati awọn ibi iwẹ ti o ni ẹwa.",
+      "category": "Elegance",
+      "_source_hash": "84014823691b93211841d3dbcf2452a78fd435d388b74dad7f7febe4d752c69f"
+    },
+    "aenwi": {
+      "summary": "Fi ojú inú ilu kan tí a tí ìgbàyélú. Àwọn Ìjádè tí Ọjọ́ Ẹtílẹ̀ ní iṣẹ́ ẹ̀yàn dígitólìfì tí n gbọ́dọ̀ kọ́ nípa ìròyìn, ìmọ̀, àtí ìfẹ́ eniyaǹ láti gbọ́n nípa ìgbàyàn. Àwọn àkọ́kọ́ àwọn àwọn ile tí a tí ìgbàyélú, àwọn studiò tí a tí ìgbàyélú, àwọn àwọn àwọn ojú kọ́ọ̀kan, àtí àwọn ile-iṣẹ́ tuntun.",
+      "category": "Àwọn àwọn àwọn àwọn",
+      "_source_hash": "e2173f80b274ea619b175b5480c483771929f3d1c9a75ce2893eea0775e30e96"
+    },
+    "gynmhv": {
+      "summary": "Fi ifẹ́ tí a fi hàn nípa ìṣàfarawé àwọn ààyè rẹ̀. Ìdáràn Ìṣàyàlẹ̀ náà ǹféré ìdáràn àwọn ààyè, àwọn ojú-ìwọ́, àwọn adagun-odo, àti àwọn ojú omi tí wọ́n gbọ́rà nínú iṣẹ́ ẹ̀yà àwọn ojú-ìlẹ̀ tí ǹfi ìgbàgbọ́, ìṣàfarawé, àti ìpàlẹ̀. Ìpàrọ̀ àwọn àkọ́kọ́ tí a fi hàn fun àwọn ile atí àwọn ibi tí a ǹfi igbẹ́gbẹ̀.",
+      "category": "Global",
+      "_source_hash": "e6e5a3263c07964a62266c9dbbc5d1e7eb389514c1ade5780eebc6e4228f4b2e"
+    },
+    "jrsgce": {
+      "summary": "Fi ifẹ́ tí a fi pamọ́ lọ́wọ́lú Mediteranean lọ́wọ́lú rẹ̀. Àwọn Ẹ̀rọ̀ Ìmọ̀ Mediteranean gbá àwọn ẹ̀yàn tí a fi pamọ́ lọ́wọ́lú, àwọn ojú omí buluú, àwọn ilẹ̀ tí a fi ẹ̀yàn pẹ̀lú, àti àwọ̀ ọ̀run-ọ̀sẹ̀. Àwọn àwọn",
+      "category": "Ìṣàfarawé",
+      "_source_hash": "f26a8d189f4afe6a0a7a8d671fcbd37c54bd461cdba3f4d15d77243c056e17e5"
+    },
+    "ukxrmq": {
+      "summary": "Wá àkókò tí o tí ìgbà tí o tì ǹpàrà nínú ìwọ̀n àwọn ààyè-iṣẹ́ àwọn ààyè-iṣẹ́. Silent Horizons ní iṣẹ́ ìṣàfarawé kọ̀ǹpútà tí a fi àwọn ẹ̀yà inú rẹ̀ pamọ́ tí a fi ojú omi tí kò ní ìjáde, àwọn àgbègbè tí a tì ǹpàrà, àwọn ìwọ̀n alẹ̀ tí a tì ǹpàrà, àtí ìfẹ́ tí a tì ǹpàrà. Àwọn àwọn ààyè-iṣẹ́ tí a tí a tí a tí ǹpàrà fún àwọn ile, àwọn orílẹ̀-èdè, àtí àwọn ààyè-iṣẹ́ tí a tì ǹpàrà.",
+      "category": "Elegance",
+      "_source_hash": "003e93a0d92367744addfb51152fe6da6c27ac08144b5c89e1e73dd7fec007c7"
+    },
+    "yhkokf": {
+      "summary": "Golden Flow n mú ìdájọ́ adúróṣinṣin tí a fi marble ṣè atí ìwà́ tí a fi ọ̀là ṣè nínú ìwà́ tí a kò lè fi hàn. Awọn fọọmú tí a fi hàn tí a fi hàn ìwọ̀n, ìrìn, àtí ìmọ̀ràn tí a kò lè fi hàn—ẹ̀yà ìmọ̀ dijitalì kan tí a fi sọ̀rọ̀ kọ̀ọ̀kan pamọ́ fuń ìmọ̀ràn tí a ti ṣẹ̀ṣẹ̀.",
+      "category": "Elegance",
+      "_source_hash": "fc65d52d8cd76ff8b23097321c08f7ca24b70659818dea5dda62f894d09e4c9c"
+    },
+    "nxkxyq": {
+      "summary": "Lọ sí ìrísí-lẹ́tà àtí ìrísí-lẹ́tà tí o gbọ́. Nínú Àgbà Òkè ní pàtó àwọn àgbègbè, àwọn ìṣàfarawé, àtí àgbègbè tí a tì fi pamọ́ nípá iṣẹ́ ìṣàfarawé dijitó tí a fi àwọn galaxisì, àwọn ìwọ̀n tí a tì fi pamọ́, àtí àwọn ìṣàfarawé tí kò ní ìgbà ìpà. Àwọn àkọlé àwòrán tí a tì kọ̀ nípá àwọn àgbègbè tuntun atí àwọn ìrànwọ́.",
+      "category": "Global",
+      "_source_hash": "16177585eb4768f120133dcd37a54ecc8a9108c42b39834cfe2e329ac00623d3"
+    },
+    "mzlqxg": {
+      "summary": "A Shelter of Love gba a ifihan kekere pẹlu a itumọ ti o wa titi: a baba ti o ṣe idaniloju pe ọmọ ko le rii oju ojo nikan. Ti a fi si ni ọjọ ti o ni ifẹ, iṣẹ-ṣiṣe ẹwa yii ṣe ayẹyẹ aabo, igbẹkẹle, ẹbi, ati agbara ti o lagbara ti ifẹ ti ko ni ipo.",
+      "category": "Humanity",
+      "_source_hash": "5c0e78bf9d27136335daa7e34ccf9da42dc590a56d083c83815407b47244dac0"
+    },
+    "etqsav": {
+      "summary": "Nínú oṣú kan tí o ní ìwọ̀n, àwọ̀, ìṣàfarawé, àti ìfẹ̀fẹ́ tí wọ́n tí wọ́n lọ nínú Ìgbàyégbè. Àwọn àwọn",
+      "category": "Ìṣàfarawé",
+      "_source_hash": "79723050f56e46edb2f774883a51d0a22ea883d9b80d00bd2c223954ce0c9346"
+    },
+    "vwrllor": {
+      "summary": "The Golden Veil of Serenity ni a portrait ti o ni agbara ti o ni agbara, igbẹkẹle, ati igbadun ti ko ni akoko. Awọn ọna awọ dudu ti o ni agbara ati awọn ọba ti o ni agbara ṣe ifihan ti o ni iranti-iṣe-ara dijital ti o ni itumọ fun awọn ile-iṣọ ti o ni igbẹkẹle ati awọn olukopa ti o ni ibatan si portraiture ti o ni agbara.",
+      "category": "Elegance",
+      "_source_hash": "3fbd51fc0b3144dfae0749e5c04814f34b8c72ab9c458a6ae346494c7a678894"
+    },
+    "gkwadk": {
+      "summary": "A seedling ti a ti gbe ni ọwọ eniyan di ami ti ifẹ ati ifẹ ti a pin.",
+      "category": "Humanity",
+      "_source_hash": "b3d3ed2cdc9e6333f7aaf330e1821220c7ad12874771ec45ca02ca1fc18fbd9f"
+    },
+    "rglfun": {
+      "summary": "Awọn idanimọ meji ti o yatọ, ti a ṣe ni ibatan nipasẹ ami ẹṣọ ọba ti o ni ibatan si igbẹkẹle eniyan wa.",
+      "category": "Imọye eniyan",
+      "_source_hash": "7621f26df00b476963956773c9499fcec7b87189855fb05b55ebef7cd33c4268"
+    },
+    "cotnkm": {
+      "summary": "Roots of Tenderness jẹ ẹbun fun ifẹ ti o di apakan ti ẹni ti a jẹ. Ninu iranti ti o ni itumọ ti iya ati ọmọ, iṣẹ-ọṣọ naa ṣe ayẹyẹ aabo, ifẹ, igbẹkẹle, ati awọn irugbin ti o wa titi ti ifẹ. Irin ti o ni itumọ pupọ fun awọn aaye ẹbi ati awọn akojọ ti o ni itara.",
+      "category": "Humanity",
+      "_source_hash": "89071cfe9a0d1d8d3c14646a7e82629d42e4e1b858b782ebe96d94ff24be625e"
+    },
+    "kaztbw": {
+      "summary": "AURELLE yio fi ẹ̀ṣẹ́ ọjọ́gbọn tí a nṣè nígbà kan tí a nṣé kọ̀ọ̀kan lọ́wọ́lọ́wọ́ kọ̀ọ̀kan padà sí ìgbésẹ́ kan tí a nṣè nígbà kan, ẹ̀wá obinrin, àtí ẹ̀wá tí a nṣè nígbà kan. Òlàyé, pẹ̀lú́ pẹ̀lú́, àtí pẹ̀lú́ kọ̀ọ̀kan kọ̀ọ̀kan kọ́ọ̀kan kọ",
+      "category": "Ìṣàfarawé",
+      "_source_hash": "50f25bf7ff18b06b831f14e21450ee7562896355ad94503c70b68b66a14178bb"
+    },
+    "cuitvq": {
+      "summary": "Sculptureal elegance ati ọ̀run ọ̀wọ́ kọ́ nípa ìmọ̀ ti ìgbésẹ́ inú.",
+      "category": "Elegance",
+      "_source_hash": "2ccb896bdf8f18e66ce1bc1ca17fecfdd6eed315302fe2ee1d2ef8c5532b18b4"
+    },
+    "rabhc": {
+      "summary": "Serenity jẹ iranti ti o ni iranti lori iduroṣinṣin, iduroṣinṣin, ati agbara ti o ni ifẹ ti o wa ni inu. Iwọn ti o ni ifẹ ti o ni ifẹ ati igun-igun ọba ṣe ifihan ti o dara julọ fun awọn aaye ti a ṣe fun iranti, ifẹ, ati apẹrẹ ti o wa ni akoko.",
+      "category": "Elegance",
+      "_source_hash": "3e36120477fa3535261c200c5e9210726bf08cb1968d35b25965f08e276b936f"
+    },
+    "ycltf": {
+      "summary": "Ẹ̀yà Tí A Tí Ìpàjúwè",
+      "full_description": "Ẹ̀yà tí kò fẹ́ mà pa\n\nNinu awọn ẹranko, o jẹ ọna ti o wa ni ayika.\n\nKini ti itumọ ti o dara julọ ti ireti ko ba jẹ monument ti a ṣe nipasẹ eniyan, ṣugbọn igi ti o ni igbesi aye ti o ko fẹ lati ṣẹgun?\n\nFi ojú rẹ̀ haǹ nípa ààyè kan tí kò ní ìrọ̀ rẹ̀. Àwọn ile-ìké tí wa nínú ìpàlẹ̀, àwọn ààyè tí wa nínú àwọn ẹ̀yà, àwọn àwọn ààyè tí a tì fi pamọ́ nínú ìfẹ́fẹ́. Nígbà kan, nínú ẹ̀yà tí a tì fi pamọ́ yìí, ẹ̀yà kan tí a kò lè fi pamọ́ kò ní ìpàlẹ̀.\n\nÀwọn ẹ̀yin rẹ̀ kò jẹ́ pé wọn n wa ilẹ̀. Wọ́n tí wọ́n lọ́wọ́ pàlìtì tí a ti dẹ̀wọ́, wọ́ inú àwọn àwọn ìṣàfarawé, àtí wọ́ inú àwọn ilè tí a ti dẹ̀wọ́, tí wọ́n fi ìpàlẹ̀ pamọ́ sínú ìbàlẹ̀. Àwọn ẹ̀yin rẹ̀ tí wọ́n lọ́wọ́ sí ojú ojú, tí wọ́n wọ̀ inú àwọn ojú ewè tí a ti dẹ̀wọ́ lọ́wọ́ tí wọ́n lọ́wọ́ lọ́wọ́.\n\nO ti ju oju-iwe ti a ti kọ̀ nípa ìṣàfarawé ilu tí a ti dẹ̀kun lọ̀wọ́ lọ̀wọ\n\nẸ̀yà náà ní pàtó gbogbo ẹni tí o tì wá nípá ìṣòro tí kò fi ìgbà tòotọ̀ pamọ́. O sọ̀rọ̀ fuń àwọn tí ó tì kù gbogbo ohun, ṣugbọn tí wọn tì wá ìgbà tí wọn tì ǹpàrà láti bẹrẹ́ nípà. Fuń àwọn tí ó tì kù nípá igbesi aye, ṣugbọn tí kò fi ìfẹ́ wọn pamọ́. Fuń àwọn tí ó mọ́ pé ìpàrá kò jẹ́ pé wọn kò lè pẹ̀lú ìgbésẹ̀—o jẹ́ pé wọn tì wá ìgbà tí wọn lè pẹ̀lú ìfẹ́ latí dagbá nípàrà.\n\nAwọn ododo rẹ jẹ ami ti iduroṣinṣin: agbara ti ko le rii ti o mu wa ni iṣọkan nigbati gbogbo ohun ti wa ni ayika wa ba bajẹ. Awọn ibudo wọn jẹ ami ti ifẹ, ibatan, ati iwulo lati ṣe ifowosowopo ati awọn agbegbe lẹhin ibajẹ ati ibajẹ.\n\nÌgbàyégbèrè àwọ̀yé ní ìgbàyégbèrè pé ìpàlẹ̀ kò ní pàtó láti jẹ́ àkọ́lé kejì. Àwọn ẹrankò tí wọ́ inú ojú ilẹ̀ tí a ṣí gbọ́dọ̀ wa nígbà tí a lè gba ìgbàyégbèrè atí ìṣàfarawé, paapaá látí ìgbàyégbèrè tí ò kù.\n\nAti pe ina ọba ti o wa nibẹ nfunni ni ifiranṣẹ ti o lagbara ṣugbọn ti o lagbara: ọjọ iwaju ko ni a ṣe ayẹwo nipasẹ ohun ti a ti pa, ṣugbọn nipasẹ ohun ti o ni itara lati dagba.\n\nOju-iwe yii n sọrọ si ẹnikẹni ti o ti rii oju-iwe ti o nira ninu igbesi aye, ẹnikẹni ti o ti ṣe atunṣe lẹhin ibajẹ, ati ẹnikẹni ti o ni igbẹkẹle pe ireti kii ṣe ibajẹ ti o ku, ṣugbọn agbara lati tẹsiwaju ni iranti rẹ.\n\nO jẹ ohun ti o ni itumọ fun yara itura, ọfiisi, iwe-iranti, studio ti o ni ifẹ, tabi eyikeyi aaye ti o ni igbẹkẹle, ifẹ, ati ifẹ lati wa nibẹ. O tun le di ẹbun ti o ni ifẹ fun ẹnikan ti o bẹrẹ akọle tuntun, ti o ba awọn iṣoro, tabi ti o ba wa ni ifẹ lati lọ siwaju.\n\nOjú kọ̀ǹpútà yìí náà ń fi ọ̀rọ̀ yìí pamọ́ láti jẹ́ pé ohun tí o tì rí lọ́wọ́ kò ní pàtó láti fi pamọ́ sí ohun tí o tì rí.\n\nO kò jẹ́ pé o tí a sọ̀rọ̀ nípa ohun tí o tì ṣẹ̀dà nípa rẹ̀. O tí a sọ̀rọ̀ nípa ohun tí o tì dagbá nínú rẹ̀.\n\nÌgbà Ìṣẹ́\n\nAkọsilẹ pẹlu Ẹmi. Ifiranṣẹ Ti ko ni Ipinle.\n\nÀwọn Àkọlé\n\nWá àwọn à",
+      "category": "Àwọn Àkọlé",
+      "product_details": {
+        "files_included": "Fáìlì 1 · ZIP · 29.1 MB",
+        "product_type": "Àwòrán",
+        "delivery": "Ìṣàfilọ́lẹ̀ digítàlì lẹ́ẹ̀kaǹ lẹ́ẹ̀kaǹ lẹsẹ̀kẹsẹ́ láti ààyè-iṣẹ́",
+        "physical_item": "Kò ní píríǹtì fún àwọn àwọn fèrèsé tí a bá fi pamọ́",
+        "printing": "Píríǹtì àwọn fáìlì tí a fi pamọ́ láti inú àwọn ìṣàfihàn píríǹtì tí o fẹ́; ṣàyẹwo àwọn ìwọ̀n tí a fi pamọ́ láti ààyè-iṣẹ́ ìwọ̀n",
+        "usage": "Àwọn ìṣàmúlò-ètò ìlòjútó àti àwọn ìpéwọ̀n líǹẹ́ẹ̀lì mìíràn tí a fi pamọ́ sí ìṣàmúlò-ètò"
+      },
+      "_source_hash": "d9bff692f10639a5edca9063641cbb3c31081b0579c89bb9cc9635499e614060"
+    },
+    "bctcdz": {
+      "summary": "The Light We Leave Each Other ṣe igbẹhin si ifẹ, ifẹ ati ifẹ ti o kọja lati ẹgbẹ kan si ekeji. A lantern glowing di ami ti ireti ti a gba—ati ina ti a yan lati pin. A iṣẹ-iṣe ti o n gbe fun awọn ile, awọn ọfiisi, ati awọn ẹbun ti o ni itumọ.",
+      "full_description": "Òrúkọ́\n\nOju-ilẹ ti o dara julọ ni a pe ni oju-ilẹ ti o dara julọ.\n\nÀwọn ìwọ̀n kan ní pàtó fún ìṣàfarawé àwọn àkókò. Àwọn mìíràn ní pàtó fún ìṣàfarawé àwọn ìgbà.\n\nO ni otitọ ti o lagbara ti o sopọ mọ igbesi aye gbogbo eniyan: ko si ẹnikan ninu wa ti o bẹrẹ irin ajo wa ni kikun ni iwọ. Nibẹ nibẹ ni ọna, ẹnikan ti o de wa — obi, olukọ, ẹni ti ko mọ, ọrẹ, tabi ẹnikan ti o ni ifẹ ti a ko le gbagbe. Wọn nfun wa ni ohun kan ti o ṣe iranlọwọ fun wa lati wa ọna wa: ireti kekere, idẹkun ti oye, iṣẹ ti o ni ifẹ, tabi ni irọrun ifẹ lati tẹsiwaju.\n\nAti ọjọ kan, a rii pe ina ti a gba ni igba kan ni bayii wa lati pin.\n\nThe Light We Leave Each Other jẹ ẹbun ti o ni ẹwa si ẹbun eniyan ti o ni ẹwa yii - ẹbun ti ko rii ti ifẹ, imọ, ifẹ, ifẹ ati ireti ti o lọ lati idile kan si ekeji.\n\nNínú ẹ̀yàn tí a tí kọ́, a ti ṣí ìpàdé ìpàdé ọ̀wọ́làtì tí a tì kọ́ nípá ọwọ́ kan sí omiiran. Nínú rẹ̀, ojú tí a tì kọ́ nígbà tí a tì gbọ́dọ̀ kọ́kọ́. Awọn agbalagba náà ǹfi ẹ̀yàn atí ìmọ̀ tí a tì kọ́ lọ́wọ́lọ́wọ́. Awọn ọmọ-ẹhin náà ǹfi ẹ̀yàn tí a tí kò tì kọ́kọ́lọ́wọ́ lọ́wọ́lọ́wọ́. Nínú wọn, ìpàdé naà dí ayọ̀kà ìṣàfarawé ìdárarẹ̀: ajẹ́wọ́ pé ohun tí a tí ṣè nípá ohun tí a tí ṣè, kò nípá ohun tí a tí fi hàn fún ara wa nípá ohun tí a tí ǹfi hàn fún ara wa.\n\nÌwọ̀n tí a tì wa ní ayiká náà atí ojú ojú ọ̀wọ́ tí a tì wa ní ìwọ̀n náà tí o tí ìtumọ̀ tí a tí wa níbẹ̀ jẹ́. Wọ́n jẹ́ àwọn ohun tí a kò mọ̀ nípa ìbílẹ̀, àwọn à\n\nÀwọn àwọn àwòrán yìí náà jẹ́ àwọn àwòrán tí a fẹ́:\n\nKí ni kí o fi ìwọ̀n pamọ́ lọ́wọ́ rẹ̀ nígbà tí o ti fẹ́ rẹ̀? Kí nípa ti o lè fi ìwọ̀n pamọ́ lọ́wọ́ rẹ̀ lọ́wọ́ nitori ohun kan tí o ti yan láti fi hàn hôm nay?\n\nIfiranṣẹ rẹ jẹ ti gbogbo eniyan, ko da lori ọdun, orilẹ-ede, aṣa, tabi oriṣi. A ti gba ohunkohun lati awọn miiran, ati pe a ni ohunkohun ti o ni itumọ lati firanṣẹ.\n\nO ti jẹ ohun ti o dara julọ.\n\nTí a ṣé fún pé o jú àpéjọ́ ìṣàfarawé kọ̀ǹpútà lọ, iṣẹ́ ẹ̀yà yìí náà ǹfi àwọn à\n\nO tun jẹ ẹbun ti o ni ifẹ fun ẹnikan ti o ni igbẹkẹle ninu ifẹ, ẹbi, ifẹ, ibatan eniyan, ati agbara ti o wa titi ti ireti.\n\nNitori ohun ti o ni itumọ to dara julọ ti a fi pamọ ni awọn ohun ti a ko le tọju ni gbogbo igba. Ni awọn igba, wọn jẹ awọn igbesi aye ti a ti gbọ, awọn ẹmi ti a ti ṣe iranlọwọ fun, ati ina ti a ti ṣe iranlọwọ fun awọn miiran lati wa ni inu wọn.\n\nÀwọ́ tí a gbọ́ ní kò jẹ́ àwọ́ tí a típa. Ò jẹ́ àwọ̀ tí n bọ́.\n\nÌjọbá Àwọn Ẹ̀yàn\n\nO jẹ ohun ti o dara julọ ti a le ṣe fun awọn eniyan.\n\nÌgbà Ìṣẹ́\n\nAkọsilẹ pẹlu Ẹmi. Ifiranṣẹ Ti ko ni Ipinle.\n\nÀwọn Àkọlé\n\n10",
+      "category": "Àwọn Àkọlé",
+      "product_details": {
+        "files_included": "Fáìlì 1 · ZIP · 27.5 MB",
+        "product_type": "Àwòrán",
+        "delivery": "Ìṣàfilọ́lẹ̀ digítàlì lẹ́ẹ̀kaǹ lẹ́ẹ̀kaǹ lẹsẹ̀kẹsẹ́ láti ààyè-iṣẹ́",
+        "physical_item": "Kò ní píríǹtì fún àwọn àwọn fèrèsé tí a bá fi pamọ́",
+        "printing": "Píríǹtì àwọn fáìlì tí a fi pamọ́ láti inú àwọn ìṣàfihàn píríǹtì tí o fẹ́; ṣàyẹwo àwọn ìwọ̀n tí a fi pamọ́ láti ààyè-iṣẹ́ ìwọ̀n",
+        "usage": "Àwọn ìṣàmúlò-ètò ìlòjútó àti àwọn ìpéwọ̀n líǹẹ́ẹ̀lì mìíràn tí a fi pamọ́ sí ìṣàmúlò-ètò"
+      },
+      "_source_hash": "6fb6b36e97f6c6a45e6f2b988972dcc4dc6ed88e314b292990945b1ee19d2a6d"
+    },
+    "msuzc": {
+      "summary": "A ọmọ ti n lọ si iwọ, ti a n ṣe atilẹyin nipasẹ ifẹ ti awọn agbalagba pupọ.",
+      "full_description": "A Ìjádè TÍ A ṢÈ\n\nIgbagbọ ni a kọ nipasẹ awọn ọwọ pupọ.\n\nKo si ọmọ ti o yẹ ki o lọ si ọjọ iwaju ni ọtọọtọ.\n\nA Stairway of Hands ní ẹ̀yẹ̀ asikò tí a fi hàn ìmọ̀, ìmọ̀, àtí iṣẹ́ ìmọ̀ tí a fi hàn ìmọ̀ tí o bà yipadá ìgbàgbó̀. Nínú ẹ̀wọ̀n rẹ̀, ọmọ kan tí n lọ́wọ́ lọ́wọ\n\nÀkọlé àwòrán\n\nÀwọn ọwọ́ kò ní ìgbà kan tabi iṣẹ́ kan. Wọ́n n sọ fun àwọn obi, àwọn onkọwe, àwọn olùkọ, àwọn onímọ̀, àwọn agbẹ̀jọro, ati àwọn ọ̀dọ̀tà tí iṣẹ́ wọn kò bá jẹ́ aimọ̀. Ọmọ̀kunrin náà ní a pè ní ẹni tí o ní ìfẹ́ tí o fẹ́ ìgbàkan, ìṣẹ̀dà, àti ìdára.\n\nÌjádè láti inú ìwọ̀n sí ojú ọ̀wọ́ náà náà ǹfi àwòrán ìfẹ́fẹ́ rẹ̀ pamọ́. Ìgbàgbọ́ kò jẹ́ ìpàsílẹ̀; o jẹ́ ohun tí àwọn eniyan kọ̀ fún ara wọn, iṣẹ́ kan nígbà kan.\n\nÀwọn Àkọlé àwòrán\n\nFi iṣẹ yi han ni ile ẹbi, ile-iṣẹ, ile-iwe, ile-iṣọkan, sọọtuọ, tabi ibi-afẹde agbegbe bi a ti n ṣe ayẹyẹ pe ẹwa ati iyọrisi ti n dagba niwọn igba ti awọn eniyan n wa nibẹ nibẹ. O tun jẹ ẹbun ti o ni ifẹ fun awọn olukọ, awọn obi, awọn alakọbẹrẹ, ati ẹnikẹni ti o ni igbọran ninu ifẹ ti awọn ọmọ ẹgbẹ tuntun.\n\nỌmọ kan. Awọn ọwọ iranlọwọ ti ko ni ipẹ. Igba ipẹ ti a ṣe ni ifowosowopo.\n\nAWỌN ỌRỌ́ TÍ A ṢÈ\n\nÀwòrán ìṣàfihàn; kò ní píríǹtì fúnràn tàbí fréèmù náà tí a fi pamọ́.\n\nṢàfihàn àwọn fáìlì tí a fi hàn nípa àwọn nǹkan yìí látilẹ̀.\n\nWòye àwọn ìròyìn fáìlì tí a fi pamọ́, àká-irinṣẹ́ ìpínpa, àti àwọn ìṣẹ̀dà ìlòjútó àwọn ìṣàmúlò-ètò fún ẹni-kẹta láti ìpínpa.\n\nYan ìwọ̀n àwọn píríǹtì àti iṣẹ́ tí ó dápọ̀ sí àwọn ìpéwọ̀n fáìlì tí a fun.\n\nFi iṣẹ́ ìṣàfarawékọ̀ọ̀kan pamọ́ sí ilè pẹlú àkọlé. Yan Àwọn Àkọlé Àwọn Àkọlé láti mú ò jẹ́ àwọn ààyè-iṣẹ́ rẹ̀.\n\nHALL OF GREATNESS — Ẹ̀yà kọ̀ọ̀kan tí a fi hàn. Àkọ́kọ́ Tí Kò Ní Ìgbà Ìsẹ́.",
+      "category": "Àwọn Àkọlé",
+      "product_details": {
+        "files_included": "Fáìlì 1 · ZIP · 8.6 MB",
+        "product_type": "Àwòrán",
+        "delivery": "Ìṣàfilọ́lẹ̀ digítàlì lẹ́ẹ̀kaǹ lẹ́ẹ̀kaǹ lẹsẹ̀kẹsẹ́ láti ààyè-iṣẹ́",
+        "physical_item": "Kò ní píríǹtì fún àwọn àwọn fèrèsé tí a bá fi pamọ́",
+        "printing": "Píríǹtì àwọn fáìlì tí a fi pamọ́ láti inú àwọn ìṣàfihàn píríǹtì tí o fẹ́; ṣàyẹwo àwọn ìwọ̀n tí a fi pamọ́ láti ààyè-iṣẹ́ ìwọ̀n",
+        "usage": "Àwọn ìṣàmúlò-ètò ìlòjútó àti àwọn ìpéwọ̀n líǹẹ́ẹ̀lì mìíràn tí a fi pamọ́ sí ìṣàmúlò-ètò"
+      },
+      "_source_hash": "b963b309b0892c055876d7451b6a8bc36190e3b1d23c99420a1c588817cba9ac"
+    },
+    "tzlsv": {
+      "summary": "A ti gbọ́dọ̀ si ifẹ́, ìgbésẹ̀, àti ayẹyẹ̀ ti a fi hàn fún àwọn tí a ba tẹle.",
+      "full_description": "Ìgbàyégbèrè àwọn ìgbàyégbèrè\n\nOhun ti a n daabobo lojoojumọ di ọjọ iwaju wọn.\n\nOju-ọla wa ti o dara julọ le jẹ agbaye ti a fi silẹ ni ọwọ ẹnikan miiran.\n\nThe Legacy of Generations n ṣawari ibatan laarin awọn ti o ti wa ni iṣaaju wa ati awọn ti yoo tẹle. O jẹ iranti ti ẹbi, iranti, ifẹ, ati iduroṣinṣin lati lọ siwaju ju awọn ohun-ini lọ: ọjọ iwaju ti o tọ fun awọn ọmọ ẹgbẹ ti n bọ.\n\nIfẹ ti o wa nibẹ\n\nAwọn iṣẹ ti n sọrọ si awọn imọ-jinlẹ ti o wa nipasẹ awọn agbalagba ati awọn anfani ti o wa nipasẹ awọn ọmọde. Ni laarin wọn ni iṣẹ ti a pin- lati ṣetọju ohun ti o nmu igbesi aye, ṣe atunṣe ohun ti o ti ni ipalara, ati ṣe awọn aṣayan ti a ṣe nipasẹ itọju ju irọrun lọ.\n\nO le jẹ ki ẹbi jẹ orisun ti o ni ibatan, ṣugbọn ibatan naa n lọ siwaju ju ẹbi lọ, o n sopọ awọn agbegbe ati awọn agbalagba ni ayika agbaye ti wọn n pin.\n\nA Ìyìn Ìpàlẹ̀ TÍ Ò FẸ̀RẸ̀ NÍ ÌLÈ Ẹ̀yà Gẹ́gẹ́ Bíi\n\nFi iṣẹ́ ẹ̀yàn yìí hàn nínú ààyè ìṣàfarawe-ẹ̀yàn ẹ̀yàn ẹ̀yàn, ìkànṣe, ààyè, àwọn ìṣàfihàn ìmọ̀, tàbí nígbà tí o bá jẹ́ ẹ̀yàn ìròyìn àti ìgbàyàn. O jẹ́ ẹ̀yàn tí a fẹ́ fun àwọn obi, àwọn baba, àwọn agbẹ̀jọro, àti àwọn eniyan tí o fẹ́ pé ìròyìn nípa ìròyìn.\n\nA ko ni i ni ọjọ iwaju. A ti wa ni yi ni a igbẹkẹle fun awọn ti o ti wa ni lẹhin wa.\n\nAWỌN ỌRỌ́ TÍ A ṢÈ\n\nÀwòrán ìṣàfihàn; kò ní píríǹtì fúnràn tàbí fréèmù náà tí a fi pamọ́.\n\nṢàfihàn àwọn fáìlì tí a fi hàn nípa àwọn nǹkan yìí látilẹ̀.\n\nWòye àwọn ìròyìn fáìlì tí a fi pamọ́, àká-irinṣẹ́ ìpínpa, àti àwọn ìṣẹ̀dà ìlòjútó àwọn ìṣàmúlò-ètò fún ẹni-kẹta láti ìpínpa.\n\nYan ìwọ̀n àwọn píríǹtì àti iṣẹ́ tí ó dápọ̀ sí àwọn ìpéwọ̀n fáìlì tí a fun.\n\nFi iṣẹ́ ìṣàfarawékọ̀ọ̀kan pamọ́ sí ilè pẹlú àkọlé. Yan Àwọn Àkọlé Àwọn Àkọlé láti mú ò jẹ́ àwọn ààyè-iṣẹ́ rẹ̀.\n\nHALL OF GREATNESS — Ẹ̀yà kọ̀ọ̀kan tí a fi hàn. Àkọ́kọ́ Tí Kò Ní Ìgbà Ìsẹ́.",
+      "category": "Àwọn Àkọlé",
+      "product_details": {
+        "files_included": "Fáìlì 1 · ZIP · 23.1 MB",
+        "product_type": "Àwòrán",
+        "delivery": "Ìṣàfilọ́lẹ̀ digítàlì lẹ́ẹ̀kaǹ lẹ́ẹ̀kaǹ lẹsẹ̀kẹsẹ́ láti ààyè-iṣẹ́",
+        "physical_item": "Kò ní píríǹtì fún àwọn àwọn fèrèsé tí a bá fi pamọ́",
+        "printing": "Píríǹtì àwọn fáìlì tí a fi pamọ́ láti inú àwọn ìṣàfihàn píríǹtì tí o fẹ́; ṣàyẹwo àwọn ìwọ̀n tí a fi pamọ́ láti ààyè-iṣẹ́ ìwọ̀n",
+        "usage": "Àwọn ìṣàmúlò-ètò ìlòjútó àti àwọn ìpéwọ̀n líǹẹ́ẹ̀lì mìíràn tí a fi pamọ́ sí ìṣàmúlò-ètò"
+      },
+      "_source_hash": "85dbcd535bbf5b49e8e3d1f629b11e1c1044b6806e4066780e78dd7693e99981"
+    },
+    "bgqxwm": {
+      "summary": "The Mediterranean Muse mu a ìgbésẹ ìgbésẹ, a geometry, ati awọn itumọ ti o ni ifẹ ti awọn Mediterranean. Rich blue, gbona ọba, ati awọn awọ ti o ni ifẹ ṣe amọja ni awọn iṣẹ-ṣiṣe ti o ni ibatan si awọn olukopa ati awọn ibi ti o ni ifẹ si ara ẹni.",
+      "full_description": "Muse Mediteranean - A Portrait ti Gold, Sea & Mystery\n\nNinu ibi ti ina ọba ba de oju omi buluu, a muse ti o nifẹ wa lati agbaye ti ẹwa geometry ati awọn ifẹ Mediteranean.\n\nThe Mediterranean Muse ni a fi han, ni akoko yii cubist-inspirated iṣẹ-iṣe ti o ṣe pọ pẹlu aṣọ ti o ni itara ti o ni itara pẹlu awọn ohun-elo ti o ni itara ti awọn ohun-elo, awọn omi ti o ni itara, awọn oke-nla ti o ni itara, ati oju-ọjọ ọba ti o ni itara.\n\nÓ ní àwọn àwọ̀ safiiri, àwọn ọ̀dọ̀ ọ̀wọ́, àwọn àwọ̀ iwọ́wọ́, àwọn ìṣàfarawé àwọn ìṣàfarawé àwọn ìṣàfarawé, àti àwọn ìṣàfarawé àwọn ìṣàfarawé. Àwọn ìṣàfarawé gbogbò ní pàtó àwọn ìṣàfarawé tí wọ́n jẹ́, nígbà tí àwọn ààyè-iṣẹ́ tí wọ́n jẹ́ ǹjú ìfẹ̀sì láti lọ nínú ìṣàfarawé tí wọ́n jẹ́.\n\nElegan, misterious, ati ti o ni kikun ti awọn aami, yi iṣẹ-ṣiṣe yiyan yiyan pada si a wall sinu a statement ti ara ẹni ati refined tatuu.\n\n✨ Tí a fi pamọ́ fún\n\nÀwọn ile-ìgbàgbọ́lẹ̀ atí awọn ile-ìgbàgbọ́lẹ̀\n\nÀwọn ile-iṣẹ́ ìṣàfarawékọ́ àti àwọn studiò ìṣàfarawékọ́\n\nBoutique hotels ati awọn agbegbe itẹwọgba ti o nifẹ\n\nÀwọn ààyè-iṣẹ́ tuntun àti àwọn àgbègbè tí a fi pamọ́\n\nÀwọn amọja àwọn ẹ̀yàn ti ǹwa àwọn àwọn àkọ́lé àwọn à\n\nMuse Mediterranean jẹ ohun ti o ju iyẹwu inu ile lọ. O jẹ ipade ti awọn iṣẹ-ọṣọ, awọn ohun-ọṣọ, awọn awọ, ati awọn ifẹ-ifẹ-\n\n👑 A ti kọ awọn iṣẹ-ṣiṣe lati HALL OF GREATNESS.\n\nÀwọn Àkọlé\n\nWá àwọn à",
+      "category": "Ìṣàfarawé",
+      "product_details": {
+        "files_included": "Fáìlì 1 · ZIP · 19.0 MB",
+        "product_type": "Àwòrán",
+        "delivery": "Ìṣàfilọ́lẹ̀ digítàlì lẹ́ẹ̀kaǹ lẹ́ẹ̀kaǹ lẹsẹ̀kẹsẹ́ láti ààyè-iṣẹ́",
+        "physical_item": "Kò ní píríǹtì fún àwọn àwọn fèrèsé tí a bá fi pamọ́",
+        "printing": "Píríǹtì àwọn fáìlì tí a fi pamọ́ láti inú àwọn ìṣàfihàn píríǹtì rẹ̀; ṣàyẹwo àwọn ìṣàmúlò-ètò tí a fi pamọ́ láti ààyè-iṣẹ́ ìwọ̀n",
+        "usage": "Fẹ̀ẹ̀ àwọn ìṣàmúlò-ètò ìṣàfihàn àti àwọn ìṣàmúlò-ètò ìṣẹ̀dà tí a fi pamọ́ láti inú ìṣàfihàn"
+      },
+      "_source_hash": "af1fb435d85020fb7dfffd341b525734bf626e5bde25a5492169ffa49b1059c6"
+    },
+    "aedllm": {
+      "summary": "A planet wounded, hands uncountable, ati a shared responsibility to protect tomorrow.",
+      "full_description": "Ìjádè̀̀ Ìlàyè-iṣẹ́\n\nOne Earth. One Humanity. One Future.\n\nÀwọn àwòrán kan náà ń fi àwọn ààyè-iṣẹ́ han. Àwọn mìíràn náà ń bi wa láti mọ́ irúwọ́ ayè wọn náà ǹfi pamọ́.\n\nLati inú àwọn à\n\nA STORIE OF TWO POSSIBLE FUTURES\n\nOju-ọna kan tí a fi kọ́kọ́ kọ́kọ\n\nAwọn ọwọ ti o wa ni ayika aye ti ṣe afihan awọn eniyan ti o ni awọn ọdun oriṣiriṣi, awọn aṣa ati awọn oriṣi. Ni apapọ wọn di ifẹ ti o ni itumọ ti o jẹ igbiyanju ti o ni ibatan si eniyan.\n\nNjẹ́ Ó Ń Ǹjẹ́\n\nOjú-iṣẹ yi ni fun àwọn tí ó fẹ́ràn ilẹ̀ ayé, àwọn ọmọ-ẹ̀yàn tí ó tí n bọ́, àtí agbará ẹ̀yàn láti kọ́ ibaraẹnisọrọ̀ to yẹ. O lè dí ojú kọ́ọ̀kan ní ile, kọ́fìsì, àwọn ibi-ìkọ̀kọ̀ọ̀kan, gáírí, tàbí àwọn à\n\nJẹ ki oju-ilẹ rẹ ni ifiranṣẹ kan: ọjọ iwaju wa ni a ko le daabobo.\n\nAWỌN ỌRỌ́ TÍ A ṢÈ\n\nÀwòrán ìṣàfihàn; kò ní píríǹtì fúnràn tàbí fréèmù náà tí a fi pamọ́.\n\nṢàfihàn àwọn fáìlì tí a fi hàn nípa àwọn nǹkan yìí látilẹ̀.\n\nWòye àwọn ìròyìn fáìlì tí a fi pamọ́, àká-irinṣẹ́ ìpínpa, àti àwọn ìṣẹ̀dà ìlòjútó àwọn ìṣàmúlò-ètò fún ẹni-kẹta láti ìpínpa.\n\nYan ìwọ̀n àwọn píríǹtì àti iṣẹ́ tí ó dápọ̀ sí àwọn ìpéwọ̀n fáìlì tí a fun.\n\nFi iṣẹ́ ìṣàfarawékọ̀ọ̀kan pamọ́ sí ilè pẹlú àkọlé. Yan Àwọn Àkọlé Àwọn Àkọlé láti mú ò jẹ́ àwọn ààyè-iṣẹ́ rẹ̀.\n\nHALL OF GREATNESS — Ẹ̀yà kọ̀ọ̀kan tí a fi hàn. Àkọ́kọ́ Tí Kò Ní Ìgbà Ìsẹ́.",
+      "category": "Àwọn Àkọlé",
+      "product_details": {
+        "files_included": "Fáìlì 1 · ZIP · 24.6 MB",
+        "product_type": "Àwòrán",
+        "delivery": "Ìṣàfilọ́lẹ̀ digítàlì lẹ́ẹ̀kaǹ lẹ́ẹ̀kaǹ lẹsẹ̀kẹsẹ́ láti ààyè-iṣẹ́",
+        "physical_item": "Kò ní píríǹtì fún àwọn àwọn fèrèsé tí a bá fi pamọ́",
+        "printing": "Píríǹtì àwọn fáìlì tí a fi pamọ́ láti inú àwọn ìṣàfihàn píríǹtì tí o fẹ́; ṣàyẹwo àwọn ìwọ̀n tí a fi pamọ́ láti ààyè-iṣẹ́ ìwọ̀n",
+        "usage": "Àwọn ìṣàmúlò-ètò ìlòjútó àti àwọn ìpéwọ̀n líǹẹ́ẹ̀lì mìíràn tí a fi pamọ́ sí ìṣàmúlò-ètò"
+      },
+      "_source_hash": "1b778b5e9598b900f314bd014e2126505fb284bc853987ad799e788064ade832"
+    },
+    "smuewa": {
+      "summary": "The Golden Gaze tí n dẹ́wọ́ awájú lọ́wọ́lù nínú ayè tí a ǹpe ní geometry, afẹfẹ́ Mediteranean, àtí àwọ̀ tí ǹfá. Àwọn iṣẹ́ ìṣàfarawé kọ̀ǹpútà tí a ti kọ̀ láti fi ìmọ̀, àwọn àbùdá, àtí àtílẹ̀yè pamọ́ sí inú.",
+      "full_description": "The Golden Gaze — A Vision of Gold, Sea & Timeless Mystery\n\nWá àwọn àwọn iṣẹ́ àtí ó ǹpa ojú náà láti fi ìgbànìbálẹ̀ pamọ́.\n\nThe Golden Gaze ni iṣẹ-iṣe oni-nọmba ti o wa lati ile-iṣọ ti o tobi julọ, ti o ṣe iyatọ awọn ọna ti o ni ifẹ ti o ni ifẹ pẹlu awọn oju-aye Mediterania ti o ni ifẹ.\n\nÀwọn àwòrán àwọn obinrin tí a fi pamọ́ lọ́wọ́lọ́wọ́ lọ́wọ́lọ́wọ́ lọ́wọ́lọ́wọ́, àwọn àwọ̀dá ọ̀wọ́, àwọn àwọ̀ safiiri tí o pọ̀, àwọn àwọ̀ iwọ́wọ́, àti àwọn à\n\nImudara yi ni o mu ki o wa ni apapo pẹlu ifẹ, ifẹ ati agbara aṣa, ti o ṣe agbekalẹ aaye ifasilẹ ti o yatọ fun awọn ibi inu ti o ni itara.\n\n✨ Kini idi ti O fi fẹ́ iṣẹ́ ẹ̀yàn yìí\n\nAwọn abuda ti o ni ibatan: Awọn abuda ti o ni ibatan si awọn ohun elo ti a lo ninu awọn ohun elo.\n\nÀwọn àwọ̀ ààyè-iṣẹ́: Ògó, àwọ̀ safiiri, àwọ̀ kọ̀ọ̀kan, àwọ̀ iwọ́wọ̀n, àti àwọ̀ àwọ̀́wọ̀n kọ́ọ̀kan.\n\nElegant Interior Accent: Designed to complement modern and luxurious spaces.\n\nÀwọn Àtòjọ-ẹ̀yàn Àwọn Àtòjọ-ẹ̀yàn: Yan àwọn àwọn ààtò tí o fẹ́, àwọn àwọn ààtò ìtẹ̀we, àti àwọn ìwọ̀n tí o yẹ.\n\nDigital Convenience: Ṣàfikún àwọn fáìlì tí a fi kuńlẹ̀ kọ́ọ̀kan náà láti inú iṣẹ́ rẹ̀.\n\n10\n\nÀwọn ile-ìgbàlò iyẹ̀wù atí awọn ile tuntun\n\nÀwọn ile-iṣẹ́ ìṣàfarawékọ́ àti àwọn studiò ìṣàfarawékọ́\n\nBoutique hotels ati awọn agbegbe itẹwọgba ti o nifẹ\n\nÀwọn ayẹyẹ́ tí a fi hàn atí awọn àwọn aṣọ́ inú tí a fi hàn\n\nÀwọn amọja àwọn ẹ̀yàn tí ǹwa àwọn àkọlé àwọn ẹ̀yàn tí a yatọ\n\nÀwọn ẹ̀yàn tí a tí ìgbọ́wọ́lẹ̀ fún àwọn tí ǹfẹ́ ẹ̀yàn tuntun\n\n10\n\nÀwọn àwọn fáìlì ìṣàmúlò-ètò dígitólì tí a lè gbàwọlé tí wọ́n ní àwọn fáìlì tí a sọ̀rọ̀ nínú àtòjọ-ìṣàmúlò-ètò yìí, nípa ìṣàmúlò-ètò ìtẹ̀tẹ́lẹ̀ tí a fi hàn nípa ìṣẹ̀dà ìṣàmúlò-ètò ẹni-kẹta.\n\n10\n\nÀwọn àkọlé àwọn àwòrán\n\nÀwọn àwọn\n\nÀwọn Ìṣàmúlò-ètò:\n\nÀwọn ìṣàfarawé:\n\nÀwọn ìṣàfarawé àwọn ìṣàfarawé àwọn ààyè-iṣẹ́: 2:3\n\nIrúfẹ́ Àwọn À\n\nÌjánu-ìróyìn:\n\n10\n\nPíríǹtì àwọn àwòrán-ìṣàmúlò-ètò láti ló iṣẹ́ píríǹtì ìmọ̀yàn lórí àwọn àwọn ààyè-iṣẹ́ tí o fẹ́, bí àwọn à\n\nÌwọ̀n àwọn à\n\nÀkọ́kọ́: Àwòrán dígítàlì nìní. Kò ní àwọn àwọn àwòrán, àwọn féèsì, tàbí àwọn à\n\n10\n\nÓ lè píríǹtì àwọn àwọn àwòrán fún ilé rẹ̀ tabi àwọn iṣẹ́ ọ̀fẹ́ rẹ̀, àti láti ṣàfihàn píríǹtì fún ara rẹ̀ bí ẹ̀yàn fún ara rẹ̀. O kò lè tà, tà, pẹ̀lú, kọ́ nípa líǹkì, tàbí kọ́ nípa ilé́gbègbèyè àwọn fáìlì díìtì látì jẹ́ àwọn ìṣẹ̀dá àwọn fáìlì náà.\n\nÀwọn Àkọlé\n\nWá yìí GOLDEN GAZE 👁 digítàlì ìwà́lẹ̀ fún ìwà́lẹ̀ ìwà́lẹ̀ tí a lè kọ̀ọ̀kan, ìwà́lẹ̀ ilè tí a lè kọ̀ọ̀kan, àtí ìwà́ẹ̀kan tí a lè kọ̀ọ̀kan. Ìwà́ẹ̀kan tí a lè fipamọ́ fún ìwé ìmọ̀ràn, pẹlú àwọn ìṣàfilọ́lẹ̀ ìmọ̀ràn tí a yaǹ lati dápọ̀ fáìlì tí a fi hàn náà atí àwọn ààyè rẹ̀.",
+      "category": "Àwọn Ìṣàmúlò-ètò",
+      "product_details": {
+        "files_included": "Fáìlì 1 · ZIP · 22.4 MB",
+        "product_type": "Àwòrán",
+        "delivery": "Ìṣàfilọ́lẹ̀ digítàlì lẹ́ẹ̀kaǹ lẹ́ẹ̀kaǹ lẹsẹ̀kẹsẹ́ láti ààyè-iṣẹ́",
+        "physical_item": "Kò ní píríǹtì fún àwọn àwọn fèrèsé tí a bá fi pamọ́",
+        "printing": "Píríǹtì àwọn fáìlì tí a fi pamọ́ láti inú àwọn ìṣàfihàn píríǹtì tí o fẹ́; ṣàyẹwo àwọn ìwọ̀n tí a fi pamọ́ láti ààyè-iṣẹ́ ìwọ̀n",
+        "usage": "Àwọn ìṣàmúlò-ètò ìlòjútó àti àwọn ìpéwọ̀n líǹẹ́ẹ̀lì mìíràn tí a fi pamọ́ sí ìṣàmúlò-ètò"
+      },
+      "_source_hash": "bc5775f40dbc520fc6c48e9b41f3d7b8b577c56471e899302b456db982f635ec"
+    },
+    "jzjbrg": {
+      "summary": "Fi ifẹ́ atí ifẹ́ tí a fi hàǹ nípa Egyptì tí a tì kọ̀ nípa Queen of the Nile. Tí a fi ìmọ̀ hàǹ nípa ẹ̀yà ìmọ̀ tí a tì fi hàǹ nípa Egyptì, iṣẹ́ ọ̀fẹ́ dijital̀ yìí tí a fi hàǹ nípa ìmọ̀ enia tí a tì fi hàǹ nípa ile, àwọn ọ̀fiisi, àwọn otelí, àtí àwọn ibi tí a tí fi hàǹ nípa.",
+      "full_description": "Àwọn àwọn\n\nA Regal Tribute to the Artistic Legacy of Ancient Egypt\n\nṢayẹwo awọn iyatọ, awọn iyatọ, ati awọn iyatọ ti o wa laarin awọn ede ati awọn ede ti o wa ni ayika wọn, ati awọn iyatọ laarin awọn ede ati awọn ede ti o wa ni ayika wọn.\n\nṢẹ̀dà fún àwọn tí ó fẹ́ràn ẹ̀yà Egyptian àti ìwé-ìwé ìdájọ́, iṣẹ́ yì nfi ìmọ̀ tí a fi hàn ìmọ̀ ọ̀rọ̀ ìmọ̀ atí àtìtọ́ ajọṣepọ̀ hàn. O n fi ìmọ̀ hàn fún àwọn tí ó ń wò láti sopọ̀ sí ẹ̀yà tí ó ti ṣẹ̀dà láti ìmọ̀, ìmọ̀, ìfẹ́, àtí ìmọ̀ tí o ti pẹ̀lú Nile àtí agbaye ti Egypt tí a ti kọ̀.\n\nA Ìṣàfilọ́lẹ̀ TÍ A ṢÈ ṢÉ FUN IWỌN RẸ̀\n\nQueen of the Nile le di a lẹwa focus point ni awọn yara itura, awọn ile-iwe, awọn ile-iṣẹ, awọn hoteli boutique, awọn agbegbe ti o gba, ati awọn ibi ti o ni igbẹkẹle. O tun jẹ aṣayan ti o ni itara fun awọn ti o gba ati ẹnikẹni ti o nifẹ si awọn iṣẹ-ṣiṣe ti o ni ifẹ ati aṣa aṣa ti Egyptian.\n\nÀwọn Àlàyé Ìṣàmúlò-ètò\n\nÓ jẹ́ nǹkan digítàlì. Kò ní àwọn àwọn àwòrán, àwọn à\n\nThe Queen of the Nile - A Regal Echo of an Ancient World.\n\nÌgbà Ìṣẹ́\n\nÀwọn Àkọlé\n\nṢawari eyi Queen Of The Nile 👑 digi art titẹ fun awọn ile-iṣẹ ti o le ṣe atẹjade, awọn ohun ọṣọ ile ti o ni iyatọ, ati awọn ibi ti a ṣe apẹrẹ ni itara. A iṣẹ-ṣiṣe ti o le ṣe igbasilẹ fun ifihan ara ẹni, pẹlu awọn aṣayan titẹsi ti a yan lati baamu faili ti a pese ati aaye rẹ.",
+      "category": "Àwọn Ìṣàmúlò-ètò",
+      "product_details": {
+        "files_included": "Fáìlì 1 · ZIP · 44.0 MB",
+        "product_type": "Àwòrán",
+        "delivery": "Ìṣàfilọ́lẹ̀ digítàlì lẹ́ẹ̀kaǹ lẹ́ẹ̀kaǹ lẹsẹ̀kẹsẹ́ láti ààyè-iṣẹ́",
+        "physical_item": "Kò ní píríǹtì fún àwọn àwọn fèrèsé tí a bá fi pamọ́",
+        "printing": "Píríǹtì àwọn fáìlì tí a fi pamọ́ láti inú àwọn ìṣàfihàn píríǹtì tí o fẹ́; ṣàyẹwo àwọn ìwọ̀n tí a fi pamọ́ láti ààyè-iṣẹ́ ìwọ̀n",
+        "usage": "Àwọn ìṣàmúlò-ètò ìlòjútó àti àwọn ìpéwọ̀n líǹẹ́ẹ̀lì mìíràn tí a fi pamọ́ sí ìṣàmúlò-ètò"
+      },
+      "_source_hash": "a4497ccda79c60d5130d5f8f09b9c6acc088280a4d67c8ca9e65d4ff49de7d69"
+    },
+    "csyqhm": {
+      "summary": "Coptic Soul of Egypt ni a ti kọ ni ọna ti o ni itumọ ti o ni i",
+      "full_description": "Àwọn àwọn\n\nA Contemporary Artistic Tribute to Coptic Heritage\n\nṢawari itumọ ara ẹni ti ara ẹni ti ẹwa Coptic Egyptian nipasẹ Coptic Soul of Egypt, iṣẹ-ọṣọ dijital ti a ṣe nipasẹ iranti ti o ni iranti, ede ami-ami, ati afẹfẹ aṣa ti o ni ibatan si iṣẹ-ọṣọ Coptic.\n\nKo si bi o ti n ṣe ara rẹ̀ di aláìmọ̀ ìmọ̀ ọ̀fẹ́ tabi ìdájọ́ ìtàn kan, iṣẹ́ yi n gbọ́dọ̀ hàn ìwàásù̀ nípa ìmọ̀ ọ̀fẹ́ ìmọ̀. O n pọ̀ mọ́ ìmọ̀ ìmọ̀ atí ìmọ̀ ìmọ̀ tuntun láti fi hàn ìmọ̀ ìmọ̀, ìmọ̀, àti ìmọ̀ tí o wà nínú ìtàn Egypt.\n\nFun awon ti o ba wo ni o nife ninu ohun orin ti o ni itumọ, iṣẹ naa nfun diẹ sii ju ohun ti o ni itumọ lọ: o n ṣe ibatan pẹlu aṣa aṣa ti o ni iyatọ ati aaye ti o wa ni iranti ti Egypt.\n\nIWỌN FUN AWỌN ỌRỌ̀\n\nA fi pamọ́ sinu ile, ile-iwe, ile-iṣẹ́, ile-iṣọ́, ibi-iṣọ́ aṣà, àti ibi tí a ti fi ẹ̀yà Egyptian àti ìdájọ́ ìmọ̀ ti a ti fi hàn. O tun le jẹ́ ẹ̀yà kan tó ni itumọ̀ fún àwọn tí ó fẹ́ràn ìmọ̀ aṣà Coptic àti Egyptian.\n\nÀwọn Àlàyé Àwọn Àṣẹ\n\nÓ jẹ́ ìṣàmúlò-ètò dígítàlì. Kò ní àwọn àwọn àwòrán, àwọn à\n\nTHE COPTIC SOUL OF EGYPT — Heritage Remembered. Art Reimagined.\n\nÌgbà Ìṣẹ́\n\nÀwọn Àkọlé\n\nWá yìí Òmì Coptic tí a kọ̀ nípa ẹ̀yàn kọ̀ọ̀kan tí a kọ̀ọ̀kan kọ̀ọ̀kan tí a lè kọ̀ọ̀kan kọ̀ọ̀",
+      "category": "Àwọn Ìṣàmúlò-ètò",
+      "product_details": {
+        "files_included": "1 fáìlì · ZIP · 60.1 MB",
+        "product_type": "Àwòrán",
+        "delivery": "Ìṣàfilọ́lẹ̀ digítàlì lẹ́ẹ̀kaǹ lẹ́ẹ̀kaǹ lẹsẹ̀kẹsẹ́ láti ààyè-iṣẹ́",
+        "physical_item": "Kò ní píríǹtì fún àwọn àwọn fèrèsé tí a bá fi pamọ́",
+        "printing": "Píríǹtì àwọn fáìlì tí a fi pamọ́ láti inú àwọn ìṣàfihàn píríǹtì tí o fẹ́; ṣàyẹwo àwọn ìwọ̀n tí a fi pamọ́ láti ààyè-iṣẹ́ ìwọ̀n",
+        "usage": "Àwọn ìṣàmúlò-ètò ìlòjútó àti àwọn ìpéwọ̀n líǹẹ́ẹ̀lì mìíràn tí a fi pamọ́ sí ìṣàmúlò-ètò"
+      },
+      "_source_hash": "2eca69141928e3e01281fed2b39524d668bb838241b109042d8477d2e941b1b2"
+    },
+    "jvffaq": {
+      "summary": "Ẹ̀yà Òjó NILÈ tí ǹféré ìwà́ tí kò lè pàdè tí Egypt̀ fi ǹféré, tí o fi ìmọ̀ tí o tí ìgbà tí o tì wà pọ̀ mọ́ ìmọ̀ tí o tì wà tí Nilè. Ẹ̀yà ìmọ̀ tí a fi ìmọ̀ dijitalì hàn fún àwọn ìgbàlagbà tí ó ti fi ìmọ̀ atí ẹ̀yà tí kò lè pàdè pamọ́.",
+      "category": "Ẹ̀yà",
+      "_source_hash": "b061cdc5a55b2e444a09cd7d8c3d8d1eb73ad3315fe38b35610ca590b595c16e"
+    },
+    "xvccaj": {
+      "summary": "Awọn iṣẹ-ṣiṣe ẹṣọ mẹrin mẹrin ti a ṣe nipasẹ cosmos, awọn ilu ọjọ iwaju, iseda, ati ẹwa Mediterania—awọn akojọpọ dijital ti o han gbangba fun awọn ifẹ ti o nifẹ ati awọn aaye ti o nifẹ.",
+      "full_description": "GLOBAL ART & IMMAGINE — Ọ̀PỌ́ Ọ̀PỌ́, Ọ̀LỌ̀RUN TÍ KÒ FẸ̀RẸ̀\n\nJẹ́ lọ́wọ́lú lọ́wọ́lú nípa ìṣàfilọ́lẹ̀ tí a tí a tí a mọ̀ lọ́wọ́lú\n\nLati ifẹ ti aye si awọn ilu ti a nfẹ lati ṣe, lati awọn agbegbe ti o ni ẹwa si awọn iwoye ti o ni itumọ, akojọ yii ṣe ayẹyẹ awọn ọna pupọ ti awọn iṣẹ-ṣiṣe le ṣe afihan itumọ wa ti awọn aye.\n\nÀwọn Ìṣàmúlò-ètò\n\nÀwọn Ìṣàmúlò-ètò\n\nÀwọn Ìgbà Ìmọ̀\n\nÀwọn ààyè-iṣẹ́ tí a fẹ́\n\nÌdáràn Ìṣàfarawé\n\nMediterranean Dreams\n\nÀwọn àwọn ààyè-iṣẹ́\n\nÀwọn Ìṣàmúlò-ètò Ìṣàfarawé\n\nÌBẸ̀YÈ TÍ Ò FẸ̀RẸ̀\n\nA ti ṣeto awọn ile-iṣẹ, awọn ile-iṣẹ\n\nÀwọn àkọlé\n\nÓ jẹ́ nǹkan díẹ̀lì. Kò ní àwọn à\n\nWá àwọn à\n\nO ni awọn ẹtọ ti o wa ni isalẹ: Iṣẹ-ṣiṣe ko ni igbẹkẹle.",
+      "category": "Ìṣàfarawé",
+      "product_details": {
+        "product_type": "Àwòrán",
+        "delivery": "Ìṣàfilọ́lẹ̀ digítàlì lẹ́ẹ̀kaǹ lẹ́ẹ̀kaǹ lẹsẹ̀kẹsẹ́ láti ààyè-iṣẹ́",
+        "physical_item": "Kò ní píríǹtì fún àwọn àwọn fèrèsé tí a bá fi pamọ́",
+        "printing": "Píríǹtì àwọn fáìlì tí a fi pamọ́ láti inú àwọn ìṣàfihàn píríǹtì tí o fẹ́; ṣàyẹwo àwọn ìwọ̀n tí a fi pamọ́ láti ààyè-iṣẹ́ ìwọ̀n",
+        "usage": "Mò nífẹ́ ki o tẹle àwọn ààyè-iṣẹ́ tí a fi kun àwòrán",
+        "bundle_item_count": "Àwọn àwọn"
+      },
+      "_source_hash": "d8641c6b467679268bbf7fa3a052b8f3d1afec3f69b284f8c9413088a02c671d"
+    },
+    "wjxgxb": {
+      "summary": "Fi ẹmì tí a tì kọ̀ nínú àwọn ààyè rẹ̀. Eternal Egypt ń gbọ́wọ́lú ìbàlẹ̀ tí a tí a kọ̀ nínú àwọn ààyè àwọn ẹ̀yàn, Nile, àtí ẹ̀yàn aṣà tí a kò lè gbọ́wọ́lù. A tí a kọ́ nínú àwọn à",
+      "full_description": "ETERNAL EGYPT\n\nÌfẹ̀ Tí Kò Lè Fi Ìgbà Tí A Tí\n\nṢayẹwo awọn ohun ti o wa ni ayika rẹ pẹlu Eternal Egypt, iṣẹ-ọṣọ dijital ti a ṣe nipasẹ awọn pyramids, Great Sphinx, ati awọn oju-aye ti ko ni akoko ti Nile.\n\nṢẹ̀dà fún àwọn tí ó ní ìmọ̀rọ̀ kan sí ìtàn, ìmọ̀jọba, àti ìwàásù̀ ìmọ̀lẹ̀ Egypt, ìmọ̀rọ̀ yi rán àwọn ìtàn tí ó ju àwòrán ìmọ̀rọ̀ lọ. O hàn ìdí, ìmọ̀rọ̀, àti ìmọ̀rọ̀ ìmọ̀lẹ̀ kan tí ìmọ̀rọ̀ rẹ̀ ti n bọ̀ lọ́wọ́lẹ̀ láti fi ìmọ̀lẹ̀ di aarin agbaye.\n\nImọye-ara ti o ni ifẹ-ara rẹ ṣe iyatọ si awọn aaye pataki fun awọn ile-iṣẹ ti o wa lọwọlọwọ, awọn ile-ẹkọ ti ara ẹni, awọn ọfiisi, awọn hoteli, awọn aaye aṣa ati awọn ibi ti o ṣe ayẹyẹ itan ati awọn iṣẹ-ṣiṣe.\n\nNjẹ́ Ò wa nínú àwọn ààyè RẸ̀\n\nAyẹyẹ ti a rii si ẹ̀yà aṣà tí a tì pẹ̀lú̀ Egypt tí a tì kọ̀.\n\nA distinctive heritage-inspired accent fun awọn aṣa ati awọn aṣa aṣa.\n\nA yan fun awọn ti o gba ati awọn ti o nifẹ si itan Egipti.\n\nÀwọn àwọn àwòrán ìṣàfarawé dígitólìtì tí a lè píríǹtì àti fi àwọn ààyè hàn láti dápọ̀ sí ààyè rẹ̀.\n\nÀwọn Àlàyé Àwọn Àṣẹ\n\nÓ jẹ́ ìṣàmúlò-ètò dígítàlì. Kò ní àwọn àwọn àwòrán, àwọn à\n\nETERNAL EGYPT — A Civilization in Memory. A Legacy Beyond Time.\n\nÌgbà Ìṣẹ́\n\nÀwọn Àkọlé\n\nWá ETERNAL EGYPT yìí, Ẹ̀yà Tí Kò Bẹ̀ẹ̀ Tí Kò Bẹ̀ẹ̀ẹ̀̀ Tí A Tí Wà Nígbà Tí A Tí Wà Nígbà Tí A Tí Wà Nígbà Tí A Tí Wà Nígbà Tí A Bá Fi Ìṣàfilọ́lẹ̀ Rẹ̀ Rẹ̀. Ojú-iṣẹ́ tí a lè gbàwọlé fún ìṣàfihàn ara ẹni, láti fi àwọn ìkúndùǹ tí a yaǹrọ̀ lọ́wọ́lú àtí àwọn ààyè-iṣẹ́ rẹ̀ pamọ́.",
+      "category": "Àwọn Ìṣàmúlò-ètò",
+      "product_details": {
+        "files_included": "Àwọn fáìlì 4 · JPG, PDF, PNG, TXT · 9.1 MB",
+        "product_type": "Àwòrán",
+        "delivery": "Ìṣàfilọ́lẹ̀ digítàlì lẹ́ẹ̀kaǹ lẹ́ẹ̀kaǹ lẹsẹ̀kẹsẹ́ láti ààyè-iṣẹ́",
+        "physical_item": "Kò ní píríǹtì fún àwọn àwọn fèrèsé tí a bá fi pamọ́",
+        "printing": "Píríǹtì àwọn fáìlì tí a fi pamọ́ láti inú àwọn ìṣàfihàn píríǹtì tí o fẹ́; ṣàyẹwo àwọn ìwọ̀n tí a fi pamọ́ láti ààyè-iṣẹ́ ìwọ̀n",
+        "usage": "Àwọn ìṣàmúlò-ètò ìlòjútó àti àwọn ìpéwọ̀n líǹẹ́ẹ̀lì mìíràn tí a fi pamọ́ sí ìṣàmúlò-ètò"
+      },
+      "_source_hash": "af4bb9b510bcc457b6750421a6f2d14b3beabca71579f4cd5f83484617097abe"
+    },
+    "fgdpqp": {
+      "summary": "Ninú iṣẹ́ kọ̀ǹpútà tí a tì sọ̀rọ̀, àkókò kò jẹ́ aagó tí a fí ṣé ìṣàmúlò-ètò, sugbon aagó tí a tí a kọ̀rọ̀. Ẹ̀YÉ Ọ̀LỌ́RỌ́ TÍ A ṢÉ ṢE",
+      "full_description": "Ninú iṣẹ́ kọ̀ǹpútà tí a tì sọ̀rọ̀, a kò fi akokò ṣé ìṣàmúlò-ètò, ṣugbọn a tí a kọ̀. Ọ̀RỌ́ Ọ̀LỌ́RỌ́ǸỌ̀ǸỌ",
+      "category": "Ìṣàfarawé",
+      "product_details": {
+        "files_included": "Fáìlì 1 · ZIP · 36.8 MB"
+      },
+      "_source_hash": "30ab80fd3d5210fdd5ec47f8f60c9b5f121908831ac3a07129ffe69e98b6bb2c"
+    }
+  },
+  "ui": {
+    "navFeatured": "Àwọn àwọn ìṣàfilọ́lẹ̀",
+    "navCollections": "Àwọn Àwọn Àkọsílẹ̀",
+    "navGallery": "Àwọn àwọn ààyè-iṣẹ́",
+    "navArtist": "Àwọn Àkọlé",
+    "eyebrow": "Àwọn ìṣàfarawélẹ̀ ìṣàfarawélẹ̀ ìṣàfarawélẹ̀",
+    "heroTitle": "<em>Àwọn àwọn</em>",
+    "heroText": "Wa galeri ti a ṣe ni ọna ti o ni ifẹ, ẹ̀yà, ibatan eniyan, atí ẹ̀yà tí kò ní akoko. Àwọn iṣẹ́ dijital tí o ní itumọ̀, tí wọ́n tí wa níbẹ̀ lati di àwọn ààye rẹ̀.",
+    "explore": "Àwọn À",
+    "discover": "Wá àwọn àwọn àwòrán",
+    "featuredEyebrow": "Àwọn ìtàn tí àwọn ìbẹ̀rẹ̀ náà ń padà sí",
+    "featuredTitle": "Àwọn àwọn àwòrán-òkè tí a fi han",
+    "featuredText": "Àwọn iṣẹ́ mẹ́tà tí itumọ̀. Àwọn ọna mẹ́tà tí a lè fi ẹ̀yàn atí ifẹ́ eniyaǹ pamọ́ sí àwọn ààyè rẹ̀.",
+    "collectionsEyebrow": "Àwọn À",
+    "collectionsTitle": "Wá àwọn ìṣàmúlò-ètò",
+    "collectionsText": "Àwọn ìjánu-ìjánu tí a kọ̀ nínú àwọn àwọn iṣẹ́ àìṣe, àwọn aṣà, àti àwọn ìrànwọ́. Wá àwọn ìṣàmúlò-ètò mìíràn tàbí lọ sí àwọn à",
+    "galleryEyebrow": "Àwọn àwọn",
+    "galleryTitle": "Àwọn àwọn àwòrán-òkè",
+    "galleryText": "Wá nípa àkọ́lé àwọn àwọn àwòrán, àwọn à",
+    "search": "Wá àwọn àkọlé àti àwọn ìpéwọ̀n...",
+    "artistEyebrow": "Ààyè-iṣẹ́",
+    "artistTitle": "Ààyè-iṣẹ́",
+    "artistP1": "O jẹ onkọwe ti o wa ni ẹhin HALL OF GREATNESS, ile-iṣere oni-nọmba ti o ni igbẹkẹle ti o mu awọn itan-akọọlẹ ti o ni iranti ti o ni iranti si awọn olugbo agbaye.",
+    "artistP2": "Iṣẹ-ọ̀kan-ọ̀kan náà ǹfí ẹ̀yà, ìṣàfarawe, àtí ìṣàfarawe dijital̀ pọ̀ mọ́. Ẹ̀yà kọọkan náà ǹfí ẹ̀yà kaǹkan jú: afẹfẹ́, ìmọ̀, tàbí itań eniyan.",
+    "artistP3": "Lati ẹ̀yin ẹ̀yin ati ẹ̀yin ẹ̀yin, lati ẹ̀yin ẹ̀yin,",
+    "tagline": "Àwọn àwọn",
+    "digital": "Awọn ọja Diẹta · Iṣẹṣẹ gba lati ayelujara nipasẹ Gumroad",
+    "privacy": "Àwọn Àkọ́gbègbè",
+    "terms": "Àwọn Àṣẹ",
+    "contact": "Àwọn Àkọsílẹ̀",
+    "gumroad": "Ile itaja",
+    "exploreArt": "Wá àwọn àwòrán ↗",
+    "discoverStory": "Àkọlé àwòrán",
+    "buyDownload": "Ṣàfihàn",
+    "buyCollection": "Àwọn àwọn",
+    "exploreCollection": "Àwọn àwọn",
+    "printable": "Àwọn àwọn àwòrán ìṣàfarawékọ́",
+    "format": "Fáìlì Dígítàlì · Píríǹtì nínú ìwọ̀n tí ó tọ́ka sí ààyè-iṣẹ́ rẹ̀",
+    "noResults": "Kò ní àwọn àwọn àwòrán-ètò kan tí ó dápọ̀ sí ìṣàfihàn rẹ̀.",
+    "catalogError": "Àwọn àwọn ààyè-iṣẹ́ gáírí kò wa nígbà kan. Mòò ìṣàfarawe ojú-ìwé náà.",
+    "all": "Gbogbo wọn",
+    "of": "ti",
+    "artworks": "Àwọn àwọn àwòrán",
+    "choose": "Yan Àwọn Àwọn Àkọlé"
+  },
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "_ui_translation_status": "machine-generated-unreviewed",
+  "landing_ui": {
+    "← Return to the gallery": "Lọ sí àwọn ààyè-iṣẹ́",
+    "Language": "Àwọn À",
+    "An original digital artwork from HALL OF GREATNESS": "Àwọn àwọn àwòrán ìṣàfarawé kọ̀ǹpútà ìṣàfarawé kọ̀ǹpútà láti inú HALL OF GREATNESS",
+    "A curated collection of meaningful digital artworks": "Àwọn àwọn",
+    "Explore & Get the Artwork ↗": "Wá &̀ Fí Ìṣàmúlò-ètò ↗",
+    "Secure checkout and digital delivery on Gumroad.": "Ṣiṣe ayẹwo aabo ati ifunni dijital lori Gumroad.",
+    "Artwork presentation": "Àwọn àwọn ààyè-iṣẹ́ àwọn à",
+    "Imagine it in a refined frame": "Fi pamọ́ sínú àwọn àwọn àgbèkalẹ̀",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "Àtòjọ-ẹ̀yàn kẹtà náà náà ǹtún ọ̀rọ̀ kọ̀ọ̀kan náà bí ìṣàfihàn àwọn à",
+    "Digital download": "Àwọn ìṣàmúlò-ètò",
+    "Access your files after checkout": "Lọ́ọ̀kan àwọn fáìlì rẹ̀ láti ààyè-iṣẹ́",
+    "Print your way": "Píríǹtì ìwọ̀n rẹ̀",
+    "Choose a size suited to your space": "Yan ìwọ̀n tí ó tọ́kà sí ààyè-iṣẹ́ rẹ̀",
+    "Made to display": "Tí a fi hàn fún ìṣàfihàn",
+    "For homes, studios, and meaningful spaces": "Fun àwọn ile, àwọn studiò, àti àwọn ààyè-iṣẹ́",
+    "The meaning behind the artwork": "Ìtumọ̀ tí a fi pamọ́ sí àwọn àwọn àwòrán",
+    "More than decoration. A feeling that stays.": "O jú àwọn à",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Ṣẹ̀dà fún àwọn tí wọ́n fẹ́ pé ibi ti wọ́n tí wa nínú rẹ̀ láti fi hàn ìtàn, ìmọ̀, ìwọ̀n, tàbí ìròyìn tí o nì. Jẹ́ pé iṣẹ́ yìí dí àwọn ààyè tí o tì kọ̀ nínú rẹ̀, àtí àwọn à",
+    "Inside this collection": "Àwọn àwọn",
+    "One collection. Many stories.": "Àwọn ìṣàmúlò-ètò.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Wá àwọn iṣẹ́ ìṣàfarawékọ̀ọ̀kan tí a tì fàye gba nínú ìṣàfarawékọ̀ọ̀kan yìí. Ìrọ̀ọ̀kan ní àwọn àbùdá rẹ̀, nígbà tí wọn bá ṣé ìjánú ìrísí-lẹ́tà tí ò ní.",
+    "Complete artwork story": "Àwọn àkọlé àwọn àwòrán",
+    "Full product description": "Àwọn ìṣàfihàn",
+    "What is included": "Àwọn Ìṣàmúlò-ètò",
+    "Product specifications": "Àwọn ìṣàfihàn àwọn nǹkan-ètò",
+    "Where it belongs": "Ààyè tí o tì wa",
+    "Art that finds its place": "Àwọn àwọn",
+    "Before you purchase": "Tí o bá ra",
+    "Digital download details": "Àwọn Àtòjọ-ẹ̀yàn",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Ó jẹ́ nǹkan díẹ̀lì. Kò ní iṣẹ́ kọ̀ọ̀kan àti àwọn fèrèsé tí a fi pamọ́. Lẹ́ẹ̀kaǹ tí a bá ráwọ́lọ́wọ́, Gumroad náà ǹfi àwọn fáìlì tí a fi pamọ́ sínú nǹkan yìí. Mòò ṣàyẹwo àwọn àwọn ìpéwọ̀n fáìlì tí a fi pamọ́ náà àti àwọn ìpéwọ̀n láti ló àwọn iṣẹ́ kọ̀ọ̀kan náà.",
+    "From download to display": "Latí ìṣàmúlò-ètò látí fi hàn",
+    "Make the artwork part of your space": "Fi àwọn àwòrán-òkè hàn ààyè-iṣẹ́ rẹ",
+    "01 · Purchase": "Ìjánú ìṣàmúlò-ètò",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Ṣàfikún àwọn àwọn ààyè-iṣẹ́ rẹ̀ nípa Gumroad. Ìràn rẹ̀ ní fun àwọn nǹkan digítàlì.",
+    "02 · Download": "Àwọn Àkọlé",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Gbaa awọn fáìlì tí a fi pamọ́ sínú ọja yìí láti inú Gumroad àti ìṣàfihàn àwọn ìpéwọ̀n tí a fi pamọ́.",
+    "03 · Print": "Píríǹtì",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Yan ìwọ̀n píríǹtì tí ó tọjú àwọn ìṣàfarawégbègbè ìṣàfarawégbègbè iṣẹ́ ìṣàfarawégbè. Àwọn ìṣàfarawégbègbè ààyè-iṣẹ́ lè sé ìrànwọ́ àwọn ìṣàfarawégbègbè láti pọ̀ jú àwọn ìṣàfarawégbègbè lọ́wọ́lọ́wọ́ àwọn fáìlì tí a fi pamọ́.",
+    "Please note:": "Àwọn àkọlé:",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Kò ní àwọn àwọn àwòrán-òrò àti àwọn fèrèsé tí a fi pamọ́. Àwọn ìrísí-lẹ́tà fáìlì tí wa nínú ìṣàmúlò-ètò àti àwọn ìpéwọ̀n ìlòjójútó nínú ìṣàmúlò-ètò àti àwọn ìṣẹ̀dá ìṣàmúlò-ètò.",
+    "Let your space tell a story.": "Fi àwọn ààyè rẹ̀ sọ àwọn ìtàn.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Yan iṣẹ-awọ ti o fihan ohun ti o fẹ—ki o si jẹ ki itumọ rẹ wa pẹlu ọ.",
+    "Get": "_Gba",
+    "Art with a Soul. A Message Without Borders.": "Akọsilẹ pẹlu Ẹmi. Ifiranṣẹ Ti ko ni Ipinle.",
+    "Digital artwork · Instant download through Gumroad": "Àwọn àwọn àwòrán dígítal̀ · Àwòrán ìṣàfihàn láti inú Gumroad",
+    "Privacy": "Àwọn Àkọ́gbègbè",
+    "Terms": "Àwọn Àṣẹ",
+    "Contact": "Àwọn Àkọsílẹ̀",
+    "Gumroad store ↗": "Ile itaja",
+    "· Digital download": "Ṣàfihàn"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Fáìlì tí a fi pamọ́",
+    "product_type": "Irúfẹ́ Àwọn Àṣẹ",
+    "delivery": "Ìjáde",
+    "physical_item": "Àwọn àwọn ààyè-iṣẹ́ Fiisíkì",
+    "printing": "Ìtẹ́lẹ̀",
+    "usage": "Ìlò",
+    "bundle_item_count": "Àwọn àwọn"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "A ti kọlu akole fun awọn ile, awọn ọfiisi, awọn hoteli, awọn ile-iṣọ, awọn agbegbe ipade, ati awọn ibi inu ti a ṣe akojọ.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Gba THE ART OF ELEGANCE & SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "A ti ṣe akojọ awọn iṣẹ-iṣe ti a ṣe ni ibamu fun awọn ile, awọn ọfiisi, awọn hoteli, awọn ile-iṣere, awọn agbegbe ipade, ati awọn ibi inu.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Gba EGYPTIAN & COPTIC HERITAGE ↗",
+      "\\n": "\\n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "A BOND BEYOND WORDS  The Beauty of Unconditional Love",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.",
+      "Get THE HUMANITY LEGACY ↗": "Get THE HUMANITY LEGACY ↗",
+      "\\n": "\\n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A ti ṣe akoso fun awọn yara itura, awọn yara itura, awọn ọfiisi, awọn hoteli boutique, awọn aaye wellness, ati awọn ibi ti a ti ronu.",
+      "Get THE ART OF STILLNESS ↗": "Gba THE ART OF STILLNESS ↗",
+      "\\n": "\\n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A ti ṣe akoso fun awọn yara itura, awọn yara itura, awọn ọfiisi, awọn hoteli boutique, awọn aaye wellness, ati awọn ibi ti a ti ronu.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Gba GEOMETRY OF ELEGANCE ↗",
+      "\\n": "\\n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "A ọrọ ìmọ fun awọn ile, awọn studios, awọn ọfiisi, awọn aaye igbẹkẹle, ati awọn ibi ti a ṣe nipasẹ ifẹ.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Gba CITIES OF TOMORROW   Where Innovation Meets Imagination ↗",
+      "\\n": "\\n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "A ọrọ ìmọ fun awọn ile, awọn studios, awọn ọfiisi, awọn aaye igbẹkẹle, ati awọn ibi ti a ṣe nipasẹ ifẹ.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Gba NATURE'S MAJESTY   The Timeless Beauty of Nature ↗",
+      "\\n": "\\n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A ti ṣe akoso fun awọn yara itura, awọn yara itura, awọn ọfiisi, awọn hoteli boutique, awọn aaye wellness, ati awọn ibi ti a ti ronu.",
+      "Get MEDITERRANEAN DREAMS ↗": "Gba MEDITERRANEAN DREAMS ↗",
+      "\\n": "\\n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A ti ṣe akoso fun awọn yara itura, awọn yara itura, awọn ọfiisi, awọn hoteli boutique, awọn aaye wellness, ati awọn ibi ti a ti ronu.",
+      "Get SILENT HORIZONS . ↗": "Gba SILENT HORIZONS . ↗",
+      "\\n": "\\n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A ti ṣe akoso fun awọn yara itura, awọn yara itura, awọn ọfiisi, awọn hoteli boutique, awọn aaye wellness, ati awọn ibi ti a ti ronu.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Gba GOLDEN FLOW   The Art of Timeless Luxury ↗",
+      "\\n": "\\n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "A ọrọ ìmọ fun awọn ile, awọn studios, awọn ọfiisi, awọn aaye igbẹkẹle, ati awọn ibi ti a ṣe nipasẹ ifẹ.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Gba BEYOND THE UNIVERSE 🌏 ↗",
+      "\\n": "\\n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A itumọ ti a fojusi aaye fun awọn ile, awọn ọfiisi, awọn aaye ẹkọ, awọn ile-iṣere, ati awọn aaye nibiti awọn itan eniyan ṣe pataki.",
+      "Get A Shelter of Love ♥ ↗": "Gba A Shelter of Love ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A ti ṣe akoso fun awọn yara itura, awọn yara itura, awọn ọfiisi, awọn hoteli boutique, awọn aaye wellness, ati awọn ibi ti a ti ronu.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Gba The Celestial Garden – A Dance Beneath the Moon ↗",
+      "\\n": "\\n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A ti ṣe akoso fun awọn yara itura, awọn yara itura, awọn ọfiisi, awọn hoteli boutique, awọn aaye wellness, ati awọn ibi ti a ti ronu.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Gba THE GOLDEN VEIL OF SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "A planet. One responsibility. Countless possibilities.",
+      "The story behind the image": "The story behind the image",
+      "More than decoration. A human story.": "More than decoration. A human story.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.",
+      "Where the artwork belongs": "Where the artwork belongs",
+      "Created to live with meaning": "Created to live with meaning",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.",
+      "A distinctive focal point for considered interiors": "A distinctive focus point for considered interiors",
+      "A conversation piece with a message beyond trends": "A conversation piece with a message beyond trends",
+      "A thoughtful digital art choice for personal spaces": "A thoughtful digital art choice for personal spaces",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "This is a digital product. No physical print or frame will be shipped. After purchase, download the files provided on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the files provided.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Choose an artwork that reflects what you value—and let its meaning live with you.",
+      "Get The Hand That Holds Tomorrow ↗": "Get The Hand That Holds Tomorrow ↗",
+      "\\n": "\\n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Awọn oju oriṣiriṣi. Ẹnikan eniyan. Ibaraẹnisọrọ igba pipẹ.",
+      "The story behind the image": "Àwọn àkọlé láti inú àwòrán",
+      "More than decoration. A human story.": "O jú àwọn à",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Iwọ́wọ̀n àti obsidian náà fi ìdáràn ojù kọ̀ǹpútà kan. Ìjádé ọ̀wọ́̀n náà náà jẹ́ àwọn àwọn ààyè tí a ti gbọ́, àwọn à",
+      "Where the artwork belongs": "Ààyè tí àwọn àwòrán-ètò náà kù",
+      "Created to live with meaning": "Tí a fi kọ́ láti gbọ́ nípa ìtumọ̀",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "A ifihan ti o ni igbẹkẹle fun awọn ile ti o wa ni bayii, awọn ile-iṣẹ ti o ni igbẹkẹle, awọn ile-iṣẹ, awọn aaye ipade, ati awọn agbegbe ti o ni ibatan si ibaraẹnisọrọ aṣa ati ibatan eniyan.",
+      "A distinctive focal point for considered interiors": "Àwọn ààyè-iṣẹ́ ìṣàfarawe-ẹ̀yàn fún àwọn àgbègbè inú",
+      "A conversation piece with a message beyond trends": "Àwọn àkọlé àwòrán",
+      "A thoughtful digital art choice for personal spaces": "Àwọn àwọn",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Ó jẹ́ nǹkan díẹ̀lì. Kò ní píríǹtì fúnràn tàbí àwọn fèrèsé tí a fi pamọ́. Lẹ́ẹ̀kaǹ tí o bá ráwọ́lọ́wọ́, gbàwọlé àwọn fáìlì tí a fi pamọ́ sí Gúmroad. Wòye àwọn à",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Yan iṣẹ-ọ̀ṣọ̀ tí o sọ̀rọ̀ ohun tí o fẹ́—ki o si jẹ́ pé itumọ̀ rẹ̀ ní i pọ̀ pẹlú ọ̀rọ̀ rẹ̀.",
+      "Get The Golden Thread of Humanity ↗": "Gba The Golden Thread ti Humanity ↗",
+      "\\n": "\\n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A itumọ ti a fojusi aaye fun awọn ile, awọn ọfiisi, awọn aaye ẹkọ, awọn ile-iṣere, ati awọn aaye nibiti awọn itan eniyan ṣe pataki.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "Gba ROOTS OF TENDERNESS ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A ti ṣe akoso fun awọn yara itura, awọn yara itura, awọn ọfiisi, awọn hoteli boutique, awọn aaye wellness, ati awọn ibi ti a ti ronu.",
+      "Get AURELLE 👑 ↗": "Gba AURELLE 👑 ↗",
+      "\\n": "\\n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "Ìwọ̀n tí a kò lè fi hàn.",
+      "The story behind the image": "Àwọn àkọlé láti inú àwòrán",
+      "More than decoration. A human story.": "O jú àwọn à",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "Àwọn àwọn",
+      "Where the artwork belongs": "Ààyè tí àwọn àwòrán-ètò náà kù",
+      "Created to live with meaning": "Tí a fi kọ́ láti gbọ́ nípa ìtumọ̀",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "A lẹwa focopo fun awọn ile-iṣẹ, awọn ile-iṣẹ ti ara ẹni, awọn agbegbe ti o gba, awọn hoteli, awọn aaye wellness, ati awọn agbegbe ti o wa ni akoko.",
+      "A distinctive focal point for considered interiors": "Àwọn ààyè-iṣẹ́ ìṣàfarawe-ẹ̀yàn fún àwọn àgbègbè inú",
+      "A conversation piece with a message beyond trends": "Àwọn àkọlé àwòrán",
+      "A thoughtful digital art choice for personal spaces": "Àwọn àwọn",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Ó jẹ́ nǹkan díẹ̀lì. Kò ní píríǹtì fúnràn tàbí àwọn fèrèsé tí a fi pamọ́. Lẹ́ẹ̀kaǹ tí o bá ráwọ́lọ́wọ́, gbàwọlé àwọn fáìlì tí a fi pamọ́ sí Gúmroad. Wòye àwọn à",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Yan iṣẹ-ọ̀ṣọ̀ tí o sọ̀rọ̀ ohun tí o fẹ́—ki o si jẹ́ pé itumọ̀ rẹ̀ ní i pọ̀ pẹlú ọ̀rọ̀ rẹ̀.",
+      "Get The Art of Inner Peace ↗": "Gba Ojú-iṣẹ ti Inner Peace ↗",
+      "\\n": "\\n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A ti ṣe akoso fun awọn yara itura, awọn yara itura, awọn ọfiisi, awọn hoteli boutique, awọn aaye wellness, ati awọn ibi ti a ti pinnu.",
+      "Get SERENITY 🤍 ↗": "Gba SERENITY 🤍 ↗",
+      "\\n": "\\n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A itumọ ti a fojusi aaye fun awọn ile, awọn ọfiisi, awọn aaye ẹkọ, awọn ile-iṣere, ati awọn aaye nibiti awọn itan eniyan ṣe pataki.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Gba THE TREE THAT REFUSED TO DIE ↗",
+      "\\n": "\\n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A itumọ ti a fojusi aaye fun awọn ile, awọn ọfiisi, awọn aaye ẹkọ, awọn ile-iṣere, ati awọn aaye nibiti awọn itan eniyan ṣe pataki.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Gba THE LIGHT WE LEAVE EACH OTHER 🕯 ↗",
+      "\\n": "\\n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "Igbagbọ ni a kọ nipasẹ awọn ọwọ pupọ.",
+      "The story behind the image": "Àwọn àkọlé láti inú àwòrán",
+      "More than decoration. A human story.": "O jú àwọn à",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Iṣẹ́ kan níkan ní i ṣé itumọ̀ tí òyé, ifẹ́, ìdájọ́, tabí ìgbàyégbàyé. Ọmọ̀kunrin ní itumọ̀ tí òyé kan tí ìfẹ́ rẹ̀ ní ìfẹ́ lati gbá ìgbàyé atí ìgbẹ́rú. Nígbà kan, awọń ọwọ́ jẹ́ ìpàlẹ̀—atí ìfẹ́ jẹ́ ohuǹkan tí a fi kọ̀ fun ara wa.",
+      "Where the artwork belongs": "Ààyè tí àwọn àwòrán-ètò náà kù",
+      "Created to live with meaning": "Tí a fi kọ́ láti gbọ́ nípa ìtumọ̀",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "A sọ ọrọ ti o ni itumọ fun awọn ile-iwe, awọn ile-iwe, awọn iwe-iranti, awọn ọfiisi, awọn ile-ẹkọ giga, ati awọn aaye ti o ṣe ayẹyẹ ẹkọ ati ibatan eniyan.",
+      "A distinctive focal point for considered interiors": "Àwọn ààyè-iṣẹ́ ìṣàfarawe-ẹ̀yàn fún àwọn àgbègbè inú",
+      "A conversation piece with a message beyond trends": "Àwọn àkọlé àwòrán",
+      "A thoughtful digital art choice for personal spaces": "Àwọn àwọn",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Ó jẹ́ nǹkan díẹ̀lì. Kò ní píríǹtì fúnràn tàbí àwọn fèrèsé tí a fi pamọ́. Lẹ́ẹ̀kaǹ tí o bá ráwọ́lọ́wọ́, gbàwọlé àwọn fáìlì tí a fi pamọ́ sí Gúmroad. Wòye àwọn à",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Yan iṣẹ-ọ̀ṣọ̀ tí o sọ̀rọ̀ ohun tí o fẹ́—ki o si jẹ́ pé itumọ̀ rẹ̀ ní i pọ̀ pẹlú ọ̀rọ̀ rẹ̀.",
+      "Get A Stairway of Hands ↗": "Gba A Ìjádè tí Àwọ̀ ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Ohun ti a n daabobo lojoojumọ di ọjọ iwaju wọn.",
+      "The story behind the image": "Àwọn àkọlé láti inú àwòrán",
+      "More than decoration. A human story.": "O jú àwọn à",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "Òlàyè tí ò ní irirì; tí ò ní ẹ̀yà ní irirì. Nínú wọn ní àṣẹ̀: láti ̀pàrà ohun tí ò ǹpàrà ìrànwọ́ ẹ̀yà wà láti fi pẹ̀lú ọjọ́ iwajù kan tí ò lè gbà. Ò jẹ́ ẹ̀yà tí a sọ̀rọ̀ nípá ẹ̀yà.",
+      "Where the artwork belongs": "Ààyè tí àwọn àwòrán-ètò náà kù",
+      "Created to live with meaning": "Tí a fi kọ́ láti gbọ́ nípa ìtumọ̀",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "A piece thoughtful fun awọn ile-iṣẹ ẹbi, awọn ẹkọ, awọn ọfiisi, awọn aaye ẹkọ, ati ẹnikẹni ti o ṣe akiyesi iranti, ẹbi, ati ọjọ iwaju.",
+      "A distinctive focal point for considered interiors": "Àwọn ààyè-iṣẹ́ ìṣàfarawe-ẹ̀yàn fún àwọn àgbègbè inú",
+      "A conversation piece with a message beyond trends": "Àwọn àkọlé àwòrán",
+      "A thoughtful digital art choice for personal spaces": "Àwọn àwọn",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Ó jẹ́ nǹkan díẹ̀lì. Kò ní píríǹtì fúnràn tàbí àwọn fèrèsé tí a fi pamọ́. Lẹ́ẹ̀kaǹ tí o bá ráwọ́lọ́wọ́, gbàwọlé àwọn fáìlì tí a fi pamọ́ sí Gúmroad. Wòye àwọn à",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Yan iṣẹ-ọ̀ṣọ̀ tí o sọ̀rọ̀ ohun tí o fẹ́—ki o si jẹ́ pé itumọ̀ rẹ̀ ní i pọ̀ pẹlú ọ̀rọ̀ rẹ̀.",
+      "Get The Legacy of Generations ↗": "Gba Ojú-iṣẹ̀ Ìgbàpadà Ìgbàpadà",
+      "\\n": "\\n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A ti ṣe akoso fun awọn yara itura, awọn yara itura, awọn ọfiisi, awọn hoteli boutique, awọn aaye wellness, ati awọn ibi ti a ti ronu.",
+      "Get The Mediterranean Muse ↗": "Gba The Mediterranean Muse ↗",
+      "\\n": "\\n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "One Earth. One Humanity. One Future.",
+      "The story behind the image": "Àwọn àkọlé láti inú àwòrán",
+      "More than decoration. A human story.": "O jú àwọn à",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "Àwọn ọwọ́ tí o tí aṣọ̀ ilẹ̀ kọ̀ǹpútà náà jẹ́ aimọye eniyan ti gbogbo àwọn ọ̀run-òyè atí ìgbàlẹ̀. Àwọn oju-ìlẹ̀ tí a típà kọ̀ǹpútà náà sọ̀rọ̀ nípa ohun tí a tí wa nípá ìjáde; oju-ìlẹ̀ àwọ̀yé náà nípa ohun tí a lè ̀pà. Àkọlé náà kò jẹ́ ìpàlẹ̀. O jẹ́ ìpàpọ̀ ìṣẹ̀dà, tí a fi hàn.",
+      "Where the artwork belongs": "Ààyè tí àwọn àwòrán-ètò náà kù",
+      "Created to live with meaning": "Tí a fi kọ́ láti gbọ́ nípa ìtumọ̀",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "A ifẹ-ifẹ-",
+      "A distinctive focal point for considered interiors": "Àwọn ààyè-iṣẹ́ ìṣàfarawe-ẹ̀yàn fún àwọn àgbègbè inú",
+      "A conversation piece with a message beyond trends": "Àwọn àkọlé àwòrán",
+      "A thoughtful digital art choice for personal spaces": "Àwọn àwọn",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Ó jẹ́ nǹkan díẹ̀lì. Kò ní píríǹtì fúnràn tàbí àwọn fèrèsé tí a fi pamọ́. Lẹ́ẹ̀kaǹ tí o bá ráwọ́lọ́wọ́, gbàwọlé àwọn fáìlì tí a fi pamọ́ sí Gúmroad. Wòye àwọn à",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Yan iṣẹ-ọ̀ṣọ̀ tí o sọ̀rọ̀ ohun tí o fẹ́—ki o si jẹ́ pé itumọ̀ rẹ̀ ní i pọ̀ pẹlú ọ̀rọ̀ rẹ̀.",
+      "Get Last Cry of Earth ↗": "Gba Oju-iwe",
+      "\\n": "\\n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Imudojuiwọn ti o yatọ si awọn ile, awọn ile-ẹkọ ti ara ẹni, awọn ọfiisi, awọn ile-iṣere, awọn ile-iṣọ, awọn hoteli, ati awọn aaye aṣa.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Gba THE GOLDEN GAZE 👁 ↗",
+      "\\n": "\\n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Imudojuiwọn ti o yatọ si awọn ile, awọn ile-ẹkọ ti ara ẹni, awọn ọfiisi, awọn ile-iṣere, awọn ile-iṣọ, awọn hoteli, ati awọn aaye aṣa.",
+      "Get The Queen Of The Nile 👑 ↗": "Gba The Queen Of The Nile 👑 ↗",
+      "\\n": "\\n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Imudojuiwọn ti o yatọ si awọn ile, awọn ile-ẹkọ ti ara ẹni, awọn ọfiisi, awọn ile-iṣere, awọn ile-iṣọ, awọn hoteli, ati awọn aaye aṣa.",
+      "Get The Coptic Soul of Egypt ↗": "Gba The Coptic Soul of Egypt ↗",
+      "\\n": "\\n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE Ìgbà iyẹ̀wù tí a ṣè nípa àwọn ẹ̀yà tí kò lè pàṣẹ́ tí Egypt̀ fi n ṣé, ibi tí ẹ̀yà tí kò lè pàṣẹ́ tí a fi n ṣé nípá ìmọ̀ tí a fi n ṣé nípá ẹ̀yà tí kò lè pàṣẹ́ tí Nilè fi n ṣé.",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Imudojuiwọn ti o yatọ si awọn ile, awọn ile-ẹkọ ti ara ẹni, awọn ọfiisi, awọn ile-iṣere, awọn ile-iṣọ, awọn hoteli, ati awọn aaye aṣa.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "Gba THE NILE'S ETERNAL GRACE ↗",
+      "\\n": "\\n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Awọn ibatan diẹ ni a rii nipasẹ ẹnu, kii ṣe awọn ọrọ ti a sọ. Ṣayẹyẹ ibatan ti o yatọ...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A tọka si aaye pataki fun awọn ile, awọn ọfiisi, awọn aaye ẹkọ, awọn ile-iwe, ati awọn aaye nibiti awọn itan eniyan ṣe pataki.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Gba A BOND BEYOND WORDS The Beauty of Unconditional Love ↗",
+      "\\n": "\\n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Irin ajo lọ si ibi ti o mọ nipasẹ akojọ ti awọn iṣẹ-iṣe oni-nọmba mẹrin ti a ṣe nipasẹ cosmic...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A ti ṣe akoso fun awọn yara itura, awọn yara itura, awọn ọfiisi, awọn hoteli boutique, awọn aaye wellness, ati awọn ibi ti a ti ronu.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Gba GLOBAL ART & IMAGINATION ↗",
+      "\\n": "\\n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Fi ifẹ́ tí o tí n bọ̀ tí o tí n bọ̀ tí o tì n bọ̀ tí o tì n bọ̀ tí o tì n bọ̀ nínú ẹ̀yàn rẹ̀ pẹlú Eternal Egypt,...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Imudojuiwọn ti o yatọ si awọn ile, awọn ile-ẹkọ ti ara ẹni, awọn ọfiisi, awọn ile-iṣere, awọn ile-iṣọ, awọn hoteli, ati awọn aaye aṣa.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Gba ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗",
+      "\\n": "\\n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "Ninú iṣẹ́ kọ̀ǹpútà tí a tì sọ̀rọ̀, àkókò kò jẹ́ aagó tí a fi gbọ́dọ̀ kọ́ọ̀kan. THE CLOCKMAKER'S DREAM tí n pàtó àwọn àgbèwọlé, àwọn àgbèwọlé tí a kò lè lò...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A ti ṣe akoso fun awọn yara itura, awọn yara itura, awọn ọfiisi, awọn hoteli boutique, awọn aaye wellness, ati awọn ibi ti a ti ronu.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Gba THE CLOCKMAKER'S DREAM ↗",
+      "\\n": "\\n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
+}

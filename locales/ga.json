@@ -328,5 +328,382 @@
     "artworks": "art work",
     "choose": "Roghnaigh teanga"
   },
-  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f"
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "landing_ui": {
+    "← Return to the gallery": "← Fill ar an gailearaí",
+    "Language": "Teanga na Gaeilge",
+    "An original digital artwork from HALL OF GREATNESS": "saothar ealaíne bunaidh digiteach ó HALL de GREATNESS",
+    "A curated collection of meaningful digital artworks": "Bailiúchán leasaithe d'oibreacha ealaíne digiteacha bríoch",
+    "Explore & Get the Artwork ↗": "Explore &amp; Faigh an Artwork .",
+    "Secure checkout and digital delivery on Gumroad.": "Seiceáil slán agus seachadadh digiteach ar Gumroad.",
+    "Artwork presentation": "Cur i láthair Artwork",
+    "Imagine it in a refined frame": "Samhlaigh sé i bhfráma scagtha",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "Cuidíonn an dara cur i láthair leat pictiúr a dhéanamh ar an saothar ealaíne mar taispeáint frámaithe, agus a chion bunaidh a chaomhnú.",
+    "Digital download": "íoslódáil digiteach",
+    "Access your files after checkout": "Rochtain a fháil ar do chuid comhad tar éis Seiceáil",
+    "Print your way": "Priontáil do bhealach",
+    "Choose a size suited to your space": "Roghnaigh méid a oireann do do spás",
+    "Made to display": "Déanta a thaispeáint",
+    "For homes, studios, and meaningful spaces": "I gcás tithe, stiúideonna, agus spásanna brí",
+    "The meaning behind the artwork": "An bhrí taobh thiar den saothar ealaíne",
+    "More than decoration. A feeling that stays.": "Níos mó ná maisiú. A mothú go bhfanann.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Cruthaithe do dhaoine ar mian leo a dtimpeallacht a léiriú scéal, cuimhne, luach, nó tuiscint ar áilleacht. Lig an obair seo a bheith mar chuid den atmaisféar a chruthaíonn tú agus an mothú is mian leat do spás a shealbhú.",
+    "Inside this collection": "Taobh istigh den bhailiúchán",
+    "One collection. Many stories.": "Bailiúchán amháin. Scéalta go leor.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Déan iniúchadh ar na saothair ealaíne aonair atá san áireamh sa bhailiúchán leasaithe seo. Tá gach píosa a charachtar féin, agus le chéile a chruthú siad turas amhairc níos saibhre.",
+    "Complete artwork story": "Scéal ealaíne iomlán",
+    "Full product description": "Cur síos táirge iomlán",
+    "What is included": "Cad atá san áireamh",
+    "Product specifications": "Sonraíochtaí Táirge",
+    "Where it belongs": "Sa chás go mbaineann sé",
+    "Art that finds its place": "Ealaín a fhaigheann a áit",
+    "Before you purchase": "Sula gceannaíonn tú",
+    "Digital download details": "Sonraí íoslódála digiteach",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Is táirge digiteach é seo. Ní dhéanfar aon saothar ealaíne nó fráma fisiciúil a shipped. Tar éis a cheannach, soláthraíonn Gumroad rochtain ar na comhaid san áireamh leis an táirge seo. Déan athbhreithniú ar na sonraíochtaí comhad a sholáthraítear agus ceadúnas roimh phriontáil nó ag baint úsáide as an saothar ealaíne.",
+    "From download to display": "Ó íoslódáil a thaispeáint",
+    "Make the artwork part of your space": "Déan an chuid ealaíne de do spás",
+    "01 · Purchase": "Clár na dToghthóirí",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Comhlánaigh do Seiceáil slán ar Gumroad. Tá do cheannach le haghaidh táirge digiteach.",
+    "02 · Download": "02 – Íoslódáil",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Rochtain a fháil ar na comhaid a sholáthraítear leis an táirge seo trí Gumroad agus athbhreithniú a dhéanamh ar na sonraíochtaí san áireamh.",
+    "03 · Print": "03 - Priontáil",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Roghnaigh méid cló a chaomhnaíonn cion bunaidh an saothar ealaíne. Is féidir le gairmiúil cló áitiúil cabhrú leis na gnéithe a mheaitseáil leis an gcomhad a sholáthraítear.",
+    "Please note:": "Tabhair faoi deara:",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Níl aon saothar ealaíne nó fráma fisiciúil shipped. formáidí comhaid ar fáil, réiteach, comhréirí, agus téarmaí úsáide iad siúd atá luaite sa íoslódáil táirge agus san áireamh ceadúnas.",
+    "Let your space tell a story.": "Lig do spás insint scéal.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Roghnaigh ealaín a léiríonn cad a luach tú-agus lig a bhrí beo in éineacht leat.",
+    "Get": "Faigh amach níos mó",
+    "Art with a Soul. A Message Without Borders.": "Ealaín le Soul. Teachtaireacht Gan Teorainneacha.",
+    "Digital artwork · Instant download through Gumroad": "Obair ealaíne digiteach · íoslódáil mheandarach trí Gumroad",
+    "Privacy": "Príobháideacht",
+    "Terms": "Téarmaí agus Coinníollacha",
+    "Contact": "Déan teagmháil linn",
+    "Gumroad store ↗": "siopa Gumroad †",
+    "· Digital download": "· Íoslódáil digiteach"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Comhaid san áireamh",
+    "product_type": "cineál táirge",
+    "delivery": "Seachadadh",
+    "physical_item": "Mír Fisiciúil",
+    "printing": "Priontáil",
+    "usage": "Uisce agus Séarachas",
+    "bundle_item_count": "Míreanna i bundle"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Bailiúchán ealaíne comhordaithe do thithe, oifigí, óstáin, dánlanna, limistéir fáiltithe, agus taobh istigh coimeádta.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Faigh THE ART OF ELEGANCE & SERENITY Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Bailiúchán ealaíne comhordaithe do thithe, oifigí, óstáin, dánlanna, limistéir fáiltithe, agus taobh istigh coimeádta.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Faigh EGYPTIAN & COPTIC HERITAGE Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "A BOND BEYOND WORDS An áilleacht de ghrá Unconditional",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Bailiúchán ealaíne comhordaithe do thithe, oifigí, óstáin, dánlanna, limistéir fáiltithe, agus taobh istigh coimeádta.",
+      "Get THE HUMANITY LEGACY ↗": "Faigh THE HUMANITY LEGACY Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent scagtha do sheomraí maireachtála, seomraí codlata, oifigí, óstáin siopa, spásanna folláine, agus taobh istigh a mheas.",
+      "Get THE ART OF STILLNESS ↗": "Faigh THE ART OF STILLNESS agus déanann",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent scagtha do sheomraí maireachtála, seomraí codlata, oifigí, óstáin siopa, spásanna folláine, agus taobh istigh a mheas.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Faigh GEOMETRY OF ELEGANCE Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Ráiteas sainráiteach do thithe, stiúideonna cruthaitheacha, oifigí, spásanna fáilteachais, agus taobh istigh múnlaithe ag samhlaíocht.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Faigh CITIES OF TOMORROW   Where Innovation Meets Imagination Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Ráiteas sainráiteach do thithe, stiúideonna cruthaitheacha, oifigí, spásanna fáilteachais, agus taobh istigh múnlaithe ag samhlaíocht.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Faigh NATURE'S MAJESTY   The Timeless Beauty of Nature Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent scagtha do sheomraí maireachtála, seomraí codlata, oifigí, óstáin siopa, spásanna folláine, agus taobh istigh a mheas.",
+      "Get MEDITERRANEAN DREAMS ↗": "Faigh MEDITERRANEAN DREAMS Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent scagtha do sheomraí maireachtála, seomraí codlata, oifigí, óstáin siopa, spásanna folláine, agus taobh istigh a mheas.",
+      "Get SILENT HORIZONS . ↗": "Faigh SILENT HORIZONS . Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent scagtha do sheomraí maireachtála, seomraí codlata, oifigí, óstáin siopa, spásanna folláine, agus taobh istigh a mheas.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Faigh GOLDEN FLOW   The Art of Timeless Luxury Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Ráiteas sainráiteach do thithe, stiúideonna cruthaitheacha, oifigí, spásanna fáilteachais, agus taobh istigh múnlaithe ag samhlaíocht.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Faigh BEYOND THE UNIVERSE 🌏 Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Pointe fócasach bríoch do thithe, oifigí, spásanna oideachais, dánlanna, agus áiteanna ina ábhar scéalta daonna.",
+      "Get A Shelter of Love ♥ ↗": "Faigh A Shelter of Love ♥ Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent scagtha do sheomraí maireachtála, seomraí codlata, oifigí, óstáin siopa, spásanna folláine, agus taobh istigh a mheas.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Faigh The Celestial Garden – A Dance Beneath the Moon Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent scagtha do sheomraí maireachtála, seomraí codlata, oifigí, óstáin siopa, spásanna folláine, agus taobh istigh a mheas.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Faigh THE GOLDEN VEIL OF SERENITY Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "One phláinéid. Freagracht amháin. Féidearthachtaí countless.",
+      "The story behind the image": "An scéal taobh thiar den íomhá",
+      "More than decoration. A human story.": "Níos mó ná maisiú. Scéal an duine.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "Léiríonn an lámh ár gcumas chun gníomhú. Seasann na síológa don saol nua leochaileach; léiríonn na féileacáin claochlú. Meabhraíonn an gcodarsnacht idir talamh damáiste agus an gealltanas athnuachana dúinn go bhfuil tionchar amárach ag an méid a roghnaíonn muid a chosaint inniu.",
+      "Where the artwork belongs": "Sa chás go mbaineann an saothar ealaíne",
+      "Created to live with meaning": "Cruthaithe chun cónaí le brí",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Ráiteas buailte do thithe, oifigí, scoileanna, eagraíochtaí comhshaoil, limistéir fáiltithe, agus spásanna cruthaitheacha.",
+      "A distinctive focal point for considered interiors": "Pointe fócasach sainiúil do taobh istigh a mheastar",
+      "A conversation piece with a message beyond trends": "Tá píosa comhrá le teachtaireacht níos faide ná treochtaí",
+      "A thoughtful digital art choice for personal spaces": "Rogha ealaíne digiteach mhachnamhach do spásanna pearsanta",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Is táirge digiteach é seo. Ní sheolfar aon chló ná fráma fisiciúil. Tar éis a cheannach, íoslódáil na comhaid a sholáthraítear ar Gumroad. Athbhreithniú a dhéanamh ar na sonraíochtaí comhad san áireamh, treoir a phriontáil, agus ceadúnas úsáide pearsanta roimh phriontáil. Roghnaigh méid cló agus seirbhís oiriúnach do na comhaid a sholáthraítear.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Roghnaigh saothar ealaíne a léiríonn cad a luach tú-agus lig a bhrí beo in éineacht leat.",
+      "Get The Hand That Holds Tomorrow ↗": "Faigh an Láimh Go Holds Tomorrow.",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Aghaidheanna éagsúla. daonnacht amháin. Nasc síoraí.",
+      "The story behind the image": "An scéal taobh thiar den íomhá",
+      "More than decoration. A human story.": "Níos mó ná maisiú. Scéal an duine.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Eabhair agus obsidian chaomhnú an uathúlacht de gach duine. Siombal an snáithe órga mothúcháin roinnte, tá súil agam, agus an fonn a chóireáil le dínit. Ní Unity gá sameness; Tosaíonn sé nuair a a aithnímid a chéile daonnacht.",
+      "Where the artwork belongs": "Sa chás go mbaineann an saothar ealaíne",
+      "Created to live with meaning": "Cruthaithe chun cónaí le brí",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Ráiteas scagtha do thithe comhaimseartha, oifigí feidhmiúcháin, dánlanna, spásanna fáiltithe, agus taobh istigh a luach comhrá cultúrtha agus ceangal an duine.",
+      "A distinctive focal point for considered interiors": "Pointe fócasach sainiúil do taobh istigh a mheastar",
+      "A conversation piece with a message beyond trends": "Tá píosa comhrá le teachtaireacht níos faide ná treochtaí",
+      "A thoughtful digital art choice for personal spaces": "Rogha ealaíne digiteach mhachnamhach do spásanna pearsanta",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Is táirge digiteach é seo. Ní sheolfar aon chló ná fráma fisiciúil. Tar éis a cheannach, íoslódáil na comhaid a sholáthraítear ar Gumroad. Athbhreithniú a dhéanamh ar na sonraíochtaí comhad san áireamh, treoir a phriontáil, agus ceadúnas úsáide pearsanta roimh phriontáil. Roghnaigh méid cló agus seirbhís oiriúnach do na comhaid a sholáthraítear.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Roghnaigh saothar ealaíne a léiríonn cad a luach tú-agus lig a bhrí beo in éineacht leat.",
+      "Get The Golden Thread of Humanity ↗": "Faigh an Snáithe Órga na Daonnachta .",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Pointe fócasach bríoch do thithe, oifigí, spásanna oideachais, dánlanna, agus áiteanna ina ábhar scéalta daonna.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "Faigh ROOTS OF TENDERNESS ♥ Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent scagtha do sheomraí maireachtála, seomraí codlata, oifigí, óstáin siopa, spásanna folláine, agus taobh istigh a mheas.",
+      "Get AURELLE 👑 ↗": "Faigh AURELLE 👑 Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "An áilleacht stillness. An neart laistigh.",
+      "The story behind the image": "An scéal taobh thiar den íomhá",
+      "More than decoration. A human story.": "Níos mó ná maisiú. Scéal an duine.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "Éiríonn figiúr daonna comhdhéanta siombail féin-awareness. Tugann solas Golden iomláine le fios; sonraí luibheolaíocha leid ar athnuachan. Meabhraíonn an obair dúinn nach gá neart a bheith ard-agus is féidir go calma a bheith i bhfoirm áilleacht.",
+      "Where the artwork belongs": "Sa chás go mbaineann an saothar ealaíne",
+      "Created to live with meaning": "Cruthaithe chun cónaí le brí",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "Pointe fócasach galánta do sheomraí maireachtála, oifigí príobháideacha, limistéir fáiltithe, óstáin, spásanna folláine, agus taobh istigh comhaimseartha.",
+      "A distinctive focal point for considered interiors": "Pointe fócasach sainiúil do taobh istigh a mheastar",
+      "A conversation piece with a message beyond trends": "Tá píosa comhrá le teachtaireacht níos faide ná treochtaí",
+      "A thoughtful digital art choice for personal spaces": "Rogha ealaíne digiteach mhachnamhach do spásanna pearsanta",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Is táirge digiteach é seo. Ní sheolfar aon chló ná fráma fisiciúil. Tar éis a cheannach, íoslódáil na comhaid a sholáthraítear ar Gumroad. Athbhreithniú a dhéanamh ar na sonraíochtaí comhad san áireamh, treoir a phriontáil, agus ceadúnas úsáide pearsanta roimh phriontáil. Roghnaigh méid cló agus seirbhís oiriúnach do na comhaid a sholáthraítear.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Roghnaigh saothar ealaíne a léiríonn cad a luach tú-agus lig a bhrí beo in éineacht leat.",
+      "Get The Art of Inner Peace ↗": "Faigh an Ealaín na Síochána Inner .",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent scagtha do sheomraí maireachtála, seomraí codlata, oifigí, óstáin siopa, spásanna folláine, agus taobh istigh a mheas.",
+      "Get SERENITY 🤍 ↗": "Faigh SERENITY 🤍 Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Pointe fócasach bríoch do thithe, oifigí, spásanna oideachais, dánlanna, agus áiteanna ina ábhar scéalta daonna.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Faigh THE TREE THAT REFUSED TO DIE Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Pointe fócasach bríoch do thithe, oifigí, spásanna oideachais, dánlanna, agus áiteanna ina ábhar scéalta daonna.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Faigh THE LIGHT WE LEAVE EACH OTHER 🕯 Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "Tá an todhchaí tógtha ag go leor lámha.",
+      "The story behind the image": "An scéal taobh thiar den íomhá",
+      "More than decoration. A human story.": "Níos mó ná maisiú. Scéal an duine.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Léiríonn gach lámh saol, cineáltas, íobairt, nó deis ar fáil. Seasann an leanbh do gach duine óg ar gá spreagadh agus tacaíocht a thabhairt dá aisling. Le chéile, na lámha a bheith ina staighre-agus tá súil rud éigin a thógáil againn ar a chéile.",
+      "Where the artwork belongs": "Sa chás go mbaineann an saothar ealaíne",
+      "Created to live with meaning": "Cruthaithe chun cónaí le brí",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Ráiteas bríoch do thithe teaghlaigh, scoileanna, leabharlanna, oifigí, stiúideonna, agus spásanna a cheiliúradh oideachas agus ceangal an duine.",
+      "A distinctive focal point for considered interiors": "Pointe fócasach sainiúil do taobh istigh a mheastar",
+      "A conversation piece with a message beyond trends": "Tá píosa comhrá le teachtaireacht níos faide ná treochtaí",
+      "A thoughtful digital art choice for personal spaces": "Rogha ealaíne digiteach mhachnamhach do spásanna pearsanta",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Is táirge digiteach é seo. Ní sheolfar aon chló ná fráma fisiciúil. Tar éis a cheannach, íoslódáil na comhaid a sholáthraítear ar Gumroad. Athbhreithniú a dhéanamh ar na sonraíochtaí comhad san áireamh, treoir a phriontáil, agus ceadúnas úsáide pearsanta roimh phriontáil. Roghnaigh méid cló agus seirbhís oiriúnach do na comhaid a sholáthraítear.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Roghnaigh saothar ealaíne a léiríonn cad a luach tú-agus lig a bhrí beo in éineacht leat.",
+      "Get A Stairway of Hands ↗": "Faigh A Stair na Lámha .",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Cad a chosnaíonn muid inniu thiocfaidh chun bheith a gcuid amárach.",
+      "The story behind the image": "An scéal taobh thiar den íomhá",
+      "More than decoration. A human story.": "Níos mó ná maisiú. Scéal an duine.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "Déanann an ghlúin níos sine taithí; déanann an óige deis. Idir iad luíonn gealltanas: a chaomhnú cad a chothaíonn saol agus pas a fháil amach anseo fiú iad siúd a oidhreacht é. Tá sé seo grá in iúl mar fhreagracht.",
+      "Where the artwork belongs": "Sa chás go mbaineann an saothar ealaíne",
+      "Created to live with meaning": "Cruthaithe chun cónaí le brí",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "Tá píosa mhachnamhach do thithe teaghlaigh, staidéir, oifigí, spásanna oideachais, agus aon duine a luachanna cuimhne, teaghlaigh, agus an todhchaí.",
+      "A distinctive focal point for considered interiors": "Pointe fócasach sainiúil do taobh istigh a mheastar",
+      "A conversation piece with a message beyond trends": "Tá píosa comhrá le teachtaireacht níos faide ná treochtaí",
+      "A thoughtful digital art choice for personal spaces": "Rogha ealaíne digiteach mhachnamhach do spásanna pearsanta",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Is táirge digiteach é seo. Ní sheolfar aon chló ná fráma fisiciúil. Tar éis a cheannach, íoslódáil na comhaid a sholáthraítear ar Gumroad. Athbhreithniú a dhéanamh ar na sonraíochtaí comhad san áireamh, treoir a phriontáil, agus ceadúnas úsáide pearsanta roimh phriontáil. Roghnaigh méid cló agus seirbhís oiriúnach do na comhaid a sholáthraítear.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Roghnaigh saothar ealaíne a léiríonn cad a luach tú-agus lig a bhrí beo in éineacht leat.",
+      "Get The Legacy of Generations ↗": "Faigh an Glúine na Giniúint †",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent scagtha do sheomraí maireachtála, seomraí codlata, oifigí, óstáin siopa, spásanna folláine, agus taobh istigh a mheas.",
+      "Get The Mediterranean Muse ↗": "Faigh The Mediterranean Muse Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "One Earth. Daonnacht amháin. Todhchaí amháin.",
+      "The story behind the image": "An scéal taobh thiar den íomhá",
+      "More than decoration. A human story.": "Níos mó ná maisiú. Scéal an duine.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "Léiríonn na lámha a bhaineann leis an domhan daoine de gach aois agus cúlra. Labhraíonn an tírdhreach briste ar cad atá i mbaol; na spéire glas agus pointe éadrom órga i dtreo cad is féidir linn a chosaint go fóill. Níl an teachtaireacht éadóchas. Tá sé freagracht roinnte, déanta le feiceáil.",
+      "Where the artwork belongs": "Sa chás go mbaineann an saothar ealaíne",
+      "Created to live with meaning": "Cruthaithe chun cónaí le brí",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "Pointe fócasach mhachnamhach do thithe, oifigí, spásanna oideachais, dánlanna, agus timpeallachtaí atá dírithe ar inbhuanaitheacht.",
+      "A distinctive focal point for considered interiors": "Pointe fócasach sainiúil do taobh istigh a mheastar",
+      "A conversation piece with a message beyond trends": "Tá píosa comhrá le teachtaireacht níos faide ná treochtaí",
+      "A thoughtful digital art choice for personal spaces": "Rogha ealaíne digiteach mhachnamhach do spásanna pearsanta",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Is táirge digiteach é seo. Ní sheolfar aon chló ná fráma fisiciúil. Tar éis a cheannach, íoslódáil na comhaid a sholáthraítear ar Gumroad. Athbhreithniú a dhéanamh ar na sonraíochtaí comhad san áireamh, treoir a phriontáil, agus ceadúnas úsáide pearsanta roimh phriontáil. Roghnaigh méid cló agus seirbhís oiriúnach do na comhaid a sholáthraítear.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Roghnaigh saothar ealaíne a léiríonn cad a luach tú-agus lig a bhrí beo in éineacht leat.",
+      "Get Last Cry of Earth ↗": "Faigh caoin Last na Cruinne .",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Chomh maith ar leith le tithe, staidéir phríobháideacha, oifigí, dánlanna, músaeim, óstáin, agus spásanna cultúrtha.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Faigh THE GOLDEN GAZE 👁 Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Chomh maith ar leith le tithe, staidéir phríobháideacha, oifigí, dánlanna, músaeim, óstáin, agus spásanna cultúrtha.",
+      "Get The Queen Of The Nile 👑 ↗": "Faigh The Queen Of The Nile 👑 Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Chomh maith ar leith le tithe, staidéir phríobháideacha, oifigí, dánlanna, músaeim, óstáin, agus spásanna cultúrtha.",
+      "Get The Coptic Soul of Egypt ↗": "Faigh The Coptic Soul of Egypt Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "ZXQATITLE29QZ Ceiliúradh áilleacht timeless na hÉigipte, áit a gcomhlíonann an dínit ciúin de láithreacht regal an rithim síoraí na Níle. Órga...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Chomh maith ar leith le tithe, staidéir phríobháideacha, oifigí, dánlanna, músaeim, óstáin, agus spásanna cultúrtha.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "Faigh THE NILE'S ETERNAL GRACE Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Tá roinnt Cairdeas Felt ag an Chroí, Ní Mínigh ag Focail. Ceiliúradh an nasc urghnách...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Pointe fócasach bríoch do thithe, oifigí, spásanna oideachais, dánlanna, agus áiteanna ina ábhar scéalta daonna.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Faigh A BOND BEYOND WORDS The Beauty of Unconditional Love Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION - ARTWORKS SEVEN, LIMITLESS AN DOMHAN Taisteal thar an eolas trí bhailiúchán de sheacht n-oibreacha ealaíne digiteacha spreagtha ag Cosmaí...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent scagtha do sheomraí maireachtála, seomraí codlata, oifigí, óstáin siopa, spásanna folláine, agus taobh istigh a mheas.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Faigh GLOBAL ART & IMAGINATION Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "An bhfuil a fhios agat na buntáistí a bhaineann... Tabhair an grandeur enduring na hÉigipte ársa isteach i do thimpeallacht le Éigipt Eternal, a...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Chomh maith ar leith le tithe, staidéir phríobháideacha, oifigí, dánlanna, músaeim, óstáin, agus spásanna cultúrtha.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Faigh ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "Inside ceardlann shamhlú, nach bhfuil am a thomhas ach dealbhaithe. THE CLOCKMAKER'S DREAM transforms giaranna, meicníochtaí neamhaí, agus ionstraimí dodhéanta...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent scagtha do sheomraí maireachtála, seomraí codlata, oifigí, óstáin siopa, spásanna folláine, agus taobh istigh a mheas.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Faigh THE CLOCKMAKER'S DREAM Déanfaidh",
+      "\\n": "Táirgí gaolmhara",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
 }

@@ -328,5 +328,382 @@
     "artworks": "Έργα τέχνης",
     "choose": "Επιλογή γλώσσας"
   },
-  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f"
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "landing_ui": {
+    "← Return to the gallery": "← Επιστροφή στη γκαλερί",
+    "Language": "Γλώσσα",
+    "An original digital artwork from HALL OF GREATNESS": "Ένα πρωτότυπο ψηφιακό έργο από το HALL ΤΗΣ ΜΕΓΑΛΕΙΟΤΗΣ",
+    "A curated collection of meaningful digital artworks": "Μια συλλογή από ψηφιακά έργα τέχνης με νόημα",
+    "Explore & Get the Artwork ↗": "Εξερευνήστε & αποκτήστε το έργο τέχνης ↗",
+    "Secure checkout and digital delivery on Gumroad.": "Ασφαλής checkout και ψηφιακή παράδοση στο Gumroad.",
+    "Artwork presentation": "Παρουσίαση έργων τέχνης",
+    "Imagine it in a refined frame": "Φανταστείτε το σε ένα εκλεπτυσμένο πλαίσιο",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "Μια δεύτερη παρουσίαση σας βοηθά να απεικονίσετε το έργο τέχνης ως μια πλαισιωμένη οθόνη, διατηρώντας παράλληλα τις αρχικές αναλογίες του.",
+    "Digital download": "Ψηφιακή λήψη",
+    "Access your files after checkout": "Πρόσβαση στα αρχεία σας μετά το checkout",
+    "Print your way": "Εκτυπώστε το δρόμο σας",
+    "Choose a size suited to your space": "Επιλέξτε ένα μέγεθος κατάλληλο για το χώρο σας",
+    "Made to display": "Φτιαγμένο για εμφάνιση",
+    "For homes, studios, and meaningful spaces": "Για σπίτια, στούντιο και χώρους με νόημα",
+    "The meaning behind the artwork": "Το νόημα πίσω από το έργο τέχνης",
+    "More than decoration. A feeling that stays.": "Περισσότερο από διακόσμηση. Ένα συναίσθημα που μένει.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Δημιουργήθηκε για ανθρώπους που θέλουν το περιβάλλον τους να αντανακλά μια ιστορία, μια ανάμνηση, μια αξία, ή μια αίσθηση ομορφιάς. Αφήστε αυτή τη δουλειά να γίνει μέρος της ατμόσφαιρας που δημιουργείτε και της αίσθησης που θέλετε να κρατήσει ο χώρος σας.",
+    "Inside this collection": "Μέσα σε αυτή τη συλλογή",
+    "One collection. Many stories.": "Μια συλλογή. Πολλές ιστορίες.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Εξερευνήστε τα επιμέρους έργα τέχνης που περιλαμβάνονται σε αυτή τη συλλογή επιμέλεια. Κάθε κομμάτι έχει το δικό του χαρακτήρα, ενώ μαζί δημιουργούν ένα πλουσιότερο οπτικό ταξίδι.",
+    "Complete artwork story": "Πλήρης ιστορία έργων τέχνης",
+    "Full product description": "Πλήρης περιγραφή του προϊόντος",
+    "What is included": "Τι περιλαμβάνεται",
+    "Product specifications": "Προδιαγραφές προϊόντων",
+    "Where it belongs": "Όπου ανήκει",
+    "Art that finds its place": "Τέχνη που βρίσκει τη θέση της",
+    "Before you purchase": "Πριν αγοράσετε",
+    "Digital download details": "Ψηφιακές λεπτομέρειες λήψης",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Αυτό είναι ένα ψηφιακό προϊόν. Κανένα φυσικό έργο τέχνης ή πλαίσιο θα αποσταλεί. Μετά την αγορά, Gumroad παρέχει πρόσβαση στα αρχεία που περιλαμβάνονται με αυτό το προϊόν. Παρακαλούμε ελέγξτε τις παρεχόμενες προδιαγραφές αρχείων και την άδεια πριν από την εκτύπωση ή τη χρήση του έργου τέχνης.",
+    "From download to display": "Από λήψη σε εμφάνιση",
+    "Make the artwork part of your space": "Κάντε το έργο τέχνης μέρος του χώρου σας",
+    "01 · Purchase": "01 · Αγορά",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Ολοκληρώστε το ασφαλές checkout σας στο Gumroad. Η αγορά σας είναι για ένα ψηφιακό προϊόν.",
+    "02 · Download": "02 · Λήψη",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Πρόσβαση στα αρχεία που παρέχονται με αυτό το προϊόν μέσω Gumroad και να επανεξετάσει τις προδιαγραφές που περιλαμβάνονται.",
+    "03 · Print": "03 · Εκτύπωση",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Επιλέξτε ένα μέγεθος εκτύπωσης που διατηρεί τις αρχικές αναλογίες του έργου. Ένας τοπικός επαγγελματίας εκτύπωσης μπορεί να βοηθήσει να ταιριάξουν οι διαστάσεις με το παρεχόμενο αρχείο.",
+    "Please note:": "Παρακαλώ σημειώστε:",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Κανένα φυσικό έργο τέχνης ή πλαίσιο δεν αποστέλλεται. Διαθέσιμες μορφές αρχείων, ανάλυση, αναλογίες και όροι χρήσης είναι αυτές που αναφέρονται στο προϊόν λήψης και περιλαμβάνονται άδεια.",
+    "Let your space tell a story.": "Αφήστε το χώρο σας να πει μια ιστορία.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Επιλέξτε τέχνη που αντανακλά αυτό που εκτιμάτε—και αφήστε το νόημά της να ζήσει μαζί σας.",
+    "Get": "Πάρε.",
+    "Art with a Soul. A Message Without Borders.": "Τέχνη με Ψυχή. Μήνυμα Χωρίς Σύνορα.",
+    "Digital artwork · Instant download through Gumroad": "Ψηφιακό έργο τέχνης · Άμεση λήψη μέσω Gumroad",
+    "Privacy": "Ιδιωτικότητα",
+    "Terms": "Όροι",
+    "Contact": "Επικοινωνία",
+    "Gumroad store ↗": "Gumroad κατάστημα ↗",
+    "· Digital download": "· Ψηφιακή λήψη"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Περιλαμβάνονται αρχεία",
+    "product_type": "Τύπος προϊόντων",
+    "delivery": "Παράδοση",
+    "physical_item": "Φυσικό αντικείμενο",
+    "printing": "Εκτύπωση",
+    "usage": "Χρήση",
+    "bundle_item_count": "Είδη σε δέσμη"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Μια συντονισμένη συλλογή έργων τέχνης για σπίτια, γραφεία, ξενοδοχεία, γκαλερί, χώρους υποδοχής, και επιμελείται εσωτερικούς χώρους.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Πάρτε THE ART OF ELEGANCE & SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Μια συντονισμένη συλλογή έργων τέχνης για σπίτια, γραφεία, ξενοδοχεία, γκαλερί, χώρους υποδοχής, και επιμελείται εσωτερικούς χώρους.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Πάρτε EGYPTIAN & COPTIC HERITAGE ↗",
+      "\\n": "\\n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "Η Ομορφιά της Αγάπης χωρίς όρους",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Μια συντονισμένη συλλογή έργων τέχνης για σπίτια, γραφεία, ξενοδοχεία, γκαλερί, χώρους υποδοχής, και επιμελείται εσωτερικούς χώρους.",
+      "Get THE HUMANITY LEGACY ↗": "Πάρτε THE HUMANITY LEGACY ↗",
+      "\\n": "\\n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Μια εκλεπτυσμένη προφορά για σαλόνια, υπνοδωμάτια, γραφεία, boutique ξενοδοχεία, χώρους ευεξίας, και θεωρείται εσωτερικό.",
+      "Get THE ART OF STILLNESS ↗": "Πάρτε THE ART OF STILLNESS ↗",
+      "\\n": "\\n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Μια εκλεπτυσμένη προφορά για σαλόνια, υπνοδωμάτια, γραφεία, boutique ξενοδοχεία, χώρους ευεξίας, και θεωρείται εσωτερικό.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Πάρτε GEOMETRY OF ELEGANCE ↗",
+      "\\n": "\\n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Μια εκφραστική δήλωση για σπίτια, δημιουργικά στούντιο, γραφεία, χώρους φιλοξενίας και εσωτερικούς χώρους διαμορφωμένους από τη φαντασία.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Πάρτε CITIES OF TOMORROW   Where Innovation Meets Imagination ↗",
+      "\\n": "\\n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Μια εκφραστική δήλωση για σπίτια, δημιουργικά στούντιο, γραφεία, χώρους φιλοξενίας και εσωτερικούς χώρους διαμορφωμένους από τη φαντασία.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Πάρτε NATURE'S MAJESTY   The Timeless Beauty of Nature ↗",
+      "\\n": "\\n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Μια εκλεπτυσμένη προφορά για σαλόνια, υπνοδωμάτια, γραφεία, boutique ξενοδοχεία, χώρους ευεξίας, και θεωρείται εσωτερικό.",
+      "Get MEDITERRANEAN DREAMS ↗": "Πάρτε MEDITERRANEAN DREAMS ↗",
+      "\\n": "\\n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Μια εκλεπτυσμένη προφορά για σαλόνια, υπνοδωμάτια, γραφεία, boutique ξενοδοχεία, χώρους ευεξίας, και θεωρείται εσωτερικό.",
+      "Get SILENT HORIZONS . ↗": "Πάρτε SILENT HORIZONS . ↗",
+      "\\n": "\\n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Μια εκλεπτυσμένη προφορά για σαλόνια, υπνοδωμάτια, γραφεία, boutique ξενοδοχεία, χώρους ευεξίας, και θεωρείται εσωτερικό.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Πάρτε GOLDEN FLOW   The Art of Timeless Luxury ↗",
+      "\\n": "\\n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Μια εκφραστική δήλωση για σπίτια, δημιουργικά στούντιο, γραφεία, χώρους φιλοξενίας και εσωτερικούς χώρους διαμορφωμένους από τη φαντασία.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Πάρτε BEYOND THE UNIVERSE 🌏 ↗",
+      "\\n": "\\n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Ένα σημαντικό σημείο εστίασης για σπίτια, γραφεία, εκπαιδευτικούς χώρους, γκαλερί και μέρη όπου οι ανθρώπινες ιστορίες έχουν σημασία.",
+      "Get A Shelter of Love ♥ ↗": "Πάρτε A Shelter of Love ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Μια εκλεπτυσμένη προφορά για σαλόνια, υπνοδωμάτια, γραφεία, boutique ξενοδοχεία, χώρους ευεξίας, και θεωρείται εσωτερικό.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Πάρτε The Celestial Garden – A Dance Beneath the Moon ↗",
+      "\\n": "\\n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Μια εκλεπτυσμένη προφορά για σαλόνια, υπνοδωμάτια, γραφεία, boutique ξενοδοχεία, χώρους ευεξίας, και θεωρείται εσωτερικό.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Πάρτε THE GOLDEN VEIL OF SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "Ένας πλανήτης. Μία ευθύνη. Αμέτρητες πιθανότητες.",
+      "The story behind the image": "Η ιστορία πίσω από την εικόνα",
+      "More than decoration. A human story.": "Περισσότερο από διακόσμηση. Μια ανθρώπινη ιστορία.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "Το χέρι αντιπροσωπεύει την ικανότητά μας να δράσουμε. Οι πεταλούδες υποδηλώνουν μεταμόρφωση. Η αντίθεση μεταξύ κατεστραμμένης γης και υπόσχεσης ανανέωσης μας υπενθυμίζει ότι το αύριο επηρεάζεται από αυτό που επιλέγουμε να προστατεύσουμε σήμερα.",
+      "Where the artwork belongs": "Όπου ανήκει το έργο τέχνης",
+      "Created to live with meaning": "Δημιουργήθηκε για να ζήσει με νόημα",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Μια εντυπωσιακή δήλωση για σπίτια, γραφεία, σχολεία, περιβαλλοντικές οργανώσεις, χώρους υποδοχής και δημιουργικούς χώρους.",
+      "A distinctive focal point for considered interiors": "Ένα διακριτικό σημείο εστίασης για τους εξεταζόμενους εσωτερικούς χώρους",
+      "A conversation piece with a message beyond trends": "Ένα κομμάτι συνομιλίας με ένα μήνυμα πέρα από τις τάσεις",
+      "A thoughtful digital art choice for personal spaces": "Μια στοχαστική επιλογή ψηφιακής τέχνης για προσωπικούς χώρους",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Αυτό είναι ένα ψηφιακό προϊόν. Δεν θα αποσταλεί κανένα φυσικό αποτύπωμα ή πλαίσιο. Μετά την αγορά, κατεβάστε τα αρχεία που παρέχονται στο Gumroad. Επανεξέτασε τις προδιαγραφές αρχείων που περιλαμβάνονται, οδηγός εκτύπωσης, και προσωπική άδεια χρήσης πριν από την εκτύπωση. Επιλέξτε ένα μέγεθος εκτύπωσης και υπηρεσία κατάλληλη για τα παρεχόμενα αρχεία.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Επιλέξτε ένα έργο τέχνης που αντανακλά αυτό που εκτιμάτε—και αφήστε το νόημά του να ζήσει μαζί σας.",
+      "Get The Hand That Holds Tomorrow ↗": "Πάρε το Χέρι που Κρατάει Αύριο",
+      "\\n": "\\n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Διαφορετικά πρόσωπα. Μια ανθρωπότητα. Μια αιώνια σύνδεση.",
+      "The story behind the image": "Η ιστορία πίσω από την εικόνα",
+      "More than decoration. A human story.": "Περισσότερο από διακόσμηση. Μια ανθρώπινη ιστορία.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Ivory και οψιανός διατηρούν τη μοναδικότητα του κάθε προσώπου. Το χρυσό νήμα συμβολίζει κοινά συναισθήματα, ελπίδες και την επιθυμία να αντιμετωπιστεί με αξιοπρέπεια. Η ενότητα δεν απαιτεί ομοιομορφία· αρχίζει όταν αναγνωρίζουμε ο ένας την ανθρωπότητα του άλλου.",
+      "Where the artwork belongs": "Όπου ανήκει το έργο τέχνης",
+      "Created to live with meaning": "Δημιουργήθηκε για να ζήσει με νόημα",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Μια εκλεπτυσμένη δήλωση για σύγχρονα σπίτια, εκτελεστικά γραφεία, γκαλερί, χώρους υποδοχής και εσωτερικούς χώρους που εκτιμούν τον πολιτιστικό διάλογο και την ανθρώπινη σύνδεση.",
+      "A distinctive focal point for considered interiors": "Ένα διακριτικό σημείο εστίασης για τους εξεταζόμενους εσωτερικούς χώρους",
+      "A conversation piece with a message beyond trends": "Ένα κομμάτι συνομιλίας με ένα μήνυμα πέρα από τις τάσεις",
+      "A thoughtful digital art choice for personal spaces": "Μια στοχαστική επιλογή ψηφιακής τέχνης για προσωπικούς χώρους",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Αυτό είναι ένα ψηφιακό προϊόν. Δεν θα αποσταλεί κανένα φυσικό αποτύπωμα ή πλαίσιο. Μετά την αγορά, κατεβάστε τα αρχεία που παρέχονται στο Gumroad. Επανεξέτασε τις προδιαγραφές αρχείων που περιλαμβάνονται, οδηγός εκτύπωσης, και προσωπική άδεια χρήσης πριν από την εκτύπωση. Επιλέξτε ένα μέγεθος εκτύπωσης και υπηρεσία κατάλληλη για τα παρεχόμενα αρχεία.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Επιλέξτε ένα έργο τέχνης που αντανακλά αυτό που εκτιμάτε—και αφήστε το νόημά του να ζήσει μαζί σας.",
+      "Get The Golden Thread of Humanity ↗": "Πάρτε το Χρυσό Νήμα της Ανθρωπότητας ↗",
+      "\\n": "\\n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Ένα σημαντικό σημείο εστίασης για σπίτια, γραφεία, εκπαιδευτικούς χώρους, γκαλερί και μέρη όπου οι ανθρώπινες ιστορίες έχουν σημασία.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "Πάρτε ROOTS OF TENDERNESS ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Μια εκλεπτυσμένη προφορά για σαλόνια, υπνοδωμάτια, γραφεία, boutique ξενοδοχεία, χώρους ευεξίας, και θεωρείται εσωτερικό.",
+      "Get AURELLE 👑 ↗": "Πάρτε AURELLE 👑 ↗",
+      "\\n": "\\n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "Η ομορφιά της ηρεμίας. Η δύναμη μέσα.",
+      "The story behind the image": "Η ιστορία πίσω από την εικόνα",
+      "More than decoration. A human story.": "Περισσότερο από διακόσμηση. Μια ανθρώπινη ιστορία.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "Μια συντεθειμένη ανθρώπινη μορφή γίνεται σύμβολο της αυτογνωσίας. Το χρυσό φως υποδηλώνει την ολότητα, οι βοτανικές λεπτομέρειες υπονοούν την ανανέωση. Το έργο μας υπενθυμίζει ότι η δύναμη δεν χρειάζεται να είναι δυνατή—και ότι η ηρεμία μπορεί να είναι μια μορφή ομορφιάς.",
+      "Where the artwork belongs": "Όπου ανήκει το έργο τέχνης",
+      "Created to live with meaning": "Δημιουργήθηκε για να ζήσει με νόημα",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "Ένα κομψό εστιακό σημείο για σαλόνια, ιδιωτικά γραφεία, χώρους υποδοχής, ξενοδοχεία, χώρους ευεξίας και σύγχρονους εσωτερικούς χώρους.",
+      "A distinctive focal point for considered interiors": "Ένα διακριτικό σημείο εστίασης για τους εξεταζόμενους εσωτερικούς χώρους",
+      "A conversation piece with a message beyond trends": "Ένα κομμάτι συνομιλίας με ένα μήνυμα πέρα από τις τάσεις",
+      "A thoughtful digital art choice for personal spaces": "Μια στοχαστική επιλογή ψηφιακής τέχνης για προσωπικούς χώρους",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Αυτό είναι ένα ψηφιακό προϊόν. Δεν θα αποσταλεί κανένα φυσικό αποτύπωμα ή πλαίσιο. Μετά την αγορά, κατεβάστε τα αρχεία που παρέχονται στο Gumroad. Επανεξέτασε τις προδιαγραφές αρχείων που περιλαμβάνονται, οδηγός εκτύπωσης, και προσωπική άδεια χρήσης πριν από την εκτύπωση. Επιλέξτε ένα μέγεθος εκτύπωσης και υπηρεσία κατάλληλη για τα παρεχόμενα αρχεία.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Επιλέξτε ένα έργο τέχνης που αντανακλά αυτό που εκτιμάτε—και αφήστε το νόημά του να ζήσει μαζί σας.",
+      "Get The Art of Inner Peace ↗": "Πάρτε την Τέχνη της Εσωτερικής Ειρήνης ↗",
+      "\\n": "\\n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Μια εκλεπτυσμένη προφορά για σαλόνια, υπνοδωμάτια, γραφεία, boutique ξενοδοχεία, χώρους ευεξίας, και θεωρείται εσωτερικό.",
+      "Get SERENITY 🤍 ↗": "Πάρτε SERENITY 🤍 ↗",
+      "\\n": "\\n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Ένα σημαντικό σημείο εστίασης για σπίτια, γραφεία, εκπαιδευτικούς χώρους, γκαλερί και μέρη όπου οι ανθρώπινες ιστορίες έχουν σημασία.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Πάρτε THE TREE THAT REFUSED TO DIE ↗",
+      "\\n": "\\n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Ένα σημαντικό σημείο εστίασης για σπίτια, γραφεία, εκπαιδευτικούς χώρους, γκαλερί και μέρη όπου οι ανθρώπινες ιστορίες έχουν σημασία.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Πάρτε THE LIGHT WE LEAVE EACH OTHER 🕯 ↗",
+      "\\n": "\\n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "Το μέλλον χτίζεται από πολλά χέρια.",
+      "The story behind the image": "Η ιστορία πίσω από την εικόνα",
+      "More than decoration. A human story.": "Περισσότερο από διακόσμηση. Μια ανθρώπινη ιστορία.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Κάθε χέρι αντιπροσωπεύει μια ζωή, μια καλοσύνη, μια θυσία ή μια ευκαιρία που προσφέρεται. Το παιδί αντιπροσωπεύει κάθε νεαρό άτομο του οποίου τα όνειρα χρειάζονται ενθάρρυνση και υποστήριξη. Μαζί, τα χέρια γίνονται μια σκάλα—και η ελπίδα γίνεται κάτι που χτίζουμε ο ένας για τον άλλον.",
+      "Where the artwork belongs": "Όπου ανήκει το έργο τέχνης",
+      "Created to live with meaning": "Δημιουργήθηκε για να ζήσει με νόημα",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Μια ουσιαστική δήλωση για οικογενειακά σπίτια, σχολεία, βιβλιοθήκες, γραφεία, στούντιο και χώρους που γιορτάζουν την εκπαίδευση και την ανθρώπινη σύνδεση.",
+      "A distinctive focal point for considered interiors": "Ένα διακριτικό σημείο εστίασης για τους εξεταζόμενους εσωτερικούς χώρους",
+      "A conversation piece with a message beyond trends": "Ένα κομμάτι συνομιλίας με ένα μήνυμα πέρα από τις τάσεις",
+      "A thoughtful digital art choice for personal spaces": "Μια στοχαστική επιλογή ψηφιακής τέχνης για προσωπικούς χώρους",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Αυτό είναι ένα ψηφιακό προϊόν. Δεν θα αποσταλεί κανένα φυσικό αποτύπωμα ή πλαίσιο. Μετά την αγορά, κατεβάστε τα αρχεία που παρέχονται στο Gumroad. Επανεξέτασε τις προδιαγραφές αρχείων που περιλαμβάνονται, οδηγός εκτύπωσης, και προσωπική άδεια χρήσης πριν από την εκτύπωση. Επιλέξτε ένα μέγεθος εκτύπωσης και υπηρεσία κατάλληλη για τα παρεχόμενα αρχεία.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Επιλέξτε ένα έργο τέχνης που αντανακλά αυτό που εκτιμάτε—και αφήστε το νόημά του να ζήσει μαζί σας.",
+      "Get A Stairway of Hands ↗": "Πάρτε μια σκάλα των χεριών ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Αυτό που προστατεύουμε σήμερα γίνεται το αυριανό τους.",
+      "The story behind the image": "Η ιστορία πίσω από την εικόνα",
+      "More than decoration. A human story.": "Περισσότερο από διακόσμηση. Μια ανθρώπινη ιστορία.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "Η παλαιότερη γενιά έχει πείρα · η νεότερη έχει δυνατότητα. Μεταξύ τους βρίσκεται μια υπόσχεση: να διαφυλάξει ό,τι συντηρεί τη ζωή και να περάσει μπροστά ένα μέλλον αντάξιο εκείνων που την κληρονομούν. Αυτή είναι η αγάπη που εκφράζεται ως ευθύνη.",
+      "Where the artwork belongs": "Όπου ανήκει το έργο τέχνης",
+      "Created to live with meaning": "Δημιουργήθηκε για να ζήσει με νόημα",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "Ένα στοχαστικό κομμάτι για οικογενειακά σπίτια, σπουδές, γραφεία, εκπαιδευτικούς χώρους, και όποιον εκτιμά τη μνήμη, την οικογένεια και το μέλλον.",
+      "A distinctive focal point for considered interiors": "Ένα διακριτικό σημείο εστίασης για τους εξεταζόμενους εσωτερικούς χώρους",
+      "A conversation piece with a message beyond trends": "Ένα κομμάτι συνομιλίας με ένα μήνυμα πέρα από τις τάσεις",
+      "A thoughtful digital art choice for personal spaces": "Μια στοχαστική επιλογή ψηφιακής τέχνης για προσωπικούς χώρους",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Αυτό είναι ένα ψηφιακό προϊόν. Δεν θα αποσταλεί κανένα φυσικό αποτύπωμα ή πλαίσιο. Μετά την αγορά, κατεβάστε τα αρχεία που παρέχονται στο Gumroad. Επανεξέτασε τις προδιαγραφές αρχείων που περιλαμβάνονται, οδηγός εκτύπωσης, και προσωπική άδεια χρήσης πριν από την εκτύπωση. Επιλέξτε ένα μέγεθος εκτύπωσης και υπηρεσία κατάλληλη για τα παρεχόμενα αρχεία.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Επιλέξτε ένα έργο τέχνης που αντανακλά αυτό που εκτιμάτε—και αφήστε το νόημά του να ζήσει μαζί σας.",
+      "Get The Legacy of Generations ↗": "Πάρτε την Κληρονομιά των Γενιών ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Μια εκλεπτυσμένη προφορά για σαλόνια, υπνοδωμάτια, γραφεία, boutique ξενοδοχεία, χώρους ευεξίας, και θεωρείται εσωτερικό.",
+      "Get The Mediterranean Muse ↗": "Πάρτε The Mediterranean Muse ↗",
+      "\\n": "\\n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "Μια Γη. Μια Ανθρωπότητα. Ένα Μέλλον.",
+      "The story behind the image": "Η ιστορία πίσω από την εικόνα",
+      "More than decoration. A human story.": "Περισσότερο από διακόσμηση. Μια ανθρώπινη ιστορία.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "Τα χέρια γύρω από την υδρόγειο αντιπροσωπεύουν ανθρώπους κάθε ηλικίας και υπόβαθρου. Το κατακερματισμένο τοπίο μιλάει για το τι βρίσκεται σε κίνδυνο· ο πράσινος ορίζοντας και το χρυσό φως δείχνουν τι μπορούμε ακόμα να προστατεύσουμε. Το μήνυμα δεν είναι απελπισία. Είναι κοινή ευθύνη, γίνεται ορατή.",
+      "Where the artwork belongs": "Όπου ανήκει το έργο τέχνης",
+      "Created to live with meaning": "Δημιουργήθηκε για να ζήσει με νόημα",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "Ένα σημείο εστίασης που προκαλεί σκέψεις για σπίτια, γραφεία, εκπαιδευτικούς χώρους, γκαλερί και περιβάλλοντα αφιερωμένα στη βιωσιμότητα.",
+      "A distinctive focal point for considered interiors": "Ένα διακριτικό σημείο εστίασης για τους εξεταζόμενους εσωτερικούς χώρους",
+      "A conversation piece with a message beyond trends": "Ένα κομμάτι συνομιλίας με ένα μήνυμα πέρα από τις τάσεις",
+      "A thoughtful digital art choice for personal spaces": "Μια στοχαστική επιλογή ψηφιακής τέχνης για προσωπικούς χώρους",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Αυτό είναι ένα ψηφιακό προϊόν. Δεν θα αποσταλεί κανένα φυσικό αποτύπωμα ή πλαίσιο. Μετά την αγορά, κατεβάστε τα αρχεία που παρέχονται στο Gumroad. Επανεξέτασε τις προδιαγραφές αρχείων που περιλαμβάνονται, οδηγός εκτύπωσης, και προσωπική άδεια χρήσης πριν από την εκτύπωση. Επιλέξτε ένα μέγεθος εκτύπωσης και υπηρεσία κατάλληλη για τα παρεχόμενα αρχεία.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Επιλέξτε ένα έργο τέχνης που αντανακλά αυτό που εκτιμάτε—και αφήστε το νόημά του να ζήσει μαζί σας.",
+      "Get Last Cry of Earth ↗": "Πάρτε το Τελευταίο Κλάμα της Γης ↗",
+      "\\n": "\\n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Μια ξεχωριστή προσθήκη σε σπίτια, ιδιωτικές σπουδές, γραφεία, γκαλερί, μουσεία, ξενοδοχεία και πολιτιστικούς χώρους.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Πάρτε THE GOLDEN GAZE 👁 ↗",
+      "\\n": "\\n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Μια ξεχωριστή προσθήκη σε σπίτια, ιδιωτικές σπουδές, γραφεία, γκαλερί, μουσεία, ξενοδοχεία και πολιτιστικούς χώρους.",
+      "Get The Queen Of The Nile 👑 ↗": "Πάρτε The Queen Of The Nile 👑 ↗",
+      "\\n": "\\n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Μια ξεχωριστή προσθήκη σε σπίτια, ιδιωτικές σπουδές, γραφεία, γκαλερί, μουσεία, ξενοδοχεία και πολιτιστικούς χώρους.",
+      "Get The Coptic Soul of Egypt ↗": "Πάρτε The Coptic Soul of Egypt ↗",
+      "\\n": "\\n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE Μια γιορτή της διαχρονικής ομορφιάς της Αιγύπτου, όπου η ήσυχη αξιοπρέπεια μιας βασιλικής παρουσίας συναντά τον αιώνιο ρυθμό του Νείλου. Χρυσό...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Μια ξεχωριστή προσθήκη σε σπίτια, ιδιωτικές σπουδές, γραφεία, γκαλερί, μουσεία, ξενοδοχεία και πολιτιστικούς χώρους.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "Πάρτε THE NILE'S ETERNAL GRACE ↗",
+      "\\n": "\\n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Μερικές Φιλίες Νιώθονται από την Καρδιά, Δεν Εξηγούνται από Λέξεις. Γιορτάστε την εξαιρετική σύνδεση...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Ένα σημαντικό σημείο εστίασης για σπίτια, γραφεία, εκπαιδευτικούς χώρους, γκαλερί και μέρη όπου οι ανθρώπινες ιστορίες έχουν σημασία.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Πάρτε A BOND BEYOND WORDS The Beauty of Unconditional Love ↗",
+      "\\n": "\\n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION — Επτά έργα τέχνης, ΟΡΙΑ ΚΟΣΜΟΥΣ Ταξιδέψτε πέρα από τα γνωστά μέσα από μια συλλογή από επτά ψηφιακά έργα τέχνης εμπνευσμένα από την κοσμική...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Μια εκλεπτυσμένη προφορά για σαλόνια, υπνοδωμάτια, γραφεία, boutique ξενοδοχεία, χώρους ευεξίας, και θεωρείται εσωτερικό.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Πάρτε GLOBAL ART & IMAGINATION ↗",
+      "\\n": "\\n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Φέρτε το διαρκές μεγαλείο της αρχαίας Αιγύπτου στο περιβάλλον σας με την...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Μια ξεχωριστή προσθήκη σε σπίτια, ιδιωτικές σπουδές, γραφεία, γκαλερί, μουσεία, ξενοδοχεία και πολιτιστικούς χώρους.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Πάρτε ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗",
+      "\\n": "\\n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "Μέσα σε ένα φανταστικό εργαστήριο, ο χρόνος δεν μετριέται αλλά σμιλεύεται. THE CLOCKMAKER'S DREAM μετατρέπει γρανάζια, ουράνιους μηχανισμούς, και αδύνατα όργανα...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Μια εκλεπτυσμένη προφορά για σαλόνια, υπνοδωμάτια, γραφεία, boutique ξενοδοχεία, χώρους ευεξίας, και θεωρείται εσωτερικό.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Πάρτε THE CLOCKMAKER'S DREAM ↗",
+      "\\n": "\\n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
 }

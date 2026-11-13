@@ -328,5 +328,382 @@
     "artworks": "műalkotások",
     "choose": "Nyelv kiválasztása"
   },
-  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f"
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "landing_ui": {
+    "← Return to the gallery": "A galériába való visszatérés",
+    "Language": "Nyelv",
+    "An original digital artwork from HALL OF GREATNESS": "Eredeti digitális műalkotás a Greatnessből",
+    "A curated collection of meaningful digital artworks": "Értelmes digitális műalkotások rendezett gyűjteménye",
+    "Explore & Get the Artwork ↗": "Fedezze fel az Artwork",
+    "Secure checkout and digital delivery on Gumroad.": "Biztonságos pénztárgép és digitális szállítás Gumroad-on.",
+    "Artwork presentation": "Műanyag prezentáció",
+    "Imagine it in a refined frame": "Képzeld el egy kifinomult keretben.",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "A második prezentáció segít elképzelni a mű, mint egy bekeretezett kijelző, miközben megőrzi eredeti arányait.",
+    "Digital download": "Digitális letöltés",
+    "Access your files after checkout": "Kijelentkezés után hozzáférhet fájljaihoz",
+    "Print your way": "Nyomtasd ki az utat.",
+    "Choose a size suited to your space": "Válassza ki a területéhez illeszkedő méretet",
+    "Made to display": "Megjelenítésre",
+    "For homes, studios, and meaningful spaces": "Házak, stúdiók és értelmes terek számára",
+    "The meaning behind the artwork": "A műalkotás jelentése",
+    "More than decoration. A feeling that stays.": "Több, mint dekoráció. Egy érzés, ami megmarad.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Olyan emberek számára, akik azt akarják, hogy a környezetük tükrözzön egy történetet, egy emléket, egy értéket, vagy egy szépséget. Legyen ez a munka része az atmoszférának, amit létrehoztál, és az érzés, amit azt akarod, hogy a helyedet megtartsd.",
+    "Inside this collection": "Ebben a gyűjteményben",
+    "One collection. Many stories.": "Egy gyűjtemény. Sok történet.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Fedezze fel az egyes műalkotások részét ez a kurált gyűjtemény. Minden darabnak megvan a maga karaktere, míg együtt egy gazdagabb vizuális utazást hoznak létre.",
+    "Complete artwork story": "Teljes művészi történet",
+    "Full product description": "Teljes termékleírás",
+    "What is included": "Mit tartalmaz",
+    "Product specifications": "Termékleírás",
+    "Where it belongs": "Ahová tartozik",
+    "Art that finds its place": "Art that found its place",
+    "Before you purchase": "Vásárlás előtt",
+    "Digital download details": "Digitális letöltési adatok",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Ez egy digitális termék. Fizikai műalkotás vagy keret nem szállítható. A vásárlás után a Gumroad hozzáférést biztosít a termékhez tartozó fájlokhoz. Kérjük, olvassa el a megadott fájlspecifikációkat és licenceket a nyomtatás vagy a mű használata előtt.",
+    "From download to display": "Letöltéstől a megjelenítésig",
+    "Make the artwork part of your space": "Tedd a műalkotást a területed részévé.",
+    "01 · Purchase": "01 · Vásárlás",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Töltse ki a biztonságos pénztárát Gumroadon. A vásárlás egy digitális termék.",
+    "02 · Download": "02 · Letöltés",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "A termékhez a Gumroad-on keresztül eljuttatott fájlokhoz való hozzáférés és a benne szereplő előírások felülvizsgálata.",
+    "03 · Print": "03 · Nyomtatás",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Válasszon egy nyomtatási méretet, amely megőrzi a mű eredeti méreteit. A helyi nyomtatási szakember segíthet a megadott fájlhoz illeszkedni.",
+    "Please note:": "Kérjük, vegye figyelembe:",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Fizikai műalkotás vagy keret nem szállítható. A rendelkezésre álló fájlformátumok, felbontások, arányok és felhasználási feltételek megegyeznek a termék letöltése és a licenc.",
+    "Let your space tell a story.": "Hadd meséljen el egy történetet.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Válassza ki a művészet, amely tükrözi, hogy mit értékel - és hagyja, hogy a jelentését élni veled.",
+    "Get": "Menj!",
+    "Art with a Soul. A Message Without Borders.": "Művészet egy lélekkel. Egy üzenet határok nélkül.",
+    "Digital artwork · Instant download through Gumroad": "Digitális műalkotás · Azonnali letöltés a Gumroad-on keresztül",
+    "Privacy": "Adatvédelem",
+    "Terms": "Feltételek",
+    "Contact": "Kapcsolat",
+    "Gumroad store ↗": "Gumközúti áruház",
+    "· Digital download": "· Digitális letöltés"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Fájlok is",
+    "product_type": "Terméktípus",
+    "delivery": "Szállítás",
+    "physical_item": "Fizikai tétel",
+    "printing": "Nyomtatás",
+    "usage": "Használat",
+    "bundle_item_count": "Csoportos tételek"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Összehangolt művészeti gyűjtemény házak, irodák, szállodák, galériák, recepciós területek, és kurált belső.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "THE ART OF ELEGANCE & SERENITY",
+      "\\n": "\\ n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Összehangolt művészeti gyűjtemény házak, irodák, szállodák, galériák, recepciós területek, és kurált belső.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "EGYPTIAN & COPTIC HERITAGE",
+      "\\n": "\\ n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "A BOND BEYOND WORDS A szépség a feltétel nélküli szerelem",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Összehangolt művészeti gyűjtemény házak, irodák, szállodák, galériák, recepciós területek, és kurált belső.",
+      "Get THE HUMANITY LEGACY ↗": "THE HUMANITY LEGACY",
+      "\\n": "\\ n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A kifinomult akcentus a nappali, hálószobák, irodák, butik szállodák, wellness terek, és a tekintélyes belső.",
+      "Get THE ART OF STILLNESS ↗": "THE ART OF STILLNESS",
+      "\\n": "\\ n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A kifinomult akcentus a nappali, hálószobák, irodák, butik szállodák, wellness terek, és a tekintélyes belső.",
+      "Get GEOMETRY OF ELEGANCE ↗": "GEOMETRY OF ELEGANCE",
+      "\\n": "\\ n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Az otthonok, kreatív stúdiók, irodák, vendéglátóhelyek és a képzelet által formált belső terek kifejező nyilatkozata.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "CITIES OF TOMORROW   Where Innovation Meets Imagination",
+      "\\n": "\\ n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Az otthonok, kreatív stúdiók, irodák, vendéglátóhelyek és a képzelet által formált belső terek kifejező nyilatkozata.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "NATURE'S MAJESTY   The Timeless Beauty of Nature",
+      "\\n": "\\ n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A kifinomult akcentus a nappali, hálószobák, irodák, butik szállodák, wellness terek, és a tekintélyes belső.",
+      "Get MEDITERRANEAN DREAMS ↗": "MEDITERRANEAN DREAMS",
+      "\\n": "\\ n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A kifinomult akcentus a nappali, hálószobák, irodák, butik szállodák, wellness terek, és a tekintélyes belső.",
+      "Get SILENT HORIZONS . ↗": "SILENT HORIZONS .",
+      "\\n": "\\ n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A kifinomult akcentus a nappali, hálószobák, irodák, butik szállodák, wellness terek, és a tekintélyes belső.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "GOLDEN FLOW   The Art of Timeless Luxury",
+      "\\n": "\\ n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Az otthonok, kreatív stúdiók, irodák, vendéglátóhelyek és a képzelet által formált belső terek kifejező nyilatkozata.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "BEYOND THE UNIVERSE 🌏",
+      "\\n": "\\ n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Fontos fókuszpont az otthonok, irodák, oktatási terek, galériák és helyek számára, ahol az emberi történetek számítanak.",
+      "Get A Shelter of Love ♥ ↗": "A Shelter of Love ♥",
+      "\\n": "\\ n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A kifinomult akcentus a nappali, hálószobák, irodák, butik szállodák, wellness terek, és a tekintélyes belső.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "The Celestial Garden – A Dance Beneath the Moon",
+      "\\n": "\\ n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A kifinomult akcentus a nappali, hálószobák, irodák, butik szállodák, wellness terek, és a tekintélyes belső.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "THE GOLDEN VEIL OF SERENITY",
+      "\\n": "\\ n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "Egy bolygó. Egy felelősség. Számtalan lehetőség.",
+      "The story behind the image": "A történet a kép mögött",
+      "More than decoration. A human story.": "Több, mint dekoráció. Egy emberi történet.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "A kéz jelképezi a cselekvőképességünket. A palánta a törékeny új életet jelenti; a pillangók átalakulásra utalnak. A sérült földek és a megújulás ígérete közti különbség arra emlékeztet bennünket, hogy a holnapot befolyásolja, amit ma védeni akarunk.",
+      "Where the artwork belongs": "Where the artwork belong",
+      "Created to live with meaning": "Létrehozva, hogy értelemmel éljen",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Feltűnő kijelentés otthonok, irodák, iskolák, környezetvédelmi szervezetek, recepciós területek és kreatív terek számára.",
+      "A distinctive focal point for considered interiors": "Az érintett belső terek megkülönböztető fókuszpontja",
+      "A conversation piece with a message beyond trends": "Egy beszélgetős darab a trendeken túlmutató üzenettel",
+      "A thoughtful digital art choice for personal spaces": "Egy átgondolt digitális művészeti választás a személyes terekre",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Ez egy digitális termék. Fizikai lenyomat vagy keret nem szállítható. Vásárlás után töltse le a Gumroad-on tárolt fájlokat. A nyomtatás előtt olvassa el a mellékelt fájlspecifikációkat, nyomtatási útmutatót és személyi használati engedélyt. Válassza ki a megadott fájloknak megfelelő nyomtatási méretet és szolgáltatást.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Válasszon ki egy műalkotást, amely tükrözi, hogy mit ér - és hagyja, hogy a jelentését él veled.",
+      "Get The Hand That Holds Tomorrow ↗": "Get The Hand that holds tomorrow",
+      "\\n": "\\ n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Más arcok. Egy emberség. Egy örök kapcsolat.",
+      "The story behind the image": "A történet a kép mögött",
+      "More than decoration. A human story.": "Több, mint dekoráció. Egy emberi történet.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Elefántcsont és obszidián megőrzi minden arc egyediségét. Az arany szál a közös érzelmeket, reményeket és a méltósággal való bánásmódot szimbolizálja. Az egységhez nincs szükség azonosságra; akkor kezdődik, amikor felismerjük egymás emberségét.",
+      "Where the artwork belongs": "Where the artwork belong",
+      "Created to live with meaning": "Létrehozva, hogy értelemmel éljen",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "A kifinomult nyilatkozat kortárs otthonok, végrehajtó irodák, galériák, recepciós terek, és belső, amelyek értékelik a kulturális párbeszéd és az emberi kapcsolat.",
+      "A distinctive focal point for considered interiors": "Az érintett belső terek megkülönböztető fókuszpontja",
+      "A conversation piece with a message beyond trends": "Egy beszélgetős darab a trendeken túlmutató üzenettel",
+      "A thoughtful digital art choice for personal spaces": "Egy átgondolt digitális művészeti választás a személyes terekre",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Ez egy digitális termék. Fizikai lenyomat vagy keret nem szállítható. Vásárlás után töltse le a Gumroad-on tárolt fájlokat. A nyomtatás előtt olvassa el a mellékelt fájlspecifikációkat, nyomtatási útmutatót és személyi használati engedélyt. Válassza ki a megadott fájloknak megfelelő nyomtatási méretet és szolgáltatást.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Válasszon ki egy műalkotást, amely tükrözi, hogy mit ér - és hagyja, hogy a jelentését él veled.",
+      "Get The Golden Thread of Humanity ↗": "Get The Golden Thread of Humanity",
+      "\\n": "\\ n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Fontos fókuszpont az otthonok, irodák, oktatási terek, galériák és helyek számára, ahol az emberi történetek számítanak.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "ROOTS OF TENDERNESS ♥",
+      "\\n": "\\ n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A kifinomult akcentus a nappali, hálószobák, irodák, butik szállodák, wellness terek, és a tekintélyes belső.",
+      "Get AURELLE 👑 ↗": "AURELLE 👑",
+      "\\n": "\\ n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "A nyugalom szépsége. A belső erő.",
+      "The story behind the image": "A történet a kép mögött",
+      "More than decoration. A human story.": "Több, mint dekoráció. Egy emberi történet.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "A komponált emberi alak az öntudat szimbóluma. Arany fény azt sugallja, teljesség; botanikus részletek utal megújulás. A munka arra emlékeztet minket, hogy az erőnek nem kell hangosnak lennie - és hogy a nyugalom a szépség egy formája lehet.",
+      "Where the artwork belongs": "Where the artwork belong",
+      "Created to live with meaning": "Létrehozva, hogy értelemmel éljen",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "Elegáns fókuszpont a nappali, a privát irodák, a recepció, a szállodák, a wellness terek és a kortárs belső terek számára.",
+      "A distinctive focal point for considered interiors": "Az érintett belső terek megkülönböztető fókuszpontja",
+      "A conversation piece with a message beyond trends": "Egy beszélgetős darab a trendeken túlmutató üzenettel",
+      "A thoughtful digital art choice for personal spaces": "Egy átgondolt digitális művészeti választás a személyes terekre",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Ez egy digitális termék. Fizikai lenyomat vagy keret nem szállítható. Vásárlás után töltse le a Gumroad-on tárolt fájlokat. A nyomtatás előtt olvassa el a mellékelt fájlspecifikációkat, nyomtatási útmutatót és személyi használati engedélyt. Válassza ki a megadott fájloknak megfelelő nyomtatási méretet és szolgáltatást.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Válasszon ki egy műalkotást, amely tükrözi, hogy mit ér - és hagyja, hogy a jelentését él veled.",
+      "Get The Art of Inner Peace ↗": "Get The Art of Inner Peace",
+      "\\n": "\\ n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A kifinomult akcentus a nappali, hálószobák, irodák, butik szállodák, wellness terek, és a tekintélyes belső.",
+      "Get SERENITY 🤍 ↗": "SERENITY 🤍",
+      "\\n": "\\ n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Fontos fókuszpont az otthonok, irodák, oktatási terek, galériák és helyek számára, ahol az emberi történetek számítanak.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "THE TREE THAT REFUSED TO DIE",
+      "\\n": "\\ n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Fontos fókuszpont az otthonok, irodák, oktatási terek, galériák és helyek számára, ahol az emberi történetek számítanak.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "THE LIGHT WE LEAVE EACH OTHER 🕯",
+      "\\n": "\\ n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "A jövőt sok kéz építi.",
+      "The story behind the image": "A történet a kép mögött",
+      "More than decoration. A human story.": "Több, mint dekoráció. Egy emberi történet.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Minden kéz egy életet, egy kedvességet, egy áldozatot vagy egy lehetőséget képvisel. A gyermek kiáll minden fiatalért, akinek szüksége van bátorításra és támogatásra. A kezek együtt lépcsővé válnak - és a remény olyanná válik, amit egymásnak építünk.",
+      "Where the artwork belongs": "Where the artwork belong",
+      "Created to live with meaning": "Létrehozva, hogy értelemmel éljen",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "A családi otthonok, iskolák, könyvtárak, irodák, stúdiók és az oktatást és az emberi kapcsolatot ünneplő terek számára.",
+      "A distinctive focal point for considered interiors": "Az érintett belső terek megkülönböztető fókuszpontja",
+      "A conversation piece with a message beyond trends": "Egy beszélgetős darab a trendeken túlmutató üzenettel",
+      "A thoughtful digital art choice for personal spaces": "Egy átgondolt digitális művészeti választás a személyes terekre",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Ez egy digitális termék. Fizikai lenyomat vagy keret nem szállítható. Vásárlás után töltse le a Gumroad-on tárolt fájlokat. A nyomtatás előtt olvassa el a mellékelt fájlspecifikációkat, nyomtatási útmutatót és személyi használati engedélyt. Válassza ki a megadott fájloknak megfelelő nyomtatási méretet és szolgáltatást.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Válasszon ki egy műalkotást, amely tükrözi, hogy mit ér - és hagyja, hogy a jelentését él veled.",
+      "Get A Stairway of Hands ↗": "Get A stairway of Hands",
+      "\\n": "\\ n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Amit ma megvédünk, az az ő jövőjükké válik.",
+      "The story behind the image": "A történet a kép mögött",
+      "More than decoration. A human story.": "Több, mint dekoráció. Egy emberi történet.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "Az idősebb generáció tapasztalatokkal rendelkezik, a fiatalabb pedig lehetőségekkel. Köztük van egy ígéret: megőrizni, ami fenntartja az életet, és továbbadni egy olyan jövőt, ami méltó az öröklésre. Ezt a szerelmet felelősségként fejezik ki.",
+      "Where the artwork belongs": "Where the artwork belong",
+      "Created to live with meaning": "Létrehozva, hogy értelemmel éljen",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "Egy figyelmes darab a családi házak, tanulmányok, irodák, oktatási terek, és bárki, aki értékeli a memória, család, és a jövő.",
+      "A distinctive focal point for considered interiors": "Az érintett belső terek megkülönböztető fókuszpontja",
+      "A conversation piece with a message beyond trends": "Egy beszélgetős darab a trendeken túlmutató üzenettel",
+      "A thoughtful digital art choice for personal spaces": "Egy átgondolt digitális művészeti választás a személyes terekre",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Ez egy digitális termék. Fizikai lenyomat vagy keret nem szállítható. Vásárlás után töltse le a Gumroad-on tárolt fájlokat. A nyomtatás előtt olvassa el a mellékelt fájlspecifikációkat, nyomtatási útmutatót és személyi használati engedélyt. Válassza ki a megadott fájloknak megfelelő nyomtatási méretet és szolgáltatást.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Válasszon ki egy műalkotást, amely tükrözi, hogy mit ér - és hagyja, hogy a jelentését él veled.",
+      "Get The Legacy of Generations ↗": "Get The Legacy of Generations",
+      "\\n": "\\ n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A kifinomult akcentus a nappali, hálószobák, irodák, butik szállodák, wellness terek, és a tekintélyes belső.",
+      "Get The Mediterranean Muse ↗": "The Mediterranean Muse",
+      "\\n": "\\ n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "Egy Föld. Egy emberiség. Egy jövő.",
+      "The story behind the image": "A történet a kép mögött",
+      "More than decoration. A human story.": "Több, mint dekoráció. Egy emberi történet.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "A világ körüli kezek minden korosztálybeli és hátterű embert képviselnek. A törött táj arról beszél, hogy mi forog kockán; a zöld horizont és az arany fény pont felé, amit még mindig meg tudunk védeni. Az üzenet nem kétségbeesés. Közös felelősség, láthatóvá téve.",
+      "Where the artwork belongs": "Where the artwork belong",
+      "Created to live with meaning": "Létrehozva, hogy értelemmel éljen",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "Az otthonok, irodák, oktatási terek, galériák és a fenntarthatóságnak szentelt környezet gondolatébresztő fókuszpontja.",
+      "A distinctive focal point for considered interiors": "Az érintett belső terek megkülönböztető fókuszpontja",
+      "A conversation piece with a message beyond trends": "Egy beszélgetős darab a trendeken túlmutató üzenettel",
+      "A thoughtful digital art choice for personal spaces": "Egy átgondolt digitális művészeti választás a személyes terekre",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Ez egy digitális termék. Fizikai lenyomat vagy keret nem szállítható. Vásárlás után töltse le a Gumroad-on tárolt fájlokat. A nyomtatás előtt olvassa el a mellékelt fájlspecifikációkat, nyomtatási útmutatót és személyi használati engedélyt. Válassza ki a megadott fájloknak megfelelő nyomtatási méretet és szolgáltatást.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Válasszon ki egy műalkotást, amely tükrözi, hogy mit ér - és hagyja, hogy a jelentését él veled.",
+      "Get Last Cry of Earth ↗": "Get Last Sry of Earth",
+      "\\n": "\\ n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Az otthonok, magántanulmányok, irodák, galériák, múzeumok, szállodák és kulturális terek egyedi kiegészítése.",
+      "Get THE GOLDEN GAZE 👁 ↗": "THE GOLDEN GAZE 👁",
+      "\\n": "\\ n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Az otthonok, magántanulmányok, irodák, galériák, múzeumok, szállodák és kulturális terek egyedi kiegészítése.",
+      "Get The Queen Of The Nile 👑 ↗": "The Queen Of The Nile 👑",
+      "\\n": "\\ n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Az otthonok, magántanulmányok, irodák, galériák, múzeumok, szállodák és kulturális terek egyedi kiegészítése.",
+      "Get The Coptic Soul of Egypt ↗": "The Coptic Soul of Egypt",
+      "\\n": "\\ n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE Egyiptom időtlen szépségének ünnepe, ahol a királyi jelenlét csendes méltósága találkozik a Nílus örök ritmusával. Arany...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Az otthonok, magántanulmányok, irodák, galériák, múzeumok, szállodák és kulturális terek egyedi kiegészítése.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "THE NILE'S ETERNAL GRACE",
+      "\\n": "\\ n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Néhány barátságot a szív érzett, nem magyarázta meg a szavak. Ünnepeljük a különleges kapcsolatot...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Fontos fókuszpont az otthonok, irodák, oktatási terek, galériák és helyek számára, ahol az emberi történetek számítanak.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "A BOND BEYOND WORDS The Beauty of Unconditional Love",
+      "\\n": "\\ n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION - SEVEN ARTWORKS, LIMITLESS WORLDS Utazás túl az ismerős keresztül gyűjteménye hét digitális műalkotások által inspirált kozmikus...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A kifinomult akcentus a nappali, hálószobák, irodák, butik szállodák, wellness terek, és a tekintélyes belső.",
+      "Get GLOBAL ART & IMAGINATION ↗": "GLOBAL ART & IMAGINATION",
+      "\\n": "\\ n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Hozd a tartós nagyúr az ókori Egyiptom a környezetedbe Örök Egyiptom, a...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Az otthonok, magántanulmányok, irodák, galériák, múzeumok, szállodák és kulturális terek egyedi kiegészítése.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization",
+      "\\n": "\\ n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "Egy képzeletbeli műhelyben az időt nem mérik, hanem faragják. THE CLOCKMAKER'S DREAM átalakítja fogaskerekek, égi mechanizmusok, és lehetetlen eszközök...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A kifinomult akcentus a nappali, hálószobák, irodák, butik szállodák, wellness terek, és a tekintélyes belső.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "THE CLOCKMAKER'S DREAM",
+      "\\n": "\\ n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
 }

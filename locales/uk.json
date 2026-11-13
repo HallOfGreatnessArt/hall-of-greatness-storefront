@@ -328,5 +328,382 @@
     "artworks": "Мистецтво",
     "choose": "Виберіть мову"
   },
-  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f"
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "landing_ui": {
+    "← Return to the gallery": "← Повернення до галереї",
+    "Language": "Українська",
+    "An original digital artwork from HALL OF GREATNESS": "Оригінал цифрового мистецтва від HALL OF GREATNESS",
+    "A curated collection of meaningful digital artworks": "Збірка значущих цифрових творів",
+    "Explore & Get the Artwork ↗": "Випробувано на виставці Artwork",
+    "Secure checkout and digital delivery on Gumroad.": "Безпечна реєстрація та цифрова доставка по Gumroad.",
+    "Artwork presentation": "Презентація художніх робіт",
+    "Imagine it in a refined frame": "Уявіть її в вишуканій рамці",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "Друга презентація допомагає вам фотографувати мистецтво як кадровий дисплей, зберігаючи свої оригінальні пропорції.",
+    "Digital download": "Цифрове завантаження",
+    "Access your files after checkout": "Доступ до файлів після оформлення замовлення",
+    "Print your way": "Друкувати свій шлях",
+    "Choose a size suited to your space": "Виберіть розмір, який підходить для вашого простору",
+    "Made to display": "Виготовлений для відображення",
+    "For homes, studios, and meaningful spaces": "Для будинків, студій і значущих просторів",
+    "The meaning behind the artwork": "Значення мистецтва",
+    "More than decoration. A feeling that stays.": "Більше декору. Відчуття, яке залишається.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Створено для людей, які хочуть їх оточення відобразити історію, пам'ять, значення або почуття краси. Ми можемо самі зателефонувати одержувачу і узгодити зручний час і місце вручення квітів, а якщо необхідно, то збережемо сюрприз.",
+    "Inside this collection": "Усередині цієї колекції",
+    "One collection. Many stories.": "Один збірник. Історія.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Вивчіть окремі твори, що включені до цієї колекції. Кожна частина має власний характер, а разом вони створюють насичену візуальну подорож.",
+    "Complete artwork story": "Повна історія творчості",
+    "Full product description": "Повний опис продукту",
+    "What is included": "Що входить",
+    "Product specifications": "Характеристики продукту",
+    "Where it belongs": "Де належить",
+    "Art that finds its place": "Арт, який знаходить своє місце",
+    "Before you purchase": "Перед покупкою",
+    "Digital download details": "Деталі цифрового завантаження",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Це цифровий продукт. Немає фізичного мистецтва або каркасу буде відправлено. Після покупки Gumroad надає доступ до файлів, що включені до цього продукту. Будь ласка, ознайомтеся з поданими специфікаціями та ліцензією перед друком або за допомогою художніх робіт.",
+    "From download to display": "Від завантаження до відображення",
+    "Make the artwork part of your space": "Зробіть арт-об’єкт вашого простору",
+    "01 · Purchase": "01 · Купівля",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Завершіть свій безпечний виїзд на Gumroad. Ваша покупка для цифрового продукту.",
+    "02 · Download": "02 · Завантажити",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Доступ до файлів, що поставляється з цим продуктом через Gumroad і перегляд включених специфікацій.",
+    "03 · Print": "03 · Друк",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Виберіть розмір друку, який зберігає оригінальні пропорції мистецтва. Ми можемо самі зателефонувати одержувачу.",
+    "Please note:": "Зверніть увагу:",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Немає фізичного мистецтва або кадру. Доступні формати файлів, роздільна здатність, пропорції та умови використання є зазначеними у завантаженні продукту та включені ліцензії.",
+    "Let your space tell a story.": "Нехай ваш простір розкаже історію.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Виберіть мистецтво, яке відображає те, що ви цінуєте, і давайте своє значення жити з вами.",
+    "Get": "Отримати",
+    "Art with a Soul. A Message Without Borders.": "Мистецтво з душею. Повідомлення без кордонів.",
+    "Digital artwork · Instant download through Gumroad": "Digital artwork · Миттєве завантаження через Gumroad",
+    "Privacy": "Контакти",
+    "Terms": "Умови",
+    "Contact": "Контакти",
+    "Gumroad store ↗": "Gumroad магазин",
+    "· Digital download": "· Цифрове завантаження"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Файли включені",
+    "product_type": "Тип продукту",
+    "delivery": "Доставка",
+    "physical_item": "Фізичний пункт",
+    "printing": "Друк",
+    "usage": "Проживання",
+    "bundle_item_count": "Товари в пачці"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Узгоджений арт-колекція для дому, офісів, готелів, галерей, рецепційних зон та інтер'єрів.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Узгоджений арт-колекція для дому, офісів, готелів, галерей, рецепційних зон та інтер'єрів.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "BOND BEYOND WORDS Краса безумовної любові",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Узгоджений арт-колекція для дому, офісів, готелів, галерей, рецепційних зон та інтер'єрів.",
+      "Get THE HUMANITY LEGACY ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Вишуканий акцент для вітальні, спальні, офісів, бутік-готелі, просторів краси та інтер'єрів.",
+      "Get THE ART OF STILLNESS ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Вишуканий акцент для вітальні, спальні, офісів, бутік-готелі, просторів краси та інтер'єрів.",
+      "Get GEOMETRY OF ELEGANCE ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Висловлююча заява для дому, творчих студій, офісів, приміщень гостинності та інтер’єрів, формованих уявою.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Висловлююча заява для дому, творчих студій, офісів, приміщень гостинності та інтер’єрів, формованих уявою.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Вишуканий акцент для вітальні, спальні, офісів, бутік-готелі, просторів краси та інтер'єрів.",
+      "Get MEDITERRANEAN DREAMS ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Вишуканий акцент для вітальні, спальні, офісів, бутік-готелі, просторів краси та інтер'єрів.",
+      "Get SILENT HORIZONS . ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Вишуканий акцент для вітальні, спальні, офісів, бутік-готелі, просторів краси та інтер'єрів.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Висловлююча заява для дому, творчих студій, офісів, приміщень гостинності та інтер’єрів, формованих уявою.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Зручний фокус для дому, офісів, освітніх просторів, галерей та місць, де людські історії.",
+      "Get A Shelter of Love ♥ ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Вишуканий акцент для вітальні, спальні, офісів, бутік-готелі, просторів краси та інтер'єрів.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Вишуканий акцент для вітальні, спальні, офісів, бутік-готелі, просторів краси та інтер'єрів.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "Одна планета. Відповідальність Безліч можливостей.",
+      "The story behind the image": "Історія за зображенням",
+      "More than decoration. A human story.": "Більше декору. Історія людини.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "Рука – наша ємність. Насінні стенди для крихкого нового життя; метелики пропонують трансформацію. На відміну від пошкодженої землі і обіцянки продовження нагадуємо, що завтра впливає на те, що ми обрали для захисту сьогодні.",
+      "Where the artwork belongs": "Де належить мистецтво",
+      "Created to live with meaning": "Створено для життя",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Яскравава заява про будинки, офіси, школи, екологічні організації, зони прийому та творчі простори.",
+      "A distinctive focal point for considered interiors": "Відмінна фокальна точка для розглянутих інтер'єрів",
+      "A conversation piece with a message beyond trends": "Частка розмови з повідомленням за тенденціями",
+      "A thoughtful digital art choice for personal spaces": "Розумний вибір цифрового мистецтва для особистих просторів",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Це цифровий продукт. Немає фізичного друку або кадру буде відправлено. Після покупки завантажте файли, що поставляються на Gumroad. Перегляньте вказані технічні характеристики файлів, керівництво по друку та ліцензію на використання персональних даних до друку. Виберіть розмір друку і послугу, відповідну до поставлених файлів.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Виберіть арт-проект, який відображає те, що ви цінуєте, і нехай своє значення живе з вами.",
+      "Get The Hand That Holds Tomorrow ↗": "Отримати The Hand That Holds Завтра ↗",
+      "\\n": "Кошик",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Різні особи. Один люд. Вічне з'єднання.",
+      "The story behind the image": "Історія за зображенням",
+      "More than decoration. A human story.": "Більше декору. Історія людини.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Яворий і обсидіан зберігає унікальність кожного обличчя. Золота нитка символізує спільні емоції, надії та прагнення бути обробленими гідністю. Якщо ми визнаємо одне людство.",
+      "Where the artwork belongs": "Де належить мистецтво",
+      "Created to live with meaning": "Створено для життя",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Визначена заява про сучасні будинки, виконавчі органи, галереї, місця прийому та інтер'єри, які цінують культурний діалог та людське сполучення.",
+      "A distinctive focal point for considered interiors": "Відмінна фокальна точка для розглянутих інтер'єрів",
+      "A conversation piece with a message beyond trends": "Частка розмови з повідомленням за тенденціями",
+      "A thoughtful digital art choice for personal spaces": "Розумний вибір цифрового мистецтва для особистих просторів",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Це цифровий продукт. Немає фізичного друку або кадру буде відправлено. Після покупки завантажте файли, що поставляються на Gumroad. Перегляньте вказані технічні характеристики файлів, керівництво по друку та ліцензію на використання персональних даних до друку. Виберіть розмір друку і послугу, відповідну до поставлених файлів.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Виберіть арт-проект, який відображає те, що ви цінуєте, і нехай своє значення живе з вами.",
+      "Get The Golden Thread of Humanity ↗": "Отримати Golden Thread of Humanity",
+      "\\n": "Кошик",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Зручний фокус для дому, офісів, освітніх просторів, галерей та місць, де людські історії.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Вишуканий акцент для вітальні, спальні, офісів, бутік-готелі, просторів краси та інтер'єрів.",
+      "Get AURELLE 👑 ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "Краса натюрмортів. Міцність всередині.",
+      "The story behind the image": "Історія за зображенням",
+      "More than decoration. A human story.": "Більше декору. Історія людини.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "У складі людська фігура стає символом самовідомості. Золотий світло пропонує всюди; ботанічні деталі підказки при оновленні. Нагадуємо, що сила не повинна бути гучною, і що спокій може бути формою краси.",
+      "Where the artwork belongs": "Де належить мистецтво",
+      "Created to live with meaning": "Створено для життя",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "Елегантний фокус для вітальні, приватних офісів, приймальних зон, готелів, просторів краси та сучасних інтер'єрів.",
+      "A distinctive focal point for considered interiors": "Відмінна фокальна точка для розглянутих інтер'єрів",
+      "A conversation piece with a message beyond trends": "Частка розмови з повідомленням за тенденціями",
+      "A thoughtful digital art choice for personal spaces": "Розумний вибір цифрового мистецтва для особистих просторів",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Це цифровий продукт. Немає фізичного друку або кадру буде відправлено. Після покупки завантажте файли, що поставляються на Gumroad. Перегляньте вказані технічні характеристики файлів, керівництво по друку та ліцензію на використання персональних даних до друку. Виберіть розмір друку і послугу, відповідну до поставлених файлів.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Виберіть арт-проект, який відображає те, що ви цінуєте, і нехай своє значення живе з вами.",
+      "Get The Art of Inner Peace ↗": "Отримувати мистецтво внутрішнього миру",
+      "\\n": "Кошик",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Вишуканий акцент для вітальні, спальні, офісів, бутік-готелі, просторів краси та інтер'єрів.",
+      "Get SERENITY 🤍 ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Зручний фокус для дому, офісів, освітніх просторів, галерей та місць, де людські історії.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Зручний фокус для дому, офісів, освітніх просторів, галерей та місць, де людські історії.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "Майбутнє будується багатьма руками.",
+      "The story behind the image": "Історія за зображенням",
+      "More than decoration. A human story.": "Більше декору. Історія людини.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Ми можемо самі зателефонувати одержувачу і узгодити зручний час і місце вручення квітів, а якщо необхідно, то збережемо сюрприз. Дитина стоїть для кожного юнака, мрію якого потрібна допомога і підтримка. Разом, руки стають сходинкою, і сподіваємось на те, що ми будуємо один одному.",
+      "Where the artwork belongs": "Де належить мистецтво",
+      "Created to live with meaning": "Створено для життя",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Визначена заява для сімейних будинків, шкіл, бібліотек, кабінетів, студій та просторів, які відзначають освіту та зв’язок людини.",
+      "A distinctive focal point for considered interiors": "Відмінна фокальна точка для розглянутих інтер'єрів",
+      "A conversation piece with a message beyond trends": "Частка розмови з повідомленням за тенденціями",
+      "A thoughtful digital art choice for personal spaces": "Розумний вибір цифрового мистецтва для особистих просторів",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Це цифровий продукт. Немає фізичного друку або кадру буде відправлено. Після покупки завантажте файли, що поставляються на Gumroad. Перегляньте вказані технічні характеристики файлів, керівництво по друку та ліцензію на використання персональних даних до друку. Виберіть розмір друку і послугу, відповідну до поставлених файлів.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Виберіть арт-проект, який відображає те, що ви цінуєте, і нехай своє значення живе з вами.",
+      "Get A Stairway of Hands ↗": "Отримати сходинку рук",
+      "\\n": "Кошик",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Що ми захищаємо сьогодні, стає їх завтра.",
+      "The story behind the image": "Історія за зображенням",
+      "More than decoration. A human story.": "Більше декору. Історія людини.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "Старе покоління несе досвід роботи; можливість молодших. Між ними є обіцянка: зберегти які життє життя і передати майбутній гідність тих, хто успадкував його. Ця любов висловлена як відповідальність.",
+      "Where the artwork belongs": "Де належить мистецтво",
+      "Created to live with meaning": "Створено для життя",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "Уважний шматочок для сімейних будинків, досліджень, офісів, освітніх просторів та всіх, хто цінує пам'ять, сім'ю та майбутнє.",
+      "A distinctive focal point for considered interiors": "Відмінна фокальна точка для розглянутих інтер'єрів",
+      "A conversation piece with a message beyond trends": "Частка розмови з повідомленням за тенденціями",
+      "A thoughtful digital art choice for personal spaces": "Розумний вибір цифрового мистецтва для особистих просторів",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Це цифровий продукт. Немає фізичного друку або кадру буде відправлено. Після покупки завантажте файли, що поставляються на Gumroad. Перегляньте вказані технічні характеристики файлів, керівництво по друку та ліцензію на використання персональних даних до друку. Виберіть розмір друку і послугу, відповідну до поставлених файлів.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Виберіть арт-проект, який відображає те, що ви цінуєте, і нехай своє значення живе з вами.",
+      "Get The Legacy of Generations ↗": "Отримати Legacy of Generations ↗",
+      "\\n": "Кошик",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Вишуканий акцент для вітальні, спальні, офісів, бутік-готелі, просторів краси та інтер'єрів.",
+      "Get The Mediterranean Muse ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "Одна Земля. Одна людина. Одне майбутнє.",
+      "The story behind the image": "Історія за зображенням",
+      "More than decoration. A human story.": "Більше декору. Історія людини.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "Руки, що оточують світ, представляють людей різного віку та фону. Зламований краєвид говорить про те, що на ризику; зелений горизонт і золотий світловий пункт до того, що ми ще можемо захистити. Повідомлення не відчайдушно. Відповідає відповідальність, видане видимим.",
+      "Where the artwork belongs": "Де належить мистецтво",
+      "Created to live with meaning": "Створено для життя",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "Подуманий фокус для будинків, офісів, освітніх просторів, галерей та середовищ, присвячених стійкості.",
+      "A distinctive focal point for considered interiors": "Відмінна фокальна точка для розглянутих інтер'єрів",
+      "A conversation piece with a message beyond trends": "Частка розмови з повідомленням за тенденціями",
+      "A thoughtful digital art choice for personal spaces": "Розумний вибір цифрового мистецтва для особистих просторів",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Це цифровий продукт. Немає фізичного друку або кадру буде відправлено. Після покупки завантажте файли, що поставляються на Gumroad. Перегляньте вказані технічні характеристики файлів, керівництво по друку та ліцензію на використання персональних даних до друку. Виберіть розмір друку і послугу, відповідну до поставлених файлів.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Виберіть арт-проект, який відображає те, що ви цінуєте, і нехай своє значення живе з вами.",
+      "Get Last Cry of Earth ↗": "↗ ↗ ↗",
+      "\\n": "Кошик",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Відмінне доповнення до будинків, приватних досліджень, офісів, галерей, музеїв, готелів та культурних просторів.",
+      "Get THE GOLDEN GAZE 👁 ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Відмінне доповнення до будинків, приватних досліджень, офісів, галерей, музеїв, готелів та культурних просторів.",
+      "Get The Queen Of The Nile 👑 ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Відмінне доповнення до будинків, приватних досліджень, офісів, галерей, музеїв, готелів та культурних просторів.",
+      "Get The Coptic Soul of Egypt ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE Святкування безмежної краси Єгипту, де тиха гідність регалентної присутності відповідає вічний ритм Нілу. Золотий",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Відмінне доповнення до будинків, приватних досліджень, офісів, галерей, музеїв, готелів та культурних просторів.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Деякі друзі Святкування надзвичайного підключення...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Зручний фокус для дому, офісів, освітніх просторів, галерей та місць, де людські історії.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, ЛІМІТНЕ СВІТУ Подорож за межами знайомого через колекцію семи цифрових творів, надиханих космічними...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Вишуканий акцент для вітальні, спальні, офісів, бутік-готелі, просторів краси та інтер'єрів.",
+      "Get GLOBAL ART & IMAGINATION ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Прийміть закінчення велич стародавнього Єгипту у ваші оточення з...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Відмінне доповнення до будинків, приватних досліджень, офісів, галерей, музеїв, готелів та культурних просторів.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "Всередині уявляв майстерню, час не вимірюється, але ліплять. THE CLOCKMAKER'S DREAM перетворює редуктори, селекціональні механізми та неможливі інструменти...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Вишуканий акцент для вітальні, спальні, офісів, бутік-готелі, просторів краси та інтер'єрів.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "浜у 涓 蹇",
+      "\\n": "Кошик",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
 }

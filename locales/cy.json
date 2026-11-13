@@ -1,0 +1,710 @@
+{
+  "products": {
+    "oubirh": {
+      "summary": "Eight refined artworks bringing together golden accents, peaceful forms, elegant abstraction, and visual harmony for sophisticated contemporary interiors.",
+      "category": "Casgliad",
+      "_source_hash": "85810573c609f032749049f0af3efd548b47b50b60c74fae8bbbcb5e0cfaaf2c"
+    },
+    "hqpird": {
+      "summary": "Tri gwaith celf unigryw yn dathlu'r ysbryd parhaus o'r etifeddiaeth Eglwys yr Aifft a'r Eglwys Coptic, cof diwylliannol, a harddwch di-amser yr Aifft.",
+      "category": "Casgliad",
+      "_source_hash": "bbee15015588f3854edb7cce4f6ee745a63ecba99e41de9335d42b77a925b26e"
+    },
+    "wdtvt": {
+      "summary": "Deuddeg gwaith celf pwerus am barch, adferiad, cysylltiad dynol, a gobaith. Casgliad celf argraffadwy llawn ar gyfer mannau pwysig a lleoedd mewnol ystyrlon.",
+      "category": "Casgliad",
+      "_source_hash": "0beaa1225adf5643d8bf3173e7f93d6f8ebe7ebb067e86674e4e8e27bf908560"
+    },
+    "mxrljy": {
+      "summary": "Mae The Art of Stillness yn eich gwahodd i arafu a darganfod eto harddwch y adeg ddisglair. Yn cael ei ysbrydoli gan ffurfiau meddyliol, blodau lotus, dŵr yn llifo, a golau aur poeth, mae'r gwaith celf digidol serennus yma yn dod â chyffro i leoliadau iechyd a lles a lleoedd mewnol sgleiniog.",
+      "category": "Elegance",
+      "_source_hash": "adcd68bc42846100ab6f13044e8972c34ee7fe07d1f4702b4d1d9fdc7b14e78c"
+    },
+    "gusqyc": {
+      "summary": "Mae Geometreg Elegance yn dathlu cyfarfod ffurf adeiladwaith, gwead naturiol, a ffasiwn gyfoes. Mae tonau emerald, wynebau efydd, geometreg sgerbwd, a nodweddion aur yn creu gwaith celf diwylliedig a wneir ar gyfer cartrefi, swyddfeydd, a lletygarwch mewnol.",
+      "category": "Elegance",
+      "_source_hash": "84014823691b93211841d3dbcf2452a78fd435d388b74dad7f7febe4d752c69f"
+    },
+    "aenwi": {
+      "summary": "Cymerwch eich dychymyg i ddinas wedi ei ffurfio gan bosibiliadau. Mae Cities of Tomorrow yn waith celf digidol dychmygus sy'n dathlu dychymyg pensaernïol, newyddiaduraeth, a'r dymuniad dynol i adeiladu dyfodol mwy disglair. Argraffiad datganiad syfrdanol ar gyfer cartrefi cyfoes, stiwdios creadigol, mannau technoleg, ac swyddfeydd modern.",
+      "category": "Byd-eang",
+      "_source_hash": "e2173f80b274ea619b175b5480c483771929f3d1c9a75ce2893eea0775e30e96"
+    },
+    "gynmhv": {
+      "summary": "Gadewch i fawredd distaw natur drawsnewid eich lle. Mae Majesty'r Natur yn dathlu harddwch adferol mynyddoedd, afonydd, coedwigoedd, a dŵr ysgafn mewn gwaith celf tirlun byw sy'n atgoffa o rhyddid, adnewyddu, a chynhesrwydd. Argraffiad datganiad adfywiol ar gyfer cartrefi a lletygarwch mewnol.",
+      "category": "Cyffredinol",
+      "_source_hash": "e6e5a3263c07964a62266c9dbbc5d1e7eb389514c1ade5780eebc6e4228f4b2e"
+    },
+    "jrsgce": {
+      "summary": "Dewch â theimlad o ymfudo i'r Môr Canoldir i'ch amgylchedd bob dydd. Mae Dreams Mediterranean yn dal y rhamantus o adeiladwaith arfordirol, dŵr glas disglair, terraces blodeuol, a golau'r awr aur. Argraffiad celf ddigidol croesawgar ar gyfer cartrefi, fflatiau, caffis, a'r tu mewn wedi'i ysbrydoli gan deithio.",
+      "category": "Elegance",
+      "_source_hash": "f26a8d189f4afe6a0a7a8d671fcbd37c54bd461cdba3f4d15d77243c056e17e5"
+    },
+    "ukxrmq": {
+      "summary": "Canfod eiliad o ryddid yn naturioldeb golygfa llonydd. Mae Golygfeydd Llychlynol yn waith celf digidol wedi ei ysbrydoli gan y naturioldeb, wedi ei ffurfio gan ddŵr llonydd, pennau pell, golau boreol meddal, a syniad o adnewyddu. Nodwedd dirwedd ysgafn ar gyfer cartrefi, swyddfeydd a mannau llesgoch.",
+      "category": "Elegance",
+      "_source_hash": "003e93a0d92367744addfb51152fe6da6c27ac08144b5c89e1e73dd7fec007c7"
+    },
+    "yhkokf": {
+      "summary": "Mae Llif Aur yn dod â drama naturiol marmor a harddwch aur i mewn i gyfansoddiadau anferth cyfoes. Creu dyfnder, symudiad a chyfoeth di-ddisgrifiad yw ffurfiau tywyll a golau sy'n llifo - argraffiad celf ddigidol mynegiantol ar gyfer ystafelloedd mewnol modern soffistigedig.",
+      "category": "Harddwch",
+      "_source_hash": "fc65d52d8cd76ff8b23097321c08f7ca24b70659818dea5dda62f894d09e4c9c"
+    },
+    "nxkxyq": {
+      "summary": "Ceisiwch weld golwg ddisglair o'r byd. Mae Y tu hwnt i'r Byd yn dathlu mysteri, maint a rhyfeddod y gofod trwy waith celf digidol sy'n debyg i freuddwyd, wedi ei ysbrydoli gan galactics, golau'r nefoedd, a phosibilrwydd diderfyn. Argraffiad datganiad syfrdanol ar gyfer ystafelloedd mewnol modern a meddyliau cudd.",
+      "category": "Byd-eang",
+      "_source_hash": "16177585eb4768f120133dcd37a54ecc8a9108c42b39834cfe2e329ac00623d3"
+    },
+    "mzlqxg": {
+      "summary": "Mae A Shelter of Love yn dal llygad ar weithred fach sydd â ystyr barhaol: rhieni'n sicrhau nad yw eu plant byth yn wynebu'r glaw'n unig. Wedi'i leoli yn erbyn nosweithiau'r ddinas yn ddisgleirio, mae'r gwaith celf emosiynol hwn yn dathlu diogelu, ymddiriedaeth, teulu, a pŵer distaw cariad di-gyfnod.",
+      "category": "Dynoliaeth",
+      "_source_hash": "5c0e78bf9d27136335daa7e34ccf9da42dc590a56d083c83815407b47244dac0"
+    },
+    "etqsav": {
+      "summary": "O dan y lleuad disglair, mae lliw, symudiad a ffrindiau'n dod ynghyd yn The Celestial Garden. Mae'r gwaith celf dychmygol yma yn dathlu unigolion, taith a rannu, rhyddid, a graddfa fenywaidd trwy fyd ffantasi bywiog. Argraffiad datganiad unigryw ar gyfer ystafelloedd mewnol mynegiant, dychmygus.",
+      "category": "Elegance",
+      "_source_hash": "79723050f56e46edb2f774883a51d0a22ea883d9b80d00bd2c223954ce0c9346"
+    },
+    "vwrllor": {
+      "summary": "Portread o gryfder, diwylliant a harddwch di-dor yw'r Veil Aur o Serenity. Ffurfiau du cyfoethog ac aur disgleiriol yn creu presenoldeb gweledol dychmygus—gwaith celf digidol mynegiant ar gyfer ystafelloedd mewnol a chasglwyr sydd wedi eu denu at bortreadau pwerus.",
+      "category": "Arddull",
+      "_source_hash": "3fbd51fc0b3144dfae0749e5c04814f34b8c72ab9c458a6ae346494c7a678894"
+    },
+    "gkwadk": {
+      "summary": "Mae planhigyn a gaiff ei gadw mewn dwylo dynol yn dod yn symbol o adnewyddu a gofal cyffredin.",
+      "category": "Humanity",
+      "_source_hash": "b3d3ed2cdc9e6333f7aaf330e1821220c7ad12874771ec45ca02ca1fc18fbd9f"
+    },
+    "rglfun": {
+      "summary": "Dwy hunaniaethau gwahanol, wedi eu cysylltu gan symbol aur o'n diwylliant dynol cyffredin.",
+      "category": "Dynoliaeth",
+      "_source_hash": "7621f26df00b476963956773c9499fcec7b87189855fb05b55ebef7cd33c4268"
+    },
+    "cotnkm": {
+      "summary": "Mae Roots of Tenderness yn anrhydedd i'r cariad sy'n dod yn rhan o'r hyn ydym ni. Drwy ddealltwriaeth grefyddol o fam a phlentyn, mae'r gwaith celf yn dathlu diogelu, aberth, perthynas, a'r gwreiddiau sy'n para o gariad. Darn sy'n llawn ystyr i lefydd teuluol a chasgliadau meddwl.",
+      "category": "Humanity",
+      "_source_hash": "89071cfe9a0d1d8d3c14646a7e82629d42e4e1b858b782ebe96d94ff24be625e"
+    },
+    "kaztbw": {
+      "summary": "Mae AURELLE yn troi'r arferion bob dydd o goffi yn ddathliadau poeth o'r presenoldeb, y harddwch benywaidd, a'r ffasiwn llonydd. Mae aur golau, du tywyll, a tonau coffi poeth yn creu gwaith celf digidol unigryw ar gyfer cartrefi stylish, corneli coffi, caffis siopa, a'r tu mewn cyfoes.",
+      "category": "Elegance",
+      "_source_hash": "50f25bf7ff18b06b831f14e21450ee7562896355ad94503c70b68b66a14178bb"
+    },
+    "cuitvq": {
+      "summary": "Mae'r ysgafnrwydd sgleiniog a'r golau aur yn mynegi'r grym distaw o gydbwysedd mewnol.",
+      "category": "Ysgafnrwydd",
+      "_source_hash": "2ccb896bdf8f18e66ce1bc1ca17fecfdd6eed315302fe2ee1d2ef8c5532b18b4"
+    },
+    "rabhc": {
+      "summary": "Serenity yw meddyliau gweledol ar adfer, cydbwysedd, a'r grym tawel sy'n byw o fewn. Mae ei ffurf anferth a'i chylch aur yn creu pwynt canolog edmygus ar gyfer mannau sy'n ymroddedig i adlewyrchiad, caledwch, a dylunio cyfoes.",
+      "category": "Elegance",
+      "_source_hash": "3e36120477fa3535261c200c5e9210726bf08cb1968d35b25965f08e276b936f"
+    },
+    "ycltf": {
+      "summary": "Mae'r Coeden A Ddychwelodd i Farw yn dweud stori o adfywio: hyd yn oed yn y ffosydd, gall bywyd ddod o hyd i ffordd ymlaen. Mae ei gwraidd yn dod yn bont rhwng lleoedd wedi'u torri, gan droi goroesi yn gysylltiad ac adnewyddu. Darn o gelf ystyrlon ar gyfer unrhyw un sy'n credu y gall gobaith dyfu eto.",
+      "full_description": "Y COED A DDYWODD I FARW\n\nErbyn y ffosydd, mae bywyd yn dod o hyd i ffordd.\n\nBeth os nad yw'r symbol mwyaf o obaith yn gofeb a adeiladwyd gan y dynoliaeth, ond coeden fyw a wrthododd roi'r gorau iddi?\n\nCymerwch ddinas sydd wedi colli ei llais. Mae adeiladau wedi syrthio, mae ffyrdd wedi diflannu o dan y ffosydd, a'r traciau o fywyd dynol yn debyg o fod wedi diflannu i'r distawrwydd. Ond, yn galon y lle anghofiedig hwn, mae coeden arbennig yn dal i fyw.\n\nNid yw ei gwraidd yn chwilio am dir yn unig. Maent yn cyrraedd dros waliau wedi'u torri, yn ymlusgo strwythurau wedi'u torri, ac yn estyn rhwng adeiladau wedi'u rhannu, yn trosi dinistrio i gysylltiad. Mae ei gaeau'n codi tuag at yr awyr, yn cario dail gwyrdd newydd dan olau aur sy'n torri trwy'r cwmwl.\n\nMae hyn yn fwy na golygfa o'r naturiol yn adfer tref wedi'i ddinistrio. Mae'n stori syfrdanol am yr ysbryd dynol.\n\nMae'r goeden yn cynrychioli pob person sydd wedi dioddef anhawster heb adael i anhawster ddiffinio eu dyfodol. Mae'n siarad am y rhai sydd wedi colli bron popeth, ond sy'n dal i ddod o hyd i'r grym i ddechrau eto. I'r rhai sydd wedi cael eu hanafu gan fywyd, ond nad ydynt wedi gadael i'w calonnau ddod yn wag. I'r rhai sy'n deall nad yw goroesi yn unig yn aros yn fyw - mae'n dod o hyd i'r nerth i dyfu eto.\n\nMae ei gwraidd yn symbol o adfywio: y grym anweledig sy'n ein cadw ni'n un pan mae popeth o'n cwmpas yn torri i lawr. Mae eu pontydd yn cynrychioli cyd-gyfarfod, cysylltu, a'r posibilrwydd o ail-adeiladu perthnasoedd a chymunedau ar ôl rhannu a cholli.\n\nMae'r canopi glas yn ymrwymiad nad oes rhaid i ddifrod fod yn y pennod olaf. Mae'r adar yn codi i'r awyr agored yn ein hatgoffa y gall rhyddid ac adnewyddu ddychwelyd, hyd yn oed ar ôl yr adeg dywyllaf.\n\nA'r golau aur tu hwnt i'r hen adeiladau yn cynnig neges ysgafn ond gryf: nid yw'r dyfodol yn cael ei benderfynu gan yr hyn sydd wedi ei ddifetha, ond gan yr hyn sydd dal yn gallu tyfu.\n\nMae'r gwaith celf hwn yn siarad â phobl sydd wedi wynebu cyfnod anodd yn eu bywydau, pobl sydd wedi ail-adeiladu ar ôl colli rhywbeth, a phobl sy'n credu nad yw gobaith yn absenoldeb anhawster, ond y pŵer i barhau er gwaethaf hynny.\n\nMae'n darn datganiad pwysig ar gyfer y ystafell fyw, yr swyddfa, y llyfrgell, y stiwdio greadigol, neu unrhyw le lle mae adfywio, adnewyddu, a chreadigrwydd yn haeddu lle. Gall hefyd fod yn anrheg ystyrlon i rywun sy'n dechrau pennod newydd, yn goresgyn gwrthdaro, neu'n dod o hyd i'r hyder i godi eto.\n\nGadewch i'r goeden hon eich atgoffa nad oes rhaid i'ch gorffennol gyfyngu ar eich dyfodol. Er pan fydd bywyd yn gadael chi wedi'ch gorchuddio gan ddinistrion, efallai y bydd rhywbeth yn eich calon yn dal yn gallu tyfu.\n\nNid ydych yn cael eich diffinio gan yr hyn a ddisgynnodd o amgylch chi. Mae'n cael ei ddiffinio gan yr hyn sy'n tyfu o fewn i chi.\n\nHALF OF GREATNESS\n\nArt with an Soul. A Message Without Borders.\n\nART PRINT & SEARCH DETAILS\n\nDarganfyddwch yr argraffiad celf ddigidol THE TREE THAT REFUSED TO DIE ar gyfer celf wal argraffadwy, addurno cartref unigryw, a dyluniad mewnol ystyrlon. Darlun sydd ar gael i'w lawrlwytho ar gyfer arddangos personol, gyda dewisiadau argraffu wedi'u dewis i addasu'r ffeil a ddarperir a'ch lle.",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 ffeil · ZIP · 29.1 MB",
+        "product_type": "Lawrlwytho delweddau digidol",
+        "delivery": "Lawrlwytho digidol ar unwaith ar ôl prynu",
+        "physical_item": "Ni anfonir unrhyw argraffu na ffrâm gorfforol",
+        "printing": "Argraffu'r ffeiliau a ddarperir gyda'ch darparwr argraffu hoffus; gwiriwch y dimensiynau cyn dewis maint",
+        "usage": "Dilynwch y telerau defnydd personol a thelerau trwydded eraill a ddarperir gyda'r lawrlwythiad"
+      },
+      "_source_hash": "d9bff692f10639a5edca9063641cbb3c31081b0579c89bb9cc9635499e614060"
+    },
+    "bctcdz": {
+      "summary": "Mae'r golau yr ydym yn ei adael ar ôl yn anrhydeddu'r dalent, y ddysgeidiaeth a'r nerth a drosglwyddir o genhedlaeth i'r llall. Mae lansier golau yn symbol o'r gobaith yr ydym yn ei dderbyn—a'r golau yr ydym yn dewis ei rannu. Darn celf symudol ar gyfer cartrefi, swyddfeydd, a rhoddion gwerthfawr.",
+      "full_description": "Y golau yr ydym yn ei adael ar ôl i'n gilydd\n\nY goleuni mwyaf yw'r un yr ydym yn ei basio.\n\nMae rhai goleuadau wedi'u cynllunio i oleuo eiliad. Mae eraill wedi'u cynllunio i oleuo cenedlaethau.\n\nMae gwir distaw yn cysylltu pob bywyd dynol: ni fydd neb ohonom yn dechrau ein taith yn llwyr yn y golau. Ar un adeg ar hyd y ffordd, mae rhywun yn ein cyrraedd ni - rhiant, athro, rhywun o'r tu allan, ffrind, neu rywun y gallwn byth anghofio ei garedigrwydd. Maent yn cynnig rhywbeth i ni sy'n ein helpu i ddod o hyd i'n ffordd: ychydig o obaith, darn o feddwl, gweithred o barch, neu'r nerth i barhau.\n\nA dydd un, rydym yn darganfod bod y golau a dderbyniom unwaith yn ein rhan ni bellach.\n\nMae THE LIGHT WE LEAVE EACH OTHER yn anrhydedd artistig i'r etifeddiaeth ddynol anhygoel hon - yr etifeddiaeth anweledig o garedigrwydd, gwybodaeth, cariad, nerth a gobaith sy'n mynd o genhedlaeth i'r llall.\n\nYn ganolog i' r cyfansoddiad, mae lantern aur hynafol yn symud o un pâr o ddwylo i' r llall. O amgylch hi, mae wynebau o oedrannau a chenedlaethau gwahanol yn dod ynghyd mewn munud o gysylltiad. Mae' r henoed yn cynrychioli dealltwriaeth a phrofiad y rhai a ddaeth cyn ni. Mae' r cenedlaethau iau yn cynrychioli' r addewid o' r hyn sydd eto i ddod. Ynghyd â nhw, mae' r lantern yn symbol pwerus o ddilyniant: atgof nad yw cyflawniadau mwyaf y byd yn cael eu mesur yn unig gan yr hyn yr ydym yn ei adeiladu, ond hefyd gan yr hyn yr ydym yn ei roi i' w gilydd.\n\nMae'r tywyllwch o amgylch a'r gorwel aur pell yn tynnu sylw at ystyr y darn. Maent yn cynrychioli ansicrwydd bywyd, yr heriau rydym yn eu hwynebu, a'r posibilrwydd o ddyfodol mwy disglair pan rydym yn dewis sefyll gyda'n gilydd. Mae'r golau poeth yn goleuo'r wynebau a'r dwylo yn cyrraedd yn trawsnewid symudiad syml yn rhywbeth cyffredinol: y cred nad yw gweithred o garedigrwydd gwirioneddol byth yn cael ei golli.\n\nMae'r gwaith celf yma yn gwahodd adlewyrchiad personol:\n\nPwy wnaeth ddod â goleuni i'ch bywyd pan oedd ei angen fwyaf arnoch chi? Pwy y gallai ei ffordd ddod yn fwy disglair oherwydd rhywbeth rydych chi'n dewis ei roi heddiw?\n\nMae ei neges yn perthyn i bawb, waeth beth fo'u hoedran, cenedligrwydd, diwylliant neu gefndir. Rydym i gyd wedi derbyn rhywbeth oddi wrth eraill, ac mae gennym ni i gyd rywbeth pwysig i'w drosglwyddo.\n\nMwy na llenyddiaeth. Llyfrau o ystyr.\n\nWedi' i ddylunio i fod yn fwy na datganiad addurnedig, mae' r gwaith celf yma yn dod â syniad o gynnes, dyfnder, a chysylltu dynol i' r lle y mae' n byw ynddo. Gall ddod yn presenoldeb pwysig yn y ystafell fyw, ystafell astudio, yr swyddfa, neu unrhyw le lle mae ysbrydoliaeth a dychymyg yn cael eu gwerthfawrogi.\n\nMae'n gwneud anrheg ystyrlon i rywun sy'n credu mewn caredigrwydd, teulu, diolchgarwch, cysylltiad dynol, a'r pŵer parhaus o hyder.\n\nGan nad yw'r pethau mwyaf gwerthfawr yr ydym yn eu gadael ar ôl bob amser yn bethau y gallwn eu cadw. Weithiau, maent yn y bywydau yr ydym wedi eu cyffwrdd, y calonnau yr ydym wedi eu cymell, a'r golau yr ydym wedi helpu eraill i'w ddarganfod ynddynt eu hunain.\n\nNid yw golau wedi'i rannu byth yn olaf. Mae'n olaf sy'n byw.\n\nY LLEFARIADAU\n\nMae'r wladwriaeth yn y wladwriaeth fwyaf ffyniannus y gallwn ei chreu.\n\nHALF OF GREATNESS\n\nArt with an Soul. A Message Without Borders.\n\nART PRINT & SEARCH DETAILS\n\n10",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 ffeil · ZIP · 27.5 MB",
+        "product_type": "Lawrlwytho delweddau digidol",
+        "delivery": "Lawrlwytho digidol ar unwaith ar ôl prynu",
+        "physical_item": "Ni anfonir unrhyw argraffu na ffrâm gorfforol",
+        "printing": "Argraffu'r ffeiliau a ddarperir gyda'ch darparwr argraffu hoffus; gwiriwch y dimensiynau cyn dewis maint",
+        "usage": "Dilynwch y telerau defnydd personol a thelerau trwydded eraill a ddarperir gyda'r lawrlwythiad"
+      },
+      "_source_hash": "6fb6b36e97f6c6a45e6f2b988972dcc4dc6ed88e314b292990945b1ee19d2a6d"
+    },
+    "msuzc": {
+      "summary": "Mae plentyn yn codi tuag at y golau, wedi'i gefnogi gan ddealltwriaeth llawer o genhedloedd.",
+      "full_description": "A STAIRWAY OF HANDS\n\nMae'r dyfodol yn cael ei adeiladu gan lawer o ddwylo.\n\nNi ddylai unrhyw blentyn gael i godi tuag at yfory yn unig.\n\nMae Stafell Ddwylo yn ddathlu symbolaidd o gydweithrediad, gofal, a gweithredoedd clyd o gefnogaeth sy'n newid bywydau. Yn ei galon, mae plentyn yn cymryd cam tuag at y golau ar ddrysau sydd wedi eu creu gan ddwylo dynol. Mae pob llaw yn cynrychioli person, aberth, caredigrwydd, neu gyfraniad sy'n helpu rhywun arall i godi.\n\nY STOR DDYDDOL\n\nNid oes gan y dwylo oedran na chyflogaeth benodol. Maent yn siarad am rieni, athrawon, gweithwyr, gofalwyr, ffrindiau, a chenedlaethau y mae eu hymdrechion yn aml yn anweledig. Mae'r plentyn yn cynrychioli pob person ifanc sydd â breuddwyd sydd angen cryfhau, cyfle, a diogelu.\n\nMae' r symudiad o' r tywyllwch i' r golau aur yn rhoi i' r ddelwedd ei gryfder emosiynol. Nid yw gobaith yn aros yn ddi- weithredol; mae' n rhywbeth mae pobl yn ei adeiladu ar gyfer ei gilydd, un gweithred fawreddog ar y tro.\n\nDYDDOLFA GYFFREDINOL YN EICH LLE\n\nDangoswch y gwaith hwn yn y cartref teuluol, swyddfa, ysgol, llyfrgell, stiwdio, neu leoliad cymunedol fel atgof bod diwylliant a chyfleoedd yn tyfu pan fydd pobl yn sefyll gyda'i gilydd. Mae hefyd yn anrheg ystyrlon i athrawon, rhieni, mentoriaid, a phobl sy'n credu yn y gobaith am y genhedlaeth nesaf.\n\nUn plentyn. Amryw o ddwylo cymorth. Dyfodol wedi ei adeiladu gyda'n gilydd.\n\nEICH ARTEITHAS DIGITAL\n\nLawrlwythiad digidol; ni anfonir unrhyw argraffu na ffrâm gorfforol.\n\nLawrlwytho'r ffeiliau a ddarperir gyda'r cynnyrch hwn ar ôl eu prynu.\n\nAdolygu'r manylion ffeil a ddarperir, canllaw argraffu, a thrwydded defnydd personol cyn argraffu.\n\nDewiswch faint argraffu a gwasanaeth sy' n cydweddu â' r manylebau ffeil a roddir.\n\nDewch â gwaith celf a stori adref. Dewiswch Lawrlwytho Gwaith Celf i'w wneud yn rhan o'ch lle.\n\nHALL OF GREATNESS — Art with an Soul. A Message Without Borders.",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 ffeil · ZIP · 8.6 MB",
+        "product_type": "Lawrlwytho gwaith celf digidol",
+        "delivery": "Lawrlwytho digidol ar unwaith ar ôl prynu",
+        "physical_item": "Ni fydd unrhyw argraffu na ffrâm yn cael ei anfon",
+        "printing": "Argraffu'r ffeiliau a ddarperir gyda'ch darparwr argraffu hoffus; gwiriwch y dimensiynau a ddarperir cyn dewis maint",
+        "usage": "Dilynwch y telerau defnydd personol a thelerau trwydded eraill a ddarperir gyda'r lawrlwythiad"
+      },
+      "_source_hash": "b963b309b0892c055876d7451b6a8bc36190e3b1d23c99420a1c588817cba9ac"
+    },
+    "tzlsv": {
+      "summary": "Teyrnged i gariad, ymdrech, a'r byd yr ydym yn ei gadw mewn ymddiriedolaeth i'r rhai sy'n dilyn.",
+      "full_description": "LLEFARIADAU'R CYNHESARIAID\n\nYr hyn yr ydym yn ei warchod heddiw yw eu dyfodol.\n\nEfallai mai'r byd yr ydym yn ei adael mewn llaw rhywun arall yw ein harglwyddiaeth fwyaf.\n\nMae'r Llyfr Llyfrau Genhedloedd yn archwilio'r berthynas rhwng y rhai a ddaeth cyn ni a'r rhai a fydd yn ein dilyn. Mae'n adlewyrchiad o deulu, cof, aberth, a'r cyfrifoldeb i drosglwyddo mwy na dim ond perchnogaeth: dyfodol digon da i'r genhedlaeth nesaf.\n\nYMLAEN YN GYFLWYNO\n\nMae'r gwaith yn siarad am y ddysgeidiaeth a roddir gan y cenedlaethau hŷn a'r posibiliadau a ddarperir gan y rhai ifanc. Ynghyd â'r ddau mae'n rhaid i ni gadw'r hyn sy'n cynnal bywyd, adfer yr hyn sydd wedi ei niweidio, a gwneud dewisiadau wedi'u harwain gan ofal yn hytrach na chyfleusder.\n\nMae ei neges ddyfnach yn un ddwfn ac yn unoliaethol. Gall teulu fod yn ffynhonnell perthynas, ond mae cyfrifoldeb yn mynd y tu hwnt i'r teulu, yn cysylltu cymunedau a cenedlaethau drwy'r byd maent yn ei rannu.\n\nAtgof sy'n perthyn i bob cenedl\n\nGosodwch y gwaith celf yma mewn lle byw teuluol, ystafell ddosbarth, swyddfa, lleoliad addysgol, neu unrhyw le sy'n anrhydeddu cof a'r dyfodol. Mae'n gwneud anrheg ystyrlon i rieni, hen rieni, mentoriaid, a phobl sy'n credu mai gofal yw etifeddiaeth.\n\nNid yw'r dyfodol yn ein meddiant ni. Rydym yn ei gadw mewn ymddiriedaeth i'r rhai sy'n dod ar ôl ni.\n\nEICH ARTEITHAS DIGITAL\n\nLawrlwythiad digidol; ni anfonir unrhyw argraffu na ffrâm gorfforol.\n\nLawrlwytho'r ffeiliau a ddarperir gyda'r cynnyrch hwn ar ôl eu prynu.\n\nAdolygu'r manylion ffeil a ddarperir, canllaw argraffu, a thrwydded defnydd personol cyn argraffu.\n\nDewiswch faint argraffu a gwasanaeth sy' n cydweddu â' r manylebau ffeil a roddir.\n\nDewch â gwaith celf a stori adref. Dewiswch Lawrlwytho Gwaith Celf i'w wneud yn rhan o'ch lle.\n\nHALL OF GREATNESS — Art with an Soul. A Message Without Borders.",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 ffeil · ZIP · 23.1 MB",
+        "product_type": "Lawrlwytho gwaith celf digidol",
+        "delivery": "Lawrlwytho digidol ar unwaith ar ôl prynu",
+        "physical_item": "Ni fydd unrhyw argraffu na ffrâm yn cael ei anfon",
+        "printing": "Argraffu'r ffeiliau a ddarperir gyda'ch darparwr argraffu hoffus; gwiriwch y dimensiynau a ddarperir cyn dewis maint",
+        "usage": "Dilynwch y telerau defnydd personol a thelerau trwydded eraill a ddarperir gyda'r lawrlwythiad"
+      },
+      "_source_hash": "85dbcd535bbf5b49e8e3d1f629b11e1c1044b6806e4066780e78dd7693e99981"
+    },
+    "bgqxwm": {
+      "summary": "Mae' r Muse Mediteranaidd yn dod â phortread mynegiant, ffurf geometreg, a phersonoliaeth ddisglair y Mediteran ynghyd. Creuwyd gwaith celf cyfoes unigryw ar gyfer casglwyr ac ar gyfer y rhai sy' n croesawu unigolion gydag aur poeth, glas trwchus a lliwiau trwm.",
+      "full_description": "The Mediterranean Muse — A Portrait of Gold, Sea & Mystery\n\nLle mae golau aur yn cwrdd â'r môr glas tywyll, mae muse syfrdanol yn codi o fyd o harddwch geometraidd a breuddwydion y Môr Canoldir.\n\nMae The Mediterranean Muse yn waith celf cyfoes, cyfoes, wedi'i ysbrydoli gan y cubist, sy'n cyfuno portread benywaidd trawiadol â'r dychymyg di-amser o adeiladwaith arfordirol, dŵr dan oleuni'r haul, mynyddoedd pell, ac haul aur yn disgleirio.\n\nCreu cydweddiad gweledol dychrynllyd gyda glasau sapphire, aur gwead, efydd oer, ffurfiau du dramatig, a llais crimson bywiog. Mae pob siâp onglog yn datgelu golwg wahanol, tra bod y golygfa arfordirol ysblennydd yn gwahodd y dychymyg i deithio rhwng gwirionedd a ffantasi artistig.\n\nMae'r gwaith celf hwn yn ddeniadol, yn dychrynllyd, ac yn llawn o bersonoliaeth, ac yn trawsnewid mur yn ddatganiad o unigolrwydd a blas ffres.\n\n✨ Perffaith ar gyfer\n\nYstafelloedd byw a thai cyfoes\n\nSwyddfeydd gweithredol a stiwdios creadigol\n\nHotelau siopau a mannau derbyniad deniadol\n\nApartamentau modern a gosodiadau mewnol wedi eu trefnu\n\nY rhai sy'n caru celf ac yn chwilio am ddarnau arwyddocaol\n\nMae'r Muse Mediterranean yn fwy na addurno mur. Mae'n gyfarfod o gelf, pensaernïaeth, lliw, a dychymyg - dathliadau o harddwch y Mediterranean wedi'i ail-ddyfeisio trwy ddealltwriaeth greadigol gryf.\n\n👑 Creuad celfyddydol o HALL OF GREATNESS.\n\nART PRINT & SEARCH DETAILS\n\nDarganfyddwch yr argraffiad celf ddigidol The Mediterranean Muse hwn ar gyfer celf wal argraffadwy, addurno cartref unigryw, a dyluniad mewnol ystyrlon. Darlun sydd ar gael i'w lawrlwytho ar gyfer arddangos personol, gyda dewisiadau argraffu wedi'u dewis i addasu'r ffeil a ddarperir a'ch lle.",
+      "category": "Elegance",
+      "product_details": {
+        "files_included": "1 ffeil · ZIP · 19.0 MB",
+        "product_type": "Lawrlwytho delweddau digidol",
+        "delivery": "Lawrlwytho digidol ar unwaith ar ôl prynu",
+        "physical_item": "Ni anfonir unrhyw argraffu na ffrâm gorfforol",
+        "printing": "Argraffu'r ffeiliau a ddarperir gyda'ch darparwr argraffu dewisol; gwiriwch y dimensiynau a ddarperir cyn dewis maint",
+        "usage": "Dilynwch y telerau defnydd personol a thelerau trwydded eraill a ddarperir gyda'r lawrlwythiad"
+      },
+      "_source_hash": "af1fb435d85020fb7dfffd341b525734bf626e5bde25a5492169ffa49b1059c6"
+    },
+    "aedllm": {
+      "summary": "Planed wedi ei hanafu, dwylo di-rif, a chyfrifoldeb cyffredin i amddiffyn yfory.",
+      "full_description": "CRY DERFYNOL Y DYFODOL\n\nUn Ddaear, Un Dynoliaeth, Un Dyfodol.\n\nMae rhai delweddau'n addurno mur. Mae eraill yn gofyn i ni pa fath o fyd rydym yn ei adael ar ôl.\n\nO'r casgliad LEGACY'R DDYNOG, mae Crys Diweddaraf y Ddaear yn troi ein planed yn symbol pwerus o agoredrwydd, cyfrifoldeb a gobaith. Mae dwylo dynol yn dod ynghyd o amgylch cwmwl wedi'i rwygo, yn mynegi gwir sy'n croesi pob ffin: nid yw'r Ddaear yn perthyn i unrhyw wlad neu genhedlaeth, ac mae ei dyfodol yn dibynnu arnom i gyd.\n\nSTORY OF TWO POSSIBLE FUTURES\n\nUn ochr y cyfansoddiad yn atgoffa cost y diystyru—tir wedi ei ddinistrio, deintyddol, ecosystemau wedi eu difrodi, a thirwedd dan bwysau. Y llall yn agor tuag at adnewyddu: twf glas, dŵr clir, ynni glan, a gwres codiad haul aur. Nid dim ond tywyllwch yn erbyn golau ydy'r gwrthdaro. Mae'n dewis rhwng rhoi'n ôl a chyfrifoldeb.\n\nMae'r llawer o ddwylo sy'n gorchuddio'r ddaear yn cynrychioli pobl o oedrannau, diwylliannau a chefndiroedd gwahanol. Gyda'i gilydd maent yn dod yn addewid gweledol mai ymdrech dynol gyfranedig yw newid sy'n ystyrlon.\n\nPWY MAE'N Bwysig\n\nMae'r gwaith hwn ar gyfer pobl sy'n gofalu am y byd naturiol, y cenedlaethau i ddod, a phŵer yr arddull i ddechrau trafodaethau pwysig. Gall fod yn ganolbwynt meddwl mewn cartref, swyddfa, lle addysgol, galleri, neu leoliad sy'n canolbwyntio ar yr amgylchedd.\n\nGadewch i'ch mur gael neges: mae'r dyfodol yn ein meddiant ni eto i'w warchod.\n\nEICH ARTEITHAS DIGITAL\n\nLawrlwythiad digidol; ni anfonir unrhyw argraffu na ffrâm gorfforol.\n\nLawrlwytho'r ffeiliau a ddarperir gyda'r cynnyrch hwn ar ôl eu prynu.\n\nAdolygu'r manylion ffeil a ddarperir, canllaw argraffu, a thrwydded defnydd personol cyn argraffu.\n\nDewiswch faint argraffu a gwasanaeth sy' n cydweddu â' r manylebau ffeil a roddir.\n\nDewch â gwaith celf a stori adref. Dewiswch Lawrlwytho Gwaith Celf i'w wneud yn rhan o'ch lle.\n\nHALL OF GREATNESS — Art with a Soul. A Message Without Borders.",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 ffeil · ZIP · 24.6 MB",
+        "product_type": "Lawrlwytho gwaith celf digidol",
+        "delivery": "Lawrlwytho digidol ar unwaith ar ôl prynu",
+        "physical_item": "Ni anfonir unrhyw argraffu na ffrâm gorfforol",
+        "printing": "Argraffwch y ffeiliau a ddarperir gyda'ch darparwr argraffu hoffus; gwiriwch y dimensiynau a ddarperir cyn dewis maint",
+        "usage": "Dilynwch y telerau defnydd personol a thelerau trwydded eraill a ddarperir gyda'r lawrlwythiad"
+      },
+      "_source_hash": "1b778b5e9598b900f314bd014e2126505fb284bc853987ad799e788064ade832"
+    },
+    "smuewa": {
+      "summary": "Mae' r Golwg Ddu yn tynnu' r gwelydd i fyd o geometreg ddehongli, awyrgylch y Môr Tawel, a lliwiau disglair. Darlunwaith portread cyfoes syfrdanol wedi' i ddylunio i ddod â mysteri, personrwydd, a gwahaniaethu celfyddydol i' r tu mewn modern.",
+      "full_description": "The Golden Gaze — Gweld Aur, Môr a Mysterium Amserol\n\nDarganfyddwch gelf sy'n denu'r llygad ac yn annog y dychymyg.\n\nThe Golden Gaze yw gwaith celf digidol gwreiddiol o'r casgliad HALL OF GREATNESS, yn cymysgu ffurfiau cyfoes wedi'u hysbrydoli gan y cubist gyda harddwch di-amser tirluniau'r Môr Canoldir.\n\nMae portread menywaidd sy'n denu sylw yn codi trwy ffurfiau geometraidd grymus, gwead aur golau, glas sapphire tywyll, efydd oer, a nodweddion crimson syfrdanol. Mae llygad amber syfrdanol yn eich tynnu i fyd breuddwydiol o afonydd wedi'u goleuo gan yr haul, pensaernïaeth arfordirol wyn, adar sy'n hedfan, a ffurfiau crefyddol.\n\nMae'r cyfansoddiad mynegiant hwn yn dod â mysteri, elegance, ac egni artistig modern ynghyd, gan greu pwynt canolog unigryw ar gyfer y tu mewn soffistigedig.\n\n✨ Pam y byddwch yn hoffi'r gwaith celf hwn\n\nArddull Gelf Arbennig: Dyluniad cyfoes wedi'i ysbrydoli gan y cubist gyda ffurfiau geometraidd mynegiant.\n\nPalet Lliwiau Cyfoethog: Aur, glas saffrwm, carbon, eirin, a chrymlyn yn creu gwrthgyferbyniad gweledol syfrdanol.\n\nMae'r rhain yn cynnwys: Ychwanegu at y ddelwedd: Ychwanegu at y ddelwedd:\n\nDewisiadau Dangosydd Addasadwy: Dewiswch eich ffrâm hoff, deunydd argraffu, a maint addas.\n\nCyfleuster Digidol: Lawrlwythwch y ffeiliau a ddarperir a trefnwch argraffu drwy'ch gwasanaeth hoffus.\n\n10\n\nYstafelloedd byw a thai modern\n\nSwyddfeydd gweithredol a stiwdios creadigol\n\nHotelau siopau a mannau derbyniad deniadol\n\nAdeiladau cyfoes a chynnal a chadw mewnol\n\nY rhai sy'n caru celf ac yn chwilio am ddatganiad addurnedig unigryw\n\nAnrhegion ystyrlon i hoffwyr celf fodern\n\n10\n\nPecyn gwaith celf digidol lawrlwythadwy sy'n cynnwys y ffeiliau a benodir yn y rhestr cynnyrch hon, ynghyd â chyfarwyddiadau argraffu i gwsmeriaid a thrwydded defnydd personol.\n\n10\n\nTeitl y gwaith celf: The Golden Gaze\n\nCasgliad: HALL OF GREATNESS\n\nArddull: Celf Gyfredol wedi' i Dylanwadu gan y Cubist\n\nCyfeiriadaeth: Darlun\n\nCydraniad Achos: 2:3\n\nMath Cynnyrch: Darlun cyfredol ar gyfer argraffu\n\nCyflenwi Ffisegol: Dim\n\n10\n\nArgraffwch y gwaith celf gan ddefnyddio gwasanaeth argraffu proffesiynol ar eich deunydd addas hoff, fel papur celf-ddu neu canvas. Dewiswch ffrâm a gorffeniad sy'n cyfoethogi eich tu mewn.\n\nMae maint ac ansawdd argraffu diwedd yn dibynnu ar gydraniad y ffeiliau a ddarperir a gallu' r gwasanaeth argraffu a ddewisoch. Gall lliwiau amrywio ychydig rhwng sgriniau a deunyddiau argraffedig.\n\nNoder: Dyma gynhyrchion digidol. Ni ddarperir unrhyw luniau, ffrâm na deunydd argraffu. Mae'r modelau ystafell yn enghreifftiau dangos llythrennol; y ffeiliau gwaith celf lawrlwythadwy yw'r gynhyrchion a gynlluniwyd ar gyfer argraffu.\n\n10\n\nMae'ch pryniant ar gyfer defnydd personol yn unig. Cewch argraffu'r gwaith celf ar gyfer eich cartref neu swyddfa eich hun a dangos argraffiad corfforol fel anrheg bersonol. Ni chewch ailwerthu, ail-ddarlledu, rhannu, is-drwyddedu, neu ailgynhyrchu'r ffeiliau digidol yn fasnachol heb ganiatâd ysgrifenedig ar wahân.\n\nART PRINT & SEARCH DETAILS\n\nDarganfyddwch yr argraffiad celf ddigidol THE GOLDEN GAZE 👁 hwn ar gyfer celf wal argraffadwy, addurno cartref unigryw, a dyluniad mewnol ystyrlon. Darlun sydd ar gael i'w lawrlwytho ar gyfer arddangos personol, gydag opsiynau argraffu wedi'u dewis i addasu'r ffeil a ddarperir a'ch lle.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 ffeil · ZIP · 22.4 MB",
+        "product_type": "Lawrlwytho delweddau digidol",
+        "delivery": "Lawrlwytho digidol ar unwaith ar ôl prynu",
+        "physical_item": "Ni anfonir unrhyw argraffu na ffrâm gorfforol",
+        "printing": "Argraffu'r ffeiliau a ddarperir gyda'ch darparwr argraffu hoffus; gwiriwch y dimensiynau cyn dewis maint",
+        "usage": "Dilynwch y telerau defnydd personol a thelerau trwydded eraill a ddarperir gyda'r lawrlwythiad"
+      },
+      "_source_hash": "bc5775f40dbc520fc6c48e9b41f3d7b8b577c56471e899302b456db982f635ec"
+    },
+    "jzjbrg": {
+      "summary": "Dewch â mawredd a mysteri'r Hen Aifft i'ch lle gyda Brenhines y Nil. Yn seiliedig ar etifeddiaeth gelfyddydol barhaol yr Aifft, ychwanega'r gwaith celf digidol unigryw hwn presenoldeb diwylliannol brenhinol i gartrefi, swyddfeydd, gwestai, a lleoedd mewnol trefnus.",
+      "full_description": "BREINHINES Y NIL\n\nTeyrnged Frenhinol i Olyniaeth Gelfyddydol yr Hen Aifft\n\nDewch â'r mysteri, diwylliant, a harddwch parhaus yr Hen Aifft i'ch amgylchedd gyda Brenhines y Nil, gwaith celf digidol wedi'i ysbrydoli gan iaith weledol ac etifeddiaeth ddiwylliannol un o'r dychymygion mwyaf nodedig yn hanes.\n\nCrewyd ar gyfer hoffwyr o etifeddiaeth yr Aifft a'r celfyddyd datganiadol unigryw, mae'r gwaith hwn yn cynnig teimlad o presenoldeb brenhinol a phersonoliaeth ddiwylliannol. Mae'n gwahodd y gwelydd i gysylltu â'r etifeddiaeth wedi'i ffurfio gan symbolaeth, gweithgarwch, dychymyg, a dychymyg parhaus gyda'r Nil a byd yr Hen Aifft.\n\nPRESENOLDEB DDIGITAL AR GYFER EICH LE\n\nGall Brenhines y Nil ddod yn fan canolog amlwg mewn ystafelloedd byw, astudiaethau preifat, swyddfeydd gweithredol, gwestai, ardaloedd derbyn, a lleoedd mewnol trefnus. Mae'n ddewis ystyrlon hefyd ar gyfer casglwyr a phobl sy'n cael eu denu at gelf a dylunio diwylliannol a ysbrydolwyd gan yr Aifft.\n\nGWEFAN LLAFNODDIAETH DIGITAL\n\nDyma gynhyrchiad digidol. Ni anfonir unrhyw baentiadau corfforol, posteri argraffedig, na fframiau cyn eu cynnwys cyn eu hargraffu. Dewiswch faint argraffu a deunydd sy'n addas i'r ffeil a ddarperir a'ch dewis arddangosfa. Gall lliwiau amrywio ychydig rhwng sgriniau a chanlyniadau argraffedig.\n\nBREINHINES Y NIL — Echoen Frenhinol o'r Hen Byd.\n\nHALAR YR YNNI\n\nARgraffu ART a chwilio am fanylion\n\nDarganfyddwch yr argraffiad celf digidol The Queen Of The Nile 👑 hwn ar gyfer celf wal argraffadwy, addurno cartref unigryw, a dyluniad mewnol wedi ei feddwl yn ofalus. Darlun celf lawrlwythadwy ar gyfer arddangos personol, gydag opsiynau argraffu a ddewisir i addasu'r ffeil a ddarperir a'ch lle.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 ffeil · ZIP · 44.0 MB",
+        "product_type": "Darlun celf digidol lawrlwythadwy",
+        "delivery": "Lawrlwythiad digidol ar unwaith ar ôl prynu",
+        "physical_item": "Ni ddarperir unrhyw argraffu na ffrâm gorfforol",
+        "printing": "Argraffwch y ffeiliau a ddarperir gyda'ch darparwr argraffu hoffus; gwiriwch y dimensiynau a ddarperir cyn dewis maint",
+        "usage": "Dilynwch y telerau defnydd personol a thelerau trwydded eraill a ddarperir gyda'r lawrlwythiad"
+      },
+      "_source_hash": "a4497ccda79c60d5130d5f8f09b9c6acc088280a4d67c8ca9e65d4ff49de7d69"
+    },
+    "csyqhm": {
+      "summary": "Mae'r Coptic Soul of Egypt yn ddehongliad celfyddydol cyfoes wedi'i ysbrydoli gan yr etifeddiaeth weledol, symbolaeth, a chof diwylliannol yr Aifft Coptic. Creuwyd ar gyfer y rhai sy'n gwerthfawrogi cyfarfod hanes, hunaniaeth, ac ysgrifennu celfyddydol, mae'n gwneud datganiad pwysig mewn cartrefi, swyddfeydd, arddangosfeydd, a mannau diwylliannol.",
+      "full_description": "Y COPTIC SOUL O'R EGYPTUS\n\nTeyrnged Greadigol Gyfredol i Dreftadaeth Coptic\n\nDarganfyddwch ddehongliad artistig personol o'r etifeddiaeth Coptic yr Aifft trwy'r Coptic Soul of Egypt, gwaith celf digidol wedi'i ysbrydoli gan y cof gweledol, yr iaith symbolaidd, ac yr awyrgylch diwylliannol sy'n gysylltiedig ag arlunwaith Coptic.\n\nYn hytrach na'i gyflwyno ei hun fel adfer archaeolegol neu fel copïau o eicon hanesyddol penodol, mae'r gwaith hwn yn mynd i'r afael ag etifeddiaeth trwy lent gelfyddydol gyfoes. Mae'n dod â chof diwylliannol a mynegiant gweledol modern ynghyd i annog adlewyrchiad ar hunaniaeth, parhausrwydd, ffydd, a ffyniant hanes haenedig yr Aifft.\n\nI'r rhai sy'n gwerthfawrogi celf ddiddorol, mae'r gwaith yn cynnig mwy na dim ond addurno: mae'n creu cysylltiad â traddodiad diwylliannol unigryw a'i le parhaus yn hanes yr Aifft.\n\nYN GYFFREDINOL I GYFARFODION YN GYFLWYNO\n\nYchwanegiad ystyrlon i gartrefi, astudiaethau preifat, swyddfeydd, galleri, mewnolaethau diwylliannol, a mannau lle mae'r etifeddiaeth ac ysgrifennu celfyddydol yr Aifft yn cael eu gwerthfawrogi. Gall hefyd fod yn anrheg ystyrlon i hoffwyr celfyddydau diwylliannol yr Aifft a'r rhai wedi'u hysbrydoli gan y Coptic.\n\nGwybodaeth Cynnyrch\n\nLawrlwythiad digidol yw hwn. Ni anfonir unrhyw luniau corfforol, posteri argraffedig, neu ffrâm. Adolygu' r ffeiliau a roddir gyda' r rhestr, gan gynnwys eu fformatau, maint, a thelerau defnydd, cyn trefnu argraffu. Gall lliwiau amrywio ychydig yn dibynnu ar y sgrin, argraffydd, a' r deunydd a ddewiswyd.\n\nTHE COPTIC SOUL OF EGYPT — Heritage Remembered. Art Reimagined.\n\nHALF OF GREATNESS\n\nART PRINT & SEARCH DETAILS\n\nDarganfyddwch yr argraffiad celf digidol hwn The Coptic Soul of Egypt ar gyfer celf wal argraffadwy, addurno cartref unigryw, a dyluniad mewnol ystyrlon. Darlun sydd ar gael i'w lawrlwytho ar gyfer arddangos personol, gydag opsiynau argraffu a ddewisir i addasu'r ffeil a ddarperir a'ch lle.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 ffeil · ZIP · 60.1 MB",
+        "product_type": "Darlun digidol i'w lawrlwytho",
+        "delivery": "Darllen digidol ar unwaith ar ôl prynu",
+        "physical_item": "Ni ddarperir argraffu na ffrâm gorfforol",
+        "printing": "Argraffwch y ffeiliau a ddarperir gyda'ch darparwr argraffu hoffus; gwiriwch y dimensiynau a ddarperir cyn dewis maint",
+        "usage": "Dilynwch y telerau defnydd personol a thelerau trwydded eraill a ddarperir gyda'r lawrlwythiad"
+      },
+      "_source_hash": "2eca69141928e3e01281fed2b39524d668bb838241b109042d8477d2e941b1b2"
+    },
+    "jvffaq": {
+      "summary": "Mae THE NILE'S ETERNAL GRACE yn dathlu harddwch di-ddiwedd yr Aifft, gan ddod â presenoldeb brenhinol a rhythm di-ddiwedd y Nil ynghyd. Darn o gelf ddigidol wedi ei ysbrydoli gan yr henw da ar gyfer mannau sy'n gwerthfawrogi diwylliant yr Aifft a harddwch di-ddiwedd.",
+      "category": "Henw da",
+      "_source_hash": "b061cdc5a55b2e444a09cd7d8c3d8d1eb73ad3315fe38b35610ca590b595c16e"
+    },
+    "kjclzu": {
+      "summary": "Mae Bond Beyond Words yn dathlu'r cysylltiad annisgwyl, heb ei gyfieithu rhwng plentyn a chyd- ddyn ffyddlon. Darn o gelf oer, uchelgeisiol am ymddiried, cariad, di- wybodaeth, a chariad di- amodau - wedi ei greu i ddod â theimlad o ddirfawredd i leoliadau teuluol a thai'r rhai sy'n caru anifeiliaid.",
+      "full_description": "BOND YNGHYLCH GERDDAU\n\nThe Beauty of Unconditional Love\n\nMae rhai ffrindiau'n cael eu teimlo gan y galon, nid eu hadrodd gan eiriau.\n\nCelebrate the extraordinary connection between a child and a beloved dog with A Bond Beyond Words, a heartwarming artwork that captures the purest expressions of friendship, loyalty, innocence, and unconditional love.\n\nWedi'i leoli mewn gardd hardd wedi'i gorchuddio â golau haul aur, mae'r darn cyffrous yma yn dangos bachgen ifanc yn ymlacio'n ofalus gyda'i Golden Retriever hapus. Mae eu mynegiant heddychlon a'u cyfeillgarwch cariadus yn dangos bod ganddynt gysylltiad arbennig wedi'i adeiladu ar ymddiriedaeth, hapusrwydd a chydweithrediad.\n\nYn cael ei amgylchynu gan flodau bywiog, coedwigoedd o goed gwyrdd, tŷ adar pren hyfryd, a golau cynnes y naturiol, mae'r cyfansoddiad yn creu awyrgylch sy'n llawn o ddirmyg, cysur a chofion plentyndod.\n\nMae pob manylyn yn cyfrannu at atgof hardd nad oes angen geiriau ar gariad bob amser. Weithiau, mae ymlacio syml yn dweud popeth.\n\nYn fwy na llun addurnedig, mae A Bond Beyond Words yn dathlu'r perthnasoedd hardd sy'n gwneud bywyd yn fwy gwerthfawr.\n\n✨ PWY BYDD EICH YN HOFFI'R ARTWORK HWN\n\nStori ysbrydoledig: Yn dangos y ffrindiaeth wych rhwng plentyn a'i gi di-ri.\n\nCysylltiad Emotional: Celebrates care, trust, companionship, and unconditional love.\n\nGolden-Hour Beauty: Mae golau haul cynnes yn creu awyrgylch heddychlon a chryfhau.\n\nManylion Gardd Fywiog: Mae blodau lliwgar a'r amgylchedd naturiol yn dod â ffresni a bywyd i'r cyfansoddiad.\n\nAchos Amser: Gwaith celf sy'n ystyrlon ac yn denu plant, rhieni, teuluoedd a phobl sy'n caru anifeiliaid.\n\nSyniad Gift Thoughtful: Dewis hyfryd ar gyfer unrhyw un sy'n gwerthfawrogi'r bond arbennig rhwng pobl a phethau.\n\n10\n\nYstafelloedd gwely a chanolfannau chwarae plant.\n\nYstafelloedd byw teuluol a chyfleusterau croeso.\n\nGarddwriaeth a choesau darllen.\n\nClinigau anifeiliaid a chanolfannau gofal anifeiliaid anwes.\n\nCanolfannau gwarchod anifeiliaid a mabwysiadu.\n\nLlety teuluol a mannau croesawu a gwestai.\n\nYsgolion, canolfannau gofal plant, a mannau cymunedol.\n\nY rhai sy'n caru anifeiliaid anwes a theuluoedd yn dathlu'r hapusrwydd o fod yn ffrindiau.\n\n10\n\nMae'ch pecyn lawrlwytho digidol yn cynnwys:\n\nDarlun cyfredol gwreiddiol yn y fformat PNG.\n\nFfeil argraffu JPG 2:3 lled-ddargludyddion ansawdd uchel wedi ei baratoi.\n\nOpsiynau maint argraffu a argymhellir.\n\nCanllaw argraffu a maintio PDF.\n\nFfeil START HERE gyda chyfarwyddiadau lawrlwytho ac argraffu.\n\nClirio gwybodaeth am gydraniad y ddelwedd a thelerau defnydd.\n\n10\n\nMae'r gwaith celf yn dilyn cydran 2:3 aml-ddefnyddiadwy ac mae'n addas ar gyfer:\n\n4 x 6 modfedd\n\n8 x 12 modfedd\n\n12 x 18 modfedd\n\n16 x 24 modfedd\n\n20 x 30 modfedd\n\nAm yr brofiad gweledol gorau, rydym yn argymell papur matte, satin neu gelf-art o ansawdd uchel.\n\nGWEFAN Pwysig\n\nLawrlwythiad digidol yw hwn. Ni anfonir unrhyw waith celf na ffrâm gorfforol.\n\nGall lliwiau amrywio ychydig yn dibynnu ar eich sgrîn, argraffydd, a phapur.\n\nMae ffeiliau digidol wedi eu cynllunio ar gyfer defnydd personol oni bai bod trwydded fasnachol ar wahân wedi ei brynu.\n\nMae angen trwydded fasnachol addas ar gyfer arddangosfa fasnachol mewn busnesau a mannau cyhoeddus.\n\nNi chaiff ffeiliau digidol eu hailwerthu, eu hail-ddarlledu, neu eu rhannu.\n\n❤️ GAN GYFLWYNO GAN GYFLWYNO YN GYNNWYS DYFODOL\n\nDewch atoch chi atgof hardd o ddilyniant, ffrindiaeth, a'r cariad di-gyfraith sy'n gwneud pob diwrnod yn fwy disglair.\n\nGadewch i A Bond Beyond Words lenwi eich lle gyda gwres, hapusrwydd, a'r dychymyg di-amser o ffrindiaeth nad oes angen esboniad arni.\n\nA BOND BEYOND WORDS - Un Corff. Dau Anifail. Cwpan Ddiwedd.\n\nART PRINT & SEARCH DETAILS\n\nDarganfyddwch hyn A BOND BEYOND WORDS The Beauty of Unconditional Love argraffiad celf ddigidol ar gyfer celf wal argraffadwy, addurno cartref unigryw, a dyluniad mewnol ystyrlon. Darlun celf lawrlwythadwy ar gyfer arddangos personol, gydag opsiynau argraffu a ddewisir i addasu'r ffeil a ddarperir a'ch lle.",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 ffeil · ZIP · 7.8 MB",
+        "product_type": "Darlun celf digidol lawrlwythadwy",
+        "delivery": "Lawrlwythiad digidol ar unwaith ar ôl prynu",
+        "physical_item": "Ni ddarperir argraffu na ffrâm gorfforol",
+        "printing": "Argraffwch y ffeiliau a ddarperir gyda'ch darparwr argraffu hoffus; gwiriwch y dimensiynau a ddarperir cyn dewis maint",
+        "usage": "Dilynwch y telerau defnydd personol a thelerau trwydded eraill a ddarperir gyda'r lawrlwythiad"
+      },
+      "_source_hash": "af7fd1018209d1a0c50074203cc6c678ce973ea18a6dd07595de274e8d12da36"
+    },
+    "xvccaj": {
+      "summary": "Saith gwaith celf dychmygus wedi eu hysbrydoli gan y byd, dinasoedd y dyfodol, naturioldeb, a harddwch y Môr Tawel—collectif digidol amlwg ar gyfer meddwl dychmygus a mannau creadigol.",
+      "full_description": "ARTHWYR A CHYFYNDDIAETH GYFLENWYDDOL - SEB ARTHWYR, DYWYDDIAETHAU HEB DERFYN\n\nTeithiwch y tu hwnt i'r arferol trwy gasgliad o saith gwaith celf digidol wedi'u hysbrydoli gan y rhyfeddod gofod, harddwch y nefoedd, pensaernïaeth dychmygus, naturioldeb, ac ysbryd y Môr Tawel. Mae pob darn yn agor byd gweledol gwahanol, gan ddod â diddordeb, symudiad, a dychymyg i leoliadau cyfoes.\n\nO ryswch y bydysawd i'r dinasoedd yr ydym yn breuddwydio am eu hadeiladu, o dirweddau naturiol hyfryd i ddisgwyliadau morwrol, mae'r casgliad hwn yn dathlu'r nifer o ffyrdd y gall celf ehangu ein syniad o bosibiliadau.\n\nBeth sydd yn cynnwys\n\nTu Hwnt i' r Byd\n\nThe Celestial Garden\n\nDinasoedd y Dyfodol\n\nMajestic\n\nDreams Mediterranean\n\nThe Mediterranean Muse\n\nGeometreg yr Elegance\n\nLLE MAE'N PERTHNASU\n\nCasgliad unigryw ar gyfer ystafelloedd byw, swyddfeydd, stiwdios creadigol, gwestai, bwytai, ardaloedd derbyn, ac ystafelloedd mewnol sy'n croesawu celf greadigol addurniadau sy'n dechrau sgwrs.\n\nLawrlwytho\n\nDyma gynhyrchion digidol. Ni anfonir unrhyw waith celf na ffrâm. Lawrlwythwch y ffeiliau a ddarperir yn y pecyn a gwiriwch eu fformatau, maint, a thelerau defnydd cyn argraffu. Dewiswch faint argraffu a deunydd addas ar gyfer y ffeiliau a ddarperir. Gall lliwiau amrywio ychydig rhwng sgriniau a chanlyniadau argraffu.\n\nDarganfyddwch gelf heb ffiniau. Gadewch i'ch dychymyg ffurfio eich byd.\n\nHALL OF GREATNESS - Art Without Boundaries.",
+      "category": "Elegance",
+      "product_details": {
+        "product_type": "Lawrlwytho delweddau digidol",
+        "delivery": "Lawrlwytho digidol ar unwaith ar ôl prynu",
+        "physical_item": "Ni anfonir unrhyw argraffu na ffrâm gorfforol",
+        "printing": "Argraffu'r ffeiliau a ddarperir gyda'ch darparwr argraffu hoffus; gwiriwch y dimensiynau cyn dewis maint",
+        "usage": "Dilynwch y telerau defnydd a ddarperir gyda'r lawrlwythiad",
+        "bundle_item_count": "Casgliad cylch; delweddau unigol wedi'u rhestru isod"
+      },
+      "_source_hash": "d8641c6b467679268bbf7fa3a052b8f3d1afec3f69b284f8c9413088a02c671d"
+    },
+    "wjxgxb": {
+      "summary": "Dewch â' r ysbryd parhaus o' r Aifft hynafol i' ch lle. Mae' r Aifft Eternal yn dathlu mawredd cymdeithas wedi' i ffurfweddu gan adeiladwaith coffa, y Nil, ac etifeddiaeth ddiwylliannol anhygoel. Wedi' i ddylunio fel argraffiad celf ddigidol amlwg ar gyfer y rhai sy' n caru' r etifeddiaeth, hanes, ac addurniadau mewnol yr Aifft.",
+      "full_description": "ETERNAL EGYPT\n\nY Gwyllt Amserol o Ddinasyddiaeth Hen\n\nDewch â mawredd parhaus yr hen Aifft i'ch cyffiniau gyda'r Aifft Eternal, gwaith celf digidol wedi'i ysbrydoli gan presenoldeb coffaol y pirimidau, y Sphinx Mawr, a'r tirwedd ddi-amser o'r Nil.\n\nCreuwyd y cyfansoddiad hwn ar gyfer y rhai sy'n teimlo cysylltiad â hanes, cof diwylliannol, ac etifeddiaeth artistig yr Aifft, ac mae'n cynnig mwy na ddelwedd addurnedig. Mae'n atgoffa o faint, mysteri, a chysondeb y siwiliaeth y mae ei iaith weledol yn parhau i annog y byd.\n\nMae ei awyrgylch wedi ei ysbrydoli gan yr henw da yn ei wneud yn fan canolog ar gyfer cartrefi cyfoes, astudiaethau preifat, swyddfeydd, gwestai, mannau diwylliannol, ac ar gyfer y tu mewn sy'n dathlu hanes ac celf.\n\nPWY YN EI GYMERYD YN EICH LLE\n\nAnrhydedd weledol i etifeddiaeth ddiwylliannol yr hen Aifft. Name\n\nNodwedd arbennig o arddull hanesyddol ar gyfer ystafelloedd mewnol modern a clasurol.\n\nDewis pwysig i gasglwyr a hoffwyr hanes yr Aifft.\n\nDarlun digidol mynegiant a all gael ei argraffu a'i ffrâmu i addasu i'ch lle.\n\nGwybodaeth Cynnyrch\n\nLawrlwythiad digidol yw hwn. Ni anfonir unrhyw luniau corfforol, posteri argraffedig, neu ffrâm. Lawrlwythwch y ffeiliau a ddarperir gyda'ch pryniant ac adolygwyd eu fformat, maint, a thelerau defnydd cyn argraffu. Gall lliwiau amrywio ychydig yn dibynnu ar eich sgrîn, argraffydd, a'r deunydd a ddewiswyd.\n\nETERNAL EGYPT — Sifiliaeth yn y Cof. Traddodiad Y tu hwnt i' r Amser.\n\nHALF OF GREATNESS\n\nART PRINT & SEARCH DETAILS\n\nDarganfyddwch yr EGYPT DYFODOL hwn Y GYMDEITHASDDIG YN DYDDION Y DYFODOL DYFODOL argraffiad celf ddigidol ar gyfer celf wal argraffadwy, addurno cartref unigryw, a dyluniad mewnol ystyrlon. Darlun celf lawrlwythadwy ar gyfer arddangos personol, gydag opsiynau argraffu a ddewisir i addasu'r ffeil a ddarperir a'ch lle.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "4 ffeil · JPG, PDF, PNG, TXT · 9.1 MB",
+        "product_type": "Darlun celf digidol lawrlwythadwy",
+        "delivery": "Lawrlwythiad digidol ar unwaith ar ôl prynu",
+        "physical_item": "Ni ddarperir argraffu na ffrâm gorfforol",
+        "printing": "Argraffwch y ffeiliau a ddarperir gyda'ch darparwr argraffu hoffus; gwiriwch y dimensiynau a ddarperir cyn dewis maint",
+        "usage": "Dilynwch y telerau defnydd personol a thelerau trwydded eraill a ddarperir gyda'r lawrlwythiad"
+      },
+      "_source_hash": "af4bb9b510bcc457b6750421a6f2d14b3beabca71579f4cd5f83484617097abe"
+    },
+    "fgdpqp": {
+      "summary": "O fewn gweithdy dychmygol, nid yw amser yn cael ei fesur ond yn cael ei greu. Mae DREAM THE CLOCKMAKER yn trawsnewid peiriannau, mecanweithiau celestial, a chyfarpar amhosibl i mewn i feddwl poetic ar gof, dyfeisio, a throsglwyddo amser. Cyfarfod o dychmyg steampunk a di- reidrwydd symbolaidd.",
+      "full_description": "O fewn gweithdy dychmygol, nid yw amser yn cael ei fesur ond yn cael ei greu. Mae DREAM THE CLOCKMAKER yn trawsnewid peiriannau, mecanweithiau celestial, a chyfarpar amhosibl i mewn i feddwl poetic ar gof, dyfeisio, a throsglwyddo amser. Cyfarfod o dychmyg steampunk a di- reidrwydd symbolaidd. Dewis ysbrydoledig ar gyfer llyfrgelloedd, astudiaethau, swyddfeydd, a dylunwyr mewnol. Darperir y lawrlwythiad digidol fel ffeil ZIP. Edrychwch ar y ffeiliau a'r manylebau a ddarperir ar ôl prynu cyn dewis maint argraffu.",
+      "category": "Elegance",
+      "product_details": {
+        "files_included": "1 ffeil · ZIP · 36.8 MB"
+      },
+      "_source_hash": "30ab80fd3d5210fdd5ec47f8f60c9b5f121908831ac3a07129ffe69e98b6bb2c"
+    }
+  },
+  "ui": {
+    "navFeatured": "Nodweddion",
+    "navCollections": "Casgliadau",
+    "navGallery": "Galeri",
+    "navArtist": "Artist",
+    "eyebrow": "Byd o gelf argraffadwy wedi ei drefnu",
+    "heroTitle": "<em>Celf sy'n cario stori.</em>",
+    "heroText": "Darganfyddwch oriel wedi ei ffurfio gan dychymyg, treftadaeth, cysylltiad dynol, a harddwch di-amser yr arddull. Gwaith digidol pwysig, yn barod i fod yn rhan o'ch lle.",
+    "explore": "Archwilio casgliad",
+    "discover": "Darganfod y galerïau",
+    "featuredEyebrow": "Y straeon y mae ymwelwyr yn dychwelyd atynt",
+    "featuredTitle": "Delweddau wedi eu Nodi",
+    "featuredText": "Seiat o waith sy'n ystyrlon. Seiat o ffyrdd gwahanol o ddod â'r celfyddydau a'r teimladau dynol i'ch lle.",
+    "collectionsEyebrow": "Casgliadau wedi'u trefnu",
+    "collectionsTitle": "Canfod y casgliadau",
+    "collectionsText": "Teithiau trefnus drwy gelf, diwylliant a teimladau. Archwilio casgliad neu fynd yn syth i'w siop ddiogel.",
+    "galleryEyebrow": "Y galleri gyfan",
+    "galleryTitle": "Delweddau unigol",
+    "galleryText": "Chwilio yn ôl teitl, thema neu gategori'r gwaith celf. Rhagolwg y stori neu ewch yn uniongyrchol i'r lawrlwythiad digidol.",
+    "search": "Chwilio am deitlau a themâu...",
+    "artistEyebrow": "Y tu ôl i'r galerïau",
+    "artistTitle": "Am yr Artist",
+    "artistP1": "yw'r artist tu ôl i HALL OF GREATNESS, galleri celf ddigidol annibynnol sy'n dod â straeon gweledol gwreiddiol i gynulleidfa fyd-eang.",
+    "artistP2": "Mae ei ymarfer artistig yn dod â chrefftwaith, arbrofi a thrawsnewid digidol ynghyd. Mae pob gwaith yn cynnig mwy na dim ond addurno: awyrgylch, cof, neu stori bersonol.",
+    "artistP3": "O dreftadaeth yr Aifft a Choptig i themâu byd-eang o barch, diwylliant, gobaith a dychymyg, mae'r siop yn eich gwahodd i brofi celf yn eich ffordd eich hun.",
+    "tagline": "Celf ddiddorol. Presenoldeb hirdymor.",
+    "digital": "Cynhyrchion digidol · Lawrlwytho ar unwaith drwy Gumroad",
+    "privacy": "Preifatrwydd",
+    "terms": "Termau",
+    "contact": "Cyswllt",
+    "gumroad": "Siop Gumroad ↗",
+    "exploreArt": "Archwilio'r gwaith celf ↗",
+    "discoverStory": "Darganfod stori ↗",
+    "buyDownload": "Lawrlwytho",
+    "buyCollection": "Casgliad",
+    "exploreCollection": "Darganfod y casgliad",
+    "printable": "Celf ddigidol argraffadwy",
+    "format": "Ffeil ddigidol · Argraffu mewn maint sy'n addas i'ch lle",
+    "noResults": "Dim gwaith celf yn cydweddu â' ch chwiliad.",
+    "catalogError": "Nid yw'r catalog galleri ar gael dros dro. Adnewyddu'r dudalen.",
+    "all": "& Pob un",
+    "of": "o",
+    "artworks": "delweddau",
+    "choose": "Dewis iaith"
+  },
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "_ui_translation_status": "machine-generated-unreviewed",
+  "landing_ui": {
+    "← Return to the gallery": "Dychwelyd i'r ddewislen",
+    "Language": "Iaith",
+    "An original digital artwork from HALL OF GREATNESS": "Gwaith celf digidol gwreiddiol o HALL OF GREATNESS",
+    "A curated collection of meaningful digital artworks": "Casgliad o waith celf digidol pwysig wedi ei drefnu",
+    "Explore & Get the Artwork ↗": "Archwilio & Cael y Darlun ↗",
+    "Secure checkout and digital delivery on Gumroad.": "Sicrhewch dalu a dosbarthu digidol ar Gumroad.",
+    "Artwork presentation": "Cyflwyniad delweddau",
+    "Imagine it in a refined frame": "Golwg arno mewn ffrâm rydd",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "Mae cyflwyniad ail yn eich helpu i ddehongli'r gwaith celf fel dangosiad wedi'i ffrâmio, tra'n cadw ei rannu gwreiddiol.",
+    "Digital download": "Lawrlwytho Digidol",
+    "Access your files after checkout": "Cyrchu eich ffeiliau ar ôl eitem",
+    "Print your way": "Argraffu eich ffordd",
+    "Choose a size suited to your space": "Dewiswch faint sy'n addas i'ch lle",
+    "Made to display": "Wedi'i wneud i ddangos",
+    "For homes, studios, and meaningful spaces": "Ar gyfer cartrefi, stiwdios, a mannau pwysig",
+    "The meaning behind the artwork": "Y ystyr tu ôl i'r gwaith celf",
+    "More than decoration. A feeling that stays.": "Mwy na dyluniad. Syniad sy'n aros.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Creuwyd ar gyfer pobl sydd eisiau i'w hamgylchedd adlewyrchu stori, cof, gwerth, neu deimlad o harddwch. Gadewch i'r gwaith hwn ddod yn rhan o'r awyrgylch rydych yn ei greu a'r teimlad rydych chi am i'ch lle ei gynnal.",
+    "Inside this collection": "Mewn y casgliad yma",
+    "One collection. Many stories.": "Un casgliad. Amryw straeon.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Archwilio'r gwaith celf unigol sydd wedi'u cynnwys yn y casgliad trefnus yma. Mae gan bob darn ei bersonoliaeth ei hun, tra bod nhw'n creu taith weledol fwy cyfoethog.",
+    "Complete artwork story": "Cwblhau hanes y gwaith celf",
+    "Full product description": "Disgrifiad cynnyrch llawn",
+    "What is included": "Beth sydd wedi ei gynnwys",
+    "Product specifications": "Penodiadau cynnyrch",
+    "Where it belongs": "Lle mae'n perthyn",
+    "Art that finds its place": "Art that finds its place",
+    "Before you purchase": "Cyn i chi brynu",
+    "Digital download details": "Manylion lawrlwytho digidol",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Cynhyrchion digidol yw hyn. Ni anfonir unrhyw waith celf na ffrâm. Ar ôl prynu, mae Gumroad yn darparu mynediad i'r ffeiliau a ddarperir gyda'r cynnyrch hwn. Adolygu'r manylebau ffeil a'r trwydded a ddarperir cyn argraffu neu ddefnyddio'r gwaith celf.",
+    "From download to display": "O lawrlwytho i ddangos",
+    "Make the artwork part of your space": "Gwneud y gwaith celf yn rhan o'ch lle",
+    "01 · Purchase": "01 · Prynu",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Cwblhewch eich archeb ddiogel ar Gumroad. Mae'ch pryniant ar gyfer cynnyrch digidol.",
+    "02 · Download": "Lawrlwytho",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Cyrchu'r ffeiliau a ddarperir gyda'r cynnyrch hwn drwy Gumroad a throsolwg o'r manylebau a ddarperir.",
+    "03 · Print": "Argraffu",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Dewiswch faint argraffu sy'n cadw cydrannau gwreiddiol y gwaith celf. Gall argraffydd proffesiynol lleol helpu i gydweddu'r dimensiynau â'r ffeil a ddarperir.",
+    "Please note:": "Noder",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Ni ddarperir unrhyw waith celf na ffrâm. Fformatau ffeil, cydraniad, cydrannau a thelerau defnydd sydd ar gael yw'r rhai a ddangosir yn y lawrlwythiad cynnyrch a'r trwydded a ddarperir.",
+    "Let your space tell a story.": "Gadewch i'ch lle ddweud stori.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Dewiswch waith celf sy'n adlewyrchu'r hyn rydych yn ei werthfawrogi—a gadewch i'w ystyr fyw gyda chi.",
+    "Get": "Cael",
+    "Art with a Soul. A Message Without Borders.": "Art with a Soul. A Message Without Borders.",
+    "Digital artwork · Instant download through Gumroad": "Gwaith celf digidol · Lawrlwytho ar unwaith drwy Gumroad",
+    "Privacy": "Preifatrwydd",
+    "Terms": "Telerau",
+    "Contact": "Cyswllt",
+    "Gumroad store ↗": "Siop Gumroad ↗",
+    "· Digital download": "· Lawrlwytho digidol"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Ffeiliau a gynhwysir",
+    "product_type": "Math o gynhyrchion",
+    "delivery": "Derbyn",
+    "physical_item": "Eitem gorfforol",
+    "printing": "Argraffu",
+    "usage": "Defnydd",
+    "bundle_item_count": "Eitem mewn pecyn"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Casgliad celf cydlynu ar gyfer cartrefi, swyddfeydd, gwestai, galeriau, ardaloedd derbyn, a golygyddion mewnol.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Get THE ART OF ELEGANCE & SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Casgliad celf cydlynu ar gyfer cartrefi, swyddfeydd, gwestai, galeriau, ardaloedd derbyn, a golygyddion mewnol.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Get EGYPTIAN & COPTIC HERITAGE ↗",
+      "\\n": "\\n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "A BOND BEYOND WORDS  The Beauty of Unconditional Love",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Casgliad celf cydlynu ar gyfer cartrefi, swyddfeydd, gwestai, galeriau, ardaloedd derbyn, a lloriau mewnol wedi eu trefnu.",
+      "Get THE HUMANITY LEGACY ↗": "Get THE HUMANITY LEGACY ↗",
+      "\\n": "\\n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent refined for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get THE ART OF STILLNESS ↗": "Get THE ART OF STILLNESS ↗",
+      "\\n": "\\n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent refined for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Get GEOMETRY OF ELEGANCE ↗",
+      "\\n": "\\n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Datganiad mynegiant ar gyfer cartrefi, stiwdios creadigol, swyddfeydd, mannau gwestai, ac mewnol wedi'u ffurfio gan dychymyg.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗",
+      "\\n": "\\n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Datganiad mynegiant ar gyfer cartrefi, stiwdios creadigol, swyddfeydd, mannau gwestai, ac mewnol wedi'u ffurfio gan dychymyg.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗",
+      "\\n": "\\n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent refined for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get MEDITERRANEAN DREAMS ↗": "Get MEDITERRANEAN DREAMS ↗",
+      "\\n": "\\n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent refined for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get SILENT HORIZONS . ↗": "Get SILENT HORIZONS . ↗",
+      "\\n": "\\n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent refined for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Get GOLDEN FLOW   The Art of Timeless Luxury ↗",
+      "\\n": "\\n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Datganiad mynegiant ar gyfer cartrefi, stiwdios creadigol, swyddfeydd, mannau gwestai, ac mewnol wedi'u ffurfio gan dychymyg.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Get BEYOND THE UNIVERSE 🌏 ↗",
+      "\\n": "\\n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Pwynt canolog pwysig ar gyfer cartrefi, swyddfeydd, mannau addysgol, arddangosfeydd, ac ardaloedd lle mae straeon pobl yn bwysig.",
+      "Get A Shelter of Love ♥ ↗": "Cyrchu A Shelter of Love ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent refined for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Get The Celestial Garden – A Dance Beneath the Moon ↗",
+      "\\n": "\\n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent refined for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Get THE GOLDEN VEIL OF SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "Un blaned. Un gyfrifoldeb. Amryw o bosibiliadau.",
+      "The story behind the image": "Y stori tu ôl i'r ddelwedd",
+      "More than decoration. A human story.": "Mwy na harddull. Stori ddynol.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "Y llaw yn cynrychioli ein gallu i weithredu. Mae'r planhigyn yn cynrychioli bywyd newydd a phriodol; mae'r blodau yn awgrymu trawsnewid. Mae'r gwrthdaro rhwng y tir wedi'i ddifrodi a'r addewid o adnewyddu yn ein hatgoffa bod yfory dan ddylanwad yr hyn rydym yn dewis ei warchod heddiw.",
+      "Where the artwork belongs": "Lle mae'r gwaith celf yn perthyn",
+      "Created to live with meaning": "Creuwyd i fyw gydag ystyr",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Datganiad amlwg ar gyfer cartrefi, swyddfeydd, ysgolion, sefydliadau amgylcheddol, ardaloedd derbyn, a mannau creadigol.",
+      "A distinctive focal point for considered interiors": "Pwynt canolog unigryw ar gyfer ystafelloedd mewnol wedi'u dychmygu",
+      "A conversation piece with a message beyond trends": "Darn o sgwrsio gyda neges y tu hwnt i'r traddodiad",
+      "A thoughtful digital art choice for personal spaces": "Dewis arddull ddigidol ystyrlon ar gyfer mannau personol",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dyma gynhyrchion digidol. Ni ddarperir unrhyw argraffu na ffrâm. Ar ôl prynu, lawrlwythwch y ffeiliau a ddarperir ar Gumroad. Adolygu'r manylebau ffeil a ddarperir, y canllaw argraffu, a'r trwydded defnydd personol cyn argraffu. Dewiswch faint argraffu a gwasanaeth addas i'r ffeiliau a ddarperir.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Dewiswch waith celf sy'n adlewyrchu'r hyn rydych yn ei werthfawrogi—a gadewch i'w ystyr fyw gyda chi.",
+      "Get The Hand That Holds Tomorrow ↗": "Cael y Law sy'n Cadw'r Dyfodol ↗",
+      "\\n": "\\n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Wyneb wahanol. Un ddynoliaeth. Cysylltiad eternal.",
+      "The story behind the image": "Y stori tu ôl i'r ddelwedd",
+      "More than decoration. A human story.": "Mwy na addurno. Stori dynol.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Mae efydd a obsidian yn cadw unigrywedd pob wyneb. Mae'r llinyn aur yn symbol o emosiynau, gobeithion a'r dymuniad i gael eu trin â diwylliant. Nid oes angen undeb ar yr undeb; mae'n dechrau pan ydym yn cydnabod dynoliaeth ein gilydd.",
+      "Where the artwork belongs": "Lle mae'r gwaith celf yn perthyn",
+      "Created to live with meaning": "Creuwyd i fyw gydag ystyr",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Datganiad ysgafn ar gyfer cartrefi cyfoes, swyddfeydd gweithredol, galleriau, mannau derbyn, a mannau mewnol sy'n gwerthfawrogi cyfathrebu diwylliannol a chysylltiad dynol.",
+      "A distinctive focal point for considered interiors": "Pwynt canolog unigryw ar gyfer mannau mewnol a ystyrir",
+      "A conversation piece with a message beyond trends": "Darn o sgwrsio gyda neges y tu hwnt i ddatblygiadau",
+      "A thoughtful digital art choice for personal spaces": "Dewis arlunwaith digidol ystyrlon ar gyfer mannau personol",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dyma gynhyrchiad digidol. Ni anfonir unrhyw argraffu na ffrâm gorfforol. Ar ôl prynu, lawrlwythwch y ffeiliau a ddarperir ar Gumroad. Adolygu'r manylebau ffeil a ddarperir, y canllaw argraffu, a'r trwydded defnydd personol cyn argraffu. Dewiswch faint argraffu a gwasanaeth addas i'r ffeiliau a ddarperir.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Dewiswch waith celf sy'n adlewyrchu'r hyn rydych yn gwerthfawrogi—a gadewch i'w ystyr fyw gyda chi.",
+      "Get The Golden Thread of Humanity ↗": "Cyrchu'r Llinyn Aur o Ddynoliaeth ↗",
+      "\\n": "\\n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Pwynt canolog pwysig ar gyfer cartrefi, swyddfeydd, mannau addysgol, arddangosfeydd, ac ardaloedd lle mae straeon pobl yn bwysig.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "Cliciwch yma i gael ROOTS OF TENDERNESS ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent refined for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get AURELLE 👑 ↗": "Get AURELLE 👑 ↗",
+      "\\n": "\\n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "Harddwch y distawrwydd. Y grym tu mewn.",
+      "The story behind the image": "Y stori tu ôl i'r ddelwedd",
+      "More than decoration. A human story.": "Mwy na harddull. Stori bersonol.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "Mae ffigur dynol cyfan yn dod yn symbol o hunan-wybodaeth. Mae golau aur yn awgrymu cyfanrwydd; mae manylion planhigion yn awgrymu adnewyddu. Mae'r gwaith yn ein hatgoffa nad oes angen i gryfder fod yn uchel—a gall y llonydd fod yn ddull o harddull.",
+      "Where the artwork belongs": "Lle mae'r gwaith celf yn perthyn",
+      "Created to live with meaning": "Creuwyd i fyw gydag ystyr",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "Ffynhonnell ysblennydd ar gyfer ystafelloedd byw, swyddfeydd preifat, ardaloedd derbyn, gwestai, mannau lles, a mannau lles cyfoes.",
+      "A distinctive focal point for considered interiors": "Ffynhonnell benodol ar gyfer ystafelloedd mewnol ystyrlon",
+      "A conversation piece with a message beyond trends": "Darn o sgwrsio gyda neges y tu hwnt i'r traddodiad",
+      "A thoughtful digital art choice for personal spaces": "Dewis arlunwaith digidol ystyrlon ar gyfer ystafelloedd personol",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dyma gynhyrchiad digidol. Ni anfonir unrhyw argraffu na ffrâm gorfforol. Ar ôl prynu, lawrlwythwch y ffeiliau a ddarperir ar Gumroad. Adolygu'r manylebau ffeil a ddarperir, y canllaw argraffu, a'r trwydded defnydd personol cyn argraffu. Dewiswch faint argraffu a gwasanaeth addas i'r ffeiliau a ddarperir.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Dewiswch waith celf sy'n adlewyrchu'r hyn rydych yn ei werthfawrogi—a gadewch i'w ystyr fyw gyda chi.",
+      "Get The Art of Inner Peace ↗": "Cyrchu'r Gelf o Ddiogelwch Mewnol ↗",
+      "\\n": "\\n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent refined for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get SERENITY 🤍 ↗": "Get SERENITY 🤍 ↗",
+      "\\n": "\\n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Pwynt canolog pwysig ar gyfer cartrefi, swyddfeydd, mannau addysgol, arddangosfeydd, ac ardaloedd lle mae straeon pobl yn bwysig.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Cyrchu THE TREE THAT REFUSED TO DIE ↗",
+      "\\n": "\\n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Pwynt canolog pwysig ar gyfer cartrefi, swyddfeydd, mannau addysgol, arddangosfeydd, ac ardaloedd lle mae straeon pobl yn bwysig.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Cyrchu THE LIGHT WE LEAVE EACH OTHER 🕯 ↗",
+      "\\n": "\\n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "Mae'r dyfodol yn cael ei adeiladu gan lawer o ddwylo.",
+      "The story behind the image": "Y stori tu ôl i'r ddelwedd",
+      "More than decoration. A human story.": "Mwy na dyluniad. Stori dynol.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Mae pob dwylo yn cynrychioli bywyd, caredigrwydd, aberth, neu gyfle a gynigir. Mae'r plentyn yn cynrychioli pob person ifanc y mae ei freuddwydion angen cefnogaeth a chryfder. Gyda'i gilydd, mae'r ddwylo'n dod yn ddringo - ac mae'r gobaith yn dod yn rhywbeth rydym yn ei adeiladu ar gyfer ein gilydd.",
+      "Where the artwork belongs": "Lle mae'r gwaith celf yn perthyn",
+      "Created to live with meaning": "Crewyd i fyw gydag ystyr",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Datganiad pwysig ar gyfer cartrefi teuluol, ysgolion, llyfrgelloedd, swyddfeydd, stiwdios, a mannau sy'n dathlu addysg a'r cysylltiad dynol.",
+      "A distinctive focal point for considered interiors": "Pwynt canolog unigryw ar gyfer ystafelloedd mewnol ystyrlon",
+      "A conversation piece with a message beyond trends": "Darn o sgwrsio gyda neges y tu hwnt i'r traddodiad",
+      "A thoughtful digital art choice for personal spaces": "Dewis o gelf ddigidol ystyrlon ar gyfer mannau personol",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dyma gynhyrchiad digidol. Ni anfonir unrhyw argraffu na ffrâm ar ffurf ffisegol. Ar ôl prynu, lawrlwythwch y ffeiliau a ddarperir ar Gumroad. Adolygu'r manylebau ffeil a ddarperir, y canllaw argraffu, a'r trwydded defnydd personol cyn argraffu. Dewiswch faint argraffu a gwasanaeth addas ar gyfer y ffeiliau a ddarperir.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Dewiswch ddarn o gelf sy'n adlewyrchu'r hyn rydych yn gwerthfawrogi - a gadewch i'w ystyr fyw gyda chi.",
+      "Get A Stairway of Hands ↗": "Cyrchu Stafell Ddwylo ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Mae'r hyn yr ydym yn ei warchod heddiw yn dod yn eu dyfodol.",
+      "The story behind the image": "Y stori y tu ôl i'r ddelwedd",
+      "More than decoration. A human story.": "Mwy na harddull. Stori ddynol.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "Mae gan y genhedlaeth hŷn brofiad; mae gan y genhedlaeth iau bosibiliadau. Rhwng y ddau mae addewid: i gadw'r hyn sy'n cadw bywyd a throsglwyddo ymlaen dyfodol digon gwerthfawr i'r rhai sy'n ei etifeddu. Dyma gariad a ddangosir fel cyfrifoldeb.",
+      "Where the artwork belongs": "Lle mae'r gwaith celf yn perthyn",
+      "Created to live with meaning": "Creuwyd i fyw gydag ystyr",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "Darn meddwlgar ar gyfer cartrefi teulu, astudiaethau, swyddfeydd, mannau addysgol, a phobl sy'n gwerthfawrogi cof, teulu a'r dyfodol.",
+      "A distinctive focal point for considered interiors": "Pwynt canolog unigryw ar gyfer ystafelloedd mewnol ystyrlon",
+      "A conversation piece with a message beyond trends": "Darn sgwrs gyda neges y tu hwnt i'r traddodiad",
+      "A thoughtful digital art choice for personal spaces": "Dewis arlunwaith digidol ystyrlon ar gyfer mannau personol",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dyma gynhyrchiad digidol. Ni anfonir unrhyw argraffiad na ffrâm. Ar ôl prynu, lawrlwythwch y ffeiliau a ddarperir ar Gumroad. Adolygu'r manylebau ffeil a ddarperir, y canllaw argraffu, a'r trwydded defnydd personol cyn argraffu. Dewiswch faint argraffu a gwasanaeth addas i'r ffeiliau a ddarperir.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Dewiswch gynhyrchiad celf sy'n adlewyrchu'r hyn yr ydych yn gwerthfawrogi—a gadewch i'w ystyr fyw gyda chi.",
+      "Get The Legacy of Generations ↗": "Cyrchu Llyfrgell y Genhedloedd ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent refined for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get The Mediterranean Muse ↗": "Get The Mediterranean Muse ↗",
+      "\\n": "\\n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "Un Ddaear. Un Dynoliaeth. Un Dyfodol.",
+      "The story behind the image": "Y stori tu ôl i'r ddelwedd",
+      "More than decoration. A human story.": "Mwy na dyluniad. Stori ddynol.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "Mae'r dwylo o amgylch y ddaear yn cynrychioli pobl o bob oed a chefndir. Mae'r tirwedd ddarnau yn siarad am yr hyn sydd mewn perygl; mae'r gorwel glas a'r golau aur yn pwyntio tuag at yr hyn y gallwn ni dal i'w warchod. Nid yw'r neges yn ofn. Mae'n gyfrifoldeb cyffredin, wedi ei wneud yn weladwy.",
+      "Where the artwork belongs": "Lle mae'r gwaith celf yn perthyn",
+      "Created to live with meaning": "Creuwyd i fyw gydag ystyr",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "Canolbwynt sy'n ysgogi meddwl ar gyfer cartrefi, swyddfeydd, mannau addysgol, arddangosfeydd, ac amgylcheddau sy'n ymroddedig i gynaliadwyedd.",
+      "A distinctive focal point for considered interiors": "Canolbwynt unigryw ar gyfer ystafelloedd mewnol wedi'u dychmygu",
+      "A conversation piece with a message beyond trends": "Darn o sgwrs gyda neges y tu hwnt i'r traddodiad",
+      "A thoughtful digital art choice for personal spaces": "Dewis arlunwaith digidol ystyrlon ar gyfer mannau personol",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dyma gynhyrchiad digidol. Ni ddarperir unrhyw argraffu na ffrâm gorfforol. Ar ôl prynu, lawrlwythwch y ffeiliau a ddarperir ar Gumroad. Adolygu'r manylebau ffeil a ddarperir, y canllaw argraffu, a'r trwydded defnydd personol cyn argraffu. Dewiswch faint argraffu a gwasanaeth addas i'r ffeiliau a ddarperir.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Dewiswch waith celf sy'n adlewyrchu'r hyn rydych chi'n gwerthfawrogi—a gadewch i'w ystyr fyw gyda chi.",
+      "Get Last Cry of Earth ↗": "Cyrchu Crys Diweddaraf y Ddaear ↗",
+      "\\n": "\\n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ychwanegiad unigryw i gartrefi, astudiaethau preifat, swyddfeydd, arddangosfeydd, amgueddfeydd, gwestai, a mannau diwylliannol.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Get THE GOLDEN GAZE 👁 ↗",
+      "\\n": "\\n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ychwanegiad unigryw i gartrefi, astudiaethau preifat, swyddfeydd, arddangosfeydd, amgueddfeydd, gwestai, a mannau diwylliannol.",
+      "Get The Queen Of The Nile 👑 ↗": "Get The Queen Of The Nile 👑 ↗",
+      "\\n": "\\n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ychwanegiad unigryw i gartrefi, astudiaethau preifat, swyddfeydd, arddangosfeydd, amgueddfeydd, gwestai, a mannau diwylliannol.",
+      "Get The Coptic Soul of Egypt ↗": "Get The Coptic Soul of Egypt ↗",
+      "\\n": "\\n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE Celebration of Egypt's timeless beauty, where the quiet dignity of a royal presence meets the eternal rhythm of the Nile. Golden...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "Get THE NILE'S ETERNAL GRACE ↗",
+      "\\n": "\\n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Mae rhai cyfeillgarwch yn cael eu teimlo gan y galon, nid eu hadrodd gan eiriau. Celebrate the extraordinary connection...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Fforwm pwysig ar gyfer cartrefi, swyddfeydd, mannau addysgol, arddangosfeydd, a llefydd lle mae straeon dynol yn bwysig.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗",
+      "\\n": "\\n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Teithio tu hwnt i'r cyfarwydd trwy gasgliad o saith gwaith celf digidol wedi'u hysbrydoli gan y gofod...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Cymeriad sgleiniog ar gyfer ystafelloedd byw, ystafelloedd gwely, swyddfeydd, gwestai siopa, mannau lles, a'r tu mewn wedi'i ystyried.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Get GLOBAL ART & IMAGINATION ↗",
+      "\\n": "\\n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Dewch â mawredd parhaus yr hen Aifft i'ch cyffiniau gyda'r Aifft Eternal,...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ychwanegiad unigryw i gartrefi, astudiaethau preifat, swyddfeydd, arddangosfeydd, amgueddfeydd, gwestai, a mannau diwylliannol.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Cyrchu ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗",
+      "\\n": "\\n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "O fewn gweithdy dychmygol, nid amser yw'r hyn a fesurir ond yr hyn a sculptir. THE CLOCKMAKER'S DREAM yn trawsnewid peiriannau, mecanweithiau celestial, ac offerynnau amhosibl...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent refined for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Get THE CLOCKMAKER'S DREAM ↗",
+      "\\n": "\\n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
+}

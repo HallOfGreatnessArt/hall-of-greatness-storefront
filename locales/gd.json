@@ -1,0 +1,710 @@
+{
+  "products": {
+    "oubirh": {
+      "summary": "Ochd obrach ealaíne a tha a’ toirt còmhla gluasadan órga, cruthan sìtheil, tarraing air falbh brèagha, agus co-sheirm amhairc airson taobh a-staigh co-aimsireil.",
+      "category": "Collected",
+      "_source_hash": "85810573c609f032749049f0af3efd548b47b50b60c74fae8bbbcb5e0cfaaf2c"
+    },
+    "hqpird": {
+      "summary": "Trì obair-ealain eadar-dhealaichte a' comharrachadh spiorad oidhcheil oidhche na h-Eiphit agus na Copte, cuimhne chultúrtha, agus bòidhchead gun ùine na h-Eiphit.",
+      "category": "Taghadh",
+      "_source_hash": "bbee15015588f3854edb7cce4f6ee745a63ecba99e41de9335d42b77a925b26e"
+    },
+    "wdtvt": {
+      "summary": "Deich obair-ealain cumhachdach mu thròcair, ath-bheothachadh, ceangal daonna, agus dùil. Cruinneachadh obrach-ealain clò-bhuailte airson àiteachan a tha a’ ciallachadh rudeigin agus taobh a-staigh a tha a’ smaoineachadh mu dheidhinn.",
+      "category": "Cruinneachadh",
+      "_source_hash": "0beaa1225adf5643d8bf3173e7f93d6f8ebe7ebb067e86674e4e8e27bf908560"
+    },
+    "mxrljy": {
+      "summary": "Tha The Art of Stillness a' toirt cuireadh dhut a dhol sìos an astar agus beachdan àlainn an àm chiùil a lorg a-rithist. Air a bhrosnachadh le cruthan meditative, flùraichean lotus, uisge a' sruthadh, agus solas dorcha teth, bheir an obair-ealain digiteach seo àrainneachd smaoineachaidh gu àiteachan slàinte agus taobh a-staigh sgeadaichte.",
+      "category": "Elegance",
+      "_source_hash": "adcd68bc42846100ab6f13044e8972c34ee7fe07d1f4702b4d1d9fdc7b14e78c"
+    },
+    "gusqyc": {
+      "summary": "Tha Geometry of Elegance a' comharrachadh coinneachadh cruthan-tìre, uachdar nàdarra, agus sòghalachd an latha an-diugh. Tha tonan emerald, uachdar iùbhrach, geoimeatraidh dealbhaidh, agus accents órga a' cruthachadh obair-ealain neo-bhàsmhor airson taighean, oifigean, agus àiteachan-fuirich a tha a' coimhead gu math.",
+      "category": "Elegance",
+      "_source_hash": "84014823691b93211841d3dbcf2452a78fd435d388b74dad7f7febe4d752c69f"
+    },
+    "aenwi": {
+      "summary": "Samhlaigh baile air a dhealbhadh le cothroman. Is e Cities of Tomorrow saothar-ealain didseatach a tha a' comharrachadh samhlachadh a' chlàraidh, ùr-ghnàthachadh, agus miann an duine airson àm ri teachd nas fheàrr a thogail. Clò-bhualadh a tha a' nochdadh a' bheachd airson taighean co-aimsireil, stiùidiothan cruthachaidh, àiteachan teicneòlais, agus oifigean ùr-nodha.",
+      "category": "Global",
+      "_source_hash": "e2173f80b274ea619b175b5480c483771929f3d1c9a75ce2893eea0775e30e96"
+    },
+    "gynmhv": {
+      "summary": "Leig le mòrachd dorcha an nàdair do sgìre a thionndadh. Tha Nature's Majesty a' comharrachadh àilleachd ath-nuadhachail nan slèibhtean, na h-eas-aibhnean, na foran, agus an uisge loisgte ann an obair-ealain beò-ghlan a' nochdadh saorsa, ath-nuadhachadh, agus socair. Clò-bhualadh ùr-ghnàthach airson dachaighean agus taobh a-staigh taighean-òsta.",
+      "category": "Global",
+      "_source_hash": "e6e5a3263c07964a62266c9dbbc5d1e7eb389514c1ade5780eebc6e4228f4b2e"
+    },
+    "jrsgce": {
+      "summary": "Thoir teas an escape Meadhan-thìreach dhan t-seòmar-cadail agad. Tha Dreams of the Mediterranean a' gabhail a-steach romansachd a' chlò-bhualaidh costa, uisgeachan gorm-bhreagha, terraces a' blásadh, agus solas uair a thìde gorm. Clò-bhualadh ealaíne digiteach freagairteach airson taighean, villas, cafaidhean, agus taobh a-staigh a tha a' gabhail a-steach siubhal.",
+      "category": "Elegance",
+      "_source_hash": "f26a8d189f4afe6a0a7a8d671fcbd37c54bd461cdba3f4d15d77243c056e17e5"
+    },
+    "ukxrmq": {
+      "summary": "Lorg àm de shocair ann an àile slèibhtean-chrèige. 'S e Silent Horizons saothar-ealain didseatach a tha a' gabhail buaidh air nàdar a tha air a dhealbhadh le uisge-stòisichte, beanntan fada air falbh, solas bog na maidine, agus faireachdainn ath-nuadhachaidh. Tha an dealbh seo na dheagh thaghadh airson taighean-seinnse, oifigearan, agus àiteachan slàinte.",
+      "category": "Elegance",
+      "_source_hash": "003e93a0d92367744addfb51152fe6da6c27ac08144b5c89e1e73dd7fec007c7"
+    },
+    "yhkokf": {
+      "summary": "Tha Golden Flow a' toirt dràma nàdarra a' mhàrtainn agus eireachdas an òir a-steach do cho-obrachadh neo-chrìochnach co-aimsireil. Cruthaichear doimhneachd, gluasad agus sòghalachd gun a bhith a' cur dragh air le cruthan dorcha is solais a' sruthadh—clò-bhualadh ealaíne didseatach a tha a' nochdadh airson taobh a-staigh ùr-nodha.",
+      "category": "Eireachdas",
+      "_source_hash": "fc65d52d8cd76ff8b23097321c08f7ca24b70659818dea5dda62f894d09e4c9c"
+    },
+    "nxkxyq": {
+      "summary": "Tòisich air sealladh soilleir den chois-eòlais. Tha Beyond the Universe a' comharrachadh misneachd, meud agus iongnadh an t-spàis tro shaothar-ealain didseatach a tha coltach ri aisling a tha air a spreagadh le galaxies, solas na talmhainn, agus cothroman gun chrìoch. Clò-bhualadh a tha a' toirt a-steach a h-uile càil airson an taobh a-staigh ùr-nodha agus airson daoine a tha dèidheil air a bhith a' coimhead.",
+      "category": "Global",
+      "_source_hash": "16177585eb4768f120133dcd37a54ecc8a9108c42b39834cfe2e329ac00623d3"
+    },
+    "mzlqxg": {
+      "summary": "Tha A Shelter of Love a' gabhail a-steach gluasad beag le buannachd fhada: tha pàrantan a' dèanamh cinnteach nach tèid leanabh a-riamh an aghaidh na blàithe a-mhàin. Air a chur an aghaidh oíche gheal na cathrach, tha an obair-ealain seo a' comharrachadh dìon, ionracas, teaghlach, agus cumhachd dorcha a' ghràidh gun choinneamh.",
+      "category": "Daonnachd",
+      "_source_hash": "5c0e78bf9d27136335daa7e34ccf9da42dc590a56d083c83815407b47244dac0"
+    },
+    "etqsav": {
+      "summary": "Faodar dath, gluasad agus càineadh a chur còmhla fo ghealach loidsigeach ann an The Celestial Garden. Tha an obair-ealain seo a tha coltach ri aisling a' comharrachadh pearsantachd, siubhal co-roinnte, saorsa, agus gràdh boireann tro shaoghal fantasaidh beò. Clò-bhualadh sònraichte airson taobh a-staigh a tha a' nochdadh agus a tha làn de shamhlachas.",
+      "category": "Elegance",
+      "_source_hash": "79723050f56e46edb2f774883a51d0a22ea883d9b80d00bd2c223954ce0c9346"
+    },
+    "vwrllor": {
+      "summary": "Is e portraid de neart, de dhìlseachd agus de ghràdh gun ùine a th' ann an The Golden Veil of Serenity. Cruthaichear le cruthan dubha beairteach agus òr loidsigeach inneach a tha a' coimhead air adhart—saothar-ealain didseatach a tha a' nochdadh a-staigh agus a tha a' tarraing luchd-cruinneachadh gu portraid làidir.",
+      "category": "Gràdh",
+      "_source_hash": "3fbd51fc0b3144dfae0749e5c04814f34b8c72ab9c458a6ae346494c7a678894"
+    },
+    "gkwadk": {
+      "summary": "Tha plannt a tha air a chumail ann an làmhan an duine na shamhla air ath-nuadhachadh agus cùram co-roinnte.",
+      "category": "Daonnachd",
+      "_source_hash": "b3d3ed2cdc9e6333f7aaf330e1821220c7ad12874771ec45ca02ca1fc18fbd9f"
+    },
+    "rglfun": {
+      "summary": "Dà phearsa eadar-dhealaichte, ceangailte le samhla órga de dhìonas daonna co-roinnte.",
+      "category": "Daonnachd",
+      "_source_hash": "7621f26df00b476963956773c9499fcec7b87189855fb05b55ebef7cd33c4268"
+    },
+    "cotnkm": {
+      "summary": "Is e Roots of Tenderness òraid-chuimhne air an ghràdh a tha a’ tighinn gu bhith na phàirt de cò sinn. Le sealladh dealbhaidh a’ sealltainn màthair is leanabh, tha an obair-ealain a’ comharrachadh dìon, ìobairt, a bhith a’ fuireach còmhla, agus na freumhaichean a tha a’ fuireach de ghràdh. Pìos a tha gu math cudromach airson àiteachan teaghlaich agus coimhearsnachdan a tha a’ smaoineachadh.",
+      "category": "Daonnachd",
+      "_source_hash": "89071cfe9a0d1d8d3c14646a7e82629d42e4e1b858b782ebe96d94ff24be625e"
+    },
+    "kaztbw": {
+      "summary": "Tha AURELLE a' toirt air ais an deas-ghnàthan làitheil de chaife gu bhith na fhèill phoilitigeach de dh'fhìor-ghràdh, de ghràdh-bhean, agus de ghràdh-solais. Cruthaichear le dathan òir, dubh domhainn, agus càise teth obair-ealain didseatach sònraichte airson taighean stylish, coinnlean càise, cafaidhean-bìdh, agus taobh a-staigh co-aimsireil.",
+      "category": "Elegance",
+      "_source_hash": "50f25bf7ff18b06b831f14e21450ee7562896355ad94503c70b68b66a14178bb"
+    },
+    "cuitvq": {
+      "summary": "Tha an t-ealain dealbhaidh agus an solas órga a’ sealltainn neart na cothromachaidh a-staigh.",
+      "category": "Ealasan",
+      "_source_hash": "2ccb896bdf8f18e66ce1bc1ca17fecfdd6eed315302fe2ee1d2ef8c5532b18b4"
+    },
+    "rabhc": {
+      "summary": "Is e Serenity a tha seo, a tha a’ bruidhinn air ath-bheothachadh, cothromachadh, agus an neart dorcha a tha a’ fuireach a-staigh. Tha a cruth neo-bhàsmhor agus a chorran-uaine uaine a’ cruthachadh ionad-bheachdail airson àiteachan a tha air an cur an cèill airson ath-bhreithneachadh, calma, agus dealbhadh co-aimsireil.",
+      "category": "Elegance",
+      "_source_hash": "3e36120477fa3535261c200c5e9210726bf08cb1968d35b25965f08e276b936f"
+    },
+    "ycltf": {
+      "summary": "Sgeulachd mu dhòrtadh a tha anns an Crann a Dh’fhuirich gun Marbhadh: eadhon am measg na ruidhle, faodaidh beatha slighe a lorg air adhart. Tha na freumhaichean a’ tighinn gu bhith nan droigheann eadar àiteachan briste, a’ toirt air fuireach a bhith na ceangal agus ath-nuadhachadh. Saothar-ealain a tha a’ nochdadh beachd do dhuine sam bith a chreideas gum faod dùil fàs a-rithist.",
+      "full_description": "THE TREE THAT DIDN’T TO DIE\n\nFiù 's am measg nan ruidhlichean, lorgas beatha dòigh.\n\nDè ma b' e an samhla as motha de dh'fhacal an dùil nach e dealbh-chluich a bh' ann a chaidh a thogail le daonnachd, ach craobh bheò a dhiùlt a dhol a-mach?\n\nSamhlaigh baile a chaill a ghuth. Tha taighean air tuiteam, tha sràidean air falbh fo na ruidhlichean, agus tha coltas ann gu bheil na lorgan de bheatha dhaonna air tuiteam gu dùnadh. Ach, ann an cridhe an àite dearmadta seo, tha craobh iongantach a’ fuireach.\n\nChan e a-mhàin gu bheil na freumhaichean a’ lorg ithreach. Tha iad a’ ruighinn thairis air ballachan briste, a’ gabhail ri structaran briste, agus a’ seasamh eadar togalaichean air an sgaradh, a’ toirt ceangal air an destruction. Tha na craobhan a’ tighinn suas chun na spéire, a’ giùlan duilleach uaine ùr fo sholas ór a bhriseas tro na scamhaichean.\n\nTha seo nas motha na dealbh de nàdar a’ toirt air ais baile a chaidh a sgrios. Is e sgeulachd a tha a’ gluasad gu domhainn mu spiorad an duine.\n\nTha an craobh na shamhla air gach duine a dh’fhuiling cruaidh-chraoibh gun leigeil leis an cruaidh-chraoibh an àm ri teachd aca a dhearbhadh. Tha i a’ bruidhinn air feadhainn a chaill cha mhòr a h-uile càil, ach a tha fhathast a’ lorg neart gus tòiseachadh a-rithist. Air feadhainn a tha air a bhith air an làimhseachadh leis a’ bheatha, ach nach do leig le a cridhe a bhith falamh. Air feadhainn a tha a’ tuigsinn nach e a bhith beò a th’ ann an fuireach beò – tha i a’ lorg an neart gus fàs a-rithist.\n\nTha na freumhaichean a’ samhlachadh ath-bheothachadh: an neart do-fhaicsinneach a chuireas sinn còmhla nuair a tha gach nì mun cuairt oirnn a’ tuiteam às a chèile. Tha na droigheann a’ samhlachadh ath-bheothachadh, ceangal, agus an comas gus dàimh agus coimhearsnachdan ath-thogail às dèidh sgaradh agus call.\n\nTha an canopy uaine na ghealltanas nach eil feum air an destruction a bhith na chaibidil dheireannach. Tha na h-eòin a’ tighinn suas chun na spéire fosgailte a’ toirt fa-near dhuinn gum faod saorsa agus ath-nuadhachadh filleadh, eadhon às dèidh na h-amannan as dorcha.\n\nAgus tha an solas órga taobh a-staigh nan ruidhlichean a' toirt teachdaireachd shocair ach cumhachdach: chan eil an àm ri teachd air a dhearbhadh leis na tha air a mhilleadh, ach leis na tha fhathast a' cumail an toil airson fàs.\n\nTha an obair-ealain seo a' bruidhinn ri duine sam bith a tha air aghaidh a thoirt air caibideil duilich sa bheatha, duine sam bith a tha air ath-thogail às dèidh call, agus duine sam bith a chreideas nach e eas-òrdugh a th' ann an dùil, ach an neart a bhith a' leantainn air adhart a dh'aindeoin sin.\n\nTha e na phàirt chudromach airson seòmar-còmhnaidh, oifig, leabharlann, stiùidio cruthachaidh, no àite sam bith far a bheil àite aig ath-bheothachadh, ath-nuadhachadh, agus inntleachd. Faodaidh e a bhith na bhronnadh airson cuideigin a tha a’ tòiseachadh air caibideil ùr, a’ gabhail thairis air drochaid, no a’ lorg an neart gus tighinn suas a-rithist.\n\nLeig leis a’ chraobh seo cuimhneachadh ort nach fheum do dh’ùine a dh’fhalbh a bhith na chuing do thodhchais. Fiù ‘s nuair a thèid do bheatha gu ruige seo, dh’fhaodadh gum bi rudeigin a’ fàs a-staigh nad bhodhaig.\n\nChan eil thu air do shònrachadh leis na bhris timcheall ort. Tha thu air do shònrachadh leis na tha fhathast a’ fàs nad inntinn.\n\nHALL OF GREATNESS\n\nArt with a Soul. A Message Without Borders.\n\nART PRINT & SEARCH DETAILS\n\nFaic an clò-bhualadh ealaíne didseatach seo THE TREE THAT REFUSED TO DIE airson ealaín balla clò-bhuailte, deiseil airson an taigh a dhealbhadh, agus taobh a-staigh air a dhealbhadh gu faiceallach. Tha an obair-ealain seo ri luchdachadh sìos airson taisbeanadh pearsanta, le roghainnean clò-bhualaidh a thaghadh a rèir an fhaidhle a tha air a thoirt seachad agus an àite agad.",
+      "category": "Daonnachd",
+      "product_details": {
+        "files_included": "1 fhaidhle · ZIP · 29.1 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download after purchase",
+        "physical_item": "Cha tèid clò-bhualadh no frèam corporra a sheòladh",
+        "printing": "Clò-bhuail na faidhlichean a tha ri fhaighinn leis an t-solaraiche clò-bhualaidh as fheàrr leat; dèan sùil air na tomhasan a tha a' gabhail a-steach mus tagh thu meud",
+        "usage": "Lean na cumhachan cead-cleachdaidh pearsanta is eile a tha a' tighinn còmhla ris an luchdachadh a-nuas"
+      },
+      "_source_hash": "d9bff692f10639a5edca9063641cbb3c31081b0579c89bb9cc9635499e614060"
+    },
+    "bctcdz": {
+      "summary": "Tha The Light We Leave Each Other a’ toirt urram don ghràdh, don ghaol agus don mhisneachd a chaidh seachad bho ghnèithean gu ginealach. Tha lann-solais a’ tighinn gu bhith na shamhla air an dùil a gheibh sinn—agus an solas a tha sinn a’ taghadh a roinn. Saothar-ealain a tha a’ gluasad airson dachaighean, oifigearan, agus tabhartasan a tha a’ ciallachadh rudeigin.",
+      "full_description": "THE LIGHT WE LEAVE EACH OTHER\n\nIs e an solas as motha a th' againn a th' ann.\n\nTha cuid de sholais air an dèanamh gus àm a shoilleireachadh. Tha cuid eile air an dèanamh gus ginealach a shoilleireachadh.\n\nTha fìrinn shìorraidh ann a chuireas ceangal eadar beatha gach duine: chan eil duine againn a’ tòiseachadh ar turas gu tur san t-solas. Àrd air an t-slighe, bidh cuideigin a’ tighinn thugainn – pàrantan, tidsearan, daoine nach eil eòlach oirnn, caraidean, no cuideigin a dh’fhaodar a bhith a’ dearmad air a’ ghràdh. Tha iad a’ tabhann rudeigin dhuinn a chuidicheas sinn ar slighe a lorg: beagan dòchais, beagan ealain, gnìomh de thròcair, no dìreach an misneachd gus leantainn air adhart.\n\nAgus latha, gheibh sinn a-mach gu bheil an solas a fhuair sinn uair a-riamh againne a-nis airson a roinn.\n\nTha THE LIGHT WE LEAVE EACH OTHER na thròcair ealaíonta don oidhche-beatha dhaonna uabhasach seo – an oidhche-beatha do-fhaicsinneach de ghràdh, eòlas, gràdh, misneachd, agus dùil a thèid bho ghnèithean gu ginealach.\n\nAnn am meadhan an t-saoghail, tha lann-solais dorcha a’ gluasad bho dhà dhiubh gu fear eile. Air a’ chùlaibh, tha aghaidhean de aois is de ghnèithean eadar-dhealaichte a’ tighinn còmhla ann an àm co-roinnte de cho-cheangal. Tha na seann daoine a’ sealltainn ealain is eòlas nan daoine a thàinig roinn. Tha na ginealach nas òige a’ sealltainn gealltanas nan rudan a tha ri thighinn. Am measg an dà chuid, tha an lann-solais na shamhla cumhachdach air co-sheasmhachd: meòrachadh nach eil na h-obraichean as motha a rinn an daonnachd air an tomhas a-mhàin leis na tha sinn a’ dèanamh, ach leis na tha sinn a’ toirt dha chèile cuideachd.\n\nTha an dorchadas mun cuairt agus an ceann-latha dorcha dorcha a’ toirt barrachd tuigse air an t-sealladh. Tha iad a’ sealltainn neo-chinnt na beatha, na dùbhlain a tha romhainn, agus an cothrom a th’ ann gum bi àm ri teachd nas fheàrr againn nuair a thaghas sinn a bhith còmhla. Tha an solas teth a’ soilleireachadh nan aghaidhean agus a’ togail nan làmhan a’ dèanamh gluasad sìmplidh gu rudeigin uile-choitcheann: an creideamh nach bi gin de ghnìomhan fìor mhath air an call gu bràth.\n\nTha an dealbh seo a’ toirt cuireadh do bheachdachadh pearsanta:\n\nCò a thug solas dhan t-saoghal nuair a bha feum agad air? Cò a dh’fhaodadh a bhith air a shoilleireachadh le rudeigin a tha thu a’ taghadh a thoirt an-diugh?\n\nTha a theachdaireachd a’ buntainn do gach duine, ge bith dè an aois, an dùthaich, an cultar no an cuspair. Tha sinn uile air rudeigin fhaighinn bho dhaoine eile, agus tha rudeigin cudromach againn uile ri thoirt seachad.\n\nMORE THAN ART. A LEGACY OF MEANING.\n\nTha an obair-ealain seo air a dhealbhadh gus a bhith nas motha na dìreach a bhith na dhealbh-ealain, agus bheir e faireachdainn teas, doimhneachd, agus ceangal daonna dhan àite anns a bheil e. 'S urrainn dha a bhith na phàirt chudromach de sheòmar-cadail, de sheòmar-obrach, de dh'oifis, no àite sam bith eile far a bheil luach air inntleachd is ath-bhreithneachadh.\n\nTha e cuideachd na bhronnadh smaoineachail do dhuine a chreideas ann an gràdh, teaghlach, buannachd, ceangal daonna, agus cumhachd leantainneach an dùil.\n\nTha na rudan as cudromaiche a leigeas sinn às a-muigh a-staigh a-riamh nan rudan nach urrainn dhuinn a chumail. Uaireannan, is e na beathaichean a tha sinn air a bhith a’ gabhail a-steach, na cridheachan a tha sinn air a bhith a’ brosnachadh, agus an solas a chuidich sinn ri daoine eile a lorg a-staigh annta fhèin.\n\nChan eil solas a tha air a roinn a’ call solas. Is solas a tha beò a th’ ann.\n\nTHE HUMANITY LEGACY\n\n'S e an t-Eilean Sgitheanach a tha air a' chiad fhear a tha air a bhith ann.\n\nHALL OF GREATNESS\n\nArt with a Soul. A Message Without Borders.\n\nART PRINT & SEARCH DETAILS\n\n10",
+      "category": "Daonnachd",
+      "product_details": {
+        "files_included": "1 fhaidhle · ZIP · 27.5 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download after purchase",
+        "physical_item": "Cha tèid clò-bhualadh no frèam corporra a sheòladh",
+        "printing": "Clò-bhuail na faidhlichean a tha ri fhaighinn leis an t-solaraiche clò-bhualaidh as fheàrr leat; dèan sùil air na tomhasan a tha a' gabhail a-steach mus tagh thu meud",
+        "usage": "Lean na cumhachan cead-cleachdaidh pearsanta is eile a tha a' tighinn còmhla ris an luchdachadh a-nuas"
+      },
+      "_source_hash": "6fb6b36e97f6c6a45e6f2b988972dcc4dc6ed88e314b292990945b1ee19d2a6d"
+    },
+    "msuzc": {
+      "summary": "Tha leanabh a' tighinn suas gu solas, air a chuideachadh le gràdh nan ciad-ghinealach.",
+      "full_description": "A STAIRWAY OF HANDS\n\nTha an àm ri teachd air a thogail le mòran làmhan.\n\nCha bu chòir do leanabh sam bith a bhith a' togail gu an ath-sheachdain a-mhàin.\n\nIs e ceiliúradh samhlachail a tha ann an Stèisean nan Làithean air dlùth-cheangal, cùram, agus na gnìomhan dìomhain de thaic a bheir buaidh air beatha. Ann an croit a’ chlais, tha leanabh a’ gabhail ceum air adhart chun an t-solais air stèisean air a dhèanamh le làmhan daonna. Tha gach làimh a’ ciallachadh duine, ìobairt, gràdh, no cuideachadh a chuidicheas cuideigin eile gus gluasad suas.\n\nTHE HUMAN STORY\n\nChan eil na làmhan a’ buntainn ri aois no ceum sam bith. Tha iad a’ bruidhinn airson pàrantan, tidsearan, obrach, luchd-cùraim, com-pàirtichean, agus ginealachan a bhios a’ dèanamh oidhirp gun a bhith air an faicinn gu tric. Tha an leanabh na shamhla air gach duine òg a tha a’ giùlan aislingean a dh’fheumas brosnachadh, cothroman agus dìon.\n\nTha an gluasad bho dhorchadas gu solas órga a’ toirt cumhachd inntinn don dealbh. Chan e feitheamh neo-ghnìomhach a th’ ann an dùil; is e rudeigin a bhios daoine a’ togail airson a chèile, aon ghnìomh chruaidh aig an aon àm.\n\nSÌN-BHÀILTEACHD AIRSON DÙTHCHAS DÒ\n\nTaisbeanadh an obair seo ann an taigh teaghlaich, oifig, sgoil, leabharlann, stiùidio, no àite coimhearsnachd mar mheòrachadh gum fàs dìonas agus cothrom nuair a tha daoine còmhla. Tha e cuideachd na bhronnadh smaoineachail do oidichean, pàrantan, comhairleanairean, agus do dhuine sam bith a chreideas ann an gealltanas a’ chiad ghnèitheach eile.\n\nAon leanabh. Gun àireamh de làmhan cuideachaidh. An àm ri teachd air a thogail còmhla.\n\nDIGITAL ARTWORK YOURSELF\n\nLuchdaich sìos gu didseatach; cha tèid clò-bhualadh no frèam a chuir a-mach.\n\nLuchdaich sìos na faidhlichean a tha a' tighinn leis an toraidh seo às dèidh a cheannach.\n\nAth-bhreithnich mion-fhiosrachadh an fhaidhle a tha a' gabhail a-steach, an stiùireadh clò-bhualaidh, agus an cead-cleachdaidh pearsanta mus clò-bhuail thu.\n\nTagh meud clò-bhualaidh is seirbheis a fhreagras air na sònrachaidhean faidhle a tha air an toirt seachad.\n\nThoir obrach-ealain a-steach dhan taigh le sgeulachd. Tagh Luchdaich sìos an obair-ealain gus a dhèanamh na phàirt dhen àite agad.\n\nHALL OF GREATNESS — Art with a Soul. A Message Without Borders.",
+      "category": "Daonnachd",
+      "product_details": {
+        "files_included": "1 fhaidhle · ZIP · 8.6 MB",
+        "product_type": "Luchdaich sìos dealbhan-cluiche didseatach",
+        "delivery": "Luchdaich sìos didseatach an-asgaidh às dèidh a cheannach",
+        "physical_item": "Cha tèid clò-bhualadh no frèam a chuir a-mach",
+        "printing": "Clò-bhuail na faidhlichean a tha ri fhaighinn leis an t-solaraiche clò-bhualaidh as fheàrr leat; dèan sgrùdadh air na tomhasan a tha a' gabhail a-steach mus tagh thu meud",
+        "usage": "Lean na cumhaichean cead-cleachdaidh pearsanta agus cead-cleachdaidh eile a tha a' gabhail a-steach leis an luchdachadh sìos"
+      },
+      "_source_hash": "b963b309b0892c055876d7451b6a8bc36190e3b1d23c99420a1c588817cba9ac"
+    },
+    "tzlsv": {
+      "summary": "A tribute to love, sacrifice, and the world we hold in trust for those who follow.",
+      "full_description": "THE LEGACY OF GENERATIONS\n\nTha an rud a dhìonas sinn an-diugh na phàirt dhen àm ri teachd aca.\n\n'S dòcha gur e an oidhche as fheàrr againn an t-saoghal a fhàgas sinn ann an làmhan duine eile.\n\nTha Legacy of Generations a’ sgrùdadh an ceangal eadar na daoine a thàinig roinn agus na daoine a thig às dèidhinn. Tha e na bheachdachadh air teaghlach, cuimhne, ìobairt, agus an dleastanas a bhith a’ toirt air adhart barrachd na rudan: àm ri teachd a tha airidh air an ath ghnèitheach.\n\nLOVE THAT LOOKS BEYOND THE PRESENT\n\nTha an obair a’ bruidhinn air an ealain a tha air a bhith aig na ginealach nas sine agus an cothrom a tha air a bhith aig na ginealach òga. Tha dleastanas co-roinnte eadar an dà chuid – a bhith a’ sàbhaladh na tha a’ cumail beatha, a’ dearbhadh na tha air a bhith air a mhilleadh, agus a bhith a’ dèanamh roghainnean a tha air an stiùireadh le cùram nas fheàrr na le spòrs.\n\nTha an teacsa nas doimhne aice cho pearsanta ‘s cho uilc. Faodaidh teaghlach a bhith na stòr de dh’adhbharan airson a bhith a’ fuireach còmhla riut, ach tha an dleastanas a’ tighinn nas fhaide na teaghlach, a’ ceangal coimhearsnachdan agus ginealach ri chèile tron t-saoghal a tha iad a’ roinn.\n\nA REMEMBER THAT BELONGS IN EVERY GENERATION'S HOME\n\nCuir an saothar-ealain seo ann an àite-còmhnaidh teaghlaich, àite-obrach, oifigear, ionad oideachaidh, no àite sam bith a tha a’ toirt urram do chuimhne is don àm ri teachd. Is e tabhartas smaoineachail a th’ ann do thuathanaich, seanairean, comhairleanairean, agus daoine a tha a’ creidsinn gur e oidhcheil a th’ ann an cùram.\n\nChan e ar pàirt a th’ anns an àm ri teachd. Tha sinn ga chumail mar ionmhais dhaibhsan a thig às dèidh dhuinn.\n\nDIGITAL ARTWORK YOURSELF\n\nLuchdaich sìos gu didseatach; cha tèid clò-bhualadh no frèam a chuir a-mach.\n\nLuchdaich sìos na faidhlichean a tha a' tighinn leis an toraidh seo às dèidh a cheannach.\n\nAth-bhreithnich mion-fhiosrachadh an fhaidhle a tha a' gabhail a-steach, an stiùireadh clò-bhualaidh, agus an cead-cleachdaidh pearsanta mus clò-bhuail thu.\n\nTagh meud clò-bhualaidh is seirbheis a fhreagras air na sònrachaidhean faidhle a tha air an toirt seachad.\n\nThoir obrach-ealain a-steach dhan taigh le sgeulachd. Tagh Luchdaich sìos an obair-ealain gus a dhèanamh na phàirt dhen àite agad.\n\nHALL OF GREATNESS — Art with a Soul. A Message Without Borders.",
+      "category": "Daonnachd",
+      "product_details": {
+        "files_included": "1 fhaidhle · ZIP · 23.1 MB",
+        "product_type": "Luchdaich sìos dealbhan-cluiche didseatach",
+        "delivery": "Luchdaich sìos didseatach an-asgaidh às dèidh a cheannach",
+        "physical_item": "Cha tèid clò-bhualadh no frèam a chuir a-mach",
+        "printing": "Clò-bhuail na faidhlichean a tha ri fhaighinn leis an t-solaraiche clò-bhualaidh as fheàrr leat; dèan sgrùdadh air na tomhasan a tha a' gabhail a-steach mus tagh thu meud",
+        "usage": "Lean na cumhaichean cead-cleachdaidh pearsanta agus cead-cleachdaidh eile a tha a' gabhail a-steach leis an luchdachadh sìos"
+      },
+      "_source_hash": "85dbcd535bbf5b49e8e3d1f629b11e1c1044b6806e4066780e78dd7693e99981"
+    },
+    "bgqxwm": {
+      "summary": "Tha an Mùsa Meadhan-thìreach a’ toirt còmhla portraid a tha a’ nochdadh, cruth geoimeatrach, agus caractar soilseach na Meadhan-thìreach. Cruthaichear le gorm aotrom, òr teth, agus dathan trom saothar-ealain coimhearsnachd sònraichte airson luchd-saothrachaidh agus taobh a-staigh a tha a’ gabhail ri pearsantachd.",
+      "full_description": "The Mediterranean Muse — A Portrait of Gold, Sea & Mystery\n\nNuair a choinnicheas solas dorcha gorm ris an t-sruth gorm domhainn, thig muse tarraingeach a-mach à cruinne de àilleachd geoimeatrach agus de bhruadar na Meadhan-thìre.\n\nIs e The Mediterranean Muse saothar ealaíne com-aimseartha a tha a' toirt a-steach agus a tha a' toirt buaidh air an cubism a tha a' cur còmhla portraid bhean-bainnse tarraingeach le tarraing gun ùine air a' chòmhdach-tìre, uisgean a tha a' coimhead gu na h-uisgeachan, slèibhtean fada, agus grian dhonn a' losgadh.\n\nCruthaichear co-sheirm lèirsinneach làidir le gorm-saphire, òr le structar, iùro teth, cruthan dubha dramadach, agus liopaichean crimson beò. Tha gach cruth uachdarach a’ sealltainn sealladh eadar-dhealaichte, fhad ‘s a bheir an dealbh-chluiche beòthail de chosta-mhara cuireadh don shamhlachas a dhol air turas eadar fìrinn is fasan ealaíonta.\n\nTha an obair-ealain seo, a tha goireasach, misneachail, agus làn de charactar, a' toirt air balla a bhith na shealladh air pearsantachd agus blas slànaichte.\n\n✨ Perfect for\n\nSeòmraichean-còmhnaidh agus taighean-òsta\n\nOifisichean gnìomhachais agus stiùidiothan cruthachaidh\n\nTaighean-òsta boutique agus raointean coinneachaidh eireachdail\n\nTaighean-òsta ùr-nodha agus taobh a-staigh air an cur an sàs\n\nLuchd-ealain a tha a’ lorg pìosan sònraichte\n\nTha an Mùsa Meadhan-thìreach nas motha na deise balla. Is e co-labhairt de ealaín, ailtireachd, dath, agus samhlachas a th’ ann – co-là-breith air àilleachd na Meadhan-thìreach air a ath-chraoladh tro bheachd ealaíne làidir.\n\n👑 Cruthachadh ealaíonta bho HALL OF GREATNESS.\n\nART PRINT & SEARCH DETAILS\n\nFaic an dealbh-chluich didseatach seo de The Mediterranean Muse airson dealbh-chluich balla a ghabhas clò-bhualadh, deiseil airson an taigh a dhealbhadh, agus airson taobh a-staigh a dhealbhadh gu faiceallach. Tha an dealbh-chluich seo ri luchdachadh sìos airson taisbeanadh pearsanta, le roghainnean clò-bhualaidh a thagh thu a rèir an fhaidhle a tha air a thoirt seachad agus an àite agad.",
+      "category": "Elegance",
+      "product_details": {
+        "files_included": "1 fhaidhle · ZIP · 19.0 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download after purchase",
+        "physical_item": "Cha tèid clò-bhualadh no frèam corporra a sheòladh",
+        "printing": "Clò-bhuail na faidhlichean a tha ri fhaighinn leis an t-solaraiche clò-bhualaidh as fheàrr leat; dèan sgrùdadh air na tomhasan a tha a' gabhail a-steach mus tagh thu meud",
+        "usage": "Lean na cumhachan cead-cleachdaidh pearsanta agus cead-cleachdaidh eile a tha a' gabhail a-steach leis an luchdachadh a-nuas"
+      },
+      "_source_hash": "af1fb435d85020fb7dfffd341b525734bf626e5bde25a5492169ffa49b1059c6"
+    },
+    "aedllm": {
+      "summary": "Planaid a tha air a ghortachadh, làmhan gun àireamh, agus dleastanas co-roinnte gus an àm ri teachd a dhìon.",
+      "full_description": "LAST CRY OF EARTH\n\nOne Earth. One Humanity. One Future.\n\nTha cuid de dhealbhan a’ dealbhadh balla. Tha cuid eile a’ faighneachd dhuinn dè an seòrsa t-saoghail a tha sinn a’ fàgail às ar dèidh.\n\nÀs an cruinneachadh THE HUMANITY LEGACY, bidh Last Cry of Earth na shamhla cumhachdach air a’ phlanaid againn, air a’ chothromachadh, air an freagairt agus air an dùil. Bidh làmhan dhaoine a’ tighinn còmhla timcheall cruinne briste, a’ nochdadh fìrinn a thrèig gach crìoch: chan e an Talamh le náisiúin no ginealach a-mhàin, agus tha a thodhchais an urra rinn uile.\n\nA STORY OF TWO POSSIBLE FUTURES\n\nTha taobh den cho-obrachadh a’ toirt air ais cosgais an fhalamhachadh – talamh a’ dol à bith, deoch obrach, eag-shiostam air a bheil cron air, agus talamh a tha fo bhrosnachadh. Tha an taobh eile a’ fosgladh air ath-nuadhachadh: fàs glas, uisge glan, lùth glan, agus teas tighinn na grèine órga. Chan e dorchadas an aghaidh solais a th’ anns an co-dhealachadh. Is e roghainn a th’ ann eadar a bhith a’ gabhail ris agus a bhith an aghaidh.\n\nTha na h-uile làmh a tha timcheall air a’ ghrèin a’ sealltainn dhaoine de aois, cultar agus cuspair eadar-dhealaichte. Tha iad uile còmhla a’ nochdadh gum bi atharrachadh a tha a’ ciallachadh rudeigin na dhleastanas dha-rìribh a tha air a cho-roinn le daoine.\n\nWHY IT MATTERS\n\nTha an obair seo airson daoine a tha dèidheil air an t-saoghal nàdarra, na ginealach a tha romhainn, agus cumhachd na h-ealain gus còmhraidhean cudromach a thòiseachadh. Faodaidh e a bhith na phuing-tìre smaoineachail sa bhaile, san oifig, san àite-ionnsachaidh, sa ghailearaidh no ann an àite a tha a’ coimhead air an àrainneachd.\n\nLeig le do bhalla teachdaireachd a thoirt: tha an àm ri teachd fhathast againn ri dhìon.\n\nDIGITAL ARTWORK YOURSELF\n\nLuchdaich sìos gu didseatach; cha tèid clò-bhualadh no frèam a chuir a-mach.\n\nLuchdaich sìos na faidhlichean a tha a' tighinn leis an toraidh seo às dèidh a cheannach.\n\nAth-bhreithnich mion-fhiosrachadh an fhaidhle a tha a' gabhail a-steach, an stiùireadh clò-bhualaidh, agus an cead-cleachdaidh pearsanta mus clò-bhuail thu.\n\nTagh meud clò-bhualaidh is seirbheis a fhreagras air na sònrachaidhean faidhle a tha air an toirt seachad.\n\nThoir obrach-ealain a-steach dhan taigh le sgeulachd. Tagh Luchdaich sìos an obair-ealain gus a dhèanamh na phàirt dhen àite agad.\n\nHALL OF GREATNESS — Art with a Soul. A Message Without Borders.",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 faidhle · ZIP · 24.6 MB",
+        "product_type": "Luchdaich sìos an dealbh-chluich didseatach",
+        "delivery": "Luchdaich sìos an dealbh-chluich didseatach air loidhne às dèidh a cheannach",
+        "physical_item": "Cha tèid clò-bhualadh no frèam a chuir a-mach",
+        "printing": "Clò-bhuail na faidhlichean a tha ri fhaighinn leis an t-solaraiche clò-bhualaidh as fheàrr leat; dèan sgrùdadh air na tomhasan a tha a’ gabhail a-steach mus tagh thu meud",
+        "usage": "Lean na cumhaichean cead-cleachdaidh pearsanta agus cead-cleachdaidh eile a tha a’ gabhail a-steach leis an luchdachadh sìos"
+      },
+      "_source_hash": "1b778b5e9598b900f314bd014e2126505fb284bc853987ad799e788064ade832"
+    },
+    "smuewa": {
+      "summary": "Tha an Golden Gaze a' tarraing an neach-amhairc a-steach do shaoghal de geoimeatraidh a tha a' nochdadh, àrainneachd na Meadhan-thìre, agus dathan loidsigeach. Tha seo na shaoghal de dhealbhan-cluiche portraid co-aimsireil a tha air an dealbhadh gus misneachd, caractar, agus eadar-dhealachadh ealaíonta a thoirt do dh'innealan-tasgaidh ùr-nodha.",
+      "full_description": "The Golden Gaze — A Vision of Gold, Sea & Timeless Mystery\n\nFaigh a-mach eachdraidh-beatha a bheir tlachd don t-sùil agus a bheir brosnachadh don chuimhne.\n\nIs e an Golden Gaze obair-ealain didseatach tùsail bhon chruinneachadh HALL OF GREATNESS, a’ cur còmhla cruthan co-aimsireil a tha air an spreagadh le cubism le bòidhchead gun àm nan talamh-sneachda sa Mheadhan-thìre.\n\nThèid port-dreuchd boireann tarraingeach a-mach tro chruth geoimeatrach trom, uachdar dorcha órga, gorm dorcha sapphire, eòin-ghainmhich teth, agus dathan crimson tarraingeach. Tha sùilean amber a' tarraing thu a-steach do dhòigh-beatha a tha coltach ri aisling de mhuir ghrian-luath, a' togail air a' chosta, èisg a' sgèith, agus cruthan dealbhaidh.\n\nTha an cumadh-cruinneachaidh seo a tha a' nochdadh a' toirt còmhla misneachd, gliocas agus lùth ealaíonta ùr-nodha, a' cruthachadh prìomh-phointe sònraichte airson taobh a-staigh sophisticated.\n\n✨ Carson a tha thu dèidheil air an obair-ealain seo\n\nStìl Ealain Àireamhach: Dealbhachadh co-aimsireil a tha air a bhrosnachadh le cubism le cruthan geoimeatrach a tha a’ nochdadh.\n\nPailéad dathannach saibhir: Óir, gorm sapphire, charcoal, ivory, agus crimson cruthaíonn siad codarsnacht amhairc mhór.\n\nElegant Interior Accent: Dealbhaichte gus àiteachan ùr-nodha agus sòghail a chomharrachadh.\n\nRoghainnean taisbeanadh-shleamhnagan: Tagh am frèam a tha thu airson, an stuth clò-bhualaidh, agus an meud iomchaidh.\n\nDigital Convenience: Luchdaich sìos na faidhlichean a tha a-steach agus dèan clò-bhualadh tro do sheirbheis as fheàrr leat.\n\n10\n\nSeòmraichean-còmhnaidh agus taighean ùr-nodha\n\nOifisichean gnìomhachais agus stiùidiothan cruthachaidh\n\nTaighean-òsta boutique agus raointean coinneachaidh eireachdail\n\nÀitean-còmhnaidh co-aimsireil agus taobh a-staigh air an cur an cèill\n\nLuchd-ealain a tha a’ coimhead airson aithrisean dealbhaidh sònraichte\n\nTabhartasan smaoineachail do luchd-ealain ùr-nodha\n\n10\n\nPacaidean dealbhan didseatach a ghabhas luchdadh a-nuas a tha a' gabhail a-steach na faidhlichean a tha air an sonachadh ann an liosta an toraidh seo, còmhla ri stiùireadh clò-bhualaidh do luchd-ceannach agus cead-siubhail airson cleachdadh pearsanta.\n\n10\n\nTeacsa an dealbh-chluich: The Golden Gaze\n\nCollection: HALL OF GREATNESS\n\nStìl: Ealain co-aimsireil a tha a' gabhail buaidh air an cubism\n\nCòmhnard\n\nCo-mheas-astar: 2:3\n\nProduct Type: Digital artwork for printing\n\nSgioba:\n\n10\n\nClò-bhuail an dealbh le seirbheis chlò-bhualaidh proifeasanta air an stuth a tha thu ag iarraidh, leithid pàipear no canabhas. Tagh frèam is crìoch a tha a’ coinneachadh ri do dhòigh-obrach.\n\nTha meud agus càileachd a' chlò-bhualaidh dheireannach an urra ri fuaimneachadh nan faidhlichean a tha air an toirt seachad agus ri comasan na seirbheis chlò-bhualaidh a thagh thu. Dh'fhaodar dathan a bhith eadar-dhealaichte eadar sgrìn is stuth clò-bhuailte.\n\nTagh an roghainn seo: Is toraidh didseatach a th' ann. Cha tèid peant, frèam no nì clò-bhuailte a chuir a-mach. Is e eisimpleirean de sheòmraichean a th' anns na mocapan; is e am bathar a tha air a dhealbhadh airson a chlò-bhualadh na faidhlichean dealbhaidh a ghabhas luchdadh a-nuas.\n\n10\n\nChan urrainn dhut ach an dealbh-chluich a chlò-bhualadh airson do theaghlaich no do oifigeir fhèin agus clò-bhualadh corporra a thaisbeanadh mar bhronnadh pearsanta. Chan urrainn dhut na faidhlichean didseatach a ath-reic, ath-sgaoileadh, a roinn, fo-cheadachadh, no a ath-riochdachadh gu margaidheachd gun chead sgrìobhte air leth.\n\nART PRINT & SEARCH DETAILS\n\nFaic an clò-bhualadh ealaíne didseatach seo THE GOLDEN GAZE 👁 airson ealaín balla clò-bhuailte, deiseil airson an taighe, agus taobh a-staigh air a dhealbhadh gu faiceallach. Tha an obair-ealain seo ri luchdachadh sìos airson taisbeanadh pearsanta, le roghainnean clò-bhualaidh a thagh thu a rèir an fhaidhle a tha air a thoirt seachad agus an àite agad.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 fhaidhle · ZIP · 22.4 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download after purchase",
+        "physical_item": "Cha tèid clò-bhualadh no frèam corporra a sheòladh",
+        "printing": "Clò-bhuail na faidhlichean a tha ri fhaighinn leis an t-solaraiche clò-bhualaidh as fheàrr leat; dèan sùil air na tomhasan a tha a' gabhail a-steach mus tagh thu meud",
+        "usage": "Lean na cumhachan cead-cleachdaidh pearsanta is eile a tha a' tighinn còmhla ris an luchdachadh a-nuas"
+      },
+      "_source_hash": "bc5775f40dbc520fc6c48e9b41f3d7b8b577c56471e899302b456db982f635ec"
+    },
+    "jzjbrg": {
+      "summary": "Thoir eachdraidh agus misneachd na h-Eiphit seann-fhasanta dhan t-suidheachadh agad le The Queen of the Nile. Air a bhrosnachadh le eachdraidh ealaíonta na h-Eiphit, cuiridh an obair-ealain didseatach seo ri làthaireachd cultúrtha rìghrean air taighean, oifigean, ospadalan, agus taobh a-staigh air a chur an sàs.",
+      "full_description": "BAINICHEIL AN NILE\n\nA Regal Tribute to the Artistic Legacy of Ancient Egypt\n\nThoir misneachd, dìon agus àilleachd seann Èiphit dhan àrainneachd agad le The Queen of the Nile, saothar-ealain didseatach a tha air a spreagadh le cànan amhairc agus oidhcheil cultúrtha aon de na sìobhaltachdan as cudromaiche san eachdraidh.\n\nChaidh an obair seo a chruthachadh airson luchd-leantainn oidhcheart na h-Èiphit agus ealaín aithrisean sònraichte, agus tha e a' toirt faireachdainn de dh'fhìor-làthaireachd agus de chruth cultar. Tha e a' toirt cuireadh don neach-amhairc ceangal a dhèanamh ri oidhcheart air a mhìneachadh le samhlachail, ceàrnag, samhlachas, agus le ùidh a tha a' fuireach leis an Nile agus le saoghal na h-Èiphit seann-aoiseil.\n\nA DISTINCTIVE PRESENCE FOR YOUR SPACE\n\nFaodaidh Banrigh na Nile a bhith na phointean-tarraing ann an seòmraichean-còmhnaidh, seòmraichean-studaidh prìobhaideach, oifigearan, oighreachdan, àiteachan-freagairte, agus taobh a-staigh air an cur an sàs. Tha i na roghainn mhath airson luchd-saothrachaidh agus airson duine sam bith a tha dèidheil air ealaín agus dealbhadh cultúrtha a tha a’ tighinn bho na h-Eiphit.\n\nDIGITAL DOWNLOAD INFORMATION\n\nIs toraidh didseatach a th' ann. Cha tèid peant, pòstaer no frèam a chlò-bhualadh. Às dèidh a cheannach, luchdaich sìos na faidhlichean a tha air an toirt a-steach leis an liosta agus dèan sgrùdadh air a' fhàirm, na tomhasan agus na cumhachan-cleachdaidh a tha an lùib mus clò-bhuail thu. Tagh meud clò-bhualaidh agus stuth a tha freagarrach airson an fhaidhle a tha air a thoirt a-steach agus an taisbeanadh a tha thu airson a chleachdadh. Dh'fhaoidte gum bi dathan eadar-dhealaichte eadar na sgrìn agus na toraidhean clò-bhuailte.\n\nTHE QUEEN OF THE NILE — A Regal Echo of an Ancient World.\n\nHALL OF GREATNESS\n\nART PRINT & SEARCH DETAILS\n\nFaic an clò-bhualadh ealaíne didseatach seo The Queen Of The Nile 👑 airson ealaín balla clò-bhuailte, dealachadh dachaigh sònraichte, agus taobh a-staigh air a dhealbhadh gu faiceallach. Saothar-ealain a ghabhas luchdadh a-nuas airson taisbeanadh pearsanta, le roghainnean clò-bhualaidh a thaghadh a rèir an fhaidhle a tha air a thoirt seachad agus an t-suidheachadh agad.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 faidhle · ZIP · 44.0 MB",
+        "product_type": "Luchdaich sìos an saothar-ealain didseatach",
+        "delivery": "Luchdaich sìos an-asgaidh às deidh a cheannach",
+        "physical_item": "Cha tèid clò-bhualadh no frèam a chuir a-nuas",
+        "printing": "Clò-bhuail na faidhlichean a tha air an toirt seachad leis an t-solaraiche clò-bhualaidh a tha thu ag iarraidh; dèan sgrùdadh air na tomhasan a tha a’ gabhail a-steach mus tagh thu meud",
+        "usage": "Lean na cumhaichean cead-cleachdaidh pearsanta agus cead-cleachdaidh eile a tha a’ gabhail a-steach leis an luchdachadh sìos"
+      },
+      "_source_hash": "a4497ccda79c60d5130d5f8f09b9c6acc088280a4d67c8ca9e65d4ff49de7d69"
+    },
+    "csyqhm": {
+      "summary": "Is e The Coptic Soul of Egypt a th' ann an eadar-theangachadh ealaíonta co-aimsireil a tha air a bhrosnachadh le oidhcheart, samhlachail agus cuimhne chultúrtha na h-Èiphit Choptach. Chaidh a chruthachadh dhaibhsan a tha dèidheil air coinneachadh eachdraidh, pearsantachd agus aithris ealaíonta, agus tha e a' dèanamh rannsachadh cudromach ann an dachaighean, oifigean, gailearaidhean agus àiteachan cultúrtha.",
+      "full_description": "THE COPTIC SOUL OF EGYPT\n\nA Contemporary Artistic Tribute to Coptic Heritage\n\nFaigh a-mach mìneachadh ealaíonta pearsanta air oidhcheart Coptach na h-Èiphit tro The Coptic Soul of Egypt, saothar-ealain didseatach a tha air a bhrosnachadh le cuimhne amhairc, cànan samhlachail, agus àrainneachd chultúrtha a tha ceangailte ri eachdraidh Coptach.\n\nAnn an àite a bhith a’ sealltainn a-mach e fhèin mar ath-chruthachadh seann-eòlasach no lethbhreac de dhealbh-chluich eachdraidheil sònraichte, tha an obair seo a’ coimhead air oidhcheart tro lionsa ealaíne co-aimsireil. Tha e a’ toirt cuimhne chultúrtha agus aithrisean amhairc ùr-nodha còmhla gus cuireadh a thoirt do dhaoine smaoineachadh air cò iad, a’ leantainn air adhart, creideamh, agus eachdraidh na h-Eiphit a tha làn de shreathan.\n\nAirson luchd-èisteachd a tha a' meas ealaín chudromach, tha barrachd ri fhaighinn leis an obair na deiseil: tha e a' cruthachadh ceangal ri traidiseanta chultúrtha sònraichte agus an àite a tha aige ann an eachdraidh na h-Eiphit.\n\nSUITED TO THOUGHTFUL SPACESS\n\nTha seo na bhrosnachadh do theaghlaichean, sgoiltean prìobhaideach, oifigearan, gailearaidhean, taobh a-staigh cultar, agus àiteachan far a bheil luach air eachdraidh na h-Èiphit agus air aithrisean ealaíne. Dh'fhaoidte gum bi e na bhrosnachadh do luchd-leantainn eachdraidheil na h-Èiphit agus eachdraidheil na Coptaich.\n\nDIGITAL PRODUCT INFORMATION\n\nIs luchdadh a-nuas didseatach a tha seo. Cha tèid peant, pòstaer no fràma a chlò-bhualadh. Dèan ath-bhreithneachadh air na faidhlichean a tha air an toirt leis an liosta, a' toirt a-steach a' fhàirm, na tomhasan agus na cumhachan cleachdaidh, mus clò-bhuail thu iad. Dh'fhaoidte gum bi dathan eadar-dhealaichte a rèir an sgrìn, a' chlò-bhualadair agus an stuth a thagh thu.\n\nTHE COPTIC SOUL OF EGYPT — Heritage Remembered. Art Reimagined.\n\nHALL OF GREATNESS\n\nART PRINT & SEARCH DETAILS\n\nFaic an clò-bhualadh ealaíne didseatach seo The Coptic Soul of Egypt airson ealaín balla clò-bhualaidh, dealbhadh dachaigh sònraichte, agus taobh a-staigh air a dhealbhadh gu faiceallach. Saothar-ealain a ghabhas luchdadh a-nuas airson taisbeanadh pearsanta, le roghainnean clò-bhualaidh a thaghadh a rèir an fhaidhle a tha air a thoirt seachad agus an t-suidheachadh agad.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 faidhle · ZIP · 60.1 MB",
+        "product_type": "Luchdaich sìos an saothar-ealain didseatach",
+        "delivery": "Luchdaich sìos an-asgaidh às deidh a cheannach",
+        "physical_item": "Cha tèid clò-bhualadh no frèam a chuir a-nuas",
+        "printing": "Clò-bhuail na faidhlichean a tha air an toirt seachad leis an t-solaraiche clò-bhualaidh a tha thu ag iarraidh; dèan sgrùdadh air na tomhasan a tha a-steach mus tagh thu meud",
+        "usage": "Lean na cumhaichean cead-cleachdaidh pearsanta agus cead-cleachdaidh eile a tha air an toirt a-nuas"
+      },
+      "_source_hash": "2eca69141928e3e01281fed2b39524d668bb838241b109042d8477d2e941b1b2"
+    },
+    "jvffaq": {
+      "summary": "Tha THE NILE'S ETERNAL GRACE a' comharrachadh àilleachd gun ùine na h-Èiphit, a' toirt còmhla làthaireachd rìghreach agus rithim leantainneach na Nile. Tha seo na shaothar-ealain didseatach a tha a' toirt buaidh air eachdraidh airson àiteachan a tha a' cur luach air cultar na h-Èiphit agus air aoibhneas gun ùine.",
+      "category": "Heritage",
+      "_source_hash": "b061cdc5a55b2e444a09cd7d8c3d8d1eb73ad3315fe38b35610ca590b595c16e"
+    },
+    "kjclzu": {
+      "summary": "A Bond Beyond Words a’ comharrachadh an ceangal neo-àbhaisteach, gun fhacal eadar leanabh is com-pàirtiche dìleas. Saothar-ealain teth, a’ toirt air falbh mu mhuinntir, cairdeas, neo-chiontachd, agus gràdh gun choinneamh – air a chruthachadh gus faireachdainn de ghràdh a thoirt do àiteachan teaghlaich agus do theaghlaichean a tha dèidheil air beathaichean.",
+      "full_description": "A BOND BEYOND WORDS\n\nThe Beauty of Unconditional Love\n\nTha cuid de charaidean air an faicinn leis an chridhe, chan ann le faclan.\n\nCeilich an ceangal iongantach eadar leanabh agus cù beloved le A Bond Beyond Words, obair-ealain a tha a' teannachadh cridhe a tha a' gabhail a-steach na h-aon bheachdan de chairdeas, dìlseachd, neo-chiontachd, agus gràdh gun choinneamh.\n\nTha an dealbh seo a’ sealltainn nighean òg a’ gabhail a-steach a’ Golden Retriever a tha a’ cluich ann an gàrradh a tha a’ coimhead gu math brèagha agus a tha a’ gabhail a-steach solas na grèine. Tha an giùlan sìtheil aca agus an dàimh ghràdhach a th’ aca a’ sealltainn ceangal sònraichte a tha air a thogail air ionracas, sonachas agus companachachd.\n\nAir a chuairteachadh le flùraichean beothail, feur uaine lush, taigh-eòin adhmaid tarraingeach, agus an glow teth nàdur, a 'cruthachadh an t-seinneadair àrainneachd làn de tenderness, comhfhurtachd, agus cuimhne òige.\n\nTha gach mion-fhiosrachadh a’ cuideachadh le bhith a’ toirt cuimhne dhuinn nach eil feum air faclan airson a bhith a’ gabhail ri gaol. Uaireannan, chan eil feum ach air a’ ghràdh a bhith a’ ciallachadh a h-uile càil.\n\nTha A Bond Beyond Words na cheiliúradh air na dàimhean brèagha a tha a’ dèanamh beatha nas brèagha.\n\n✨ WHY YOU'LL LOVE THIS ARTWORK\n\nSgeulachd a’ bhrosnachadh cridhe: Gabh an cairdeas iongantach eadar leanabh agus a mhac dìleas.\n\nCeangal Eadar-mhothachail: Ceithir-là de ghràdh, ionracas, companachachd, agus gràdh gun choinneamh.\n\nGolden-Hour Beauty: Cruthaichear àrainneachd shìobhalta agus a’ toirt toileachas le solas na grèine teth.\n\nMion-fhiosrachadh gàrraidh bheò: Bidh flùraichean dathaichte agus àrainneachd nàdarra a’ toirt ùr-ghnàthachadh agus beatha don cho-obrachadh.\n\nTimeless Appeal: Saothar-ealain a tha a’ ciallachadh agus a tha a’ tighinn gu buil le clann, tuathanaich, teaghlaichean agus luchd-còrdaidh ri beathaichean.\n\nThoughtful Gift Idea: A choice lovely for anyone who appreciates the special bond between people and pets.\n\n10\n\nSeòmraichean-cadail agus seòmraichean-cluiche nan clann.\n\nSeòmraichean-còmhnaidh teaghlaich agus coilltean-tasgaidh.\n\nNurseries and reading corners.\n\nClinican-bhith-eòlas agus ionadan cùram peata.\n\nTaighean-suidhe is ionadan-cùraim.\n\nTaighean-òsta teaghlaich agus àiteachan-fuirich.\n\nSgoiltean, ionadan cùram chloinne, agus àiteachan coimhearsnachd.\n\nLuchd-tòiseachaidh agus teaghlaichean a' comharrachadh an t-saoghail.\n\n10\n\nTha am pacaid luchdaidh a-nuas didseatach agad a' toirt a-steach:\n\nAn dealbh-chluich didseatach tùsail ann am fòrmat PNG.\n\nFhaid clò-bhualaidh JPG 2:3 de chàileachd àrd air a ullachadh.\n\nRoghainnean meud clò-bhualaidh a thathar a' moladh.\n\nA PDF printing and sizing guide.\n\nFaidhle START HERE le stiùireadh airson luchdachadh a-nuas is clò-bhualadh.\n\nSàbhail fiosrachadh mu shocrachadh an deilbh agus cumhachan an cleachdadh.\n\n10\n\nLeanaidh an dealbh-chluich co-mheas portraid 2:3 agus tha e freagarrach airson:\n\n4 × 6 òirleach\n\n8 × 12 òirleach\n\n12 × 18 òirleach\n\n16 × 24 òirleach\n\n20 × 30 òirleach\n\nGus an eòlas lèirsinneach as fheàrr a bhith agad, molamaid pàipear matte, satin no fine-art.\n\nFIOSRACHADH PÀIRTICH\n\n'S e luchdadh a-nuas didseatach a th' ann. Cha tèid dealbh-chluich no frèam a chuir a-steach.\n\nDh'fhaoidte gum bi na dathan eadar-dhealaichte a rèir an sgrìn, a' chlò-bhualadair agus a' phàipeir agad.\n\nTha faidhlichean didseatach air an dèanamh airson cleachdadh pearsanta mura h-eil cead-siubhail air a cheannach.\n\nTha cead-siubhail iomchaidh a dhìth airson a bhith a’ sealltainn ann an chompanaidhean agus àiteachan poblach.\n\nCha ghabh faidhlichean didseatach ath-reic, ath-sgaradh no a roinn.\n\n❤️ A LITTLE LOVE MAKES A BIG DIFFERENCE\n\nThoir a-mach cuimhne mhath air dìlseachd, cairdeas, agus an gaol gun chuing a nì gach latha nas geala.\n\nLeig le A Bond Beyond Words do dh'àite a lìonadh le teas, sonas, agus an drìomhair gun ùine de chairdeas nach fheum mìneachadh.\n\nA BOND BEYOND WORDS — One Heart. Two Souls. Endless Love.\n\nART PRINT & SEARCH DETAILS\n\nFaigh a-mach seo A BOND BEYOND WORDS The Beauty of Unconditional Love clò-bhualadh dealbhaidh didseatach airson dealbh-bhalla clò-bhuailte, deiseil airson an taighe, agus taobh a-staigh air a dhealbhadh gu faiceallach. Saothar-ealain a ghabhas luchdadh a-nuas airson taisbeanadh pearsanta, le roghainnean clò-bhualaidh a thaghadh a rèir an fhaidhle a tha air a thoirt seachad agus an t-suidheachadh agad.",
+      "category": "Daonnachd",
+      "product_details": {
+        "files_included": "1 faidhle · ZIP · 7.8 MB",
+        "product_type": "Luchdaich sìos an dealbh-ealain didseatach",
+        "delivery": "Luchdaich sìos an-asgaidh às deidh a cheannach",
+        "physical_item": "Cha tèid clò-bhualadh no fràma a chuir a-nuas",
+        "printing": "Clò-bhuail na faidhlichean a tha air an toirt seachad leis an t-solaraiche clò-bhualaidh a tha thu ag iarraidh; dèan sgrùdadh air na tomhasan a tha a’ tighinn a-steach mus tagh thu meud",
+        "usage": "Lean na cumhaichean cead-cleachdaidh pearsanta agus cead-cleachdaidh eile a tha a’ tighinn còmhla ris an luchdachadh sìos"
+      },
+      "_source_hash": "af7fd1018209d1a0c50074203cc6c678ce973ea18a6dd07595de274e8d12da36"
+    },
+    "xvccaj": {
+      "summary": "Seacht obair-ealain samhlachaidh a tha air an spreagadh leis an t-saoghal, bailtean san àm ri teachd, nàdar, agus bòidhchead na Meadhan-thìre—cruinneachadh didseatach a tha a’ nochdadh airson nithean fiosrachail agus àiteachan cruthaitheacha.",
+      "full_description": "GLOBAL ART & IMMAGINE — SEVEN ARTWORKS, LIMITLESS WORLDS\n\nTadhal air àiteachan nach eil cho cumanta tro chruinneachadh de sheacht obair-ealain didseatach a tha air an spreagadh le iongnadh cosmach, àilleachd na talmhainn, sgeadachadh a tha a’ coimhead air adhart, nàdar, agus spiorad na Meadhan-thìre. Fosglas gach pìos do shaoghal amhairc eadar-dhealaichte, a’ toirt fiosrachaidh, gluasad, agus samhlachadh gu àiteachan co-aimsireil.\n\nBho mhìorbhailean an t-saoghail gu na bailtean a tha sinn a’ bruadar a thogail, bho thalamh-sgeul nàdarra iongantach gu sealladh-tìre cois-uisge a tha a’ nochdadh, tha an cruinneachadh seo a’ comharrachadh nan diofar dhòighean a dh’fhaodas ealaín ar faireachdainn de dh’fhaodas a leudachadh.\n\nWHAT'S INCLUDED\n\nBeyond the Universe\n\nThe Celestial Garden\n\nCities of Tomorrow\n\nNature's Majesty\n\nMediterranean Dreams\n\nThe Mediterranean Muse\n\nGeometry of Elegance\n\nWHERE IT PERTANS\n\nColtachd sònraichte airson seòmraichean-còmhnaidh, oifigean, stiùidiothan cruthachaidh, oifis, oifis-bìdh, àiteachan-freagairt, agus taobh a-staigh a chuireas fàilte air ealaín aithriseach agus deise a bhios a’ tòiseachadh air còmhradh.\n\nDIGITAL DOWNLOAD\n\nIs toraidh didseatach a tha seo. Cha tèid dealbh no fràma a chuir a-steach. Luchdaich sìos na faidhlichean a tha sa phacaid agus ath-bhreithnich a' fhàirm, na tomhasan agus na cumhachan cleachdaidh mus clò-bhuail thu iad. Tagh meud clò-bhualaidh is stuth a tha freagarrach airson na faidhlichean a tha air an toirt seachad. Dh'fhaoidte gum bi dathan eadar-dhealaichte eadar an sgrìn agus na toraidhean clò-bhuailte.\n\nFaigh a-mach ealaín gun chrìochan. Leig leis an samhlachas do dhòigh-beatha a chruthachadh.\n\nHALL OF GREATNESS — Art Without Boundaries.",
+      "category": "Elegance",
+      "product_details": {
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download after purchase",
+        "physical_item": "Cha tèid clò-bhualadh no frèam corporra a sheòladh",
+        "printing": "Clò-bhuail na faidhlichean a tha ri fhaighinn leis an t-solaraiche clò-bhualaidh as fheàrr leat; dèan sùil air na tomhasan a tha a' gabhail a-steach mus tagh thu meud",
+        "usage": "Lean na cumhachan cleachdaidh a tha a' tighinn còmhla ris an luchdadh a-nuas",
+        "bundle_item_count": "Cruinneachadh buntainneach; obrach-ealain aon-ghnothach air a liostadh gu h-ìosal"
+      },
+      "_source_hash": "d8641c6b467679268bbf7fa3a052b8f3d1afec3f69b284f8c9413088a02c671d"
+    },
+    "wjxgxb": {
+      "summary": "Thoir spiorad sean-fhasanta na h-Èiphit dhan t-suidheachadh agad. Tha Eternal Egypt a' comharrachadh mairsinn sìobhaltachd air a bheil cruthachadh le sgeadachadh mòr-chòrdte, an Nile, agus leabhraichean-cràbhaidh cultúrtha. Air a dhealbhadh mar phriontadh ealaíne didseatach tarraingeach airson luchd-còrdaidh ri oidhcheart, eachdraidh agus taobh a-staigh gun ùine na h-Èiphit.",
+      "full_description": "ETERNAL EGYPT\n\nThe Timeless Spirit of an Ancient Civilization\n\nThoir eachdraidh-beatha na h-Eiphit seann-fhasanta dhan àrainneachd agad le Eternal Egypt, saothar-ealain didseatach a tha air a bhrosnachadh le eachdraidh-beatha nan pirimidean, an Sphinx Mhòr, agus an talamh gun àm aig a' Nile.\n\nChaidh an dealbh seo a chruthachadh dhaibhsan a tha a’ faireachdainn ceangal ri eachdraidh, cuimhne chultúrach, agus leasachaidhean ealaíonta na h-Èiphit, agus tha e a’ tabhann barrachd na dealbh maiseachaidh. Tha e a’ toirt air ais an t-sgèile, an misneachd, agus an co-sheasmhachd de shiobhaltas a tha a’ leantainn air a’ chànan a tha a’ toirt brosnachadh don t-saoghal.\n\nTha an àrainneachd a tha a’ toirt buaidh air eachdraidh a’ dèanamh deas-ghnàth sònraichte de dh’àiteachan-còmhnaidh, de dh’oifis, de dh’otèl, de dh’àiteachan cultar agus de dh’innealan-tasgaidh a tha a’ comharrachadh eachdraidh agus ealaín.\n\nCÒMHNAIDH A BHITH ANN AN SPÀS DÒ\n\nTabhartas lèirsinneach do thràigh chultúrach na h-Eiphit sean.\n\nAinm-clò sònraichte a tha a’ nochdadh eachdraidh airson taobh a-staigh ùr-nodha agus clasaigeach.\n\nRoghainn chudromach do luchd-saothrachaidh agus luchd-leantainn eachdraidh na h-Èiphit.\n\nSaothar-ealain didseatach a tha a' nochdadh a ghabhas clò-bhualadh is a fhrèamachadh gus a bhith freagarrach dhan àite agad.\n\nDIGITAL PRODUCT INFORMATION\n\nIs luchdadh a-nuas didseatach a tha seo. Cha tèid peant, pòstaer no fràma a chlò-bhualadh. Luchdaich sìos na faidhlichean a tha a' tighinn còmhla ri do cheannach agus ath-bhreithnich am fòrmat, na tomhasan agus na cumhachan-cleachdaidh a tha an lùib mus clò-bhuail thu iad. Dh'fhaoidte gum bi dathan eadar-dhealaichte a rèir an sgrìn, a' chlò-bhualadair agus an stuth a thagh thu.\n\nETERNAL EGYPT — A Civilization in Memory. A Legacy Beyond Time.\n\nHALL OF GREATNESS\n\nART PRINT & SEARCH DETAILS\n\nFaigh a-mach an EIGIPTE ETERNAL seo, clò-bhualadh ealaíne didseatach de Spiorad gun àm de shiobhaltas seann-fhasanta airson ealaín balla clò-bhuailte, dealbhadh dachaigh sònraichte, agus taobh a-staigh air a dhealbhadh gu faiceallach. Saothar-ealain a ghabhas luchdadh a-nuas airson taisbeanadh pearsanta, le roghainnean clò-bhualaidh a thaghadh a rèir an fhaidhle a tha air a thoirt seachad agus an t-suidheachadh agad.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "4 faidhlichean · JPG, PDF, PNG, TXT · 9.1 MB",
+        "product_type": "Luchdaich sìos an saothar-ealain didseatach",
+        "delivery": "Luchdaich sìos an-asgaidh às deidh a cheannach",
+        "physical_item": "Cha tèid clò-bhualadh no frèam a chuir a-nuas",
+        "printing": "Clò-bhuail na faidhlichean a tha air an toirt seachad leis an t-solaraiche clò-bhualaidh a tha thu ag iarraidh; dèan sgrùdadh air na tomhasan a tha a’ tighinn a-steach mus tagh thu meud",
+        "usage": "Lean na cumhaichean cead-cleachdaidh pearsanta agus cead-cleachdaidh eile a tha a’ tighinn còmhla ris an luchdachadh sìos"
+      },
+      "_source_hash": "af4bb9b510bcc457b6750421a6f2d14b3beabca71579f4cd5f83484617097abe"
+    },
+    "fgdpqp": {
+      "summary": "Ann an ceàrnag-obrach samhlachail, chan eil an ùine air a thomhas ach air a dhealbhachadh. Tha AN DREAM A’ CHLOCHMHEARAICH a’ toirt air falbh gears, meicneòlasan na talmhainn, agus ionnstramaidean do-dhèanta gus am bi iad nan seasamh air cuimhne, air cruthachadh, agus air a’ chiad àm. Coinneamh eadar samhlachas steampunk agus surrealism samhlachail.",
+      "full_description": "Ann an ceàrnag-obrach samhlachail, chan eil an ùine air a thomhas ach air a dhealbhachadh. Tha AN DREAM A’ CHLOCHMHEARAICH a’ toirt air falbh gears, meicneòlasan na talmhainn, agus ionnstramaidean do-dhèanta gus am bi iad nan seasamh air cuimhne, air cruthachadh, agus air an chiad àm. Coinneamh eadar samhlachas steampunk agus surrealism samhlachail. Taghadh tarraingeach airson leabharlannan, sgoiltean, oifigean, agus taobh a-staigh a tha a’ coimhead air dealbhadh. Tha an luchdachadh sìos didseatach ri fhaighinn mar fhaidhle ZIP. Thoir sùil air na faidhlichean agus na sònrachaidhean a tha a’ tighinn còmhla ris an leabhar mus tagh thu meud clò-bhualaidh.",
+      "category": "Elegance",
+      "product_details": {
+        "files_included": "1 faidhle · ZIP · 36.8 MB"
+      },
+      "_source_hash": "30ab80fd3d5210fdd5ec47f8f60c9b5f121908831ac3a07129ffe69e98b6bb2c"
+    }
+  },
+  "ui": {
+    "navFeatured": "Tagh",
+    "navCollections": "Taghadh",
+    "navGallery": "Gailearaidh",
+    "navArtist": "Artist",
+    "eyebrow": "A curated world of printable art",
+    "heroTitle": "<em>Ealain a bheir sgeulachd.</em>",
+    "heroText": "Faic gailearaidh air a dhealbhadh le samhlachas, eachdraidh, ceangal daonna, agus bòidhchead gun ùine na h-ealain. Obair didseatach chudromach, deiseil gus a bhith na phàirt den àite agad.",
+    "explore": "Explore collections",
+    "discover": "Discover the gallery",
+    "featuredEyebrow": "Na sgeulachdan a thèid luchd-tadhail air ais gu",
+    "featuredTitle": "Tagh dealbhan-cluiche",
+    "featuredText": "Seachdar obrach a tha a’ ciallachadh rudeigin. Seachdar dòigh eadar-dhealaichte air ealaín agus faireachdainnean daonna a thoirt a-steach dhan àite agad.",
+    "collectionsEyebrow": "Curated collections",
+    "collectionsTitle": "Discover the collections",
+    "collectionsText": "Taighean-tasgaidh air an cur air dòigh tro ealaín, cultar, agus faireachdainn. Faigh a-mach mu chruinneachadh no rachaibh gu dìreach chun a sheòladh tèarainte.",
+    "galleryEyebrow": "The complete gallery",
+    "galleryTitle": "Saothair-ealain a-mhàin",
+    "galleryText": "Lorg le tiotal, cuspair no catagóir an dealbh-chluich. Faic ro-shealladh den sgeulachd no rachaibh gu h-àrd-ùrlar an luchdaidh a-nuas didseatach.",
+    "search": "Lorg tiotalan is thèamaichean...",
+    "artistEyebrow": "Air cùl a' ghailearaidh",
+    "artistTitle": "Mu dheidhinn an t-seinneadair",
+    "artistP1": "Is e an t-ealain a tha air cùl HALL OF GREATNESS, gailearaidh ealaíne digiteach neo-eisimeileach a bheir sgeulachdan lèirsinneach buntainneach gu luchd-èisteachd air feadh an t-saoghail.",
+    "artistP2": "Tha a chleachdaidhean ealaíonta a’ toirt còmhla dealbh-chluich, deuchainnean agus atharrachadh didseatach. Tha barrachd aig gach obair na deiseil: àile, cuimhne no sgeulachd dhaonna.",
+    "artistP3": "Bho oidhchealchas na h-Eiphit agus nan Copt gu teamachnan uile-choitcheann a thaobh gràdh, dìon, dùil agus samhlachas, tha an gailearaidh a' toirt cuireadh dhut eòlas fhaighinn air ealaín air do dhòigh fhèin.",
+    "tagline": "Ealain chudromach.",
+    "digital": "Digital products · Luchdaich sìos gu fèin-ghluasadach tro Gumroad",
+    "privacy": "Prìobhaideachd",
+    "terms": "Terms",
+    "contact": "Contact",
+    "gumroad": "Gumroad store ↗",
+    "exploreArt": "Explore artwork ↗",
+    "discoverStory": "Discover story ↗",
+    "buyDownload": "Buy download ↗",
+    "buyCollection": "Buy collection ↗",
+    "exploreCollection": "Explore collection ↗",
+    "printable": "Printable digital art",
+    "format": "Faidhle didseatach · Clò-bhuail ann am meud a tha freagarrach don àite agad",
+    "noResults": "Chan eil dealbhan a fhreagras air an lorg agad.",
+    "catalogError": "Chan eil catalog a' ghailearaidh ri làimh an-dràsta. Ath-nuadhachadh an duilleag.",
+    "all": "Gach nì",
+    "of": "de",
+    "artworks": "dealbhan",
+    "choose": "Tagh cànan"
+  },
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "_ui_translation_status": "machine-generated-unreviewed",
+  "landing_ui": {
+    "← Return to the gallery": "← Tilleadh dhan ghailearaidh",
+    "Language": "Language",
+    "An original digital artwork from HALL OF GREATNESS": "Saothar-ealain didseatach tùsail o HALL OF GREATNESS",
+    "A curated collection of meaningful digital artworks": "A curated collection of meaningful digital artworks",
+    "Explore & Get the Artwork ↗": "Explore & Get the Artwork ↗",
+    "Secure checkout and digital delivery on Gumroad.": "Secure checkout and digital delivery on Gumroad.",
+    "Artwork presentation": "Taisbeanadh an dealbhaidh",
+    "Imagine it in a refined frame": "Samhlaigh e ann an frèam air a dheagh dhealbhadh",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "Cuidicheas an dàrna taisbeanaidh thu le bhith a' dealbhachadh an dealbh-chluich mar shealltainn le frèam, agus a' cumail a' bhun-chomharran.",
+    "Digital download": "Digital download",
+    "Access your files after checkout": "Access your files after checkout",
+    "Print your way": "Print your way",
+    "Choose a size suited to your space": "Tagh meud a tha freagarrach don àite agad",
+    "Made to display": "Air a dhèanamh gus a shealltainn",
+    "For homes, studios, and meaningful spaces": "For homes, studios, and meaningful spaces",
+    "The meaning behind the artwork": "An ciall a tha air cùl an dealbh-chluich",
+    "More than decoration. A feeling that stays.": "Nas motha na deiseil. Mothachadh a mhaireas.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Air a chruthachadh do dhaoine a tha ag iarraidh gum bi an àrainneachd aca a’ nochdadh sgeulachd, cuimhne, luach no faireachdainn àlainn. Leig leis an obair seo a bhith na phàirt den àrainneachd a chruthaicheas tu agus den bheachd a tha thu airson a bhith aig do àite.",
+    "Inside this collection": "A-staigh an taisbeanaidh seo",
+    "One collection. Many stories.": "One collection. Many stories.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Faic na h-obraichean-ealain a tha san t-sreath seo. Tha an caractar aca fhèin aig gach pìos, ach còmhla, tha iad a’ cruthachadh turas lèirsinneach nas beairtiche.",
+    "Complete artwork story": "Sgeulachd an dealbh-chluich gu lèir",
+    "Full product description": "Full product description",
+    "What is included": "Dè a tha a-steach",
+    "Product specifications": "Sònrachaidhean an toraidh",
+    "Where it belongs": "far a bheil e a' tighinn a-steach",
+    "Art that finds its place": "Art that finds its place",
+    "Before you purchase": "Ro cheannach",
+    "Digital download details": "Digital download details",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Is toraidh didseatach a th' ann. Cha tèid dealbh no frèam a chuir a-mach. Às dèidh a cheannach, bheir Gumroad cothrom air na faidhlichean a tha a' tighinn còmhla ris an toraidh seo. Thoir sùil air na sònrachaidhean faidhle a tha rim faighinn agus an cead-siubhail mus clò-bhuail thu no mus cleachd thu an dealbh.",
+    "From download to display": "Às an luchdaich thu sìos gu taisbeanadh",
+    "Make the artwork part of your space": "Dèan an dealbh-chluich na phàirt dhen t-spàs agad",
+    "01 · Purchase": "Buy",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Crìochnaich an ceannach sàbhailte agad air Gumroad. Tha an ceannach agad airson toradh didseatach.",
+    "02 · Download": "Luchdaich sìos",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Faigh cothrom air na faidhlichean a tha air an toirt leis an toraidh seo tro Gumroad agus ath-bhreithnich na sònrachaidhean a tha an làthair.",
+    "03 · Print": "Clò-bhuail",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Tagh meud clò-bhualaidh a shàbhailidh co-mheasan buntainneach an dealbh-chluich. 'S urrainn do neach-clò-bhualaidh ionadail cuideachadh le bhith a' cumail nan tomhasan ris an fhaidhle a tha air a thoirt seachad.",
+    "Please note:": "Tagh aire",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Cha tèid dealbhan-cluiche no fràmaichean a chuir a-mach. Is iad na fòraman faidhle, an rùn, na co-mheasan agus na cumhachan-cleachdaidh a tha ri làimh na tha air an sgrìobhadh anns an luchdachadh sìos agus an cead-cleachdaidh a tha a-steach.",
+    "Let your space tell a story.": "Leig leis an t-suidheachadh agad sgeulachd a innse.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Tagh dealbh a tha a' sealltainn dè tha thu a' meas—agus leig leis a' bhrìgh aige a bhith beò leat.",
+    "Get": "Faigh",
+    "Art with a Soul. A Message Without Borders.": "Ealain le anam. Teacsa gun chrìochan.",
+    "Digital artwork · Instant download through Gumroad": "Dealbhan-cluiche didseatach · Luchdaich sìos gu fèin-ghluasadach tro Gumroad",
+    "Privacy": "Prìobhaideachd",
+    "Terms": "Cumhaichean",
+    "Contact": "Cuir fios gu",
+    "Gumroad store ↗": "Sgoil Gumroad ↗",
+    "· Digital download": "Luchdaich sìos gu didseatach"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Faidhlichean a tha a' gabhail a-steach",
+    "product_type": "Seòrsa an toraidh",
+    "delivery": "Seirbheis",
+    "physical_item": "Nì fhiaclach",
+    "printing": "Clò-bhualadh",
+    "usage": "Cleachdadh",
+    "bundle_item_count": "Nì sa bhundle"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Cruinneachadh ealaíne comhordaithe do theaghlaichean, oifigean, óstáin, gailearies, réimsí fáiltithe, agus taobh istigh curated.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Faigh THE ART OF ELEGANCE & SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Cruinneachadh ealaíne comhordaithe do theaghlaichean, oifigean, óstáin, gailearies, réimsí fáiltithe, agus taobh istigh curated.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Faigh EGYPTIAN & COPTIC HERITAGE ↗",
+      "\\n": "\\n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "A BOND BEYOND WORDS  The Beauty of Unconditional Love",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.",
+      "Get THE HUMANITY LEGACY ↗": "Get THE HUMANITY LEGACY ↗",
+      "\\n": "\\n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get THE ART OF STILLNESS ↗": "Get THE ART OF STILLNESS ↗",
+      "\\n": "\\n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Get GEOMETRY OF ELEGANCE ↗",
+      "\\n": "\\n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Sgeulachd a tha a’ nochdadh airson taighean, stiùidiothan cruthaitheacha, oifigearan, àiteachan-còmhnaidh, agus taobh a-staigh air an cruthachadh le samhlachas.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Faigh CITIES OF TOMORROW   Where Innovation Meets Imagination ↗",
+      "\\n": "\\n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Sgeulachd a tha a’ nochdadh airson dachaighean, stiùidiothan cruthaitheacha, oifigearan, àiteachan-còmhnaidh, agus taobh a-staigh air an cruthachadh le samhlachas.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Faigh NATURE'S MAJESTY   The Timeless Beauty of Nature ↗",
+      "\\n": "\\n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get MEDITERRANEAN DREAMS ↗": "Get MEDITERRANEAN DREAMS ↗",
+      "\\n": "\\n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get SILENT HORIZONS . ↗": "Get SILENT HORIZONS . ↗",
+      "\\n": "\\n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Faigh GOLDEN FLOW   The Art of Timeless Luxury ↗",
+      "\\n": "\\n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Sgeulachd a tha a’ nochdadh airson dachaighean, stiùidiothan cruthaitheacha, oifigearan, àiteachan-còmhnaidh, agus taobh a-staigh air an cruthachadh le samhlachas.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Faigh BEYOND THE UNIVERSE 🌏 ↗",
+      "\\n": "\\n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Prìomh-phointe cudromach airson dachaighean, oifigean, àiteachan oideachaidh, gailearaidhean, agus àiteachan far a bheil sgeulachdan daonna cudromach.",
+      "Get A Shelter of Love ♥ ↗": "Get A Shelter of Love ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Faigh The Celestial Garden – A Dance Beneath the Moon ↗",
+      "\\n": "\\n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Faigh THE GOLDEN VEIL OF SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "Aon phlanaid. Aon dhleastanas. Chan eil àireamh de dh’fhaodas ann.",
+      "The story behind the image": "Sgeulachd an dealbhaich",
+      "More than decoration. A human story.": "Nas motha na deiseil. Sgeulachd dhaonna.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "Tha an làimh a’ sealltainn ar comas obrachadh. Tha an lus-taighe a’ ciallachadh beatha ùr bhrèagha; tha na dealan-dè a’ moladh atharrachadh. Tha an co-dhealbhachd eadar an talamh a chaidh a mhilleadh agus gealltanas ath-nuadhachaidh a’ toirt fa-near dhuinn gu bheil buaidh aig na tha sinn a’ taghadh a dhìon an-diugh air an àm ri teachd.",
+      "Where the artwork belongs": "Càite a bheil an obair-ealain",
+      "Created to live with meaning": "Air a chruthachadh gus a bhith beò le ciall",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Sgeulachd a tha a’ nochdadh a-mach à àite airson dachaighean, oifigean, sgoiltean, buidhnean àrainneachd, àiteachan-freagairte agus àiteachan cruthachaidh.",
+      "A distinctive focal point for considered interiors": "Prìomh-phointe sònraichte airson àiteachan a tha air an cumail a-mach",
+      "A conversation piece with a message beyond trends": "Pìos còmhraidh le teachdaireachd a tha a’ dol thairis air na h-aon ghluasadan",
+      "A thoughtful digital art choice for personal spaces": "Roghainn ealaíne didseatach airson àiteachan pearsanta",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Is e toradh didseatach a th’ ann. Cha tèid clò-bhualadh no fràma a chuir a-mach. Às dèidh a cheannach, luchdaich sìos na faidhlichean a tha air an toirt seachad air Gumroad. Ath-bhreithnich air na sònrachaidhean faidhle a tha a’ tighinn còmhla riutha, an t-sreath de dh’fhiosrachadh clò-bhualaidh, agus an cead-cleachdaidh pearsanta mus clò-bhuail thu. Tagh meud clò-bhualaidh agus seirbheis a tha freagarrach airson na faidhlichean a tha air an toirt seachad.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Tagh obair-ealain a tha a’ sealltainn dè tha thu a’ luachachadh—agus leig leis a’ chiall a bhith beò leat.",
+      "Get The Hand That Holds Tomorrow ↗": "Faigh an làimh a tha a’ cumail an àm ri teachd ↗",
+      "\\n": "\\n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Àireamhan eadar-dhealaichte. Aon daonnachd. Ceangal eternal.",
+      "The story behind the image": "An sgeulachd air cùl an deilbh",
+      "More than decoration. A human story.": "Nas motha na dealachadh. Sgeulachd dhaonna.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Seasmhachd an eòin agus an obsidian air uiread gach aghaidh. Tha an snàithlean órga na shamhla air faireachdainnean, dùil agus miann a bhith air a làimhseachadh le dìon. Chan fheum aonachd a bhith mar an aon rud; tòisichidh e nuair a dh'aithnicheas sinn daonnachd a chèile.",
+      "Where the artwork belongs": "Càite a bheil an obair-ealain",
+      "Created to live with meaning": "Air a chruthachadh gus a bhith beò le ciall",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Sgeul air a dhealbhadh airson dachaighean co-aimsireil, oifigearan gnìomhach, gailearaidhean, àiteachan-freagairt, agus taobh a-staigh a tha a' cur luach air còmhradh cultar agus ceangal daonna.",
+      "A distinctive focal point for considered interiors": "Prìomh-phointe sònraichte airson taobh a-staigh air a mheasadh",
+      "A conversation piece with a message beyond trends": "Pìos còmhraidh le teachdaireachd a tha nas fhaide na na h-atharrachaidhean",
+      "A thoughtful digital art choice for personal spaces": "Roghainn ealaíne didseatach airson taobh a-staigh pearsanta",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Is e toradh didseatach a th' ann. Cha tèid a phriontadh no a fhrèamachadh. Às dèidh a cheannach, luchdaich sìos na faidhlichean a tha air an toirt seachad air Gumroad. Ath-bhreithnich air na sònrachaidhean faidhle a tha a-steach, an t-sreath-leabhair clò-bhualaidh, agus an cead-cleachdaidh pearsanta mus clò-bhuail thu. Tagh meud clò-bhualaidh agus seirbheis a tha freagarrach airson na faidhlichean a tha air an toirt seachad.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Tagh obair-ealain a tha a' sealltainn dè tha luach agad air—agus leig leis a' bhrìgh a bhith beò leat.",
+      "Get The Golden Thread of Humanity ↗": "Faigh an Snàithlean Òir den Daonnachd ↗",
+      "\\n": "\\n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Prìomh-phointe cudromach airson dachaighean, oifigean, àiteachan oideachaidh, gailearaidhean, agus àiteachan far a bheil sgeulachdan daonna cudromach.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "Get ROOTS OF TENDERNESS ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get AURELLE 👑 ↗": "Faigh AURELLE 👑 ↗",
+      "\\n": "\\n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "Àilleachd na seasmhachd. An neart a-staigh.",
+      "The story behind the image": "An sgeulachd air cùlaibh an deilbh",
+      "More than decoration. A human story.": "Nas motha na dealbhadh. Sgeulachd dhaonna.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "Tha dealbh daonna air a dhèanamh suas a' tighinn gu bhith na shamhla air fèin-fhiosrachadh. Tha solas dorcha a' moladh lànachd; tha mion-fhiosrachadh lusan a' toirt rabhadh air ath-nuadhachadh. Tha an obair a' toirt fa-near dhuinn nach fheum neart a bhith àrd-mhìnichte—agus gum faod calma a bhith na sheòrsa de àilleachd.",
+      "Where the artwork belongs": "Càite a bheil an obair-ealain a' tighinn a-steach",
+      "Created to live with meaning": "Air a chruthachadh gus a bhith beò le ciall",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "Ionad-cuimhne brèagha airson seòmraichean-cadail, oifigean prìobhaideach, raointean-freagairt, oigheann, àiteachan-beatha, agus àiteachan-còmhnaidh co-aimsireil.",
+      "A distinctive focal point for considered interiors": "Ionad-cuimhne sònraichte airson àiteachan a-staigh a tha air an smaoineachadh",
+      "A conversation piece with a message beyond trends": "Pìos còmhraidh le teachdaireachd a tha nas fhaide na na h-atharrachaidhean",
+      "A thoughtful digital art choice for personal spaces": "Roghainn ealaíne didseatach airson àiteachan pearsanta",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Is e toradh didseatach a th' ann. Cha tèid a phriontadh no a fhrèamachadh gu corporra. Às dèidh a cheannach, luchdaich sìos na faidhlichean a tha air an toirt seachad air Gumroad. Ath-bhreithnich air na sònrachaidhean faidhle a tha a-steach, an t-sreath-leabhair clò-bhualaidh, agus an cead-cleachdaidh pearsanta mus clò-bhuail thu. Tagh meud clò-bhualaidh agus seirbheis a tha freagarrach airson na faidhlichean a tha air an toirt seachad.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Tagh obair-ealain a tha a' sealltainn dè tha luach agad air—agus leig leis a' bhrìgh a bhith beò leat.",
+      "Get The Art of Inner Peace ↗": "Faigh an Ealain-saoghail ↗",
+      "\\n": "\\n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get SERENITY 🤍 ↗": "Get SERENITY 🤍 ↗",
+      "\\n": "\\n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Prìomh-phointe cudromach airson dachaighean, oifigean, àiteachan oideachaidh, gailearaidhean, agus àiteachan far a bheil sgeulachdan daonna cudromach.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Get THE TREE THAT REFUSED TO DIE ↗",
+      "\\n": "\\n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Prìomh-phointe cudromach airson dachaighean, oifigean, àiteachan oideachaidh, gailearaidhean, agus àiteachan far a bheil sgeulachdan daonna cudromach.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗",
+      "\\n": "\\n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "Tha an àm ri teachd air a thogail le mòran làmhan.",
+      "The story behind the image": "An sgeulachd a tha fon dealbh",
+      "More than decoration. A human story.": "Nas motha na deiseil. Sgeulachd dhaonna.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Tha gach làimh a’ ciallachadh beatha, gràdh, ìobairt, no cothrom a tha air a thabhann. Tha an leanabh a’ ciallachadh gach duine òg a dh’fheumas taic is brosnachadh airson a bhruadar. Le chèile, bidh na làmhan nan stairsnich—agus bidh an dùil na rud a bhios sinn a’ togail airson a chèile.",
+      "Where the artwork belongs": "Càite a bheil an obair-ealain a’ tighinn a-steach",
+      "Created to live with meaning": "Air a chruthachadh gus a bhith beò le ciall",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Sgeul beòil airson dachaighean teaghlaich, sgoiltean, leabharlannan, oifigean, stiùidiothan, agus àiteachan a cheiliúradh foghlam agus ceangal daonna.",
+      "A distinctive focal point for considered interiors": "Prìomh-phointear sònraichte airson àiteachan a tha air an togail a-staigh",
+      "A conversation piece with a message beyond trends": "Pìos còmhraidh le teachdaireachd a tha nas fhaide na na h-atharrachaidhean as ùire",
+      "A thoughtful digital art choice for personal spaces": "Roghainn ealaíne didseatach airson àiteachan pearsanta",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Is e toradh didseatach a th’ ann. Cha tèid a phriontadh no a fhrèamachadh. Às dèidh a cheannach, luchdaich sìos na faidhlichean a tha air an toirt seachad air Gumroad. Thoir sùil air na sònrachaidhean faidhle a tha a’ tighinn còmhla riutha, an t-sreath-leabhair clò-bhualaidh, agus an cead-cleachdaidh pearsanta mus clò-bhuail thu. Tagh meud clò-bhualaidh agus seirbheis a tha freagarrach airson na faidhlichean a tha air an toirt seachad.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Tagh obair-ealain a tha a’ sealltainn dè a tha luachmhor dhut—agus leig leis a’ chiall a bhith beò leat.",
+      "Get A Stairway of Hands ↗": "Faigh Stairway of Hands ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Tha an rud a dh'fhaodar a dhìon an-diugh na dhòigh air an àm ri teachd a dhìon.",
+      "The story behind the image": "An sgeulachd a tha taobh a-staigh an deilbh",
+      "More than decoration. A human story.": "Nas motha na dealbhadh. Sgeulachd dhaonna.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "Tha eòlas aig an ginealach as sine; tha cothrom aig an ginealach as òige. Tha gealltanas eadar an dithis: an rud a chuireas beatha air adhart a shàbhaladh agus an àm ri teachd a thoirt air adhart a tha a dhìth air na daoine a bheir e gu buil. Is e seo gràdh a tha air a chur an cèill mar dhleastanas.",
+      "Where the artwork belongs": "Càite a bheil an obair-ealain a' tighinn a-steach",
+      "Created to live with meaning": "Air a chruthachadh gus a bhith beò le ciall",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "Pìos smaoineachail airson dachaighean teaghlaich, sgoiltean, oifigearan, àiteachan oideachaidh, agus airson duine sam bith a tha a' cur luach air cuimhne, teaghlach, agus an àm ri teachd.",
+      "A distinctive focal point for considered interiors": "Pìos sònraichte airson àiteachan a tha air an dealbhadh a-staigh",
+      "A conversation piece with a message beyond trends": "Pìos còmhraidh le teachdaireachd a tha a' dol thairis air na h-aon gluasadan",
+      "A thoughtful digital art choice for personal spaces": "Roghainn smaoineachail de obrach-ealain didseatach airson àiteachan pearsanta",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Is e toradh didseatach a th' ann. Cha tèid clò-bhualadh no fràma a chuir a-mach. Às dèidh a cheannach, luchdaich sìos na faidhlichean a tha air an toirt seachad air Gumroad. Thoir sùil air na sònrachaidhean faidhle a tha a-steach, an t-sreath-leabhair clò-bhualaidh, agus an cead-cleachdaidh pearsanta mus clò-bhuail thu. Tagh meud clò-bhualaidh agus seirbheis a tha freagarrach airson na faidhlichean a tha air an toirt seachad.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Tagh obair-ealain a tha a' sealltainn dè tha luach agad air—agus leig leis a' bhrìgh a bhith beò leat.",
+      "Get The Legacy of Generations ↗": "Faigh Legacy of Generations ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get The Mediterranean Muse ↗": "Faigh The Mediterranean Muse ↗",
+      "\\n": "\\n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "One Earth. One Humanity. One Future.",
+      "The story behind the image": "An sgeulachd a tha taobh a-staigh an deilbh",
+      "More than decoration. A human story.": "Nas motha na dealachadh. Sgeulachd dhaonna.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "Tha na làmhan a tha timcheall air a’ ghrèin a’ riochdachadh dhaoine de gach aois is cuspair. Tha an talamh briste a’ bruidhinn air na tha ann an cunnart; tha an ceann-latha uaine agus an solas órga a’ moladh na tha sinn fhathast a’ sireadh. Chan e dìth dòchais a th’ anns an teacsa. Is e freagairteachd co-roinnte a th’ ann, a tha ri fhaicinn.",
+      "Where the artwork belongs": "Càite a bheil an obair-ealain a’ tighinn a-steach",
+      "Created to live with meaning": "Air a chruthachadh gus a bhith beò le ciall",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "Pointe-focus a bheir air daoine smaoineachadh airson dachaighean, oifigean, àiteachan oideachaidh, gailearaidhean, agus àiteachan a tha a’ coimhead air adhart ri bhith beò.",
+      "A distinctive focal point for considered interiors": "Pointe-focus sònraichte airson àiteachan a tha air an cumail suas",
+      "A conversation piece with a message beyond trends": "Pìos còmhraidh le teachdaireachd a tha a’ dol thairis air na h-atharrachaidhean",
+      "A thoughtful digital art choice for personal spaces": "Roghainn ealaíne didseatach airson àiteachan pearsanta",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Is e toradh didseatach a th’ ann. Cha tèid clò-bhualadh no fràma a chuir a-mach. Às dèidh a cheannach, luchdaich sìos na faidhlichean a tha air an toirt seachad air Gumroad. Ath-bhreithnich air na sònrachaidhean faidhle a tha an làthair, an t-sreath-leabhair clò-bhualaidh, agus an cead-cleachdaidh pearsanta mus clò-bhuail thu. Tagh meud clò-bhualaidh agus seirbheis a tha freagarrach airson na faidhlichean a tha air an toirt seachad.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Tagh obair-ealain a tha a’ sealltainn dè a tha luachmhor dhut—agus leig leis a’ chiall a bhith beò leat.",
+      "Get Last Cry of Earth ↗": "Faigh Last Cry of Earth ↗",
+      "\\n": "\\n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Tha seo na chur-ris sònraichte do thaighean, sgrùdaidhean prìobhaideach, oifigean, gailearaidhean, taighean-tasgaidh, ospadalan, agus àiteachan cultar.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Get THE GOLDEN GAZE 👁 ↗",
+      "\\n": "\\n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Tha e na chur-ris sònraichte do thaighean, sgrùdaidhean prìobhaideach, oifigean, gailearaidhean, taighean-tasgaidh, ospadalan, agus àiteachan cultar.",
+      "Get The Queen Of The Nile 👑 ↗": "Get The Queen Of The Nile 👑 ↗",
+      "\\n": "\\n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Tha seo na chur-ris sònraichte do thaighean, sgrùdaidhean prìobhaideach, oifigean, gailearaidhean, taighean-tasgaidh, ospadalan, agus àiteachan cultar.",
+      "Get The Coptic Soul of Egypt ↗": "Get The Coptic Soul of Egypt ↗",
+      "\\n": "\\n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE Ceiliúradh air àilleachd gun ùine na h-Eiphit, far a bheil dìonas cianail an làthair rìghreach a' coinneachadh ri rithim eternal na Nile. Òir...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A bharrachd air a bhith sònraichte do thaighean, sgrùdaidhean prìobhaideach, oifigearan, gailearaidhean, taighean-tasgaidh, ospadalan, agus àiteachan cultar.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "Faigh THE NILE'S ETERNAL GRACE ↗",
+      "\\n": "\\n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Tha cuid de chaidreamhan air an faicinn leis a' Chrois, chan ann air an mìneachadh le faclan. Celebrate the extraordinary connection...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Pointe-focal a tha a' ciallachadh rudeigin airson dachaighean, oifigean, àiteachan oideachaidh, gailearaidhean, agus àiteachan far a bheil sgeulachdan daonna cudromach.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗",
+      "\\n": "\\n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Taigh-òsta air feadh an t-saoghail tro chruinneachadh de sheacht obair-ealain didseatach a tha air an spreagadh le... cosmach",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A accent refined for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Get GLOBAL ART & IMAGINATION ↗",
+      "\\n": "\\n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Thoir eachdraidh-beatha na h-Eiphit seann-fhasanta dhan àrainneachd agad le Eternal Egypt, a...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A bharrachd air a bhith a' sealltainn nan taighean, na h-obrachan prìobhaideach, na h-oifigearan, na gailearaidhean, na taighean-tasgaidh, na h-oighean, agus na h-àiteachan cultar.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗",
+      "\\n": "\\n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "Ann an ceàrnag-obrach a tha air a smaoineachadh, chan eil an ùine air a thomhas ach air a dhealbhachadh. Tha THE CLOCKMAKER'S DREAM a’ toirt gluasad do ghiaran, do mheicneòlasan na talmhainn, agus do dh’innealan nach urrainn a bhith...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Tha e na dheagh roghainn airson seòmraichean-cadail, seòmraichean-cadail, oifigean, oigheann-tasgaidh, àiteachan-slàinte, agus àiteachan a tha air an smaoineachadh.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Faigh THE CLOCKMAKER'S DREAM ↗",
+      "\\n": "\\n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
+}

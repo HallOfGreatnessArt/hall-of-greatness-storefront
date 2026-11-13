@@ -328,5 +328,382 @@
     "artworks": "Konstverk",
     "choose": "Välj språk"
   },
-  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f"
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "landing_ui": {
+    "← Return to the gallery": "← Återgå till galleriet",
+    "Language": "Språkspråk",
+    "An original digital artwork from HALL OF GREATNESS": "Ett original digitalt konstverk från HALL OF GREATNESS",
+    "A curated collection of meaningful digital artworks": "En kurerad samling av meningsfulla digitala konstverk",
+    "Explore & Get the Artwork ↗": "Utforska och få konstverket",
+    "Secure checkout and digital delivery on Gumroad.": "Säker utcheckning och digital leverans på Gumroad.",
+    "Artwork presentation": "Konstverk presentation",
+    "Imagine it in a refined frame": "Föreställ dig det i en raffinerad ram",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "En andra presentation hjälper dig att fotografera konstverket som en inramad display, samtidigt som du bevarar dess ursprungliga proportioner.",
+    "Digital download": "Digital nedladdning",
+    "Access your files after checkout": "Få tillgång till dina filer efter kassan",
+    "Print your way": "Skriv ut din väg",
+    "Choose a size suited to your space": "Välj en storlek som passar ditt utrymme",
+    "Made to display": "Made to display",
+    "For homes, studios, and meaningful spaces": "För hem, studios och meningsfulla utrymmen",
+    "The meaning behind the artwork": "mening bakom konstverket",
+    "More than decoration. A feeling that stays.": "Mer än dekoration. En känsla som stannar.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Skapad för människor som vill ha sin omgivning för att reflektera en historia, ett minne, ett värde eller en känsla av skönhet. Låt detta arbete bli en del av den atmosfär du skapar och känslan du vill att ditt utrymme ska hålla.",
+    "Inside this collection": "Inuti denna samling",
+    "One collection. Many stories.": "En samling. Många historier.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Utforska de enskilda konstverk som ingår i denna curerade samling. Varje bit har sin egen karaktär, medan de tillsammans skapar en rikare visuell resa.",
+    "Complete artwork story": "Fullständig konstverkshistoria",
+    "Full product description": "Full produktbeskrivning",
+    "What is included": "Vad ingår",
+    "Product specifications": "Produktspecifikationer",
+    "Where it belongs": "Där den hör hemma",
+    "Art that finds its place": "Konst som finner sin plats",
+    "Before you purchase": "Innan du köper",
+    "Digital download details": "Digitala nedladdningsuppgifter",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Detta är en digital produkt. Inget fysiskt konstverk eller ram kommer att skickas. Efter köpet ger Gumroad tillgång till de filer som ingår i denna produkt. Vänligen granska de levererade filspecifikationerna och licensen innan du skriver ut eller använder konstverket.",
+    "From download to display": "Från nedladdning till display",
+    "Make the artwork part of your space": "Gör konstverket del av ditt utrymme",
+    "01 · Purchase": "01 · Köp",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Slutföra din säkra utcheckning på Gumroad. Ditt köp är för en digital produkt.",
+    "02 · Download": "02 · Ladda ner",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Få tillgång till filer som levereras med denna produkt genom Gumroad och granska de medföljande specifikationerna.",
+    "03 · Print": "03 · Print",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Välj en tryckstorlek som bevarar konstverkets ursprungliga proportioner. En lokal tryckpersonal kan hjälpa till att matcha dimensionerna till den levererade filen.",
+    "Please note:": "Observera:",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Inget fysiskt konstverk eller ram skickas. Tillgängliga filformat, upplösning, proportioner och användningsvillkor är de som anges i produktnedladdningen och inkluderade licens.",
+    "Let your space tell a story.": "Låt ditt utrymme berätta en historia.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Välj konst som återspeglar vad du värdesätter och låt dess mening leva med dig.",
+    "Get": "Få",
+    "Art with a Soul. A Message Without Borders.": "Konst med en själ. Ett meddelande utan gränser.",
+    "Digital artwork · Instant download through Gumroad": "Digitalt konstverk · Snabb nedladdning genom Gumroad",
+    "Privacy": "Sekretess",
+    "Terms": "Villkor",
+    "Contact": "Kontakta Kontakt",
+    "Gumroad store ↗": "Gumroad Store",
+    "· Digital download": "Digital nedladdning"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Filer som ingår",
+    "product_type": "Produkttyp",
+    "delivery": "Leverans",
+    "physical_item": "Fysisk artikel",
+    "printing": "Printing",
+    "usage": "Användning",
+    "bundle_item_count": "Föremål i bunt"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "En samordnad konstsamling för hem, kontor, hotell, gallerier, mottagningsområden och curated interiörer.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Få THE ART OF ELEGANCE & SERENITY",
+      "\\n": "\\n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "En samordnad konstsamling för hem, kontor, hotell, gallerier, mottagningsområden och curated interiörer.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Få EGYPTIAN & COPTIC HERITAGE",
+      "\\n": "\\n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "BOND BEYOND WORDS Skönheten av ovillkorlig kärlek",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "En samordnad konstsamling för hem, kontor, hotell, gallerier, mottagningsområden och curated interiörer.",
+      "Get THE HUMANITY LEGACY ↗": "Få THE HUMANITY LEGACY",
+      "\\n": "\\n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "En raffinerad accent för vardagsrum, sovrum, kontor, boutiquehotell, wellness utrymmen och anses interiörer.",
+      "Get THE ART OF STILLNESS ↗": "Få THE ART OF STILLNESS",
+      "\\n": "\\n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "En raffinerad accent för vardagsrum, sovrum, kontor, boutiquehotell, wellness utrymmen och anses interiörer.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Få GEOMETRY OF ELEGANCE",
+      "\\n": "\\n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Ett uttrycksfullt uttalande för hem, kreativa studior, kontor, gästfrihet utrymmen och interiörer formade av fantasi.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Få CITIES OF TOMORROW   Where Innovation Meets Imagination",
+      "\\n": "\\n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Ett uttrycksfullt uttalande för hem, kreativa studior, kontor, gästfrihet utrymmen och interiörer formade av fantasi.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Få NATURE'S MAJESTY   The Timeless Beauty of Nature",
+      "\\n": "\\n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "En raffinerad accent för vardagsrum, sovrum, kontor, boutiquehotell, wellness utrymmen och anses interiörer.",
+      "Get MEDITERRANEAN DREAMS ↗": "Få MEDITERRANEAN DREAMS",
+      "\\n": "\\n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "En raffinerad accent för vardagsrum, sovrum, kontor, boutiquehotell, wellness utrymmen och anses interiörer.",
+      "Get SILENT HORIZONS . ↗": "Få SILENT HORIZONS .",
+      "\\n": "\\n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "En raffinerad accent för vardagsrum, sovrum, kontor, boutiquehotell, wellness utrymmen och anses interiörer.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Få GOLDEN FLOW   The Art of Timeless Luxury",
+      "\\n": "\\n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Ett uttrycksfullt uttalande för hem, kreativa studior, kontor, gästfrihet utrymmen och interiörer formade av fantasi.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Få BEYOND THE UNIVERSE 🌏",
+      "\\n": "\\n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "En meningsfull kontaktpunkt för hem, kontor, utbildningsutrymmen, gallerier och platser där mänskliga berättelser spelar roll.",
+      "Get A Shelter of Love ♥ ↗": "Få A Shelter of Love ♥",
+      "\\n": "\\n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "En raffinerad accent för vardagsrum, sovrum, kontor, boutiquehotell, wellness utrymmen och anses interiörer.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Få The Celestial Garden – A Dance Beneath the Moon",
+      "\\n": "\\n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "En raffinerad accent för vardagsrum, sovrum, kontor, boutiquehotell, wellness utrymmen och anses interiörer.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Få THE GOLDEN VEIL OF SERENITY",
+      "\\n": "\\n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "En planet. Ett ansvar. Otaliga möjligheter.",
+      "The story behind the image": "Historien bakom bilden",
+      "More than decoration. A human story.": "Mer än dekoration. En mänsklig historia.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "Handen representerar vår förmåga att agera. Frön står för bräckligt nytt liv; fjärilarna föreslår omvandling. Kontrasten mellan skadad mark och löftet om förnyelse påminner oss om att morgondagen påverkas av vad vi väljer att skydda idag.",
+      "Where the artwork belongs": "Där konstverket hör hemma",
+      "Created to live with meaning": "Skapad för att leva med mening",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Ett slående uttalande för hem, kontor, skolor, miljöorganisationer, mottagningsområden och kreativa utrymmen.",
+      "A distinctive focal point for considered interiors": "En distinkt kontaktpunkt för betraktade interiörer",
+      "A conversation piece with a message beyond trends": "En konversation med ett meddelande bortom trender",
+      "A thoughtful digital art choice for personal spaces": "Ett genomtänkt digitalt konstval för personliga utrymmen",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Detta är en digital produkt. Inget fysiskt tryck eller ram kommer att skickas. Efter köpet laddar du ner filerna som levereras på Gumroad. Granska de inkluderade filspecifikationerna, utskriftsguiden och licensen för personlig användning innan du skriver ut. Välj en tryckstorlek och tjänst som är lämplig för de levererade filerna.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Välj ett konstverk som speglar vad du värdesätter och låt dess mening leva med dig.",
+      "Get The Hand That Holds Tomorrow ↗": "Få handen som håller i morgon",
+      "\\n": "\\n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Olika ansikten. En mänsklighet. En evig förbindelse.",
+      "The story behind the image": "Historien bakom bilden",
+      "More than decoration. A human story.": "Mer än dekoration. En mänsklig historia.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Elfenben och obsidian bevarar varje ansiktes unika egenskaper. Den gyllene tråden symboliserar delade känslor, hopp och önskan att behandlas med värdighet. Enhet kräver inte sammahet; det börjar när vi känner igen varandras mänsklighet.",
+      "Where the artwork belongs": "Där konstverket hör hemma",
+      "Created to live with meaning": "Skapad för att leva med mening",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Ett raffinerat uttalande för samtida hem, verkställande kontor, gallerier, mottagningsplatser och interiörer som värdesätter kulturell dialog och mänsklig anslutning.",
+      "A distinctive focal point for considered interiors": "En distinkt kontaktpunkt för betraktade interiörer",
+      "A conversation piece with a message beyond trends": "En konversation med ett meddelande bortom trender",
+      "A thoughtful digital art choice for personal spaces": "Ett genomtänkt digitalt konstval för personliga utrymmen",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Detta är en digital produkt. Inget fysiskt tryck eller ram kommer att skickas. Efter köpet laddar du ner filerna som levereras på Gumroad. Granska de inkluderade filspecifikationerna, utskriftsguiden och licensen för personlig användning innan du skriver ut. Välj en tryckstorlek och tjänst som är lämplig för de levererade filerna.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Välj ett konstverk som speglar vad du värdesätter och låt dess mening leva med dig.",
+      "Get The Golden Thread of Humanity ↗": "Få den gyllene tråden av mänskligheten",
+      "\\n": "\\n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "En meningsfull kontaktpunkt för hem, kontor, utbildningsutrymmen, gallerier och platser där mänskliga berättelser spelar roll.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "Få ROOTS OF TENDERNESS ♥",
+      "\\n": "\\n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "En raffinerad accent för vardagsrum, sovrum, kontor, boutiquehotell, wellness utrymmen och anses interiörer.",
+      "Get AURELLE 👑 ↗": "Få AURELLE 👑",
+      "\\n": "\\n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "Skönheten av stillhet. Styrkan inom.",
+      "The story behind the image": "Historien bakom bilden",
+      "More than decoration. A human story.": "Mer än dekoration. En mänsklig historia.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "En sammansatt mänsklig figur blir en symbol för självmedvetenhet. Gyllene ljus föreslår helhet; botaniska detaljer antyder förnyelse. Arbetet påminner oss om att styrkan inte behöver vara hög och att lugn kan vara en form av skönhet.",
+      "Where the artwork belongs": "Där konstverket hör hemma",
+      "Created to live with meaning": "Skapad för att leva med mening",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "En elegant kontaktpunkt för vardagsrum, privata kontor, mottagningsområden, hotell, wellness utrymmen och samtida interiörer.",
+      "A distinctive focal point for considered interiors": "En distinkt kontaktpunkt för betraktade interiörer",
+      "A conversation piece with a message beyond trends": "En konversation med ett meddelande bortom trender",
+      "A thoughtful digital art choice for personal spaces": "Ett genomtänkt digitalt konstval för personliga utrymmen",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Detta är en digital produkt. Inget fysiskt tryck eller ram kommer att skickas. Efter köpet laddar du ner filerna som levereras på Gumroad. Granska de inkluderade filspecifikationerna, utskriftsguiden och licensen för personlig användning innan du skriver ut. Välj en tryckstorlek och tjänst som är lämplig för de levererade filerna.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Välj ett konstverk som speglar vad du värdesätter och låt dess mening leva med dig.",
+      "Get The Art of Inner Peace ↗": "Få konsten av inre fred",
+      "\\n": "\\n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "En raffinerad accent för vardagsrum, sovrum, kontor, boutiquehotell, wellness utrymmen och anses interiörer.",
+      "Get SERENITY 🤍 ↗": "Få SERENITY 🤍",
+      "\\n": "\\n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "En meningsfull kontaktpunkt för hem, kontor, utbildningsutrymmen, gallerier och platser där mänskliga berättelser spelar roll.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Få THE TREE THAT REFUSED TO DIE",
+      "\\n": "\\n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "En meningsfull kontaktpunkt för hem, kontor, utbildningsutrymmen, gallerier och platser där mänskliga berättelser spelar roll.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Få THE LIGHT WE LEAVE EACH OTHER 🕯",
+      "\\n": "\\n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "Framtiden byggs av många händer.",
+      "The story behind the image": "Historien bakom bilden",
+      "More than decoration. A human story.": "Mer än dekoration. En mänsklig historia.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Varje hand representerar ett liv, en vänlighet, ett offer eller en möjlighet som erbjuds. Barnet står för varje ung person vars drömmar behöver uppmuntran och stöd. Tillsammans blir händerna en trappa – och hoppet blir något vi bygger för varandra.",
+      "Where the artwork belongs": "Där konstverket hör hemma",
+      "Created to live with meaning": "Skapad för att leva med mening",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Ett meningsfullt uttalande för familjehem, skolor, bibliotek, kontor, studior och utrymmen som firar utbildning och mänsklig anslutning.",
+      "A distinctive focal point for considered interiors": "En distinkt kontaktpunkt för betraktade interiörer",
+      "A conversation piece with a message beyond trends": "En konversation med ett meddelande bortom trender",
+      "A thoughtful digital art choice for personal spaces": "Ett genomtänkt digitalt konstval för personliga utrymmen",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Detta är en digital produkt. Inget fysiskt tryck eller ram kommer att skickas. Efter köpet laddar du ner filerna som levereras på Gumroad. Granska de inkluderade filspecifikationerna, utskriftsguiden och licensen för personlig användning innan du skriver ut. Välj en tryckstorlek och tjänst som är lämplig för de levererade filerna.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Välj ett konstverk som speglar vad du värdesätter och låt dess mening leva med dig.",
+      "Get A Stairway of Hands ↗": "Få en trappa av händer",
+      "\\n": "\\n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Det vi skyddar idag blir deras morgondag.",
+      "The story behind the image": "Historien bakom bilden",
+      "More than decoration. A human story.": "Mer än dekoration. En mänsklig historia.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "Den äldre generationen bär erfarenhet; den yngre bär möjlighet. Mellan dem ligger ett löfte: att bevara det som upprätthåller livet och vidarebefordrar en framtid värdig dem som ärver det. Detta är kärlek uttryckt som ansvar.",
+      "Where the artwork belongs": "Där konstverket hör hemma",
+      "Created to live with meaning": "Skapad för att leva med mening",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "En tankeväckande bit för familjehem, studier, kontor, utbildningsutrymmen och alla som värderar minne, familj och framtiden.",
+      "A distinctive focal point for considered interiors": "En distinkt kontaktpunkt för betraktade interiörer",
+      "A conversation piece with a message beyond trends": "En konversation med ett meddelande bortom trender",
+      "A thoughtful digital art choice for personal spaces": "Ett genomtänkt digitalt konstval för personliga utrymmen",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Detta är en digital produkt. Inget fysiskt tryck eller ram kommer att skickas. Efter köpet laddar du ner filerna som levereras på Gumroad. Granska de inkluderade filspecifikationerna, utskriftsguiden och licensen för personlig användning innan du skriver ut. Välj en tryckstorlek och tjänst som är lämplig för de levererade filerna.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Välj ett konstverk som speglar vad du värdesätter och låt dess mening leva med dig.",
+      "Get The Legacy of Generations ↗": "Få arvet av generationer",
+      "\\n": "\\n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "En raffinerad accent för vardagsrum, sovrum, kontor, boutiquehotell, wellness utrymmen och anses interiörer.",
+      "Get The Mediterranean Muse ↗": "Få The Mediterranean Muse",
+      "\\n": "\\n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "En jord. En mänsklighet. En framtid.",
+      "The story behind the image": "Historien bakom bilden",
+      "More than decoration. A human story.": "Mer än dekoration. En mänsklig historia.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "Händerna runt om i världen representerar människor i alla åldrar och bakgrunder. Det frakturerade landskapet talar om vad som är i fara; den gröna horisonten och gyllene ljuspunkten mot vad vi fortfarande kan skydda. Budskapet är inte förtvivlan. Det är delat ansvar, synligt.",
+      "Where the artwork belongs": "Där konstverket hör hemma",
+      "Created to live with meaning": "Skapad för att leva med mening",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "En tankeväckande kontaktpunkt för hem, kontor, utbildningsplatser, gallerier och miljöer som ägnas åt hållbarhet.",
+      "A distinctive focal point for considered interiors": "En distinkt kontaktpunkt för betraktade interiörer",
+      "A conversation piece with a message beyond trends": "En konversation med ett meddelande bortom trender",
+      "A thoughtful digital art choice for personal spaces": "Ett genomtänkt digitalt konstval för personliga utrymmen",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Detta är en digital produkt. Inget fysiskt tryck eller ram kommer att skickas. Efter köpet laddar du ner filerna som levereras på Gumroad. Granska de inkluderade filspecifikationerna, utskriftsguiden och licensen för personlig användning innan du skriver ut. Välj en tryckstorlek och tjänst som är lämplig för de levererade filerna.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Välj ett konstverk som speglar vad du värdesätter och låt dess mening leva med dig.",
+      "Get Last Cry of Earth ↗": "Få sista rop på jorden",
+      "\\n": "\\n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ett distinkt tillägg till hem, privata studier, kontor, gallerier, museer, hotell och kulturella utrymmen.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Få THE GOLDEN GAZE 👁",
+      "\\n": "\\n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ett distinkt tillägg till hem, privata studier, kontor, gallerier, museer, hotell och kulturella utrymmen.",
+      "Get The Queen Of The Nile 👑 ↗": "Få The Queen Of The Nile 👑",
+      "\\n": "\\n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ett distinkt tillägg till hem, privata studier, kontor, gallerier, museer, hotell och kulturella utrymmen.",
+      "Get The Coptic Soul of Egypt ↗": "Få The Coptic Soul of Egypt",
+      "\\n": "\\n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE Ett firande av Egyptens tidlösa skönhet, där den tysta värdigheten av en regal närvaro möter Nilens eviga rytm. Gyllene...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ett distinkt tillägg till hem, privata studier, kontor, gallerier, museer, hotell och kulturella utrymmen.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "Få THE NILE'S ETERNAL GRACE",
+      "\\n": "\\n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Vissa vänskaper känner sig av hjärtat, inte förklaras av ord. Fira den extraordinära anslutningen...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "En meningsfull kontaktpunkt för hem, kontor, utbildningsutrymmen, gallerier och platser där mänskliga berättelser spelar roll.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Få A BOND BEYOND WORDS The Beauty of Unconditional Love",
+      "\\n": "\\n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION - SEVEN ARTWORKS, LIMITLESS WORLDS Resa bortom det välbekanta genom en samling av sju digitala konstverk inspirerade av kosmisk ...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "En raffinerad accent för vardagsrum, sovrum, kontor, boutiquehotell, wellness utrymmen och anses interiörer.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Få GLOBAL ART & IMAGINATION",
+      "\\n": "\\n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Ta med den uthålliga storheten i det forntida Egypten in i din omgivning med det Eviga Egypten...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ett distinkt tillägg till hem, privata studier, kontor, gallerier, museer, hotell och kulturella utrymmen.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Få ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization",
+      "\\n": "\\n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "Inuti en föreställd verkstad mäts tiden inte men skulpteras. THE CLOCKMAKER'S DREAM omvandlar redskap, himmelska mekanismer och omöjliga instrument.",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "En raffinerad accent för vardagsrum, sovrum, kontor, boutiquehotell, wellness utrymmen och anses interiörer.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Få THE CLOCKMAKER'S DREAM",
+      "\\n": "\\n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
 }

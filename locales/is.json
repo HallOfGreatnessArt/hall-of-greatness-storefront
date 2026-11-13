@@ -1,0 +1,710 @@
+{
+  "products": {
+    "oubirh": {
+      "summary": "Átta fágaða listaverk sem sameina gullna hreim, friðsæl form, glæsilega abstraktion og sjónræna sátt fyrir háþróaða nútímalega innréttingu.",
+      "category": "Safn",
+      "_source_hash": "85810573c609f032749049f0af3efd548b47b50b60c74fae8bbbcb5e0cfaaf2c"
+    },
+    "hqpird": {
+      "summary": "Þrjú sérstök listaverk sem fagna varanlegum anda egypskra og koptískra arfleifðar, menningarlegra minninga og tímalausrar fegurðar Egyptalands",
+      "category": "Safn",
+      "_source_hash": "bbee15015588f3854edb7cce4f6ee745a63ecba99e41de9335d42b77a925b26e"
+    },
+    "wdtvt": {
+      "summary": "Tíu öflug listaverk um samúð, seiglu, mannleg tengsl og von. Heill prentanlegur listasafn fyrir merkingarfullt rými og hugsi innanhúss.",
+      "category": "Safn",
+      "_source_hash": "0beaa1225adf5643d8bf3173e7f93d6f8ebe7ebb067e86674e4e8e27bf908560"
+    },
+    "mxrljy": {
+      "summary": "The Art of Stillness býður þér að hægja á þér og enduruppgötva fegurð rólegra stunda. Innblásin af hugleiðsluformum, lótusblómum, rennandi vatni og hlýju gullnu ljósi, þetta rólega stafræna listaverk færir hugleiðandi andrúmsloft í vellíðunarrými og fágaða innréttingu.",
+      "category": "Glæsileiki",
+      "_source_hash": "adcd68bc42846100ab6f13044e8972c34ee7fe07d1f4702b4d1d9fdc7b14e78c"
+    },
+    "gusqyc": {
+      "summary": "Geometry of Elegance er samsetning af byggingarformi, náttúrulegri áferð og nútímalegum lúxus. Smaragðslitir, fílabeinslitir, skúlptúrslíkir rúmfræðilegir litir og gulllitir skapa fágað abstrakt listaverk fyrir fágað heimili, skrifstofur og innréttingar í gistihúsum.",
+      "category": "Elegance",
+      "_source_hash": "84014823691b93211841d3dbcf2452a78fd435d388b74dad7f7febe4d752c69f"
+    },
+    "aenwi": {
+      "summary": "Ímyndaðu þér borg sem er mótaður af möguleikum. Cities of Tomorrow er framsýnt stafrænt listaverk sem fagnar ímyndunarafli byggingarlistar, nýsköpun og löngun manna til að byggja upp bjartari framtíð. Áberandi prentun fyrir nútímaleg heimili, skapandi vinnustofur, tæknirými og nútímalegar skrifstofur.",
+      "category": "Global",
+      "_source_hash": "e2173f80b274ea619b175b5480c483771929f3d1c9a75ce2893eea0775e30e96"
+    },
+    "gynmhv": {
+      "summary": "Láttu hljóðláta stórfengleika náttúrunnar umbreyta rýminu þínu. Nature's Majesty fagnar endurnærandi fegurð fjalla, fossa, skóga og skínandi vatns í litríku landslagslistaverki sem vekur fram frelsi, endurnýjun og ró. Hreinsað og áberandi prentun fyrir heimili og innréttingar í gistihúsum.",
+      "category": "Global",
+      "_source_hash": "e6e5a3263c07964a62266c9dbbc5d1e7eb389514c1ade5780eebc6e4228f4b2e"
+    },
+    "jrsgce": {
+      "summary": "Bættu hlýju Miðjarðarhafsfrísins við daglegt umhverfi þitt. Mediterranean Dreams fangar rómantíkina í arkitektúr strandsvæða, skínandi bláu vatni, blómstrandi veröndum og gullnu ljósi. Velkomin stafræn listaverk fyrir heimili, einbýlishús, kaffihús og innréttingar sem eru innblásnar af ferðalögum.",
+      "category": "Elegance",
+      "_source_hash": "f26a8d189f4afe6a0a7a8d671fcbd37c54bd461cdba3f4d15d77243c056e17e5"
+    },
+    "ukxrmq": {
+      "summary": "Finndu augnablik af ró í fegurð rólegra fjalla sjóndeildarhringsins. Silent Horizons er náttúrulega innblásin stafrænt listaverk mótað af kyrru vatni, fjarlægum tindum, mjúku morgunljósi og tilfinningu um endurnýjun. Fáguð landslagsáhersla fyrir friðsæl heimili, skrifstofur og vellíðan.",
+      "category": "Glæsileiki",
+      "_source_hash": "003e93a0d92367744addfb51152fe6da6c27ac08144b5c89e1e73dd7fec007c7"
+    },
+    "yhkokf": {
+      "summary": "Golden Flow færir náttúrulega dramatík marmara og glæsileika gulls inn í nútímalega abstrakt samsetningu. Flæðandi dökk og ljós form skapa dýpt, hreyfingu og lúxus — tjáningarríkt stafrænt listaverk fyrir fágað nútímalegt innanhús.",
+      "category": "Glæsileiki",
+      "_source_hash": "fc65d52d8cd76ff8b23097321c08f7ca24b70659818dea5dda62f894d09e4c9c"
+    },
+    "nxkxyq": {
+      "summary": "Beyond the Universe er ljósmynd sem lýsir upp alheiminn með ljósi og lýsir upp leyndardóma, umfang og undur geimsins með draumkenndum stafrænum listaverkum sem eru innblásin af vetrarbrautum, himnesku ljósi og óendanlegum möguleikum. Þetta er heillandi mynd sem hentar vel í nútímaleg innréttingar og fyrir forvitna huga.",
+      "category": "Víðvær",
+      "_source_hash": "16177585eb4768f120133dcd37a54ecc8a9108c42b39834cfe2e329ac00623d3"
+    },
+    "mzlqxg": {
+      "summary": "A Shelter of Love fangar litla bjöllu með varanlega merkingu: foreldri sem tryggir að barn hans standi aldrei frammi fyrir rigningunni einn. Á móti glóandi borgarkvöldi, þetta tilfinningalega listaverk fagnar vernd, traust, fjölskyldu og hljóðlátt vald skilyrðislausar elsku.",
+      "category": "Mannkynið",
+      "_source_hash": "5c0e78bf9d27136335daa7e34ccf9da42dc590a56d083c83815407b47244dac0"
+    },
+    "etqsav": {
+      "summary": "Undir skínandi tungli koma litir, hreyfing og vinátta saman í The Celestial Garden. Þetta draumkennda listaverk fagnar einstaklingseðli, sameiginlegum ferðum, frelsi og kvenlegri yndi í gegnum lifandi ímyndunarafl. Einstaklega áberandi prentun fyrir tjáningarrík og ímyndunaraflað innanhús.",
+      "category": "Glæsileiki",
+      "_source_hash": "79723050f56e46edb2f774883a51d0a22ea883d9b80d00bd2c223954ce0c9346"
+    },
+    "vwrllor": {
+      "summary": "Gullna slæðan er mynd af rólegum styrk, virðingu og tímalausum glæsileika. Ríkur svartur litur og glóandi gull skapa ígrundaða sjónræna nærveru – tjáningarríkt stafrænt listaverk fyrir fágaða innréttingu og safnara sem laðast að öflugum myndum.",
+      "category": "Glæsileiki",
+      "_source_hash": "3fbd51fc0b3144dfae0749e5c04814f34b8c72ab9c458a6ae346494c7a678894"
+    },
+    "gkwadk": {
+      "summary": "Plönturnar sem eru í höndum manna verða tákn um endurnýjun og sameiginlega umhyggju",
+      "category": "Mannkynið",
+      "_source_hash": "b3d3ed2cdc9e6333f7aaf330e1821220c7ad12874771ec45ca02ca1fc18fbd9f"
+    },
+    "rglfun": {
+      "summary": "Tvær aðgreindar persónur, sameinaðar með gullnu tákni um sameiginlega mannlega reisn okkar.",
+      "category": "Mannkynið",
+      "_source_hash": "7621f26df00b476963956773c9499fcec7b87189855fb05b55ebef7cd33c4268"
+    },
+    "cotnkm": {
+      "summary": "Roots of Tenderness er til heiðurs ást sem verður hluti af því sem við erum. Með tjáningarríkri myndhöggvarssýn af móður og barni, fagnar vernd, fórn, tilheyrandi og varanlegum rótum ástúðarinnar. Djúpt merkingarríkt verk fyrir fjölskyldurými og hugleiðandi safn.",
+      "category": "Humanity",
+      "_source_hash": "89071cfe9a0d1d8d3c14646a7e82629d42e4e1b858b782ebe96d94ff24be625e"
+    },
+    "kaztbw": {
+      "summary": "AURELLE breytir daglegu kaffidrykkjustarfi í ljóðræna hátíð nærveru, kvenlegrar glæsileika og hljóðlátra lúxus. Ljósgull, djúpsvart og hlýir kaffilitir skapa sérstök stafræn listaverk fyrir stílhrein heimili, kaffihorn, boutique kaffihús og nútímaleg innrétting.",
+      "category": "Glæsileiki",
+      "_source_hash": "50f25bf7ff18b06b831f14e21450ee7562896355ad94503c70b68b66a14178bb"
+    },
+    "cuitvq": {
+      "summary": "Höggmyndalegur glæsileiki og gullna ljósið tjá hljóðlega styrk innra jafnvægis.",
+      "category": "Glæsileiki",
+      "_source_hash": "2ccb896bdf8f18e66ce1bc1ca17fecfdd6eed315302fe2ee1d2ef8c5532b18b4"
+    },
+    "rabhc": {
+      "summary": "Serenity er myndræn hugleiðslu um seiglu, jafnvægi og hinn hljóðláta styrk sem býr í okkur. Tískulega abstrakt form hennar og gullna hálfmáninn skapa glæsilega miðpunkt fyrir rými sem helguð eru íhugun, ró og nútímalegri hönnun.",
+      "category": "Glæsileiki",
+      "_source_hash": "3e36120477fa3535261c200c5e9210726bf08cb1968d35b25965f08e276b936f"
+    },
+    "ycltf": {
+      "summary": "Tréð sem neitaði að deyja segir sögu um þol: jafnvel meðal rústanna getur lífið fundið leið fram á við. Rætur þess verða að brúm milli brotinna staða, sem breytir lifun í tengingu og endurnýjun. Merkilegt listaverk fyrir alla sem trúa því að vonin geti vaxið aftur.",
+      "full_description": "TRÉÐ SEM NEITAÐI AÐ DEYJA\n\nJafnvel meðal rústanna finnur lífið leið.\n\nHvað ef mesta tákn vonarinnar væri ekki minnismerki sem mannkyn hefur byggt, heldur lifandi tré sem neitaði að gefast upp?\n\nÍmyndaðu þér borg sem hefur misst rödd sína. Byggnir hafa fallið, götur hafa horfið undir ruslinu og ummerki mannlegs lífs virðast hafa fallið í þögn. En í hjarta þessa gleymda stað, eitt óvenjulegt tré heldur áfram að lifa.\n\nRætur þess eru ekki aðeins að leita að jarðvegi. Þeir ná yfir brotna veggja, faðma rifna mannvirki, og teygja sig milli skipt byggingar, umbreyta eyðileggingu í tengingu. Greinar þess rísa til himins, bera ferskt grænt lauf undir gullna ljós sem brýtur í gegnum skýin.\n\nÞetta er meira en atriði af náttúrunni endurheimta eyðilagða borg. Það er djúpt hrífandi saga um mannsandann.\n\nTréð táknar hvern einstakling sem hefur þolað erfiðleika án þess að leyfa erfiðleika að skilgreina framtíð sína. Það talar fyrir þá sem hafa misst næstum allt, en samt finna styrk til að byrja aftur. Fyrir þá sem hafa verið særðir af lífinu, en hafa ekki leyft hjörtum sínum að verða tóm. Fyrir þá sem skilja að lifa af er ekki einfaldlega að vera á lífi - það er að finna hugrekki til að vaxa aftur.\n\nRætur þess tákna þol: ósýnilega styrk sem heldur okkur saman þegar allt í kringum okkur fellur frá. Brú þeirra táknar sátt, tengingu og möguleika á að endurreisa sambönd og samfélög eftir skiptingu og tap.\n\nGrænt þakið er loforð um að eyðileggingin þurfi ekki að vera síðasti kaflinn, fuglarnir sem rísa upp í himininn minna okkur á að frelsi og endurnýjun getur komið aftur, jafnvel eftir myrkustu árstíðir.\n\nOg gullna ljósið handan rústanna ber með sér hljóðlát en öflug skilaboð: Framtíðin ræðst ekki af því sem eyðilagt hefur verið heldur af því sem enn hefur hugrekki til að vaxa.\n\nÞetta listaverk talar til allra sem hafa staðið frammi fyrir erfiðum kafla í lífinu, allra sem hafa endurreist eftir tap og allra sem trúa því að vonin sé ekki fjarvera erfiðleika, heldur styrkurinn til að halda áfram þrátt fyrir það.\n\nÞað er merkingarríkt lýsingarverk fyrir stofu, skrifstofu, bókasafn, skapandi vinnustofu eða hvaða rými sem er þar sem seiglu, endurnýjun og innblástur eiga sinn stað.Það getur einnig orðið hugsuð gjöf fyrir einhvern sem byrjar nýjan kafla, sigrast á mótlæti eða finna hugrekki til að rísa aftur.\n\nLáttu þetta tré minna þig á að fortíð þín þarf ekki að takmarka framtíð þína, jafnvel þegar lífið skilur þig eftir í rústum, þá getur eitthvað innan í þér ennþá vaxið.\n\nÞú ert ekki skilgreind af því sem braut í kringum þig, þú ert skilgreind af því sem enn vex innan í þér.\n\nHall of Greatness\n\nList með sál. Skilaboð án landamæra.\n\nART PRINT & Leita upplýsingar\n\nUppgötvaðu þetta THE TREE THAT REFUSED TO DIE stafræna listaverk fyrir prentaðar veggmyndir, sérstaka heimilisskreytingar og hugvitsamlega hönnuð innréttingar.Hægt er að hlaða niður listaverki til persónulegrar birtingar, með prentvalkostum sem valdir eru til að henta skránni og plássinu þínu.",
+      "category": "Mannkyn",
+      "product_details": {
+        "files_included": "1 skrá · ZIP · 29.1 MB",
+        "product_type": "Stafræn listaverk niðurhal",
+        "delivery": "Augnablik stafrænt niðurhal eftir kaup",
+        "physical_item": "Engin líkamleg prentun eða ramma verður send",
+        "printing": "Prentaðu skrárnar sem fylgja með við valinn prentara; athugaðu meðfylgjandi stærðir áður en þú velur stærð",
+        "usage": "Fylgdu persónulegum notkunar- og öðrum leyfisskilmálum sem fylgja með niðurhalinu"
+      },
+      "_source_hash": "d9bff692f10639a5edca9063641cbb3c31081b0579c89bb9cc9635499e614060"
+    },
+    "bctcdz": {
+      "summary": "Ljósið sem við skiljum eftir okkur heiðrar góðvild, visku og hugrekki sem er afhent frá einni kynslóð til annarrar. Glóandi ljósaperra verður tákn um vonina sem við fáum og ljósið sem við veljum að deila. Hreyfimynd fyrir heimili, skrifstofur og merkingarfullar gjafir.",
+      "full_description": "Ljósið sem við skiljum eftir okkur\n\nÞað mesta ljós er það sem við gefum frá okkur.\n\nSum ljós eru ætluð til að lýsa upp augnablik. Önnur eru ætluð til að lýsa upp kynslóðir.\n\nÞað er hljóðlátur sannleikur sem tengir hvert mannlegt líf: enginn okkar byrjar ferð okkar alveg í ljósinu. Einhvern veginn á leiðinni nær einhver til okkar - foreldri, kennari, ókunnugur, vinur eða einhver sem við gætum aldrei gleymt góðvild sinni. Þeir bjóða okkur eitthvað sem hjálpar okkur að finna leið okkar: smá von, smá visku, samúðarverk eða einfaldlega hugrekki til að halda áfram.\n\nOg einn daginn uppgötvum við að ljósið sem við fengum einu sinni er nú okkar að deila.\n\nLjósið sem við skiljum eftir okkur er listræn hylling við þessa ótrúlegu mannlegu arfleifð - ósýnilega arfleifð góðvildar, þekkingar, kærleika, hugrekkis og vonar sem fer frá einni kynslóð til annarrar.\n\nÍ hjarta samsetningarinnar færist forn gullljós frá einni hendi til annarrar. Umhverfis það koma fram andlit mismunandi aldurs og kynslóða saman í sameiginlegu augnabliki tengingar. Eldri táknar visku og reynslu þeirra sem komu á undan okkur. Yngri kynslóðirnar fela í sér loforð um það sem enn á eftir að koma. Milli þeirra verður ljósið öflugt tákn um samfellu: áminning um að mesta afrek mannkynsins eru ekki aðeins mæld með því sem við byggjum heldur einnig með því sem við gefum hvert öðru.\n\nMyrkrið í kringum okkur og gullna sjóndeildarhringurinn í fjarska dýpka merkingu myndarinnar. Þau tákna óvissu lífsins, áskoranirnar sem við stöndum frammi fyrir og möguleikann á bjartari framtíð þegar við veljum að standa saman. Hlýja ljósið sem lýsir andlitin og handtakarnir umbreyta einföldum bendingar í eitthvað algilt: trúna á að engin ósvikinn góðvild sé raunverulega týnd.\n\nÞetta listaverk býður upp á persónulega íhugun\n\nHver kom með ljós í líf þitt þegar þú þarfnast þess mest? Hvers vegur gæti orðið bjartari vegna þess sem þú velur að gefa í dag?\n\nSkilaboð þess tilheyra öllum, óháð aldri, þjóðerni, menningu eða bakgrunni. Við höfum öll fengið eitthvað frá öðrum og við höfum öll eitthvað merkingarfullt að gefa áfram.\n\nMEIRA EN LIST. MÖRK.\n\nÞetta listaverk er hannað til að vera meira en skreytingaryfirlýsing og færir tilfinningu um hlýju, dýpt og mannleg tengsl inn í rýmið sem það býr í. Það getur orðið merkingarfull viðvera í stofunni, vinnustofunni, skrifstofunni eða hvaða stað sem er þar sem innblástur og íhugun eru metin.\n\nÞað er einnig íhugandi gjöf fyrir einhvern sem trúir á góðvild, fjölskyldu, þakklæti, mannleg tengsl og varanlegt kraft vonarinnar.\n\nVegna þess að það sem við skiljum eftir okkur sem er mest merkingarríkt er ekki alltaf það sem við getum haldið. Stundum eru það lífin sem við höfum snert, hjörtin sem við höfum hvatt til og ljósið sem við höfum hjálpað öðrum að uppgötva í sjálfum sér.\n\nLjós sem við deilum með öðrum glatast aldrei. Það er ljós sem lifir áfram.\n\nMANNLEGI ARFSEFNIÐ\n\nVegna þess að mannkynið er mesta meistaraverk sem við getum skilið eftir okkur.\n\nHALL MÆÐUR\n\nList með sál. Skilaboð án landamæra.\n\nART PRINT & SEEKING DETAILS\n\n10",
+      "category": "Mannkyn",
+      "product_details": {
+        "files_included": "1 skrá · ZIP · 27.5 MB",
+        "product_type": "Stafræn listaverk niðurhal",
+        "delivery": "Augnablik stafrænt niðurhal eftir kaup",
+        "physical_item": "Engin líkamleg prentun eða ramma verður send",
+        "printing": "Prentaðu skrárnar sem fylgja með við valinn prentara; athugaðu meðfylgjandi stærðir áður en þú velur stærð",
+        "usage": "Fylgdu persónulegum notkunar- og öðrum leyfisskilmálum sem fylgja með niðurhalinu"
+      },
+      "_source_hash": "6fb6b36e97f6c6a45e6f2b988972dcc4dc6ed88e314b292990945b1ee19d2a6d"
+    },
+    "msuzc": {
+      "summary": "Barnið rís upp í átt að ljósinu, studd af samúð margra kynslóða.",
+      "full_description": "Stiga af höndum\n\nFramtíðin er byggð af mörgum höndum.\n\nEkkert barn ætti að þurfa að klifra einn í átt að morgundeginum.\n\nHandstigarnir eru táknræn hátíð samstöðu, umhyggju og hljómsæks stuðnings sem breytir lífum. Í hjarta þeirra er barn sem stígur upp stigann í átt að ljósinu, stígur sem er gerður úr mannshöndum, og hver hönd táknar mann, fórn, góðvild eða framlag sem hjálpar öðrum að rísa upp.\n\nMannlega sagan\n\nHendurnar tilheyra ekki einu aldurs- eða starfssviði, heldur tákna þær foreldra, kennara, starfsmenn, umönnunaraðila, nágranna og kynslóðir sem oft eru óséðar í sinni viðleitni. Barnið táknar hvert ungt fólk sem ber í sér draum sem þarfnast hvatningar, tækifæra og verndar.\n\nHreyfingin frá myrkrinu í átt að gullnu ljósinu gefur myndinni tilfinningalegan kraft. Vonin er ekki óbeina bíða. Hún er eitthvað sem fólk byggir upp fyrir hvert annað, eina örláta aðgerð í einu.\n\nA merkingarfullur yfirlýsing fyrir rými þitt\n\nSýnið þetta verk á heimili fjölskyldunnar, skrifstofu, skóla, bókasafn, vinnustofu eða samfélagsrými sem áminning um að virðing og tækifæri vaxa þegar fólk stendur saman.Það er einnig hugsi gjöf fyrir kennara, foreldra, leiðbeinendur og alla sem trúa á loforð næstu kynslóðar.\n\nEitt barn, óteljandi hjálparhönd, framtíð sem byggð er saman.\n\nDIGITAL ARTWORK þitt\n\nStafræn niðurhal; engin líkamleg prentun eða ramma verður send.\n\nSækja skrár sem fylgja þessari vöru eftir kaup.\n\nSkoðaðu meðfylgjandi skráarupplýsingar, prentunarleiðbeiningar og persónulegt notkunarleyfi áður en þú prentar.\n\nVeldu prentstærð og þjónustu sem passar við skráarupplýsingarnar sem fylgja með.\n\nKomdu heim með listaverk með sögu.Veldu Sækja listaverk til að gera það að hluta af rýminu þínu.\n\nHall of Greatness — List með sál. Skilaboð án landamæra.",
+      "category": "Mannkyn",
+      "product_details": {
+        "files_included": "1 skrá · ZIP · 8,6 MB",
+        "product_type": "Stafrænt listaverk niðurhal",
+        "delivery": "Augnablik stafrænt niðurhal eftir kaup",
+        "physical_item": "Engin líkamleg prentun eða ramma verður send",
+        "printing": "Prentaðu skrárnar sem fylgja með við valinn prentara; athugaðu meðfylgjandi stærðir áður en þú velur stærð",
+        "usage": "Fylgdu persónulegum notkunar- og öðrum leyfisskilmálum sem fylgja með niðurhalinu"
+      },
+      "_source_hash": "b963b309b0892c055876d7451b6a8bc36190e3b1d23c99420a1c588817cba9ac"
+    },
+    "tzlsv": {
+      "summary": "A hylling til kærleika, fórn, og heimurinn sem við höldum í trausti fyrir þá sem fylgja.",
+      "full_description": "Arfleifð kynslóða\n\nÞað sem við verndum í dag verður framtíð þeirra.\n\nMesta arfleifđ okkar gæti veriđ heimurinn sem viđ skiljum eftir í höndum annarra.\n\nArfleifð kynslóða fjallar um tengsl þeirra sem á undan okkur fóru og þeirra sem á eftir koma, um fjölskyldu, minningu, fórnir og ábyrgð á að gefa af sér meira en eigur: framtíð sem er verðug næstu kynslóðar.\n\nÁst sem lítur út fyrir nútíðina\n\nVerkið fjallar um visku eldri kynslóða og möguleika hinna yngri, sem eiga sameiginlega skyldu til að varðveita það sem lífið byggir á, gera við það sem hefur skemmst og taka ákvarðanir sem byggjast á umhyggju fremur en þægindum.\n\nFjölskyldan getur verið uppspretta tilheyrslu, en ábyrgð nær út fyrir fjölskylduna og tengir saman samfélög og kynslóðir í gegnum heiminn sem þeir deila.\n\nÁminning sem tilheyrir í heimili hverrar kynslóðar\n\nSetjið þetta listaverk í fjölskyldu búsetu, nám, skrifstofu, menntastofnun eða hvar sem heiðrar minni og framtíð.Það gerir hugsi gjöf fyrir foreldra, afa, kennara og fólk sem trúir því að umönnun sé arfleifð.\n\nVið eigum ekki framtíðina, við höldum henni í trausti fyrir þá sem koma eftir okkur.\n\nDIGITAL ARTWORK þitt\n\nStafræn niðurhal; engin líkamleg prentun eða ramma verður send.\n\nSækja skrár sem fylgja þessari vöru eftir kaup.\n\nSkoðaðu meðfylgjandi skráarupplýsingar, prentunarleiðbeiningar og persónulegt notkunarleyfi áður en þú prentar.\n\nVeldu prentstærð og þjónustu sem passar við skráarupplýsingarnar sem fylgja með.\n\nKomdu heim með listaverk með sögu.Veldu Sækja listaverk til að gera það að hluta af rýminu þínu.\n\nHall of Greatness — List með sál. Skilaboð án landamæra.",
+      "category": "Mannkyn",
+      "product_details": {
+        "files_included": "1 skrá · ZIP · 23,1 MB",
+        "product_type": "Stafrænt listaverk niðurhal",
+        "delivery": "Augnablik stafrænt niðurhal eftir kaup",
+        "physical_item": "Engin líkamleg prentun eða ramma verður send",
+        "printing": "Prentaðu skrárnar sem fylgja með við valinn prentara; athugaðu meðfylgjandi stærðir áður en þú velur stærð",
+        "usage": "Fylgdu persónulegum notkunar- og öðrum leyfisskilmálum sem fylgja með niðurhalinu"
+      },
+      "_source_hash": "85dbcd535bbf5b49e8e3d1f629b11e1c1044b6806e4066780e78dd7693e99981"
+    },
+    "bgqxwm": {
+      "summary": "The Mediterranean Muse sameinar tjáningarmikið andlitsmálverk, geometríska form og ljósa persónuleika Miðjarðarhafsins.Rich blátt, hlýtt gull og djörf litur skapar sérstakt samtímalistverk fyrir safnara og innréttingar sem fagna einstaklingseðli.",
+      "full_description": "Músa Miðjarðarhafsins — Portrett af gulli, sjó og leyndardómi\n\nÞar sem gullna ljósið hittir djúpbláa hafið, kemur heillandi músa fram úr heimi geometrískra fegurðar og Miðjarðarhafsdrauma.\n\nThe Mediterranean Muse er tjáningarríkt nútímaverk sem dregur innblástur sinn frá kúbisma og sameinar áhrifamikla kvenlega mynd með tímalausri fegurð strandbyggðar, sólríku vatni, fjarlægum fjöllum og glóandi gullnu sól.\n\nRíkur safirblár, áferðagul, hlýtt fílabein, dramatísk svart form og lifandi rauðleitar varir skapa djörf sjónræn samræmi.Hvert hornlaga form afhjúpar mismunandi sjónarhorn, á meðan heillandi sjávarsíðuna býður ímyndunaraflið að reika á milli raunveruleika og listræna ímyndunarafl.\n\nGlæsilegur, dularfullur og fullur af persónu, þetta listaverk umbreytir vegg í yfirlýsingu um einstaklingseinkenni og fágaðan smekk.\n\n✨ Perfect fyrir\n\nLúxus stofur og nútímaleg heimili\n\nSkrifstofur og skapandi vinnustofur\n\nBoutique hótel og glæsileg móttökusvæði\n\nNútíma íbúðir og curated innréttingar\n\nList elskendur að leita sérstakt yfirlýsing stykki\n\nThe Mediterranean Muse er meira en veggskreyting, það er samkoma list, arkitektúrs, litar og ímyndunarafls – hátíð fegurðar Miðjarðarhafsins endurhugsuð með djörfri listrænni sýn.\n\n👑 A listræna sköpun frá HALL OF GREATNESS.\n\nART PRINT & Leita upplýsingar\n\nUppgötvaðu þessa stafrænu listaprentun The Mediterranean Muse fyrir prentun á vegglist, sérstökum heimilisskreytingum og hugvitsamlega hönnuðum innréttingum.Hægt er að hlaða niður listaverki til persónulegrar birtingar, með prentvalkostum sem valdir eru til að henta skránni og rýminu þínu.",
+      "category": "Glæsileiki",
+      "product_details": {
+        "files_included": "1 skrá · ZIP · 19.0 MB",
+        "product_type": "Stafræn listaverk niðurhal",
+        "delivery": "Augnablik stafrænt niðurhal eftir kaup",
+        "physical_item": "Engin líkamleg prentun eða ramma verður send",
+        "printing": "Prentaðu skrárnar sem fylgja með með því að nota viðeigandi prentara; athugaðu meðfylgjandi stærðir áður en þú velur stærð",
+        "usage": "Fylgdu persónulegum notkunar- og öðrum leyfisskilmálum sem fylgja með niðurhalinu"
+      },
+      "_source_hash": "af1fb435d85020fb7dfffd341b525734bf626e5bde25a5492169ffa49b1059c6"
+    },
+    "aedllm": {
+      "summary": "Sár pláneta, óteljandi hendur og sameiginleg ábyrgð á að vernda morgundaginn.",
+      "full_description": "Síðasta grát jarðarinnar\n\nEin jörđ, eitt mannkyni, ein framtíð.\n\nSumar myndir skreyta vegg, aðrar spyrja okkur hvaða heim við erum að skilja eftir okkur.\n\nLast Cry of Earth er úr THE HUMANITY LEGACY safninu og er tákn um berskjaldað fólk, ábyrgð og von. Hendur manna safnast saman um brotna hnöttinn og tjá sannleika sem fer yfir öll landamæri. Jörðin tilheyrir ekki einni þjóð eða kynslóð og framtíð hennar veltur á okkur öllum.\n\nSaga tveggja mögulegra framtíða\n\nÖnnur hlið samsetningarinnar vekur upp kostnaðinn við vanrækslu – þurrkað land, iðnaðarreyk, skemmd vistkerfi og landslag undir þrýstingi. Hin opnar fyrir endurnýjun: grænan vöxt, tært vatn, hreina orku og hlýju gullinnar sólarupprásar. Andstæðan er ekki einfaldlega myrkur á móti ljósi. Það er val á milli uppgjafar og ábyrgðar.\n\nHendurnar margar sem umlykja hnöttinn tákna fólk af ólíkum aldri, menningarheimum og bakgrunni og verða saman að sjónrænu loforði um að merkingarfullar breytingar séu sameiginleg viðleitni manna.\n\nAf hverju skiptir það máli\n\nÞetta verk er fyrir fólk sem hefur áhyggjur af náttúrunni, komandi kynslóðum og krafti listarinnar til að hefja mikilvæg samræður og getur orðið hugleiðandi miðpunktur á heimili, skrifstofu, námssvæði, galleríi eða umhverfismiðuðum vettvangi.\n\nLáttu vegginn bera skilaboð: Framtíðin er enn okkar að vernda.\n\nDIGITAL ARTWORK þitt\n\nStafræn niðurhal; engin líkamleg prentun eða ramma verður send.\n\nSækja skrár sem fylgja þessari vöru eftir kaup.\n\nSkoðaðu meðfylgjandi skráarupplýsingar, prentunarleiðbeiningar og persónulegt notkunarleyfi áður en þú prentar.\n\nVeldu prentstærð og þjónustu sem passar við skráarupplýsingarnar sem fylgja með.\n\nKomdu heim með listaverk með sögu.Veldu Sækja listaverk til að gera það að hluta af rýminu þínu.\n\nHALL OF GREATNESS — Art with a Soul. A Message Without Borders.",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 skrá · ZIP · 24.6 MB",
+        "product_type": "Stafrænt niðurhal á listaverkum",
+        "delivery": "Tafarlaust stafrænt niðurhal eftir kaup",
+        "physical_item": "Engin prentun eða ramma verður send",
+        "printing": "Prentaðu skrárnar sem fylgja með með þeim prentara sem þú velur; athugaðu meðfylgjandi stærðir áður en þú velur stærð",
+        "usage": "Fylgdu persónulegum notkunar- og öðrum leyfisskilmálum sem fylgja með niðurhalinu"
+      },
+      "_source_hash": "1b778b5e9598b900f314bd014e2126505fb284bc853987ad799e788064ade832"
+    },
+    "smuewa": {
+      "summary": "The Golden Gaze dregur áhorfandann inn í heim tjáningarríkra rúmfræðilegra myndanna, andrúmslofts Miðjarðarhafsins og skínandi lita.Þetta er áhrifamikill nútímalegur portrettlistaverk sem er hannað til að koma dularfullum, persónulegum og listrænum áberandi í nútímaleg innanhús.",
+      "full_description": "The Golden Gaze — Sýn af gulli, sjó og tímalausum leyndardómi\n\nUppgötvaðu list sem grípur augun og hvetur ímyndunaraflið.\n\nThe Golden Gaze er frumlegt stafrænt listaverk úr HALL OF GREATNESS safninu, sem blandar saman nútíma kubista-innblásnum formum við tímalausa fegurð Miðjarðarhafslandslagsins.\n\nÁhrifamikill kvenlegur myndarlegur kemur fram í gegnum djörf geometrísk form, glóandi gullna áferð, djúpt safírblátt, hlýtt fílabein og sláandi crimson hreim.Draggandi gulbrúnt auga dregur þig inn í draumaheim sólríka sjávar, hvíta strandarbyggingarlist, svífandi fugla og skúlptúrform.\n\nÞessi tjáningarfulla samsetning sameinar leyndardóm, glæsileika og nútímalega listræna orku og skapar sérstakan miðpunkt fyrir háþróaða innréttingu.\n\n✨ Af hverju þú munt elska þetta listaverk\n\nEinkennandi listrænn stíll: Nútímaleg hönnun með kubista-innblásna hönnun með tjáningarfullum geometrískum formum.\n\nRich Color Palette: Gull, safírblátt, kol, fílabein og crimson skapa sláandi sjónræn andstæða.\n\nGlæsileg innrétting: Hannað til að bæta við nútímaleg og lúxus rými.\n\nSveigjanleg Sýna Valkostir: Veldu valinn ramma, prenta efni, og viðeigandi stærð.\n\nStafræn þægindi: Hlaða niður meðfylgjandi skrám og raða prentun í gegnum valinn þjónustu.\n\n10\n\nLúxus stofur og nútímaleg heimili\n\nSkrifstofur og skapandi vinnustofur\n\nBoutique hótel og glæsileg móttökusvæði\n\nNútíma íbúðir og curated innréttingar\n\nList elskendur að leita að sérstökum skreytingar yfirlýsingu\n\nHugsunarfullar gjafir fyrir aðdáendur nútíma list\n\n10\n\nA niðurhal stafræna listaverk pakki sem inniheldur skrár sem tilgreindar eru í þessari vöruskráningu, ásamt leiðbeiningar viðskiptavina um prentun og einkanota leyfi.\n\n10\n\nGullna hornið - Wikipedia, frjálsa alfræðiritið\n\nSafn: HALL OF GREATNESS\n\nStíll: Samtíma kubista-innblásin list\n\nStefna: Ljósmynd\n\nMyndhlutfall: 2: 3\n\nVörutegund: Stafræn listaverk til prentun\n\nLíkamleg afhending: Engin\n\n10\n\nPrentaðu listaverkið með faglegri prentþjónustu á viðeigandi efni sem þú velur, svo sem fínt listapappír eða striga.Veldu ramma og áferð sem fullnægir innréttingunni þinni.\n\nEndanleg prentun stærð og gæði fer eftir upplausn af skrám sem fylgir og getu prentun þjónustu sem þú valdir.Litir geta verið örlítið mismunandi milli skjáa og prentuð efni.\n\nVinsamlegast athugið: Þetta er stafræn vara. Engin líkamleg málverk, ramma eða prentuð atriði verður send. Herbergismókupparnir eru sýndar sýnishorn; niðurhalslistaskrárnar eru vörurnar sem ætlaðar eru til prentun.\n\n10\n\nKaup þín eru aðeins til einkanota. Þú getur prentað listaverkið fyrir eigin heimili eða skrifstofu og sýnt líkamlega prentun sem persónulega gjöf. Þú mátt ekki endurselja, endurdreifingar, deila, undirleyfi eða endurskapa stafrænar skrár í viðskiptalegum tilgangi án sérstaks skriflegs leyfis.\n\nART PRINT & Leita upplýsingar\n\nUppgötvaðu þessa THE GOLDEN GAZE 👁 stafræna listaprentun fyrir prentaðar veggmyndir, sérstaka heimilisskreytingar og hugvitsamlega hönnuð innréttingar.Hægt er að hlaða niður listaverki fyrir persónulega sýnileika, með prentvalkostum sem valdir eru til að henta meðfylgjandi skrá og plássi þínu.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 skrá · ZIP · 22.4 MB",
+        "product_type": "Stafræn listaverk niðurhal",
+        "delivery": "Augnablik stafrænt niðurhal eftir kaup",
+        "physical_item": "Engin líkamleg prentun eða ramma verður send",
+        "printing": "Prentaðu skrárnar sem fylgja með við valinn prentara; athugaðu meðfylgjandi stærðir áður en þú velur stærð",
+        "usage": "Fylgdu persónulegum notkunar- og öðrum leyfisskilmálum sem fylgja með niðurhalinu"
+      },
+      "_source_hash": "bc5775f40dbc520fc6c48e9b41f3d7b8b577c56471e899302b456db982f635ec"
+    },
+    "jzjbrg": {
+      "summary": "Koma með tign og leyndardóm forn Egyptalands í rými með Queen of the Nile. Innblásin af varanlegum listrænum arfleifð Egyptalands, þetta sérstaka stafræna listaverk bætir konunglega menningarlega nærveru á heimilum, skrifstofum, hótelum og skipulögðum innréttingum.",
+      "full_description": "Queen of the Nile\n\nA Regal Hlýðni við listræna arfleifð Forn-Egyptalands\n\nKoma leyndardóm, reisn og varanleg fegurð Forn-Egyptalands í umhverfi þitt með Queen of the Nile, stafrænt listaverk innblásin af sjónrænu tungumáli og menningararfleifð einn af ótrúlegustu siðmenningum sögunnar.\n\nBúið til fyrir aðdáendur Egyptalands arfleifð og sérstaka yfirlýsingu list, þetta verk býður upp á tilfinningu um konunglega nærveru og menningarlegan karakter. Það býður áhorfendum að tengjast arfleifð sem er mótaður af táknræni, handverki, ímyndunarafli og varanlegri hrifningu með Níl og heimi fornra Egyptalands.\n\nA Sérstök nærvera fyrir rýmið þitt\n\nQueen of the Nile getur orðið sláandi miðpunktur í glæsilegum stofu, einkanámskeiðum, framkvæmdastjórnarskrifstofum, boutique hótelum, móttökusvæðum og skipulögðum innréttingum. Það er einnig íhugaður val fyrir safnara og alla sem dregið er til Egyptian-innblásin list og menningarhönnun.\n\nDIGITAL DOWNLOAD INFORMATION\n\nÞetta er stafræn vara. Engin líkamleg málverk, prentuð veggspjöld eða ramma verður send. Eftir kaup skaltu hlaða niður skránum sem fylgja skráningunni og athuga meðfylgjandi snið, stærðir og notkunarskilmálar áður en prentun er prentuð. Veldu prentstærð og efni sem hentar meðfylgjandi skrá og valinn skjár. Litir geta verið örlítið mismunandi milli skjáa og prentuð niðurstöður.\n\nQueen of the Nile - A Regal Echo of an Ancient World.\n\nHall of Greatness\n\nART PRINT & LEITA UPPLÝSINGAR\n\nUppgötvaðu þessa The Queen Of The Nile 👑 stafræna listaverk fyrir prentaðar veggmyndir, sérstaka heimilisskreytingar og hugvitsamlega hönnuð innréttingar. Listaverk sem hægt er að hlaða niður til persónulegrar birtingar, með prentvalkostum sem valdir eru til að henta skránni sem fylgir og rýminu þínu.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 skrá · ZIP · 44.0 MB",
+        "product_type": "Stafrænt listaverk niðurhal",
+        "delivery": "Augnablik stafrænt niðurhal eftir kaup",
+        "physical_item": "Engin líkamleg prentun eða ramma verður send",
+        "printing": "Prentaðu skrárnar sem fylgja með við valinn prentara; athugaðu meðfylgjandi stærðir áður en þú velur stærð",
+        "usage": "Fylgdu persónulegum notkunar- og öðrum leyfisskilmálum sem fylgja með niðurhalinu"
+      },
+      "_source_hash": "a4497ccda79c60d5130d5f8f09b9c6acc088280a4d67c8ca9e65d4ff49de7d69"
+    },
+    "csyqhm": {
+      "summary": "The Coptic Soul of Egypt er samtímaleg listræn túlkun innblásin af myndrænni arfleifð, táknmáli og menningarminni Koptíska Egyptalands.Búa til fyrir þá sem meta fund sögu, sjálfsmynd og listræna tjáningu, gerir það merkingarfulla yfirlýsingu á heimilum, skrifstofum, galleríum og menningarrýmum.",
+      "full_description": "The COPTIC Soul Egyptalands\n\nA Contemporary Artistic tribute til Koptíska arfleifð\n\nUppgötvaðu persónulega listræna túlkun á Egyptian Coptic arfleifð í gegnum Coptic Soul of Egyptalandi, stafræna listaverk innblásin af sjón minni, táknmáli og menningarlegu andrúmslofti sem tengist Coptic list.\n\nÍ stað þess að kynna sig sem fornleifafræðilega eftirmynd eða eftirmynd af ákveðnu sögulegu tákni, nálgast verkið arfleifð í gegnum samtímalega listræna linsu og sameinar menningarlega minningu og nútímalega myndræna tjáningu til að bjóða upp á íhugun á sjálfsmynd, samfelld, trú og ríkleika lagskiptrar sögu Egyptalands.\n\nFyrir áhorfendur sem leggja metnað sinn í merkingarríka list býður verkið upp á meira en skraut: það skapar tengsl við sérstaka menningarlega hefð og varanlega stöðu hennar í sögu Egyptalands.\n\nHentar fyrir hugvitsamlega rými\n\nÞað er vel hugsað til viðbótar við heimili, einkastofur, skrifstofur, gallerí, menningarleg innanhúss og rými þar sem egypsk arfleifð og listræna tjáningu er metin.Það getur einnig verið merkingarfull gjöf fyrir aðdáendur koptísk-innblásin og egypsk menningarlist.\n\nStafræn vöruupplýsingar\n\nÞetta er stafrænt niðurhal. Engin líkamleg málverk, prentuð veggspjöld eða ramma verður send. Vinsamlegast skoðaðu skrárnar sem fylgja með skráningunni, þar á meðal snið þeirra, stærðir og notkunarskilmála, áður en þú skipuleggur prentun. Litir geta verið örlítið mismunandi eftir skjá, prentara og valið efni.\n\nThe COPTIC Soul of Egypt — Heritage Remembered. Art Reimagined.\n\nHall of Greatness\n\nART PRINT & Leita upplýsingar\n\nUppgötvaðu þessa stafrænu listaprentun The Coptic Soul of Egypt fyrir prentun á vegglist, sérstökum heimilisskreytingum og hugvitsamlega hönnuðum innréttingum. Listaverk sem hægt er að hlaða niður til persónulegrar birtingar, með prentvalkostum sem valdir eru til að henta skránni sem fylgir og plássinu þínu.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 skrá · ZIP · 60.1 MB",
+        "product_type": "Stafrænt listaverk niðurhal",
+        "delivery": "Augnablik stafrænt niðurhal eftir kaup",
+        "physical_item": "Engin líkamleg prentun eða ramma verður send",
+        "printing": "Prentaðu skrárnar sem fylgja með með ákjósanlegum prentara; athugaðu meðfylgjandi stærðir áður en þú velur stærð",
+        "usage": "Fylgdu persónulegum notkunar- og öðrum leyfisskilmálum sem fylgja með niðurhalinu"
+      },
+      "_source_hash": "2eca69141928e3e01281fed2b39524d668bb838241b109042d8477d2e941b1b2"
+    },
+    "jvffaq": {
+      "summary": "THE NILE'S EVINAL GRACE fagnar tímalausri fegurð Egyptalands og sameinar konunglega nærveru og varanlega takt Nílar. Stafrænt listaverk innblásið af arfleifð fyrir rými sem leggja áherslu á egypska menningu og tímalausan glæsileika.",
+      "category": "Heritage",
+      "_source_hash": "b061cdc5a55b2e444a09cd7d8c3d8d1eb73ad3315fe38b35610ca590b595c16e"
+    },
+    "kjclzu": {
+      "summary": "A Bond Beyond Words fagnar sjaldgæfum, orðlausum tengslum milli barns og tryggs félaga.Hlýtt, uppbyggjandi listaverk um traust, vináttu, sakleysi og skilyrðislausa ást - búið til til að koma tilfinningu um eymsli í fjölskyldurými og heimili dýravelferðar.",
+      "full_description": "A BOND BEYRAND ORÐ\n\nFegurð skilyrðislausar elsku\n\nSumum vináttum finnst í hjartanu, ekki útskýrt með orðum.\n\nFagna ótrúlega tengingu milli barns og ástkæra hunds með A Bond Beyond Words, hjartahlýju listaverk sem tekur hreinustu tjáninguna á vináttu, hollustu, sakleysi og skilyrðislausri ást.\n\nÍ þessari snertingu, sem er sett upp í fallegu garði í gylltu sólarljósi, er ungur drengur að faðma gleðilegan Golden Retriever hund sinn. Friðsæl tjáning þeirra og ástúðleg nálægð sýnir sérstakt band sem byggist á trausti, hamingju og félagsskap.\n\nUmkringdur lifandi blómum, lush grænu grasi, heillandi tré fuglahús, og hlýja ljóma náttúrunnar, samsetningin skapar andrúmsloft fyllt með eymsli, þægindi og bernsku minningar.\n\nHvert smáatriði er falleg áminning um að ást þarf ekki alltaf orð, stundum segir einfalt faðmlag allt.\n\nMeira en skreytingarprentun, A Bond Beyond Words er hátíð fallegra sambönd sem gera lífið merkingarbetra.\n\n✨ Af hverju þú munt elska þetta listaverk\n\nHeartwarming Story: Handtaka fallega vináttu milli barns og tryggur hundur hans.\n\nTilfinningaleg Tenging: Fagnar góðvild, traust, félagsskap og skilyrðislaus ást.\n\nGolden-Hour fegurð: Hlýtt sólarljós skapar friðsælt og uppbyggjandi andrúmsloft.\n\nLifandi Garden Upplýsingar: Litríka blóm og náttúrulegt umhverfi koma ferskleika og líf í samsetningu.\n\nTímalaus áfrýjun: Merkilegt listaverk sem endurspeglar börn, foreldra, fjölskyldur og elskhuga dýra.\n\nHugsunarfull gjöf Idea: A yndislegt val fyrir alla sem kann að meta sérstakt tengsl milli fólks og gæludýr.\n\n10\n\nSvefnherbergi barna og leikherbergi.\n\nFjölskyldustofur og velkomnir gangar.\n\nBarnagarða og lestur horn.\n\nDýralæknastofur og gæludýr umönnunarmiðstöðvar.\n\nDýrahjálparstöðvar og ættleiðingarmiðstöðvar.\n\nFjölskylduhótel og velkomin gestrisni rými.\n\nSkólar, leikskólar og samfélagsrými.\n\nGæludýr elskendur og fjölskyldur fagna gleði vináttu.\n\n10\n\nStafrænn niðurhalspakki inniheldur:\n\nUpprunalega stafræn listaverk í PNG sniði.\n\nUndirbúin hágæða 2: 3 portrett JPG prenta skrá.\n\nRáðlagðir valkostir fyrir prentun.\n\nA PDF prentun og stærð leiðbeiningar.\n\nA START HÉR skrá með niðurhal og prentun leiðbeiningar.\n\nHreinsa upplýsingar um myndupplausn og notkunarskilmála.\n\n10\n\nListaverkið fylgir fjölhæfur 2: 3 portretthlutfall og er hentugur fyrir:\n\n4 x 6 tommur\n\n8 x 12 tommur\n\n12 x 18 tommur\n\n16 x 24 tommur\n\n20 x 30 tommur\n\nTil að fá sem besta sjónræna upplifun mælum við með hágæða matt, satín eða fínlistapappír.\n\nMIKILVÆGAR UPPLÝSINGAR\n\nÞetta er stafrænt niðurhal. Engin líkamleg listaverk eða ramma verður send.\n\nLitir geta verið örlítið mismunandi eftir skjánum, prentara og pappír.\n\nStafræn skrár eru ætlaðar til einkanota nema sérstakt viðskiptaleyfi sé keypt.\n\nTil að birta auglýsingar í fyrirtækjum og á opinberum stöðum þarf viðeigandi viðskiptaleyfi.\n\nStafræn skrá má ekki endurselja, endurdreifingar eða deilt.\n\n❤️ A lítill ást gerir stóran mun\n\nKoma heim fallega áminning um hollustu, vináttu og skilyrðislaus ást sem gerir hvern dag bjartari.\n\nLáttu A Bond Beyond Words fylla plássið þitt með hlýju, hamingju og tímalausu töfra vináttu sem þarf enga útskýringu.\n\nA BOND BEYOND ORDS - Einn Heart. Tveir Souls. Endless Love.\n\nART PRINT & Leita upplýsingar\n\nUppgötvaðu þetta A BOND BEYOND WORDS Fegurð skilyrðislausar elsku stafrænt listaverk fyrir vegglist, sérstaka heimilisskreytingu og vel hönnuð innanhúss. Listaverk sem hægt er að hlaða niður til persónulegrar birtingar, með prentun sem valdir eru eftir skránni sem fylgir og rýminu þínu.",
+      "category": "Mannkynið",
+      "product_details": {
+        "files_included": "1 skrá · ZIP · 7,8 MB",
+        "product_type": "Stafrænt listaverk niðurhal",
+        "delivery": "Augnablik stafrænt niðurhal eftir kaup",
+        "physical_item": "Engin líkamleg prentun eða ramma verður send",
+        "printing": "Prentaðu skrárnar sem fylgja með með þeim prentara sem þú velur; athugaðu meðfylgjandi stærðir áður en þú velur stærð",
+        "usage": "Fylgdu persónulegum notkunar- og öðrum leyfisskilmálum sem fylgja með niðurhalinu"
+      },
+      "_source_hash": "af7fd1018209d1a0c50074203cc6c678ce973ea18a6dd07595de274e8d12da36"
+    },
+    "xvccaj": {
+      "summary": "Sjö hugmyndarík listaverk innblásin af alheiminum, borgum framtíðarinnar, náttúrunni og fegurð Miðjarðarhafsins - tjáningarfullt stafrænt safn fyrir forvitinn huga og skapandi rými.",
+      "full_description": "Global Art & ímyndunarafl - sjö listaverk, takmarkalaus heimur\n\nFerðastu út fyrir hið kunnuglega í gegnum safn sjö stafrænna listaverka sem eru innblásin af alheimslegum undrum, himneskri fegurð, framsýnum arkitektúr, náttúru og anda Miðjarðarhafsins.Hvert verk opnar nýjan sjónrænan heim og færir forvitni, hreyfingu og ímyndunarafl inn í nútíma rými.\n\nFrá leyndardómi alheimsins til borganna sem okkur dreymir um að byggja, frá stórbrotnu náttúrulandslagi til tjáningarríkra sjónarhorna á strandlengju, þessi safnsafn fagnar þeim mörgu leiðum sem list getur aukið tilfinningu okkar fyrir möguleikum.\n\nHvað er innifalið\n\nUm alheiminn\n\nHimneska garðurinn\n\nBorgir framtíðarinnar\n\nNature's Majesty\n\nDraumar um Miðjarðarhafið\n\nMiðjarðarhafsmúsan\n\nGeometry of Elegance\n\nHvar það tilheyrir\n\nSérstök línan fyrir stofur, skrifstofur, skapandi vinnustofur, hótel, veitingastaði, móttökur og innréttingar sem fagna tjáningarlistum og samræðuupphafsskreytingum.\n\nStafrænt niðurhal\n\nÞetta er stafræn vara. Engin líkamleg listaverk eða ramma verður send. Hlaða niður skránum sem fylgja í pakkanum og skoðaðu snið þeirra, stærðir og notkunarskilmála áður en prentaður er. Veldu prentstærð og efni sem hentar fyrir skrárnar sem fylgja. Litir geta verið örlítið mismunandi milli skjáa og prentuðu niðurstöður.\n\nUppgötvaðu list án landamæra. Láttu ímyndunaraflið móta heiminn þinn.\n\nHall of Greatness - List án landamæra.",
+      "category": "Glæsileiki",
+      "product_details": {
+        "product_type": "Stafræn listaverk niðurhal",
+        "delivery": "Augnablik stafrænt niðurhal eftir kaup",
+        "physical_item": "Engin líkamleg prentun eða ramma verður send",
+        "printing": "Prentaðu skrárnar sem fylgja með við valinn prentara; athugaðu meðfylgjandi stærðir áður en þú velur stærð",
+        "usage": "Vinsamlegast fylgdu notkunarskilmálunum sem fylgja með niðurhalið",
+        "bundle_item_count": "Bundle safn; einstök listaverk sem talin eru upp hér að neðan"
+      },
+      "_source_hash": "d8641c6b467679268bbf7fa3a052b8f3d1afec3f69b284f8c9413088a02c671d"
+    },
+    "wjxgxb": {
+      "summary": "Eternal Egypt fagnar tignarlegri siðmenningu sem mótaðist af stórbrotnum byggingarlist, Níl og ótrúlegri menningararfleifð. Hún er hönnuð sem áhrifamikill stafrænn listaprentari fyrir þá sem elska egypska arfleifð, sögu og tímalausar innréttingar.",
+      "full_description": "Eternal Egyptaland\n\nTímalaus andi fornrar siðmenningar\n\nKoma með varanlega stórkostleika Forn-Egyptalands í umhverfi þitt með Eternal Egyptalandi, stafræna listaverk innblásin af monumental nærveru pýramída, Great Sphinx, og tímalaus landslag Níl.\n\nÞessi samsetning er ætluð þeim sem finna fyrir tengslum við sögu, menningarminni og listræna arfleifð Egyptalands og býður upp á meira en skreytingarmynd, hún vekur upp umfang, leyndardóm og samfelld siðmenningu sem heldur áfram að hvetja heiminn með myndmáli sínu.\n\nAndrúmsloftið sem er innblásið af arfleifð gerir það að sérstökum miðpunkti fyrir nútímaleg heimili, einkastofur, skrifstofur, hótel, menningarrými og innréttingar sem fagna sögu og list.\n\nAf hverju það tilheyrir í rými þínu\n\nA sjónræna hyllingu til varanlegs menningararfleifð forna Egyptalands.\n\nEinkennandi og arfleifðarinnblásin áhersla fyrir nútímaleg og klassísk innréttingar.\n\nA merkingarfullt val fyrir safnara og aðdáendur Egyptian sögu.\n\nTjáandi stafrænt listaverk sem hægt er að prenta og ramma inn til að henta rýminu þínu.\n\nStafræn vöruupplýsingar\n\nÞetta er stafrænt niðurhal. Engin líkamleg málverk, prentuð veggspjöld eða ramma verður send. Sækja skrárnar sem fylgja með kaupum þínum og skoðaðu innifalið snið, stærðir og notkunarskilmála áður en þú prentar. Litir geta verið örlítið mismunandi eftir skjánum þínum, prentara og valið efni.\n\nEternal Egyptaland - Siðmenning í minni. Arfleifð utan tíma.\n\nHall of Greatness\n\nART PRINT & Leita upplýsingar\n\nUppgötvaðu þetta Eternal Egypt The Timeless Spirit of an Ancient Civilization stafræna listaverk fyrir prentaðar veggmyndir, sérstaka heimilisskreytingar og hugvitsamlega hönnuð innanhúss. Listaverk sem hægt er að hlaða niður til persónulegrar birtingar, með prentun valkosti sem henta meðfylgjandi skrá og plássi þínu.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "4 skrár · JPG, PDF, PNG, TXT · 9.1 MB",
+        "product_type": "Stafrænt listaverk niðurhal",
+        "delivery": "Augnablik stafrænt niðurhal eftir kaup",
+        "physical_item": "Engin líkamleg prentun eða ramma verður send",
+        "printing": "Prentaðu skrárnar sem fylgja með með því að velja prentara; athugaðu meðfylgjandi stærðir áður en þú velur stærð",
+        "usage": "Fylgdu persónulegum notkunar- og öðrum leyfisskilmálum sem fylgja með niðurhalinu"
+      },
+      "_source_hash": "af4bb9b510bcc457b6750421a6f2d14b3beabca71579f4cd5f83484617097abe"
+    },
+    "fgdpqp": {
+      "summary": "Í ímyndaðri verksmiðju er tíminn ekki mældur heldur myndskreyttur. Í DREYMI KLUKKAMANNA breytir hann gírum, himneskum vélbúnaði og ómögulegum tækjum í ljóðræna hugleiðslu um minni, uppfinningar og tímaflæði, þar sem steampunk-ímyndunaraflið og táknræn súrrealismi mætast.",
+      "full_description": "Inni í ímyndaðri verkstæði er tíminn ekki mældur heldur mótaður. DREYMINN umbreytir gírum, himneskum vélbúnaði og ómögulegum hljóðfærum í ljóðræna hugleiðslu um minni, uppfinningu og tíma. Fundur steampunk ímyndunarafls og táknræns súrrealisma. A töfrandi val fyrir bókasöfn, rannsóknir, skrifstofur og hönnunarleiðsögn innanhúss. Stafrænt niðurhal er afhent sem ZIP skrá. Vinsamlegast skoðaðu meðfylgjandi skrár og forskriftir eftir kaup áður en þú velur prentunarstórð.",
+      "category": "Glæsileiki",
+      "product_details": {
+        "files_included": "1 skrá · ZIP · 36.8 MB"
+      },
+      "_source_hash": "30ab80fd3d5210fdd5ec47f8f60c9b5f121908831ac3a07129ffe69e98b6bb2c"
+    }
+  },
+  "ui": {
+    "navFeatured": "Valin",
+    "navCollections": "Söfn",
+    "navGallery": "Gallerí",
+    "navArtist": "Flytjandi",
+    "eyebrow": "A curated heimur af prentaðri list",
+    "heroTitle": "<em>List sem ber sögu.</em>",
+    "heroText": "Uppgötvaðu gallerí sem er mótað af ímyndunarafli, arfleifð, mannlegum tengslum og tímalausri fegurð listarinnar.Merkilegar stafrænar verk, tilbúnar til að verða hluti af rýminu þínu.",
+    "explore": "Skoða söfn",
+    "discover": "Skoða galleríið",
+    "featuredEyebrow": "Sögurnar sem gestir koma aftur til",
+    "featuredTitle": "Áberandi listaverk",
+    "featuredText": "Sex merkingarrík verk. Sex mismunandi leiðir til að færa list og tilfinningu inn í rýmið.",
+    "collectionsEyebrow": "Sýningar",
+    "collectionsTitle": "Uppgötvaðu söfn",
+    "collectionsText": "Curated ferðir í gegnum list, menningu og tilfinningar.Kanna safn eða fara beint til öruggrar greiðslu.",
+    "galleryEyebrow": "Skoða heildarmyndina",
+    "galleryTitle": "Einstök listaverk",
+    "galleryText": "Leita eftir listaverk titil, þema eða flokki.Forskoða söguna eða fara beint í stafræna niðurhal.",
+    "search": "Leita að titlum og þemum...",
+    "artistEyebrow": "Á bak við galleríið",
+    "artistTitle": "Um listamanninn",
+    "artistP1": "Er listamaðurinn á bak við Hall of Greatness, sjálfstæð stafrænt listagallerí sem færir upprunalegu sjónrænar sögur til alþjóðlegra áhorfenda.",
+    "artistP2": "Í listsköpun hans sameinast skúlptúr, tilraunir og stafræn umbreyting og hvert verk býður upp á meira en bara skreytingar: andrúmsloft, minningu eða mannlega sögu.",
+    "artistP3": "Frá egypskum og koptískum arfleifð til alhliða þemu um samúð, reisn, von og ímyndunarafl, galleríið býður þér að upplifa list á þinn hátt.",
+    "tagline": "Merkileg list. Varanleg nærvera.",
+    "digital": "Stafræn vörur · Augnablik niðurhal í gegnum Gumroad",
+    "privacy": "Einkalíf",
+    "terms": "Skilmálar",
+    "contact": "Tengiliðir",
+    "gumroad": "Gumroad verslun ↗",
+    "exploreArt": "Kannaðu listaverk ↗",
+    "discoverStory": "Uppgötvaðu sögu ↗",
+    "buyDownload": "Kaupa niðurhal ↗",
+    "buyCollection": "Kaupa safn ↗",
+    "exploreCollection": "Kanna safn ↗",
+    "printable": "Prentanleg stafræn list",
+    "format": "Stafræn skrá · Prenta í stærð sem hentar þínu rými",
+    "noResults": "Engin listaverk passa við leitina þína.",
+    "catalogError": "Þessi síða er ekki tiltæk vegna uppfærslu.",
+    "all": "Allt",
+    "of": "af",
+    "artworks": "listaverk",
+    "choose": "Veldu tungumál"
+  },
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "_ui_translation_status": "machine-generated-unreviewed",
+  "landing_ui": {
+    "← Return to the gallery": "← Aftur í myndasafnið",
+    "Language": "Tungumál",
+    "An original digital artwork from HALL OF GREATNESS": "Upprunalega stafræn listaverk frá HALL OF GREATNESS",
+    "A curated collection of meaningful digital artworks": "A curated safn af merkingarfullum stafrænum listaverkum",
+    "Explore & Get the Artwork ↗": "Kannaðu og fáðu listaverkið ↗",
+    "Secure checkout and digital delivery on Gumroad.": "Örugg greiðslu og stafræn afhending á Gumroad.",
+    "Artwork presentation": "Myndlistaverk kynning",
+    "Imagine it in a refined frame": "Ímyndaðu þér það í hreinsaðri ramma",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "Önnur kynning hjálpar þér að ímynda þér listaverkið sem rammað skjá, en varðveitir upprunalega hlutföll þess.",
+    "Digital download": "Stafrænt niðurhal",
+    "Access your files after checkout": "Fáðu aðgang að skránum þínum eftir útritun",
+    "Print your way": "Prentaðu á þinn hátt",
+    "Choose a size suited to your space": "Veldu stærð sem hentar þínu rými",
+    "Made to display": "Gert til að sýna",
+    "For homes, studios, and meaningful spaces": "Fyrir heimili, vinnustofur og merkingarfullt rými",
+    "The meaning behind the artwork": "Merking á bak við listaverkið",
+    "More than decoration. A feeling that stays.": "Meira en skraut. Tilfinning sem varir.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Búin til fyrir fólk sem vill að umhverfi þeirra endurspegli sögu, minningu, gildi eða fegurð.Láttu þetta verk verða hluti af andrúmsloftinu sem þú býrð til og tilfinningunni sem þú vilt að rýmið þitt haldi.",
+    "Inside this collection": "Inni í þessu safni",
+    "One collection. Many stories.": "Eitt safn, margar sögur.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Skoðaðu einstök verk í þessari sýningarstjórnuðu safnsýningu, hvert verk hefur sinn eigin persónuleika en saman skapa þau ríkari myndræna ferð.",
+    "Complete artwork story": "Heill listaverk saga",
+    "Full product description": "Full vörulýsing",
+    "What is included": "Hvað er innifalið",
+    "Product specifications": "Upplýsingar um vöru",
+    "Where it belongs": "Þar sem það tilheyrir",
+    "Art that finds its place": "List sem finnur sinn stað",
+    "Before you purchase": "Áður en þú kaupir",
+    "Digital download details": "Upplýsingar um stafrænt niðurhal",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Þetta er stafræn vara. Engin líkamleg listaverk eða ramma verður send. Eftir kaup veitir Gumroad aðgang að skránum sem fylgja þessari vöru. Vinsamlegast skoðaðu meðfylgjandi skráarupplýsingar og leyfi áður en þú prentar eða notar listaverkið.",
+    "From download to display": "Frá niðurhal til birtingar",
+    "Make the artwork part of your space": "Gerðu listaverkið hluti af rýminu þínu",
+    "01 · Purchase": "01 · Kaup á vörum",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Ljúktu öruggri greiðslu á Gumroad. Kaup þín eru fyrir stafræna vöru.",
+    "02 · Download": "02 · Sækja",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Fáðu aðgang að skrám sem fylgja þessari vöru í gegnum Gumroad og skoðaðu meðfylgjandi forskriftir.",
+    "03 · Print": "Prenta",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Veldu prentunarstórð sem varðveitir upprunaleg hlutföll listaverksins.Staðbundin prentunarsnillingur getur hjálpað til við að passa við stærðirnar í skránni sem fylgir.",
+    "Please note:": "Vinsamlegast athugaðu",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Engin líkamleg listaverk eða ramma er send. Tiltæk skráarsnið, upplausn, hlutföll og notkunarskilmálar eru þau sem fram koma í niðurhali vörunnar og meðfylgjandi leyfi.",
+    "Let your space tell a story.": "Láttu rýmið þitt segja sögu.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Veldu list sem endurspeglar það sem þú metur - og láttu merkingu þess lifa með þér.",
+    "Get": "Fáðu",
+    "Art with a Soul. A Message Without Borders.": "List með sál. Skilaboð án landamæra.",
+    "Digital artwork · Instant download through Gumroad": "Stafræn listaverk · Augnablik niðurhal í gegnum Gumroad",
+    "Privacy": "Persónuvernd",
+    "Terms": "Skilmálar",
+    "Contact": "Hafðu samband við",
+    "Gumroad store ↗": "Gumroad verslun ↗",
+    "· Digital download": "· Stafræn niðurhal"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Skrár sem fylgja",
+    "product_type": "Vörutegund",
+    "delivery": "Afhending",
+    "physical_item": "Líkamleg vara",
+    "printing": "Prentun",
+    "usage": "Notkun",
+    "bundle_item_count": "Atriði í pakka"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Samræmt listasafn fyrir heimili, skrifstofur, hótel, gallerí, móttökusvæði og skoðuð innréttingar",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Fá THE ART OF ELEGANCE & SERENITY ↗",
+      "\\n": "\\ n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Samræmt listasafn fyrir heimili, skrifstofur, hótel, gallerí, móttökusvæði og skoðuð innanhúss.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Fá EGYPTIAN & COPTIC HERITAGE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "A BOND BEYOND WORDS  Fegurð skilyrðislausar ást",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Samræmt listasafn fyrir heimili, skrifstofur, hótel, gallerí, móttökusvæði og skoðuð innanhúss",
+      "Get THE HUMANITY LEGACY ↗": "Fá THE HUMANITY LEGACY ↗",
+      "\\n": "\\ n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A hreinsaður hreim fyrir stofu, svefnherbergi, skrifstofur, boutique hótel, vellíðan rými, og íhuga innréttingar.",
+      "Get THE ART OF STILLNESS ↗": "Fá THE ART OF STILLNESS ↗",
+      "\\n": "\\ n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A hreinsaður hreim fyrir stofu, svefnherbergi, skrifstofur, boutique hótel, vellíðan rými, og íhuga innréttingar.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Fá GEOMETRY OF ELEGANCE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Tjáningarmikil yfirlýsing fyrir heimili, skapandi vinnustofur, skrifstofur, gestrisni rými og innréttingar mótaðar af ímyndunarafli.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Fá CITIES OF TOMORROW   Where Innovation Meets Imagination ↗",
+      "\\n": "\\ n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Tjáningarmikil yfirlýsing fyrir heimili, skapandi vinnustofur, skrifstofur, gestrisni rými og innréttingar mótaðar af ímyndunarafli.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Fá NATURE'S MAJESTY   The Timeless Beauty of Nature ↗",
+      "\\n": "\\ n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A hreinsaður hreim fyrir stofu, svefnherbergi, skrifstofur, boutique hótel, vellíðan rými, og íhuga innréttingar.",
+      "Get MEDITERRANEAN DREAMS ↗": "Fá MEDITERRANEAN DREAMS ↗",
+      "\\n": "\\ n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A hreinsaður hreim fyrir stofu, svefnherbergi, skrifstofur, boutique hótel, vellíðan rými, og íhuga innréttingar.",
+      "Get SILENT HORIZONS . ↗": "Fá SILENT HORIZONS . ↗",
+      "\\n": "\\ n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A hreinsaður hreim fyrir stofu, svefnherbergi, skrifstofur, boutique hótel, vellíðan rými, og íhuga innréttingar.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Fá GOLDEN FLOW   The Art of Timeless Luxury ↗",
+      "\\n": "\\ n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Tjáningarmikil yfirlýsing fyrir heimili, skapandi vinnustofur, skrifstofur, gestrisni rými og innréttingar mótaðar af ímyndunarafli.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Fá BEYOND THE UNIVERSE 🌏 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A merkingarfullur miðpunktur fyrir heimili, skrifstofur, fræðslu rými, gallerí og stöðum þar sem mannlegar sögur skipta máli.",
+      "Get A Shelter of Love ♥ ↗": "Fá A Shelter of Love ♥ ↗",
+      "\\n": "\\ n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A hreinsaður hreim fyrir stofu, svefnherbergi, skrifstofur, boutique hótel, vellíðan rými, og íhuga innréttingar.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Fá The Celestial Garden – A Dance Beneath the Moon ↗",
+      "\\n": "\\ n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A hreinsaður hreim fyrir stofu, svefnherbergi, skrifstofur, boutique hótel, vellíðan rými, og íhuga innréttingar.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Fá THE GOLDEN VEIL OF SERENITY ↗",
+      "\\n": "\\ n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "Ein pláneta. Ein ábyrgð. Óteljandi möguleikar.",
+      "The story behind the image": "Sagan á bak við myndina",
+      "More than decoration. A human story.": "Meira en skraut. Mannleg saga.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "Höndin táknar getu okkar til að bregðast við. Plönturnar standa fyrir brothætt nýtt líf; fiðrildi benda til umbreytingar. Andstæðan milli skemmda lands og loforð um endurnýjun minnir okkur á að morgundagurinn er undir áhrifum af því sem við veljum að vernda í dag.",
+      "Where the artwork belongs": "Hvar listaverkið tilheyrir",
+      "Created to live with meaning": "Búið til að lifa með merkingu",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Áberandi yfirlýsing fyrir heimili, skrifstofur, skóla, umhverfissamtök, móttökusvæði og skapandi rými.",
+      "A distinctive focal point for considered interiors": "Einkennandi miðpunktur fyrir íhugað innanrými",
+      "A conversation piece with a message beyond trends": "Samtalsstykki með skilaboð umfram þróun",
+      "A thoughtful digital art choice for personal spaces": "Hugsanlegt stafrænt listaval fyrir persónuleg rými",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Þetta er stafræn vara. Engin líkamleg prentun eða ramma verður send. Eftir kaup skaltu hlaða niður skránum sem fylgja á Gumroad. Skoðaðu skráarforskriftirnar, prentleiðbeiningar og persónulegt notkunarleyfi áður en þú prentar. Veldu prentunarstórð og þjónustu sem hentar skránum sem fylgja.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Veldu listaverk sem endurspeglar það sem þú metur - og láttu merkingu þess lifa með þér.",
+      "Get The Hand That Holds Tomorrow ↗": "Fáðu höndina sem heldur morgundaginn ↗",
+      "\\n": "\\n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Mismunandi andlit. Ein mannkynið. Eilíf tengsl.",
+      "The story behind the image": "Sagan á bak við myndina",
+      "More than decoration. A human story.": "Meira en skraut. Mannleg saga.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Fílabein og obsidian varðveita einstakleika hvers andlits. Gullþráðurinn táknar sameiginlegar tilfinningar, vonir og löngun til að vera meðhöndlaðir með reisn. Einingu þarf ekki einsleitni; það byrjar þegar við viðurkennum mannkyn hvers annars.",
+      "Where the artwork belongs": "Þar sem listaverkið tilheyrir",
+      "Created to live with meaning": "Búið til að lifa með merkingu",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Fágað yfirlýsing fyrir nútíma heimili, framkvæmdastjórnarskrifstofur, gallerí, móttökurými og innréttingar sem leggja áherslu á menningarsamræður og mannleg tengsl.",
+      "A distinctive focal point for considered interiors": "Sérstakur miðpunktur fyrir íhugað innanrými",
+      "A conversation piece with a message beyond trends": "Samtalsstykki með skilaboð umfram þróun",
+      "A thoughtful digital art choice for personal spaces": "Hugsanlegt stafrænt listaval fyrir persónuleg rými",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Þetta er stafræn vara. Engin líkamleg prentun eða ramma verður send. Eftir kaup skaltu hlaða niður skránum sem fylgja á Gumroad. Skoðaðu skráarforskriftirnar, prentleiðbeiningar og persónulegt notkunarleyfi áður en þú prentar. Veldu prentunarstórð og þjónustu sem hentar skránum sem fylgja.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Veldu listaverk sem endurspeglar það sem þú metur - og láttu merkingu þess lifa með þér.",
+      "Get The Golden Thread of Humanity ↗": "Fáðu gullna þráðurinn af mannkyninu ↗",
+      "\\n": "\\n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A merkingarfullur miðpunktur fyrir heimili, skrifstofur, fræðslu rými, gallerí og stöðum þar sem mannlegar sögur skipta máli.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "Fá ROOTS OF TENDERNESS ♥ ↗",
+      "\\n": "\\ n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A hreinsaður hreim fyrir stofu, svefnherbergi, skrifstofur, boutique hótel, vellíðan rými, og íhuga innréttingar.",
+      "Get AURELLE 👑 ↗": "Fá AURELLE 👑 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "Fegurð kyrrðarinnar. Styrkur innan.",
+      "The story behind the image": "Sagan á bak við myndina",
+      "More than decoration. A human story.": "Meira en skraut. Mannleg saga.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "Samsett mannleg mynd verður tákn sjálfsvitundarinnar. Gullna ljósið bendir á heilleika; grasafræðileg smáatriði benda til endurnýjunar. Verkið minnir okkur á að styrkur þarf ekki að vera hávær - og að ró getur verið fegurð.",
+      "Where the artwork belongs": "Þar sem listaverkið tilheyrir",
+      "Created to live with meaning": "Búið til að lifa með merkingu",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "Glæsilegur miðpunktur fyrir stofur, einkaskrifstofur, móttökusvæði, hótel, vellíðan og nútímaleg innanhúss.",
+      "A distinctive focal point for considered interiors": "Sérstakur miðpunktur fyrir íhugað innanhúss",
+      "A conversation piece with a message beyond trends": "Samtalsstykki með skilaboð umfram þróun",
+      "A thoughtful digital art choice for personal spaces": "Hugsanlegt stafrænt listaval fyrir persónuleg rými",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Þetta er stafræn vara. Engin líkamleg prentun eða ramma verður send. Eftir kaup skaltu hlaða niður skránum sem fylgja á Gumroad. Skoðaðu skráarforskriftirnar, prentleiðbeiningar og persónulegt notkunarleyfi áður en þú prentar. Veldu prentunarstórð og þjónustu sem hentar skránum sem fylgja.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Veldu listaverk sem endurspeglar það sem þú metur - og láttu merkingu þess lifa með þér.",
+      "Get The Art of Inner Peace ↗": "Fáðu list innri friðar ↗",
+      "\\n": "\\n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A hreinsaður hreim fyrir stofu, svefnherbergi, skrifstofur, boutique hótel, vellíðan rými, og íhuga innréttingar.",
+      "Get SERENITY 🤍 ↗": "Fá SERENITY 🤍 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A merkingarfullur miðpunktur fyrir heimili, skrifstofur, fræðslu rými, gallerí og stöðum þar sem mannlegar sögur skipta máli.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Fá THE TREE THAT REFUSED TO DIE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A merkingarfullur miðpunktur fyrir heimili, skrifstofur, fræðslu rými, gallerí og stöðum þar sem mannlegar sögur skipta máli.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Fá THE LIGHT WE LEAVE EACH OTHER 🕯 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "Framtíðin er byggð af mörgum höndum.",
+      "The story behind the image": "Sagan á bak við myndina",
+      "More than decoration. A human story.": "Meira en skraut. Mannleg saga.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Hver hönd táknar líf, góðvild, fórn eða tækifæri í boði. Barnið stendur fyrir hvert ungt fólk sem þarfnast hvatningar og stuðnings. Saman verða hendurnar stigi - og vonin verður eitthvað sem við byggjum fyrir hvert annað.",
+      "Where the artwork belongs": "Þar sem listaverkið tilheyrir",
+      "Created to live with meaning": "Búið til að lifa með merkingu",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Merkileg yfirlýsing fyrir fjölskylduheimili, skóla, bókasöfn, skrifstofur, vinnustofur og rými sem fagna menntun og mannlegum tengslum.",
+      "A distinctive focal point for considered interiors": "Sérstakur miðpunktur fyrir íhugað innanrými",
+      "A conversation piece with a message beyond trends": "Samtalsstykki með skilaboð umfram þróun",
+      "A thoughtful digital art choice for personal spaces": "Hugsanlegt stafrænt listaval fyrir persónuleg rými",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Þetta er stafræn vara. Engin líkamleg prentun eða ramma verður send. Eftir kaup skaltu hlaða niður skránum sem fylgja á Gumroad. Skoðaðu skráarforskriftirnar, prentleiðbeiningar og persónulegt notkunarleyfi áður en þú prentar. Veldu prentunastærð og þjónustu sem hentar skránum sem fylgja.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Veldu listaverk sem endurspeglar það sem þú metur - og láttu merkingu þess lifa með þér.",
+      "Get A Stairway of Hands ↗": "Fáðu stiga af höndum ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Það sem við verndum í dag verður framtíð þeirra.",
+      "The story behind the image": "Sagan á bak við myndina",
+      "More than decoration. A human story.": "Meira en skraut. Mannleg saga.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "Eldri kynslóðin ber reynslu; yngri kynslóðin ber möguleika. Milli þeirra liggur loforð: að varðveita það sem viðheldur lífinu og fara fram á framtíð verðug þeirra sem erfa það. Þetta er ást sem er tjáð sem ábyrgð.",
+      "Where the artwork belongs": "Þar sem listaverkið tilheyrir",
+      "Created to live with meaning": "Búið til að lifa með merkingu",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "Hugsanlegt verk fyrir fjölskylduheimili, nám, skrifstofur, menntasvæði og alla sem meta minni, fjölskyldu og framtíð.",
+      "A distinctive focal point for considered interiors": "Sérstakur áherslupunktur fyrir íhugað innanrými",
+      "A conversation piece with a message beyond trends": "Samtalsverk með skilaboð umfram þróun",
+      "A thoughtful digital art choice for personal spaces": "Hugsanlegt stafrænt listaval fyrir persónuleg rými",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Þetta er stafræn vara. Engin líkamleg prentun eða ramma verður send. Eftir kaup skaltu hlaða niður skránum sem fylgja á Gumroad. Skoðaðu skráarforskriftirnar, prentleiðbeiningar og persónulegt notkunarleyfi áður en þú prentar. Veldu prentunarstórð og þjónustu sem hentar skránum sem fylgja.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Veldu listaverk sem endurspeglar það sem þú metur - og láttu merkingu þess lifa með þér.",
+      "Get The Legacy of Generations ↗": "Fáðu arfleifð kynslóða ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A hreinsaður hreim fyrir stofu, svefnherbergi, skrifstofur, boutique hótel, vellíðan rými, og íhuga innréttingar.",
+      "Get The Mediterranean Muse ↗": "Fá The Mediterranean Muse ↗",
+      "\\n": "\\ n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "Ein jörðin. Eitt mannkynið. Eitt framtíðin.",
+      "The story behind the image": "Sagan á bak við myndina",
+      "More than decoration. A human story.": "Meira en skraut. Mannleg saga.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "Hendurnar sem umlykja hnöttinn tákna fólk af öllum aldri og bakgrunni. Brotið landslag talar um það sem er í hættu; græna sjóndeildarhringurinn og gullna ljósið benda til þess sem við getum enn verndað. Skilaboðin eru ekki örvænting. Það er sameiginleg ábyrgð, gerð sýnileg.",
+      "Where the artwork belongs": "Þar sem listaverkið tilheyrir",
+      "Created to live with meaning": "Búið til að lifa með merkingu",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "Hugleiðingarvekjandi miðpunktur fyrir heimili, skrifstofur, menntasvæði, gallerí og umhverfi sem er tileinkað sjálfbærni.",
+      "A distinctive focal point for considered interiors": "Sérstakur miðpunktur fyrir íhugað innanrými",
+      "A conversation piece with a message beyond trends": "Samtalsstykki með skilaboð umfram þróun",
+      "A thoughtful digital art choice for personal spaces": "Hugsanlegt stafrænt listaval fyrir persónuleg rými",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Þetta er stafræn vara. Engin líkamleg prentun eða ramma verður send. Eftir kaup skaltu hlaða niður skránum sem fylgja á Gumroad. Skoðaðu skráarforskriftirnar, prentleiðbeiningar og persónulegt notkunarleyfi áður en þú prentar. Veldu prentunarstórð og þjónustu sem hentar skránum sem fylgja.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Veldu listaverk sem endurspeglar það sem þú metur - og láttu merkingu þess lifa með þér.",
+      "Get Last Cry of Earth ↗": "Fáðu Last Cry of Earth ↗",
+      "\\n": "\\n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Sérstök viðbót við heimili, einkanám, skrifstofur, gallerí, söfn, hótel og menningarrými.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Fá THE GOLDEN GAZE 👁 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Sérstök viðbót við heimili, einkanám, skrifstofur, gallerí, söfn, hótel og menningarrými.",
+      "Get The Queen Of The Nile 👑 ↗": "Fá The Queen Of The Nile 👑 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Sérstök viðbót við heimili, einkanám, skrifstofur, gallerí, söfn, hótel og menningarrými.",
+      "Get The Coptic Soul of Egypt ↗": "Fá The Coptic Soul of Egypt ↗",
+      "\\n": "\\ n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE A hátíð tímalausrar fegurð Egyptalands, þar sem rólegur reisn konunglegrar nærveru mætir eilífum takti Nílarinnar. Golden...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Sérstök viðbót við heimili, einkanám, skrifstofur, gallerí, söfn, hótel og menningarrými.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "Fá THE NILE'S ETERNAL GRACE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Sumir vináttu eru fundið af hjartanu, ekki útskýrt með orðum. Fagna ótrúlega tengingu...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Merkilegt miðpunktur fyrir heimili, skrifstofur, fræðslurými, gallerí og staði þar sem mannlegar sögur skipta máli.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Fá A BOND BEYOND WORDS The Beauty of Unconditional Love ↗",
+      "\\n": "\\ n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION - Sjö listaverk, takmarkalaus heimur Ferðast umfram kunnuglega í gegnum safn af sjö stafrænum listaverkum innblásin af kosmískum...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Fágað hreim fyrir stofu, svefnherbergi, skrifstofur, boutique hótel, vellíðan rými og íhugað innréttingar.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Fá GLOBAL ART & IMAGINATION ↗",
+      "\\n": "\\ n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Koma með varanlega stórkostleika forna Egyptalands í umhverfi þitt með Eternal Egyptalandi, a...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Sérstök viðbót við heimili, einkanám, skrifstofur, gallerí, söfn, hótel og menningarrými.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Fá ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗",
+      "\\n": "\\ n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "Inni í ímyndaðri verkstæði er tíminn ekki mældur heldur mótaður. THE CLOCKMAKER'S DREAM umbreytir gírum, himneskum kerfi og ómögulegum hljóðfærum...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Fágað hreim fyrir stofu, svefnherbergi, skrifstofur, boutique hótel, vellíðan rými og íhugað innréttingar.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Fá THE CLOCKMAKER'S DREAM ↗",
+      "\\n": "\\ n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
+}

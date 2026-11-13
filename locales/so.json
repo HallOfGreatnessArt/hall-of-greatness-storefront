@@ -1,0 +1,710 @@
+{
+  "products": {
+    "oubirh": {
+      "summary": "Siddeed farshaxanka la hagaajin oo isku keenaya accents dahab ah, qaabab nabad ah, abstraction qurux badan, iyo isku halleyn muuqaalka ee interiors casriga ah ee casriga ah.",
+      "category": "Collection",
+      "_source_hash": "85810573c609f032749049f0af3efd548b47b50b60c74fae8bbbcb5e0cfaaf2c"
+    },
+    "hqpird": {
+      "summary": "Saddex farshaxanka kala duwan oo xusaya ruuxda sii socda ee Masar iyo Coptic dhaxal, xusuusta dhaqanka, iyo quruxda timeless ee Masar.",
+      "category": "Collection",
+      "_source_hash": "bbee15015588f3854edb7cce4f6ee745a63ecba99e41de9335d42b77a925b26e"
+    },
+    "wdtvt": {
+      "summary": "Toban farshaxanka xoog leh oo ku saabsan naxariis, iska caabin, xiriirka aadanaha, iyo rajada. A buuxa oo daabacan farshaxanka ururinta u ah meelo macno leh iyo interiors fikirka.",
+      "category": "Collection",
+      "_source_hash": "0beaa1225adf5643d8bf3173e7f93d6f8ebe7ebb067e86674e4e8e27bf908560"
+    },
+    "mxrljy": {
+      "summary": "The Art of Stillness kuu soo dhaweynayaa inaad hoos u dhigto oo dib u soo bandhigto quruxda daqiiqad xasillooni ah. Inspired by qaabab fikirka, Lotus blossoms, biyo socda, iyo iftiin dahab kulul, this serene digital artworks keenaa jawi fikirka in xarumaha caafimaad iyo gudaha la hagaajin.",
+      "category": "Elegance",
+      "_source_hash": "adcd68bc42846100ab6f13044e8972c34ee7fe07d1f4702b4d1d9fdc7b14e78c"
+    },
+    "gusqyc": {
+      "summary": "Geometry of Elegance xusaya kulankii qaab dhismeedka, qaabka dabiiciga ah, iyo quruxda casriga ah. Emerald toos ah, daboolka ivory, geometry sculptural, iyo accents dahab abuuraan a farshaxanka macno lahayn ee la hagaajiyey ee guryaha casriga ah, xafiisyada, iyo gudaha martiqaad.",
+      "category": "Elegance",
+      "_source_hash": "84014823691b93211841d3dbcf2452a78fd435d388b74dad7f7febe4d752c69f"
+    },
+    "aenwi": {
+      "summary": "Maxaa ka jira in magaalo ay ku qaabaysan tahay suurtogalnimada. Magaalooyinka Maalinta Berri ah waa sawir digital ah oo ku saabsan naqshadeynta, naqshadeynta, iyo rabitaanka aadanaha ee ah in la dhiso mustaqbal wanaagsan. Warbixin cajiib ah oo loogu talagalay guryaha casriga ah, studios-ka, xarumaha tiknoolajiyada, iyo xafiisyada casriga ah.",
+      "category": "Global",
+      "_source_hash": "e2173f80b274ea619b175b5480c483771929f3d1c9a75ce2893eea0775e30e96"
+    },
+    "gynmhv": {
+      "summary": "Ha u oggolaan in xasilloonida weyn ee dabiiciga ah u beddelaan booskaaga. Majesty ee dabiiciga ah wuxuu xusayaa quruxda dib u soo kabashada ee buuraha, daruuraha, dooxooyinka, iyo biyaha iftiinka leh oo ku jira sawir qurux badan oo qurux badan oo abuuraya xorriyad, cusbooneysiin, iyo xasilooni.",
+      "category": "Caalamiga ah",
+      "_source_hash": "e6e5a3263c07964a62266c9dbbc5d1e7eb389514c1ade5780eebc6e4228f4b2e"
+    },
+    "jrsgce": {
+      "summary": "Soo qaado qabowga ka baxa Mediterranean in aad deegaankaaga maalinlaha ah. Mediterranean Dreams qabtaa jacaylka dhismaha xeebta, biyaha buluug ah oo iftiin leh, terraces ubax, iyo iftiinka saacadaha dahabka ah. A soo dhawayn digital farshaxanka daabacaadda guryaha, villas, kafeega, iyo safarka-inspired gudaha.",
+      "category": "Elegance",
+      "_source_hash": "f26a8d189f4afe6a0a7a8d671fcbd37c54bd461cdba3f4d15d77243c056e17e5"
+    },
+    "ukxrmq": {
+      "summary": "Ka hesho waqti xasillooni ah quruxda ah ee buuraha xasillooni. Silent Horizons waa a dabiiciga-indho-indheeyay digital artworks qaabaysan by biyo sii, xagga fog, iftiinka subaxdii fudud, iyo dareenka of dib u soo kabashada. A qurux badan oo muuqaalka ah ee guryaha nabad, xafiisyada, iyo meelaha caafimaad.",
+      "category": "Elegance",
+      "_source_hash": "003e93a0d92367744addfb51152fe6da6c27ac08144b5c89e1e73dd7fec007c7"
+    },
+    "yhkokf": {
+      "summary": "Golden Flow keenaa drama dabiiciga ah ee marble iyo quruxda dahabka ah ee isku darka la taaban karo ee casriga ah. qaababka mugdiga ah iyo iftiinka ah ee qulqulka ah waxay abuuraan qoto dheer, dhaqdhaqaaq, iyo quruxda la yaabka leh - daabacaad farshaxan digital ah oo muujinaya gudaha casriga ah ee casriga ah.",
+      "category": "Elegance",
+      "_source_hash": "fc65d52d8cd76ff8b23097321c08f7ca24b70659818dea5dda62f894d09e4c9c"
+    },
+    "nxkxyq": {
+      "summary": "Tallaabada in aragti iftiinka ah ee cosmos. Beyond the Universe xusayaa sirta, miisaanka, iyo yaabka ee hawada ka dib markii a digital farshaxanka dreamlike dhiirrigelin by galaxies, iftiinka samada, iyo suurtogalnimada aan xad lahayn. A qoraalka cabsi qabo daabacaadda loogu talagalay interiors casriga ah iyo maskaxda xiiso leh.",
+      "category": "Global",
+      "_source_hash": "16177585eb4768f120133dcd37a54ecc8a9108c42b39834cfe2e329ac00623d3"
+    },
+    "mzlqxg": {
+      "summary": "A Shelter of Love qabtaa dhaqdhaqaaq yar oo la macno joogto ah: waalidka ka dhigaysa hubi in ilmaha ka hor ma roobka oo keliya. Ku xiran magaalada iftiinka habeenkii, this farshaxanka dareenka xusuusta ilaalin, kalsooni, qoyska, iyo awoodda xasilloonida ee jacaylka aan shuruud laheyn.",
+      "category": "Dadnimada",
+      "_source_hash": "5c0e78bf9d27136335daa7e34ccf9da42dc590a56d083c83815407b47244dac0"
+    },
+    "etqsav": {
+      "summary": "hoos dayax iftiin leh, midab, dhaqdhaqaaqa, iyo saaxiibtinimo la yimaadaan oo dhan The Celestial Garden. this Dreamlike farshaxanka xusay qof ahaan, safarka wadaagaan, xorriyad, iyo naxariis haweenka ka dib markii dunida maahmaahyada vibrant. A qoraalka u gaar ah daabacaadda u muujinaya, interiors maahmaahyo.",
+      "category": "Elegance",
+      "_source_hash": "79723050f56e46edb2f774883a51d0a22ea883d9b80d00bd2c223954ce0c9346"
+    },
+    "vwrllor": {
+      "summary": "The Golden Veil of Serenity waa sawirka xoogga xasilloonida, sharaf, iyo quruxda aan dhammaad lahayn. qaabab madow iyo dahab iftiinka abuuraan muuqaalka ku jira-a digital farshaxanka muujinaya in ka badan iyo ururinta loogu talagalay interiors casri ah oo loo soo jeediyay in sawirka awood leh.",
+      "category": "Elegance",
+      "_source_hash": "3fbd51fc0b3144dfae0749e5c04814f34b8c72ab9c458a6ae346494c7a678894"
+    },
+    "gkwadk": {
+      "summary": "A seedling gacanta ku haysa dadka noqdaa calaamad cusub iyo daryeel wadaagaan.",
+      "category": "Dadnimada",
+      "_source_hash": "b3d3ed2cdc9e6333f7aaf330e1821220c7ad12874771ec45ca02ca1fc18fbd9f"
+    },
+    "rglfun": {
+      "summary": "Laba aqoonsi kala duwan, oo ay ku xiran tahay calaamad dahab ah ee sharafteenna aadanaha wadaagaan.",
+      "category": "Dadnimada",
+      "_source_hash": "7621f26df00b476963956773c9499fcec7b87189855fb05b55ebef7cd33c4268"
+    },
+    "cotnkm": {
+      "summary": "Roots of Tenderness waa abaalmarin in jacaylka ah in ay qayb ka mid ah cidda aan nahay. A aragti sculptural muujinaya hooyo iyo ilmo, shaqada farshaxanka xusaysa ilaalinta, qurbaan, ka mid ah, iyo xididdada sii socda ee jacaylka. A qayb aad u macno weyn u ah meelo qoyska iyo uruurinta fikirka.",
+      "category": "Dadnimada",
+      "_source_hash": "89071cfe9a0d1d8d3c14646a7e82629d42e4e1b858b782ebe96d94ff24be625e"
+    },
+    "kaztbw": {
+      "summary": "AURELLE u beddelaa dhaqanka maalinlaha ah ee shaaha in ay tahay xuska suugaan ee kaalinta, quruxda haweenka, iyo raaxo xasillooni. dahab iftiin leh, madow, iyo cabitaan kulul toos u abuuraan farshaxan digital u gaar ah guryaha stylish, qolalka shaaha, boutique kafeega, iyo gudaha ee casriga ah.",
+      "category": "Elegance",
+      "_source_hash": "50f25bf7ff18b06b831f14e21450ee7562896355ad94503c70b68b66a14178bb"
+    },
+    "cuitvq": {
+      "summary": "Sculptural qurux iyo iftiinka dahabka ah muujiyaan xoogga xasilloon ee isbarbardhiga gudaha.",
+      "category": "Elegance",
+      "_source_hash": "2ccb896bdf8f18e66ce1bc1ca17fecfdd6eed315302fe2ee1d2ef8c5532b18b4"
+    },
+    "rabhc": {
+      "summary": "Serenity waa fikirka muuqaalka ah ee ku saabsan awoodda soo kabashada, miisaanka, iyo xoogga xasiloon ee ku nool gudaha. qaabka ay qurux badan oo aan la taaban karin iyo hilibka dahabka ah abuuraan mid aad u qurux badan oo xasaasi ah oo loogu talagalay meelo loogu talagalay in ay ka fikiraan, xasillooni, iyo naqshadeynta casriga ah.",
+      "category": "Elegance",
+      "_source_hash": "3e36120477fa3535261c200c5e9210726bf08cb1968d35b25965f08e276b936f"
+    },
+    "ycltf": {
+      "summary": "Geedkii Diidmada Dhimashada wuxuu ka sheekeeyaa sheeko ku saabsan awoodda soo kabashada: xitaa inta lagu jiro burburka, nolosha waxay heli kartaa jidka loo maro. Xididdada waxay noqdaan jidka u dhexeeya meelaha burburay, oo u beddelaya nolol-wadaagga iyo dib-u-dhiska. A hadalka farshaxanka macno leh oo loogu talagalay qof kasta oo rumeysan in rajada uu sii kordhi karo.",
+      "full_description": "Geedkii Diidmada Dhimashada\n\nXitaa inta lagu jiro burburka, nolosha waxay heshaa jid.\n\nMaxaa dhacaya haddii calaamadda ugu weyn ee rajada aysan ahayn dhisme ay dadku dhiseen, laakiin geed nool oo diiday inuu iska casilo?\n\nU maleynayaa magaalo ay codkeeda ka lumiso. Dhismooyin ayaa dhacay, wadooyin ayaa ka tagay burburka hoostiisa, iyo raadadka nolosha aadanaha waxay u muuqdaan inay iskaga tagaan. Laakiin, qalbiga meeshan la illowsiiyay, geedka mid ka mid ah oo aan caadi ahayn ayaa sii nool.\n\nXididdada waxay uun u raadiyaan dhulka. Waxay ku soo gaaraan darbiyada burburay, waxay ku fadhiistaan dhismayaasha burburay, waxayna u dhex maraan dhismayaasha kala qaybsan, waxayna u beddelaan burburka xiriir. Laamihiisu waxay u soo baxaan samada, waxayna ku qaadaan caleemo cagaaran oo cusub oo hoostooda ku jira iftiin dahab ah oo ka soo baxa daruuraha.\n\nTani waa wax ka badan muuqaalka dabiiciga ah ee dib u soo kabashada magaalo burburtay. Waa sheeko aad u qosol badan oo ku saabsan ruuxda aadanaha.\n\nGeedku wuxuu ka hadlayaa qof kasta oo ku nool dhibaato aan u oggolaanin dhibaatada inay qeexaan mustaqbalkooda. Waxay ka hadlaysaa kuwa wax walba ku xumaatay, laakiin weli waxay helayaan xoogga ay ku bilaabaan mar kale. Kuwa nolosha ku dhaawacmay, laakiin ma oggolaan qalbigooda inay noqdaan kuwo aan waxba lahayn. Kuwa fahma in nolol-wadaaggu uusan ahayn oo kaliya nolol-joogista—waxay helayaan geesinimada inay sii koraan.\n\nXididdada waxay muujinayaan awoodda soo kabashada: xoogga aan la arki karin ee naga ilaaliya marka wax walba oo naga hareeraysan ay kala go’aan. Jidadkooda waxay muujinayaan heshiisiinta, xiriirka, iyo suurtagalnimada dib u dhiska xiriirada iyo bulshooyinka ka dib kala qaybsanaanta iyo dhimashada.\n\nCanopy cagaaran waa ballan in burburka ma aha in ay ahaato qaybta ugu dambeysay. Shimbirta u soo baxaya samada furan noo soo celiyaan in xorriyad iyo dib u soo kabashada ay ku soo noqon karaan, xitaa ka dib xilliyada mugdiga badan.\n\nIyo iftiinka dahabka ah ee ka baxsan burburka bixiyaan fariin xasillooni laakiin xoog leh: mustaqbalka ma aha mid lagu go'aamiyey waxa la burburiyay, laakiin waxa weli waa dareen si ay u koraan.\n\nFarshaxankan wuxuu la hadlayaa qof kasta oo wajahay qayb adag oo nolosha ah, qof kasta oo dib u dhisay ka dib markii ay lumiyeen, iyo qof kasta oo rumeysan in rajada ma aha ka maqnaanshaha dhibka, laakiin xoogga ay sii wadaan in kastoo.\n\nWaa qayb macno leh oo ka mid ah qol fadhiga, xafiiska, maktabadda, studio abuurka, ama meel kasta oo ay ku jiraan awoodda, dib u soo kabashada, iyo dhiirrigelin u qalmaan meel. Waxay sidoo kale noqon kartaa abaalmarin ka fikir ah qof u bilaabay bogga cusub, ka hortagga dhib, ama helitaanka geesinimada uu u soo noqnoqoto.\n\nHadduu geedkan idin xusuusiyo in aad hore ma aha in ay xaddidaan mustaqbalka. Inkasta oo nolosha ka tagay aad ku hareereysan burburka, wax ku dhex jira weli waa in ay awoodaan in ay koraan.\n\nMa aha waxa ay ku qeexi waxa ku dhacaya. Waxaad ku qeexi waxa weli ku koraya dhexdiinna.\n\nHall of weynta\n\nFarshaxanka Naf leh. A Message Without Borders.\n\nART daabacaadda & SEARCH FACTS\n\nKu ogaato this Geedkii in ay diideen in ay dhintaan digital farshaxanka daabacaadda loogu talagalay printable wall art, qurxinta guriga u gaar ah, iyo interiors la fikirka ku dhisan. A artwork soo dejisan kartaa si ay u muujiyaan shakhsi, la doorasho daabacaadda la doortay si ay u habboon yihiin file la siiyay iyo booskaaga.",
+      "category": "Dadnimada",
+      "product_details": {
+        "files_included": "1 fayl · ZIP · 29.1 MB",
+        "product_type": "Soo dejisan sawirka digital",
+        "delivery": "Soo dejinta digital instant iibka ka dib",
+        "physical_item": "Ma jiro daabacaad jir ama frame la keeni doonaa",
+        "printing": "Print files la siiyay la bixiyaha daabacaadda aad doorbidayso; hubi miisaanka ku jira ka hor intaadan dooran midabka",
+        "usage": "Raac shuruudaha isticmaalka shakhsiga ah iyo shuruudaha kale ee liisanku ku jiraan soo dejinta"
+      },
+      "_source_hash": "d9bff692f10639a5edca9063641cbb3c31081b0579c89bb9cc9635499e614060"
+    },
+    "bctcdz": {
+      "summary": "Iftiinka aan ka tagnaa midba midka kale sharaf u ah naxariista, xigmadda, iyo dareen ka soo wareegtay qarni ilaa mid kale. A iftiinka iftiinka ah waa calaamad u ah rajada aan helno-iyo iftiinka aan dooran in ay wadaagaan. A dhaqdhaqaaqa farshaxanka guryaha, xafiisyada, iyo hadiyado macno leh.",
+      "full_description": "NIRKA aan ka tagno midba midka kale\n\nNuurka ugu weyn waa mid aan ku gudbinno.\n\nQaar ka mid ah iftiinka waxaa loogu talagalay in ay iftiinka waqti. kuwa kale waxaa loogu talagalay in ay iftiinka qarniyo.\n\nWaxaa jira run xasiloon oo isku xidha nolosha aadanaha oo dhan: mid ka mid ah oo naga mid ah oo dhan ku bilaabay safarkeena iftiinka. meel meel ku yaal, qof ayaa naga soo gaadhay - waalidka, macallin, qof aan la aqoon, saaxiib, ama qof kaas oo naxariis aan marnaba ma aha in la waayo. Waxay noo bixiyaan wax in ay naga caawiyaan inaan helno jidka: rajo yar, qayb ka mid ah xigmadda, fal naxariis, ama kaliya geesinimada in ay sii socdaan.\n\nIyo maalin, waxaan ogaan in iftiinka aan mar hore helay hadda waa inaga qayb.\n\nThe Light aan ka tagno midba midka kale waa abaalmarin farshaxanka ee this dhaxal aadanaha aan caadiga ahayn - dhaxal aan la arki karin ee naxariis, aqoon, jacayl, geesinimo, iyo rajada ah in ay ka gudbaan ka mid ah qarni ilaa mid kale.\n\nQalabka, a farshaxan dahab ah oo qadiim ah ka socda laba gacmood midka kale. Ku saabsan, wajiga da'da iyo qarniyo kala duwan oo isku yimaadaan waqti isku mid ah ee xiriirka. Dhammaan dadka waaweyn ee ka mid ah xigmadda iyo khibrada kuwa inoo soo horjeeda. Qarniyada yar yar oo muujinaya ballanqaadka waxa weli la yimaado. Dhexdooda, farshaxanka noqday calaamad xoog leh ee sii socoshada: xusuusin in guulaha ugu weyn ee aadanaha ma aha oo kaliya la miisaami karaa waxa aan dhisno, laakiin sidoo kale waxa aan siin midba midka kale.\n\nGuga iyo dhul gariirka dahabka ah ee fog ayaa ka sii daraya macnaha muuqaalka. Waxay muujinayaan xaaladaha aan la hubin ee nolosha, caqabadaha aan la kulmi karno, iyo suurtogalka mustaqbalka iftiin badan marka aan dooranno inaan wada taagan nahay. Iftiinka kulul ee iftiinka ah ee wajiga iyo gacmaha gaadhaya ayaa isbeddelaya erey fudud wax guud: rumaysadka ah in wax kasta oo wanaagsan oo dhab ah uusan waligeed dhab ahaan la lumin.\n\nArtwork this u yeedhay aragti shakhsi:\n\nYaa keenay iftiinka noloshaada marka aad u baahan tahay ugu badan? Oo jidka ka mid ah waxaa laga yaabaa in ay noqdaan mid ka sii iftiin badan sababtoo ah wax aad doorato in ay maanta bixiyaan?\n\nRasuulka Ilaah waa mid qof walba u gaar ah, ha ahaato da'da, qaranka, dhaqanka, ama asalka. Waxaan dhammaanteen wax ka helnay kuwa kale, oo waxaan dhammaanteen leenahay wax macno leh oo aan sii wadno.\n\nART ka badan. A dhaxal ah macnaha.\n\nDesigned in ay ka badan tahay hadal qurxinta, this artworks keenaa dareenka qabow, qoto dheer, iyo xiriirka aadanaha in ay meel uu deggan yahay. Waxay noqon kartaa goob macno leh oo qol fadhiga, daraasad, xafiis, ama meel kasta oo ay dhiirigelin iyo iftiinka waa la qiimeeyaa.\n\nWaxay sidoo kale ka dhigtaa hadiyado fikirka ah qof kasta oo rumaysan naxariis, qoyska, mahadnaq, xiriirka aadanaha, iyo awoodda sii socon doonta ee rajada.\n\nSababtoo ah waxa ugu macno badan ee aan ka tagaan ka dib waa ma aha wax walba oo aan ku haysan. Mararka qaarkood, waxay yihiin nolosha aan taabtay, qalbiyada aan dhiirigelin, iyo iftiinka aan caawiyay in ay dadka kale ku arkaan iyaga ku dhex.\n\nA iftiinka wadaagaan waa marnaba iftiinka la waayey. Waa iftiinka ku nool.\n\nDhaqanka Umadda\n\nMaxaa yeelay, Dadnimada waa Masterpiece ugu weyn ee aan ka tagaan.\n\nHall of weynta\n\nFarshaxanka Naf leh. A Message Without Borders.\n\nART daabacaadda & SEARCH FACTS\n\n10",
+      "category": "Dadnimada",
+      "product_details": {
+        "files_included": "1 fayl · ZIP · 27.5 MB",
+        "product_type": "Soo dejisan sawirka digital",
+        "delivery": "Soo dejinta digital instant iibka ka dib",
+        "physical_item": "Ma jiro daabacaad jir ama frame la keeni doonaa",
+        "printing": "Print files la siiyay la bixiyaha daabacaadda aad doorbidayso; hubi miisaanka ku jira ka hor intaadan dooran midabka",
+        "usage": "Raac shuruudaha isticmaalka shakhsiga ah iyo shuruudaha kale ee liisanku ku jiraan soo dejinta"
+      },
+      "_source_hash": "6fb6b36e97f6c6a45e6f2b988972dcc4dc6ed88e314b292990945b1ee19d2a6d"
+    },
+    "msuzc": {
+      "summary": "Wiil ayaa u soo baxaya iftiinka, oo ay taageerayaan naxariista qarniyo badan.",
+      "full_description": "A saqafka gacanta\n\nMaalinta soo socota waxaa dhisay gacmo badan.\n\nWiilna maaha in uu u soo jiito xagga berri oo keliya.\n\nA Stairway of Hands waa xuska calaamad ah ee wadajirka, daryeel, iyo xadgudubyada xasiloon ee taageerada in nolosha ay isbedelaan. Qalbigooda, ilmo tallaabo u ah iftiinka on saldhigga ka kooban gacmaha aadanaha. Gacanta kasta oo u taagan yahay qof, qurbaan, naxariis, ama qayb ka mid ah in ay caawiyaan qof kale kor.\n\nTaariikhda Aadanaha\n\nGacmaha ku saabsan da'da kaliya ama xirfad. Waxay ka hadlaan waalidiinta, ardayda, shaqaalaha, daryeelayaasha, deris, iyo qarniyada kuwaas oo dadaalkooda badanaa u socdaan aan la arki karin. Carruurta ka mid ah qof kasta oo dhalinyaro ah oo wata riyo u baahan dhiirigelinta, fursad, iyo ilaalinta.\n\nJidka gudcurka u iftiinka dahabka ah wuxuu siiyaa sawirka xoogga maskaxda. Rajada ma aha sugidda passive; waa wax dadka dhisaan midba midka kale, mid ka mid ah tallaabo deeqsi ah oo mar kasta.\n\nA QORMO macno leh oo loogu talagalay FASAXAADA\n\nKu muuji shaqadan guriga qoyska, xafiiska, dugsiga, buugaagta, studio, ama goobta bulshada sida xusuusin ah in sharaf iyo fursad ay koraan marka dadka wada taagan. Waa sidoo kale hadiyado la yaab leh ardayda, waalidiinta, tababarayaasha, iyo qof kasta oo rumaysan ballan-qaadyada qarnigii soo socda.\n\nWiil. Gacmo caawin aan la tirin karin. A mustaqbalka la dhisay oo wada.\n\nDIGITAL ARTWORK IYO\n\nSoo dejinta digital; ma daabacaadda jirka ama frame la keeni doonaa.\n\nSoo dejisan faylasha la siiyay this alaab ka dib markii iibka.\n\nDib u eegista faahfaahinta file ku jira, tilmaame daabacaadda, iyo shahaadada isticmaalka shakhsiga ah ka hor daabacaadda.\n\nDooro cabbirka daabacaadda iyo adeegga oo la mid ah faahfaahinta file la siiyay.\n\nSoo qaado guriga sawir gacmeed leh sheeko. Dooro Soo deji sawir gacmeed si aad u noqoto qayb ka mid ah meelkaaga.\n\nHALL OF GREATNESS — Farshaxanka Naf. A Message Without Borders.",
+      "category": "Dadnimada",
+      "product_details": {
+        "files_included": "1 file · ZIP · 8.6 MB",
+        "product_type": "Digital artwork soo dejinta",
+        "delivery": "Instant digital soo dejinta iibka ka dib",
+        "physical_item": "Print ama frame aan jirka la soo diri doonaa",
+        "printing": "daabacaan faylasha la siiyay la bixiyaha daabacaadda aad doorbideyso; hubi miisaanka ku jira ka hor intaadan dooran midka",
+        "usage": "raac isticmaalka shakhsiga ah iyo shuruudaha liisan kale ee ku jira soo dejinta"
+      },
+      "_source_hash": "b963b309b0892c055876d7451b6a8bc36190e3b1d23c99420a1c588817cba9ac"
+    },
+    "tzlsv": {
+      "summary": "A mahadnaq jacayl, qurbaan, iyo dunida aan ku hayno kalsoonida kuwa raacsan.",
+      "full_description": "WARQADDA QURBAN\n\nWaxa aan maanta ilaalino ayaa noqon doona kuwa ay maanta ilaalinayaan.\n\nNoogu weyn dhaxalku waa in ay tahay dunida aan ka tagno qof kale gacanta.\n\nDhaqanka Qarniyada waxay ka baaraandegi doontaa xiriirka ka dhexeeya kuwa ina hor yimid iyo kuwa soo socda. Waa fikrad ku saabsan qoyska, xusuusta, qurbaanka, iyo mas'uuliyadda in la sii wado in ka badan hantida: mustaqbalka ku habboon ee qarniga soo socda.\n\nJIRKA OO QAABIIL AH OO KA BAXDAY OO OO OO\n\nShaqada ku hadla xigmadda ay sameeyeen qarniyadii hore iyo suurtogalka ay ka mid yihiin dhalinyarada. Dhexdooda waxaa ku jira waajib wadaaga-in la ilaaliyo waxa nolosha siinaya, dayactirka waxa la dhaawacay, iyo doorashooyinka ku hoggaaminaya daryeel ka badan fududeyn.\n\nFamiliyada waxay noqon kartaa mid ka mid ah kuwa ku jira, laakiin mas'uuliyadda ka sii dheer qoyska, isku xirka bulshada iyo qarniyada adduunka ay wadaagaan.\n\nWaana waanada ku habboon ee guryaha dadka oo dhan.\n\nKu dheji this artworks in guriga qoyska, barashada, xafiiska, qaabka waxbarashada, ama meel kasta oo xusuusta iyo mustaqbalka sharaf. Waxay ka dhigtaa hadiyado la yaab leh ee waalidiinta, awoowayaasha, tababarayaasha, iyo dadka rumeysan in daryeel waa dhaxal.\n\nWaxaanan lahayn waxa maqan, laakiin waxaan u dhaxalsiinaynaa kuwa naga dambeeya.\n\nDIGITAL ARTWORK IYO\n\nSoo dejinta digital; ma daabacaadda jirka ama frame la keeni doonaa.\n\nSoo dejisan faylasha la siiyay this alaab ka dib markii iibka.\n\nDib u eegista faahfaahinta file ku jira, tilmaame daabacaadda, iyo shahaadada isticmaalka shakhsiga ah ka hor daabacaadda.\n\nDooro cabbirka daabacaadda iyo adeegga oo la mid ah faahfaahinta file la siiyay.\n\nSoo qaado guriga sawir gacmeed leh sheeko. Dooro Soo deji sawir gacmeed si aad u noqoto qayb ka mid ah meelkaaga.\n\nHALL OF GREATNESS — Farshaxanka Naf. A Message Without Borders.",
+      "category": "Dadnimada",
+      "product_details": {
+        "files_included": "1 file · ZIP · 23.1 MB",
+        "product_type": "Digital artwork soo dejinta",
+        "delivery": "Instant digital soo dejinta iibka ka dib",
+        "physical_item": "Print ama frame aan jirka la soo diri doonaa",
+        "printing": "daabacaan faylasha la siiyay la bixiyaha daabacaadda aad doorbideyso; hubi miisaanka ku jira ka hor intaadan dooran midka",
+        "usage": "raac isticmaalka shakhsiga ah iyo shuruudaha liisan kale ee ku jira soo dejinta"
+      },
+      "_source_hash": "85dbcd535bbf5b49e8e3d1f629b11e1c1044b6806e4066780e78dd7693e99981"
+    },
+    "bgqxwm": {
+      "summary": "The Muse Mediterranean soo bandhigaa sawirka muujinaya, qaabka geometrical, iyo astaanta iftiinka ee Mediterranean. Blue, dahab kulul, iyo midab xoog leh abuuraan farshaxanka casriga ah oo gaar ah oo loogu talagalay ururinta iyo gudaha oo soo dhaweynaya qof kasta.",
+      "full_description": "The Mediterranean Muse — A sawirka dahabka, badda & qarsoon\n\nMeesha iftiinka dahabka ah uu la kulmo badda buluuga ah, waxaa ka soo baxa dunida quruxda geometri iyo riyada Mediterranean-ka.\n\nThe Mediterranean Muse waa mid muujinaya, contemporary cubist-inspired farshaxanka isku darka sawirka haweenka la yaab leh la timeless allure of dhismaha xeebta, biyaha qorraxda, buuraha fog, iyo qorraxda dahabka ah oo iftiin leh.\n\nBlue safphire, dahab textured, ivory kulul, qaabab madow dramatic, iyo buskudka crimson iftiinka abuuraan isku dheelitirka muuqaalka xoog leh. Shaab kasta oo gees ah muujinaysaa aragti kala duwan, halka muuqaalka badda qurux badan u yeedhaya mabaadi'da in ay dhex socdaan dhabta iyo mabaadi'da farshaxanka.\n\nElegant, qarsoon, iyo buuxa oo ah astaamaha, this artwork beddelaa derbiga in warbixinta shakhsi ahaaneed iyo jecel oo tayo leh.\n\n✨ Perfect u\n\nGuriga fasaxyada iyo guryaha casriga ah\n\nXafiisyada fulinta iyo studios abuurka\n\nHoteelada Boutique iyo meelaha soo dhaweynta ee quruxda badan\n\nGuryaha casriga ah iyo interiors curated\n\nArt jecel oo raadinaya qaybaha qoraalka gaar ah\n\nMuse Mediterranean waa wax ka badan dhismaha dhismaha. Waa kulan farshaxan, naqshadeynta, midab, iyo mabaadi'da-maalinta quruxda Mediterranean reimagined a aragti qurux badan.\n\n👑 A abuurka farshaxanka ka HALL OF GREATNESS.\n\nART daabacaadda & SEARCH FACTS\n\nKu ogaato this Mediterranean Muse digital farshaxanka daabacaadda loogu talagalay farshaxanka dibadda printable, qurxinta guriga u gaar ah, iyo interiors la fikirka ah. A artwork soo dejisan kartaa si ay u muujiyaan shakhsi, la doorasho daabacaadda la doortay si ay u habboon yihiin file la siiyay iyo booskaaga.",
+      "category": "Elegance",
+      "product_details": {
+        "files_included": "1 fayl · ZIP · 19.0 MB",
+        "product_type": "Soo dejisan sawirka digital",
+        "delivery": "Soo dejinta digital instant iibka ka dib",
+        "physical_item": "Ma jiro daabacaad jir ama frame la keeni doonaa",
+        "printing": "daabac faylasha la siiyay la bixiyaha daabacaadda aad doorbideyso; hubi miisaanka ka hor intaadan dooran midka",
+        "usage": "raac shuruudaha isticmaalka shakhsiga ah iyo shuruudaha liiska kale ee ku jira soo dejinta"
+      },
+      "_source_hash": "af1fb435d85020fb7dfffd341b525734bf626e5bde25a5492169ffa49b1059c6"
+    },
+    "aedllm": {
+      "summary": "A dhulka dhaawacmay, gacmaha aan la tirin karin, iyo mas'uuliyadda wadaagaan in ay ilaaliyaan berri.",
+      "full_description": "QORSHE EE DHULKA\n\nMid Dhulka. Mid Dadka. Mid mustaqbalka.\n\nQaar ka mid ah sawirada ayaa dhismayaal lagu qurxiyo. Qaar kale waxay na weydiiyaan dunida aan ka tagayno.\n\nKa soo ururinta HORMUUDKA HUMANKA, Dhawaaqa Ugu Dambeeyay ee Dhulka wuxuu u beddelaa dhulkeena calaamad xoog leh oo ah daciifnimo, mas'uulnimo, iyo rajo. Gacmaha aadanaha ayaa ku soo ururaya dhul-ku-meel-gaar ah, oo muujinaya runta ka gudbisa xuduudaha oo dhan: Dhulka uma gaarka ah mid ka mid ah waddamada ama qarniyada, mustaqbalkeedana wuxuu ku xiran yahay innaga oo dhan.\n\nA sheeko laba mustaqbalka suurtogalka ah\n\nMid ka mid ah dhinacyada ka kooban ee soo jeedinaya qiimaha aan la tixgelin—dhul barafoobay, dabka warshadaha, burburay ecosystems, iyo a landscape hoos hoos. kale oo u furan in la cusbooneysiiyo: koritaanka cagaaran, biyo nadiif ah, tamarta nadiif ah, iyo kulaylka qorrax soo bax dahab ah. kala duwanaanshaha ma aha kaliya mugdi versus iftiinka. Waa doorasho u dhexeeya is-hortaag iyo mas'uuliyadda.\n\nGacmaha badan ee ku wareegsan dunida waxay ka mid yihiin dad da'doodu kala duwan tahay, dhaqanno, iyo asal. Iyagoo isku jira waxay noqdaan ballan muuqaal ah in isbedelka macno leh uu yahay dadaal dadweyne oo wadaaga.\n\nMaxaa ka dhigaysa\n\nShaqadan waa dadka ka shaqeeya adduunka dabiiciga ah, qarniyada soo socda, iyo awoodda farshaxanka si ay u bilaabaan wada hadalka muhiimka ah. Waxay noqon kartaa meel la isku halleyn karo guriga, xafiiska, goobta waxbarashada, galereya, ama deegaanka-focused setting.\n\nHa dibaddaada ku qaado fariin: mustaqbalka waa weli inoo ah in la ilaaliyo.\n\nDIGITAL ARTWORK IYO\n\nSoo dejinta digital; ma daabacaadda jirka ama frame la keeni doonaa.\n\nSoo dejisan faylasha la siiyay this alaab ka dib markii iibka.\n\nDib u eegista faahfaahinta file ku jira, tilmaame daabacaadda, iyo shahaadada isticmaalka shakhsiga ah ka hor daabacaadda.\n\nDooro cabbirka daabacaadda iyo adeegga oo la mid ah faahfaahinta file la siiyay.\n\nSoo qaado guriga sawir gacmeed leh sheeko. Dooro Soo deji sawir gacmeed si aad u noqoto qayb ka mid ah meelkaaga.\n\nHALL OF GREATNESS — Farshaxanka Nafta leh. A Message Without Borders.",
+      "category": "Dadnimada",
+      "product_details": {
+        "files_included": "1 file · ZIP · 24.6 MB",
+        "product_type": "Digital artwork soo dejinta",
+        "delivery": "Instant digital soo dejinta ka dib iibka",
+        "physical_item": "No daabacaadda jirka ama frame la soo diri doonaa",
+        "printing": "daabacaadda faylasha la siiyay la bixiyaha daabacaadda aad dooratay; hubi miisaanka ku jira ka hor intaadan dooran midka",
+        "usage": "raac isticmaalka shakhsiga ah iyo shuruudaha liisan kale oo ku jira soo dejinta"
+      },
+      "_source_hash": "1b778b5e9598b900f314bd014e2126505fb284bc853987ad799e788064ade832"
+    },
+    "smuewa": {
+      "summary": "The Golden Gaze soo jiidasho ee daawadaa in ay dunida of geometry muujinaya, Mediterranean hawada, iyo midab iftiin leh. A cajiib ah oo taariikheed sawirka farshaxanka la abuuray in ay keenaan sirta, character, iyo kala duwanaansho farshaxanka in interiors casriga ah.",
+      "full_description": "The Golden Gaze — A aragti of Gold, Badda & Timeless qarsoon\n\nKu ogaato farshaxanka oo qabta indhaha iyo dhiirrigelisa mabaadi'da.\n\nThe Golden Gaze waa sawir sawir digital ah oo asal ah oo ka yimid HALL OF GREATNESS, oo isku dhafan qaabab kubist ah oo la soo jeediyay oo la mid ah quruxda aan la goyn ee xeebaha Mediterranean.\n\nA sawirka haweenka captivating soo baxaya qaabab jiometri ah, midab dahab ah oo iftiin leh, saphire bluusada, ivory kulul, iyo indho aad u muuqato crimson. A amber indhaha xamaasad leh ku soo jiidasho aad ku soo bandhigto dunida dreamlike of badda qorraxda, dhismayaasha xeebta cad, haadda soaring, iyo qaababka sculptural.\n\nKu darka this muujinaya soo bandhigaa qarsoon, qurux, iyo tamarta farshaxanka casriga ah, abuurista mid ka mid ah xarunta u gaar ah ee gudaha ee casriga ah.\n\n✨ Maxaad u jeceshahay this Artwork\n\nDistinctive Artistic Style: Naqshadeynta casriga ah ee kubista ah oo leh qaabab geometry ah.\n\nRich Color Palette: Dahab, sapphire buluug, foornada, ivory, iyo crimson abuuraan kala duwanaanshaha muuqaalka cajiib ah.\n\nElegant Interior Accent: Designed in ay ku daraan xarumaha casriga ah iyo qurux badan.\n\nDoorashooyinka Muuqaalka Isku-dhafan: Dooro qaabka aad doorbideyso, daabacaadda, iyo cabbirka habboon.\n\nDigital Faahfaahinta: Download files ku jira iyo u diyaariyaan daabacaadda adeegga aad doorbideyso.\n\n10\n\nGuriga fasaxyada iyo guryaha casriga ah\n\nXafiisyada fulinta iyo studios abuurka\n\nHoteelada Boutique iyo meelaha soo dhaweynta ee quruxda badan\n\nGuryaha casriga ah iyo interiors curated\n\nArt lovers raadinaya hadal qurxinta u gaar ah\n\nAbaalmarinno la yaab leh oo loogu talagalay kuwa jecel farshaxanka casriga ah\n\n10\n\nA downloadable digital farshaxanka package oo ku jira faylasha ku qoran liiska this, oo ay ku jiraan macaamiisha daabacaadda tilmaamaha iyo liisan shakhsiga ah ee isticmaalka.\n\n10\n\nArtwork Magaca: The Golden Gacmo\n\nCollection: HALL OF GREATNESS\n\nStyle: Contemporary Cubist-Isha-ku-jiidashada\n\nJidka:\n\nAspect Ratio: 2:3\n\nNooca: Digital farshaxanka daabacaadda\n\nSoo-saarka jirka: Waxba\n\n10\n\nPrint artwork isticmaalaya adeegga daabacaadda xirfadle ah ee aad u jeceshahay qalabka habboon, sida buugaagta fine-caqliga ama canvas. Dooro qaab iyo dhamaystirka in aad ku darto gudaha.\n\nThe print size iyo tayada ugu dambeysay ku xiran tahay go'aanka faylasha la siiyay iyo awoodaha adeegga daabacaadda aad dooratay. Midabku waxay u kala duwanaan karaan si yar u dhexeeya shaashadda iyo waxyaabaha daabacan.\n\nFadlan xusuuso: Tani waa alaab digital. No sawirka jirka, frame, ama wax daabacan la soo diri doonaa. Mockups qolka waa tusaale muujinaya tusaale; files artwork soo dejisan yihiin alaabta loogu talagalay daabacaadda.\n\n10\n\nWaxaad daabacan kartaa artwork aad gurigaaga ama xafiiska iyo muujiyaan daabacaadda jirka sida hadiyado shakhsi. Waxaad ma iibsan kartaa, dib u qaybinta, qaybinta, sublicense, ama ganacsi u soo bandhigaan faylasha digital iyada oo aan ogolaansho qoraal ah oo kala duwan.\n\nART daabacaadda & SEARCH FACTS\n\nKu ogaato this GOLDEN GAZE 👁 digital farshaxanka daabacaadda loogu talagalay farshaxanka dibadda printable, qurxinta guriga u gaar ah, iyo interiors la fikirka ah. A artwork soo dejisan kartaa si ay u muujiyaan shakhsi, la doorasho daabacaadda la doortay si ay u habboon yihiin file la siiyay iyo booskaaga.",
+      "category": "Dhaqanka",
+      "product_details": {
+        "files_included": "1 fayl · ZIP · 22.4 MB",
+        "product_type": "Soo dejisan sawirka digital",
+        "delivery": "Soo dejinta digital instant iibka ka dib",
+        "physical_item": "Ma jiro daabacaad jir ama frame la keeni doonaa",
+        "printing": "Print files la siiyay la bixiyaha daabacaadda aad doorbidayso; hubi miisaanka ku jira ka hor intaadan dooran midabka",
+        "usage": "Raac shuruudaha isticmaalka shakhsiga ah iyo shuruudaha kale ee liisanku ku jiraan soo dejinta"
+      },
+      "_source_hash": "bc5775f40dbc520fc6c48e9b41f3d7b8b577c56471e899302b456db982f635ec"
+    },
+    "jzjbrg": {
+      "summary": "Ku soo jiid boqortooyada iyo sirta Masar qadiimiga ah in aad meel la The Queen of the Nile. Inspired by Masar ee wakhti dheer ee dhaqanka, this digital artwork gaar ah ku daray a dhaqanka boqortooyada ku sugan guryaha, xafiisyada, hoteellada, iyo interiors curated.",
+      "full_description": "The Queen of the Nile\n\nA Regal Adduunka ee Artistic Heritage of Ancient Egypt\n\nKu soo jiid sirta, sharaf, iyo quruxda joogtada ah ee Masar qadiimiga ah in aad deegaanka la The Queen of the Nile, a digital artwork ku dhiirrigeliyay by visual language iyo dhaqanka wakhtiga mid ka mid ah taariikhda ugu weyn ee horumarinta.\n\nWaxaa loo abuuray in ay jecel yihiin ee dhaxalkii Masar iyo farshaxanka hadalka gaar ah, shaqadan waxay bixisaa dareenka ah boqortooyada ku sugan iyo dhaqanka character. Waxay u yeedhay in ay la xiriiraan la dhaxal qaabeeyey by calaamad, xirfad, mabaadi'da, iyo xiiso joogto ah la Nile iyo dunida Masar qadiimiga ah.\n\nA DISTINCTIVE PRESence FOR YOUR SPACE\n\nThe Queen of the Nile waa in ay noqoto mid aad u muuqata oo ka mid ah xarunta dhexe ee qolal fadhiis oo qurux badan, cilmi-baaris gaar ah, xafiisyada madaxa, hoteellada boutique, goobaha soo dhaweynta, iyo interiors curated. Waa sidoo kale doorasho u fiirsan ah ee loo soo bandhigay in Egyptian-inspired farshaxanka iyo naqshadeynta dhaqanka.\n\nDIGITAL DOWNLOAD INFORMATION\n\nTani waa mid digital ah. No sawirka jirka, poster daabacan, ama frame la soo diri doonaa. iibka ka dib, soo dejisan faylasha la siiyay la liiska iyo hubi qaababka ku jira, miisaanka, iyo shuruudaha isticmaalka ka hor daabacaadda. Dooro cabbirka daabacaadda iyo qalabka u habboon in file la siiyay iyo aad u jeceshahay in ay muujiyaan. Midabada u dhexeeya screens iyo natiijooyinka daabacan u kala duwanaan karaan.\n\nThe Queen of the Nile — A Regal Echo of a Ancient World.\n\nHall of Greatness\n\nART PRINT & ARKIISTIIS & HALKAN DAAWO DETAILS\n\nOgoow this Queen Of The Nile 👑 digital art daabacaadda loogu talagalay daabacan wall art, qurxinta guriga u gaar ah, iyo interiors la fikirka ku dhisan. A downloadable artwork for personal display, with printing options chosen to suit the supplied file and your space.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 file · ZIP · 44.0 MB",
+        "product_type": "Digital artwork soo dejinta",
+        "delivery": "soo dejinta digital instant kadib iibka",
+        "physical_item": "Printing ama frame la soo diri doonaa",
+        "printing": "daabacaan files la siiyay la bixiyaha daabacaadda aad dooratay; hubi miisaanka ku jira ka hor inta aan dooran miisaanka",
+        "usage": "raac isticmaalka shakhsiga ah iyo shuruudaha liisan kale oo ku jira soo dejinta"
+      },
+      "_source_hash": "a4497ccda79c60d5130d5f8f09b9c6acc088280a4d67c8ca9e65d4ff49de7d69"
+    },
+    "csyqhm": {
+      "summary": "The Coptic Nafta Masar waa fasiraad farshaxanka casriga ah oo laga soo xigtay dhaxal muuqaal ah, calaamad, iyo xusuusta dhaqanka ee Coptic Masar. Loo abuuray kuwa qiimeeya kulanka taariikhda, aqoonsiga, iyo muujinta farshaxanka, waxay ka dhigtaa war macno leh guryaha, xafiisyada, galereya, iyo meelaha dhaqanka.",
+      "full_description": "COPTIC NAFTA Masar\n\nA Contemporary Artistic Abaalmarinta Heritage Coptic\n\nKu ogaato fasiraadda farshaxanka shakhsiga ah ee dhaxalka Coptic Masar ka dib markii Coptic Nafta Masar, a digital artwork dhiirrigelin by xusuusta muuqaalka, afka calaamad, iyo jawi dhaqanka la xiriira farshaxanka Coptic.\n\nInkasta oo ay tahay in la soo bandhigo sida wax soo saarka arkeolojiga ah ama mid ka mid ah calaamadda taariikhiga ah ee taariikhiga ah, shaqadani waxay ku soo dhaweyneysaa dhaxalkeeda iyada oo loo marayo lens farshaxanka ee casriga ah. Waxay iskugu keentaa xusuusta dhaqanka iyo muujinta muuqaalka casriga ah si ay u soo dhaweynayso fikradda aqoonsiga, sii socoshada, rumaysadka, iyo dhaqaalaha taariikhda laab-laabka ah ee Masar.\n\nDadka daawada oo qiimeeya farshaxanka macno leh, shaqada waxay ka badan tahay qurxinta: waxay abuurtaa xiriir la leh dhaqan gaar ah iyo meeshii ay ku noolaayeen taariikhda Masar.\n\nU habboon in ay fikirka xarumaha\n\nA la tixgeliyey in ay ku daraan guryaha, cilmi baarista gaarka ah, xafiisyada, galleri, interiors dhaqanka, iyo meelo halkaas oo dhaxalkii Masar iyo muujinta farshaxanka la qiimeeyay. Waxay sidoo kale noqon kartaa hadiyado macno leh oo loogu talagalay kuwa jecel ee Coptic-indho-indheeyay iyo farshaxanka dhaqanka Masar.\n\nWarbixinnada Waxyaabaha Digital\n\nTani waa soo dejinta digital. No sawirka jirka, poster daabacay, ama frame la soo diri doonaa. Fadlan dib u eegista faylasha la siiyay liiska, oo ay ku jiraan qaababkooda, miisaanka, iyo shuruudaha isticmaalka, ka hor intaan la qaban qaabinayo daabacaadda. Midabada waxay u kala duwanaan karaan si yar oo ku xiran screen, printer, iyo qalabka la doortay.\n\nThe COPTIC NAFTA Masar — Heritage xusuustay. Art Reimagined.\n\nHall of weynta\n\nART daabacaadda & SEARCH FACTS\n\nOgoow this The Coptic Nafta Masar digital art daabacaadda loogu talagalay printable wall art, qurxinta guriga gaar ah, iyo interiors la fikirka ku dhisan. A artwork soo dejisan kartaa si aad u muujiso shakhsi ahaaneed, la daabacaadda doorasho la doortay si ay u habboon yihiin file la siiyay iyo booskaaga.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 file · ZIP · 60.1 MB",
+        "product_type": "Digital artwork soo dejisan",
+        "delivery": "Instant digital soo dejinta ka dib iibka",
+        "physical_item": "No print jirka ama frame la siin doonaa",
+        "printing": "daabacaadda files la siiyay la bixiyahaada daabacaadda jecel; hubi miisaanka ku jira ka hor inta aan dooran oo miisaanka",
+        "usage": "raac isticmaalka shakhsiga ah iyo shuruudaha liisan kale oo ku jira la soo dejinta"
+      },
+      "_source_hash": "2eca69141928e3e01281fed2b39524d668bb838241b109042d8477d2e941b1b2"
+    },
+    "jvffaq": {
+      "summary": "The Nile ee Eternal Grace xusay quruxda aan la joojin Masar, oo isku keenay oo ku sugan boqor iyo riiqda sii socda ee Nile. A dhaxal-indho-indheeyay digital farshaxanka u ah meelo ay qiimeeyaan dhaqanka Masar iyo quruxda aan la joojin.",
+      "category": "Heritage",
+      "_source_hash": "b061cdc5a55b2e444a09cd7d8c3d8d1eb73ad3315fe38b35610ca590b595c16e"
+    },
+    "kjclzu": {
+      "summary": "A Bond Beyond Words xusayaa, xiriirka aan caadi ahayn, hadal la'aan u dhexeeya ilmo iyo saaxiib daacad ah. A kulul, farshaxanka soo jiidasho ku saabsan kalsoonida, saaxiibtinimo, daahirnimo, iyo jacayl aan shuruud lahayn-oo la abuuray in ay keenaan dareenka jilicsanaanta in qoyska iyo guryaha kuwa jecel xayawaanka.",
+      "full_description": "A bond ka sii fog\n\nQuruxda Jecelka aan shuruud laheyn\n\nQaar ka mid ah saaxiibtinimo ayaa la dareemay by qalbiga, aan la sharaxay by erayo.\n\nXusa xiriirka aan caadiga ahayn ee ka dhexeeya ilmo iyo eey jecel oo leh A Bond Beyond Words, a heartwarming farshaxanka oo qabta muujinta daahirka ah ee saaxiibtinimo, daacadnimo, daahirnimo, iyo jacayl aan shuruud laheyn.\n\nKu xiran beer qurux badan oo ku daboolan iftiinka qorraxda dahabka ah, muuqaalkan taabtay muujinaya wiil yar oo si fudud u qabsaday Golden Retriever farxad leh. Erayada nabad iyo xidhiidhka jacaylka muujinaya xiriir gaar ah oo ku dhisan kalsoonida, farxad, iyo saaxiibtinimo.\n\nBy ku wareegsan caleemo iftiin leh, dalagyo cagaaran oo qurux badan, birdhouse birdhouse, iyo iftiinka kulul ee dabiiciga ah, isku darka abuurtaa jawi buuxa oo la jecel yahay, raaxo, iyo xusuusta carruurnimada.\n\nFaahfaahin kasta oo ka mid ah waxay ka caawisaa in la xusuusiyo in jacaylku uusan waligiis u baahnayn erayo.\n\nIn ka badan daabacaad qurxin, A Bond Beyond Words waa xuska xiriirka qurux badan oo nolosha ka dhigaysa mid macno badan.\n\n✨ Maxaad u jeceshahay this ARTWORK\n\nSheeko qalbi qabow: Qaado saaxiibtinimo qurux badan oo u dhexeeya ilmo iyo eeyga uu jecel yahay.\n\nXidhiidhka Emotional: Celebrates naxariis, kalsooni, saaxiibtinimo, iyo jacayl aan shuruud laheyn.\n\nGolden-Saacadaha quruxda: iftiinka qorraxda kulul abuurtaa jawi nabad iyo uplifting.\n\nVibrant Garden Faahfaahin: Flowers colorful iyo deegaanka dabiiciga ah keenaan cufnaanta iyo nolosha u samaynta.\n\nTimeless Dacwad: A farshaxan macno leh oo resonates la carruurta, waalidiinta, qoysaska, iyo kuwa jecel xayawaanka.\n\nFikradda Gift ka fikir: A doorasho qurux badan oo qof kasta oo ku faraxsan xiriirka gaar ah ee dadka iyo xayawaanka.\n\n10\n\nGoobaha hurdada iyo ciyaarta carruurta.\n\nGuriga guriga iyo qolal soo dhaweyn.\n\nXarumaha carruurta iyo qolalka akhriska.\n\nIsbitaalka xoolaha iyo xarumaha daryeel eeyaha.\n\nXarumaha xayawaanka iyo xarumaha aas-aasiga.\n\nHoteelada qoyska iyo goobaha martigelinta soo dhaweynta.\n\nIskuulada, xarumaha carruurta, iyo meelo bulshada.\n\nPet jecel iyo qoysaska xuska farxad saaxiibtinimo.\n\n10\n\nBadeecadaada soo dejinta digital waxay ku jiraan:\n\nAsalka digital farshaxanka in PNG qaab.\n\nA diyaariyey tayo sare leh 2: 3 sawir JPG daabacaadda file.\n\nKu taliyey doorashooyinka daabacaadda-saaxiibtinimo.\n\nA PDF daabacaadda iyo sizeing tilmaame.\n\nA START HERE file la soo dejisan iyo farsamooyinka daabacaadda.\n\nXaqiiqooyinka ku saabsan kala soocida sawirka iyo shuruudaha isticmaalka.\n\n10\n\nArtwork raacaa 2: 3 portrait ratio kala duwan oo waa mid ku habboon:\n\n4 × 6 inji\n\n8 × 12 inji\n\n12 × 18 inji\n\n16 × 24 inji\n\n20 × 30 inji\n\nSi aad u aragto aragtida ugu fiican, waxaan kugula talineynaa daabacaadda premium matte, satin ama daabacaadda farshaxanka.\n\nMacluumaad muhiim ah\n\nTani waa soo dejinta digital. No sawirka jirka ama frame la soo diri doonaa.\n\nMidabada waxay u kala duwanaan karaan si yar iyadoo ku xiran shaashaddaada, daabacaha, iyo daabacaadda.\n\nFaylasha digital waxaa loogu talagalay in loo isticmaalo shakhsi ahaan haddii aan la iibsan liisan ganacsi oo kala duwan.\n\nWarbixinta ganacsi ee ganacsiyada iyo meelaha dadweynaha waxay u baahan tahay liisan ganacsi oo ku habboon.\n\nFaylasha digital ma aha in dib loo iibsado, dib loo qaybiyo, ama la wadaago.\n\n❤️ A jacayl yar ka dhigaysa farqi weyn\n\nSoo qaado guriga xusuusin qurux badan oo ah daacadnimo, saaxiibtinimo, iyo jacaylka aan shuruud laheyn oo ka dhigaysa maalin kasta mid ka sii iftiin badan.\n\nHa A Bond Beyond Words buuxiyaan booskaaga la kulul, farxad, iyo magic timeless ee saaxiibtinimo oo aan u baahan yahay wax faahfaahin ah.\n\nA BOND ka sii hadalka — Mid Qalbi. Laba Naf. Jecel Endless.\n\nART daabacaadda & SEARCH FACTS\n\nOgoow A BOND BEYOND WORD The Beauty of Unconditional Love digital art daabacaadda loogu talagalay daabacan wall art, qurxinta guriga gaar ah, iyo interiors la fikirka ku dhisan. A downloadable artwork for personal display, with printing options chosen to suit the supplied file and your space.",
+      "category": "Dadnimada",
+      "product_details": {
+        "files_included": "1 file · ZIP · 7.8 MB",
+        "product_type": "Digital artwork soo dejinta",
+        "delivery": "Instant digital soo dejinta ka dib iibka",
+        "physical_item": "No print jirka ama frame la soo diri doonaa",
+        "printing": "daabacaadda files la siiyay la daabacaadda bixiyaha aad jeceshahay; hubi miisaanka ku jira ka hor inta aan dooran oo miisaanka",
+        "usage": "raac isticmaalka shakhsiga ah iyo shuruudaha liisan kale oo ku jira la soo dejinta"
+      },
+      "_source_hash": "af7fd1018209d1a0c50074203cc6c678ce973ea18a6dd07595de274e8d12da36"
+    },
+    "xvccaj": {
+      "summary": "Toddoba farshaxan oo xiiso leh oo laga soo xigtay dunida, magaalooyinka mustaqbalka, dabiiciga, iyo quruxda Mediterranean-ka—soo bandhig digital ah oo loogu talagalay maskaxda xiiseeya iyo meelaha abuurista.",
+      "full_description": "Farshaxanka Adduunka & Fikradaha — Toddoba ARTWORKS, LIMITLESS Adduunka\n\nSocdaal ka sii fog oo la yaqaan oo ku saabsan toddoba farshaxanno digital ah oo laga soo xigtay wax yaab leh, quruxda samada, naqshadeynta aragtida, dabiiciga, iyo ruuxda Mediterranean. Qayb kasta oo ka mid ah waxay fureysaa adduunka muuqaalka ah ee kala duwan, oo keenaya xiisadda, dhaqdhaqaaqa, iyo mabaadi'da meelaha casriga ah.\n\nLaga soo bilaabo qarsoodiga dunida ilaa magaalooyinka aan ku riyoonay dhismaha, laga soo bilaabo muuqaalada dabiiciga ah ee quruxda badan ilaa aragtida xeebta, ururintani waxay ku dabaaldegeysaa hababka badan ee farshaxanka uu ku ballaarin karo dareenka suurtogalka ah.\n\nWaa maxay ku jira\n\nDhammaan\n\nJannada jannada\n\nMagaalooyinka ee Maalinta\n\nCaalamiga ah\n\nMediterranean Dreams\n\nMuse Mediterranean\n\nJidka Jirka ee Elegance\n\nMeeshii ay ku taal\n\nA kala duwan ee ururinta qolal fadhiya, xafiisyada, studios abuurka, hoteellada, makhaayadaha, meelaha soo dhaweynta, iyo gudaha oo soo dhaweynaya farshaxanka muujinaya iyo qurxinta hadalka-bixin.\n\nSoo deji\n\nTani waa a digital alaab. No sawirka jirka ama frame la soo diri doonaa. Download files ku jira bundle iyo dib u eegista qaababkooda, miisaanka, iyo shuruudaha isticmaalka ka hor daabacaadda. Dooro miisaanka daabacaadda iyo qalabka ku habboon ee files la siiyay. Midabada waxay u kala duwanaan karaan si yar u dhexeeya shaashadda iyo natiijooyinka daabacan.\n\nKu ogaato farshaxanka aan xuduud lahayn. Ha ka dhigin mabaadi'da adduunkaaga.\n\nHall of Greatness — Farshaxanka aan xuduud lahayn.",
+      "category": "Elegance",
+      "product_details": {
+        "product_type": "Soo dejisan sawirka digital",
+        "delivery": "Soo dejinta digital instant iibka ka dib",
+        "physical_item": "Ma jiro daabacaad jir ama frame la keeni doonaa",
+        "printing": "Print files la siiyay la bixiyaha daabacaadda aad doorbidayso; hubi miisaanka ku jira ka hor intaadan dooran midabka",
+        "usage": "Fadlan raac shuruudaha isticmaalka ee ku jira soo dejinta",
+        "bundle_item_count": "Bandhigga ururinta; artworks gaar ah hoos ku qoran"
+      },
+      "_source_hash": "d8641c6b467679268bbf7fa3a052b8f3d1afec3f69b284f8c9413088a02c671d"
+    },
+    "wjxgxb": {
+      "summary": "Eternal Masar xusayaa weynta ee umad qaabeeyey by dhismaha monumental, Nile, iyo dhaxal dhaqanka aan caadi ahayn. Designed sida daabacaadda farshaxanka digital cajiib ah ee kuwa jecel ee dhaxalkii Masar, taariikhda, iyo timeless interiors.",
+      "full_description": "Masar\n\nRuuxa aan waqti lahayn ee umad hore\n\nSoo qaado weynta sii socota ee Masar ee hore ee deegaankaaga la Eternal Egypt, sawir gacmeed digital ah oo laga soo xigtay goobta weyn ee Piramides, Great Sphinx, iyo muuqaalka aan la joojin karin ee Nile.\n\nWaxaa loogu talagalay kuwa dareemaya xiriirka taariikhda, xusuusta dhaqanka, iyo dhaxalka farshaxanka ee Masar, isku-darkan wuxuu bixiyaa sawir qurxinta ka badan. Waxay muujinaysaa heerka, qarsoon, iyo sii socoshada horumarka oo afka muuqaalka ah uu sii wado inuu dunida dhiirrigeliyo.\n\nDhaqanka-indho-indheeyay jawi ka dhigaysa mid ka mid ah goobta muhiimka ah ee guryaha casriga ah, cilmi-baaris gaar ah, xafiisyada, hoteellada, goobaha dhaqanka, iyo gudaha oo xusaya taariikhda iyo farshaxanka.\n\nMaxaa ka mid ah in aad meel\n\nA mahadnaq muuqaal ah ee dhaxalka dhaqanka ee da'da Masar.\n\nA midab gaar ah ee dhaxal-inspired loogu talagalay interiors casriga iyo classic.\n\nA doorasho macno leh oo loogu talagalay ururinta iyo jecel taariikhda Masar.\n\nA digital farshaxanka muujinaya in la daabaci karo oo la qaabeeyey si ay u habboon yihiin booskaaga.\n\nWarbixinnada Waxyaabaha Digital\n\nTani waa soo dejinta digital. No sawirka jirka, poster daabacay, ama frame la soo diri doonaa. Soo dejisan faylasha la siiyay iibka iyo dib u eegista qaabka ay ku jiraan, miisaanka, iyo shuruudaha isticmaalka ka hor daabacaadda. Midabada waxay u kala duwanaan karaan si yar ku xiran shaashadda, printer, iyo qalabka la doortay.\n\nETERNAL EGYPT — A Civilization in Memory. A Legacy Beyond Time.\n\nHall of weynta\n\nART daabacaadda & SEARCH FACTS\n\nOgoow this ETERNAL Masar The Timeless Ruuxa of a Hore ee Ummadda digital farshaxanka daabacaadda loogu talagalay printable wall art, qurxinta guriga gaar ah, iyo interiors la fikirka ku dhisan. A downloadable farshaxanka loogu talagalay bandhigga shakhsiga ah, la daabacaadda doorasho loo doortay in ay u habboon yihiin file la siiyay iyo booskaaga.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "4 files · JPG, PDF, PNG, TXT · 9.1 MB",
+        "product_type": "Digital farshaxanka soo dejinta",
+        "delivery": "Instant digital soo dejinta ka dib iibka",
+        "physical_item": "No daabacaadda jirka ama frame la soo diri doonaa",
+        "printing": "daabacaadda files la siiyay la daabacaadda bixiyaha aad dooratay; hubi miisaanka ku jira ka hor inta aan dooran oo miisaanka",
+        "usage": "raac isticmaalka shakhsiga ah iyo shuruudaha liisan kale oo ku jira la soo dejinta"
+      },
+      "_source_hash": "af4bb9b510bcc457b6750421a6f2d14b3beabca71579f4cd5f83484617097abe"
+    },
+    "fgdpqp": {
+      "summary": "Wareegga maskaxda, waqtiga ma la xisaabin laakiin la sculpted. THE CLOCKMAKER'S DREAM beddela gears, nidaamyada samada, iyo qalabka suurtogalka ah in ay tahay fikirka suugaan ku saabsan xusuusta, abuurista, iyo joogitaanka waqtiga. Kulanka steampunk mabaadi'da iyo surrealism calaamad.",
+      "full_description": "Wareegga maskaxda, waqtiga ma la xisaabin laakiin la sculpted. THE CLOCKMAKER'S DREAM beddela gears, nidaamyada samada, iyo qalabka suurtogalka ah in ay tahay fikirka suugan ku saabsan xusuusta, abuurista, iyo joogitaanka waqtiga. Kulanka steampunk mabaadi'da iyo surrealism calaamad. Doorasho xiiso leh oo loogu talagalay buugaag, cilmi, xafiisyada, iyo naqshad-ku-jiid. Soo dejinta digital waxaa si toos ah loogu soo bandhigay sida faylka ZIP. Fadlan dib u eegista faylasha ku jira iyo qeexitaannada iibka ka hor intaadan dooran cabbirka daabacaadda.",
+      "category": "Elegance",
+      "product_details": {
+        "files_included": "1 file · ZIP · 36.8 MB"
+      },
+      "_source_hash": "30ab80fd3d5210fdd5ec47f8f60c9b5f121908831ac3a07129ffe69e98b6bb2c"
+    }
+  },
+  "ui": {
+    "navFeatured": "La Soo Saaray",
+    "navCollections": "Isku uruurinta",
+    "navGallery": "Sawirada",
+    "navArtist": "Artist",
+    "eyebrow": "A curated adduunka ee farshaxanka daabacan",
+    "heroTitle": "<em>Farshaxanka oo carrriesa sheeko.</em>",
+    "heroText": "Ku ogaato galbeedka qaabaysan by mabaadi'da, dhaxal, xiriirka aadanaha, iyo quruxda aan dhammaad lahayn ee farshaxanka. Waxyaabaha digital macno leh, diyaar u ah inay qayb ka mid ah meel.",
+    "explore": "Ka fiirso ururinta",
+    "discover": "Ku soo booqo galleri",
+    "featuredEyebrow": "Wargeysyada booqdayaasha ku soo laabtaan",
+    "featuredTitle": "Waxyaabaha la xusay",
+    "featuredText": "Lix shaqooyin macno leh. Lix hab oo kala duwan si ay u keenaan farshaxanka iyo dareenka aadanaha in aad meel.",
+    "collectionsEyebrow": "Kuuriyadda ururinta",
+    "collectionsTitle": "Ka ogaado ururinta",
+    "collectionsText": "Kuureeyay safarada ka dib farshaxanka, dhaqanka, iyo dareenka. Ka faa'iideysta ururinta ama u dhaqaaqa si toos ah u xaqiijinta amniga.",
+    "galleryEyebrow": "Sawirka galbeedka",
+    "galleryTitle": "Waxyaabaha farshaxanka ah",
+    "galleryText": "Raadi by artwork magaca, theme, ama category. Ka hor akhri sheekada ama u tag si toos ah u soo dejinta digital.",
+    "search": "Eeg magacyada iyo mawduucyada...",
+    "artistEyebrow": "Behind the gallery",
+    "artistTitle": "Ku saabsan Artist",
+    "artistP1": "waa farshaxanka ka dambeeya HALL OF GREATNESS, galbeedka digital madaxbannaan oo soo bandhigaya sheekooyinka muuqaalka asalka ah ee dhagaystayaasha adduunka.",
+    "artistP2": "Dhaqankiisu farshaxanka ah wuxuu isku keenaa sawir qaadista, tijaabinta, iyo isbeddelka digital. Shaqada kastaa waxay ka badan tahay qurxinta: jawi, xusuus, ama sheeko aadane.",
+    "artistP3": "Laga bilaabo dhaxalkii Masar iyo Kopt ilaa mawduucyo adduunka oo dhan ah naxariis, sharaf, rajo, iyo mabaadi'da, galereyadu waxay kuu soo dhaweyneysaa inaad ku raaxeysato farshaxanka habkaaga.",
+    "tagline": "Farshaxanka macno leh. Joogitaan joogto ah.",
+    "digital": "· Soo dejisan Instant ka mid ah Gumroad",
+    "privacy": "Khayraadka",
+    "terms": "Xirfadaha",
+    "contact": "Xidhiidh",
+    "gumroad": "dukaanka Gumroad ↗",
+    "exploreArt": "Ka faa'iideysta artwork ↗",
+    "discoverStory": "Ogoow sheekada ↗",
+    "buyDownload": "Iibso soo deji ↗",
+    "buyCollection": "Iibso ururinta ↗",
+    "exploreCollection": "Ka faa'iideysta ururinta ↗",
+    "printable": "Farshaxanka digitalka ee la daabacan karo",
+    "format": "· Print in size ku habboon ee aad meel",
+    "noResults": "Waxba ma aha oo la mid ah raadintaada.",
+    "catalogError": "Kaaliyaha galereya waa waqti la'aan. Fadlan dib u cusbooneysii bogga.",
+    "all": "Dhammaan",
+    "of": "ama",
+    "artworks": "farshaxanno",
+    "choose": "Dooro Af"
+  },
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "_ui_translation_status": "machine-generated-unreviewed",
+  "landing_ui": {
+    "← Return to the gallery": "← Ku soo laabto galleri",
+    "Language": "Af",
+    "An original digital artwork from HALL OF GREATNESS": "A asalka digital artwork ka HALL OF GREATNESS",
+    "A curated collection of meaningful digital artworks": "A ururinta curated of waxtar leh digital artworks",
+    "Explore & Get the Artwork ↗": "Ka faa'iideysta & Get Artwork ↗",
+    "Secure checkout and digital delivery on Gumroad.": "Adeegga lacag bixinta iyo soo dejinta digital ee Gumroad.",
+    "Artwork presentation": "Soo bandhigid farshaxan",
+    "Imagine it in a refined frame": "Maxaa yeelay, waa in aad ka fikirto in frame la nadiifiyey",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "A bandhigga labaad kaa caawin doona sawirka artwork sida bandhig frameed, inta lagu jiro ilaalinta tirada asalka ah.",
+    "Digital download": "Soo dejinta digital",
+    "Access your files after checkout": "Ku soo gasho faylashaada ka dib markii aad ka baxdo",
+    "Print your way": "daabac habkaaga",
+    "Choose a size suited to your space": "Dooro cabbirka ku habboon meel aad",
+    "Made to display": "Ku muuji",
+    "For homes, studios, and meaningful spaces": "Guryaha, studios, iyo meelo macno leh",
+    "The meaning behind the artwork": "Maxaa ka dambeeya artwork",
+    "More than decoration. A feeling that stays.": "In ka badan qurxinta. A dareenka in ay sii joogaan.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Waxaa loogu talagalay dadka doonaya inay deegaanka ay muujiyaan sheeko, xusuus, qiimaha, ama dareenka quruxda. Haatan shaqadan noqdaan qayb ka mid ah hawada aad abuurto iyo dareenka aad rabto inaad meel ku hayso.",
+    "Inside this collection": "Ku dhex kaydinta",
+    "One collection. Many stories.": "Mid ka mid ah ururinta.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Ka faa'iideysta farshaxanka shakhsiga ah ee ku jira ururintan. Qayb kasta oo ka mid ah waxay leedahay astaanteeda, halka ay wada abuuraan safar muuqaal ah oo ka faa'iideysanaya.",
+    "Complete artwork story": "Taariikhda artwork dhamaystiran",
+    "Full product description": "Tilmaamaha buuxa ee alaabta",
+    "What is included": "Waxa ku jira",
+    "Product specifications": "Tilmaamaha alaabta",
+    "Where it belongs": "Meeshii ay ku taal",
+    "Art that finds its place": "Farshaxanka oo ka heli meel",
+    "Before you purchase": "Ka hor intaadan iibsan",
+    "Digital download details": "Faahfaahinta soo dejinta digitalka",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Tani waa a digital alaab. No sawirka jirka ama frame la soo diri doonaa. iibka ka dib, Gumroad bixisaa helitaanka faylasha la ku daray la this. Fadlan dib u eegista faahfaahinta file iyo liisan la siiyay ka hor daabacaadda ama isticmaalka sawirka.",
+    "From download to display": "Laga soo dejisan ilaa muujinta",
+    "Make the artwork part of your space": "Samee farshaxanka qayb ka mid ah meelkaaga",
+    "01 · Purchase": "01 · Iibso",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Ku dhammaystir checkout aamin ah on Gumroad. iibka aad waa in ay tahay mid digital ah.",
+    "02 · Download": "Soo deji",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "U dhaqaaq faylasha la soo bandhigay la this alaabta ka soo Gumroad iyo dib u eegista qeexitaannada ku jira.",
+    "03 · Print": "daabac",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Dooro cabbirka daabacaadda in ay ilaaliso qaybaha asalka ah ee artwork. A daabacaadda xirfadle deegaanka ka caawin kartaa isku mid ah miisaanka in file la siiyay.",
+    "Please note:": "Fadlan xusuuso:",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "No sawirka jirka ama frame la soo diray. qaababka file la heli karo, xallinta, qaybaha, iyo shuruudaha isticmaalka waa kuwa ku qoran soo dejinta iyo liiska ku jira.",
+    "Let your space tell a story.": "Ha u oggolaan in aad meel sheeko sheego.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Dooro farshaxanka oo muujinaya waxa aad qiimo-iyo ha ka dhigan tahay inaad la nooshahay.",
+    "Get": "Ka hel",
+    "Art with a Soul. A Message Without Borders.": "Farshaxanka Naf leh. A Message Without Borders.",
+    "Digital artwork · Instant download through Gumroad": "Digital artwork · soo dejisan Instant ka dib markii Gumroad",
+    "Privacy": "Khayraadka",
+    "Terms": "Xirfadaha",
+    "Contact": "Xidhiidh",
+    "Gumroad store ↗": "dukaanka Gumroad ↗",
+    "· Digital download": "· Soo dejinta Digital"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Faylasha ku jira",
+    "product_type": "Nooca alaabta",
+    "delivery": "Soo-saarka",
+    "physical_item": "Waxyaabaha jirka ah",
+    "printing": "daabacaadda",
+    "usage": "isticmaalka",
+    "bundle_item_count": "Waxyaabaha ku jira bundle"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "A ururiyey farshaxanka la isku halleyn karo ee guryaha, xafiisyada, hoteellada, galleriyada, goobaha soo dhaweynta, iyo interiors curated.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Ka hesho THE ART OF ELEGANCE & SERENITY ↗",
+      "\\n": "\\ n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "A ururiyey farshaxanka la isku halleyn karo ee guryaha, xafiisyada, hoteellada, galleriyada, goobaha soo dhaweynta, iyo interiors curated.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Ka hesho EGYPTIAN & COPTIC HERITAGE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "A BOND ka sii WORD  quruxda jecel yahay aan shuruud lahayn",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "A art ururiyey ee guryaha, xafiisyada, hoteellada, galleriyada, goobaha soo dhaweynta, iyo interiors curated.",
+      "Get THE HUMANITY LEGACY ↗": "Ka hesho THE HUMANITY LEGACY ↗",
+      "\\n": "\\ n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A xariiq nadiif ah ee qolal fadhiya, qolal, xafiisyada, hoteellada boutique, xarumaha caafimaad, iyo gudaha loo tixgeliyey.",
+      "Get THE ART OF STILLNESS ↗": "Ka hesho THE ART OF STILLNESS ↗",
+      "\\n": "\\ n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A xariiq la nadiifiyey ee qolal fadhiya, qolal, xafiisyada, hoteellada boutique, xarumaha caafimaad, iyo interiors la tixgeliyey.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Ka hesho GEOMETRY OF ELEGANCE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "A hadalka muujinaya guryaha, studios abuurka, xafiisyada, xarumaha martida, iyo gudaha qaabaysan by mabaadi'da.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Ka hesho CITIES OF TOMORROW   Where Innovation Meets Imagination ↗",
+      "\\n": "\\ n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "A hadalka muujinaya guryaha, studios abuurka, xafiisyada, xarumaha martigelinta, iyo gudaha qaabaysan by mabaadi'da.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Ka hesho NATURE'S MAJESTY   The Timeless Beauty of Nature ↗",
+      "\\n": "\\ n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A xariiq nadiif ah ee qolal fadhiya, qolal, xafiisyada, hoteellada boutique, xarumaha caafimaad, iyo interiors la tixgeliyey.",
+      "Get MEDITERRANEAN DREAMS ↗": "Ka hesho MEDITERRANEAN DREAMS ↗",
+      "\\n": "\\ n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A xariiq nadiif ah oo loogu talagalay qolal fadhiya, qolal, xafiisyada, hoteellada boutique, xarumaha caafimaad, iyo interiors la tixgeliyey.",
+      "Get SILENT HORIZONS . ↗": "Ka hesho SILENT HORIZONS . ↗",
+      "\\n": "\\ n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A xariif ah oo loogu talagalay qolal fadhiya, qolal, xafiisyada, hoteellada boutique, xarumaha caafimaad, iyo gudaha loo tixgeliyey.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Ka hesho GOLDEN FLOW   The Art of Timeless Luxury ↗",
+      "\\n": "\\ n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "A hadalka muujinaya guryaha, studios abuurka, xafiisyada, xarumaha martigelinta, iyo gudaha qaabka by mabaadi'da.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Ka hesho BEYOND THE UNIVERSE 🌏 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A muhiim ah xarunta xarunta ee guryaha, xafiisyada, goobaha waxbarashada, galleri, iyo meelaha ay dhacdooyinka dadka muhiimka ah.",
+      "Get A Shelter of Love ♥ ↗": "Ka hesho A Shelter of Love ♥ ↗",
+      "\\n": "\\ n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A xariiq nadiif ah ee qolal fadhiya, qolal, xafiisyada, hoteellada boutique, xarumaha caafimaad, iyo interiors la tixgeliyey.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Ka hesho The Celestial Garden – A Dance Beneath the Moon ↗",
+      "\\n": "\\ n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A xariif ah oo loogu talagalay qolal fadhiya, qolal, xafiisyada, hoteellada boutique, xarumaha caafimaad, iyo gudaha loo tixgeliyey.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Ka hesho THE GOLDEN VEIL OF SERENITY ↗",
+      "\\n": "\\ n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "Mid ka mid ah dhulka. Mid ka mid ah mas'uuliyadda. fursadaha aan la tirin karin.",
+      "The story behind the image": "The story behind the image",
+      "More than decoration. A human story.": "More than decoration. A human story.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.",
+      "Where the artwork belongs": "Halka artwork ka mid ah",
+      "Created to live with meaning": "la abuuray in ay noolaadaan la macno",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "A statement striking for homes, offices, schools, environmental organizations, reception areas, and creative spaces.",
+      "A distinctive focal point for considered interiors": "A distinctive focal point for considered interiors",
+      "A conversation piece with a message beyond trends": "A conversation piece with a message beyond trends",
+      "A thoughtful digital art choice for personal spaces": "A thoughtful digital art choice for personal spaces",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Tani waa mid digital ah oo alaab ah. No physical print ama frame la soo diri doonaa. iibka ka dib, soo dejisan faylasha la siiyay on Gumroad. Review the included file specifications, printing guide, iyo shakhsi-u isticmaalka liisan ka hor daabacaadda. Dooro size daabacaadda iyo adeegga ku habboon in files la siiyay.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Dooro a artwork in ay muujiyaan waxa aad qiimaha-iyo u oggolaan in macnaheedu yahay nool lagaaga.",
+      "Get The Hand That Holds Tomorrow ↗": "Get The Hand That Holds Tomorrow ↗",
+      "\\n": "\\n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Wajiyo kala duwan. Midba midka kale. Xidhiidh weligiis ah.",
+      "The story behind the image": "Taariikhda ka dambeysa sawirka",
+      "More than decoration. A human story.": "In ka badan qurxinta. Taariikhda aadanaha.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Ivory iyo obsidian ilaaliyaan gaarnimada waji kasta. Xidhiidhka dahabka ah wuxuu muujinayaa dareenka wadaaga, rajada, iyo rabitaanka in lagula dhaqmo sharaf. Midnimada maahan midnimo; waxay bilaabmaysaa marka aan aqoonsano midba midka kale ee aadanaha.",
+      "Where the artwork belongs": "Meesha uu ku yaal sawirka",
+      "Created to live with meaning": "Waxaa loo abuuray inuu noolaado macno",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Warbixin la hagaajiyey oo loogu talagalay guryaha casriga ah, xafiisyada fulinta, galereyadaha, meelaha martigelinta, iyo meelaha gudaha ee qiimeeya wada hadalka dhaqanka iyo xiriirka aadanaha.",
+      "A distinctive focal point for considered interiors": "A midab midab leh oo loogu talagalay meelaha gudaha",
+      "A conversation piece with a message beyond trends": "Qayb ka mid ah wada hadalka oo leh fariin ka badan isbeddelada",
+      "A thoughtful digital art choice for personal spaces": "A doorasho farshaxan digital ah oo la tixgeliyey meelaha shakhsiga ah",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Tani waa alaab digital ah. Ma jiro daabacaad jir ah ama qaanso la soo diri doonaa. Iibka ka dib, soo deji faylasha ku jira Gumroad. Dib u eeg faahfaahinta faylka ku jira, tilmaamaha daabacaadda, iyo liiska isticmaalka shakhsiga ah ka hor daabacaadda. Dooro cabbirka daabacaadda iyo adeegga ku habboon faylasha la siiyay.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Dooro sawirka muujinaya waxa aad qiimeyso—iyo u oggolaan inaad macnaheedu kula noolaato.",
+      "Get The Golden Thread of Humanity ↗": "Ka hel Xidhiidhka Dahabka ah ee Aadanaha ↗",
+      "\\n": "\\n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A muhiim ah xarunta xarunta ee guryaha, xafiisyada, goobaha waxbarashada, galleri, iyo meelaha ay dhacdooyinka aadanaha muhiimka ah.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "Ka hesho ROOTS OF TENDERNESS ♥ ↗",
+      "\\n": "\\ n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A xariif ah oo loogu talagalay qolal fadhiya, qolal, xafiisyada, hoteellada boutique, xarumaha caafimaad, iyo gudaha loo tixgeliyey.",
+      "Get AURELLE 👑 ↗": "Ka hel AURELLE 👑 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "quruxda xasiloonida. xoogga gudaha.",
+      "The story behind the image": "sheekada ka dambeeya sawirka",
+      "More than decoration. A human story.": "ka badan qurxinta. A sheeko aadanaha.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "A qaabka aadanaha isku dar ah noqdaa calaamad ah in la aqoonsado. iftiinka dahabka ah ee muujinaya buuxinta; botanical faahfaahinta tilmaam in la cusbooneysiiyo. shaqada noo soo celinaysaa in xoogga aan u baahan tahay in ay la maqli karo-iyo in xasiloonida ay noqon kartaa qaab quruxda.",
+      "Where the artwork belongs": "halkaas oo uu ku yaal sawirka",
+      "Created to live with meaning": "abuuray in ay noolaadaan la macno",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "A midab leh, xarunta dhexe ee qolka fadhiga, xafiisyada gaarka ah, goobaha soo dhaweynta, hoteellada, xarumaha caafimaadka, iyo gudaha ee casriga ah.",
+      "A distinctive focal point for considered interiors": "A midab leh, xarunta dhexe ee loogu talagalay interiors la tixgeliyey",
+      "A conversation piece with a message beyond trends": "A hadalka qaybta la fariin ka sii badan trends",
+      "A thoughtful digital art choice for personal spaces": "A digital farshaxanka doorasho u fikirka ah ee xarumaha shakhsiga ah",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Tani waa mid digital ah oo alaab ah. No print jirka ama frame la soo diri doonaa. iibka ka dib, soo dejisan faylasha la siiyay on Gumroad. eeg faahfaahinta file ku jira, daabacaadda tilmaamaha, iyo shakhsiga-u isticmaalka liisan ka hor daabacaadda. Dooro midabka daabacaadda iyo adeegga ku habboon in files la siiyay.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Dooro sawirka in ay muujiyaan waxa aad qiimaha-iyo u oggolaan in macnaha ay la nool yihiin.",
+      "Get The Art of Inner Peace ↗": "Get The Art of Inner Peace ↗",
+      "\\n": "\\n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A xariif ah oo loogu talagalay qolal fadhiya, qolal, xafiisyada, hoteellada boutique, xarumaha caafimaad, iyo gudaha loo tixgeliyey.",
+      "Get SERENITY 🤍 ↗": "Ka hesho SERENITY 🤍 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A muhiim ah xarunta xarunta ee guryaha, xafiisyada, goobaha waxbarashada, galleri, iyo meelaha ay dhacdooyinka aadanaha muhiim u ah.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Ka hesho THE TREE THAT REFUSED TO DIE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A muhiim ah xarunta xarunta ee guryaha, xafiisyada, goobaha waxbarashada, galleri, iyo meelaha ay dhacdooyinka aadanaha muhiimka ah.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Ka hesho THE LIGHT WE LEAVE EACH OTHER 🕯 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "Maalinta soo socota waxaa dhisay gacmo badan.",
+      "The story behind the image": "Taariikhda ka dambeysa sawirka",
+      "More than decoration. A human story.": "Wax ka badan qurxinta. A sheeko aadanaha.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Gacanta kasta oo ka mid ah waxaa ka mid ah nolosha, naxariis, qurbaan, ama fursad la siiyay. Carruurta u taagan yahay qof kasta oo dhalinyaro ah oo riyada u baahan dhiirigelinta iyo taageerada. Iyadoo la socda, gacmaha noqdaan saldhigga-iyo rajada noqotaa wax aan dhisno midba midka kale.",
+      "Where the artwork belongs": "Meesha ay ku taal farshaxanka",
+      "Created to live with meaning": "Loo abuuray in ay noolaadaan la macno",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Warbixin macno leh oo loogu talagalay guryaha qoyska, iskuulada, buugaagta, xafiisyada, studios, iyo meelaha ay ku dabaal degaan waxbarashada iyo xiriirka aadanaha.",
+      "A distinctive focal point for considered interiors": "A dhibicda fogaanta u gaar ah ee interiors la tixgeliyey",
+      "A conversation piece with a message beyond trends": "A qayb hadal ah oo la xiriirta farriin ka baxsan dhaqdhaqaaqa",
+      "A thoughtful digital art choice for personal spaces": "A fikrad digital art doorasho u ah meelo shakhsi ah",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Tani waa mid digital ah. Print ama frame la soo diri doonaa. iibka ka dib, soo dejisan faylasha ku jira Gumroad. eegista faahfaahinta file ku jira, daabacaadda tilmaame, iyo shahaadada isticmaalka shakhsiga ah ka hor daabacaadda. Dooro cabbirka daabacaadda iyo adeegga ku habboon faylasha la soo bandhigay.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Dooro sawirka farshaxanka ah oo muujinaya waxa aad qiimo-iyo ha ka dhigan tahay inaad la nooshahay.",
+      "Get A Stairway of Hands ↗": "Ka hel xagga gacmaha ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Waxa aan maanta ilaalino maanta waxay noqon doontaa bartamaha.",
+      "The story behind the image": "Taariikhda ka dambeeya sawirka",
+      "More than decoration. A human story.": "In ka badan qurxinta. A sheeko aadanaha.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "Dhalashada hore waxay leedahay khibrad; dhalinyarada waxay leedahay suurtagalnimada. Dhexdooda waxaa ku yaal ballan: in la ilaaliyo waxa nolosha ku nool iyo soo gudbiyo mustaqbalka ku habboon kuwa dhaxla. Tani waa jacaylka loo muujiyay sida mas'uuliyadda.",
+      "Where the artwork belongs": "Halka uu ku yaal farshaxanka",
+      "Created to live with meaning": "Waxaa la abuuray in ay noolaadaan la macno",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "A qayb ka mid ah fikirka guriga qoyska, cilmi, xafiisyada, goobaha waxbarashada, iyo qof kasta oo qiimeeya xusuusta, qoyska, iyo mustaqbalka.",
+      "A distinctive focal point for considered interiors": "A mid ka mid ah goobta dhexe ee u gaar ah ee loo tixgeliyo interiors",
+      "A conversation piece with a message beyond trends": "A hadalka qaybta la xiriira fariin ka baxsan trends",
+      "A thoughtful digital art choice for personal spaces": "A doorasho farshaxanka digital ka fikirka ah ee goobaha shakhsiga ah",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Tani waa mid ka mid ah alaabta digital. No print jirka ama frame la soo diri doonaa. iibka ka dib, soo dejisan faylasha la siiyay on Gumroad. Dib u eegista faahfaahinta file ku jira, daabacaadda tilmaamaha, iyo shakhsiga-u isticmaalka liisan ka hor daabacaadda. Dooro cabbirka daabacaadda iyo adeegga ku habboon faylasha la siiyay.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Dooro farshaxanka in ay muujiyaan waxa aad qiimaha u ah—iyo u oggolaan in macnaheedu ku nool yihiin lagaaga.",
+      "Get The Legacy of Generations ↗": "Get The Legacy of Generations ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A xariif ah oo loogu talagalay qolal fadhiya, qolal, xafiisyada, hoteellada boutique, xarumaha caafimaad, iyo gudaha loo tixgeliyey.",
+      "Get The Mediterranean Muse ↗": "Ka hesho The Mediterranean Muse ↗",
+      "\\n": "\\ n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "Mid Earth. Mid Dadnimo. Mid Awood.",
+      "The story behind the image": "Taariikhda ka dambeeya sawirka",
+      "More than decoration. A human story.": "In ka badan qurxinta. A sheeko aadanaha.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "Gacmaha ku wareegsan dunida ka mid ah dadka da'da iyo asalka. The dhulka la burburay ku hadla waxa khatar ah; xagal cagaaran iyo iftiinka dahabka ah ee ujeedada waxa aan weli ka ilaalin. Message waa aan quusan. Waa masuuliyad wadaagaan, la muujiyay.",
+      "Where the artwork belongs": "Halka sawirka ku saabsan",
+      "Created to live with meaning": "La abuuray in ay noolaadaan la macno",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "A fikrad-soo jiidasho ah, xarunta dhexe ee guryaha, xafiisyada, goobaha waxbarashada, galereya, iyo deegaanka ku saabsan in la sii wado.",
+      "A distinctive focal point for considered interiors": "A mid ka mid ah xarunta dhexe ee u gaar ah ee la tixgeliyey interiors",
+      "A conversation piece with a message beyond trends": "A hadalka qaybta la mid ah fariin ka baxsan trends",
+      "A thoughtful digital art choice for personal spaces": "A digital sawirka digital doorasho u ah xarumaha shakhsiga ah",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Tani waa mid digital ah oo ah alaab. No print jirka ama frame la soo diri doonaa. iibka ka dib, soo dejisan faylasha la siiyay on Gumroad. Review faahfaahinta file ku jira, daabacaadda tilmaamaha, iyo shakhsiga-u isticmaalka liisan ka hor daabacaadda. Dooro mid print size iyo adeegga ku habboon in files la siiyay.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Dooro sawirka in ay muujiyaan waxa aad qiimaha—iyo u oggolaan in macnaheedu yahay la nool yahay lagaaga.",
+      "Get Last Cry of Earth ↗": "Get Last Cry of Earth ↗",
+      "\\n": "\\n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A dheeraad ah oo u gaar ah guryaha, cilmi baarista gaarka ah, xafiisyada, galereya, matxafka, hoteellada, iyo meelaha dhaqanka.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Ka hesho THE GOLDEN GAZE 👁 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A dheeraad ah oo u gaar ah guryaha, cilmi baarista gaarka ah, xafiisyada, galereya, matxafka, hoteellada, iyo meelaha dhaqanka.",
+      "Get The Queen Of The Nile 👑 ↗": "Ka hesho The Queen Of The Nile 👑 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A dheeraad ah oo u gaar ah guryaha, cilmi baarista gaarka ah, xafiisyada, galereya, matxafka, hoteellada, iyo meelaha dhaqanka.",
+      "Get The Coptic Soul of Egypt ↗": "Ka hesho The Coptic Soul of Egypt ↗",
+      "\\n": "\\ n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE A xuska quruxda timeless Masar, halkaas oo sharaf xasiloon oo ka mid ah joogitaankii boqor la kulma riiqda weligeed ah ee Nile. Golden...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A dheeraad ah oo u gaar ah guryaha, cilmi baarista gaarka ah, xafiisyada, galereya, matxafka, hoteellada, iyo meelo dhaqanka.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "Ka hesho THE NILE'S ETERNAL GRACE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Qaar ka mid ah saaxiibtinimo ayaa la dareemay by qalbiga, aan ka hadalka. Xuska xiriirka aan caadi ahayn...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A muhiim ah, xarunta xarunta ee guryaha, xafiisyada, goobaha waxbarashada, galleriyada, iyo meelaha ay dhacdooyinka aadanaha muhiim u ah.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Ka hesho A BOND BEYOND WORDS The Beauty of Unconditional Love ↗",
+      "\\n": "\\ n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION — TODDOBKA ARTWORKS, LIMITLESS WORLDS Socdaal ka sii fog oo la yaqaan ka dib markii uruurinta toddoba digital artworks dhiirigeliyey by cosmos...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A xamaasad la nadiifiyey ee qolal fadhiya, qolal, xafiisyada, hoteellada boutique, wellness, iyo gudaha la tixgeliyey.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Ka hesho GLOBAL ART & IMAGINATION ↗",
+      "\\n": "\\ n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Soo qaado weynta sii socda ee Masar qadiimiga ah ee deegaankaaga la Eternal Masar, a...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A dheeraad ah oo u gaar ah guryaha, cilmi baarista gaarka ah, xafiisyada, galereya, matxafka, hoteellada, iyo meelaha dhaqanka.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Ka hesho ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗",
+      "\\n": "\\ n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "Inside a workshop maahmaahsan, waqtiga ma la xisaabiyo laakiin sculpted. THE CLOCKMAKER'S DREAM beddelaa gears, nidaamyada samada, iyo qalabka suurtogalka ah...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A xamaasad la hagaajin karo ee qolal fadhiya, qolal, xafiisyada, hoteellada boutique, xarumaha caafimaad, iyo gudaha la tixgeliyey.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Ka hel THE CLOCKMAKER'S DREAM ↗",
+      "\\n": "\\ n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
+}

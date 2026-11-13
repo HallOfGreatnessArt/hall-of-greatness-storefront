@@ -1,0 +1,710 @@
+{
+  "products": {
+    "oubirh": {
+      "summary": "Wasu ayyuka takwas na sana'a masu kyau suna kawo haske na zinariya, siffofi masu zaman lafiya, siffar sihiri mai kyau, da kuma haɗin gani don kayan ciki na zamani masu ban sha'awa.",
+      "category": "Collection",
+      "_source_hash": "85810573c609f032749049f0af3efd548b47b50b60c74fae8bbbcb5e0cfaaf2c"
+    },
+    "hqpird": {
+      "summary": "Wasu ayyuka uku na musamman na zane suna bikin ruhun da ke da tsayi na al'adu na Masar da Coptic, da tunawa ta al'adu, da kuma kyau na Masar wanda bai da tsawo.",
+      "category": "KCharselect unicode block name",
+      "_source_hash": "bbee15015588f3854edb7cce4f6ee745a63ecba99e41de9335d42b77a925b26e"
+    },
+    "wdtvt": {
+      "summary": "Wasu ayyuka goma masu karfi game da jin tausayi, juriya, dangantaka da kuma fatan dan Adam. Asusun kwafin zane mai cikakke don wurare masu ma'ana da kuma ciki mai tunani.",
+      "category": "Collection",
+      "_source_hash": "0beaa1225adf5643d8bf3173e7f93d6f8ebe7ebb067e86674e4e8e27bf908560"
+    },
+    "mxrljy": {
+      "summary": "The Art of Stillness na kira ka ka da ka daina da kuma sake gano kyau na wani lokaci na kwanciyar hankali. An jawo hankalin ka da siffofin tunani, furannin lotus, ruwa mai gudana, da hasken zinariya mai zafi, wannan aikin fasahar dijital mai kwanciyar hankali yana kawo yanayi mai tunani ga wuraren jin dadi da kuma ciki mai kyau.",
+      "category": "Elegance",
+      "_source_hash": "adcd68bc42846100ab6f13044e8972c34ee7fe07d1f4702b4d1d9fdc7b14e78c"
+    },
+    "gusqyc": {
+      "summary": "Geometry of Elegance ya yi bikin taron irin gini, halayen halitta, da kuma kayan ado na zamani. Emerald tones, ivory surfaces, sculptural geometry, da kuma kayan ado na zinariya sun samar da wani aikin sana'a mai ban sha'awa ga gidaje masu ban sha'awa, ofisoshi, da kuma wuraren da ake karbar bakuncin.",
+      "category": "Elegance",
+      "_source_hash": "84014823691b93211841d3dbcf2452a78fd435d388b74dad7f7febe4d752c69f"
+    },
+    "aenwi": {
+      "summary": "Ka yi tunanin birnin da aka tsara ta hanyar yiwuwar. Cities of Tomorrow wani aikin fasahar dijital ne mai gani wanda ke nuna tunanin gine-gine, ci gaba, da kuma son mutum na gina wata makoma mai haske. Wani rubutun bayani mai ban sha'awa don gidajen zamani, dakunan zane-zane, wuraren fasaha, da ofisoshin zamani.",
+      "category": "Global",
+      "_source_hash": "e2173f80b274ea619b175b5480c483771929f3d1c9a75ce2893eea0775e30e96"
+    },
+    "gynmhv": {
+      "summary": "Ka bar girman da ke cikin yanayi ya canza wurinka. Mai girman halitta yana nuna kyau na dawo da duwatsu, ruwa, gandun daji, da ruwa mai haske a cikin wani zane mai ban sha'awa wanda ke nuna 'yanci, sabuntawa, da kwanciyar hankali. Wani rubutu mai ban sha'awa don gidaje da wuraren da ake karbar bakuncin.",
+      "category": "Global",
+      "_source_hash": "e6e5a3263c07964a62266c9dbbc5d1e7eb389514c1ade5780eebc6e4228f4b2e"
+    },
+    "jrsgce": {
+      "summary": "Ka kawo zafi na gudun Mediterania cikin al'amuran yau da kullum. Mediterranean Dreams ya kama da soyayya na gine-ginen bakin teku, ruwa mai haske mai launin ruwan kasa, dakuna masu furanni, da hasken sa'a mai daraja. Wani zane na dijital mai karbar bakuncin gidaje, dakunan shakatawa, dakunan cin abinci, da kuma wuraren ciki masu dauke da hankalin tafiya.",
+      "category": "Elegance",
+      "_source_hash": "f26a8d189f4afe6a0a7a8d671fcbd37c54bd461cdba3f4d15d77243c056e17e5"
+    },
+    "ukxrmq": {
+      "summary": "Ka samu wani lokaci na kwanciyar hankali cikin kyawun wani tsaunuka mai kwanciyar hankali. Silent Horizons wani aikin fasahar dijital ne wanda aka samo shi daga halitta wanda aka yi da ruwa mai tsayi, tsaunuka masu nisa, hasken dare mai kyau, da kuma wani irin jin daɗin sakewa. Wani launi mai kyau na ƙasa don gidaje masu kwanciyar hankali, ofisoshi, da kuma wuraren jin daɗin rai.",
+      "category": "Elegance",
+      "_source_hash": "003e93a0d92367744addfb51152fe6da6c27ac08144b5c89e1e73dd7fec007c7"
+    },
+    "yhkokf": {
+      "summary": "Golden Flow na kawo dabi'ar dabi'ar marble da kuma kyau na zinariya cikin wani tsari na zamani. Shafuka masu duhu da haske suna haifar da zurfi, motsi, da kuma kayan ado na ƙarshe-asalin zane-zane na dijital don kayan ciki na zamani.",
+      "category": "Elegance",
+      "_source_hash": "fc65d52d8cd76ff8b23097321c08f7ca24b70659818dea5dda62f894d09e4c9c"
+    },
+    "nxkxyq": {
+      "summary": "Ka shiga cikin wani ra'ayi mai haske na duniyar. Bayan duniyar tana nuna sirrin, girman, da kuma ban sha'awa na sararin samaniya ta hanyar wani aikin fasaha na dijital mai kama da mafarki wanda aka samo shi daga galaxies, hasken sama, da kuma yiwuwar da ba ta da iyaka. Wani rubutun magana mai ban sha'awa ga cikin zamani da hankalin masu sha'awa.",
+      "category": "Global",
+      "_source_hash": "16177585eb4768f120133dcd37a54ecc8a9108c42b39834cfe2e329ac00623d3"
+    },
+    "mzlqxg": {
+      "summary": "A Shelter of Love ya yi magana ne kan wani abu mai ma'ana mai tsawo: wani mahaifi yana tabbatar da cewa wani yaro ba zai taba fuskantar ruwan sama ba a kansa. A kan wani dare mai haske na birnin, wannan aikin kwaikwayo mai jin dadin rai yana nuna karewa, aminci, iyali, da kuma ƙarfin da ba a iya shakka ba na soyayya.",
+      "category": "Humanity",
+      "_source_hash": "5c0e78bf9d27136335daa7e34ccf9da42dc590a56d083c83815407b47244dac0"
+    },
+    "etqsav": {
+      "summary": "A ƙarƙashin wata mai haske, launin, motsi, da abota sun haɗu a cikin Gidajen Sama. Wannan aikin zane mai kama da mafarki yana nuna mutumci, tafiyar da aka raba, 'yanci, da kuma kaunar mace ta hanyar duniyar mafarki mai ban mamaki. Wani rubutun bayyananniyar magana don bayyana, da kuma ciki mai ban mamaki.",
+      "category": "Elegance",
+      "_source_hash": "79723050f56e46edb2f774883a51d0a22ea883d9b80d00bd2c223954ce0c9346"
+    },
+    "vwrllor": {
+      "summary": "The Golden Veil of Serenity shi ne wani hoton na ƙarfin da ya yi zafi, girmamawa, da kuma zamanin da ba a taba gani ba. Rich black forms da luminous gold suna samar da wani nazarin gani-a digital artwork na bayyanawa ga cikin gida da kuma masu tarawa da aka jawo zuwa hoton mai ƙarfi.",
+      "category": "Elegance",
+      "_source_hash": "3fbd51fc0b3144dfae0749e5c04814f34b8c72ab9c458a6ae346494c7a678894"
+    },
+    "gkwadk": {
+      "summary": "A tsire-tsire da aka riƙe a cikin hannayen mutum ya zama wata alama na sabuntawa da kulawa raba.",
+      "category": "Humanity.",
+      "_source_hash": "b3d3ed2cdc9e6333f7aaf330e1821220c7ad12874771ec45ca02ca1fc18fbd9f"
+    },
+    "rglfun": {
+      "summary": "Na biyu daban-daban halaye, haɗuwa da wani alamar na gari na mu raba da girman kai na mutum.",
+      "category": "Humanity",
+      "_source_hash": "7621f26df00b476963956773c9499fcec7b87189855fb05b55ebef7cd33c4268"
+    },
+    "cotnkm": {
+      "summary": "Wuraren Tenderness ne kyauta ga soyayya da ya zama wani bangare na wanda muke. Ta hanyar wani bayyanar da sculptural gani na wata uwa da yaro, da aikin kwaikwayo ya yi bikin kare, baftisma, mallaka, da kuma damuwa da ke da karfi. A cikin ma'ana mai zurfi ga iyali da kuma tunani da kuma dakunan ajiya.",
+      "category": "Humanity",
+      "_source_hash": "89071cfe9a0d1d8d3c14646a7e82629d42e4e1b858b782ebe96d94ff24be625e"
+    },
+    "kaztbw": {
+      "summary": "AURELLE ya juya da al'ada na yau da kullum na kofi a cikin wani mai ban dariya bikin na kasancewa, matashi da kuma kwanciyar hankali na musamman. Luminous gold, mai zurfi black, da kuma zafi kofi tones halitta wani daban digital artwork ga stylish gidaje, coffee corners, boutique cafes, da kuma zamani na ciki.",
+      "category": "Elegance",
+      "_source_hash": "50f25bf7ff18b06b831f14e21450ee7562896355ad94503c70b68b66a14178bb"
+    },
+    "cuitvq": {
+      "summary": "Tsarin zane da haske na zinariya sun bayyana ƙarfin da ke cikin daidaito na ciki.",
+      "category": "QPrintPreviewDialog",
+      "_source_hash": "2ccb896bdf8f18e66ce1bc1ca17fecfdd6eed315302fe2ee1d2ef8c5532b18b4"
+    },
+    "rabhc": {
+      "summary": "Serenity wani nazarin gani ne akan juriya, daidaito, da ƙarfin da ke zaune a cikin. Yana da siffar da ta dace da kuma hasken rana mai zinariya don samar da wani wuri mai kyau don wuraren da aka ware don tunani, kwanciyar hankali, da kuma zane na zamani.",
+      "category": "Elegance",
+      "_source_hash": "3e36120477fa3535261c200c5e9210726bf08cb1968d35b25965f08e276b936f"
+    },
+    "ycltf": {
+      "summary": "Gidan da Ya Ki Mutuwa ya faɗa mana labarin juriya: har ma a cikin rushewar, rayuwa na iya samun hanya ta gaba. Wurarenta na zama manyan tituna a tsakanin wuraren da aka rushe, suna mai da tsira zuwa haɗin kai da sabuntawa. Wani aikin sana'a mai ma'ana ga duk wanda yake da imani da cewa fatan zai iya girman kai.",
+      "full_description": "GIDAN DA YA KI MUTUM\n\nHar Ma A Cikin Ruwan, Rayuwa Ta Kansa.\n\nMe zai faru idan mafi girman alamar fatan ba wani ginin da aka gina ba ne, amma ita ce wata itace mai rai da ta ki amincewa da barin?\n\nKu yi tunanin wata birnin da ta rasa muryarsa. Gidaje sun faɗi, tituna sun ɓace a ƙarƙashin rushewar, kuma alamomin rayuwar dan Adam sun yi kama da sun ɓace a cikin ɓoye. Amma, a cikin zuciyar wannan wuri da aka manta, itace mai ban sha'awa ta ci gaba da rayuwa.\n\nWurarenta ba su kawai neman ƙasa ba. Sun kaiwa ta hanyar bango mai rushewa, sun ƙunshi ginin da aka rushe, kuma sun faɗi a tsakanin ginin da aka raba, suna mai da rushewa zuwa haɗin kai. Wurarenta na tashi zuwa sama, suna ɗaukar ganye masu launin shuɗi a ƙarƙashin hasken da ke dauke da dutse.\n\nWannan shi ne mafi girma daga wani labari na halitta mai neman dawo da birni da aka rushe. Shi ne labarin da ke da matukar tashin hankali game da ruhun dan Adam.\n\nGidan yana wakiltar duk wani mutum da ya sha wahala ba tare da ya bari wahala ta bayyana masa makomarsa ba. Yana magana ne ga waɗanda suka rasa kusan dukkanin abin da suke da shi, amma har yanzu suna samun ƙarfin da za su fara daga farko. Ga waɗanda aka raunana ta rayuwa, amma ba su yarda zukatansu su zama baƙi. Ga waɗanda suke fahimtar cewa tsira ba kawai kasancewar rayuwa ba ce, amma kuma samun ƙarfin da za su yi girma a gaba.\n\nWurarenta suna wakiltar juriya: ƙarfin da ba a gani wanda ke riƙe mu tare lokacin da duk abin da ke kusa da mu ya faɗi. Wurarensu suna wakiltar haɗin kai, haɗin kai, da kuma yiwuwar sake gina dangantaka da al'umma bayan rabuwa da asara.\n\n\"Wannan dakin shuɗi yana nuna mana cewa ba lallai ba ne halaka ta zama babi na ƙarshe,\" \"kuma tsuntsaye suna tashi zuwa sama suna tunatar da mu cewa 'yanci da sake farfadowa na iya dawowa,\" \"kuma har ma bayan mafi duhu daga cikin lokacin shekara.\"\n\nKuma hasken da ke a bayan rudu yana ba da saƙo mai ƙarfi amma mai ƙarfi: al'amuran gaba ba su dogara da abin da aka rushe ba, amma da abin da ke da ƙarfin gwiwa na ci gaba.\n\nWannan aikin kwaikwayo yana magana da duk wanda ya fuskanci wani babi mai wahala a cikin rayuwa, duk wanda ya sake gina kansa bayan asara, da duk wanda yake imani da cewa fatan ba rashin wahala ba ne, amma ƙarfin ci gaba da kasancewa a duk da haka.\n\nShi ne wani ma'ana sanar da sashe ga wani gidan zama, ofishi, dakin karatu, mai zane studio, ko wani wuri inda juriya, sabuntawa, da kuma sha'awa da za su cancanci wani wuri. Shi ma zai iya zama wani kyauta mai tunani ga wani mutum fara wani sabon babi, ya shawo kan wahala, ko samun hakuri ya tashi a sake.\n\nKa bar wannan itacen ya tuna maka cewa abin da ka gabata ba zai iya hana abin da ke gaba ba, kuma ko da rayuwar ta bar ka a cikin rushewa, wani abu a cikinka zai iya ci gaba da girma.\n\nBa a bayyana ka da abin da ya ɓace a kusa da kai ba, amma an bayyana ka da abin da yake ci gaba da girma a cikinka.\n\nQFontDatabase\n\nArt with a Soul. A Message Without Borders (a cikin Ingilishi).\n\n@ action\n\nDiscover this THE TREE THAT REFUSED TO DIE digital art print for printable wall art, distinctive home décor, and thoughtfully designed interiors. A downloadable artwork for personal display, with printing options chosen to suit the supplied file and your space.",
+      "category": "QFontDatabase",
+      "product_details": {
+        "files_included": "1 fayil · ZIP · 29.1 MB",
+        "product_type": "QFileDialog",
+        "delivery": "Saukewa ta dijital a lokaci guda bayan siyar",
+        "physical_item": "Ba za'a aika da wani kwafin jiki ko firam ba",
+        "printing": "Cire fayilolin da aka bayar tare da mai ba da sabis na cire da kake so; duba girman da aka haɗa kafin ka zaɓi girma",
+        "usage": "Bi ka'idojin amfanin kai da sauran ka'idojin lasisi da aka haɗa da saukewa"
+      },
+      "_source_hash": "d9bff692f10639a5edca9063641cbb3c31081b0579c89bb9cc9635499e614060"
+    },
+    "bctcdz": {
+      "summary": "Hasken da muke barin kowannenmu ya nuna girmamawa ga alheri, hikima da jarumtar da aka samu daga wani zamani zuwa wani. Wani fitila mai haske ya zama alama ce ta fatan da muke samu—da hasken da muke zaɓar rabawa. Wani aikin fasaha mai motsi don gidaje, ofisoshi da kyautar da ke da ma'ana.",
+      "full_description": "HASKE DA MUKE BARWA AKE ƊAUKA\n\nHasken da ya fi girma shi ne wanda muke barin.\n\nWasu fitilu ana nufin su haska wani lokaci. Wasu kuma ana nufin su haska ƙarni.\n\nAkwai gaskiyar da ke da tsarki da ke haɗa rayuwar kowane mutum: babu ɗaya daga cikinmu da zai fara tafiyarsa cikin haske gaba ɗaya. A wani wuri a kan hanya, wani ya kai ga mu — mahaifi, malami, wani dan waje, wani abokinka, ko wani wanda kaunarsa ba za mu manta da ita ba. Suna ba mu wani abu da zai taimaka mana mu sami hanyarmu: wani abu na fatan, wani ɓangare na hikima, wani aiki na tausayi, ko kawai jarumtar da za mu ci gaba da tafiya.\n\nKuma a wani rana, za mu gano cewa hasken da muka samu a lokacin yanzu yana namu ne da za mu raba.\n\nHASKE DA MUKE BARWA AKE ƊAUKA wani kyautar sana'a ne ga wannan al'ada ta musamman ta mutum — abin da ba a gani na alheri, ilmi, so, jarumta da kuma fatan da ke wucewa daga wani zamani zuwa wani.\n\nA tsakiyar wannan aikin, fitila ta zinariya ta daɗe tana motsa daga hannun ɗaya zuwa na biyu. A kusa da ita, fuskõkin mutane na shekaru da shekaru daban-daban suna haɗuwa a cikin wani lokaci na haɗin kai. Masu shekaru suna wakiltar hikima da kuma ra'ayin waɗanda suka zo a gabanmu. Mutanen da suka fi shekaru suna wakiltar alkawari na abin da ke tafe. A tsakaninsu, fitilar ta zama wata alama mai ƙarfi ta ci gaba: wata tunatarwa cewa manyan nasarorin da al'umma ta samu ba a ƙayyade su ne kawai da abin da muke gina ba, amma kuma da abin da muke ba wa juna.\n\nWannan fim din ya nuna yadda wani mutum mai suna John Lennon ya yi amfani da wani abu mai kama da wani abu da aka yi amfani da shi a cikin fim din, wanda ya hada da wani abu da aka yi amfani da shi a cikin fim din, wanda ya hada da wani abu da aka yi amfani da shi a cikin fim din, wanda ya hada da wani abu da aka yi amfani da shi a cikin fim din, wanda ya hada da wani abu da aka yi amfani da shi a cikin fim din, wanda ya hada da wani abu da aka yi amfani da shi a cikin fim din, wanda ya hada da wani abu da aka yi amfani da shi a cikin fim din, wanda ya hada da wani abu da aka yi amfani da shi a cikin fim din.\n\nWannan aikin zane ya kira wani tunani na mutum:\n\nWanda ya kawo haske a rayuwarka lokacin da ka fi bukatarsa? wanda hanya za ta iya zama haske saboda wani abu da ka zaba ka ba shi yau?\n\nManzancinsa ya tabbata ga kowa, ko da yaushe, ko da ya\n\n\"Ka ce, 'Ya ku mutãne!\n\nAn tsara shi ne ya zama fiye da wani bayani na ado, wannan aikin kwalliya yana kawo wani abu na zafi, zurfi, da kuma haɗin kai na mutum a cikin sararin da yake zaune. Yana iya zama wata halayyar da ke da ma'ana a cikin ɗakin zama, karatu, ofishin, ko kowane wuri inda ake kiyaye shi da kuma tunani.\n\nKuma yana da kyau a yi addu'a ga Allah da kuma ga wanda ya yi imani da shi, da kuma ga wanda ya yi imani da shi.\n\nSaboda abubuwa masu ma'ana da muke bariwa a baya ba su zama abubuwa da muke iya rikewa ba a kodayaushe. A wasu lokuta, su ne rãyuka da muka shafa, zukatan da muka kwaɗaita, da hasken da muka taimake wasu su gano a cikin kansu.\n\nWannan haske ne wanda aka raba shi, ba haske mai mutuwa ba ne, haske ne mai wanzuwa.\n\nA'a\n\nDomin mutumci shi ne mafi girman aikin da za mu iya barin baya.\n\nQFontDatabase\n\nArt with a Soul. A Message Without Borders (a cikin Ingilishi).\n\n@ action\n\n10",
+      "category": "QFontDatabase",
+      "product_details": {
+        "files_included": "1 fayil · ZIP · 27.5 MB",
+        "product_type": "QFileDialog",
+        "delivery": "Saukewa ta dijital a lokaci guda bayan siyar",
+        "physical_item": "Ba za'a aika da wani kwafin jiki ko firam ba",
+        "printing": "Cire fayilolin da aka bayar tare da mai ba da sabis na cire da kake so; duba girman da aka haɗa kafin ka zaɓi girma",
+        "usage": "Bi ka'idojin amfanin kai da sauran ka'idojin lasisi da aka haɗa da saukewa"
+      },
+      "_source_hash": "6fb6b36e97f6c6a45e6f2b988972dcc4dc6ed88e314b292990945b1ee19d2a6d"
+    },
+    "msuzc": {
+      "summary": "Wani yaro ya tashi zuwa ga haske, da goyon bayan da tausayi na ƙarni da yawa.",
+      "full_description": "A stairway of hands\n\nA cikin al'umma akwai hanyoyi da yawa.\n\nBabu wani yaro da zai iya tafiya zuwa ga gobe da kansa.\n\nA Stairway of Hands shi ne wani baje kolin alamar hadin kai, kulawa, da kuma ayyukan taimakon da ke canza rayuwar. A cikin zuciyarta, wani yaro yana tafiya zuwa haske a kan wani tsauni da aka yi da hannuwan mutum. Duk hannun yana wakiltar mutum, baftisma, kyakkyawan halaye, ko gudummawa da ke taimakawa wani ya tashi.\n\nQShortcut\n\nHannun ba su da wata shekara ko sana'a. Suna magana ne ga iyaye, malamai, ma'aikata, masu kula da lafiya, makwabta, da kuma al'ummomin da kokarinsu ba a gani ba. Yaron yana wakiltar duk wani yaro mai dakin sha'awa wanda yake bukatar kwarin gwiwa, damar, da karewa.\n\n@ action: inmenu\n\nA MAGANAR MAGANAR GA FILISAINKA\n\nYa nuna wannan aiki a cikin gidan iyali, ofishi, makaranta, ɗakin karatu, studio, ko jama'a sarari kamar wani ambato da girma da damar girma lokacin da mutane su tsaya tare. Shi ne kuma wani kyauta mai tunani ga malamai, iyaye, mentors, da kowa da ya yi imani da alkawarin na ƙarshen zamani.\n\nWani yaro, hannayen taimako da yawa, al'umma mai dorewa tare.\n\nYIN\n\nDigital download; babu wani rubutu ko frame za a aika.\n\nSauke fayiloli da aka samar da wannan samfurin bayan siyar.\n\nKa duba bayanin fayil ɗin da aka haɗa, mai shiryar da bugawa, da kuma lasisi na amfanin kai kafin bugawa.\n\nZaɓi girman takarda da sabis wanda ya dace da ƙa'idodin fayil da aka bayar.\n\nKa zo da wani aikin zane da labarinsa. Ka zaɓi Sauke aikin zane don ka sanya shi cikin filinka.\n\nAn yi amfani da shi a cikin littafin \"A Message Without Borders\".",
+      "category": "QFontDatabase",
+      "product_details": {
+        "files_included": "1 fayil · ZIP · 8.6 MB",
+        "product_type": "Sauke zane-zane na dijital",
+        "delivery": "Saukewa na dijital na gaggawa bayan siyar da",
+        "physical_item": "Ba za a aika da takardar bugawa ko frame ba",
+        "printing": "Sauke fayilolin da aka bayar tare da mai samar da takardar bugawa da kake so; duba girman da aka hada kafin ka zabi girma",
+        "usage": "Bi sharuddan amfanin kai da sauran sharuddan lasisi da aka hada da saukewa"
+      },
+      "_source_hash": "b963b309b0892c055876d7451b6a8bc36190e3b1d23c99420a1c588817cba9ac"
+    },
+    "tzlsv": {
+      "summary": "A kyauta ga so, jarrabawa, da duniyar da muke da asusun ga waɗanda suke bi.",
+      "full_description": "Ƙungiyoyi\n\nAbin da muke karewa yau zai zama makomarsu.\n\nMafi girman abin da muke barin duniya ita ce duniyar da muke barin a hannun wani.\n\nThe Legacy of Generations yana nazarin alakar da ke tsakanin waɗanda suka zo a gabanmu da waɗanda za su biyo baya. Yana da tunani game da iyali, tunawa, jajircewa, da kuma alhakin wucewa gaba fiye da dukiyoyin: wata makoma da ta dace da ƙarni na gaba.\n\nLOVE THAT LOOKS BACKOWN THE PRESENTS\n\nWannan aikin ya yi magana ne game da hikimar da ke tattare da al’ummomin da suka fi dacewa da kuma yiwuwar da ke tattare da matasa. A tsakaninsu akwai wani aiki na rabawa – na kiyaye abin da ke ci gaba da rayuwa, gyara abin da aka lalata, da kuma yin zaɓuɓɓuka da aka shirya ta hanyar kulawa maimakon sauƙi.\n\nIyali na iya zama tushen kasancewar mutum, amma alhakin ya fi iyali girma, yana haɗe al'umma da al'ummomi ta hanyar duniyar da suke rabawa.\n\nA cikin gida na kõwane al'umma akwai tunãtarwa.\n\nKa sanya wannan aikin kwaikwayo a cikin wani sararin rayuwa na iyali, karatu, ofishi, tsarin karatu, ko kuma inda yaushe da ke girmama tunawa da gaba. Yana yin kyauta mai tunani ga iyaye, kakanni, masu kula da kai, da mutane da suke imani da cewa kulawa wata ritaya ce.\n\nBa mu da abin da ke a cikin Lãhira, kuma muna gãdar da ita ga waɗanda suke zuwa daga bãyanmu.\n\nYIN\n\nDigital download; babu wani rubutu ko frame za a aika.\n\nSauke fayiloli da aka samar da wannan samfurin bayan siyar.\n\nKa duba bayanin fayil ɗin da aka haɗa, mai shiryar da bugawa, da kuma lasisi na amfanin kai kafin bugawa.\n\nZaɓi girman takarda da sabis wanda ya dace da ƙa'idodin fayil da aka bayar.\n\nKa zo da wani aikin zane da labarinsa. Ka zaɓi Sauke aikin zane don ka sanya shi cikin filinka.\n\nAn yi amfani da shi a cikin littafin \"A Message Without Borders\".",
+      "category": "QFontDatabase",
+      "product_details": {
+        "files_included": "1 fayil · ZIP · 23.1 MB",
+        "product_type": "Sauke zane-zane na dijital",
+        "delivery": "Saukewa na dijital na gaggawa bayan siyar da",
+        "physical_item": "Ba za a aika da takardar bugawa ko frame ba",
+        "printing": "Sauke fayilolin da aka bayar tare da mai samar da takardar bugawa da kake so; duba girman da aka hada kafin ka zabi girma",
+        "usage": "Bi sharuddan amfanin kai da sauran sharuddan lasisi da aka hada da saukewa"
+      },
+      "_source_hash": "85dbcd535bbf5b49e8e3d1f629b11e1c1044b6806e4066780e78dd7693e99981"
+    },
+    "bgqxwm": {
+      "summary": "The Mediterranean Muse na kawo hadin kai na bayyanar hoto, siffar geometry, da kuma halayen haske na Mediterranean. Rich blue, mai zafi na zinariya, da kuma launin da aka yi amfani da shi don samar da wani aiki na zamani na musamman ga masu tattarawa da kuma ciki wanda ke karɓar mutum.",
+      "full_description": "The Mediterranean Muse — A Portrait of Gold, Sea & Mystery\n\nA inda hasken da ke dauke da zinariya ya hadu da bakin teku mai launin ruwan kasa, wata musa mai ban sha'awa ta fito daga duniyar da ke da kyau na geometry da kuma mafarkin Mediterranean.\n\nThe Mediterranean Muse wani aiki ne na kwaikwayo na kwaikwayo na kwaikwayo wanda ke haɗa hoto mai ban sha'awa na mace tare da al'aurar da ba ta da lokaci na gine-ginen bakin teku, ruwa mai haske, dutsen da ke da nisa, da rana mai haske mai haske.\n\n\"A cikin wannan littafin, na yi amfani da wasu daga cikin abubuwan da na samu daga cikin littafin, da kuma wasu daga cikin abubuwan da na samu daga cikin littafin, da kuma wasu daga cikin abubuwan da na samu daga cikin littafin, da kuma wasu daga cikin abubuwan da na samu daga cikin littafin, da kuma wasu daga cikin abubuwan da na samu daga cikin littafin, da kuma wasu daga cikin abubuwan da na samu daga cikin littafin, da kuma wasu daga cikin abubuwan da na samu daga cikin littafin.\"\n\nMai kyau, mai ban mamaki, da kuma cikakke na halaye, wannan aikin kwalliyar ya canza wani bango zuwa wani bayani na mutum da kuma dandano mai kyau.\n\nQPrintPreviewDialog\n\nLuxury gidajen zama da kuma zamani gidaje\n\nOfishin Manajan da Studio na Cikakken\n\nBoutique hotels da kuma wuraren karbar bakuncin da aka yi kyau\n\nModern apartments and curated interiors\n\nMa'abuta sana'a suna neman sassan kalandar da suka bambanta\n\nThe Mediterranean Muse shi ne fiye da bango ado. Shi ne wani taron na sana'a, gini, launin, da kuma tunanin-a bikin na Mediterranean kyau reimagined ta hanyar wani jajirce artistic gani.\n\n👑 An halitta wani sana'a daga HALL OF GREATNESS.\n\n@ action\n\nDiscover this The Mediterranean Muse digital art print for printable wall art, distinctive home décor, and thoughtfully designed interiors. A downloadable artwork for personal display, with printing options chosen to suit the provided file and your space.",
+      "category": "QPrintPreviewDialog",
+      "product_details": {
+        "files_included": "1 fayil · ZIP · 19.0 MB",
+        "product_type": "QFileDialog",
+        "delivery": "Saukewa ta dijital a lokaci guda bayan siyar",
+        "physical_item": "Ba za'a aika da wani kwafin jiki ko firam ba",
+        "printing": "Cire fayilolin da aka bayar tare da mai samar da bugawa da kake so; duba girman da aka haɗa kafin ka zaɓi girma",
+        "usage": "Bi sharuɗɗan amfanin kai da sauran sharuɗɗan lasisi da aka haɗa da saukewa"
+      },
+      "_source_hash": "af1fb435d85020fb7dfffd341b525734bf626e5bde25a5492169ffa49b1059c6"
+    },
+    "aedllm": {
+      "summary": "Wani duniyar da aka ji rauni, hannayen da ba a lissafa ba, da kuma alhakin da aka raba don kare gobe.",
+      "full_description": "QFileDialog\n\nWata ƙasa daya, wata al'umma daya, wata al'umma mai zuwa.\n\nWasu hotunan suna ado da wani bango, wasu kuma suna tambayarmu menene irin duniyar da muke barin baya.\n\nDaga cikin jerin THE HUMANITY LEGACY, Last Cry of Earth ya mayar da duniyarmu zuwa wata alama mai ƙarfi ta rashin ƙarfi, alhakin, da fatan. Hannun mutum suna haɗuwa a kusa da duniyar da ta lalace, suna bayyana gaskiyar da ke wucewa duk wani iyaka: Duniya ba ta da wata kasa ko ƙarni guda, kuma makomarta tana dogara da mu duka.\n\nA story of two possible futures\n\nWani bangare na wannan aikin ya nuna farashin da ake kashewa wajen hana amfani da ƙasa, da kuma tasirin da zafi na masana'antu ke yi, da kuma tasirin da tsarin halittu ke yi, da kuma yanayin ƙasa da ke karkashin tasirin zafi. Sashen na biyu ya nuna yadda za a sake amfani da ƙasa, da kuma amfani da ruwa mai tsafta, da kuma amfani da makamashi mai tsafta, da kuma jin daɗin rana mai haske. Wannan bambanci bai kasance kawai tsakanin duhu da haske ba, amma kuma ya nuna bambanci tsakanin amincewa da kuma alhakin.\n\nHannun da ke kewaye da duniyar suna wakiltar mutane na shekaru daban-daban, al'adu, da kuma wuraren da suka fito.\n\nMe ya sa yake da muhimmanci\n\nWannan aikin na ga mutane da suke kula da duniyar halitta, da al'ummomin da za su zo, da kuma ikon sana'a na fara tattaunawa mai muhimmanci. Zai iya zama wani wuri mai hankali a gida, ofishi, sararin karatu, dakin nuna hotuna, ko kuma wani wuri mai kula da muhalli.\n\nKa bar gicciyenka ya ɗauki saƙo: gaba ta kasance tamu don mu kiyaye ta.\n\nYIN\n\nDigital download; babu wani rubutu ko frame za a aika.\n\nSauke fayiloli da aka samar da wannan samfurin bayan siyar.\n\nKa duba bayanin fayil ɗin da aka haɗa, mai shiryar da bugawa, da kuma lasisi na amfanin kai kafin bugawa.\n\nZaɓi girman takarda da sabis wanda ya dace da ƙa'idodin fayil da aka bayar.\n\nKa zo da wani aikin zane da labarinsa. Ka zaɓi Sauke aikin zane don ka sanya shi cikin filinka.\n\nHALL OF GREATNESS — Art with a Soul. A Message Without Borders.",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 file · ZIP · 24.6 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Digital download a lokaci guda bayan sayen",
+        "physical_item": "Ba za a aika da takardar bugawa ko frame ba",
+        "printing": "Print the provided files with your preferred print provider; check the included dimensions before choosing a size",
+        "usage": "Follow the personal-use and other license terms included with the download"
+      },
+      "_source_hash": "1b778b5e9598b900f314bd014e2126505fb284bc853987ad799e788064ade832"
+    },
+    "smuewa": {
+      "summary": "The Golden Gaze na jan mai kallo zuwa duniyar jigon bayyanawa, yanayi na Mediterranean, da launin haske. Wani aikin zane na zamani mai ban sha'awa wanda aka tsara don kawo sirri, halaye, da bambancin sana'a ga cikin gida na zamani.",
+      "full_description": "The Golden Gaze — A Vision of Gold, Sea & Timeless Mystery\n\nKu gano wani sana'a wanda yake kama da gani kuma yana jawo hankalin tunaninku.\n\nThe Golden Gaze wani aikin fasaha ne na dijital daga HALL OF GREATNESS, wanda ke hada nau'ikan kwaikwayo na kwaikwayo da kyau na Mediterranean.\n\nA captivating mace hoton ya fito ta hanyar da ja da jeometric siffofi, luminous gold textures, zurfi sapphire blue, zafi ivory, da shakka crimson accents. A fascinating amber ido ja ka cikin wani dreamlike duniyar na rana-lit tekuna, baki coastal gini, soaring tsuntsaye, da sculptural siffofi.\n\nWannan tsari mai bayyanawa yana kawo haske, kyau da kuma ƙarfin sana'a na zamani, yana samar da wani wuri mai ban sha'awa ga ciki mai ban sha'awa.\n\n✨ Me yasa za ka so wannan aikin kwaikwayo\n\nNau'in zane mai bambanci: Nau'in zane mai kwalliya mai ban sha'awa da nau'ikan geometric na bayyanawa.\n\nRich Color Palette: Gold, sapphire blue, charcoal, ivory, da crimson suna samar da bambanci mai ban sha'awa.\n\nElegant Interior Accent: An tsara shi don cika wuraren zamani da na zamani.\n\n@ action: button\n\nDigital Convenience: Sauke fayilolin da aka haɗa kuma shirya bugawa ta hanyar sabis ɗin da kuke so.\n\n10\n\nGidajen zama na zamani da na zamani\n\nOfishin Manajan da Studio na Cikakken\n\nBoutique hotels da kuma wuraren karbar bakuncin da aka yi kyau\n\nModern apartments and curated interiors\n\nMa'abuta sana'a suna neman wani bayani na musamman na ado\n\nKyauta mai hankali ga masu sha'awar sana'ar zamani\n\n10\n\nWani kwafin kayan zane na dijital wanda za'a iya saukewa wanda ke da fayilolin da aka ambata a cikin wannan jerin kayayyakin aiki, tare da shawarwari na mai amfani da shi da kuma lasisin amfanin kai.\n\n10\n\nQPrintPreviewDialog\n\n@ item: inlistbox\n\nKCharselect unicode block name\n\nQPrintPreviewDialog\n\n_Aspect Ratio:\n\nNau'in samfurin: Digital artworks don bugawa\n\nQFileDialog\n\n10\n\n@ action: inmenu\n\n@ action\n\nKa tuna: Wannan wani abu ne na dijital. Ba za'a aika da wani zane na zahiri, firam, ko kuma abu mai bugawa ba. Fayil ɗin zane-zane na ɗakin ne na nuna misali; fayilolin zane-zane masu saukewa ne na samfurin da aka tsara don bugawa.\n\n10\n\nKa iya buga wannan aikin zane ga gidanka ko ofishinka da kuma nuna wani abu mai bugawa a matsayin kyautar kai. Ba ka iya sake sayar da, sake raba, raba, ko kuma yin amfani da fayilolin dijital ba tare da izinin rubutu na daban ba.\n\n@ action\n\nDiscover this THE GOLDEN GAZE 👁 digital art print for printable wall art, distinctive home décor, and thoughtfully designed interiors. A downloadable artwork for personal display, with printing options chosen to suit the supplied file and your space.",
+      "category": "QFontDatabase",
+      "product_details": {
+        "files_included": "1 fayil · ZIP · 22.4 MB",
+        "product_type": "QFileDialog",
+        "delivery": "Saukewa ta dijital a lokaci guda bayan siyar",
+        "physical_item": "Ba za'a aika da wani kwafin jiki ko firam ba",
+        "printing": "Cire fayilolin da aka bayar tare da mai ba da sabis na cire da kake so; duba girman da aka haɗa kafin ka zaɓi girma",
+        "usage": "Bi ka'idojin amfanin kai da sauran ka'idojin lasisi da aka haɗa da saukewa"
+      },
+      "_source_hash": "bc5775f40dbc520fc6c48e9b41f3d7b8b577c56471e899302b456db982f635ec"
+    },
+    "jzjbrg": {
+      "summary": "@ title: window",
+      "full_description": "Queen of the Nile\n\nA Regal Tribute to the Artistic Legacy of Ancient Egypt\n\nKa kawo mana sirrin, girman kai, da kuma kyau mai tsawo na Masar ta daɗewa cikin wurinka tare da The Queen of the Nile, wani aikin fasaha na dijital wanda aka samo shi daga harshen gani da kuma adabin manzon daya daga cikin al'ummomin da suka fi ban sha'awa a tarihi.\n\nAn yi wannan aikin ne domin masu sha'awar al'adu da al'adu na Masar da kuma sana'o'in gargajiya, wannan aikin yana ba da wani irin yanayi na zaman lafiya da kuma al'adu. Yana kira ga mai kallo ya hadu da wata al'ada da aka tsara ta da alamomin, sana'o'i, tunanin, da kuma sha'awar da ke da tsawo da Nilu da duniyar Masar ta daɗaɗɗa.\n\nA DISTINCT PRESENCE FOR YOUR SPACE\n\n\"Kuma wanda ya yi ĩmãni da Allah da Rãnar Lãhira, to, lalle ne, Allah, haƙĩƙa, Mai gãfara ne, Mai jin ƙai.\" (Surar Al-Nisa'i, aya ta 11) \"Kuma wanda ya yi ĩmãni da Allah da Rãnar Lãhira, to, lalle ne, Allah, haƙĩƙa, Mai gãfara ne, Mai jin ƙai.\" (Surar Al-Nisa'i, aya ta 12)\n\nQFileDialog\n\nWannan wani abu ne na dijital. Ba za a aika da wani zane na zahiri, ko kuma wani poster da aka buga ba, ko kuma wani firam. Bayan sayen, za ka iya saukar da fayilolin da aka bayar tare da lissafin kuma ka duba siffofin da aka haɗa, girman, da kuma sharuddan amfani da su kafin ka buga. Zabi girman bugawa da kayan da suka dace da fayil da aka bayar da shi da kuma nuna abin da kake so. Launuka na iya bambanta kadan tsakanin fuskokin kwamfuta da sakamakon da aka buga.\n\nAn yi wa wannan gari suna \"Madina ta farko\" (Al-Madinah al-Islāmiyya).\n\nQFontDatabase\n\n@ action\n\nGano wannan zane-zane na dijital na The Queen Of The Nile 👑 don zane-zane na bango mai bugawa, kayan ado na gida na musamman, da kuma kayan ciki masu zane-zane. Wani zane-zane mai saukewa don nunawa na mutum, tare da zaɓuɓɓukan bugawa waɗanda aka zaɓa don su dace da fayil ɗin da aka bayar da shi da kuma sararinku.",
+      "category": "Tarihi",
+      "product_details": {
+        "files_included": "1 fayil · ZIP · 44.0 MB",
+        "product_type": "Sauke zane-zane na dijital",
+        "delivery": "Saukewa na dijital na atomatik bayan siyar da",
+        "physical_item": "Ba za a aika da takardar bugawa ko firam ba",
+        "printing": "Sauke fayilolin da aka bayar da su tare da mai ba da takardar bugawa da kake so; duba girman da aka haɗa kafin ka zaɓi girma",
+        "usage": "Bi sharuɗɗan amfanin kai da sauran sharuɗɗan lasisi da aka haɗa da saukewa"
+      },
+      "_source_hash": "a4497ccda79c60d5130d5f8f09b9c6acc088280a4d67c8ca9e65d4ff49de7d69"
+    },
+    "csyqhm": {
+      "summary": "An yi wannan aikin ne domin waɗanda suke son yin nazari kan tarihin, addini da kuma bayyanar sana’a, kuma yana da ma’ana a gidaje, ofisoshi, da kuma wuraren da ake gudanar da ayyukan al’adu.",
+      "full_description": "@ item Calendar system\n\nAn yi wa al'adun Coptic kyautar sana'a ta zamani\n\nKa gano wani bayani na musamman na al'adun Kopta na Masar ta hanyar The Coptic Soul of Egypt, wani aikin fasaha na dijital wanda aka samo shi ne daga tunanin gani, harshe mai alaƙa da al'adu da ke da alaƙa da sana'ar Kopta.\n\nA maimakon gabatar da kansa a matsayin wani abu na archaeological ko kuma wani abu na tarihi na tarihi, wannan aikin ya yi nazari kan al'adu ta hanyar wani abu na zamani na sana'a. Yana hada da tunawa ta al'adu da kuma bayyanar gani ta zamani don neman tunani game da asalin, ci gaba, imani, da kuma arzikin tarihin Masar mai layuka.\n\nGa masu kallo waɗanda ke da darajar zane mai ma'ana, aikin yana ba da fiye da ado: yana samar da alaƙa da al'ada mai ban sha'awa da kuma wurin da take da shi a cikin tarihin Masar.\n\nQPrintPreviewDialog\n\nWannan ya kasance wani ƙãri ga gidãje, da littattafai, da ofisoshi, da ɗakunan gani, da wuraren al'adu, da wuraren da ake girmama al'adun Masar da bayyanar sana'a, kuma wata kyauta ce mai ma'ana ga mãsu son sana'ar al'adu ta Kopta da ta Masar.\n\nBayanin Kayan Aiki\n\nWannan wani saukewa ne na dijital. Ba za'a aika da wani zane na zahiri, ko kuma wani poster da aka buga ba, ko kuma wani firam. To, ka duba fayilolin da aka samar da su tare da wannan jerin, ciki har da sifofinsu, girmansu, da kuma sharuddan amfani da su, kafin ka shirya bugawa. Launuka na iya bambanta kadan bisa ga fuskar kwamfyutan, da mai bugawa, da kuma kayan da aka zaba.\n\nAn haifi shi a garin Katsina, a cikin garin Katsina.\n\nQFontDatabase\n\n@ action\n\nGano wannan zane-zane na dijital na The Coptic Soul of Egypt don zane-zane na bango da za'a buga, da ado na gida da kuma kayan ciki da aka tsara da hankali. Wani zane-zane da za'a iya saukewa don nunawa na mutum, tare da zaɓuɓɓukan bugawa da aka zaɓa don su dace da fayil ɗin da aka bayar da kuma wurinka.",
+      "category": "Tarihi",
+      "product_details": {
+        "files_included": "1 fayil · ZIP · 60.1 MB",
+        "product_type": "Sauke zane-zane na dijital",
+        "delivery": "Saukewa na dijital na gaggawa bayan siya",
+        "physical_item": "Ba za'a aika da wani zane ko firam na zahiri ba",
+        "printing": "Sauke fayilolin da aka bayar tare da mai ba da sabis na bugawa da kake so; duba girman da aka haɗa kafin ka zaɓi girma",
+        "usage": "Bi sharuɗɗan amfanin kai da sauran sharuɗɗan lasisi da aka haɗa da saukewa"
+      },
+      "_source_hash": "2eca69141928e3e01281fed2b39524d668bb838241b109042d8477d2e941b1b2"
+    },
+    "jvffaq": {
+      "summary": "THE NILE'S ETERNAL GRACE ya yi bikin kyau na Masar da bai wuce lokaci ba, yana kawo hadin kan wani halin sarautar da kuma rikodin da ya ke da tsawo na Nilu. Wani aikin fasaha na dijital wanda aka samo shi daga al'adu don wuraren da ke da darajar al'adu na Masar da kuma kyau da ba a wuce lokaci ba.",
+      "category": "Heritage",
+      "_source_hash": "b061cdc5a55b2e444a09cd7d8c3d8d1eb73ad3315fe38b35610ca590b595c16e"
+    },
+    "kjclzu": {
+      "summary": "A Bond Beyond Words ya yi bikin dangantakar da ba ta da yawa, ba tare da magana ba tsakanin yaro da mai aminci. A mai zafi, mai ɗaukaka aikin kwalliya game da aminci, hadin kai, rashin laifi, da kuma so ba tare da sharudda ba - an halitta don kawo wani abu na tausayi ga wuraren iyali da gidajen masu son dabbobi.",
+      "full_description": "A BOND BEYOND WORDS\n\nThe Beauty of Unconditional Love\n\nWaɗansu abõkan tarayya sunã jin daɗin rai, bã su bayyanawa da magana.\n\nYi bikin haɗin kai na musamman tsakanin yaro da karen da aka so tare da A Bond Beyond Words, wani aikin zane mai zafi wanda ke kama mafi tsarkin fassara na abota, aminci, rashin laifi, da soyayya ba tare da sharudda ba.\n\nA cikin wani lambu mai kyau da aka shafa da hasken rana mai zinariya, wannan hoton mai ban sha'awa yana nuna wani yaro mai shekara 15 yana kallon Golden Retriever dinsa mai farin ciki.\n\nA cikin wannan littafin, an yi bayani kan yadda ake yin amfani da kayan ado, da kuma yadda ake yin ado da kayan ado, da kuma yadda ake yin ado da kayan ado da kuma yadda ake yin ado da kayan ado.\n\nDuk wani bayani yana taimakawa wajen tunatar da mu cewa soyayya ba ta bukatar kalmomi ba, a wasu lokutan, wata kallon kauna kawai ta ce duk abin da take so.\n\nA matsayinsa na mai ba da shawara ga shugaban kasa, ya yi aiki tukuru wajen tabbatar da cewa an samu ci gaba a fannin tsaro.\n\n✨ WHY YOU'LL LOVE THIS ARTWORK\n\nHeartwarming Labari: Ya kama da kyau haɗin kai tsakanin wani yaro da shi gaskiya karensa.\n\nA cikinsa akwai: Ƙungiya Uku, Ƙungiya Uku, Ƙungiya Uku, da Ƙungiya Uku.\n\nGolden-Hour Beauty: Hasken rana mai zafi yana samar da yanayi mai kwanciyar hankali da kuma mai karfafawa.\n\nBayanai game da Gidajen Gida: 'Ya'yan itace masu launin shuɗi da kuma muhallin halitta suna kawo sauki da rayuwa ga tsarin.\n\nTimeless Appeal: A ma'ana artwork da resonates da yara, iyaye, iyalai, da dabbobi masoya.\n\nThoughtful Gift Idea: A m zaɓi ga duk wanda ke so da musamman dangantaka tsakanin mutane da dabbobi.\n\n10\n\nGidajen kwana na yara da dakunan wasa.\n\nGidajen zama na iyali da kuma kofa mai karɓa.\n\nKuma da ƙõfõfi na karatu.\n\nKwayoyin dabbobi da cibiyoyin kula da dabbobi.\n\nGidajen kare dabbobi da kuma wuraren karbar dabbobi.\n\nHotelai na iyali da wuraren karɓar baƙi.\n\nMakarantun sakandare, makarantu na kula da yara, da wuraren jama'a.\n\nMasu son dabbobi da iyalai suna bikin farin cikin hadin kai.\n\n10\n\nAn haɗa kayan saukar da kuɗin dijital ɗin ku da:\n\nAikin zane na dijital na asali cikin sifar PNG.\n\nA shirya mai inganci mai girma 2:3 JPG portrait print file.\n\nZaɓin girman kwafe da aka shawarta.\n\nA PDF printing and sizing guide.\n\nA START HERE file with download and print instructions.\n\nCire bayanai game da ƙudurin hoton da sharuɗɗan amfani.\n\n10\n\nWannan zane na bi da wani nau'in rabon hoton 2:3 kuma yana da kyau ga:\n\n4 × 6 inji\n\n8 x 12 inji\n\n12 x 18 inji\n\n@ item font\n\n20 x 30 inji\n\nKuma dõmin mafi alhẽrin fahimta, Munã yi muku gargaɗi da wata takarda wadda ake yin launi da ita ko kuma wata takarda mai santsi.\n\nBayani Mai Amfani\n\nWannan wani sauke ne na dijital. Ba za'a aika da wani zane ko firam na zahiri ba.\n\nZa'a iya bamban launuka da kaɗan dangane da fuskar kwamfyutanka, mai bugawa, da takarda.\n\nFayilolin dijital ana nufin su ne domin amfanin kai, sai dai idan an saya wata lasisin kasuwanci daban.\n\nYawanci, ana amfani da shi a cikin kasuwanci da wuraren jama'a don nuna samfuran kasuwanci.\n\nAn hana sayar da fayilolin dijital, raba su, ko raba su.\n\n❤️ A LOVE LITTLE YA YI DA BIG AREWA\n\nKa zo gida da wani kyakkyawan ambato na gaskiya, hadin kai, da kuma so ba tare da sharudda da ke sa kowace rana haske.\n\nYa kamata a yi amfani da kalmomin da suka dace da ma'anar da aka yi amfani da ita, da kuma ma'anar da aka yi amfani da ita.\n\nKuma lalle ne, haƙĩƙa, Allah Ya saukar da littattafai, kuma Ya saukar da Manzanni.\n\n@ action\n\nGano wannan A BOND BEYOND WORDS Kyakkyawan soyayya mai sha'awa da ba ta da sharudda. Wani zane mai saukewa don nunawa na mutum, tare da zaɓuɓɓukan bugawa da aka zaɓa don ya dace da fayil ɗin da aka bayar da kuma wurinka.",
+      "category": "Mutumci",
+      "product_details": {
+        "files_included": "1 fayil · ZIP · 7.8 MB",
+        "product_type": "Saukewa na zane na dijital",
+        "delivery": "Saukewa na dijital na gaggawa bayan siya",
+        "physical_item": "Ba za a aika da wani bugawa ko firam ba",
+        "printing": "Sauke fayilolin da aka bayar tare da mai ba da bugawa da kake so; duba girman da aka haɗa kafin ka zaɓi girma",
+        "usage": "Bi sharuɗɗan amfanin kai da sauran sharuɗɗan lasisi da aka haɗa da saukewa"
+      },
+      "_source_hash": "af7fd1018209d1a0c50074203cc6c678ce973ea18a6dd07595de274e8d12da36"
+    },
+    "xvccaj": {
+      "summary": "Wasu ayyuka bakwai na zane-zane masu tunanin da suka samo asali daga duniyar, birane masu zuwa, halitta, da kuma kyau na Mediterranean— wani adana dijital na bayyanawa ga hankalin masu sha'awa da wuraren halitta.",
+      "full_description": "ART NA GLOBAL DA IMAGINATION — ARTWORKS SABA, DUNIA BAYA\n\nYi tafiya a baya da kuma baya ga abin da aka sani ta hanyar wani rukunin ayyukan fasaha na dijital bakwai da aka samo asali daga abin ban sha'awa na cosmic, kyan sama, gini mai ra'ayi, halitta, da kuma ruhin Mediterranean. Duk wani ɓangare yana buɗe wata duniyar gani daban, yana kawo sha'awa, motsi, da kuma tunanin cikin wuraren zamanin yau.\n\nDaga sirrin duniya zuwa garuruwan da muke so mu gina, daga kyawawan wuraren halitta zuwa ra'ayoyi masu bayyanawa na bakin teku, wannan tattarawa tana nuna hanyoyi da yawa da aikace-aikacen fasaha ke iya fadada fahimtarmu ta yiwu.\n\nMAGANIN DA YA ƘASU\n\nQFontDatabase\n\nAljannar makoma.\n\nCity in Italy\n\nKCharselect unicode block name\n\nKCharselect unicode block name\n\nKCharselect unicode block name\n\nKCharselect unicode block name\n\nA'a\n\nAn yi amfani da shi wajen gina gidaje, gidajen abinci, gidajen\n\nQPrintPreviewDialog\n\nWannan wani abu ne na dijital. Ba za'a aika da wani zane ko firam na zahiri ba. Ka saukar da fayilolin da aka haɗa cikin kwasfa kuma ka duba sifofinsu, girmansu, da kuma sharuɗɗan amfani da su kafin ka yi bugawa. Ka zaɓi girman bugawa da kayan aiki da ya dace da fayilolin da aka bayar. Launuka na iya bambanta kaɗan tsakanin fuskokin kwamfuta da sakamakon bugawa.\n\nGano zane ba tare da iyakoki ba. Ka bar tunaninka ya tsara duniyarka.\n\n\"Hall of Greatness - Art without Boundaries\" (in English).",
+      "category": "QPrintPreviewDialog",
+      "product_details": {
+        "product_type": "QFileDialog",
+        "delivery": "Saukewa ta dijital a lokaci guda bayan siyar",
+        "physical_item": "Ba za'a aika da wani kwafin jiki ko firam ba",
+        "printing": "Cire fayilolin da aka bayar tare da mai ba da sabis na cire da kake so; duba girman da aka haɗa kafin ka zaɓi girma",
+        "usage": "Ku bi sharuddan amfani da aka haɗa da saukewa",
+        "bundle_item_count": "Samfurin haɗin haɗin; ayyukan zane-zane na daban sun bayyana a ƙasa"
+      },
+      "_source_hash": "d8641c6b467679268bbf7fa3a052b8f3d1afec3f69b284f8c9413088a02c671d"
+    },
+    "wjxgxb": {
+      "summary": "@ title: window",
+      "full_description": "KCharselect unicode block name\n\nQFontDatabase\n\nKa zo da girman da ya ke da tsawo na Masar ta daɗaɗɗen zuwa cikin wurinka da Eternal Egypt, wani aikin zane na dijital wanda aka samo shi daga kasancewar tarihi na pyramids, Great Sphinx, da kuma yanayin ƙasar da ba ta da lokaci na Nile.\n\nAn yi wannan aikin ne domin waɗanda suke jin alaƙa da tarihi, da tunawa da al'adu, da kuma adadin sana'o'in Masar, wannan aikin yana ba da fiye da hoton ado. Yana nuna girman, da kuma ci gaba da al'umma wadda harshen gani yake ci gaba da ba da himma ga duniya.\n\nYanayinta na gargajiya yana sanya shi wani wuri mai ban sha'awa ga gidajen zamani, makarantu na musamman, ofisoshi, otal-otal, wuraren al'adu, da na ciki waɗanda ke bikin tarihi da sana'a.\n\nWHY IT BELONGS IN YOUR SPACE\n\nWani kyautar gani ga abin da ya rage na al'adu na Masar ta daɗewa.\n\nAn yi amfani da wannan tsari ne wajen yin zane-zane na zamani da na gargajiya.\n\nAn yi wannan zaɓi ne domin masu tattara tarihi da masu sha'awar tarihin Masar.\n\nWani zane na dijital mai bayyanawa wanda za'a iya bugawa da kuma sanya kwance don ya dace da sararinka.\n\nBayanin Kayan Aiki\n\nWannan wani saukewa ne na dijital. Ba za a aika da wani zane na zahiri, ko kuma wani poster da aka buga, ko kuma wani firam ba. Ka saukar da fayilolin da aka kawo tare da sayen ka kuma ka duba siffarsu da girmansu da kuma sharuɗɗan amfani da su kafin ka buga. Launuka na iya bambanta kadan bisa ga fuskarka, mai bugawa, da kuma kayan da aka zaba.\n\nETERNAL EGYPT — A Civilization in Memory. A Legacy Beyond Time.\n\nQFontDatabase\n\n@ action\n\nGano wannan ETERNAL EGYPT Ruhu Mai Zaman Kansa na wata al'umma ta da ta gabata mai zane-zane na dijital don zane-zane na bango da za'a iya bugawa, da kayan ado na gida da aka tsara da hankali. Wani zane-zane da za'a iya saukewa don nunawa na mutum, tare da zaɓuɓɓukan bugawa da aka zaɓa don su dace da fayil ɗin da aka bayar da kuma wurinka.",
+      "category": "Tarihi",
+      "product_details": {
+        "files_included": "4 fayiloli · JPG, PDF, PNG, TXT · 9.1 MB",
+        "product_type": "Sauke zane-zane na dijital",
+        "delivery": "Saukewa na dijital na gaggawa bayan siyar da",
+        "physical_item": "Ba za'a aika da wani bugawa ko firam na zahiri ba",
+        "printing": "Sauke fayilolin da aka bayar tare da mai ba da bugawa da kake so; duba girman da aka haɗa kafin ka zaɓi girma",
+        "usage": "Bi sharuɗɗan amfanin kai da sauran sharuɗɗan lasisi da aka haɗa da saukewa"
+      },
+      "_source_hash": "af4bb9b510bcc457b6750421a6f2d14b3beabca71579f4cd5f83484617097abe"
+    },
+    "fgdpqp": {
+      "summary": "A cikin wani aiki da aka yi tunanin, lokaci ba a auna shi ba amma an yi masa kwalliya. RIYAYIN ƊAƘAƘAƘA ya canja kayan aiki, da tsarin sama, da kuma kayan aiki da ba a iya yi ba zuwa wata tunani mai ban mamaki game da tunawa, ƙirƙira, da kuma tafiyar lokaci. Taron tunanin steampunk da kuma surrealism na alama.",
+      "full_description": "A cikin wani aiki da aka yi tunanin, lokaci ba a auna shi ba amma an yi masa kwalliya. RIYAYIN ƊAƘAƘAƘA ya canja kayan aiki, da tsarin sama, da kuma kayan aiki da ba a iya yi ba zuwa wata tunani mai ban mamaki game da tunawa, ƙirƙira, da kuma tafiyar lokaci. Taron tunanin steampunk da kuma surrealism na alama. Zaɓi mai ban sha'awa ga littattafai, karatu, ofisoshi, da kuma ciki mai jagorantar zane. An samar da saukar da dijital a matsayin fayil ZIP. Don Allah duba fayiloli da siffofi da aka haɗa bayan siyar da shi kafin ka zaɓi girman bugawa.",
+      "category": "Elegance",
+      "product_details": {
+        "files_included": "1 fayil · ZIP · 36.8 MB"
+      },
+      "_source_hash": "30ab80fd3d5210fdd5ec47f8f60c9b5f121908831ac3a07129ffe69e98b6bb2c"
+    }
+  },
+  "ui": {
+    "navFeatured": "QPrintPreviewDialog",
+    "navCollections": "KCharselect unicode block name",
+    "navGallery": "Gallery",
+    "navArtist": "Mai Waƙa",
+    "eyebrow": "Wani duniyar da aka tsara na zane mai bugawa",
+    "heroTitle": "<em>An yi shi ne da zane.</em>",
+    "heroText": "Gano wani galeri wanda aka tsara ta hanyar tunanin, al'ada, dangantaka ta mutum, da kuma kyau na zamani na sana'a. Ayyuka masu ma'ana na dijital, masu samuwa don su zama ɓangare na sararinku.",
+    "explore": "QDialogButtonBox",
+    "discover": "@ action",
+    "featuredEyebrow": "The stories visitors return to",
+    "featuredTitle": "@ action",
+    "featuredText": "Hanyoyi shida daban-daban na kawo sana'a da jin daɗin mutum a cikin sararinku.",
+    "collectionsEyebrow": "KCharselect unicode block name",
+    "collectionsTitle": "KCharselect unicode block name",
+    "collectionsText": "Kuɗaɗen tafiyar da aka tsara ta hanyar zane, al'adu, da kuma jin daɗi. Bincika wani adana ko kuma je kai tsaye zuwa ajiyar ajiyar ta.",
+    "galleryEyebrow": "The complete gallery",
+    "galleryTitle": "Aiki na musamman",
+    "galleryText": "Binciki ta hanyar suna na zane, jigo, ko nau'i. Ka yi nazarin labarin ko ka je kai tsaye zuwa saukewa na dijital.",
+    "search": "@ action",
+    "artistEyebrow": "Preview available",
+    "artistTitle": "Game da Mai Waƙa",
+    "artistP1": "shi ne mai zane a bayan HALL OF GREATNESS, wani galere na fasahar dijital mai zaman kanta wanda ke kawo wa masu sauraro a duniya labarin abubuwan da aka gani.",
+    "artistP2": "Aikinsa na sana'a yana hada hadar zane-zane, gwaje-gwaje da kuma canji na dijital. Duk wani aikin yana ba da fiye da ado: wani yanayi, wata tunawa, ko kuma labarin mutum.",
+    "artistP3": "Daga al'adu na Masar da na Kopta zuwa abubuwan duniya na tausayi, girmamawa, fatan alheri da kuma tunanin, wannan galleriyya tana kiran ku da ku yi tunanin sana'a a hanyarku.",
+    "tagline": "Wannan shi ne abin da kuke kira.",
+    "digital": "Digital products · Saukewa ta atomatik ta hanyar Gumroad",
+    "privacy": "QDialogButtonBox",
+    "terms": "QShortcut",
+    "contact": "QDialogButtonBox",
+    "gumroad": "↗",
+    "exploreArt": "↗",
+    "discoverStory": "QShortcut",
+    "buyDownload": "Download now",
+    "buyCollection": "↗",
+    "exploreCollection": "↗",
+    "printable": "KCharselect unicode block name",
+    "format": "Fayil na dijital · Cire cikin girma mai dacewa da filin ka",
+    "noResults": "QXml",
+    "catalogError": "Katal ɗin girayyi bai dace ba. To, ka sake saukar da shafi.",
+    "all": "@ action",
+    "of": "Dakata",
+    "artworks": "artworks",
+    "choose": "Zaɓi harshe"
+  },
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "_ui_translation_status": "machine-generated-unreviewed",
+  "landing_ui": {
+    "← Return to the gallery": "QPrintPreviewDialog",
+    "Language": "@ item Spelling dictionary",
+    "An original digital artwork from HALL OF GREATNESS": "Wani aikin zane na dijital na asali daga HALL OF GREATNESS",
+    "A curated collection of meaningful digital artworks": "Wani haɗuwa mai kyau na ayyukan zane na dijital masu ma'ana",
+    "Explore & Get the Artwork ↗": "QPrintPreviewDialog",
+    "Secure checkout and digital delivery on Gumroad.": "Tsarin biyan kuɗi na amintacce da bayarwa ta dijital a kan Gumroad.",
+    "Artwork presentation": "Nuna zane",
+    "Imagine it in a refined frame": "Ka yi tunanin shi a cikin wani tsari mai kyau",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "Wani gabatarwa na biyu na taimaka maka ka nuna zane kamar yadda aka nuna shi a cikin firam, yayin da kake kiyaye bambancinsa na asali.",
+    "Digital download": "QFileDialog",
+    "Access your files after checkout": "Cire fayilolin ka bayan an cire su",
+    "Print your way": "@ action",
+    "Choose a size suited to your space": "Zaɓi girman da ya dace da filinku",
+    "Made to display": "An yi shi don nunawa",
+    "For homes, studios, and meaningful spaces": "Ga gidaje, da ɗakunan karatu, da wurare masu ma'ana",
+    "The meaning behind the artwork": "Ma'anar bayan aikin zane",
+    "More than decoration. A feeling that stays.": "A'a, shi ne wani abu da ke da kyau.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "An halitta shi domin mutane da suke so wurinsu ya nuna wani labarin, wata tunawa, wata daraja, ko kuma wani jin dadi. Ka bar wannan aikin ya zama wani bangare na yanayi da kake halitta da kuma jin da kake so wurinka ya riƙe.",
+    "Inside this collection": "@ action",
+    "One collection. Many stories.": "Wani kamfani.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Ka bincika ayyukan sana'a na mutum da aka haɗa a cikin wannan rukunin. Kowane ɓangare yana da halayensa, yayin da suke samar da tafiyar gani mai arziki.",
+    "Complete artwork story": "Cika tarihin zane",
+    "Full product description": "Bayani na gaba",
+    "What is included": "@ action",
+    "Product specifications": "Bayanin kayan aiki",
+    "Where it belongs": "A inda yake",
+    "Art that finds its place": "Art wanda ya sami wurinsa",
+    "Before you purchase": "A gabanin ka saya",
+    "Digital download details": "QFileDialog",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Wannan wani abu ne na dijital. Ba za'a aika da wani zane ko firam na zahiri ba. Bayan sayen, Gumroad na ba da damar shiga fayiloli da aka haɗa da wannan samfurin. Don Allah ka duba takamaiman fayil da lasisi da aka bayar kafin ka buga ko ka yi amfani da aikin zane.",
+    "From download to display": "@ action",
+    "Make the artwork part of your space": "Yi aikin zane wani ɓangare na filin ka",
+    "01 · Purchase": "QDialogButtonBox",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Cika da biyan kuɗin ku na amintacce a kan Gumroad. Sayarwarku ita ce ga wani abu na dijital.",
+    "02 · Download": "QFileDialog",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Cire fayiloli da aka samar da wannan samfurin ta hanyar Gumroad kuma ka duba takamaiman bayanai da aka haɗa.",
+    "03 · Print": "@ action",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Zaɓi girman bugawa wanda zai kiyaye bambancin asali na aikin zane. Mai sana'ar bugawa na cikin gida zai iya taimakawa wajen daidaita girman zuwa fayil ɗin da aka bayar.",
+    "Please note:": "Ka lura",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Ba a aika da wani zane ko firam na zahiri ba. Nau'in fayil da ake samu, matsaloli, rabon, da kuma sharuddan amfani da su sune waɗanda aka bayyana a cikin saukewar samfurin da kuma lasisi da aka haɗa.",
+    "Let your space tell a story.": "Ka bar filinka ya faɗi wani labarin.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Ka zaɓi zane wanda ke nuna abin da kake da daraja—kuma ka bar ma'anar sa ta zauna tare da kai.",
+    "Get": "Ka samu",
+    "Art with a Soul. A Message Without Borders.": "Zane da Ruhu. Manzo Ba Da Tsananin.",
+    "Digital artwork · Instant download through Gumroad": "Zane na Dijital · Saukewa na Atomatik ta hanyar Gumroad",
+    "Privacy": "Tsarin Sirri",
+    "Terms": "Sharudda",
+    "Contact": "Haihuwa",
+    "Gumroad store ↗": "Masallacin Gumroad ↗",
+    "· Digital download": "Saukewa na Dijital"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Fayiloli da aka haɗa",
+    "product_type": "Nau'in kayan aiki",
+    "delivery": "Sayarwa",
+    "physical_item": "Abun jiki",
+    "printing": "Cire",
+    "usage": "Amfani",
+    "bundle_item_count": "Abun cikin bundle"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "An shirya wani taron sana'a don gidaje, ofisoshi, otal, dakunan gani, wuraren karbar bakuncin, da kuma wuraren ciki na ciki.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Get THE ART OF ELEGANCE & SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "An shirya wani taron sana'a don gidaje, ofisoshi, otal, dakunan gani, wuraren karbar bakuncin, da kuma wuraren ciki na ciki.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Get EGYPTIAN & COPTIC HERITAGE ↗",
+      "\\n": "\\n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "A BOND BEYOND WORDS  The Beauty of Unconditional Love",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.",
+      "Get THE HUMANITY LEGACY ↗": "Get THE HUMANITY LEGACY ↗",
+      "\\n": "\\n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A mai da hankali ga dakin zama, dakunan zama, ofisoshi, boutique otal, wellness wurare, da kuma da aka yi la'akari da ciki.",
+      "Get THE ART OF STILLNESS ↗": "Get THE ART OF STILLNESS ↗",
+      "\\n": "\\n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A mai da hankali ga dakin zama, dakunan zama, ofisoshi, boutique otal, wellness wurare, da kuma da aka yi la'akari da ciki.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Get GEOMETRY OF ELEGANCE ↗",
+      "\\n": "\\n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "An bayyana cewa ga gidaje, studios na halitta, ofisoshi, wuraren karbar bakuncin, da kuma ciki da aka tsara ta hanyar tunanin.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗",
+      "\\n": "\\n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "An bayyana cewa ga gidaje, studios na halitta, ofisoshi, wuraren karbar bakuncin, da kuma ciki da aka tsara ta hanyar tunanin.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗",
+      "\\n": "\\n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A mai da hankali ga dakin zama, dakunan zama, ofisoshi, boutique otal, wellness wurare, da kuma da aka yi la'akari da ciki.",
+      "Get MEDITERRANEAN DREAMS ↗": "Get MEDITERRANEAN DREAMS ↗",
+      "\\n": "\\n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A mai da hankali ga dakin zama, dakunan zama, ofisoshi, boutique otal, wellness wurare, da kuma da aka yi la'akari da ciki.",
+      "Get SILENT HORIZONS . ↗": "Get SILENT HORIZONS . ↗",
+      "\\n": "\\n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A mai da hankali ga dakin zama, dakunan zama, ofisoshi, boutique otal, wellness wurare, da kuma da aka yi la'akari da ciki.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Get GOLDEN FLOW   The Art of Timeless Luxury ↗",
+      "\\n": "\\n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "An bayyana cewa ga gidaje, studios na halitta, ofisoshi, wuraren karbar bakuncin, da kuma ciki da aka tsara ta hanyar tunanin.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Get BEYOND THE UNIVERSE 🌏 ↗",
+      "\\n": "\\n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A ma'ana na musamman na wuri ga gidaje, ofisoshi, makarantu, da wuraren da mutane da yawa da kuma abubuwan da suka faru.",
+      "Get A Shelter of Love ♥ ↗": "Get A Shelter of Love ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A mai da hankali ga dakin zama, dakunan zama, ofisoshi, boutique otal, wellness wurare, da kuma da aka yi la'akari da ciki.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Get The Celestial Garden – A Dance Beneath the Moon ↗",
+      "\\n": "\\n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A mai da hankali ga dakin zama, dakunan zama, ofisoshi, boutique otal, wellness wurare, da kuma da aka yi la'akari da ciki.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Get THE GOLDEN VEIL OF SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "Planet daya. Responsibility daya. Zaɓuɓɓuka da yawa.",
+      "The story behind the image": "Tarihin da ke bayan hoton",
+      "More than decoration. A human story.": "Mafi yawa fiye da ado. Tarihin mutum.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "Hannunmu na wakiltar ikonmu na aiki. Wurin da aka dasa ya wakilci rayuwa mai tsanani; kwari suna nuna canji. Haɗin tsakanin ƙasa mai lalacewa da alkawari na sakewa yana tuna mana cewa gobe ana shafar ta da abin da muke zaɓar mu kare yau.",
+      "Where the artwork belongs": "A inda aikin kwalliya yake",
+      "Created to live with meaning": "An halitta don rayuwa da ma'ana",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Wani bayani mai ban mamaki ga gidaje, ofisoshi, makarantu, kungiyoyin kare muhalli, wuraren karbar bakuncin, da wuraren ƙirƙira.",
+      "A distinctive focal point for considered interiors": "Wurin da ake da shi na musamman don yin tunani kan ciki",
+      "A conversation piece with a message beyond trends": "Wani ɓangare na hira da sako da ke wuce ra'ayoyi",
+      "A thoughtful digital art choice for personal spaces": "Zaɓin zane na dijital mai hankali ga wuraren sirri",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Wannan wani abu ne na dijital. Ba za a aika da wani bugawa ko siffar jiki ba. Bayan siyan, sauke fayilolin da aka bayar a Gumroad. Duba siffofin fayil ɗin da aka haɗa, da umarnin bugawa, da izinin amfanin kai kafin bugawa. Zaɓi girman bugawa da sabis da ya dace da fayilolin da aka bayar.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Zaɓin aikin kwalliya wanda ya nuna abin da kuke so—kuma ku bar ma'anar ta ta zauna tare da ku.",
+      "Get The Hand That Holds Tomorrow ↗": "Ku Samu Hannun da ke Rike da Gobe ↗",
+      "\\n": "\\n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Fuskokin daban-daban. Mutum ɗaya. Haɗin kai mai tsarki.",
+      "The story behind the image": "Labarin da ke bayan hoton",
+      "More than decoration. A human story.": "Mafi yawa fiye da ado. Labarin mutum.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Ivory da obsidian suna kiyaye tabbacin kowane fuska. Wurin da aka yi ado da zinariya yana nuna jin dadin da aka raba, fatan da kuma soyayya da ake yi wa mutum da girma. Haɗin kai ba ya bukatar daidaito; yana farawa lokacin da muka gane mutumcin juna.",
+      "Where the artwork belongs": "A inda aikin sana'a yake",
+      "Created to live with meaning": "An halitta don rayuwa da ma'ana",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Wani bayani mai kyau ga gidajen zamanin yau, ofisoshin shugabanni, dakunan nuna hotuna, dakunan karbar bakuncin, da kuma wuraren ciki da suke da darajar tattaunawa ta al'adu da haɗin kai na mutum.",
+      "A distinctive focal point for considered interiors": "Wuri mai ban sha'awa ga wuraren ciki da aka yi la'akari da su",
+      "A conversation piece with a message beyond trends": "Wani ɓangare na tattaunawa da sakon da ya wuce tasirin",
+      "A thoughtful digital art choice for personal spaces": "Zaɓin zane na dijital mai hankali ga wuraren sirri",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Wannan wani abu ne na dijital. Ba za a aika da wani bugawa ko siffar jiki ba. Bayan siyan, sauke fayilolin da aka bayar a Gumroad. Duba bayanin fayil ɗin da aka haɗa, da manunin bugawa, da kuma lasisin amfanin kai kafin bugawa. Zaɓi girman bugawa da sabis da ya dace da fayilolin da aka bayar.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Zaɓin aikin sana'a wanda ya nuna abin da kuke so—kuma ku bar ma'anar ta ta zauna tare da ku.",
+      "Get The Golden Thread of Humanity ↗": "Ku samu Wurin Da Aka Yi ado Da Zinariya Na Mutum ↗",
+      "\\n": "\\n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A ma'ana na musamman a kan gida, ofisoshi, makarantu, da wuraren da mutane da yawa da kuma labarai da suka shafi.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "Get ROOTS OF TENDERNESS ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A mai da hankali ga dakin zama, dakunan zama, ofisoshi, boutique otal, wellness wurare, da kuma da aka yi la'akari da ciki.",
+      "Get AURELLE 👑 ↗": "Get AURELLE 👑 ↗",
+      "\\n": "\\n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "Kyakkyawan kwanciyar hankali. ƙarfin cikin.",
+      "The story behind the image": "Labarin da ke bayan hoton",
+      "More than decoration. A human story.": "Mafi yawa fiye da ado. Labarin mutum.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "Wani mutum mai haske ya zama alamar fahimtar kanka. Hasken da ke cikin hoton yana nuna cikakkun bayanai; bayanin halittu yana nuna sabuntawa. Wannan aikin yana tunatar da mu cewa ƙarfin ba ya bukatar ya kasance mai tsananin sauti—kuma kwanciyar hankali na iya zama wani nau'i na kyau.",
+      "Where the artwork belongs": "A inda aikin kwaikwayo yake",
+      "Created to live with meaning": "An halitta shi don ya zauna da ma'ana",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "Wani wuri mai kyau na sha'awa ga ɗakunan zama, ofisoshi na musamman, wuraren karbar bakuncin, otal, wuraren jin dadi, da wuraren ciki na zamani.",
+      "A distinctive focal point for considered interiors": "Wani wuri mai ban sha'awa ga wuraren ciki da aka yi la'akari da su",
+      "A conversation piece with a message beyond trends": "Wani ɓangare na tattaunawa da sako da ya wuce tasirin",
+      "A thoughtful digital art choice for personal spaces": "Zaɓin zane na dijital mai hankali ga wuraren ciki na mutum",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Wannan wani abu ne na dijital. Ba za a aika da wani kwafin ko siffar jiki ba. Bayan siyan, sauke fayilolin da aka bayar a Gumroad. Duba siffofin fayil ɗin da aka haɗa, da umarnin bugawa, da kuma izinin amfanin kai kafin bugawa. Zaɓi girman bugawa da sabis da ya dace da fayilolin da aka bayar.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Zaɓin aikin kwaikwayo wanda ya nuna abin da kuke so—kuma ku bar ma'anar ta ta zauna tare da ku.",
+      "Get The Art of Inner Peace ↗": "Samun Sana'ar Jin Kai ↗",
+      "\\n": "\\n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A mai da hankali ga dakin zama, dakunan zama, ofisoshi, boutique otal, wellness wurare, da kuma da aka yi la'akari da ciki.",
+      "Get SERENITY 🤍 ↗": "Get SERENITY 🤍 ↗",
+      "\\n": "\\n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A ma'ana na musamman na wuri ga gidaje, ofisoshi, makarantu, da wuraren da mutane da yawa da kuma abubuwan da suka shafi.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Get THE TREE THAT REFUSED TO DIE ↗",
+      "\\n": "\\n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "A ma'ana na musamman a kan gida, ofisoshi, makarantu, da wuraren da mutane da yawa da suka yi magana game da.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗",
+      "\\n": "\\n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "A yi amfani da hannayen da yawa wajen gina al'umma mai zuwa.",
+      "The story behind the image": "Labarin da ke bayan hoton",
+      "More than decoration. A human story.": "Mafi yawa fiye da ado. Labarin mutum.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Kowace hannun tana wakiltar rayuwa, kyakkyawa, jarrabawa, ko kuma damar da aka ba ta. Yaron yana wakiltar duk wani yaro wanda yake bukata da goyon baya da goyon baya. Tare, hannayen na zama wani katafaren titi—kuma fatan ya zama wani abu da muke ginawa ga kowannenmu.",
+      "Where the artwork belongs": "A inda aikin kwaikwayo yake",
+      "Created to live with meaning": "An halitta shi don ya zauna da ma'ana",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Wani bayani mai ma'ana ga gidajen iyali, makarantu, littattafai, ofisoshi, dakunan gwaje-gwaje, da kuma wuraren da suke tunawa da ilimi da dangantaka tsakanin mutane.",
+      "A distinctive focal point for considered interiors": "Wani wuri mai ban sha'awa don yin tunani game da ciki",
+      "A conversation piece with a message beyond trends": "Wani ɓangare na tattaunawa da sako da ke wuce ra'ayoyi",
+      "A thoughtful digital art choice for personal spaces": "Zaɓin zane na dijital mai hankali ga wuraren sirri",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Wannan wani abu ne na dijital. Ba za a aika da wani kwafin ko siffar jiki ba. Bayan siyan, sauke fayilolin da aka bayar a Gumroad. Duba siffofin fayil ɗin da aka haɗa, da umarnin bugawa, da kuma lasisin amfanin kai kafin bugawa. Zaɓi girman bugawa da sabis da ya dace da fayilolin da aka bayar.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Zaɓin aikin kwaikwayo wanda ke nuna abin da kuke so—kuma ku bar ma'anar ta ta zauna tare da ku.",
+      "Get A Stairway of Hands ↗": "Ku samu wani katafaren titi na hannayen ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Abin da muke karewa yau ya zama nasu yau.",
+      "The story behind the image": "Labarin da ke bayan hoton",
+      "More than decoration. A human story.": "Mafi yawa fiye da ado. Labarin mutum.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "Zuriyar da ta fi daɗewa tana da koyon aiki; da ta ƙarama tana da damar yin hakan. A tsakaninsu akwai alkawari: don kiyaye abin da ke ci gaba da rayuwa da kuma kawo karshen wani abu mai kyau ga waɗanda ke rike da shi. Wannan ita ce soyayya da aka bayyana ta a matsayin alhakin.",
+      "Where the artwork belongs": "A inda aikin sana'a yake",
+      "Created to live with meaning": "An halitta shi don ya zauna da ma'ana",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "Wani abu mai hankali ga gidajen iyali, karatu, ofisoshi, wuraren karatu, da duk wanda ke da darajar tunawa, iyali, da kuma gaba.",
+      "A distinctive focal point for considered interiors": "Wurin da ake da hankali a ciki",
+      "A conversation piece with a message beyond trends": "Wani abu na tattaunawa da sakon da ya fi sauran abubuwa",
+      "A thoughtful digital art choice for personal spaces": "Zaɓin sana'a na dijital mai hankali ga wuraren sirri",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Wannan wani abu ne na dijital. Ba za a aika da wani abu mai bugawa ko siffar ba. Bayan siyan, sauke fayilolin da aka bayar a Gumroad. Duba siffofin fayil ɗin da aka haɗa, da umarnin bugawa, da kuma lasisin amfanin kai kafin bugawa. Zaɓi girman bugawa da sabis da ya dace da fayilolin da aka bayar.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Zaɓin aikin sana'a wanda ya nuna abin da kuke so—kuma ku bar ma'anar ta ta zauna tare da ku.",
+      "Get The Legacy of Generations ↗": "Samu Adadin Zuriyar Zuriyar ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A mai da hankali ga dakin zama, dakunan zama, ofisoshi, boutique otal, wellness wurare, da kuma da aka yi la'akari da ciki.",
+      "Get The Mediterranean Muse ↗": "Get The Mediterranean Muse ↗",
+      "\\n": "\\n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "Duniya daya. Dan Adam daya. A Yau daya.",
+      "The story behind the image": "Labarin da ke bayan hoton",
+      "More than decoration. A human story.": "Mafi yawa fiye da ado. Labarin dan Adam.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "Hannun da ke kewaye da duniyar suna wakiltar mutane na kowanne shekaru da kuma asali. Layin da aka raba yana magana game da abin da yake cikin hadari; hoton ya nuna filin teku mai launin shuɗi da hasken da ke nuna abin da muke iya karewa. Manzanci ba shi da rashin tsammani. Shi ne alhakin da aka raba, wanda aka nuna.",
+      "Where the artwork belongs": "A inda aikin kwaikwayo yake",
+      "Created to live with meaning": "An halitta don rayuwa da ma'ana",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "Ma'ana mai da hankali ga gidaje, ofisoshi, wuraren karatu, dakunan zane, da kuma wuraren da aka ware don ci gaba.",
+      "A distinctive focal point for considered interiors": "Ma'ana mai da hankali ga wuraren ciki da aka yi la'akari da su",
+      "A conversation piece with a message beyond trends": "Sashe na hira da sakon da ya wuce salo",
+      "A thoughtful digital art choice for personal spaces": "Zaɓin zane na dijital mai hankali ga wuraren sirri",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Wannan wani abu ne na dijital. Ba za a aika da wani kwafin ko siffar jiki ba. Bayan siyan, sauke fayilolin da aka bayar a Gumroad. Duba siffofin fayil da aka hada, da umarnin bugawa, da kuma lasisin amfanin kai kafin bugawa. Zaɓi girman bugawa da sabis da ya dace da fayilolin da aka bayar.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Zaɓin aikin kwaikwayo wanda ke nuna abin da kuke so—kuma ku bar ma'anar ta ta zauna tare da ku.",
+      "Get Last Cry of Earth ↗": "Samun Bayanin Kashe Duniya ↗",
+      "\\n": "\\n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A bambanta da ƙari ga gidaje, bincike na musamman, ofisoshi, galleries, gidajen tarihi, otal-otal, da kuma wuraren al'adu.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Get THE GOLDEN GAZE 👁 ↗",
+      "\\n": "\\n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A bambanta da ƙari ga gidaje, bincike na sirri, ofisoshi, galleries, gidajen tarihi, otal-otal, da kuma wuraren al'adu.",
+      "Get The Queen Of The Nile 👑 ↗": "Get The Queen Of The Nile 👑 ↗",
+      "\\n": "\\n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A bambanta da ƙari ga gidaje, bincike na musamman, ofisoshi, galleries, gidajen tarihi, otal-otal, da kuma wuraren al'adu.",
+      "Get The Coptic Soul of Egypt ↗": "Get The Coptic Soul of Egypt ↗",
+      "\\n": "\\n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE A bikin na Egypt's timeless beauty, inda mai tsarki mai tsarki na wani babban wuri ya hadu da yanayin da ba a manta da shi ba na Nilu. Golden...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A wani ƙari na musamman ga gidaje, karatun sirri, ofisoshi, galeri, gidajen tarihi, otal, da wuraren al'adu.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "Get THE NILE'S ETERNAL GRACE ↗",
+      "\\n": "\\n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Wasu Hadin Kan An Ji Ta da Zuci, Ba A Fassara Ta da Kalmomi. Yi bikin haɗin kai na musamman...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Wani wuri mai ma'ana na sha'awa ga gidaje, ofisoshi, wuraren karatu, da wuraren da labaran mutane suke da muhimmanci.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗",
+      "\\n": "\\n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION — ARTWORKS 7, LIMITLESS DUNIA Travel beyond the familiar ta hanyar wani collection na 7 dijital artworks da aka jawo hankalin da cosmic...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "A refined accent ga gidajen zama, gidajen zama, ofisoshi, boutique otal, wellness wurare, da kuma da aka yi la'akari da ciki.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Get GLOBAL ART & IMAGINATION ↗",
+      "\\n": "\\n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Ka kawo girman da ke da tsawo na Masar ta daɗaɗɗen zuwa cikin wurinka da Masar ta daɗaɗɗen,...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Wani karin bambanci ga gidaje, karatun sirri, ofisoshi, galeri, gidajen tarihi, otal, da wuraren al'adu.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Ka samu ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗",
+      "\\n": "\\n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "A cikin wani aiki da aka yi tunanin, lokaci ba a auna shi ba amma an yi masa zane. THE CLOCKMAKER'S DREAM na canza kayan aiki, da tsarin sama, da kuma kayan aiki da ba za a iya yi ba...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Wani abu mai kyau ga gidajen zama, da wuraren zama, da ofisoshi, da otal-otal, da wuraren jin dadi, da kuma wuraren ciki da aka yi la'akari da su.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Ka samu THE CLOCKMAKER'S DREAM ↗",
+      "\\n": "\\n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
+}

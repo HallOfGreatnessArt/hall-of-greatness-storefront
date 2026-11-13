@@ -1,0 +1,705 @@
+{
+  "products": {
+    "oubirh": {
+      "summary": "Likarolo tse tšeletseng tsa litsebi tse nang le li-accents tsa khauta, li-form tse sireletsehileng, ho tlohela ho shebahala hantle, le ho shebahala hantle bakeng sa li-interieurs tse tsoetseng pele tsa nako e fetileng.",
+      "category": "Collection",
+      "_source_hash": "85810573c609f032749049f0af3efd548b47b50b60c74fae8bbbcb5e0cfaaf2c"
+    },
+    "hqpird": {
+      "summary": "Likarolo tse tharo tse fapaneng tsa litsebi tsa litsebi tse etsang liketsahalo tsa moea o sa feleng oa nalane ea Egyptian le Coptic, mehopolo ea nalane, le botle ba nako e telele ba Egypt.",
+      "category": "Collection",
+      "_source_hash": "bbee15015588f3854edb7cce4f6ee745a63ecba99e41de9335d42b77a925b26e"
+    },
+    "wdtvt": {
+      "summary": "Likarolo tse tšeletseng tsa litsebi tsa bonono tse matla ka tšepo, ho hlaphoheloa, ho hokahana le motho, le tšepo. Kopano e felletseng ea litsebi tsa bonono bakeng sa libaka tse nang le tlhaloso le li-inner tse nahanang.",
+      "category": "Kopano",
+      "_source_hash": "0beaa1225adf5643d8bf3173e7f93d6f8ebe7ebb067e86674e4e8e27bf908560"
+    },
+    "mxrljy": {
+      "summary": "The Art of Stillness u amohela ho fokotsa le ho fumana bocha ka nako e le 'ngoe e khutsitseng. Inspired ke li-forms tsa meditative, lotus blossoms, metsi a phallang, le leseli le khanyang la khauta, sena se setle sa litsebi tsa litsebi",
+      "category": "Elegance",
+      "_source_hash": "adcd68bc42846100ab6f13044e8972c34ee7fe07d1f4702b4d1d9fdc7b14e78c"
+    },
+    "gusqyc": {
+      "summary": "Geometry of Elegance e phethela kopano ea sebopeho sa setso, texture ea tlhaho, le liaparo tsa morao-rao. Emerald tone, masela a ivory, geometry ea sculptural, le li-accents tsa khauta li etsa mosebetsi oa bonono o hlakileng oa liaparo bakeng sa matlo a tsoetseng pele, liofisi, le li-interieurs tsa bonono.",
+      "category": "Elegance",
+      "_source_hash": "84014823691b93211841d3dbcf2452a78fd435d388b74dad7f7febe4d752c69f"
+    },
+    "aenwi": {
+      "summary": "Itlhahisa motse o entsoeng ka monyetla. Lihlekehleke tsa Motšehare ke mosebetsi oa bonono ba digital o ikhethileng o etsang hore ho be le maikutlo a bonono, ho theha, le ho batla ho theha nakong e tlang e khanyang. Setšoantšo se makatsang sa li-print tsa li-home tsa morao-rao, listudio tsa boqapi, libaka tsa theknoloji le liofisi tsa morao-rao.",
+      "category": "Global",
+      "_source_hash": "e2173f80b274ea619b175b5480c483771929f3d1c9a75ce2893eea0775e30e96"
+    },
+    "jrsgce": {
+      "summary": "Lebisang ho khotso ea ho tsoa Mediterranean ho libakeng tsa hau tsa letsatsi le letsatsi. Mediterranean Dreams e nka lerato la ho etsa meaho ea leoatle, metsi a mosehla a khanyang, li-terraces tse nang le lipalesa, le letsatsi la hora ea khauta. Setšoantšo sa digital se amohelang bakeng sa matlo, villas, cafes, le li-inspired-travel-indoor.",
+      "category": "Elegance",
+      "_source_hash": "f26a8d189f4afe6a0a7a8d671fcbd37c54bd461cdba3f4d15d77243c056e17e5"
+    },
+    "ukxrmq": {
+      "summary": "Fumana nako ea ho khutlela morao ka botle ba ho qetela ba lehlabathe le lefifi. Silent Horizons ke mosebetsi oa bonono ba digital o nang le boits'oaro bo nang le metsi a sa feleng, li-peak tse telele, mollo o mofuthu oa mantsiboea, le maikutlo a ho nchafatsoa. E na le sebaka se setle sa naha bakeng sa matlo a matle, liofisi le libaka tsa wellness.",
+      "category": "Elegance",
+      "_source_hash": "003e93a0d92367744addfb51152fe6da6c27ac08144b5c89e1e73dd7fec007c7"
+    },
+    "yhkokf": {
+      "summary": "Golden Flow e tlisa drama ea tlhaho ea marble le bokhabane ba moputsoa ho ea ho kompositi e hlakileng ea nako e fetileng. Litšoantšo tse tšoeu le tse khanyang li tlisa bophahamo, ho tsamaea le ho hlaka ha liaparo - ho ngola ha litsebi tsa litsebi",
+      "category": "Elegance",
+      "_source_hash": "fc65d52d8cd76ff8b23097321c08f7ca24b70659818dea5dda62f894d09e4c9c"
+    },
+    "nxkxyq": {
+      "summary": "Phahameng ho leseli le khanyang la cosmos. Bophirimela ba Universe bo phethela mohopolo, boholo, le ho tšoha ha sebaka ka ho etsa mosebetsi oa litsebi tsa li-digital tse nang le li-galaxies, leseli la leholimo, le ho se khone ho se khone. Setšoantšo se khahlisang sa li-interieurs tsa morao-rao le li-minds tse khahlisang.",
+      "category": "Global",
+      "_source_hash": "16177585eb4768f120133dcd37a54ecc8a9108c42b39834cfe2e329ac00623d3"
+    },
+    "mzlqxg": {
+      "summary": "A Shelter of Love e nka qeto e nyane le tlhaloso e telele: ngoana ea bakang ho etsa bonnete ba hore ha a tobane le tšitiso ka boeona. E behiloe ka ntle ho motšehare oa toropo e khanyang, sena se etsa hore se tsoelepele ho sireletsa, ho tšepahala, lelapa, le matla a manyane a lerato le sa lekanyetsoang.",
+      "category": "Mantho",
+      "_source_hash": "5c0e78bf9d27136335daa7e34ccf9da42dc590a56d083c83815407b47244dac0"
+    },
+    "etqsav": {
+      "summary": "Ka tlase ho letsatsi le khanyang, 'mala, ho tsamaea, le kamano ba kopana ka The Celestial Garden. Ena dreamlike mosebetsi oa litsebi o tšoara botho, lifofane tse arolelanoeng, boitšoaro, le matla a basali ka ho fetisisa ka ho fetisisa lefatšeng la fantasy. A khethehileng phatlalatsa tlhaloso bakeng sa ho hlalosa, imaginative ka hare.",
+      "category": "Elegance",
+      "_source_hash": "79723050f56e46edb2f774883a51d0a22ea883d9b80d00bd2c223954ce0c9346"
+    },
+    "vwrllor": {
+      "summary": "The Golden Veil of Serenity ke setšoantšo sa matla a maholo, a maholo, le a maholo a maholo. Litšoantšo tse ntšo tse nang le masela a maholo le masela a maholo a etsa hore ho be le ho shebahala ho shebahala - mosebetsi oa bonono ba inthanete o bonts'ang bakeng sa li-inner tse ntle le bahlahisi ba nang le matla a ho etsa litšoantšo.",
+      "category": "Elegance",
+      "_source_hash": "3fbd51fc0b3144dfae0749e5c04814f34b8c72ab9c458a6ae346494c7a678894"
+    },
+    "gkwadk": {
+      "summary": "Semela se tšoaroang ka matsoho a motho se fetoha setšoantšiso sa ho nchafatsoa le tlhokomelo e arolelanoeng.",
+      "category": "Botho",
+      "_source_hash": "b3d3ed2cdc9e6333f7aaf330e1821220c7ad12874771ec45ca02ca1fc18fbd9f"
+    },
+    "rglfun": {
+      "summary": "Litšoaneleho tse peli tse fapaneng, tse kopantsoeng ke sebōpeho sa khauta sa boikarabello ba rona ba motho.",
+      "category": "Botho",
+      "_source_hash": "7621f26df00b476963956773c9499fcec7b87189855fb05b55ebef7cd33c4268"
+    },
+    "cotnkm": {
+      "summary": "Roots of Tenderness ke mokete oa lerato le leng le le leng leo e leng karolo ea rona. Ka ho shebana le sculptural ea ngoana le ngoana, mosebetsi oa bonono o phethela ts'ireletso, tsoelo-pele, ho ba teng, le makhasi a maholo a lerato. Sengoathoana se setle sa libakeng tsa lelapa le likokoana-hloko tse nahanang.",
+      "category": "Humanity",
+      "_source_hash": "89071cfe9a0d1d8d3c14646a7e82629d42e4e1b858b782ebe96d94ff24be625e"
+    },
+    "kaztbw": {
+      "summary": "AURELLE e fetola setso sa letsatsi le letsatsi sa kofi ho ea ho ts'epo ea bonono, bonono ba basali, le bonono bo khutsitseng. Leseli la moputsoa, bofubelu bo bofubelu, le li-tones tsa kofi tse futhumetseng li etsa mosebetsi oa bonono oa digital o ikhethang bakeng sa matlo a stylish, li-corners tsa kofi, li-cafes tsa boutique, le li-inner tse tsoetseng pele.",
+      "category": "Elegance",
+      "_source_hash": "50f25bf7ff18b06b831f14e21450ee7562896355ad94503c70b68b66a14178bb"
+    },
+    "cuitvq": {
+      "summary": "Sculpture elegance le khanyetso ea khauta e bonts'a matla a maholo a ho ba le tšepo ea kahare.",
+      "category": "Elegance",
+      "_source_hash": "2ccb896bdf8f18e66ce1bc1ca17fecfdd6eed315302fe2ee1d2ef8c5532b18b4"
+    },
+    "rabhc": {
+      "summary": "Serenity ke ho nahana ka ho shebahala ka ho hlaphoheloa, ho ba le khotsofalo, le matla a manyane a phelang kahare. Setšoantšo sa eona se hlakileng le se nang le moelelo o moholo se etsa sebaka se setle sa libaka tse etselitsoeng ho nahana, ho phomola le ho etsa litšoantšo tsa nako e fetileng.",
+      "category": "Elegance",
+      "_source_hash": "3e36120477fa3535261c200c5e9210726bf08cb1968d35b25965f08e276b936f"
+    },
+    "ycltf": {
+      "summary": "Mofuta o sa lumelloang ho shoa o re bolella pale ea ho hlaphoheloa: leha ho le joalo, bophelo bo ka fumana tsela ea ho tsoela pele. Li-roots tsa eona li fetoha li-bridges pakeng tsa libaka tse senyehileng, ho fetola ho phela ho ea ho ho hokahanya le ho nchafatsa. Setšoantšo sa sehlooho se nang le tlhaloso bakeng sa mang kapa mang ea nahanang hore tšepo e ka hōla hape.",
+      "full_description": "MOTSO O SA LOKELOENG HO HOLOFA\n\nLeha ho le joalo, bophelo bo fumana tsela.\n\nNa haeba sesupo se seholo sa tšepo e ne e se serapa se entsoeng ke batho, empa sefate se phelang se sa lumelloang ho fana?\n\nIpotsetsa motse o lahlehileng. Litsi li thehiloe, litsela li lahlehile ka tlas'a li-rubbish, 'me li-traces tsa bophelo ba motho li bonahala li lahlehile ka ho feletseng. Leha ho le joalo, ka har'a lefatše la sebaka sena se lahlehileng, sefate se sa tloaelehang se tsoela pele ho phela.\n\nLi-roots tsa eona ha li batla feela mobu. Li fihla kahare ho lisekoere tse senyehileng, li kopanya li-structures tse senyehileng, le ho phahama lipakeng tsa li-buildings tse kopanetsoeng, ho fetola ho senyeha ho ea ho ho hokahanya. Li-branches tsa eona li phahama ho ea ho leholimo, li na le li-lekhasi tse tala tse ncha ka tlase ho leseli le leputsoa le etsang hore li-clouds li hlasele.\n\nSena ke ho feta sehlooho sa tlhaho se khutsitseng setereke se senyehileng. Ke pale e hlollang ea moea oa motho.\n\nMofuta o ts'ehetsa motho e mong le e mong ea ileng a tšoaroa ke mathata a sa lumellang hore mathata a utloisise bophelo ba bona ba nakong e tlang. E bua ka ba lahlehileng ho fihlela joale, empa ba ntse ba fumana matla a ho qala hape. Bakeng sa ba lahlehileng ke bophelo, empa ba sa lumelloang hore li-hearts tsa bona li be tse khutsitse. Bakeng sa ba utloisisang hore ho phela ha se ho lula feela—ke ho fumana matla a ho hōla hape.\n\nLi-roots tsa eona li bonts'a ho hlaphoheloa: matla a sa bonahaleng a re etsang hore re be teng ha lintho tsohle tse kantle ho rona li hlaseloa. Li-bridges tsa tsona li bonts'a ho hlōla, ho hokahanya, le ho khona ho theha bocha likamano le mekhatlo ka mor'a ho hlekefetsoa le ho lahleheloa.\n\nLi-canopy tse khubelu ke tšepo ea hore ho senyeha ha ho hlokahale hore e be karolo ea ho qetela. Li-birds tse phahamisitsoeng ho ea leholimong le bulehileng li re hopola hore boipuso le ho nchafatsoa ho ka khutla, leha ho le joalo ka mor'a nako e thata ka ho fetisisa.\n\nLeseli la 'mala oa' mala o moputsoa ka morao ho lirapa tse senyehileng le fana ka lets'oao le letle empa le matla: ho tla etsahalang ha ho khetholloa ke seo se senyehileng, empa ke seo se nang le matla a ho hōla.\n\nHo na le batho ba bangata ba nang le maikutlo a hore ho na le ntho e itseng e sa tšoaneng ea ho ba le boikutlo ba ho ba le boikutlo bo joalo, empa ha ho na motho ea ka utloisang bohloko ho feta ho ba le boikutlo bo joalo.\n\nKe karolo ea puo e nang le tlhaloso e le hore ho be le sebaka sa ho lula, ofisi, lebenkele, studio ea ho etsa, kapa sebaka sefe kapa sefe moo ho hlaphoheloa, ho nchafatsoa le ho phefumoloha ho lokelang ho ba teng. E ka ba le mpho e nahanang bakeng sa motho ea qalang karolo e ncha, ho hlōla ho hlōla, kapa ho fumana matla a ho phahama hape.\n\nEtsoe moriti ona o tla u hopola hore nako e fetileng ha e hloke ho u thibela nakong e tlang. Leha ho le joalo, ha bophelo bo u tlohela u koahetsoe ke likokoana-hloko, ho ka etsahala hore ebe ho na le ntho e ka u thusang ho hōla.\n\nU ke ke ua hlalosoa ke seo se bolileng u. U hlalosoa ke seo se ntse se hōla ka hare ho uena.\n\nHALL EA BOPHELO\n\nLitšoantšo tse nang le moea. Moqoqo o se nang lipheletsong.\n\nLintlha tsa ho batla\n\nFumana sena MELAO E TSOANG HO DIE digital art print bakeng sa ho ngola ka ho ngola ka ho ngola, ho khabisa ka tlung e ikhethang, le ho nahana ka ho nahana ka ho ngola ka har'a. Setšoantšo se ka lefelloang sa ho bonts'a ka bomong, le likhetho tsa ho ngola tse khethileng ho lumellana le faele e fanoeng le sebaka sa hau.",
+      "category": "Bophelo",
+      "product_details": {
+        "files_included": "1 faele · ZIP · 29.1 MB",
+        "product_type": "Ho kenya litšoantšo tsa digital",
+        "delivery": "Ho kenya kapele ha digital kamora ho reka",
+        "physical_item": "Ha ho tla romelloa khatiso ea 'mele kapa lifaele",
+        "printing": "Tlatsa faele e fanoeng ka mofani oa ho tlatsa oa hau oa ho khetha; hlahloba li-dimensions tse kenyellelitsoeng pele o khetha boholo",
+        "usage": "Tobetsa ho sebelisana le litaelo tsa laesense tse kenyellelitsoeng ho kenya"
+      },
+      "_source_hash": "d9bff692f10639a5edca9063641cbb3c31081b0579c89bb9cc9635499e614060"
+    },
+    "bctcdz": {
+      "summary": "The Light re tlohela e mong le e mong honours the lekunutu, bohlale, le matla a ho tsamaea ho tloha lilemo tse leshome ho ea ho tse latelang. A khanya ea leseli e fetoha sebōpeho sa tšepo re fumana-le leseli re khetha ho arolelana. A ho tsamaea mosebetsi oa litsebi tsa litsebi bakeng sa matlo, ofisi, le limpho tse molemo.",
+      "full_description": "LITLHAKU TSE TSOANG\n\nEa bohlokoa ka ho fetisisa ke ea ho qetela eo re e etsang.\n\nLi-lights tse ling li etselitsoe ho khanna nako. Tse ling li etselitsoe ho khanna li-generations.\n\nHo na le nnete e khutsitseng e hokahanyang bophelo bohle ba motho: ha ho letho la rona qala leeto la rona ka ho feletseng ka leseli. Ka tsela e itseng, motho e mong o fihla ho rona - mora, moithuti, motho ea sa tsebeng, motsoalle, kapa motho ea neng a ka se ke a lebala ka lerato la hae. Ba re fa ntho e 'ngoe e re thusang ho fumana tsela ea rona: tšepo e nyane, karolo ea bohlale, qeto ea khotso, kapa feela matla a ho tsoela pele ho ea.\n\nKa letsatsi le leng, re fumana hore leseli leo re neng re le fumana ka nako eo, joale ke la rona.\n\nHo na le liketsahalo tse ngata tse ka etsahalang ka lebaka la ho se utloisisehe ha batho, ho sa utloisisehe ha batho, ho sa utloisiseha ha batho, ho sa utloisiseha ha batho, ho sa utloisiseha ha batho, ho sa utloisiseha ha batho, ho sa utloisiseha ha batho, ho sa utloisiseha ha batho.\n\nKa har'a kompositi, lebone la mokhabiso oa khale le mokhabiso o tsamaea ho tloha letsohong le le leng ho ea ho le leng. Ka hare ho eona, li-faces tsa lilemo tse fapaneng le li-generations li kopana ka nako e le 'ngoe ea ho hokahana. Baholo ba baholo ba bonts'a tsebo le boiphihlelo ba ba neng ba re entse pele. Li-generations tse nyenyane li bonts'a tšepo ea seo se ke keng sa etsahala. Lipakeng tsa tsona, lebone le fetoha sebōpeho se matla sa ho tsoelapele: setso sa hore liphetho tse ntle ka ho fetisisa tsa batho ha li bontšoa feela ke seo re se etsang, empa hape ke seo re se fang ba bang.\n\nHo tšoana le ho tšoana le\n\nLitšoantšo tsena li etsa hore motho a itlhahlobe:\n\nKe mang ea ileng a tlisa leseli bophelong ba hao ha u ne u le hloka haholo? Ke mang ea ka bang leseli ka lebaka la ntho eo u e khethileng ho e fa kajeno?\n\nMoqoqo ona o na le batho ba bang, ho sa tsotelehe lilemo, naha, setso, kapa boemo ba bona. Re ka 'na ra fumana ntho e' ngoe le e 'ngoe ho tloha ho batho ba bang, le re ka 'na ra fumana ntho e 'ngoe le e' ngoe e nang le tlhaloso e le hore re ka e fetisetsa.\n\nHo feta ART. A legate ea tlhaloso.\n\nE entsoe ho ba ho feta ho bua ka ho khabisa, mosebetsi ona oa bonono o na le maikutlo a ho futhumatsa, ho hloleha le ho kopanya batho ka har'a sebaka seo e leng teng. E ka ba le ho ba teng ha ho na letho le utloahalang ka kamoreng ea ho robala, ho ithuta, ofising, kapa moo ho leng molemo ho fumana maikutlo le ho nahana.\n\nE boetse e fana ka mpho e khahlisang ho motho ea tšepahalang ka lerato, lelapa, tšepo, kamano ea motho le matla a ho phela a tšepo.\n\nKa lebaka la lintho tse ngata tse molemo re etsa ka morao ha li kamehla lintho re ka boloka. Ha ho letho, ba ke ba bophelo re na le ho tobetsa, lipelong re na le ho khothaletsa, le leseli re na le ho thusa ba bang ho fumana ka hare ho bona.\n\nMollo o arolelanoeng ha oa ka oa lahleheloa ke mollo. Ke mollo o phelang.\n\nLitšoantšo\n\nHo na le li-macrobiotics tse ngata tse ka u thusang ho boloka boima ba 'mele.\n\nHALL EA BOPHELO\n\nLitšoantšo tse nang le moea. Moqoqo o se nang lipheletsong.\n\nLintlha tsa ho batla\n\n10",
+      "category": "Bophelo",
+      "product_details": {
+        "files_included": "1 faele · ZIP · 27.5 MB",
+        "product_type": "Ho kenya litšoantšo tsa digital",
+        "delivery": "Ho kenya kapele ha digital kamora ho reka",
+        "physical_item": "Ha ho tla romelloa khatiso ea 'mele kapa lifaele",
+        "printing": "Tlatsa faele e fanoeng ka mofani oa ho tlatsa oa hau oa ho khetha; hlahloba li-dimensions tse kenyellelitsoeng pele o khetha boholo",
+        "usage": "Tobetsa ho sebelisana le litaelo tsa laesense tse kenyellelitsoeng ho kenya"
+      },
+      "_source_hash": "6fb6b36e97f6c6a45e6f2b988972dcc4dc6ed88e314b292990945b1ee19d2a6d"
+    },
+    "msuzc": {
+      "summary": "Ea pele ke ho tlisa leseli la Molimo, le ho etsa hore batho ba lumele ka ho feletseng.",
+      "full_description": "LITŠOANTŠISO TSA LIHLOOHO\n\nHo tla ba le lihlooho tse ngata.\n\nHa ho na motho ea ka etsang hore letsatsi le be le lefifi.\n\nA Stairway of Hands ke sehopotso sa sebele sa tšebelisano, tlhokomelo, le litokisetso tse khutsitseng tsa ho fana ka thuso e fetohang bophelo. Ka pelong ea eona, ngoana o tsoela pele ho ea ka leseli ka sehopotso se entsoeng ke matsoho a motho. Ka letsoho le leng le le leng le bolela motho, sehlabelo, lerato, kapa katleho e thusang motho e mong ho phahama.\n\nLITABA TSA MOTHO\n\nLihlooho tsa lihlooho li na le lilemo tse fapaneng kapa liprofinseng tse fapaneng. Li bua ka batsoali, baithuti, basebetsi, batsoali, baeti, le li-generations tseo liteko tsa bona li sa bonahaleng. Ngoana o bonts'a motho e mong le e mong ea nang le 梦想 e hlokang ho khothaletsa, monyetla, le ho sireletsa.\n\nMohala oa ho tloha bofubelu ho ea ho leseli la 'mala o moputsoa o fa setšoantšong matla a eona a maikutlo. Ho becha ha se ho lebala ho lebala; ke ntho eo batho ba e etsang bakeng sa ba bang, e le ho etsa ntho e 'ngoe e ntle ka nako.\n\nLITLHAKU TSE TSOANG HO TSA TSE TSOANG HO TSA TSE TSOANG\n\nE bonts'a mosebetsi ona ka tlung ea lelapa, ofising, sekolo, lebenkeleng, studio, kapa sebaka sa sechaba e le sehopotso sa hore bokhabane le monyetla bo eketseha ha batho ba le teng hammoho. E boetse e le mpho e nahanang bakeng sa baithuti, batsoali, ba mentors, le mang kapa mang ea tšepahalang ka tšepo ea lekholo le tlang.\n\nE mong oa bana. Liaparo tse ngata tse thusang. Nako e tlang e thehiloe hammoho.\n\nLITŠOANTŠISO TSA LITŠOANTŠISO TSA LITŠOANTŠISO\n\nHo kenya ka kotloloho; ha ho tla romelloa li-printer kapa li-frame tse otlolohileng.\n\nKopitsa faele e fanoeng le sehlahisoa sena ka mor'a ho reka.\n\nBala lintlha tsa faele e kenyellelitsoeng, leseli la ho ngola, le laesense ea ho sebelisana ka bomong pele o ngola.\n\nKhetha boholo ba ho ngolisa le ts'ebeletso e lumellanang le ho hlalosoa ha faele e fanoeng.\n\nEa ka tlung ka mosebetsi oa litšoantšo le pale. Khetha Kopitsa mosebetsi oa litšoantšo ho e etsa karolo ea sebaka sa hau.\n\nHALL ea bongata — Art le Soul. Mesebetsi le ho se na lipheletsong.",
+      "category": "Bophelo",
+      "product_details": {
+        "files_included": "1 file · ZIP · 8.6 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download after purchase",
+        "physical_item": "No physical print or frame will be shipped",
+        "printing": "Print the provided files with your preferred print provider; check the included dimensions before choosing a size",
+        "usage": "Follow the personal-use and other license terms included with the download"
+      },
+      "_source_hash": "b963b309b0892c055876d7451b6a8bc36190e3b1d23c99420a1c588817cba9ac"
+    },
+    "tzlsv": {
+      "summary": "Ho na le litakatso tse ngata, litakatso tse ngata",
+      "full_description": "LITLHAKU TSE TSOANG\n\nSeo re se sireletsang kajeno se ka ba sona ka mantsiboea.\n\nE ka ba letšoao la hore motho a ka ba le kamano e ntle le motho e mong.\n\nThe Legacy of Generations e hlahloba kamano pakeng tsa ba neng ba re tlisa pele le ba tla re latela. Ke ho nahana ka lelapa, ho hopola, ho etsa sebe, le boikarabello ba ho tsoela pele ho feta lintho tse nang le tsona: nakong e tlang e loketseng ba bang.\n\nLOVE hore e shebahala kantle ho PRESENT\n\nHo na le mosebetsi o kopaneng pakeng tsa bona, ho boloka seo se bolokang bophelo, ho lokisa seo se senyehileng, le ho etsa likhetho tse tlisoang ke tlhokomelo e seng ka lebaka la ho le bonolo.\n\nMehlala e meng e ka ba: ho ba le kamano e ntle le motho ea u ratang, ho ba le kamano e ntle le motho ea u ratang, ho ba le kamano e ntle le motho ea u ratang, ho ba le kamano e ntle le motho ea u ratang, ho ba le kamano e ntle le motho ea u ratang, ho ba le kamano e ntle le motho ea u ratang.\n\nLITLHAKU TSE TSOANG HO TSA MOLIMO OA LITLHAKU TSE TSOANG HO TSA MOLIMO\n\nSebetsa sena se setle ka har'a sebaka sa bophelo ba lelapa, ho ithuta, ofisi, ho hlophisa thuto, kapa moo e leng teng e tšepahalang ea mohopolo le nakong e tlang. E etsa mpho e nahanang bakeng sa batsoali, batsoali, ba mentors, le batho ba nahanang hore tlhokomelo ke leeto.\n\nRe sa na le nakong e tlang. Re e boloka e le tšepo bakeng sa ba tla tla ka mor'a rona.\n\nLITŠOANTŠISO TSA LITŠOANTŠISO TSA LITŠOANTŠISO\n\nHo kenya ka kotloloho; ha ho tla romelloa li-printer kapa li-frame tse otlolohileng.\n\nKopitsa faele e fanoeng le sehlahisoa sena ka mor'a ho reka.\n\nBala lintlha tsa faele e kenyellelitsoeng, leseli la ho ngola, le laesense ea ho sebelisana ka bomong pele o ngola.\n\nKhetha boholo ba ho ngolisa le ts'ebeletso e lumellanang le ho hlalosoa ha faele e fanoeng.\n\nEa ka tlung ka mosebetsi oa litšoantšo le pale. Khetha Kopitsa mosebetsi oa litšoantšo ho e etsa karolo ea sebaka sa hau.\n\nHALL ea bongata — Art le Soul. Mesebetsi le ho se na lipheletsong.",
+      "category": "Bophelo",
+      "product_details": {
+        "files_included": "1 file · ZIP · 23.1 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download after purchase",
+        "physical_item": "No physical print or frame will be shipped",
+        "printing": "Print the provided files with your preferred print provider; check the included dimensions before choosing a size",
+        "usage": "Follow the personal-use and other license terms included with the download"
+      },
+      "_source_hash": "85dbcd535bbf5b49e8e3d1f629b11e1c1044b6806e4066780e78dd7693e99981"
+    },
+    "bgqxwm": {
+      "summary": "The Mediterranean Muse e tlisa portraiture e hlakileng, sebopeho sa geometri, le botho bo khanyang ba Mediterranean. Rich blue, khauta e batang, le 'mala o matla o etsa mosebetsi oa bonono o ikhethang oa nako e fetileng bakeng sa bahlahisi le liindasteri tse amohelang botho.",
+      "full_description": "Muse ea Mediterranean - Lebitso la Gold, Sea & Mystery\n\nHa leseli la moputsoa le kopana le leoatle le lefubelu le leholo, muse e khahlisang e hlaha ho tloha lefats'eng la botle ba geometric le litoro tsa Mediterranean.\n\nMofuta oa li-mushroom tse nang le li-mushroom tse nang\n\nBlue sapphire rich, khauta textured, ivory mocheso, li-forms tse tšosang tse tšosang, le li-lipstick tse tšosang li etsa hore ho be le khotsofalo e kholo ea ho bona. Sebōpeho se seng le se seng se bonts'a pono e fapaneng, ha sebōpeho sa leoatle se khahlisang se kopa maikutlo a ho tsamaea pakeng tsa nnete le li-fantasy tsa bonono.\n\nE le hore e be le matla a ho etsa liphetoho, e tlameha ho ba le tsebo e lekaneng ea ho etsa liphetoho tse nepahetseng le tse sa tšoaneng.\n\n✨ E loketse\n\nLi-living rooms tsa Luxury le li-homes tsa nako e fetileng\n\nLiofisi tsa Executive le listudio tsa ho etsa\n\nLihotele tsa Boutique le libaka tsa ho amohela tse ntle\n\nLi-apartments tse ncha le li-inner tse hlophisitsoeng\n\nLitšoantšo tse khahlisang li batla li-pieces tse fapaneng\n\nMuse ea Mediterranean ke ho feta ho khabisa ka tlung. Ke kopano ea bonono, bonono, bofubelu le bokhabane - ke sehopotso sa botle ba Mediterranean bo rekisoang ka ho shebana le boqapi bo matla.\n\n👑 Boqapi ba setso ho tloha HALL OF GREATNESS.\n\nLintlha tsa ho batla\n\nFumana sena The Mediterranean Muse digital art print bakeng sa ho ngola ka ho ngola ka ho ngola, ho khabisa ka tlung, le ho nahana ka ho nahana ka ho ngola ka har'a. Setšoantšo se ka hlahisoang bakeng sa ho bonts'a ka bomong, le likhetho tsa ho ngola tse khethileng ho lumellana le faele e fanoeng le sebaka sa hau.",
+      "category": "Elegance",
+      "product_details": {
+        "files_included": "1 faele · ZIP · 19.0 MB",
+        "product_type": "Ho kenya litšoantšo tsa digital",
+        "delivery": "Ho kenya kapele ha digital kamora ho reka",
+        "physical_item": "Ha ho tla romelloa khatiso ea 'mele kapa lifaele",
+        "printing": "Tlatsa faele e fanoeng ka mofani oa hau oa ho tlatsa; hlahloba boholo ba eona pele u khetha boholo",
+        "usage": "Tseba melao ea ho sebelisa ka bomong le ea laesense e kenyellelitsoeng ho kenya"
+      },
+      "_source_hash": "af1fb435d85020fb7dfffd341b525734bf626e5bde25a5492169ffa49b1059c6"
+    },
+    "aedllm": {
+      "summary": "Li-planete tse senyehileng, matsoho a sa tšoaneng, le boikarabello bo kopaneng ba ho sireletsa letsatsi le tlang.",
+      "full_description": "LITLHAKU TSE KHOLO TSA LEFT\n\nLefatše le le leng, batho ba le leng, lefatše le le leng.\n\nLitšoantšo tse ling li khabisa lebota. Tse ling li re botsa hore na re tla etsa eng lefatše lena.\n\nHo tloha ho kopanya LEGACY ea HO HOLOPHOLO, Last Cry of Earth e fetola lefatše la rona ho ea ho sehlooho se matla sa ho se sebetse, boikarabello le tšepo. Liaparo tsa motho li kopanya ka holim'a lefatše le senyehileng, li bonts'a nnete e ka nkang sebaka sa naha e ngoe le e ngoe: Lefatše le na le naha e le 'ngoe kapa lekholo,' me nakong e tlang e itšetlehile ka rona bohle.\n\nLITABA TSA LITŠOANTŠISO TSE 2 TSE MOLEMO\n\nE mong oa lihlooho tsa kompositi e etsa hore ho be le theko ea ho se nahane—lefatše le parched, moholi oa indasteri, ecosystems senyehileng, le lefatše ka tlas'a khatello. E 'ngoe e bula ho ea ho nchafatsoa: kholo e ntšo, metsi a hlakileng, matla a hloekileng, le mocheso oa letsatsi le khanyang. The contrast ke eseng feela bofubelu versus leseli. Ke khetho pakeng tsa ho fana le boikarabello.\n\nLiaparo tse ngata tse ka morao ho lefatše li bonts'a batho ba lilemo tse fapaneng, litso le litoro. Ho ba le tsona ho ka ba le tšepo ea hore ho fetoha ho na le tlhaloso e le ho etsa mosebetsi oa motho.\n\nHO ENG HO TLA TLATSA\n\nE ka ba sebaka se setle sa ho nahana ka ntlo, ofisi, sebaka sa thuto, galleries, kapa sebaka se nang le tikoloho e khethehileng.\n\nEtsoe ka ho etsa joalo, re tla etsa hore lefatše le be le rona.\n\nLITŠOANTŠISO TSA LITŠOANTŠISO TSA LITŠOANTŠISO\n\nHo kenya ka kotloloho; ha ho tla romelloa li-printer kapa li-frame tse otlolohileng.\n\nKopitsa faele e fanoeng le sehlahisoa sena ka mor'a ho reka.\n\nBala lintlha tsa faele e kenyellelitsoeng, leseli la ho ngola, le laesense ea ho sebelisana ka bomong pele o ngola.\n\nKhetha boholo ba ho ngolisa le ts'ebeletso e lumellanang le ho hlalosoa ha faele e fanoeng.\n\nEa ka tlung ka mosebetsi oa litšoantšo le pale. Khetha Kopitsa mosebetsi oa litšoantšo ho e etsa karolo ea sebaka sa hau.\n\nHALL OF GREATNESS — Art with a Soul. A Message Without Borders.",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 file · ZIP · 24.6 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download after purchase",
+        "physical_item": "No physical print or frame will be shipped",
+        "printing": "Print the provided files with your preferred print provider; check the included dimensions before choosing a size",
+        "usage": "Follow the personal-use and other license terms included with the download"
+      },
+      "_source_hash": "1b778b5e9598b900f314bd014e2126505fb284bc853987ad799e788064ade832"
+    },
+    "smuewa": {
+      "summary": "The Golden Gaze e tlisa mohoebi ho ea lefats'eng la li-geometry tse hlakileng, tikoloho ea Mediterranean, le 'mala o khanyang. Setšoantšo se khahlisang sa sejoale-joale se etselitsoe ho tlisa mohopolo, karabelo le ho khetholla setsebi sa setsebi",
+      "full_description": "The Golden Gaze — A Vision of Gold, Sea & Timeless Mystery\n\nE na le li-aesthetics tse etsang hore e be le ponahalo e khahlisang.\n\nLi-Ghostbusters ke sehlooho sa pele sa anime se nang le lihlooho tse ngata tse nang le lihlooho tse fapaneng tse nang le lihlooho tse fapaneng tsa anime.\n\nA captivating mosali portrait e hlaha ka ho feta litšobotsi tsa li-geometric tse matla, li-textures tsa khauta tse khanyang, sapphire blue e hlollang, ivory e futhumetseng, le li-accents tse tšosang tsa crimson. A mesmerizing amber eye e u tlisetsa lefats'e la sephiri sa leoatle le khanyang la letsatsi, sebōpeho sa sehlekehleke se tšoeu, litlhapi tse soang, le li-forms tsa sculptural.\n\nE na le litšobotsi tsa ho ba le matla a maholo, matla a maholo a ho holisa, le matla a maholo a ho holisa a maholo.\n\n✨ Ke hobane'ng ha u tla rata sena se etsahetseng\n\nLi-algebra tse tloaelehileng ke: Li-algebra tse nang le li-element tse khethehileng.\n\nLi-acid tse kang: sodium, potassium, potassium chloride, sodium chloride, le potassium chloride li ka etsa hore ho be le li-acid tse ngata.\n\nLi-epilepsi tse tloaelehileng li kenyelletsa: Li-epilepsi tse sa foleng le tse sa foleng.\n\nLikhetho tsa ho bonts'a tse bonolo: Khetha setsi sa hau se ratoang, thepa ea ho ngola, le boholo bo loketseng.\n\nDigital Convenience: Kopitsa litokomane tse kenyellelitsoeng 'me u hlophise ho ngola ka ts'ebeletso ea hau e ratoang.\n\n10\n\nLi-living tse ntle le li-home tse ncha\n\nLiofisi tsa Executive le listudio tsa ho etsa\n\nLihotele tsa Boutique le libaka tsa ho amohela tse ntle\n\nLipalangoang le lipalangoang tsa sechaba\n\nLitšoantšo tse khahlisang tse batlang puo e ikhethang ea ho khabisa\n\nLimpho tse nahanang bakeng sa ba ratang litsebi tsa nalane\n\n10\n\nLi-digital artwork package tse ka lefelloang tse nang le lifaele tse boletsoeng ka har'a lenane lena la lihlahisoa, hammoho le litaelo tsa ho ngola tsa mosebelisi le laesense ea ho sebelisana le motho ka mong.\n\n10\n\nSehlooho sa mosebetsi: The Golden Gaze\n\nLikokoana-hloko: HALL OF GREATNESS\n\nStyle: Contemporary Cubist-Inspirated Art\n\nBophara:\n\n_Tlhahiso:\n\nTlhahiso ea sehlahisoa: Digital litšoantšo bakeng sa ho ngola\n\nLihlahisoa tsa 'mele: Ha ho na\n\n10\n\nTlatsa mosebetsi oa litsebi ka ho sebelisa tšebeletso ea ho ngola ea botsebi ka thepa e loketseng ea hau, joalo ka lebokose la litsebi tse ntle kapa canvas. Khetha lebokose le ho qetela le tla eketsa kahare ea hau.\n\nBoholo ba ho qetela ba ho ngola le boleng bo itšetlehile ka ho hlaka ha lifaele tse fanoeng le bokhoni ba ts'ebeletso ea ho ngola eo u e khethileng. Li-colors li ka fapana ka tlase ho skrine le lisebelisoa tse ngotsoeng.\n\nLe leboha ho hlokomela: Sena ke sehlahisoa sa digital. Ha ho na ho ngola ka 'mele, frame, kapa ntho e ngotsoeng e tla romelloa. Mokhabiso oa ntloana ke mohlala o bonts'ang; lifaele tsa litsebiso tse ka lefelloang ke sehlahisoa se nahanang sa ho ngola.\n\n10\n\nU ka ngolisa mosebetsi oa hau oa bonono bakeng sa ntlo ea hau kapa ofisi ea hau le ho bonts'a ho ngolisoa ha 'mele e le mpho ea hau ea botho. U ke ke ua rekisa, ho fetisetsa, ho arolelana, ho fetisetsa, kapa ho hlahisa faele ea digital ka bongata ntle le tumello e ngotsoeng e khethehileng.\n\nLintlha tsa ho batla\n\nFumana sena THE GOLDEN GAZE 👁 digital art print bakeng sa ho ngola ka ho ngola ka ho ngola, ho khabisa ka tlung e ikhethang, le ho hlophisa ka har'a ka. Setšoantšo se ka lefelloang bakeng sa ho bonts'a ka bomong, le likhetho tsa ho ngola tse khethileng ho lumellana le faele e fanoeng le sebaka sa hau.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 faele · ZIP · 22.4 MB",
+        "product_type": "Ho kenya litšoantšo tsa digital",
+        "delivery": "Ho kenya kapele ha digital kamora ho reka",
+        "physical_item": "Ha ho tla romelloa khatiso ea 'mele kapa lifaele",
+        "printing": "Tlatsa faele e fanoeng ka mofani oa ho tlatsa oa hau oa ho khetha; hlahloba li-dimensions tse kenyellelitsoeng pele o khetha boholo",
+        "usage": "Tobetsa ho sebelisana le litaelo tsa laesense tse kenyellelitsoeng ho kenya"
+      },
+      "_source_hash": "bc5775f40dbc520fc6c48e9b41f3d7b8b577c56471e899302b456db982f635ec"
+    },
+    "jzjbrg": {
+      "summary": "E hlahisoa ke meloko ea bonono ea Egypt, e etsang hore ho be le bonono bo boholo ka ho fetisisa lefatšeng, e etsang hore ho be le bonono bo boholo ka ho fetisisa lefatšeng, e etsang hore ho be le bonono bo boholo ka ho fetisisa lefatšeng, e etsang hore ho be le bongata bo boholo ba bonono bo boholo lefatšeng.",
+      "full_description": "MOTSOALLE OA NILE\n\nE ne e le mokhatlo oa litsebi tsa lingoliloeng tsa mehleng ea khale.\n\nE ne e le mokhatlo oa lipolotiki, oa sechaba le oa moruo o neng o sebetsa ka ho khetheha ho etsa hore batho ba hlekefetsoe ke lipolotiki le ho etsa hore batho ba hlekefetsoe ke lipolotiki.\n\nE entsoe bakeng sa ba ratang nalane ea Egypt le setso sa setso, mosebetsi ona o fana ka maikutlo a ho ba teng ha lefatše le ho ba le setso. E kopa mohoebi hore a hokahane le nalane e entsoeng ka sebōpeho sa sebōpeho, setsebi, sepheo, le ho ikutloa a thabile ka Nile le lefats'e la Egypt ea khale.\n\nLITLHAKU TSE KHOLO TSA LITLHAKU TSE KHOLO\n\nQueen ea Nile ka ba le letšoao le leholo ka ho fetisisa ka kamoreng ea ho robala, liithuti tsa botho, ofisi tsa botsamaisi, lihotele tsa boutique, libaka tsa ho amohela, le libakeng tsa kahare. E boetse e le khetho e nahanang bakeng sa bahlahisi le mang kapa mang ea kopantsoeng le Egyptian-inspirated arts le ho etsa liaparo tsa bonono.\n\nTLHOKOMELISO EA HO TLATSA\n\nSena ke sehlahisoa sa digital. Ha ho na ho ngola ka 'mele, poster e ngotsoeng, kapa frame e tla romelloa. Ka mor'a ho reka, kenya faele e fanoeng le lipontšo le ho hlahloba li-formats tse kenyellelitsoeng, li-dimensions, le litaelo tsa ho sebelisa pele o ngola. Khetha boholo ba ho ngola le thepa e loketseng faele e fanoeng le ho bonts'a ho u loketseng. Li-colors li ka fapana ka tlase pakeng tsa skrine le litlamorao tsa ho ngola.\n\nQueen of the Nile - A Regal Echo of an Ancient World.\n\nHALL EA BOPHELO\n\nLintlha tsa ho batla\n\nFumana sena The Queen Of The Nile 👑 digital art print bakeng sa ho ngola ka ho ngola ka ho ngola, ho khabisa ka tlung e ikhethang, le ho hlophisoa ka mokhoa o nahanang. Setšoantšo se ka hlahisoang bakeng sa ho bonts'a motho ka mong, le likhetho tsa ho ngola tse khethileng ho lumellana le faele e fanoeng le sebaka sa hau.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 file · ZIP · 44.0 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download kamora ho reka",
+        "physical_item": "Ha ho tla romelloa ho ngola kapa ho ngola ka bongata",
+        "printing": "Tlanya lifaele tse fanoeng le mofani oa hau oa ho ngola; hlahloba li-dimensions tse kenyelletsoeng pele o khetha boholo",
+        "usage": "latela tšebeliso ea botho le maemo a mang a laesense a kenyellelitsoeng ho kenya"
+      },
+      "_source_hash": "a4497ccda79c60d5130d5f8f09b9c6acc088280a4d67c8ca9e65d4ff49de7d69"
+    },
+    "csyqhm": {
+      "summary": "The Coptic Soul of Egypt ke tlhaloso ea setsebi sa setso ea nako ena e ileng ea hlahisoa ke nalane ea ho bona, sebōpeho-puo, le mehopolo ea setso ea Coptic Egypt. E entsoe bakeng sa ba ratang ho kopana ha nalane, boits'oaro, le ho bonts'a setsebi sa setso, e etsa qeto e hlakileng libakeng tsa matlo, ofisi, li-gallery le libaka tsa bonono.",
+      "full_description": "KOPTIC SOUL OF EGYPT\n\nSetšoantšo sa sehlooho sa lipale tsa lipale tsa lipale tsa lipale\n\nE na le li-episodes tse 100 tse nang le lipale tse 100 tsa lipale tsa li\n\nHo feta ho e bonts'a e le ho hlahisa libuka tsa khale kapa ho etsa pono ea sehlooho sa nalane, mosebetsi ona o hokahana le nalane ka ho sebelisa li-lens tsa sejoale-joale tsa setsebi sa nalane. E hokahanya mehopolo ea nalane le ho bonts'a sejoale-joale ho khothaletsa ho nahana ka boits'oaro, ho tsoelapele, tumelo, le bongata ba nalane ea Egypt.\n\nHo ba le li-equations tse ngata tse sa tšoaneng, ho ka ba thata ho fumana li-equations tse nepahetseng ka ho fetisisa: ho na le li-equations tse ngata tse sa tšoaneng tse ka sebelisoang ho fumana li-equations tse nepahetseng ka ho fetisisa.\n\nE LOKELA LITSOANG TSE TSOANG\n\nE ka sebelisoa ka ho khetheha ka tlung, liofising, litsing tsa ho ithuta, litsing tsa ho etsa litšoantšo, libakeng tsa ho etsa libuka, libakeng tsa ho etsa li\n\nLintlha tsa sehlahisoa\n\nSena ke ho kenya ka digital. Ha ho na ho ngola ka 'mele, ho ngola poster, kapa ho ngola frame. Reka file e fanoeng le lipontšo, ho kenyeletsoa le li-formats, li-dimensions, le litaelo tsa ho sebelisa, pele o etsa ho ngola. Li-colors li ka fapana ka tlase ho skrine, printa, le thepa e etsoang.\n\nThe COPTIC SOUL OF EGYPT — Heritage Remembered. Art Reimagined.\n\nHALL EA BOPHELO\n\nLintlha tsa ho batla\n\nFumana sena The Coptic Soul of Egypt digital art print bakeng sa ho ngola ka ho ngola ka ho ngola, ho ngola ka ho ngola, le ho ngola ka ho ngola. Setšoantšo se ka tsitsa bakeng sa ho bonts'a ka bomong, le likhetho tsa ho ngola tse khethileng ho lumellana le faele e fanoeng le sebaka sa hau.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 file · ZIP · 60.1 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download kamora ho reka",
+        "physical_item": "Ha ho tla romelloa ho ngola kapa ho ngola ka bongata",
+        "printing": "Tlatsa lifaele tse fanoeng ka mofani oa ho ngola oa hau oa hau; hlahloba li-dimensions tse kenyelletsoeng pele o khetha boholo",
+        "usage": "Tseba litaelo tsa ho sebelisana le batho ba bang le tse ling tsa laesense tse kenyellelitsoeng ho kenya"
+      },
+      "_source_hash": "2eca69141928e3e01281fed2b39524d668bb838241b109042d8477d2e941b1b2"
+    },
+    "jvffaq": {
+      "summary": "THE NILE'S ETERNAL GRACE e phethela botle ba nako e sa feleng ba Egypt, e hokahanya ho ba teng ha lefatše le rythm e sa feleng ea Nile. Setšoantšo sa digital se nang le litokelo tsa molao bakeng sa libaka tse tšepahalang tsa bonono ba Egypt le bonono ba nako e sa feleng.",
+      "category": "Heritage",
+      "_source_hash": "b061cdc5a55b2e444a09cd7d8c3d8d1eb73ad3315fe38b35610ca590b595c16e"
+    },
+    "kjclzu": {
+      "summary": "A Bond Bophirimela Litlhaloso tse phethela, ha ho pelaelo hore, ho hokahanya pakeng tsa ngoana le molekane oa hae ea tšepahalang. A monate, ho phahamisa mosebetsi oa litsebi ka tšepo, kamano, ho se na molato, le lerato la unconditional-e entsoeng ho etsa hore ho be le maikutlo a tebileng ho libakeng tsa lelapa le libakeng tsa ba ratang liphoofolo.",
+      "full_description": "Boleng ba ho kenya\n\nThe Beauty of Unconditional Love\n\nLitšoantšo tse sa bonahaleng li ka sebelisoa ho hlalosa lintho tse sa bonahaleng.\n\nE ne e le buka e nang le lipale tse ngata tse nang le lipale tse ngata\n\nE behiloe serapeng se setle se hlatsuoang ka letsatsi la khauta, sena se etsahalang se bonts'a ngoana ea monyenyane a le bonolo a khomarela Golden Retriever ea hae e monate. Litšoantšo tsa bona tsa boiketlo le ho hokahana ha bona ho bonts'a kamano e ikhethang e thehiloeng ho tšepo, khotso, le ho ba le molekane.\n\nHo na le li-aquarium tse ngata, li-aquarium tse nyane, li-aquarium tse kholo, li-aquarium tse nyane tsa li-aquarium, li-aquarium tse nyane tsa li-aquarium, li-aquarium tse nyane tsa li-aquarium.\n\nLintlha tsohle li fana ka maikutlo a hore lerato ha le hlokane le mantsoe. Ha ho mohla, ho khomarela ha bonolo ho bolelang tsohle.\n\nHo feta ho etsa li-print tse ntle, A Bond Beyond Words ke sehopotso sa kamano e ntle e etsang hore bophelo bo be le tlhaloso e betere.\n\n✨ HO BA ENG YOU'LL LOVE ARTWORK\n\nE ne e le buka e hlalosang kamano e ntle pakeng tsa monna le mosali.\n\nLitšoantšo tsa bootsoa li ka kenyelletsa: ho kopanela liphate, ho kopanela liphate\n\nLi-aquarium tsa letsatsi li ka etsa hore moea o be o futhumetseng le o futhumetseng.\n\nVibrant Garden Details: lipalesa tse nang le mebala le tikoloho ea tlhaho li tlisa bophelo le bophelo ho kompositi.\n\nLitšoantšo tsa bootsoa li ka baka mathata a mangata a bophelo ba motho, a amanang le thobalano, a amanang le bana, a amanang le bootsoa, le a amanang le thobalano.\n\nThoughtful Gift Idea: A khetho e ntle bakeng sa mang kapa mang ea utloisisang leano le ikhethang pakeng tsa batho le liphoofolo tse ruuoang lapeng.\n\n10\n\nLi-squats le li-squats tsa bana.\n\nLi-villas tsa lelapa le li-hallways tse khutsitseng.\n\nLi-corner le li-corner-points li sebelisoa.\n\nLi-vet e na le li-vet center le li-vet clinic.\n\nLiphoofolo tse ruuoang lapeng le liphoofolo tsa lapeng.\n\nLihotele le lihotele tsa mabenkele li ka sebelisoa.\n\nLikolo, litsi tsa tlhokomelo ea bana, le libaka tsa sechaba.\n\nLi-pet lovers le lihlopha li arolelana thabo ea kamano ea lerato.\n\n10\n\nLiphutheloana tsa hau tsa ho kenya li kenyelletsa:\n\nLitšoantšo tsa digital tsa mantlha ka bophahamo ba PNG.\n\nE entsoe ka 2:3 portrait JPG file ea ho ngola.\n\nLikhetho tsa boholo ba ho ngola tse khothalletsoang.\n\nPDF e ngotsoeng ka letsoho le ka tlase.\n\nE na le file ea START HERE e nang le litaelo tsa ho kenya le ho ngolisa.\n\nSeha lintlha tsa bophahamo ba setšoantšo le melao ea ho e sebelisa.\n\n10\n\nLitšoantšo li latela ratio ea portrait e fapaneng ea 2:3 mme e loketse:\n\n4 x 6 lisenthimithara\n\n8 x 12 lisenthimithara\n\n12 x 18 intshi\n\n16 x 24 lisenthimithara\n\n20 x 30 lisenthimithara\n\nHo etsa li-slideshow tse ntle, ho hlokahala hore u sebelise li-slideshow tse ntle, tse nang le li-slideshow tse ntle.\n\nLintlha tse bohlokoa\n\nSena ke ho kenya ka kotloloho. Ha ho na litšoantšo kapa li-frame tse tla romelloa.\n\nLi-colors li ka fapana ka tlase ho skrine, printa, le lebokose la hau.\n\nLitokomane tsa digital li etselitsoe ho sebelisoa ke motho ka mong, ho sa tsotelehe hore na ho reka laesense e fapaneng ea khoebo.\n\nLi-commercial le li-business li ka sebelisoa ho etsa li-commercials.\n\nLifaele tsa digital ha li ka rekoa, tsa romelloa kapa tsa arolelanoa.\n\n❤️ A LITTLE LOVE e etsa phapang e kholo\n\nHo na le liketsahalo tse ngata tse amanang le lerato, ho ratana, ho rata\n\nHo na le li-episodes tse ngata tse nang le lipale tse sa tšoaneng, tse nang le lipale tse fapaneng, tse nang le lipale tse fapaneng, le tse nang le lipale tse fapaneng.\n\nA BOND LITLHAKU MOLEMO - One Heart. Two Souls. Endless Love.\n\nLintlha tsa ho batla\n\nFumana sena A BOND BEYOND WORDS The Beauty of Unconditional Love digital art print bakeng sa ho ngola ka ho ngola ka ho ngola, ho ngola ka ho ngola, le ho ngola ka ho ngola ka ho ngola. Setšoantšo se ka hlahisoang bakeng sa ho bonts'a ka bomong, le likhetho tsa ho ngola tse khethileng ho lumellana le faele e fanoeng le sebaka sa hau.",
+      "category": "Botho",
+      "product_details": {
+        "files_included": "1 file · ZIP · 7.8 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download kamora ho reka",
+        "physical_item": "Ha ho na ho ngola ka bongata kapa skrine e tla romelloa",
+        "printing": "Tlanya lifaele tse fanoeng le mofani oa hau oa ho ngola; hlahloba li-dimensions tse kenyelletsoeng pele o khetha boholo",
+        "usage": "latela tšebeliso ea botho le maemo a mang a laesense a kenyellelitsoeng ho kenya"
+      },
+      "_source_hash": "af7fd1018209d1a0c50074203cc6c678ce973ea18a6dd07595de274e8d12da36"
+    },
+    "xvccaj": {
+      "summary": "Litšoantšo tse tšeletseng tsa litšoantšiso tse nang le maikutlo a ho ba le cosmos, litoropo tsa nakong e tlang, nalane, le botle ba Mediterranean—litšoantšo tse nang le maikutlo a digital bakeng sa lihlong tse khahlisang le libaka tse nang le maikutlo a ho ba le tsona.",
+      "full_description": "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS\n\nHo tsamaea ho feta ho tsebahala ka ho kopanya libuka tse tšeletseng tsa litsebi tsa li\n\nHo tloha ho nnete ea lefatše ho ea litoropong tseo re li ratang ho li theha, ho tloha libakeng tse ntle tsa tlhaho ho ea ho li-visions tsa leoatle, sena se kopanya litsela tse ngata tseo bonono bo ka li etsang ho eketsa maikutlo a rona a ho khoneha.\n\nE TLA MOLEMO\n\nBophirimela\n\nLebala la Celestial\n\nLihlekehleke tsa Motšehare\n\nMaemo a tlhaho\n\nMediterranean Dreams\n\nMuse ea Mediterranean\n\nLi-geometry tsa Elegance\n\nMOO E LANG\n\nLi-hotele, lireschorente, lihotele, lihotel\n\nTLHOKOMELISO E MOLEMO\n\nSena ke sehlahisoa sa dijitale. Ha ho na litšoantšo kapa liforeimi tse tla romelloa. Kopitsa lifaele tse kenyellelitsoeng kahare ho bundle 'me u shebe li-formats tsa tsona, li-dimensions, le litaelo tsa ho sebelisa pele u li ngola. Khetha boholo ba ho ngola le thepa e loketseng lifaele tse fanoeng. Li-colors li ka fapana ka tlase pakeng tsa skrine le litlamorao tsa ho ngola.\n\nFumana litšoantšiso tse sa feleng. Ea ho etsa lefatše la hau ka ho nahana.\n\nSehlooho sa sehlooho: Litšoantšo tsa bootsoa li sa amohelehe.",
+      "category": "Elegance",
+      "product_details": {
+        "product_type": "Ho kenya litšoantšo tsa digital",
+        "delivery": "Ho kenya kapele ha digital kamora ho reka",
+        "physical_item": "Ha ho tla romelloa khatiso ea 'mele kapa lifaele",
+        "printing": "Tlatsa faele e fanoeng ka mofani oa ho tlatsa oa hau oa ho khetha; hlahloba li-dimensions tse kenyellelitsoeng pele o khetha boholo",
+        "usage": "Tlohela melao ea ho sebelisa e kenyellelitsoeng ho kenya",
+        "bundle_item_count": "Bopaki ba liphutheloana; litšoantšiso tse khethehileng tse boletsoeng ka tlase"
+      },
+      "_source_hash": "d8641c6b467679268bbf7fa3a052b8f3d1afec3f69b284f8c9413088a02c671d"
+    },
+    "wjxgxb": {
+      "summary": "Eternal Egypt e phethela bonono ba setso se entsoeng ke meaho e metle, Nile, le leeto la bonono le sa tloaelehang. E entsoe e le khatiso ea bonono ba inthanete e khahlisang bakeng sa ba ratang nalane ea nalane ea Egypt, nalane le liindasteri tse sa feleng.",
+      "full_description": "Egypt\n\nMoea o sa feleng oa setso se secha\n\nE na le li-piramides tse ngata tse tummeng, tse kang pyramid ea Khale ea Giza, pyramid ea Khale ea Giza\n\nE entsoe bakeng sa ba batlang ho ba le kamano le nalane, mehopolo ea nalane le nalane ea nalane ea Egypt, e fana ka ho feta setšoantšo sa ho khabisa. E bonts'a boholo, mehopolo le ho tsoelapele ha nalane eo puo ea eona e shebahalang e tsoelang pele ho tlisa maikutlo lefatšeng.\n\nLitšoantšo tsa hae li ne li sebelisoa haholo ho etsa lifilimi, libuka, lipale, lipale tsa lipale, lipale\n\nHO MOLEMO OA MOLEMO\n\nE ne e le setsi sa ho ithuta ka nalane ea khale ea Afrika.\n\nE na le li-aesthetics tse fapaneng tse nang le li-element tse fapaneng tsa classical le tsa sejoale-joale.\n\nE ne e le setsebi sa lipale tsa khale le lipale tsa khale tsa Afrika.\n\nLitšoantšo tsa li-digital tse bonts'ang tse ka etsoang le ho etsoa ka lebokoseng ho latela sebaka sa hau.\n\nLintlha tsa sehlahisoa\n\nSena ke ho kenya ka kotloloho. Ha ho na ho ngola ka letsoho, ho ngola poster, kapa ho kenya li-frame. Kopitsa faele tse fanoeng ka ho reka 'me u shebe boholo, boholo, le maemo a ho sebelisa pele u ngola. Li-colors li ka fapana ka tlase ho skrine ea hau, printa, le thepa e etsoang.\n\nETERNAL EGYPT - A Civilization in Memory. Legacy kantle ho nako.\n\nHALL EA BOPHELO\n\nLintlha tsa ho batla\n\nFumana sena ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization digital art print for printable wall art, distinctive home décor, and thoughtfully designed interiors. A downloadable artwork for personal display, with printing options chosen to suit the supplied file and your space.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "4 files · JPG, PDF, PNG, TXT · 9.1 MB",
+        "product_type": "Digital artwork download",
+        "delivery": "Instant digital download after purchase",
+        "physical_item": "No physical print or frame will be shipped",
+        "printing": "Print the supplied files with your preferred print provider; check the included dimensions before choosing a size",
+        "usage": "Follow the personal-use and other license terms included with the download"
+      },
+      "_source_hash": "af4bb9b510bcc457b6750421a6f2d14b3beabca71579f4cd5f83484617097abe"
+    },
+    "fgdpqp": {
+      "summary": "Ka hare ho setsi sa mosebetsi se nahannoeng, nako ha e beoa ka lipalo empa e sculpted. THE CLOCKMAKER'S DREAM e fetola li-gears, li-mechanisms tse leholimong, le lisebelisoa tse sa khonehang ho ea ho li-meditations tsa poetic ka mohopolo, ho etsa, le ho feta ha nako. Ho kopana ha li-steampunk le li-surrealism tse bonts'ang.",
+      "full_description": "Ka hare ho setsi sa mosebetsi se nahannoeng, nako ha e beoa ka lipalo empa e sculpted. THE CLOCKMAKER'S DREAM e fetola li-gears, li-mechanisms tse leholimong, le lisebelisoa tse sa khonehang ho ea ho li-meditations tsa poetic ka mohopolo, ho etsa, le ho feta ha nako. Ho kopana ha li-steampunk le li-surrealism tse bonts'ang. Ho khetha ho khahlisang bakeng sa likamore tsa ho bala, li-studia, liofisi, le li-design-led interiors. The digital download is provided as a ZIP file. Please review the included files and specifications after purchase before choosing a print size.",
+      "category": "Elegance",
+      "product_details": {
+        "files_included": "1 file · ZIP · 36.8 MB"
+      },
+      "_source_hash": "30ab80fd3d5210fdd5ec47f8f60c9b5f121908831ac3a07129ffe69e98b6bb2c"
+    }
+  },
+  "ui": {
+    "navFeatured": "E hlahelletseng",
+    "navCollections": "Likokoana-hloko",
+    "navGallery": "Gallery",
+    "navArtist": "Moqapi",
+    "eyebrow": "Lefatše le hlophisitsoeng la litšoantšiso tse ka fetoloang",
+    "heroTitle": "<em>E na le lipale tse ngata.</em>",
+    "heroText": "E na le li-gallery tse 100 tse nang le li-photographs tse fetang 1000, li-video tse fetang 1000, li-video tse fetang 1000, li-video tse fetang 1000 tsa li-video, li-video tse fetang 1000 tsa livideo, livideo tse fetang 1000 tsa livideo, livideo tse fetang 1000 tsa livideo, livideo tse fetang 1000 tsa livideo.",
+    "explore": "Tseba likokoana-hloko",
+    "discover": "Fumana galleries",
+    "featuredEyebrow": "Libuka tse ka khutlang ho tsona",
+    "featuredTitle": "Likarolo tse hlahelletseng",
+    "featuredText": "Likarolo tse tharo tse fapaneng tsa ho etsa litšoantšiso le ho etsa hore motho a ikutloe a le teng.",
+    "collectionsEyebrow": "Likokoana-hloko",
+    "collectionsTitle": "Fumana likokoana-hloko",
+    "collectionsText": "Lifofane tse hlophisitsoeng ka ho fetisisa ka ho etsa litšoantšiso, litso, le maikutlo. Tseba kopano kapa u kene kapele ho checkout e sireletsehileng.",
+    "galleryEyebrow": "Gallery e feletseng",
+    "galleryTitle": "Likarolo tsa litšoantšo",
+    "galleryText": "Khetha ka lebitso la mosebetsi oa litšoantšo, tema, kapa mofuta. Bona pele pale kapa o kene kapele ho ho kenya ka kotloloho.",
+    "search": "Hlela sehlooho le lihlooho...",
+    "artistEyebrow": "Ka morao ho galleria",
+    "artistTitle": "Ka Moqapi",
+    "artistP1": "Ke moqapi oa HALL OF GREATNESS, galleries ea litšoantšo tsa inthanete e ikhethileng e tlisoang ke lipale tsa litšoantšo tsa mantlha ho balateli ba lefats'e.",
+    "artistP2": "Likarolo tsohle li fana ka ho feta ho etsa liaparo: li fana ka maikutlo, li hopola, kapa li bua ka bophelo ba motho.",
+    "artistP3": "Ho tloha ho litsoantso tsa Egyptian le Coptic ho ea ho lihlooho tsa lefats'e tsa khotso, boikokobetso, tšepo le maikutlo, galleries e u amohela ho bona bonono ka tsela ea hau.",
+    "tagline": "E na le sebōpeho se setle.",
+    "digital": "Lihlahisoa tsa Digital · Ho kenya kapele ka Gumroad",
+    "privacy": "Boinotšing",
+    "terms": "Litaelo",
+    "contact": "_Tš'ehetso",
+    "gumroad": "Li-Gumroad store ↗",
+    "exploreArt": "Bokella litšoantšo",
+    "discoverStory": "Bala pale ↗",
+    "buyDownload": "Kopitsa ho tsoa",
+    "buyCollection": "Reka kopano ↗",
+    "exploreCollection": "Bokella",
+    "printable": "Litšoantšo tse ka fetoloang",
+    "format": "Faele ea Digital · Tlatsa ka boholo bo loketseng sebaka sa hau",
+    "noResults": "Ha ho na litšoantšiso tse lumellanang le ho batla ha hao.",
+    "catalogError": "Li-catalog tsa galleries ha li fumanehe ka nako. Reka lebokose la ho khutlisa.",
+    "all": "Li-icon tsohle",
+    "of": "ea",
+    "artworks": "li-artworks",
+    "choose": "Khetha puo"
+  },
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "_ui_translation_status": "machine-generated-unreviewed",
+  "landing_ui": {
+    "← Return to the gallery": "← Tloaela ho gallery",
+    "Language": "Senyesemane",
+    "An original digital artwork from HALL OF GREATNESS": "Setšoantšo sa digital sa mantlha sa HALL OF GREATNESS",
+    "A curated collection of meaningful digital artworks": "Likokoana-hloko tse nang le li-digital artworks tse nang le tlhaloso",
+    "Explore & Get the Artwork ↗": "Tseba & Get the Artwork ↗",
+    "Secure checkout and digital delivery on Gumroad.": "E na le li-terminals tse ngata le li-server tse ngata tsa li-cryptocurrency.",
+    "Artwork presentation": "Boqapi ba sehlooho",
+    "Imagine it in a refined frame": "Ea e etsang ka sepheo se setle",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "Mokhahlelo oa bobeli oa ho bonts'a o u thusa ho bona mosebetsi oa litšoantšo e le sebōpeho sa ho bonts'a, ha o boloka likhahla tsa eona tsa mantlha.",
+    "Digital download": "Ho kenya Digital",
+    "Access your files after checkout": "Fumana lifaele tsa hau ka mor'a ho li tlohela",
+    "Print your way": "Printa tsela ea hau",
+    "Choose a size suited to your space": "Khetha boholo bo loketseng sebaka sa hau",
+    "Made to display": "E entsoe ho bonts'a",
+    "For homes, studios, and meaningful spaces": "Bakeng sa li-home, listudio, le libaka tse nang le tlhaloso",
+    "The meaning behind the artwork": "Moelelo ka morao ho mosebetsi oa litšoantšo",
+    "More than decoration. A feeling that stays.": "Ho feta ho khabisa. Ho ikutloa ho lula.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "E entsoe bakeng sa batho ba batlang hore sebaka sa bona se kantle se bonts'e pale, mohopolo, boleng, kapa maikutlo a botle. Etsoe mosebetsi ona o be karolo ea moea oo u o etsang le maikutlo ao u batlang hore sebaka sa hau se o phethe.",
+    "Inside this collection": "Ka hare ho kopano ena",
+    "One collection. Many stories.": "Libuka tse ngata.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "E-ba le monyetla oa ho bona libuka tsa litsebi tse kenyellelitsoeng ho lenane lena la libuka. Libuka tsohle li na le litšobotsi tsa tsona, 'me ka bobeli li etsa hore ho be le leeto le monate le letle.",
+    "Complete artwork story": "Litšoantšo tse felletseng",
+    "Full product description": "Tlhaloso e felletseng ea sehlahisoa",
+    "What is included": "Seo se kenyellelitsoeng",
+    "Product specifications": "Likarolo tsa sehlahisoa",
+    "Where it belongs": "Ha e le teng",
+    "Art that finds its place": "Litšoantšo tse fumanang sebaka sa tsona",
+    "Before you purchase": "Pele o reka",
+    "Digital download details": "Lintlha tsa ho kenya",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Ke sehlahisoa sa digital. Ha ho na li-artwork kapa li-frame tse kantle tse tla romelloa. Ka mor'a ho reka, Gumroad e fana ka ho fihlella lifaele tse kenyellelitsoeng le sehlahisoa sena. Reka lengolo-tsoibila ho hlahloba litlhaloso tsa faele le laesense pele o ngola kapa o sebelisa li-artwork.",
+    "From download to display": "Ho tloha ho kenya ho ea ho bonts'a",
+    "Make the artwork part of your space": "E-ba le sehlooho sa hau sa sehlooho",
+    "01 · Purchase": "Thepa",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "E phethela checkout hao ka ho sireletsehileng ka Gumroad. The ho reka ke bakeng sa sehlahisoa digital.",
+    "02 · Download": "Kopitsa",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Fumana lifaele tse fanoeng le sehlahisoa sena ka Gumroad 'me u shebe litlhaloso tse kenyellelitsoeng.",
+    "03 · Print": "Printa",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Khetha boholo ba ho ngolisa bo bolokang likhahla tsa mantlha tsa mosebetsi oa setsebi. Moprofesa oa ho ngolisa oa naha o ka u thusa ho lumellana le liphara tsa faele e fanoeng.",
+    "Please note:": "Le leboha ho hlokomela",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Ha ho na mosebetsi oa bonono kapa li-frame tse hlahisoang. Li-formats tsa faele tse fumanehang, ho hlophisoa, li-proportions, le maemo a ho sebelisa ke tseo ho thoeng ka tsona ha o kenya sehlahisoa le laesense e kenyellelitsoe.",
+    "Let your space tell a story.": "Lebisang sebaka sa hau ho bolella pale.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Khetha setso se bonts'ang seo u se ratang - 'me u lule u le teng le uena.",
+    "Get": "Fumana",
+    "Art with a Soul. A Message Without Borders.": "Setso le Soul. Mehala e sa Tsejoeng.",
+    "Digital artwork · Instant download through Gumroad": "Setso sa Digital · Khoasolla kapele ka Gumroad",
+    "Privacy": "Privacy",
+    "Terms": "Terms",
+    "Contact": "Ikopanye le",
+    "Gumroad store ↗": "Li-Gumroad store ↗",
+    "· Digital download": "· Khoasolla ka Digital"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Lifaele tse kenyellelitsoeng",
+    "product_type": "Mefuta ea sehlahisoa",
+    "delivery": "Lihlahisoa",
+    "physical_item": "Lihlahisoa tsa 'mele",
+    "printing": "Ho ngola",
+    "usage": "Ho sebelisa",
+    "bundle_item_count": "Lihlahisoa ka bongata"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Li-hotele li na le lihotele, lihotele",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "1.1",
+      "\\n": "\\n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Li-hotele li na le lihotele, lihotele",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "1.1",
+      "\\n": "\\n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "E ne e le sehlooho se setle sa ho ngola ka lerato la sebele.",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Li-hotele li na le lihotele, lihotele",
+      "Get THE HUMANITY LEGACY ↗": "Fumana THE HUMANITY LEGACY ↗",
+      "\\n": "\\n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Ho hlaka ho hlaka bakeng sa li-rooms tsa ho robala, li-bedrooms, liofisi, lihotele tsa boutique, libaka tsa wellness, le li-inner tse nahanang.",
+      "Get THE ART OF STILLNESS ↗": "Fumana THE ART OF STILLNESS ↗",
+      "\\n": "\\ n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Ho hlaka ho hlaka bakeng sa li-rooms tsa ho robala, li-bedrooms, liofisi, lihotele tsa boutique, libaka tsa wellness, le li-inner tse nahanang.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Fumana GEOMETRY OF ELEGANCE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Mohlala o hlakileng oa matlo, listudio tse nang le boqapi, liofisi, libaka tsa ho amohela baeti le li-interieurs tse entsoeng ka mamello.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Fumana CITIES OF TOMORROW   Where Innovation Meets Imagination ↗",
+      "\\n": "\\ n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Mohlala o hlakileng oa matlo, listudio tse nang le boqapi, liofisi, libaka tsa bohahlauli le li-interieurs tse entsoeng ka mamello.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Fumana NATURE'S MAJESTY   The Timeless Beauty of Nature ↗",
+      "\\n": "\\ n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Ho hlaka ho hlaka bakeng sa li-rooms tsa ho robala, li-bedrooms, liofisi, lihotele tsa boutique, libaka tsa wellness, le li-inner tse nahanang.",
+      "Get MEDITERRANEAN DREAMS ↗": "Fumana MEDITERRANEAN DREAMS ↗",
+      "\\n": "\\ n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Ho hlaka ho hlaka bakeng sa li-rooms tsa ho robala, li-bedrooms, liofisi, lihotele tsa boutique, libaka tsa wellness, le li-inner tse nahanang.",
+      "Get SILENT HORIZONS . ↗": "Fumana SILENT HORIZONS . ↗",
+      "\\n": "\\ n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Ho hlaka ho hlaka bakeng sa li-rooms tsa ho robala, li-bedrooms, liofisi, lihotele tsa boutique, libaka tsa wellness, le li-inner tse nahanang.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Fumana GOLDEN FLOW   The Art of Timeless Luxury ↗",
+      "\\n": "\\ n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Mohlala o hlakileng oa matlo, listudio tse nang le boqapi, liofisi, libaka tsa ho amohela baeti le li-interieurs tse entsoeng ka mamello.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Fumana BEYOND THE UNIVERSE 🌏 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Setsi sa bohlokoa sa li-home, liofisi, libaka tsa thuto, li-gallery, le libaka moo lipale tsa batho li leng bohlokoa.",
+      "Get A Shelter of Love ♥ ↗": "Fumana A Shelter of Love ♥ ↗",
+      "\\n": "\\ n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Ho hlaka ho hlaka bakeng sa li-rooms tsa ho robala, li-bedrooms, liofisi, lihotele tsa boutique, libaka tsa wellness, le li-inner tse nahanang.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Fumana The Celestial Garden – A Dance Beneath the Moon ↗",
+      "\\n": "\\ n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Ho hlaka ho hlaka bakeng sa li-rooms tsa ho robala, li-bedrooms, liofisi, lihotele tsa boutique, libaka tsa wellness, le li-inner tse nahanang.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Fumana THE GOLDEN VEIL OF SERENITY ↗",
+      "\\n": "\\ n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "Lefatše le le leng. Bohlokoa bo le bong. Likhetho tse ngata.",
+      "The story behind the image": "Lipale tse ka morao ho setšoantšo",
+      "More than decoration. A human story.": "Litšoantšo tse ngata. Lipale tsa batho.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "E 'ngoe ea li-planete. Bohlokoa bo le bong. Likhetho tse ngata.",
+      "Where the artwork belongs": "Ha e le hantle, e na le li-sphericals tse 100.",
+      "Created to live with meaning": "E entsoe ho phela ka tlhaloso",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "E na le tlhaloso e makatsang bakeng sa matlo, liofisi, liithuti, lik'hamphani tsa tikoloho, libaka tsa ho amohela, le libaka tsa ho etsa.",
+      "A distinctive focal point for considered interiors": "E na le sehlooho se ikhethang bakeng sa li-interieurs tse nahanang",
+      "A conversation piece with a message beyond trends": "E na le tlhaloso e nang le lengolo le kantle ho li-trends",
+      "A thoughtful digital art choice for personal spaces": "E na le khetho e ntle ea li-digital art bakeng sa libaka tsa botho",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Sena ke sehlahisoa sa digital. Ha ho na ho tšoaea ka bongata kapa lebokose le tla romelloa. Ka mor'a ho reka, kenya faele e fanoeng ho Gumroad. Reka li-specifications tsa faele, leseli la ho tšoaea, le laesense ea ho sebelisana le motho ka mong pele o tšoaea. Khetha boholo ba ho tšoaea le ts'ebeletso e loketseng li-file tse fanoeng.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Khetha mosebetsi oa bonono o bonts'ang seo u se ratang—'me u lumele hore se bolela'ng—'me u lumele hore se bolela'ng—'me u phele le uena.",
+      "Get The Hand That Holds Tomorrow ↗": "Get The Hand That Holds Tomorrow ↗",
+      "\\n": "\\n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Li-faces tse fapaneng. Mokhatlo oa batho o le mong. Ho hokahana ka ho sa feleng.",
+      "The story behind the image": "Lipale tse ka morao ho setšoantšo",
+      "More than decoration. A human story.": "Li-story tse ngata ho feta tse entsoeng ka letsoho. Li-story tsa motho.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Ivory le obsidian li boloka bokhabane ba sefahleho se seng le se seng. Li-wire tsa khauta li bontša maikutlo a tšehelitsoeng, li-hopes, le takatso ea ho hokahanngoa ka boikokobetso. Boitlamo bo sa hlokang ho ba le bongata; bo qala ha re tseba hore ke batho ba motho e mong le e mong.",
+      "Where the artwork belongs": "Ha mosebetsi oa bonono o teng",
+      "Created to live with meaning": "O entsoe ho phela ka tlhaloso",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Mohlala o motle oa li-home tsa morao-rao, liofisi tsa bonono, li-gallery, libaka tsa ho amohela, le libaka tse ka hare tse tšepahalang tsa puisano ea bonono le ho hokahana ha motho.",
+      "A distinctive focal point for considered interiors": "Mohlala o motle oa ho hokahana ha batho.",
+      "A conversation piece with a message beyond trends": "Mohlala o motle oa ho hokahana ha batho",
+      "A thoughtful digital art choice for personal spaces": "Mohlala o motle oa ho hokahana ha batho",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Sena ke sehlahisoa sa inthanete. Ha ho na ho tšoaea kapa ho tšoaea ka bongata. Ka mor'a ho reka, kenya faele e fanoeng ho Gumroad. Reka li-specs tsa faele, motsamaisi oa ho tšoaea, le laesense ea ho sebelisana le motho ka mong pele o tšoaea. Khetha boholo ba ho tšoaea le ts'ebeletso e loketseng li-file tse fanoeng.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Khetha mosebetsi oa bonono o bonts'ang seo u se tšepang—'me u lumele hore se bolela eng—'me u lumele hore se bolela eng—'me u lumele hore se bolela eng—'me u phele ka eona.",
+      "Get The Golden Thread of Humanity ↗": "Fumana Li-wire tsa Khauta tsa Boinotšing ↗",
+      "\\n": "\\n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Sehlooho se setle sa li-home, liofisi, libaka tsa thuto, li-gallery, le libaka moo lipale tsa batho li leng bohlokoa.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "Fumana ROOTS OF TENDERNESS ♥ ↗",
+      "\\n": "\\ n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Ho hlaka ho hlaka bakeng sa li-rooms tsa ho robala, li-bedrooms, liofisi, lihotele tsa boutique, libaka tsa wellness, le li-inner tse nahanang.",
+      "Get AURELLE 👑 ↗": "Fumana AURELLE 👑 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "Bokhabane ba ho se tsotelle. Bokhabane ba ka hare.",
+      "The story behind the image": "Lingoliloeng tse ka morao ho setšoantšo",
+      "More than decoration. A human story.": "Ho feta ho khabisa. Lipale tsa batho.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "Leseli la 'mala o moputsoa le bontša hore ho na le ntho e ngoe le e ngoe; lintlha tsa botanik'a li bontša hore ho na le ho nchafatsoa. Boiteko bo re hopola hore matla a hloka ho ba le molumo o moholo - 'me hore khotso e ka ba mofuta oa botle.",
+      "Where the artwork belongs": "Ha ho na mosebetsi oa litšoantšo",
+      "Created to live with meaning": "E entsoe ho phela ka tlhaloso",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "Li-hotele li na le li-suites tse ngata, lihotele tsa bohahlauli, lihotele tsa bohahlauli, lihotele tsa bohahlauli, lihotele tsa bohahlauli, lihotele tsa bohahlauli, lihotele tsa bohahlauli, lihotele tsa bohahlauli, lihotele tsa bohahlauli, lihotele tsa bohahlauli.",
+      "A distinctive focal point for considered interiors": "Sehlooho se setle sa ho nahana ka li-inner",
+      "A conversation piece with a message beyond trends": "Sehlooho sa puisano se nang le lengolo-tsoibila le kantle ho li-trends",
+      "A thoughtful digital art choice for personal spaces": "Ho khetha litšoantšiso tsa digital tse nahanang bakeng sa libaka tsa motho ka mong",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Sena ke sehlahisoa sa dijitale. Ha ho tla romelloa litokomane kapa li-frame tsa 'mele. Ha u reka, kenya faele tse fanoeng ho Gumroad. Tseba lintlha tsa faele, tataiso ea ho ngola, le laesense ea ho sebelisa ka bomong pele o ngola. Khetha boholo ba ho ngola le ts'ebeletso e loketseng litokomane tse fanoeng.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Ea ho qetela ke ho etsa qeto ea hore na ke eng eo u batlang ho e etsa, 'me u e etse ka ho khetheha.",
+      "Get The Art of Inner Peace ↗": "Get The Art of Inner Peace ↗",
+      "\\n": "\\n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Ho hlaka ho hlaka bakeng sa li-rooms tsa ho robala, li-bedrooms, liofisi, lihotele tsa boutique, libaka tsa wellness, le li-inner tse nahanang.",
+      "Get SERENITY 🤍 ↗": "Fumana SERENITY 🤍 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Setsi sa bohlokoa sa li-home, liofisi, libaka tsa thuto, li-gallery, le libaka moo lipale tsa batho li leng bohlokoa.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Fumana THE TREE THAT REFUSED TO DIE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Sehlooho se setle sa li-home, liofisi, libaka tsa thuto, li-gallery, le libaka moo lipale tsa batho li leng bohlokoa.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Fumana THE LIGHT WE LEAVE EACH OTHER 🕯 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "Bophelo bo tlang bo entsoe ka matsoho a mangata.",
+      "The story behind the image": "Lipale tse ka morao ho setšoantšo",
+      "More than decoration. A human story.": "Boholo ho feta ho khabisa. Lipale tsa motho.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "E 'ngoe le e' ngoe ea matsoho e bonts'a bophelo, lerato, sehlabelo, kapa monyetla o fanoeng. Ngoana o lula bakeng sa motho e mong le e mong ea nang le litoro tse hlokang ho khothaletsa le ho tšehetsa. Ka bobeli, matsoho a fetoha setulo sa likooa—'me tšepo e fetoha ntho eo re e etsang bakeng sa e' ngoe le e 'ngoe.",
+      "Where the artwork belongs": "Ha mosebetsi oa bonono o teng",
+      "Created to live with meaning": "O entsoe ho phela ka tlhaloso",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Mohlala o hlakileng oa matlo a lelapa, liithuti, libuka, liofisi, listudio, le libaka tse etsang hore ho be le thuto le ho hokahana ha motho.",
+      "A distinctive focal point for considered interiors": "Sehlooho se ikhethang sa ho nahana ka kahare",
+      "A conversation piece with a message beyond trends": "Sehlooho sa puisano le lengolo le nang le lengolo le kantle ho li-trends",
+      "A thoughtful digital art choice for personal spaces": "Ho khetha litsebi tsa bonono tsa digital bakeng sa libaka tsa botho",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Sena ke sehlahisoa sa inthanete. Ha ho na ho tšoaea kapa ho tšoaea ho tla romelloa. Ka mor'a ho reka, tobetsa ho kenya faele e fanoeng ho Gumroad. Reka litlhaloso tsa faele e kenyellelitsoeng, motsamaisi oa ho tšoaea, le laesense ea ho sebelisana le motho ka mong pele o tšoaea. Khetha boholo ba ho tšoaea le ts'ebeletso e loketseng ho li-file tse fanoeng.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Khetha mosebetsi oa bonono o bonts'ang seo u se tšepang—'me u lumele hore tlhaloso ea eona e phela le uena.",
+      "Get A Stairway of Hands ↗": "Get A Stairway of Hands ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Seo re se sireletsang kajeno se ka ba sona ka mantsiboea.",
+      "The story behind the image": "Lingoliloeng tse ka morao ho setšoantšo",
+      "More than decoration. A human story.": "Ho feta ho khabisa. Lipale tsa batho.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "Lilemo tse fetileng li na le boiphihlelo; tse ncha li na le monyetla. Lipakeng tsa tsona ho na le tšepo: ho boloka seo se bolokang bophelo le ho fana ka nakong e tlang e loketseng ba e fumanang. Ena ke lerato e bonts'itsoeng e le boikarabello.",
+      "Where the artwork belongs": "Ha ho na mosebetsi oa litšoantšo",
+      "Created to live with meaning": "E entsoe ho phela ka tlhaloso",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "Litšoantšo tsa bootsoa li ka sebelisoa ho etsa lifilimi, lipale, lipale tsa lipale, lipale",
+      "A distinctive focal point for considered interiors": "Sehlooho se setle sa ho nahana ka li-inner",
+      "A conversation piece with a message beyond trends": "Sehlooho sa puisano se nang le lengolo-tsoibila le kantle ho li-trends",
+      "A thoughtful digital art choice for personal spaces": "Ho khetha litšoantšiso tsa digital tse nahanang bakeng sa libaka tsa motho ka mong",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Sena ke sehlahisoa sa dijitale. Ha ho tla romelloa litokomane kapa li-frame tsa 'mele. Ha u reka, kenya faele tse fanoeng ho Gumroad. Tseba lintlha tsa faele, tataiso ea ho ngola, le laesense ea ho sebelisa ka bomong pele o ngola. Khetha boholo ba ho ngola le ts'ebeletso e loketseng litokomane tse fanoeng.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Ea ho qetela ke ho etsa qeto ea hore na ke eng eo u batlang ho e etsa, 'me u e etse ka ho khetheha.",
+      "Get The Legacy of Generations ↗": "Get The Legacy of Generations ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Ho hlaka ho hlaka bakeng sa li-rooms tsa ho robala, li-bedrooms, liofisi, lihotele tsa boutique, libaka tsa wellness, le li-inner tse nahanang.",
+      "Get The Mediterranean Muse ↗": "Fumana The Mediterranean Muse ↗",
+      "\\n": "\\ n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "Lefatše le Lekunutu. Lefatše le Lekunutu. Lefu le Lekunutu.",
+      "The story behind the image": "Lingoliloeng tse ka morao ho setšoantšo",
+      "More than decoration. A human story.": "Ho feta ho khabisa. Lingoliloeng tsa motho.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "Liaparo tse ka morao ho setšoantšo li bontša batho ba lilemo tsohle le ba nang le boiphihlelo. Lefatše le otlolohileng le bua ka seo se leng kotsing; leholimo le lefifi le leputsoa le bonts'a seo re ka se sireletsang. Mohalaleli ha a lebale. Ke boikarabello bo arolelanoeng, bo bonts'itsoeng.",
+      "Where the artwork belongs": "Ha mosebetsi oa bonono o teng",
+      "Created to live with meaning": "O entsoe ho phela ka tlhaloso",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "Mohalaleli ea etsang hore re nahane ka litoropo, liofisi, libaka tsa thuto, li-gallery, le libaka tse kopanetsoeng ka ho boloka.",
+      "A distinctive focal point for considered interiors": "Mohalaleli ea kopanetsoeng ka ho arolelana li-interieurs",
+      "A conversation piece with a message beyond trends": "Mohalaleli ea kopanetsoeng ka tlhaloso e fetang li-trends",
+      "A thoughtful digital art choice for personal spaces": "Mohalaleli oa kopanetsoeng ka tlhaloso ea li-digital bakeng sa libaka tsa botho",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Sena ke sehlahisoa sa digital. Ha ho na ho tšoaea kapa ho tšoaea ka bongata. Ka mor'a ho reka, kenya faele e fanoeng ho Gumroad. Reka litlhaloso tsa faele, leseli la ho tšoaea, le laesense ea ho sebelisana le motho ka mong pele o tšoaea. Khetha boholo ba ho tšoaea le ts'ebeletso e loketseng lifaele tse fanoeng.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Khetha mosebetsi oa bonono o bonts'ang seo u se ratang—'me u lumele hore se bolela'ng—'me u lumele hore se bolela'ng—'me u lumele hore se bolela'ng.",
+      "Get Last Cry of Earth ↗": "Get Last Cry of Earth ↗",
+      "\\n": "\\n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ho eketsa ho khetheha ho matlo, liithuti tsa botho, liofisi, li-gallery, li-museum, lihotele le libaka tsa bohahlauli.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Fumana THE GOLDEN GAZE 👁 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ho eketsa ho khetheha ho matlo, liithuti tsa botho, liofisi, li-gallery, li-museum, lihotele le libaka tsa bohahlauli.",
+      "Get The Queen Of The Nile 👑 ↗": "Fumana The Queen Of The Nile 👑 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ho eketsa ho khetheha ho matlo, liithuti tsa botho, liofisi, li-gallery, li-museum, lihotele le libaka tsa bohahlauli.",
+      "Get The Coptic Soul of Egypt ↗": "Fumana The Coptic Soul of Egypt ↗",
+      "\\n": "\\ n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE A ketsahalo ea timeless botle Egypt, moo boinotšing le sireletsehileng ba ho ba teng ho lefifi e kopana le rhythm ea leholimo la Nile. Golden...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A ho eketsa e ikhethang ho matlo, liithuti tsa botho, ofisi, galleries, likokoana-hloko, lihotele, le libaka tsa bohahlauli.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "Get THE NILE'S ETERNAL GRACE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Ba bang ba metsoalle ba ikutloa ka pelo, e seng e hlalositsoe ka mantsoe. Tsebisa ho hokahanya ha e sa tloaelehang...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Sehlooho se setle sa li-home, liofisi, libaka tsa thuto, li-gallery le libaka moo lipale tsa batho li leng bohlokoa.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Fumana A BOND BEYOND WORDS The Beauty of Unconditional Love ↗",
+      "\\n": "\\ n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION - SEVEN ARTWORKS, LIMITLESS WORLDS Travel ho feta e tsebahalang ka ho kopanya libuka tse tšeletseng tsa libuka tsa li-digital tse kopantsoeng ke cosmic...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Sehlooho se hloekileng bakeng sa li-living rooms, li-bedrooms, liofisi, lihotele tsa boutique, libaka tsa wellness, le li-inner tse nahanang.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Get GLOBAL ART & IMAGINATION ↗",
+      "\\n": "\\n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Lebisa bongata bo sa feleng ba Egypt ea khale ho ea sebakeng sa hau sa Eternal Egypt, a...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Ho eketsa ho khetheha ho matlo, liithuti tsa botho, liofisi, li-gallery, li-museum, lihotele le libaka tsa bohahlauli.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Fumana ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗",
+      "\\n": "\\ n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "Ka hare ho setsi sa mosebetsi se nahanang, nako ha e behiloe empa e sculpted. THE CLOCKMAKER'S DREAM e fetola li-gears, li-mechanisms tsa leholimo, le lisebelisoa tse sa khonehang...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Sehlooho se setle sa li-living rooms, li-bedrooms, liofisi, lihotele tsa boutique, libaka tsa wellness, le li-inner tse nahanang.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Get THE CLOCKMAKER'S DREAM ↗",
+      "\\n": "\\n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
+}

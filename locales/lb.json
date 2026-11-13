@@ -1,0 +1,696 @@
+{
+  "products": {
+    "oubirh": {
+      "summary": "D'Architektur vun der Kierch ass eenzegaarteg, mat enger harmonischer, minimalistescher a moderner Architektur.",
+      "category": "Sammlung",
+      "_source_hash": "85810573c609f032749049f0af3efd548b47b50b60c74fae8bbbcb5e0cfaaf2c"
+    },
+    "hqpird": {
+      "summary": "D'Sprooch ass eng vun de wichtegsten Kulturen an der Geschicht vun der Ägypter, an och vun der ganzer Welt.",
+      "category": "Sammlung",
+      "_source_hash": "bbee15015588f3854edb7cce4f6ee745a63ecba99e41de9335d42b77a925b26e"
+    },
+    "wdtvt": {
+      "summary": "Zess mächteg Kunstwierker iwwer Medezin, Resistenz, mënschlech Verbindung a Hoffnung. Eng komplett druckbar Kunstsammlung fir bedeitend Raim a gedankenvoll Interieuren.",
+      "category": "Sammlung",
+      "_source_hash": "0beaa1225adf5643d8bf3173e7f93d6f8ebe7ebb067e86674e4e8e27bf908560"
+    },
+    "mxrljy": {
+      "summary": "The Art of Stillness invitéiert Iech, ze verlangsamen an d'Schéinheet vun engem rouegen Moment z'entdecken. Inspiréiert vun meditative Formen, Lotusblieder, flossenden Waasser a waarmem goldene Liicht, bréngt dëst rouegt digitalt Kunstwierk eng kontemplativ Atmosphär an Wellness-Räum a raffinéiert Interieuren.",
+      "category": "Elegance",
+      "_source_hash": "adcd68bc42846100ab6f13044e8972c34ee7fe07d1f4702b4d1d9fdc7b14e78c"
+    },
+    "gusqyc": {
+      "summary": "Geometry of Elegance feiert d'Treffen vun architektonescher Form, natierlecher Textur a zäitgenëssesche Luxus. Smaragd Faarwen, Elfenbein Uewerflächen, skulpturaler Geometrie a golden Akzenter kreéieren eng raffinéiert abstrakt Kunstwierk fir raffinéiert Heem, Büroen an Hospitality Interieur.",
+      "category": "Elegance",
+      "_source_hash": "84014823691b93211841d3dbcf2452a78fd435d388b74dad7f7febe4d752c69f"
+    },
+    "aenwi": {
+      "summary": "Stellt Iech eng Stad vir, déi vun de Méiglechkeeten geformt gëtt. Cities of Tomorrow ass e visionäres digitalt Kunstwierk, dat d'Architekturfantasie, d'Innovatioun an de Mënschewunsch fir eng méi helle Zukunft feiert. E markante Statement-Drock fir zäitgenëssesch Haiser, kreativ Studios, Technologie-Räum a modern Büroen.",
+      "category": "Global",
+      "_source_hash": "e2173f80b274ea619b175b5480c483771929f3d1c9a75ce2893eea0775e30e96"
+    },
+    "gynmhv": {
+      "summary": "Laat d' stille Groussheet vun der Natur Äert Raum transforméieren. Nature's Majesty feiert d' erhuelsam Schéinheet vu Bierger, Waasserfäll, Wäldern a liicht Waasser an engem liewegen Landschaftskunstwierk dat Freiheet, Erneierung a Ruhm erzielt. En erfrischende Statement-Drock fir Heem a Gastronomie-Interieur.",
+      "category": "Global",
+      "_source_hash": "e6e5a3263c07964a62266c9dbbc5d1e7eb389514c1ade5780eebc6e4228f4b2e"
+    },
+    "jrsgce": {
+      "summary": "Bring the warmth of a Mediterranean escape into your everyday environment. Mediterranean Dreams captures the romance of coastal architecture, brilliant blue waters, flowering terraces, and golden-hour light. A welcoming digital art print for homes, villas, cafés, and travel-inspired interiors.",
+      "category": "Elegance",
+      "_source_hash": "f26a8d189f4afe6a0a7a8d671fcbd37c54bd461cdba3f4d15d77243c056e17e5"
+    },
+    "ukxrmq": {
+      "summary": "Fannt e Moment vun der Ruhm an der Schéinheet vun engem stille Gebitt. Silent Horizons ass eng vun der Natur inspiréiert digital Biller, déi vum stille Waasser, vu wäiten Héichten, vum sanfte Moiesliicht an engem Gefill vun Erneierung geformt sinn. E raffinéierte Landschaftsakzent fir friedlech Heemer, Büroen an Wellness-Räum.",
+      "category": "Eleganz",
+      "_source_hash": "003e93a0d92367744addfb51152fe6da6c27ac08144b5c89e1e73dd7fec007c7"
+    },
+    "yhkokf": {
+      "summary": "D'Gréisst vun der Atmosphär ass eng vun de wichtegsten Eegenschaften vun der Atmosphär, déi d'Gréisst vun der Äerd an d'Gréisst vun der Sonn beaflosst.",
+      "category": "Eleganz",
+      "_source_hash": "fc65d52d8cd76ff8b23097321c08f7ca24b70659818dea5dda62f894d09e4c9c"
+    },
+    "nxkxyq": {
+      "summary": "Trëtt an eng liicht Vision vum Kosmos. Beyond the Universe feiert d'Mysterium, d'Skala an d'Wunder vum Weltraum duerch eng traureg digital Grafik inspiréiert vun Galaxien, himmlescht Liicht an onlimitéiert Méiglechkeeten. Eng faszinéierend Ausso fir modern Interieuren an neigielzeg Geescht.",
+      "category": "Global",
+      "_source_hash": "16177585eb4768f120133dcd37a54ecc8a9108c42b39834cfe2e329ac00623d3"
+    },
+    "mzlqxg": {
+      "summary": "Et ass eng Geschicht vun enger Famill, déi sech net méi kennt, déi sech net méi",
+      "category": "Humanismus",
+      "_source_hash": "5c0e78bf9d27136335daa7e34ccf9da42dc590a56d083c83815407b47244dac0"
+    },
+    "etqsav": {
+      "summary": "Ënner engem liichte Mound kommen am Himmelsgaart Faarwen, Bewegung a Frëndschaft zesummen. Dëse traurege Wierk feiert Individualitéit, gemeinsam Reesen, Fräiheet a weiblech Graz duerch eng lebhaft Fantasiewelt. E charakteristesche Statement-Drock fir expressiv, fantasievoll Interieuren.",
+      "category": "Eleganz",
+      "_source_hash": "79723050f56e46edb2f774883a51d0a22ea883d9b80d00bd2c223954ce0c9346"
+    },
+    "vwrllor": {
+      "summary": "D'Gréisst vun der Atmosphär ass eng vun de wichtegsten Eegenschaften vun der Atmosphär, déi d'Gréisst vun der Atmosphär an d'Gréisst vun der Atmosphär an der Atmosphär",
+      "category": "Eleganz",
+      "_source_hash": "3fbd51fc0b3144dfae0749e5c04814f34b8c72ab9c458a6ae346494c7a678894"
+    },
+    "gkwadk": {
+      "summary": "De Stär ass och e Symbol fir d'Renaissance an d'Renaturéierung.",
+      "category": "Humanismus",
+      "_source_hash": "b3d3ed2cdc9e6333f7aaf330e1821220c7ad12874771ec45ca02ca1fc18fbd9f"
+    },
+    "rglfun": {
+      "summary": "D'Zuel 2 ass e Symbol fir d'Gläichheet vun de Geschlechter.",
+      "category": "Humanismus",
+      "_source_hash": "7621f26df00b476963956773c9499fcec7b87189855fb05b55ebef7cd33c4268"
+    },
+    "cotnkm": {
+      "summary": "D'Skulptur ass eng Hommage un d'Liewen, dat Deel vun eis gëtt. Duerch eng expressiv skulpturale Vision vun enger Mamm a sengem Kand feiert d'Artwork Schutz, Opfer, Zougehöregkeet an d'dauerhaft Wurzel vun der Zuneigung.",
+      "category": "Humanismus",
+      "_source_hash": "89071cfe9a0d1d8d3c14646a7e82629d42e4e1b858b782ebe96d94ff24be625e"
+    },
+    "kaztbw": {
+      "summary": "D'Aurelle mécht den alldeegleche Kaffi-Ritual zu enger poetescher Feier vun der Präsenz, der femininer Eleganz a vum rouege Luxus.Luminous Gold, Deep Black an warm Coffee Tones kreéieren e charakteristesch digitale Kunstwierk fir stilvoll Heemecht, Kaffi Corneren, Boutique Caféen an zäitgenëssesch Interieuren.",
+      "category": "Eleganz",
+      "_source_hash": "50f25bf7ff18b06b831f14e21450ee7562896355ad94503c70b68b66a14178bb"
+    },
+    "cuitvq": {
+      "summary": "Skulpturell Eleganz a golden Liicht d'ruhig Stärke vun der innere Balance ausdrécken.",
+      "category": "Eleganz",
+      "_source_hash": "2ccb896bdf8f18e66ce1bc1ca17fecfdd6eed315302fe2ee1d2ef8c5532b18b4"
+    },
+    "rabhc": {
+      "summary": "De Stil ass eenzegaarteg, an et gëtt eng ganz Rei vu Stiler, déi sech op d'Gestaltung, d'Form an d'Stilelementer vun der Geschicht bezéien.",
+      "category": "Eleganz",
+      "_source_hash": "3e36120477fa3535261c200c5e9210726bf08cb1968d35b25965f08e276b936f"
+    },
+    "ycltf": {
+      "summary": "The Tree That Refused to Die erzielt eng Geschicht vun der Resistenz: och tëscht Ruinen, kann d'Liewen e Wee vir sech fannen. Seng Wurzeln ginn zu Bréck tëscht zerbrachne Plazen, an iwwerliewend gëtt et zu Verbindung a Vernetzung. E bedeitende Statement fir jiddereen, deen der Hoffnung no geet.",
+      "full_description": "THE TREE THAT REFUSED TO DIE\n\nEven Among the Ruins, Life Finds a Way.\n\nWat wann dat gréisste Symbol vun der Hoffnung net e Monument wier, dat vun der Mënschheet gebaut gouf, mee e liewegen Baum, deen sech net erginn huet?\n\nStellt Iech eng Stad vir, déi hir Stëmm verluer huet. Gebaier sinn erofgefall, Stroossen sinn ënner dem Schutt verschwonnen, a Spure vu mënschleche Liewen scheinen an d'Stëmmung ze sinn. An awer, am Häerz vun dësem vergiessene Plaz, leeft en aussergewéinleche Baum weider.\n\nSeng Wurzeln sichen net nëmmen no Buedem. Si recken iwwer zerbrachne Maueren, ëmfassen zerstéiert Strukturen, a strecken sech tëscht opgedeelte Gebaier, transforméieren Zerstéierung a Verbindung. Seng Zweige erhiewen sech zum Himmel, huelen frisch gréng Blätter mat sech, ënner engem goldene Liicht, dat duerch d'Wollken bréngt.\n\nDat ass méi wéi eng Szen vun der Natur, déi eng zerstéiert Stad zréckgeet. Et ass eng räich beweegt Geschicht iwwer de mënschleche Geescht.\n\nDe Baum representéiert all Persoun, déi Schwieregkeeten erlieft huet, ouni datt Schwieregkeeten hir Zukunft definéieren. Et schwätzt fir déi, déi bal alles verluer hunn, awer nach ëmmer d'Kraaft fannen, fir nees unzefänken. Fir déi, déi vum Liewen verwunnt goufen, awer hir Häerz net leeë gelooss hunn. Fir déi, déi verstinn, datt iwwerliewen net einfach am Liewen bleiwen ass - et ass de Mutt ze fannen, fir nees ze wuessen.\n\nD'Wurzeln symboliséieren d'Resistenz: d'onsichtbar Kraaft, déi eis zesummehält, wann alles ëm eis herëm ausernee fält. Hir Brécke representéieren Versöhnung, Verbindung, an d'Méiglechkeet, Bezéiungen a Gemeinschaften no der Trennung a Verloscht zréckzebauen.\n\nD'Grénge Baldachin ass e Versprieche, datt Zerstéierung net d'Enn vum Kapitel muss sinn. D'Vëloen, déi an den oppenen Himmel stiegen, erënneren eis drun, datt Freiheet a Verneierung och no de düstersten Zäiten zréckkommen.\n\nEt ass eng Geschicht, déi net nëmmen d'Zukunft, mä och d'Vergaangenheet an d'Zukunft beschreift, an déi och nach haut nach ëmmer relevant ass.\n\nEt ass eng Geschicht iwwer eng Persoun, déi sech an engem schwéiere Liewen befannt, déi awer net opginn, fir d'Liewen ze liewen.\n\nEt ass e wichtegt Statement-Stück fir e Wunnzëmmer, Büro, Bibliothéik, kreativen Studio oder all Raum, wou Resistenz, Erneierung an Inspiratioun eng Plaz verdéngt. Et kann och e gedankenvollt Geschenk fir jiddereen ginn, deen e neie Kapitel ufänkt, widderstänneg Situatiounen iwwerwannt oder de Mutt fënnt, sech nees eropzesetzen.\n\nLoosst dëse Baum Iech drun erënneren, datt Är Vergaangenheet Är Zukunft net limitéieren muss. Och wann Dir am Liewen vun Ruinen ëmgi sidd, kann eppes an Iech nach ëmmer wuessen.\n\nEt ass net bekannt, wéi eng vun deene Stären am Stärebild läit.\n\nHall of Fame\n\nEt ass eng Gemeng mat enger Gemengeregierung, déi awer keng Verfassung huet.\n\nART PRINT & SEARCH DETAILS\n\nD'Aarbecht ass eng digital Grafik, déi fir d'Dréckerei benotzt ka ginn, fir Wandbiller, dekorativ Dekoratioun an d'Interieurdesign. D'Arbecht kann och fir d'Persoun selwer erofgelueden ginn, mat Drockoptiounen, déi op d'Dokument an op de Raum ugepasst sinn.",
+      "category": "Humanismus",
+      "product_details": {
+        "files_included": "1 Datei · ZIP · 29,1 MB",
+        "product_type": "Digitalisat vum Artikel",
+        "delivery": "Digitalisat vum Artikel op der Websäit",
+        "physical_item": "Keng physikalesch Dréckerei oder Frame wäert verschéckt ginn",
+        "printing": "Dréckt déi uginn Dateien mat Ärem bevorzugten Dréckeranbieter aus; kontrolléiert d'Inklusiounsdimensioune virum Wiele vun enger Gréisst",
+        "usage": "Folgt de Lizenzbedingungen fir perséinlech Benotzung an aner Lizenzbedingungen déi mam Download abegraff sinn"
+      },
+      "_source_hash": "d9bff692f10639a5edca9063641cbb3c31081b0579c89bb9cc9635499e614060"
+    },
+    "bctcdz": {
+      "summary": "The Light We Leave Each Other eréiert d'Géigend, d'Wëssenschaft an de Mutt, déi vun enger Generatioun op déi aner iwwerdroe ginn. Eng glécklech Laterne gëtt zum Symbol vun der Hoffnung, déi mir kréien - an dem Liicht, dat mir matdeelen. E beweegt Kunstwierk fir Heem, Büroen an bedeitend Geschenker.",
+      "full_description": "THE LIGHT WE LEAVE EACH OTHER\n\nThe Greatest Light Is the One We Pass On.\n\nE puer Liicht sinn do fir e Moment ze erliichteren. Anerer sinn do fir Generatiounen ze erliichteren.\n\nEt gëtt eng stille Wahrheit, déi all Mënscheliewen verbënnt: kee vun eis fänkt seng Rees ganz am Liicht un. Irgendwou op der Strooss, streckt sech iergendeen un eis — e Elterendeel, e Lehrer, e Fremde, e Frënd, oder iergendeen, deem seng Gëttinheet mir net vergiessen. Si bidden eis eppes, wat eis hëlleft, eise Wee ze fannen: e bësse Hoffnung, e Stéck Wëssenschaft, e Akt vu Medezin oder einfach de Mutt, weiderzemaachen.\n\nAn eemol entdecken mir, datt dat Liicht, dat mir eemol krut, elo eis ass, fir et ze deelen.\n\nTHE LIGHT WE LEAVE EACH OTHER ass eng künstleresch Hommage un dat aussergewéinlecht mënschlecht Erbe — d'onsichtbar Erbe vun der Gëttinheet, dem Wëssen, der Léift, dem Mutt an der Hoffnung, dat vun enger Generatioun op déi nächsten iwwerdroe gëtt.\n\nAm Zentrum vun der Kompositioun beweegt sech eng al golden Laterne vun enger Hand op déi aner. Ëm si, kommen Gesiicht vu verschiddene Generatiounen a verschiddene Generatiounen zesummen an engem gemeinsame Moment vun der Verbindung. D'Alteren representéieren d'Wëssenschaft an d'Erfarung vun deenen, déi virdrun komm sinn. D'jeune Generatiounen verkörperen d'Versprieche vun deem, wat nach kommen wäert. Tëschent hinnen, gëtt d'Laterne e mächtegt Symbol vun der Kontinuitéit: eng Erinnerung, datt d'gréisste Erfolleger vun der Mënschheet net nëmmen doduerch gemeet ginn, wat mir bauen, mee och doduerch, wat mir een aneren ginn.\n\nD' Ëmgéigend Dunkelheet an de wäite goldenen Horizont verstäerken d' Bedeitung vun der Szen. Si representéieren d' Ungewiichtegkeet vum Liewen, d' Erausfuerderungen, déi mir konfrontéiert sinn, an d' Méiglechkeet vun enger méi helleger Zukunft, wann mir zesummen stinn. D' waarmt Liicht, dat d' Gesiicht erhellt an d' Hänn streckt, transforméiert eng einfach Geste an eppes universelles: de Glawe, datt keng Aktioun vun eenzeger Léift jeemools wierklech verluer geet.\n\nDëse Wierk invitéiert op eng perséinlech Reflexion\n\nWien huet Liicht an Ärem Liewen bruecht, wann Dir et am meeschte gebraucht hutt? Wien säi Wee kéint méi liicht ginn, well Dir eppes gitt, wat Dir haut gitt?\n\nSeng Message gehéiert jidderengem, onofhängeg vum Alter, der Nationalitéit, der Kultur oder dem Hintergrund. Mir hunn all eppes vun aneren kritt, a mir hunn all eppes bedeitends ze ginn.\n\nMÉI WËLLT WEI KUNST. E BETRIEBS.\n\nEt ass méi wéi eng dekorativ Ausso, dëst Wierk bréngt e Gefill vu Wärme, Déift a mënschlecher Verbindung an de Raum, deen et bewunnt. Et kann eng bedeitend Präsenz ginn an engem Wunnzëmmer, engem Büro oder engem aneren Raum, wou Inspiratioun a Reflexion geschätzt ginn.\n\nEt ass och e wëssenschaftlecht Geschenk fir jiddereen, deen un Léift, Famill, Dankbarkeet, mënschlech Verbindung a dauerhaft Kraaft vun der Hoffnung glaubt.\n\nWell déi bedeitendst Saachen, déi mir hannerloossen, sinn net ëmmer Saachen, déi mir kënne behalen. Manchmol sinn et d'Liewen, déi mir berührt hunn, d'Häerz, dat mir ermuert hunn, an d'Liicht, dat mir aneren gehollef hunn, an hinnen selwer ze entdecken.\n\nE gedeelt Liicht ass ni e Liicht, dat verluer geet. Et ass e Liicht, dat weiderleeft.\n\nD' MËNDSCHAFTLECHKEET\n\nWell d' Mënschheet ass dat bescht Meisterwierk, dat mir hannerloosse kënnen.\n\nHALL VUN DER GRËSSTÄERTE\n\nKonscht mat enger Séil. Eng Message ouni Grenzen.\n\nKUNST Drécken & SUCH DETAILS\n\n10",
+      "category": "Humanismus",
+      "product_details": {
+        "files_included": "D'Gréisst vum Stär ass 27,5 mag.",
+        "product_type": "Digitalisat vum Artikel",
+        "delivery": "Digitalisat vum Artikel op der Websäit",
+        "physical_item": "Keng physikalesch Dréckerei oder Frame wäert verschéckt ginn",
+        "printing": "Dréckt déi uginn Dateien mat Ärem bevorzugten Dréckeranbieter aus; kontrolléiert d'Inklusiounsdimensioune virum Wiele vun enger Gréisst",
+        "usage": "Folgt de Lizenzbedingungen fir perséinlech Benotzung an aner Lizenzbedingungen déi mam Download abegraff sinn"
+      },
+      "_source_hash": "6fb6b36e97f6c6a45e6f2b988972dcc4dc6ed88e314b292990945b1ee19d2a6d"
+    },
+    "msuzc": {
+      "summary": "D'Kierch ass an engem klassesche Stil gebaut, mat enger grousser Zuel vu Figuren.",
+      "full_description": "D'Stad ass op dräi Säiten ëmgi vun Héichten.\n\nD'Zukunft ass an de Hänn vun de Mënschen.\n\nNo der Zäit ass et no an no zu enger Emigratioun komm.\n\nA Stairway of Hands ass eng symbolesch Feier vun der Solidaritéit, der Opmierksamkeet an de stillen Akte vun der Ënnerstëtzung, déi Liewe veränneren. Am Zentrum steet e Kand, dat op enger Treppestuf, déi vu Mënschehänn geformt ass, op d'Liicht zeréck geet. All Hand steet fir eng Persoun, e Opfer, eng Léift oder e Bäitrag, deen engem aneren hëlleft, ze eropzekommen.\n\nD'Geschicht vum Mënsch\n\nD'Hänn gehéieren zu kee speziellen Alter oder Beruf. Si schwätzen fir Elteren, Lehrer, Aarbechter, Betreier, Noperen a Generatiounen, deenen hir Efforte dacks onsichtbar sinn. D'Kand representéiert all jonk Persoun mat engem Traum, deen Ermutigung, Chancen a Schutz brauch.\n\nD'Bewegung vun der Dunkelheet zum goldene Liicht gëtt dem Bild seng emotionell Kraaft. Hoffnung ass net passiv Waarden; et ass eppes wat Leit fir een aneren bauen, eng generéis Handlung no der anerer.\n\nEng bedeitend Ausso fir Äre Raum\n\nD'Bild kann an der Famill, am Büro, an der Schoul, an der Bibliothéik, am Studio oder an der Gemeinschaft ausgeriicht ginn, fir ze erënneren, datt d'Wëssenschaft a d'Méiglechkeeten eropgoen, wann d'Leit zesummen schaffen. Et ass och e gutt Geschenk fir Erzéiungspersonal, Elteren, Mentoren an all déi, déi un d'Versprieche vun der nächster Generatioun gleewen.\n\nE Kand, onzählige Hänn, eng Zukunft zesummen.\n\nDÉI DIGITAL KUNSTWERKER\n\nD'Digitaliséierung huet d'Fäegkeet, d'Dokumenter net méi manuell ze änneren.\n\nLaden Si d'Dateien mat dësem Produkt no dem Kaf.\n\nD'Detailer vun der Datei, den Drockguide an d'Lizenz fir perséinlech Benotzung virum Drock iwwerpréiwen.\n\nWielt eng Dréckergréisst an e Service, déi mat de virginn Datei- Spezifikatiounen iwwereenstemmen.\n\nBring home a artwork with a story. Wielt Artwork erofzelueden fir et zu engem Deel vun Ärem Raum ze maachen.\n\nD'Grenze vun der Welt sinn net ganz kloer, et gëtt keng definitiv Grenz.",
+      "category": "Humanismus",
+      "product_details": {
+        "files_included": "1 Datei · ZIP · 8.6 MB",
+        "product_type": "Digital Bilddatei erofzelueden",
+        "delivery": "Direkt digital Erofzelueden no dem Kaf",
+        "physical_item": "Keng physikalesch Ausdréck oder Rahmen ginn verschéckt",
+        "printing": "Dréckt d'Download Dateien mat Ärem gewielten Drécker; kontrolléiert d'Inklusiounsdimensioune virum Wielen vun enger Gréisst",
+        "usage": "Befollegt d'Perséinlech Benotzung an aner Lizenzbedingungen déi mat dem Download enthält sinn"
+      },
+      "_source_hash": "b963b309b0892c055876d7451b6a8bc36190e3b1d23c99420a1c588817cba9ac"
+    },
+    "tzlsv": {
+      "summary": "Et ass eng Vereenegung vun de Leit, déi sech fir d'Rechter vun de Mënschen asetzen.",
+      "full_description": "D'Erléisung vun der Generatioun\n\nWat haut geschitt, ass och de Moien.\n\nEt kann een d'Welt an der Hand vun engem aneren iwwerloossen.\n\nD'Resultat vun dësem Prozess ass d'Entwécklung vun enger neier Generatioun, déi méi flexibel ass, méi flexibel an déi méi flexibel ass, wat d'Zukunft ugeet.\n\nD'Liewen ass dat wat eis haut beschäftegt.\n\nEt ass eng Geschicht vun der Léift, déi d'Liewen an d'Schéinheet vun der Natur an d'Liewen an d'Schéinheet vun der Mënschheet zesummenhält, an déi d'Liewen an d'Schéinheet vun der Natur an d'Liewen an d'Schéinheet vun der Mënschheet zesummenhält.\n\nD'Famill kann eng Quell vu Gemeinschaft sinn, mä Verantwortung geet iwwer d'Famill eraus, a verbënnt Gemeinschaften a Generatiounen duerch d'Welt déi se deelen.\n\nD'Gesetz gëllt fir all Persoun déi an der EU wunnt.\n\nPlazéiert dës Grafik an engem Familljeliewensraum, am Studien, Büro, an der Bildung, oder an engem aneren Ëmfeld, dat d'Erënnerung an d'Zukunft erëmhëlt. Et ass e gudde Geschenk fir Elteren, Grousselteren, Mentoren a Leit, déi denken, datt d'Sorgfalt e Vermëttelt ass.\n\nMir hunn d'Zukunft net, mä mir halen se fir déi, déi no eis kommen.\n\nDÉI DIGITAL KUNSTWERKER\n\nD'Digitaliséierung huet d'Fäegkeet, d'Dokumenter net méi manuell ze änneren.\n\nLaden Si d'Dateien mat dësem Produkt no dem Kaf.\n\nD'Detailer vun der Datei, den Drockguide an d'Lizenz fir perséinlech Benotzung virum Drock iwwerpréiwen.\n\nWielt eng Dréckergréisst an e Service, déi mat de virginn Datei- Spezifikatiounen iwwereenstemmen.\n\nBring home a artwork with a story. Wielt Artwork erofzelueden fir et zu engem Deel vun Ärem Raum ze maachen.\n\nD'Grenze vun der Welt sinn net ganz kloer, et gëtt keng definitiv Grenz.",
+      "category": "Humanismus",
+      "product_details": {
+        "files_included": "1 Datei · ZIP · 23.1 MB",
+        "product_type": "Digital Bilddatei erofzelueden",
+        "delivery": "Direkter digitalen Download no dem Kaf",
+        "physical_item": "Keng physikalesch Ausdréck oder Rahmen ginn verschéckt",
+        "printing": "Dréckt d'Dokumenter mat Ärem gewielten Drécker; kontrolléiert d'Inklusiounsdimensioune virum Wielen vun enger Gréisst",
+        "usage": "Befollegt d'Lizenzbedingungen fir perséinlech Benotzung an aner Lizenzbedingungen déi mam Download enthält sinn"
+      },
+      "_source_hash": "85dbcd535bbf5b49e8e3d1f629b11e1c1044b6806e4066780e78dd7693e99981"
+    },
+    "bgqxwm": {
+      "summary": "D'Musek ass eng vun de wichtegste Forme vun der Kultur, déi sech op d'Gesellschaft, d'Liewensweis, d'Gesellschaftsstrukturen, d'Gesellschaftsform an d'Gesellschaftsstrukturen, déi d'Liewensform an d'Gesellschaftsform bezéien, auswierkt.",
+      "full_description": "D'Musek ass e Bild vun der Natur, dem Liewen an der Natur.\n\nD'Géigend ass bekannt fir d'Schéinheet vun der Natur, déi sech duerch d'Géigend zitt an och fir d'Schéinheet vun de Bierger.\n\nD'Musek ass eng vun de wichtegsten Aspekter vun der Geschicht vun der Musek, déi d'Geschicht vun der Musek an der Geschicht vun der Musek an der ganzer Welt beschreift.\n\nRich Sapphire blue, textured gold, warm ivory, dramatic black forms, and vivid crimson lips create a bold visual harmonie. Every angle shape reveals a different perspective, while the enchanting seaside scene invites the imagination to wander between reality and artistic fantasy.\n\nEt ass eng ganz interessant, interessant a ganz interessant Geschicht, déi sech an engem ganz spezielle Kontext ofspillt.\n\nPerfekt fir\n\nD'Haus huet e modernen Design.\n\nWebsäit vum Studio\n\nEt gëtt och e puer Hoteller an e Restaurant.\n\nEt ass e modernt, zentraliséiertt Land.\n\nD'Artiste sinn an der Kategorie \"Artistes\" opgedeelt.\n\nD'Musek ass eng vun de wichtegsten Aspekter vun der Kultur, an d'Musek ass eng vun de wichtegsten Aspekter vun der Gesellschaft, an d'Musek ass eng vun de wichtegsten Aspekter vun der Gesellschaft.\n\nD'Haus ass eng vun de wichtegste Kulturhaiser zu Lëtzebuerg.\n\nART PRINT & SEARCH DETAILS\n\nD'Musek ass eng vun de wichtegsten Aspekter vun der Geschicht vun der Musek, an d'Musek ass eng vun de wichtegsten Aspekter vun der Geschicht vun der Gesellschaft.",
+      "category": "Eleganz",
+      "product_details": {
+        "files_included": "1 Datei · ZIP · 19,0 MB",
+        "product_type": "Digitalisat vum Artikel",
+        "delivery": "Digitalisat vum Artikel op der Websäit",
+        "physical_item": "Keng physikalesch Dréckerei oder Frame wäert verschéckt ginn",
+        "printing": "Dréckt déi matgelieferte Dateien mat Ärem bevorzugten Drécker-Provider aus; kontrolléiert d'Inklusiounsdimensioune virum Wiele vun enger Gréisst",
+        "usage": "Befollegt d'Lizenzbedingungen fir perséinlech Benotzung an aner Lizenzbedingungen déi mam Download abegraff sinn"
+      },
+      "_source_hash": "af1fb435d85020fb7dfffd341b525734bf626e5bde25a5492169ffa49b1059c6"
+    },
+    "aedllm": {
+      "summary": "Et ass eng vun de gréisste Festungen an Europa, déi och haut nach bestallt gëtt.",
+      "full_description": "Lëscht vun de Stären\n\nEt ass eng Welt, eng Zukunft.\n\nE puer Biller dekoréieren eng Mauer. Anerer froen eis, wéi eng Aart vu Welt mir hannerloossen.\n\nD'Eerd ass e Planéit, deen duerch seng Form, seng Struktur, seng Atmosphär, seng Klimazonen, seng Flëssegkeet an d'Gréisst, déi et huet, als eenzegen an der Welt eng vun de gréisste Planéiten ass, déi et gëtt.\n\nD'Geschicht vun de 2 Zukunftsméiglechkeeten\n\nD'Säiten vun der Kompositioun evokéieren d'Käschte vun der Vernachlässerung - verdorwent Land, industriellen Damp, beschiedegt Ökosystemer, an eng Landschaft ënner Drock. D'aner Säit öffnet sech fir Erneierung: gréng Wuesstum, kloert Waasser, sauber Energie, an d'Wärm vun engem goldenen Sonnenopgang. De Kontrast ass net einfach donkel géint Liicht. Et ass eng Wiel tëscht Opginn an Verantwortung.\n\nD'Hänn ronderëm de Globus representéieren Leit vu verschiddene Altersgruppen, Kulturen a Hintergründe. Zesumme ginn se e visuellt Versprieche, datt eng bedeitend Verännerung eng gemeinsam menschlech Ustrengung ass.\n\nWËLL ET EEN BETRIEFT\n\nDëse Projet ass fir Leit, déi sech ëm d'Natur, d'Zukunft vun de Generatiounen a d'Kraaft vun der Konscht këmmeren, fir wichteg Gespréicher unzefänken. Et kann e wëssenschaftleche Fokuspunkt an engem Heem, Büro, Bildungsraum, Galerie oder Ëmwelt-fokusséierter Astellung ginn.\n\nEt ass eng vun de wichtegsten Aktivitéiten, déi d'Gemeng zu der Zäit gemaach huet.\n\nDÉI DIGITAL KUNSTWERKER\n\nD'Digitaliséierung huet d'Fäegkeet, d'Dokumenter net méi manuell ze änneren.\n\nLaden Si d'Dateien mat dësem Produkt no dem Kaf.\n\nD'Detailer vun der Datei, den Drockguide an d'Lizenz fir perséinlech Benotzung virum Drock iwwerpréiwen.\n\nWielt eng Dréckergréisst an e Service, déi mat de virginn Datei- Spezifikatiounen iwwereenstemmen.\n\nBring home a artwork with a story. Wielt Artwork erofzelueden fir et zu engem Deel vun Ärem Raum ze maachen.\n\nHALL OF GREATNESS — Art with a Soul. A Message Without Borders.",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 Datei · ZIP · 24.6 MB",
+        "product_type": "Digital Bilddatei erofzelueden",
+        "delivery": "Direkt digital Erofzelueden no dem Kaf",
+        "physical_item": "Keng physikalesch Ausdréck oder Rahmen ginn verschéckt",
+        "printing": "Dréckt d'iwwerreechte Dateien mat Ärem gewielten Drécker; kontrolléiert d'Materialdimensioune virum Wielen vun enger Gréisst",
+        "usage": "Befollegt d'Lizenzbedingunge fir perséinlech Benotzung an aner Lizenzbedingunge mat dem Download"
+      },
+      "_source_hash": "1b778b5e9598b900f314bd014e2126505fb284bc853987ad799e788064ade832"
+    },
+    "jzjbrg": {
+      "summary": "Bring d' Majestät an d' Mysteriéis vum antike Ägypten an Äre Raum mat der Kinnekräich vum Nil. Inspiréiert vun der dauerhafter künstlerescher Erfarung vun Ägypten, füügt dëst markant digitalt Bild eng royal kulturell Präsenz zu Heem, Büroen, Hotels an kuerzfristeg Interieuren bäi.",
+      "full_description": "D' KËNIGINNE VUN DEM NIL\n\nEng royal Hommage un d' künstlerescht Erbe vum antike Ägypten\n\nBring d' Mysteriéis, d' Würdegkeet an d' dauerhaft Schéinheet vum antike Ägypten an Är Ëmgéigend mat der Kinnekräich vum Nil, engem digitalen Bild, dat inspiréiert ass vun der visueller Sprooch an dem kulturellen Erbe vun enger vun de bemierkenswäertste Zivilisationen an der Geschicht.\n\nErstallt fir Bewunner vun der ägyptescher Erfarung an der markanter Statement-Kunst, bitt dëst Wierk e Gefill vu royaler Präsenz a kulturellem Charakter. Et invitéiert de Betrachter, sech mat engem Erbe ze verbannen, dat duerch Symbolik, Handwierk, Fantasie a laangfristeg Faszinatioun mam Nil a mat der Welt vum antike Ägypten geformt ass.\n\nENG DISTINKT PRÄSENZ FÜR DIR\n\nD' Kinnekräich vum Nil kann e markante Fokuspunkt an engem elegante Wunnzëmmer, privatem Büro, Geschäftsbüro, Boutique-Hotel, Rezeptionsberäich an kuerzfristeg Interieur sinn.\n\nDIGITAL DOWNLOAD INFORMATION\n\nDëse Bild ass e digitale Produkt. Keng physikalesch Gemälde, gedréit Poster oder Raum, a kuerzfristeg Interieur. Et ass och eng wëssenschaftlech Wiel fir Sammler an all déi, déi vun der ägyptescher inspiréierter Konscht a Kultur inspiréiert sinn. [8] DIGITAL DOWNLOAD INFORMATION [9] Dëse Bild ass e digitalt Produkt. Keng physikalesch Gemälde, gedréit Poster oder Raum ginn verschéckt. No dem Kaf, laden d' Dateien erof, déi mat der Offer gelies ginn, a kontrolléiert hir abegraff Formater, Dimensioune a Gebrauchsbedingungen ier Dir se dréckt. Wielt eng Dréckgrouss a Material passend zu der gelieferter Datei an Ärem gewënschtene Display. D' Faarwen kënnen tëscht Bildschiermer a gedréite Resultater liicht variéieren.\n\nD' KËNIGINNE VUN DEM NIL — E royal Echo vun enger antike Welt.\n\nHALL VUN GROSSZEIT\n\nKUNSTDRUCKE & SUCH DETAILS\n\nEntdeckt dësen The Queen Of The Nile 👑 digitalen Kunstdruck fir druckbar Wandkunst, markant Heemdekoratioun an duerchdacht entworf Interieuren. E downloadbare Kunstwierk fir perséinlech Ausstellung, mat Drockoptiounen déi passend fir d'gelieferten Datei a fir Äre Raum sinn.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 Datei · ZIP · 44.0 MB",
+        "product_type": "Digitalen Kunstwierk Download",
+        "delivery": "Direkten digitale Download no dem Kaf",
+        "physical_item": "Keng physikalesch Dréck oder Raam gëtt verschéckt",
+        "printing": "Dréckt d'gelieferte Dateien mat Ärem gewielten Drockprovider; kontrolléiert d'inklusiv Dimensioune virum Wiel vun enger Gréisst",
+        "usage": "Folgt de perséinlecher Benotzung an anere Lizenzbedingungen déi mat dem Download abegraff sinn"
+      },
+      "_source_hash": "a4497ccda79c60d5130d5f8f09b9c6acc088280a4d67c8ca9e65d4ff49de7d69"
+    },
+    "csyqhm": {
+      "summary": "D'Koptesch Séil vun Ägypten ass eng zäitgenëssesch künstleresch Interpretatioun, déi vum visuelle Erbe, Symbolismus a kulturellen Gedächtnis vun der koptescher Ägypten inspiréiert ass. Kreéiert fir déi, déi d'Treffen vun Geschicht, Identitéit a künstleresche Ausdrock schätzen, mécht et eng bedeitend Ausso an Heem, Büroen, Galerien a kulturellen Raim.",
+      "full_description": "D'Koptesch Sproochen an Egypten\n\nLëscht vun de lëtzebuergesche Konschtmuseker\n\nD'Interpretatioun vun der Kultur an der Kulturgeschicht ass eng vun de wichtegsten Themen an der Kulturgeschicht, déi sech op d'Geschicht vun der Kultur, der Kulturgeschicht an der Kulturgeschicht bezitt.\n\nAnstatt sech als eng archéologesch Reproduktioun oder Replik vun enger spezifescher historescher Ikon ze presentéieren, beschäftegt sech dëst Wierk mat der zäitgenëssescher künstlerescher Perspektiv op d'Erfarung, d'Kulturgeschicht an d'modern visuell Ausdrocksmëttel zesummen ze bréngen, fir d'Reflexion op Identitéit, Kontinuitéit, Glawen an de Reichtum vun der méischichteger Geschicht vun Ägypten unzezéien.\n\nEt ass eng vun de wichtegsten Aktivitéiten, déi an der Gemeng organiséiert gëtt, an déi eng ganz Rei kulturell Aktivitéiten an der Gemeng organiséiert.\n\nGESCHENKT FÜR ACHTLÉISEN SPÄITER\n\nEt ass eng wëssenschaftlech, kulturell, wirtschaftlech, politesch, wirtschaftswëssenschaftlech, kulturhistoresch, wëssenschaftlech an aner Aktivitéit, déi d'Ëmwelt an d'Ëmweltkultur an der Gemeng an am Land beaflosst.\n\nProduktinformatioun\n\nDësen ass e digitalen Download. Et gëtt keng physikalesch Gemälde, gedréit Poster oder Raum verschéckt. Bitt kuckt d' Dateien déi mat der Lëscht gelies ginn, inklusiv hir Formater, Dimensioune an d' Benotzungsbedingungen, ier Dir en Drock organiséiert. D' Faarwen kënnen e bësse variéieren ofhängeg vum Bildschierm, Drucker an dem gewielte Material.\n\nD'Egipt ass eng vun de gréisste Kulturen op der Welt.\n\nHall of Fame\n\nART PRINT & SEARCH DETAILS\n\nEntdeckt dësen The Coptic Soul of Egypt digitalen Kunstdruck fir Wandbiller, déi Dir ännere kënnt, fir eenzegaarteg Dekoratioun an duerchdacht Interieuren. E Bildmaterial fir Är perséinlech Ausstellung, dat Dir erofgeluede kënnt, mat Drockoptiounen déi der gelieferter Datei an Ärem Raum entspriechen.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 Datei · ZIP · 60.1 MB",
+        "product_type": "Digitalt Bildmaterial erofgelueden",
+        "delivery": "Direkten digitale Download no dem Kaf",
+        "physical_item": "Keng physikalesch Dréckerei oder e Raam gëtt verschéckt",
+        "printing": "Dréckt d'gelieferte Dateien mat Ärem gewielte Drécker; kontrolléiert d'Inklusiounsdimensioune virum Wielen vun enger Gréisst",
+        "usage": "Befollegt d'Lizenzbedingunge fir perséinlech Benotzung an aner Lizenzbedingunge mat dem Download"
+      },
+      "_source_hash": "2eca69141928e3e01281fed2b39524d668bb838241b109042d8477d2e941b1b2"
+    },
+    "jvffaq": {
+      "summary": "D'Evangelium no Matthew ass eng vun de wichtegste Bicher an der Geschicht vun der Kierch, well et d'Geschicht vun der Grënnung vun der Kierch an d'Geschicht vun der Welt erzielt.",
+      "category": "Erléisung",
+      "_source_hash": "b061cdc5a55b2e444a09cd7d8c3d8d1eb73ad3315fe38b35610ca590b595c16e"
+    },
+    "kjclzu": {
+      "summary": "D'Liewensgeschicht vun engem Mënsch ass eng Geschicht vun der Entwécklung vun enger Persoun, vun hirer Famill, vun hirer",
+      "full_description": "D'Wëssenschaft vun de Wierder\n\nD'Bedeitung vun der Bezeechnung ass onkloer.\n\nD'Sprooch ass no an no no der Vergaangenheet gefall.\n\nEt ass eng Geschicht iwwer eng Famill, déi sech an engem klenge Land, an engem klenge Land\n\nAn der Geschicht vun der Geschicht vun der Mënschheet ass et eng ganz wichteg Roll gespillt, datt d'Mënschheet sech an engem gudde Liewensstil, mat enger gudder Ernärung, mat enger gudder Kleedung a mat enger gudder Erzéiung befannen huet.\n\nD'Géigend ass mat enger grousser Unzuel vu Bëscher, Wäin- a Geméisplantagen, enger räicher Natur an enger räicher Atmosphär, déi d'Atmosphär vun der Stad erliichtert.\n\nAll Detail dréit dozou bäi, datt een sech drun erënnere kann, datt d'Liewen net ëmmer Wierder brauch.\n\nEt ass eng vun de wichtegsten a bekanntste Fester an der Belsch, déi fir d'Bevëlkerung vun der Belsch eng ganz wichteg Bedeitung huet.\n\n✨ WËLLT DIR DËS ARTWEAR LIESSEN\n\nD'Geschicht erzielt d'Geschicht vun engem Mann, deen e Kand huet.\n\nD'Liewen ass eng Verbindung vu Léift, Vertrauen, Vertrauen,\n\nD'Sonn ass e Stär, deen eng relativ hell a waarm Atmosphär huet.\n\nD'Géigend ass och bekannt fir hir Natur, déi et erlaabt, e räicht Liewen ze liewen.\n\nEt ass eng Geschicht iwwer eng Famill, déi sech ëm Kanner, Elteren, Frënn a Familljememberen këmmert.\n\nEt ass eng wichteg Aart vu Verbindung tëscht de Mënschen an de Bierger.\n\n10\n\nEt gëtt och e Spillsall.\n\nEt gëtt och e puer Familljenhaiser.\n\nEt gëtt och e puer Schoulen.\n\nEt gëtt och Veterinärkliniken.\n\nEt gëtt och e puer Tierschutzzentren.\n\nEt gëtt och e puer Hoteller an aner Gastronomie-Restauranten.\n\nEt gëtt Schoulen, Kannerbetreiungszentren, a sozialen Zentren.\n\nEt ass och e Fest fir d'Frëndschaft.\n\n10\n\nD'Digital Download-Paket enthält:\n\nD'Bilddateien sinn am PNG-Format.\n\nD'Bild ass am Format 2:3 an der Standardformat JPG.\n\nD'Gréisst vun der Dréckergréisst.\n\nD'PDF-Versioun vum Artikel ass op der Websäit vum LCGB.\n\nD'Datebank enthält Informatiounen zu de Verëffentlechungen an de Publikatiounen.\n\nInformatiounen zu der Bildoplosung a Gebrauchsbedingungen.\n\n10\n\nD'Bild huet e Verhältnis vun 2:3, wat fir eng grouss Bildgréisst ass.\n\n4 x 6 Zoll\n\n8 x 12 Zoll\n\n12 x 18 Zoll\n\n16 x 24 Zoll\n\n20 x 30 Zoll\n\nFir d'éischt Kéier gëtt et eng Präisiwwerreechung fir d'bescht Geschicht, d'bescht Geschichtsbicher an d'bescht Geschichtsbicher.\n\nWichtig Informatiounen\n\nDat ass e digitalen Download. Et gëtt keng physikalesch Grafik oder e Frame verschéckt.\n\nD'Faarwen kënnen ofhängeg vun Ärem Bildschierm, Drucker a Pabeier e bësse variéieren.\n\nD'Digitalisatiounsgesetz gëllt fir all Dokument, dat net fir kommerziell Zwecker benotzt gëtt.\n\nFir d'Aarbecht an der Industrie oder an der ëffentlecher Hand ass eng Lizenz néideg.\n\nD'Daten kënnen net verkaaft, redistribuéiert oder gedeelt ginn.\n\nEt ass eng kleng Uertschaft mat engem groussen Duerfzentrum.\n\nEt ass eng Geschicht vun der Léift, der Léift, déi ëmmer méi grouss gëtt.\n\nEt ass eng Zäit, wou d'Liewen an der Welt, an der Welt vun der Magie, eng nei Bedeitung kritt.\n\nEt gëtt zwou Zorte vu Liicht: d'Liicht vun der Sonn an d'Liicht vun der Äerd.\n\nART PRINT & SEARCH DETAILS\n\nEntdeckt dës A BOND BEYOND WORDS The Beauty of Unconditional Love digitalt Bild fir Wandbiller, dekorativt Dekor an duerchdachte Raumdesign. E Bild fir Är eege Perséinlech ze benotzen, mat Drockoptiounen déi op d'Dokument an Är Plaz ugepasst sinn.",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 Datei · ZIP · 7.8 MB",
+        "product_type": "Digitalt Bild erofzelueden",
+        "delivery": "Direkten digitale Download no dem Kaf",
+        "physical_item": "Keng physikalesch Dréckerei oder Raum gëtt verschéckt",
+        "printing": "Dréckt d'Dokument mat Ärem Drockprovider; kontrolléiert d'Dimensioune virum Wielen vun der Gréisst",
+        "usage": "Befollegt d'Lizenzbedingungen fir d'perséinlech Benotzung an aner Lizenzbedingungen déi mat dem Download matgelieft sinn"
+      },
+      "_source_hash": "af7fd1018209d1a0c50074203cc6c678ce973ea18a6dd07595de274e8d12da36"
+    },
+    "xvccaj": {
+      "summary": "D'Serie beschäftegt sech mat der Geschicht, der Kultur, der Natur, der Gesellschaft an der Gesellschaftstheorie, an huet eng grouss Zuel vu Figuren.",
+      "full_description": "D'Grupp huet 7 Memberen, déi all anescht sinn.\n\nRees iwwer d'Gewohnheitsgrenzen eraus duerch eng Sammlung vu siwen digitale Kunstwierker, déi vun kosmesche Wunder, himmlescher Schéinheet, visionärer Architektur, Natur a mediterranem Geescht inspiréiert sinn. All Stéck eröffnet eng aner visuell Welt, déi Neigier, Bewegung a Fantasie an zäitgenëssesch Raim bréngt.\n\nD'Gesellschaft, déi sech op d'Verbreedung vun der Naturwëssenschaft an op d'Verbreedung vun der Wëssenschaft als Ganzt konzentréiert, ass eng vun de wichtegsten Organisatiounen, déi d'Welt weltwäit representéiert.\n\nWAT IST INKLUSIV\n\nAus dem Universum\n\nDen Himmelsgarten\n\nStad vun de Moiesstonnen\n\nNaturschutzgebitt\n\nD'Mediterraneesch Küst\n\nMusée vum Mëttelalter\n\nGeometrie vun der Eleganz\n\nWËLL ET HÄERT\n\nEt gëtt eng grouss Varietéit u Restauranten, Caféen, Hoteller, Caféen, Café\n\nDigitaliséiert Versioun\n\nDëse Bildschierm ass e digitale Produkt. Et gëtt keng physikalesch Grafik oder e Frame verschéckt. Luet d' Dateien erof, déi am Bundle enthale sinn, a kuckt hir Formater, Dimensioune a Gebrauchsbedingungen virum Drucken duerch. Wielt eng Dréckergréisst a Material, déi fir déi gelieferten Dateien passend sinn. D' Faarwen kënnen tëscht Bildschierm an Dréckereiresultater liicht variéieren.\n\nEntdeckt d'Kunst ouni Grenzen. Loosst Är Fantasie Är Welt formen.\n\nD'Haus vun der Musek ass eng Museksschoul zu Lëtzebuerg.",
+      "category": "Eleganz",
+      "product_details": {
+        "product_type": "Digitalisat vum Artikel",
+        "delivery": "Digitalisat vum Artikel op der Websäit",
+        "physical_item": "Keng physikalesch Dréckerei oder Frame wäert verschéckt ginn",
+        "printing": "Dréckt déi uginn Dateien mat Ärem bevorzugten Dréckeranbieter aus; kontrolléiert d'Inklusiounsdimensioune virum Wiele vun enger Gréisst",
+        "usage": "Bitt folgt de Benotzungsbedingungen déi mam Download abegraff sinn",
+        "bundle_item_count": "Lëscht vun de lëtzebuergesche Filmer"
+      },
+      "_source_hash": "d8641c6b467679268bbf7fa3a052b8f3d1afec3f69b284f8c9413088a02c671d"
+    },
+    "wjxgxb": {
+      "summary": "Bring den dauerhafte Geescht vum ale Ägypten an Äre Raum. Eternal Egypt feiert d'Mächtegkeet vun enger Zivilisation, déi duerch monumental Architektur, de Nil an e beandrockend kulturellt Erbe geformt gouf. Designt als opfälleg digital Kunstdruck fir Liebhaber vum ägypteschen Erbe, Geschicht an zäitlos Interieuren.",
+      "full_description": "Ägypten\n\nD'Geschicht vun der antiker Zivilisation\n\nD'Pyramiden an d'Sphinx sinn déi bekanntst Monumenter aus dem alen Ägypten, déi an der ganzer Welt zu engem Symbol fir d'Mënschheet ginn.\n\nFir déi, déi eng Verbindung mat der Geschicht, dem kulturellen Erënneren an dem künstleresche Vermëttel vun Ägypten fühlen, bitt dës Kompositioun méi wéi e dekorative Bild. Et evozéiert d'Skala, d'Mysterium an d'Kontinuitéit vun enger Zivilisation, där hir visuell Sprooch weiderhin d'Welt inspiréiert.\n\nD'Atmosphär vun der Stad ass inspiréiert vun der Geschicht an ass e markante Fokuspunkt fir modern Haiser, Privatstudien, Büroen, Hotels, Kulturraum an Interieur, déi Geschicht a Konscht feieren.\n\nFirwat et an Ärem Raum gehéiert\n\nEt ass eng vun de wichtegste Kulturen am antiken Egypten.\n\nEt ass eng modern, klassesch an eenzegaarteg Kierch.\n\nEt ass eng wichteg Plaz fir d'Geschicht vun der Ägypter.\n\nEt ass eng digital Versioun, déi op der Websäit vum Verlag ze fannen ass.\n\nProduktinformatioun\n\nDat ass e digitalen Download. Et gëtt kee physikalescht Bild, gedréit Poster oder Raum verschéckt. Luet d' Dateien erof déi mat Ärem Kaf gelieft hunn an iwwerpréift hir abegraff Format, Dimensioune an d' Benotzungsbedingungen ier Dir druckt. D' Faarwen kënnen e bësse variéieren ofhängeg vun Ärem Bildschierm, Drucker an dem gewielte Material.\n\nD'Ägypter hunn eng ganz räich Kultur, déi bis an d'Mëttelalter zréck geet.\n\nHall of Fame\n\nART PRINT & SEARCH DETAILS\n\nEntdeckt dëst ETERNAL EGYPT Den zäitlosen Geescht vun enger anerer Zivilisation digitalt Bild fir Wandbiller, dekorativt Dekor an duerchdachte Interieur. E Bild fir Är perséinlech Ausstellung, mat Drockoptiounen déi der Datei an Ärem Raum entspriechen.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "4 Dateien · JPG, PDF, PNG, TXT · 9.1 MB",
+        "product_type": "Digitalt Bild erofzelueden",
+        "delivery": "Direkten digitale Download no dem Kaf",
+        "physical_item": "Keng physikalesch Dréckerei oder Raam gëtt verschéckt",
+        "printing": "Dréckt d'Donnéeën mat Ärem gewielten Drockprovider; kontrolléiert d'Inklusiounsdimensioune virum Wiel vun enger Gréisst",
+        "usage": "Follegt de perséinlecher Benotzung an aner Lizenzbedingungen déi mat dem Download enthält"
+      },
+      "_source_hash": "af4bb9b510bcc457b6750421a6f2d14b3beabca71579f4cd5f83484617097abe"
+    },
+    "fgdpqp": {
+      "summary": "An enger imaginärer Atelier gëtt d'Zäit net gemeet, mä geformt. DEN UERGELMÄNNER-DRÄEM transforméiert Getrieber, himmlesch Mechanismen an onméiglech Instrumenter an eng poetesch Meditatioun iwwer Gedächtnis, Erfindung a Verlaf vun der Zäit. E Treffen tëscht Steampunk-Fantasie an symbolesche Surrealismus.",
+      "full_description": "An enger imaginärer Atelier gëtt d'Zäit net gemeet, mee geformt. DEN UERGELMÄNNER-DRÄEM transforméiert Getrieber, himmlesch Mechanismen an onméiglech Instrumenter an eng poetesch Meditatioun iwwer Gedächtnis, Erfindung a Verlaf vun der Zäit. E Treffen tëscht Steampunk-Fantasie an symbolesche Surrealismus. Eng faszinéierend Wiel fir Bibliothéiken, Studien, Büroen a design-gefouert Interieur. Den digitale Download gëtt als ZIP-Datei geliwwert. Kuckt d'inklusiv Dateien a Spezifikatiounen no dem Kaf virum Wielen vun enger Drockgréisst.",
+      "category": "Eleganz",
+      "product_details": {
+        "files_included": "1 Datei · ZIP · 36.8 MB"
+      },
+      "_source_hash": "30ab80fd3d5210fdd5ec47f8f60c9b5f121908831ac3a07129ffe69e98b6bb2c"
+    }
+  },
+  "ui": {
+    "navFeatured": "Empfohlen",
+    "navCollections": "Sammlungen",
+    "navGallery": "Galerie",
+    "navArtist": "Kënschtler",
+    "eyebrow": "Lëscht vun de lëtzebuergesche Moler",
+    "heroTitle": "<em>D'Geschicht ass eng Geschicht.</em>",
+    "heroText": "Et ass eng Geschicht vun der Entwécklung vun der Mënschheet, vun der Entwécklung vun der Gesellschaft, vun der Entwécklung vun der Geschicht, vun der Entwécklung vun der Geschicht.",
+    "explore": "Sammlungen erfueren",
+    "discover": "D'Galerie entdecken",
+    "featuredEyebrow": "D'Geschicht vun der Gemeng",
+    "featuredTitle": "Lëscht vun de Veräiner",
+    "featuredText": "Sechs bedeitend Wierker. Sechs verschidde Weeër fir d'Kunst an d'Mënschefeelung an Äre Raum ze bréngen.",
+    "collectionsEyebrow": "Lëscht vun de Kollegen",
+    "collectionsTitle": "D'Sammlungen entdecken",
+    "collectionsText": "Kuerz Reesen duerch d'Kunst, Kultur a Gefill. Erfuerschen eng Sammlung oder goen direkt op seng sécher Checkout.",
+    "galleryEyebrow": "D'Galerie ass komplett.",
+    "galleryTitle": "Individuell Ausstellungen",
+    "galleryText": "Sich no Titel, Thema oder Kategorie vun engem Bild. Kuckt eng Virschau vun der Geschicht oder gitt direkt op de digitalen Download.",
+    "search": "Titelen a Theme sichen...",
+    "artistEyebrow": "D'Galerie",
+    "artistTitle": "Iwwer den Auteur",
+    "artistP1": "D'Hal of Greatness ass eng digital Galerie, déi original visuell Geschichten un e globalt Publikum bréngt.",
+    "artistP2": "Säi künstlerescht Schaffen ass eng Kombinatioun vu Skulptur, Experimentatioun a digitaler Transformatioun. All seng Wierker bidden méi wéi nëmmen Dekoratioun: si sinn eng Atmosphär, eng Erinnerung oder eng menschlech Geschicht.",
+    "artistP3": "D'Thema vun der Geschicht, der Kultur, der Natur, der Léift, der Hoffnung, der Verzweiflung, der Hoffnung an der Hoffnung ass eng vun de wichtegsten Themen an der Geschicht.",
+    "tagline": "Den Haaptuert ass La Présentation.",
+    "digital": "Websäit vum Verlag Digitalisat vum Verlag",
+    "privacy": "Privatsphär",
+    "terms": "Bedingungen",
+    "contact": "Kontakt",
+    "gumroad": "Websäit vum Veräin",
+    "exploreArt": "Lëscht vun de Schrëftsteller",
+    "discoverStory": "Lëscht vun de Stäre",
+    "buyDownload": "Websäit vum Verlag",
+    "buyCollection": "Websäit vun der Gemeng",
+    "exploreCollection": "Websäit vun der Gemeng",
+    "printable": "Digitalisat vum Text",
+    "format": "Digital Datei · Dréckt an enger Gréisst déi Ärem Raum entsprécht",
+    "noResults": "Keng Biller entspriechen der Sich.",
+    "catalogError": "De Galeriekatalog ass virleefeg net verfügbar. Bitt aktualiséiert d'Säit.",
+    "all": "All",
+    "of": "vum",
+    "artworks": "Bildmaterial",
+    "choose": "Sprooch wielen"
+  },
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "_ui_translation_status": "machine-generated-unreviewed",
+  "landing_ui": {
+    "← Return to the gallery": "Zuréck op d'Säit",
+    "Language": "Sprooch",
+    "An original digital artwork from HALL OF GREATNESS": "D'Original-Bild vum Hall of Fame",
+    "A curated collection of meaningful digital artworks": "D'Lëscht vun de lëtzebuergesche Filmer",
+    "Explore & Get the Artwork ↗": "D'Aarbecht ass am Art Deco Stil.",
+    "Secure checkout and digital delivery on Gumroad.": "Et gëtt och eng digital Versioun vum Portal.",
+    "Artwork presentation": "Präsentation vum Artwork",
+    "Imagine it in a refined frame": "Si ass an engem raffinéierte Frame virgestallt.",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "D'Aarbecht ass als eng Aart Referenz fir d'Geschicht vun der Musek ze gesinn, déi an der Originalform erhale bleift.",
+    "Digital download": "Digitaliséiert Versioun",
+    "Access your files after checkout": "Zugang zu Äre Dateien no dem Auschecken",
+    "Print your way": "Drécken op Är Manéier",
+    "Choose a size suited to your space": "Wielt eng Gréisst déi Ärem Raum entsprécht",
+    "Made to display": "Fir d'Anzeige gemaach",
+    "For homes, studios, and meaningful spaces": "Et gëtt och e puer Atelieren, Studios an aner Aktivitéiten.",
+    "The meaning behind the artwork": "D'Bedeitung vun der Kunst",
+    "More than decoration. A feeling that stays.": "Et ass méi wéi eng Dekoratioun, et ass e Gefill, dat bleift.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Erstallt fir Leit, déi wëllen, datt hir Ëmgéigend eng Geschicht, eng Erinnerung, e Wäert oder e Schéinheetsgefill reflektéiert. Loosst dës Aarbecht Deel vun der Atmosphär ginn, déi Dir kreéiert an dem Gefill, dat Dir wëllt, datt Äre Raum enthält.",
+    "Inside this collection": "An dëser Sammlung",
+    "One collection. Many stories.": "Eng Sammlung, vill Geschichten.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Erfuerschen Si déi eenzegaarteg Wierker an dëser Sammlung. All Wierk huet säin eegene Charakter, an zesummen erschaffen se eng visuell Rees.",
+    "Complete artwork story": "Komplett Geschicht vum Veräin",
+    "Full product description": "Vollstänneg Produktbeschreiwung",
+    "What is included": "Wat ass abegraff",
+    "Product specifications": "Produktspezifikatiounen",
+    "Where it belongs": "Wou et gehéiert",
+    "Art that finds its place": "D'Art ass an der Gemeng",
+    "Before you purchase": "Bevor du kaufst",
+    "Digital download details": "Digitalisat vum Artikel",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Dëse Bild ass e digitale Produkt. Et gëtt keng physikalesch Grafik oder e Frame verschéckt. No dem Kaf bitt Gumroad Zougang zu de Dateien déi mat dësem Produkt gelies ginn. Bitt kuckt d'Spezifikatiounen an d'Lizenz vun der Datei virum Drécken oder der Benotzung vun der Grafik.",
+    "From download to display": "Datei:",
+    "Make the artwork part of your space": "Maacht d'Bildmaterial Deel vun Ärem Raum",
+    "01 · Purchase": "1. Versioun.",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "D'Gemroad ass eng digital Plattform fir d'Verkaaf vun digitalen Produkter.",
+    "02 · Download": "2002: Ofgeschloss.",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "D'Produkter vun der Firma ginn an der ganzer Welt verkaaft an et gëtt och eng Websäit.",
+    "03 · Print": "Drécken",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Wielt eng Dréckergréisst déi d'Proportiounen vun der Grafik behält. En lokale Dréckerprofi kann Iech hëllefen, d'Dimensioune mat der uginn Datei ze verbannen.",
+    "Please note:": "Bitt berécksiichtegt",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Keng physikalesch Biller oder Billerrahmen ginn verschéckt. D'Verfügbaren Dateiformater, Resolutiounen, Proportiounen an d'Benotzungsbedingunge sinn déi, déi am Produktdownload an der abegraffer Lizenz uginn sinn.",
+    "Let your space tell a story.": "Loosst Är Plaz eng Geschicht erzielen.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Wielt eng Biller, déi reflektéiert wat Dir schätzt - an loosst hir Bedeitung mat Iech liewen.",
+    "Get": "Kaaft",
+    "Art with a Soul. A Message Without Borders.": "Biller mat enger Stëmm. Eng Message ouni Grenzen.",
+    "Digital artwork · Instant download through Gumroad": "Digital Biller · Direkt Download duerch Gumroad",
+    "Privacy": "Privatsphär",
+    "Terms": "Bedéngungen",
+    "Contact": "Kontakt",
+    "Gumroad store ↗": "Gumroad Store ↗",
+    "· Digital download": "Digital Download"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Dateien déi abegraff sinn",
+    "product_type": "Produkttyp",
+    "delivery": "Lieferung",
+    "physical_item": "Physesch Artikel",
+    "printing": "Drécken",
+    "usage": "Benotzung",
+    "bundle_item_count": "Artikelen am Bundle"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Eng koordinéiert Kunstsammlung fir Heem, Büroen, Hotels, Galerien, Empfangsberäicher an kuerz Interieuren.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Get THE ART OF ELEGANCE & SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Eng koordinéiert Kunstsammlung fir Heem, Büroen, Hotels, Galerien, Empfangsberäicher an kuerz Interieur.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Get EGYPTIAN & COPTIC HERITAGE ↗",
+      "\\n": "\\n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "D'Bedeitung vun der Sprooch ass net ganz kloer.",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Et gëtt eng grouss Varietéit u Gebaier, Hoteller, Galerien, Restauranten, Caféen, Restauranten,",
+      "Get THE HUMANITY LEGACY ↗": "D'Zuel vu 2 ass 2.",
+      "\\n": "\\n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "E raffinéierten Akzent fir Wunnzëmmeren, Schlofzëmmeren, Büroen, Boutique-Hotels, Wellness-Räum a berécksiichtegt Interieuren.",
+      "Get THE ART OF STILLNESS ↗": "Get THE ART OF STILLNESS ↗",
+      "\\n": "\\n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "E raffinéierten Akzent fir Wunnzëmmeren, Schlofzëmmeren, Büroen, Boutique-Hotels, Wellness-Räum a berécksiichtegt Interieuren.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Get GEOMETRY OF ELEGANCE ↗",
+      "\\n": "\\n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Eng expressiv Ausso fir Heem, kreativ Studios, Büroen, Gastronomie Raim, an Interieuren geformt duerch Fantasie.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗",
+      "\\n": "\\n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Eng expressiv Ausso fir Heem, kreativ Studios, Büroen, Gastronomie Raim, an Interieuren geformt duerch Fantasie.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗",
+      "\\n": "\\n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "E raffinéierten Akzent fir Wunnzëmmeren, Schlofzëmmeren, Büroen, Boutique-Hotels, Wellness-Räum a berécksiichtegt Interieuren.",
+      "Get MEDITERRANEAN DREAMS ↗": "Get MEDITERRANEAN DREAMS ↗",
+      "\\n": "\\n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "E raffinéierten Akzent fir Wunnzëmmeren, Schlofzëmmeren, Büroen, Boutique-Hotels, Wellness-Räum a berécksiichtegt Interieuren.",
+      "Get SILENT HORIZONS . ↗": "Get SILENT HORIZONS . ↗",
+      "\\n": "\\n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "E raffinéierten Akzent fir Wunnzëmmeren, Schlofzëmmeren, Büroen, Boutique-Hotels, Wellness-Räum a berécksiichtegt Interieuren.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Get GOLDEN FLOW   The Art of Timeless Luxury ↗",
+      "\\n": "\\n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Eng expressiv Ausso fir Heem, kreativ Studios, Büroen, Gastronomie Raim, an Interieuren geformt duerch Fantasie.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Get BEYOND THE UNIVERSE 🌏 ↗",
+      "\\n": "\\n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Eng bedeitend Fokussplaz fir Heem, Büroen, Bildungsraum, Galerien, a Plazen wou Mënschegeschichten wichteg sinn.",
+      "Get A Shelter of Love ♥ ↗": "Get A Shelter of Love ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "E raffinéierten Akzent fir Wunnzëmmeren, Schlofzëmmeren, Büroen, Boutique-Hotels, Wellness-Räum a berécksiichtegt Interieuren.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Get The Celestial Garden – A Dance Beneath the Moon ↗",
+      "\\n": "\\n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "E raffinéierten Akzent fir Wunnzëmmeren, Schlofzëmmeren, Büroen, Boutique-Hotels, Wellness-Räum a berécksiichtegt Interieuren.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Get THE GOLDEN VEIL OF SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "E Planéit. Eng Verantwortung. Unzuellos Méiglechkeeten.",
+      "The story behind the image": "D'Geschicht hannert dem Bild",
+      "More than decoration. A human story.": "Méi wéi Dekoratioun. Eng Mënschegeschichte.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "D'Hänn representéieren eis Handlungsfäegkeet. De Setzling steet fir fragil neies Liewen; d'Schmetterlinge suggeréieren Transformatioun. De Kontrast tëscht beschiedegtem Land an dem Versprieche vun der Erneierung erënnert eis drun, datt de Moien dovun ofhängeg ass, wat mir haut schützen.",
+      "Where the artwork belongs": "Wou d'Kunstwierk gehéiert",
+      "Created to live with meaning": "Gemaach fir mat Bedeitung ze liewen",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Eng markant Ausso fir Heem, Büroen, Schoulen, Ëmweltorganisatiounen, Empfangsberäicher a kreativ Raim.",
+      "A distinctive focal point for considered interiors": "E markante Fokuspunkt fir iwwerluecht Interieur",
+      "A conversation piece with a message beyond trends": "E Gespréichsstück mat enger Message déi iwwer Trends eraus geet",
+      "A thoughtful digital art choice for personal spaces": "Eng nodenklech digital Kunstwiel fir perséinlech Raim",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dëses ass e digitale Produkt. Keng physikalesch Ausdréck oder Rahmen ginn verschéckt. No dem Kaf, laden d'Dateien op Gumroad erof. Kuckt d'inklusiv Datei Spezifikatiounen, Drécker Guide, a perséinlech Gebrauchslizenz virum Drucken. Wielt eng Drécker Gréisst an e Service passend zu de gelieferten Dateien.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Wielt e Kunstwierk dat reflektéiert wat Dir schätzt - an loosst seng Bedeitung mat Iech liewen.",
+      "Get The Hand That Holds Tomorrow ↗": "Get The Hand That Holds Tomorrow ↗",
+      "\\n": "\\n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Verschidden Gesiicht. Eng Mënschheet. Eng ewig Verbindung.",
+      "The story behind the image": "D'Geschicht hannert dem Bild",
+      "More than decoration. A human story.": "Méi wéi Dekoratioun. Eng Mënschegeschichte.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "Elfenbein an Obsidian behalen d'Eenzegaartegkeet vun all Gesiicht. De goldene Faden symboliséiert gedeelt Emotiounen, Hoffnungen an de Wonsch mat Würde behandelt ze ginn. Eenheet erfuerdert keng Gleichheet; et fänkt un, wann mir een aneren als Mënsch erkennen.",
+      "Where the artwork belongs": "Wou d'Kunstwierk gehéiert",
+      "Created to live with meaning": "Gemaach fir mat Bedeitung ze liewen",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Eng raffinéiert Ausso fir modern Heemecht, Exekutivbüroen, Galerien, Empfangsraim an Interieuren, déi kulturellen Dialog an mënschlech Verbindung schätzen.",
+      "A distinctive focal point for considered interiors": "E charakteristesche Fokuspunkt fir iwwerluecht Interieur",
+      "A conversation piece with a message beyond trends": "E Gespréichsstück mat enger Message iwwer Trends eraus",
+      "A thoughtful digital art choice for personal spaces": "Eng duerchdacht digital Kunstwiel fir perséinlech Raim",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dëses ass e digitale Produkt. Keng physikalesch Ausdréck oder Rahmen ginn verschéckt. No dem Kaf, laden d'Dateien op Gumroad erof. Kuckt d'inklusiv Datei Spezifikatiounen, Drécker Guide, a perséinlech Benotzungslizenz virum Drécken. Wielt eng Drécker Gréisst an e Service passend zu de gelieferten Dateien.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Wielt e Kunstwierk, dat reflektéiert wat Dir schätzt - an loosst seng Bedeitung mat Iech liewen.",
+      "Get The Golden Thread of Humanity ↗": "Gitt den Golden Thread of Humanity ↗",
+      "\\n": "\\n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Eng bedeitend Fokussplaz fir Heem, Büroen, Bildungsraum, Galerien, an Plazen wou Mënschegeschichten wichteg sinn.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "Get ROOTS OF TENDERNESS ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "E raffinéierten Akzent fir Wunnzëmmeren, Schlofzëmmeren, Büroen, Boutique-Hotels, Wellness-Räum a berécksiichtegt Interieuren.",
+      "Get AURELLE 👑 ↗": "Get AURELLE 👑 ↗",
+      "\\n": "\\n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "D'Schéinheet vun der Stillheet. D'Stärke bannen.",
+      "The story behind the image": "D'Geschicht hannert dem Bild",
+      "More than decoration. A human story.": "Méi wéi Dekoratioun. Eng mënschlech Geschicht.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "Eng komponéiert mënschlech Figur gëtt e Symbol fir Selbstbewosstsinn. Goldneit Liicht suggeréiert Ganzheet; botanisch Details weisen op Erneierung. D'Aarbecht erënnert eis drun, datt Stärke net lauter sinn muss - an datt Ruhm eng Form vu Schéinheet ka sinn.",
+      "Where the artwork belongs": "Wou d'Kunstwierk gehéiert",
+      "Created to live with meaning": "Gemaach fir mat Bedeitung ze liewen",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "En elegante Fokuspunkt fir Wunnzëmmer, privat Büroen, Empfangsberäicher, Hotels, Wellness-Zenter a zäitgenëssesch Interieuren.",
+      "A distinctive focal point for considered interiors": "E charakteristesche Fokuspunkt fir iwwerluecht Interieur",
+      "A conversation piece with a message beyond trends": "E Gespréichsstück mat enger Message iwwer Trends eraus",
+      "A thoughtful digital art choice for personal spaces": "Eng duerchdacht digital Kunstwiel fir perséinlech Raim",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dëses ass e digitale Produkt. Keng physikalesch Ausdréck oder Rahmen ginn verschéckt. No dem Kaf, laden d'Dateien op Gumroad erof. Kuckt d'inklusiv Datei Spezifikatiounen, Drécker Guide, a perséinlech Benotzungslizenz virum Drécken. Wielt eng Drécker Gréisst a Service passend zu de gelieferten Dateien.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Wielt e Kunstwierk dat reflektéiert wat Dir schätzt - an loosst seng Bedeitung mat Iech liewen.",
+      "Get The Art of Inner Peace ↗": "Get The Art of Inner Peace ↗",
+      "\\n": "\\n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "E raffinéierten Akzent fir Wunnzëmmeren, Schlofzëmmeren, Büroen, Boutique-Hotels, Wellness-Räum a berécksiichtegt Interieuren.",
+      "Get SERENITY 🤍 ↗": "Get SERENITY 🤍 ↗",
+      "\\n": "\\n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Eng bedeitend Fokussplaz fir Heem, Büroen, Bildungsraum, Galerien, an Plazen wou Mënschegeschichten wichteg sinn.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Get THE TREE THAT REFUSED TO DIE ↗",
+      "\\n": "\\n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Eng bedeitend Fokussplaz fir Heem, Büroen, Bildungsraum, Galerien, a Plazen wou Mënschegeschichten wichteg sinn.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗",
+      "\\n": "\\n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "D'Zukunft gëtt vun ville Hänn gebaut.",
+      "The story behind the image": "D'Geschicht hannert dem Bild",
+      "More than decoration. A human story.": "Méi wéi Dekoratioun. Eng Mënschegeschichte.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "All Hand representéiert e Liewen, eng Léift, e Opfer oder eng Geleeënheet. D'Kand steet fir all jonk Persoun, där hir Träumer Ermutigung a Support brauchen. Zesumme ginn d'Hänn zu enger Treppe – an Hoffnung gëtt zu eppes, wat mir fir een aneren bauen.",
+      "Where the artwork belongs": "Wou d'Kunstwierk gehéiert",
+      "Created to live with meaning": "Gemaach fir mat Bedeitung ze liewen",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Eng bedeitend Ausso fir Familljenhäiser, Schoulen, Bibliothéiken, Büroen, Studios, a Raim déi Erzéiung a mënschlech Verbindung feieren.",
+      "A distinctive focal point for considered interiors": "E markante Fokuspunkt fir iwwerluecht Interieur",
+      "A conversation piece with a message beyond trends": "E Gespréichsstück mat enger Message déi iwwer Trends eraus geet",
+      "A thoughtful digital art choice for personal spaces": "Eng iwwerluecht digital Kunstwiel fir perséinlech Raim",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dëses ass e digitale Produkt. Keng physikalesch Ausdréck oder Rahmen ginn verschéckt. No dem Kaf, lued d'Dateien op Gumroad erof. Kuckt d'inklusiv Datei Spezifikatiounen, Drécker Guide, a perséinlech Benotzungslizenz virum Drucken. Wielt eng Drécker Gréisst an e Service passend zu de gelieferten Dateien.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Wielt e Kunstwierk, dat reflektéiert wat Dir schätzt - an loosst seng Bedeitung mat Iech liewen.",
+      "Get A Stairway of Hands ↗": "Get A Stairway of Hands ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Wat mir haut schützen, gëtt hir Zukunft.",
+      "The story behind the image": "D'Geschicht hannert dem Bild",
+      "More than decoration. A human story.": "Méi wéi Dekoratioun. Eng mënschlech Geschicht.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "D'al Generatioun bréngt Erfarung; d'jeunes bréngt Méiglechkeeten. Tëschent hinnen läit e Versprieche: dat ze schützen, wat d'Liewen erhält an eng Zukunft ze ginn, déi derwäert ass, datt déi, déi et ererwen, et weiderginn. Dat ass Léift, déi als Verantwortung ausgedréckt gëtt.",
+      "Where the artwork belongs": "Wou d'Kunstwierk gehéiert",
+      "Created to live with meaning": "Gemaach fir mat Bedeitung ze liewen",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "E wëssenschaftlecht Wierk fir Familljenhäiser, Studien, Büroen, Bildungsraum, an all déi, déi Erinnerung, Famill an Zukunft schätzen.",
+      "A distinctive focal point for considered interiors": "E markante Fokuspunkt fir iwwerluecht Interieur",
+      "A conversation piece with a message beyond trends": "E Gespréichswierk mat enger Message, déi iwwer Trends eraus geet",
+      "A thoughtful digital art choice for personal spaces": "Eng wëssenschaftlech digital Kunstwiel fir perséinlech Raim",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dëse Wierk ass e digitale Produkt. Keng physikalesch Ausdréck oder Rahmen ginn verschéckt. No dem Kaf, lued d'Dateien op Gumroad erof. Kuckt d'inklusiv Datei Spezifikatiounen, Drécker Guide, an d'Lizenz fir perséinlech Benotzung virum Drucken. Wielt eng Drécker Gréisst an e Service passend zu de gelieferten Dateien.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Wielt e Wierk, dat reflektéiert wat Dir schätzt - an loosst seng Bedeitung mat Iech liewen.",
+      "Get The Legacy of Generations ↗": "Get The Legacy of Generations ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "E raffinéierten Akzent fir Wunnzëmmeren, Schlofzëmmeren, Büroen, Boutique-Hotels, Wellness-Räum a berécksiichtegt Interieuren.",
+      "Get The Mediterranean Muse ↗": "Get The Mediterranean Muse ↗",
+      "\\n": "\\n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "Eng Äerd. Eng Mënschheet. Eng Zukunft.",
+      "The story behind the image": "D'Geschicht hannert dem Bild",
+      "More than decoration. A human story.": "Méi wéi Dekoratioun. Eng Mënschegeschichte.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "D'Hänn ronderëm de Globus representéieren Leit vu jidderengem Alter a mat all Hintergrund. D'gebrochen Landschaft schwätzt vun deem wat a Gefor ass; de gréngen Horizont an dat golden Liicht weisen op dat wat mir nach ëmmer schütze kënnen. D'Botschaft ass net Verzweiflung. Et ass gedeelt Verantwortung, sichtbar gemaach.",
+      "Where the artwork belongs": "Wou d'Kunstwierk gehéiert",
+      "Created to live with meaning": "Gemaach fir mat Bedeitung ze liewen",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "En zum Denken opmierksam maachenden Haaptpunkt fir Heem, Büroen, Bildungsraum, Galerien an Ëmfeld déi der Nohaltegkeet gewidmet sinn.",
+      "A distinctive focal point for considered interiors": "En ënnerscheedenden Haaptpunkt fir iwwerluecht Interieur",
+      "A conversation piece with a message beyond trends": "E Gespréichsstück mat enger Message déi iwwer Trends eraus geet",
+      "A thoughtful digital art choice for personal spaces": "Eng iwwerluecht digital Kunstwiel fir perséinlech Raim",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Dëses ass e digitale Produkt. Keng physikalesch Ausdréck oder Rahmen ginn verschéckt. No dem Kaf, laden d'Dateien op Gumroad erof. Kuckt d'inklusiv Datei Spezifikatiounen, Drécker Guide, a perséinlech Gebrauchslizenz virum Drucken. Wielt eng Drécker Gréisst an e Service passend zu de gelieferten Dateien.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Wielt e Kunstwierk dat reflektéiert wat Dir schätzt - an loosst seng Bedeitung mat Iech liewen.",
+      "Get Last Cry of Earth ↗": "Get Last Cry of Earth ↗",
+      "\\n": "\\n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Et gëtt vill verschidden Aarte vu Gebaier, wéi Büroen, Hoteller, Museen, Galerien, Schoulen,",
+      "Get THE GOLDEN GAZE 👁 ↗": "D'Zuel vun de Säiten ass 26.",
+      "\\n": "\\n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Et gëtt vill verschidden Aarte vu Gebaier, wéi Büroen, Hoteller, Museen, Galerien, Schoulen,",
+      "Get The Queen Of The Nile 👑 ↗": "D'Zuel vun de Sëtzplazen ass 27.",
+      "\\n": "\\n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Et gëtt vill verschidden Aarte vu Gebaier, wéi Büroen, Hoteller, Museen, Galerien, Schoulen,",
+      "Get The Coptic Soul of Egypt ↗": "D'Zuel vun de Säiten ass 28.",
+      "\\n": "\\n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE Eng Feier vun Egyptens zäitloser Schéinheet, wou d'rulle Dignitéit vun enger royaler Präsenz den ewige Rhythmus vum Nil treffen. Golden...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Eng charakteristesch Zousatz zu Heem, private Studien, Büroen, Galerien, Muséeën, Hotels a kulturellen Raim.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "Get THE NILE'S ETERNAL GRACE ↗",
+      "\\n": "\\n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love E puer Frëndschaften ginn duerch d'Häerz gefillt, net duerch Wierder erklärt. Feier d'aussergewéinlech Verbindung...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "E bedeitende Fokuspunkt fir Heem, Büroen, Bildungsraum, Galerien a Plazen wou mënschlech Geschichten wichteg sinn.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗",
+      "\\n": "\\n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Reest iwwert dat vertraut duerch eng Sammlung vu siwen digitale Kunstwierker inspiréiert vun kosmesche...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "E raffinéierten Akzent fir Wunnzëmmer, Schlofzëmmer, Büroen, Boutique-Hotels, Wellness-Räum a berécksiichtegt Interieur.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Get GLOBAL ART & IMAGINATION ↗",
+      "\\n": "\\n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the lasting grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗",
+      "\\n": "\\n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "An enger imaginärer Atelier gëtt d'Zäit net gemeet, mä geformt. THE CLOCKMAKER'S DREAM transforméiert Getrieber, himmlesch Mechanismen an onméiglech Instrumenter...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "E raffinéierten Akzent fir Wunnzëmmer, Schlofzëmmer, Büroen, Boutique-Hotels, Wellness-Räum a berécksiichtegt Interieuren.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Gitt THE CLOCKMAKER'S DREAM ↗",
+      "\\n": "\\n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
+}

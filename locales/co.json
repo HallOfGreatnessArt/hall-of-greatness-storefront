@@ -1,0 +1,710 @@
+{
+  "products": {
+    "oubirh": {
+      "summary": "Otto raffinati opere d'arte chì riuniscenu accenti d'oru, forme pacifiche, astrazioni elegante, è armunia visiva per interni cuntemporanei sofisticati.",
+      "category": "Cullizzioni",
+      "_source_hash": "85810573c609f032749049f0af3efd548b47b50b60c74fae8bbbcb5e0cfaaf2c"
+    },
+    "hqpird": {
+      "summary": "Tre distinti opere d'arti ca celebranu lu spirtu duminanti di l'eredità Eggizziana e Copta, la memoria culturali e la bellezza senza tempu di l'Eggittu.",
+      "category": "Cullizzioni",
+      "_source_hash": "bbee15015588f3854edb7cce4f6ee745a63ecba99e41de9335d42b77a925b26e"
+    },
+    "wdtvt": {
+      "summary": "Dieci opere d'arte forti nantu à a compassione, a resilienza, a connessione umana è a speranza. Una raccolta d'arte stampabile completa per spazii significativi è interni pensati.",
+      "category": "Raccolta",
+      "_source_hash": "0beaa1225adf5643d8bf3173e7f93d6f8ebe7ebb067e86674e4e8e27bf908560"
+    },
+    "mxrljy": {
+      "summary": "L'Art of Stillness vi invita à rallentà è riscopre a bellezza di un mumentu tranquillu. Ispiratu da forme meditative, fiori di lotu, acqua chì scorri, è calda luce dorata, sta serena opera d'arte digitale porta un'atmosfera contemplativa à spazii di benessere è interni raffinati.",
+      "category": "Eleganza",
+      "_source_hash": "adcd68bc42846100ab6f13044e8972c34ee7fe07d1f4702b4d1d9fdc7b14e78c"
+    },
+    "gusqyc": {
+      "summary": "Geometry of Elegance celebra l'incontro di a forma architettonica, a texture naturale è u lussu cuntemporaneu. I toni di smeraldu, e superfici d'avoriu, a geometria scultorea è l'accenti d'oru creanu un'opera d'arte astratta raffinata per case sofisticate, uffici è interni di ospitalità.",
+      "category": "Elegance",
+      "_source_hash": "84014823691b93211841d3dbcf2452a78fd435d388b74dad7f7febe4d752c69f"
+    },
+    "aenwi": {
+      "summary": "Immaginate una cità furmata da a pussibulità. Cities of Tomorrow hè un'opera d'arte digitale visionaria chì celebra l'imaginazione architettonica, l'innovazione è u desideriu umanu di custruisce un futuru più luminosu. Una stampa impressionante per e case cuntemporanee, i studii creativi, i spazii tecnulogichi è l'ufficii moderni.",
+      "category": "Global",
+      "_source_hash": "e2173f80b274ea619b175b5480c483771929f3d1c9a75ce2893eea0775e30e96"
+    },
+    "gynmhv": {
+      "summary": "Lasciate chì a tranquilla grandezza di a natura trasformi u vostru spaziu. Nature's Majesty celebra a bellezza rigenerante di e muntagne, cascate, foreste è acqua luminosa in un'opera d'arte di paesaggiu vivace chì evoca a libertà, u rinnovu è a calma. Una stampa rinfrescante per e case è l'interni di l'ospitalità.",
+      "category": "Global",
+      "_source_hash": "e6e5a3263c07964a62266c9dbbc5d1e7eb389514c1ade5780eebc6e4228f4b2e"
+    },
+    "jrsgce": {
+      "summary": "Portate u calore di una fuga mediterranea in u vostru ambiente di tutti i ghjorni. Mediterranean Dreams cattura u romanticismu di l'architettura costiera, l'acque blu brillanti, e terrazze fiorite, è a luce di l'ora d'oru. Una stampa d'arte digitale accogliente per case, ville, caffè, è interni ispirati da i viaggi.",
+      "category": "Eleganza",
+      "_source_hash": "f26a8d189f4afe6a0a7a8d671fcbd37c54bd461cdba3f4d15d77243c056e17e5"
+    },
+    "ukxrmq": {
+      "summary": "Trovate un mumentu di calma in a bellezza di un orizzonte di muntagna tranquillu. Silent Horizons hè un'opera d'arte digitale ispirata à a natura furmata da acqua calma, cime luntane, luce dolce di u mattinu, è un sensu di rinnovu. Un accentu di paesaggiu raffinatu per case, uffici è spazii di benessere tranquilli.",
+      "category": "Eleganza",
+      "_source_hash": "003e93a0d92367744addfb51152fe6da6c27ac08144b5c89e1e73dd7fec007c7"
+    },
+    "yhkokf": {
+      "summary": "Golden Flow porta u dramma naturale di u marmu è l'eleganza di l'oru in una cumposizione astratta contemporanea. Forme scure è luci chì fluiscenu creanu profondità, muvimentu è lussu discretu - una stampa d'arte digitale espressiva per interni moderni sofisticati.",
+      "category": "Eleganza",
+      "_source_hash": "fc65d52d8cd76ff8b23097321c08f7ca24b70659818dea5dda62f894d09e4c9c"
+    },
+    "nxkxyq": {
+      "summary": "Entra in una visione luminosa di u cosmos. Beyond the Universe celebra u misteru, a scala è a maraviglia di u spaziu attraversu un'opera d'arte digitale onirica ispirata da galassie, luce celeste è infinite pussibulità. Una stampa accattivante per interni moderni è menti curtesi.",
+      "category": "Global",
+      "_source_hash": "16177585eb4768f120133dcd37a54ecc8a9108c42b39834cfe2e329ac00623d3"
+    },
+    "mzlqxg": {
+      "summary": "A Shelter of Love cattura un gestu picculu ma cun un significatu durabile: un genitore chì si assicura chì un zitellu ùn affronti mai a pioggia da solu.In una sera di cità incandescente, sta opera d'arte emotiva celebra a prutezzione, a fiducia, a famiglia è u putere tranquillu di l'amore incondiziunale.",
+      "category": "Umanità",
+      "_source_hash": "5c0e78bf9d27136335daa7e34ccf9da42dc590a56d083c83815407b47244dac0"
+    },
+    "etqsav": {
+      "summary": "Sottu una luna luminosa, u culore, u muvimentu è l'amicizia si uniscenu in The Celestial Garden. Questa opera d'arte onirica celebra l'individualità, i viaggi cundivisi, a libertà è a grazia femminile attraversu un vibrante mondu di fantasia. Una stampa distintiva per interni espressivi è immaginativi.",
+      "category": "Eleganza",
+      "_source_hash": "79723050f56e46edb2f774883a51d0a22ea883d9b80d00bd2c223954ce0c9346"
+    },
+    "vwrllor": {
+      "summary": "The Golden Veil of Serenity hè un ritrattu di forza tranquilla, dignità è eleganza senza tempu. Forme nere ricche è oro luminosu creanu una presenza visiva contemplativa - un'opera d'arte digitale espressiva per interni raffinati è collezionisti attirati da ritratti potenti.",
+      "category": "Eleganza",
+      "_source_hash": "3fbd51fc0b3144dfae0749e5c04814f34b8c72ab9c458a6ae346494c7a678894"
+    },
+    "gkwadk": {
+      "summary": "Una piantina tinuta in mani umani diventa un sìmmulu di rinnuvamentu è cura cunnivisa",
+      "category": "Umanità",
+      "_source_hash": "b3d3ed2cdc9e6333f7aaf330e1821220c7ad12874771ec45ca02ca1fc18fbd9f"
+    },
+    "rglfun": {
+      "summary": "Dui identità distinte, unite da un sìmmulu d'oru di a nostra dignità umana cunnivisa",
+      "category": "Umanità",
+      "_source_hash": "7621f26df00b476963956773c9499fcec7b87189855fb05b55ebef7cd33c4268"
+    },
+    "cotnkm": {
+      "summary": "Radici di tenerezza hè un omaggio à l'amore chì diventa parte di chi avemu. Atraversu una visione scultorea espressiva di una mamma è un zitellu, l'opera d'arte celebra a prutezzione, u sacrificiu, l'appartenenza, è e radici durabili di l'affettu.",
+      "category": "Umanità",
+      "_source_hash": "89071cfe9a0d1d8d3c14646a7e82629d42e4e1b858b782ebe96d94ff24be625e"
+    },
+    "kaztbw": {
+      "summary": "AURELLE trasforma u rituale di tutti i ghjorni di u caffè in una celebrazione poetica di a presenza, l'eleganza femminile è u lussu tranquillu. L'oru luminosu, u neru profondu è i toni caldi di u caffè creanu un'opera d'arte digitale distintiva per case eleganti, angoli di caffè, caffè boutique è interni cuntemporanee.",
+      "category": "Eleganza",
+      "_source_hash": "50f25bf7ff18b06b831f14e21450ee7562896355ad94503c70b68b66a14178bb"
+    },
+    "cuitvq": {
+      "summary": "L'eleganza scultorea è a luce dorata esprimenu a forza tranquilla di l'equilibriu interiore.",
+      "category": "Eleganza",
+      "_source_hash": "2ccb896bdf8f18e66ce1bc1ca17fecfdd6eed315302fe2ee1d2ef8c5532b18b4"
+    },
+    "rabhc": {
+      "summary": "Serenity hè una meditazione visiva nantu à a resilienza, l'equilibriu è a forza tranquilla chì vive in u so interiore. A so forma astratta graziosa è a mezzaluna dorata creanu un puntu focale elegante per i spazii dedicati à a riflessione, a calma è u design cuntemporaneu.",
+      "category": "Eleganza",
+      "_source_hash": "3e36120477fa3535261c200c5e9210726bf08cb1968d35b25965f08e276b936f"
+    },
+    "ycltf": {
+      "summary": "L’alberu chì si rifiutava di morire conta una storia di resilienza: ancu trà e rovine, a vita pò truvà una via avanti. E so radici diventanu ponti trà i lochi rotti, trasfurmendu a sopravivenza in cunnessione è rinnovu. Un’opera d’arte significativa per chiunque crede chì a speranza pò cresce di novu.",
+      "full_description": "L’ALBERU CHE SI RIFIUTATA DI MORISCE\n\nAncu trà e rovine, a vita trova una via.\n\nE se u più grande sìmbulu di speranza ùn era micca un monumentu custruitu da l’umanità, ma un alberu vivente chì si rifiutava di arrendessi?\n\nImmaginate una cità chì hà perdutu a so voce. Edificii sò caduti, strade sò sparite sottu à e macerie, è e tracce di a vita umana sembranu esse sbiadite in silenziu. Tuttavia, in u core di stu locu dimenticatu, un alberu straordinariu continua à vive.\n\nE so radici ùn cercanu micca solu u terrenu. Raggiungenu attraversu i muri rotti, abbraccianu strutture frantumate, è si estendenu trà edifici divisi, trasfurmendu a distruzione in cunnessione. I so rami si alzanu versu u celu, portanu foglie verdi fresche sottu una luce dorata chì rompe attraversu e nuvole.\n\nQuesta hè più di una scena di natura chì ricupera una città in rovina. Hè una storia profondamente commuvente di u spirtu umanu.\n\nL’alberu rapprisinta ogni persona chì hà sopportatu a difficoltà senza permette à a difficoltà di definì u so futuru. Parla per quelli chì anu perdutu quasi tuttu, ma trovanu ancora a forza di ricomincià. Per quelli chì sò stati feriti da a vita, ma ùn anu micca permessu chì i so cuori diventinu vuoti. Per quelli chì capiscenu chì a sopravivenza ùn hè micca semplicemente di rimanere vivi - hè di truvà u coraggio di cresce di novu.\n\nE so radici simbolizzanu a resilienza: a forza invisibile chì ci mantiene uniti quandu tuttu intorno à noi si sfalda. I so ponti rapprisintanu a riconciliazione, a cunnessione, è a pussibilità di ricostruisce relazioni è comunità dopu a divisione è a perdita.\n\nU baldacchinu verdi hè una prumessa chì a distruzzioni ùn deve esse u capitulu finale. L'uccelli chì si levanu in u celu apertu ci ricordanu chì a libertà è u rinnovu ponu riturnà, ancu dopu e stagioni più scure.\n\nE a luci d'oru di là di li ruvine offre un messagiu tranquillu ma putenti: u futuru ùn hè micca determinatu da ciò chi hè statu distruttu, ma da ciò chi hà ancora u coraggiu di cresce.\n\nSta opera parla à chiunque abbia affrontatu un capitulu di vita difficili, chiunque abbia ricustruitu dopu a perdita, è chiunque crede chì a speranza ùn hè micca l'assenza di a difficoltà, ma a forza di cuntinuà nonostante.\n\nHè un pezzu di dichiarazione significativa per un salotto, un ufficiu, una biblioteca, un studio creativu, o qualsiasi spaziu induve a resilienza, u rinnovu è l'ispirazione meritanu un locu.Pudete ancu diventà un regalu pensatu per qualcunu chì principia un novu capitulu, superendu l'avversità, o trovu u coraghju di rialzà di novu.\n\nFacci chi stu arburi ti ricordi ca lu to passatu nun hà a limitari lu to futuru. Puru quannu la vita ti lassa circondatu di ruvine, quarchi cosa dintra di ti pò ancora crìsciri.\n\nTu nun essi difinitu di chiddu ca si rompe inturn'à ti. Tu essi difinitu di chiddu ca ancora cresce in te.\n\nSALA DI GRANDIZZA\n\nArt with an Soul. Un messagiu senza cunfini.\n\nART PRINT & DETTAGLI DI RICERCA\n\nScoprite sta stampa d'arte digitale L'ALBERO CHE RIFUSA DI MORISCE per l'arte di a parete stampabile, decorazione domestica distintiva è interni pensati. Un'opera d'arte scaricabile per a visualizazione persunale, cù opzioni di stampa scelte per adattassi à u file furnitu è u vostru spazio.",
+      "category": "Umanità",
+      "product_details": {
+        "files_included": "1 fugliali · ZIP · 29.1 MB",
+        "product_type": "Scaricamentu di l'arti digitali",
+        "delivery": "Scaricamentu digitale immediatu dopu l'acquistu",
+        "physical_item": "Nudda stampa fisica o cornici sarà spedita",
+        "printing": "Stampa i fugliali furniti cù u vostru fornituri di stampa preferitu; verificate e dimensioni incluse prima di sceglie una dimensione",
+        "usage": "Segui i termini di licenza per l'usu persunale è altri inclusi cù u scaricamentu"
+      },
+      "_source_hash": "d9bff692f10639a5edca9063641cbb3c31081b0579c89bb9cc9635499e614060"
+    },
+    "bctcdz": {
+      "summary": "A Luce chì Lasciamu à l'Altri onora a gentilezza, a saggezza è u coraggio passati da una generazione à l'altra. Una lanterna incandescente diventa un sìmbulu di a speranza chì ricevemu - è a luce chì sceglimu di sparte. Un'opera d'arte commuvente per case, uffici è doni significativi.",
+      "full_description": "A LUCE CHE LASCIAMU A L'ALTRU\n\nA Luce Più Grande È Quella chì Passemu.\n\nAlcune luci sò fatte per illuminà un momentu. Altre sò fatte per illuminà generazioni.\n\nC'è una verità tranquilla chì cunnetta ogni vita umana: nimu di noi inizia u nostru viaghju interamente in a luce. Da qualchì parte lungo u percorsu, qualcunu ci raggiunge - un genitore, un insegnante, un stranieru, un amicu, o qualcunu a cui gentilezza ùn pudemu mai dimenticà. Ci offrenu qualcosa chì ci aiuta à truvà a nostra strada: un pocu di speranza, un pezzu di saggezza, un'attu di compassione, o semplicemente u coraggio di cuntinuà.\n\nÈ un ghjornu, scopremu chì a luce chì una volta avemu ricevutu hè ora a nostra da sparte.\n\nA LUCE CHE LASCIAMU À L'ALTRU hè un tributu artisticu à stu straordinariu legatu umanu - l'eredità invisibile di gentilezza, conoscenza, amore, coraggio è speranza chì passa da una generazione à l'altra.\n\nIn u core di a composizione, una lanterna d'oru antica si muvi da un paiu di mani à un altru. Intorno à ellu, i visi di diverse età è generazioni si riuniscenu in un momentu di cunnessione. L'anziani rapprisintanu a saggezza è l'esperienza di quelli chì sò venuti prima di noi. E generazioni più giovani incarnanu a promessa di ciò chì hè ancora à vene. Tra di elli, a lanterna diventa un puterosu sìmbulu di continuità: un ricordu chì i più grandi successi di l'umanità ùn sò micca misurati solu da ciò chì custruimu, ma ancu da ciò chì ci damu l'unu à l'altru.\n\nL'oscurità chì ci circonda è u luntanu orizzonte doratu approfondiscenu u significatu di a scena. Rapprisentanu l'incertezza di a vita, i sfidi chì affruntemu, è a pussibilità di un futuru più luminosu quandu sceglimu di stà inseme. A luce calda chì illumina i visi è a manu chì si porta trasfurmanu un gestu simplice in qualcosa di universale: a credenza chì nessuna azione di gentilezza genuina hè mai veramenti perduta.\n\nQuesta opera d'arte invita à una riflessione persunale\n\nChi hà purtatu a luce in a vostra vita quandu ne avete più bisognu? Quale percorsu puderia diventà più luminosu per via di qualcosa chì sceglite di dà oghje?\n\nU so messagiu appartiene à tutti, indipendentemente da l'età, a nazione, a cultura o u background. Tutti avemu ricevutu qualcosa da l'altri, è tutti avemu qualcosa di significativu da trasmette.\n\nPIÙ CHE ARTI. UN LEGATU DI SIGNIFICATU.\n\nProgettatu per esse più di una dichiarazione decorativa, sta opera d'arte porta un sensu di calore, di prufundità è di cunnessione umana in u spaziu chì abita. Pudendu diventà una presenza significativa in un salotto, un studio, un ufficio, o qualsiasi locu induve l'ispirazione è a riflessione sò valutati.\n\nFa ancu un regalu pensativu per qualcunu chì crede in a gentilezza, a famiglia, a gratitudine, a connessione umana, è u putere duratu di a speranza.\n\nPerchè e cose più significative chì lasciammu dietro ùn sò micca sempre cose chì pudemu tene. A volte, sò e vite chì avemu toccatu, i cuori chì avemu incoraggiatu, è a luce chì avemu aiutatu à scopre altri in sè stessi.\n\nUna luce spartuta ùn hè mai una luce persa. È una luce chì vive.\n\nL'UMANITÀ LEGACY\n\nPerchè l'umanità hè u più grande capolavoro chì pudemu lascià dietro.\n\nSALE DI GRANDEZZA\n\nArte cù un'anima. Un missaghju senza cunfini.\n\nART PRINT & RICERCA DETTAGLI\n\n10",
+      "category": "Umanità",
+      "product_details": {
+        "files_included": "1 filu · ZIP · 27.5 MB",
+        "product_type": "Scaricamentu di l'arti digitali",
+        "delivery": "Scaricamentu digitale immediatu dopu l'acquistu",
+        "physical_item": "Nudda stampa fisica o cornici sarà spedita",
+        "printing": "Stampa i fugliali furniti cù u vostru fornituri di stampa preferitu; verificate e dimensioni incluse prima di sceglie una dimensione",
+        "usage": "Segui i termini di licenza per l'usu persunale è altri inclusi cù u scaricamentu"
+      },
+      "_source_hash": "6fb6b36e97f6c6a45e6f2b988972dcc4dc6ed88e314b292990945b1ee19d2a6d"
+    },
+    "msuzc": {
+      "summary": "Un zitellu si leva versu a luci, sustenutu da a cumpassione di tanti ginirazziuni.",
+      "full_description": "A SCALA DI MANI\n\nU futuru hè custruitu da tanti mani.\n\nNudda piccula criatura avissi a crìsciri versu u domani sola.\n\nA Stairway of Hands hè una celebrazione simmulica di a sucità, di a cura, è di l’atti silenziosi di supportu chì cambianu e vite. In u so core, un zitellu passa versu a luce nantu à una scala furmata da mani umane. Ogni manu rapprisenta una persona, un sacrificiu, una gentilezza, o un contributu chì aiuta qualcunu à alzà.\n\nA STIRITTA UMANA\n\nE mani ùn appartenenu à una sola età o professione. Parlanu per i genitori, i maestri, i travagliadori, i guardiani, i vicini, è e generazioni i cui sforzi sò spessu invisibili. U zitellu rapprisinta ogni giovane chì porta un sognu chì hà bisognu di incoraggiamentu, opportunità è prutezzione.\n\nU muvimentu di l'oscurità versu a luci dorata dà à l'imaghjini a so forza emotiva. A speranza ùn hè micca un'aspettativa passiva; hè qualcosa chì e persone custruiscenu l'una per l'altra, una azione generosa à a volta.\n\nUN DECLARAZIONE SENSIFU PER U VOSTRU SPAZIU\n\nMostrate stu travagliu in casa di a famiglia, in l'uffiziu, a scola, a biblioteca, u studio o u spaziu di a cumunità cum'è un riminder chì a dignità è l'opportunità crescenu quandu e persone si trovanu inseme.È ancu un regalu pensatu per educatori, genitori, mentori, è chiunque crede in a promessa di a prossima generazione.\n\nUn zitellu. Innumerabbili mani di aiutu. Un futuru custruitu inseme.\n\nA VOSTRA OPERA DIGITALE\n\nScaricamentu digià digitale; nisun stampatu fisicu o cornice serà speditu.\n\nScaricate i file furniti cù stu pruduttu dopu l'acquistu.\n\nRivisioni di li dittagli di lu file, guida di stampa, e licenza d'usu pirsunali prima di stampari.\n\nSceglite una diminsioni di stampa è un serviziu ca currispondenu a li specifichi di u figghiu furnitu.\n\nPortate à casa un'opera d'arte cù una storia. Sceglite Scarica l'opera d'arte pi fàla parte di u vostru spaziu.\n\nHALL OF GREATNESS — Art with an Soul. Un messagiu senza cunfini.",
+      "category": "Umanità",
+      "product_details": {
+        "files_included": "1 archiviu · ZIP · 8.6 MB",
+        "product_type": "Scaricamentu di l'opera d'arte digitale",
+        "delivery": "Scaricamentu digitale immediatu dopu l'acquistu",
+        "physical_item": "Nessuna stampa fisica o cornice serà spedita",
+        "printing": "Stampate i file furniti cù u vostru fornitore di stampa preferitu; verificate e dimensioni incluse prima di sceglie una dimensione",
+        "usage": "Seguite l'usu persunale è altri termini di licenza inclusi cù u download"
+      },
+      "_source_hash": "b963b309b0892c055876d7451b6a8bc36190e3b1d23c99420a1c588817cba9ac"
+    },
+    "tzlsv": {
+      "summary": "Un omaggio à l'amore, u sacrificiu, è u mondu chì tenemu in fiducia per quelli chì ci seguitanu.",
+      "full_description": "L'EREDITU DI LI GIERNAZIONI\n\nCiò chi pruteggimu oghji diventa u so domani.\n\nA nostra cchiù granni eredità pò èssiri u munnu ca lasciamu in manu à qualchissia àutru.\n\nL'eredità di e generazioni esplora u ligame trà quelli chì ci anu precedutu è quelli chì ci seguiranu.È una riflessione nantu à a famiglia, a memoria, u sacrificiu, è a responsabilità di trasmette più di i beni: un futuru degnu di a generazione prossima.\n\nL'AMURU CHI VISTA ALTRE PARTI DI U PRÈSENTI\n\nL'òpira parla di a saviezza purtata da e generazioni cchiù vecchie e di a possibbilità incarnata da i giovani.Tra di elli c'è un duveri cumuni - di preservari chiddu ca susteni a vita, ripari chiddu ca fu danneggiatu, e fà scelte guidate da a cura piuttostu ca da a cunvenzione.\n\nA famiglia pò esse una fonti di appartenenza, ma a rispunzabbilità va oltre a famiglia, ligandu e cumunità è e generazioni attraversu u mondu chì cunnivìninu.\n\nUN RICORDU CHI PARTI DA A CASA DI OGNI GENERAZIONI\n\nMette sta opera d'arte in un spaziu di vita di a famiglia, studiu, ufficiu, ambientazione educativa, o in ogni locu chì onora a memoria è u futuru. Fa un regalu pensatu per i genitori, i nonni, i mentori, è e persone chì credenu chì a cura hè un legatu.\n\nU futuru ùn ci apparti, ma l'avemu in fiducia per quelli chì veneranu dopu à noi.\n\nA VOSTRA OPERA DIGITALE\n\nScaricamentu digià digitale; nisun stampatu fisicu o cornice serà speditu.\n\nScaricate i file furniti cù stu pruduttu dopu l'acquistu.\n\nRivisioni di li dittagli di lu file, guida di stampa, e licenza d'usu pirsunali prima di stampari.\n\nSceglite una diminsioni di stampa è un serviziu ca currispondenu a li specifichi di u figghiu furnitu.\n\nPortate à casa un'opera d'arte cù una storia. Sceglite Scarica l'opera d'arte pi fàla parte di u vostru spaziu.\n\nHALL OF GREATNESS — Art with an Soul. Un messagiu senza cunfini.",
+      "category": "Umanità",
+      "product_details": {
+        "files_included": "1 archiviu · ZIP · 23.1 MB",
+        "product_type": "Scaricamentu di l'opera d'arte digitale",
+        "delivery": "Scaricamentu digitale immediatu dopu l'acquistu",
+        "physical_item": "Nessuna stampa fisica o cornice serà spedita",
+        "printing": "Stampate i file furniti cù u vostru fornitore di stampa preferitu; verificate e dimensioni incluse prima di sceglie una dimensione",
+        "usage": "Seguite l'usu persunale è altri termini di licenza inclusi cù u download"
+      },
+      "_source_hash": "85dbcd535bbf5b49e8e3d1f629b11e1c1044b6806e4066780e78dd7693e99981"
+    },
+    "bgqxwm": {
+      "summary": "A Musa Mediterranea riunisce u ritrattu espressivu, a forma geomètrica è u caratteru luminosu di u Mediterraniu.Riccu blu, caldu d'oru, è u culore audace creanu un'opera d'arte cuntemporanea distintiva per i collezionisti è l'interni chì accoglienu l'individualità.",
+      "full_description": "A musa mediterranea — Un ritrattu d'oru, di mare è di misteru\n\nLà, unni la luci dorata s'incontra cu lu mari blu prufondu, na musa accattivanta emerge di un munnu di bellezza giumetrica e sogni mediterranei.\n\nA Musa Mediterranea hè un'opera d'arte espressiva, ispirata da u cubisimu cuntemporaneu, chì cummina un ritrattu feminile stupente cù l'allura senza tempu di l'architettura costiera, l'acque illuminate da u sole, e muntagne luntane, è un sole doratu brillanti.\n\nRicchi blu zaffiru, oro textured, caldu avoriu, drammatiche forme nere, è labbra crimson vivi creanu un'armonia visiva audace.Ogni forma angolari rivela una prospettiva diversa, mentri l'incantevule scena di mare invita l'imaginazione à vagà trà a realtà è a fantasia artistica.\n\nEleganti, misteriosa, è piena di caratteru, sta opera d'arte trasfurma un muru in una dichiarazione d'individualità è di gustu raffinatu.\n\nPerfettu per\n\nSaloni di lussu è case cuntemporanee\n\nUffici esecutivi e studii criativi\n\nBoutique hotels è eleganti aree di riception\n\nAppartamenti moderni è interni curati\n\nAmanti di l'arte chì cercanu pezzi distintivi\n\nA Musa Mediterranea hè più di un decoru murale, hè un’incontro di arte, architettura, culori è immaginazione, una celebrazione di a bellezza mediterranea riimaginata attraversu una visione artistica audace.\n\n👑 Una creazione artistica da HALL OF GREATNESS.\n\nART PRINT & DETTAGLI DI RICERCA\n\nScoprite sta stampa d'arte digitale di a Muse Mediterranea per l'arte di a parete stampabile, decorazione di casa distintiva è interni pensati. Un'opera d'arte scaricabile per a visualizazione persunale, cù opzioni di stampa scelte per adattassi à u file furnitu è u vostru spazio.",
+      "category": "Eleganza",
+      "product_details": {
+        "files_included": "1 fugliali · ZIP · 19.0 MB",
+        "product_type": "Scaricamentu di l'arti digitali",
+        "delivery": "Scaricamentu digitale immediatu dopu l'acquistu",
+        "physical_item": "Nudda stampa fisica o cornici sarà spedita",
+        "printing": "Stampà i fugliali furniti cù u vostru fornitore di stampa preferitu; verificate e dimensioni incluse prima di sceglie una dimensione",
+        "usage": "Seguite l'usu persunale è altri termini di licenza inclusi cù u download"
+      },
+      "_source_hash": "af1fb435d85020fb7dfffd341b525734bf626e5bde25a5492169ffa49b1059c6"
+    },
+    "aedllm": {
+      "summary": "Un pianeta feritu, innumerevuli mani, è una responsabilità cundivisa per prutegge u domani.",
+      "full_description": "L'ULTIMU GRIATU DI A TERRA\n\nUna Terra. Una Umanità. Un Futuru.\n\nAlcune immagini decoranu un muru. Altri ci dumandanu chì tipu di mondu ci lascemu dietro.\n\nDa a collezione THE HUMANITY LEGACY, L'ultimu gridu di a Terra trasforma u nostru pianeta in un puterosu sìmbulu di vulnerabilità, responsabilità è speranza. Mani umane si riuniscenu intorno à un globu fratturatu, esprimendu una verità chì attraversa ogni cunfini: a Terra ùn appartiene à una sola nazione o generazione, è u so futuru dipende da tutti noi.\n\nUNA STORIA DI DUE FUTURI PUSSIBILI\n\nUn latu di a composizione evoca u costu di a negligenza - terra secca, fumo industriale, ecosistemi danneggiati, è un paesaghju sottu pressione. L'altru si apre versu u rinnovu: crescita verde, acqua limpida, energia pulita, è u calore di un alba dorata. U contrastu ùn hè micca solu scuru versus luce. Hè una scelta trà a resa è a responsabilità.\n\nE tante mani chì circondanu u globu rapprisentanu persone di età, culture è sfondi diversi. Insieme diventanu una promessa visiva chì u cambiamentu significativu hè un sforzu umanu cundivisu.\n\nPERCHÈ È IMPORTANTI\n\nQuesta opera hè per e persone chì si preoccupanu di u mondu naturale, e generazioni à vene, è u putere di l'arte per inizià conversazioni importanti. Pudete diventà un puntu focale riflettivu in una casa, un ufficiu, un spaziu educativu, una galleria o un ambiente focalizatu nantu à l'ambiente.\n\nLasciate chì u vostru muru porti un missaghju: u futuru hè ancora u nostru da prutegge.\n\nA VOSTRA OPERA DIGITALE\n\nDownload digitale; ùn ci serà micca stampa fisica o cornice spedita.\n\nScaricate i file furniti cù stu pruduttu dopu l'acquistu.\n\nRivisu i dettagli di u file inclusu, guida di stampa, è licenza d'usu persunale prima di stampà.\n\nSceglite una dimensione di stampa è un serviziu chì currispondenu à e specifiche di u file furnitu.\n\nPortate à casa un'opera d'arte cù una storia. Sceglite Scaricate l'opera d'arte per fà parte di u vostru spaziu.\n\nHALL OF GREATNESS — Art with an Soul. A Message Without Borders.",
+      "category": "Humanity",
+      "product_details": {
+        "files_included": "1 file · ZIP · 24.6 MB",
+        "product_type": "Scaricamentu di l'opera d'arte digià digitale",
+        "delivery": "Scaricamentu di l'opera di arte digià digitale immediatu dopu l'acquistu",
+        "physical_item": "Nisun'altra stampa fisica o cornice serà spedita",
+        "printing": "Stampa i file furniti cù u vostru fornitore di stampa preferitu; verificate e dimensioni incluse prima di sceglie una dimensione",
+        "usage": "Seguite l'usu persunale è altri termini di licenza inclusi cù u scaricamentu"
+      },
+      "_source_hash": "1b778b5e9598b900f314bd014e2126505fb284bc853987ad799e788064ade832"
+    },
+    "smuewa": {
+      "summary": "U Golden Gaze attira u spettatore in un mondu di geometria espressiva, atmosfera mediterranea è culore luminosu.Una straordinaria opera d'arte di ritrattu cuntemporanea disegnata per purtà misteru, caratteru è distinzione artistica à l'interni moderni.",
+      "full_description": "The Golden Gaze - Una visione di l'oru, u mare è u misteru senza tempu\n\nScopri l'arti ca cattura l'ochji è ispira l'imaginazioni.\n\nU Golden Gaze hè un'opera d'arte digitale originale di a cullizzioni HALL OF GREATNESS, chì mischja forme cubiste cuntempuranee cù a bellezza senza tempu di i paisaghji mediterranei.\n\nUn ritrattu femminile accattivante emerge attraversu forme geomètrichi audaci, texture dorate luminose, blu zaffiru profondu, avoriu caldu, è accenti crimson sorprendenti.Un occhio ambra affascinante vi attira in un mondu oniricu di mari illuminati da u sole, architettura costiera bianca, uccelli in volo, è forme scultoree.\n\nSta cumminzioni espressiva riunisce misteru, eleganza, è energia artistica moderna, creendu un puntu focali distintivu per interni sofisticati.\n\n✨ Perchè vi piacerà sta opera d'arte\n\nStile artisticu distintivu: Design contemporaneu ispiratu à u cubisimu cù forme geomètrichi espressive.\n\nPaletta di culori ricca: Oro, blu zaffiru, carbone, avoriu è crimson creanu un cuntrastu visivu sorprendente.\n\nElegante Accentu Internu: Progettatu per cumplementà spazii moderni è lussuosi.\n\nOpzioni di visualizazione flessibili: Sceglite u vostru cornice preferitu, materiale di stampa, è a dimensione adatta.\n\nConvenienza digitale: Scaricate i fugliali inclusi è urganizate a stampa attraversu u vostru serviziu preferitu.\n\n10\n\nSaloni di lussu è case moderne\n\nUffici esecutivi e studii criativi\n\nBoutique hotels è eleganti aree di riception\n\nAppartamenti cuntemporanei è interni curati\n\nAmanti di l'arte chì cercanu una dichjarazione decorativa distintiva\n\nRegali pensativi per l'ammiratori di l'arte muderna\n\n10\n\nUn pacchettu di disegni digitali scarichibili chì cuntene i fugliali specificati in sta lista di prudutti, inseme cù a guida di stampa di u cliente è una licenza d'usu persunale.\n\n10\n\nTitolu di l'opera: The Golden Gaze\n\nCollezione: HALL OF GREATNESS\n\nStile: Arte cuntemporanea ispirata à u cubismu\n\nOrientazione: Ritrattu\n\nRapportu di aspettu: 2: 3\n\nTipu di Produttu: Grafica digitale per a stampa\n\nConsegna fisica: Nessuna\n\n10\n\nStampa l'opera d'arte cù un serviziu di stampa prufessiunale nantu à u vostru materiale adattu preferitu, cum'è carta d'arte fine o tela. Selezziunate una cornice è una finitura chì cumplementanu u vostru indrentu.\n\nA dimensione è a qualità di stampa finali dipenninu da a risuluzioni di i fugliali furniti è da e capacità di u vostru serviziu di stampa sceltu. I culori ponu varià lievimenti trà i schermi è i materiali stampati.\n\nNota: Stu hè un pruduttu digitale. Nisun dipintu fisicu, cornice, o l'elementu stampatu serà speditu. I mockups di a stanza sò esempi illustrativi di visualizazione; i file di grafica scarichi sò u pruduttu destinatu à a stampa.\n\n10\n\nU vostru acquistu hè per usu persunale solu. Pudete stampà l'opera d'arte per a vostra casa o u vostru ufficiu è visualizà una stampa fisica cum'è un regalu persunale. Ùn pudete micca rivendu, ridistribuisce, cunniscia, sublicenza, o ripruduce in modu cummerciale i file digià senza permessu scrittu separatu.\n\nART PRINT & DETTAGLI DI RICERCA\n\nScoprite sta stampa d'arte digitale THE GOLDEN GAZE 👁 per l'arte di a parete stampabile, decorazione domestica distintiva è interni pensati.Un'opera d'arte scaricabile per a visualizazione persunale, cù opzioni di stampa scelte per adattassi à u file furnitu è u vostru spazio.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 filu · ZIP · 22.4 MB",
+        "product_type": "Scaricamentu di l'arti digitali",
+        "delivery": "Scaricamentu digitale immediatu dopu l'acquistu",
+        "physical_item": "Nudda stampa fisica o cornici sarà spedita",
+        "printing": "Stampa i fugliali furniti cù u vostru fornituri di stampa preferitu; verificate e dimensioni incluse prima di sceglie una dimensione",
+        "usage": "Segui i termini di licenza per l'usu persunale è altri inclusi cù u scaricamentu"
+      },
+      "_source_hash": "bc5775f40dbc520fc6c48e9b41f3d7b8b577c56471e899302b456db982f635ec"
+    },
+    "jzjbrg": {
+      "summary": "Portate a maestà è u misteru di l'anticu Egittu in u vostru spazio cù A REGINA DI U NILE. Ispirata da u retagliu artisticu duratu di l'Egittu, sta distintiva opera d'arte digitale aggiunge una presenza culturale regale à e case, l'uffici, l'alberghi è l'interni curati.",
+      "full_description": "A REGINA DI U NILE\n\nUn tributu regale à l'eredità artistica di l'anticu Egittu\n\nPortate u misteru, a dignità è a bellezza duratura di l'anticu Egittu in i vostri dintorni cù A REGINA DI U NILE, un'opera d'arte digitale ispirata da u linguaghju visivu è l'eredità culturale di una di e civiltà più notevoli di a storia.\n\nCreata per l'ammiratori di l'eredità egizziana è di l'arte distintiva, sta opera offre un sensu di presenza regale è di caratteru culturale. Invita u spettatore à cunnessu cù un retagliu furmatu da u simbolismu, l'artigianatu, l'imaginazione è un fascinu duraturu cù u Nilu è u mondu di l'anticu Egittu.\n\nUNA PRESENZA DISTINTIVA PER U VOSTU SPAZIU\n\nA REGINA DI U NILE pò diventà un puntu focale impressionante in salotti eleganti, studii privati, uffici esecutivi, alberghi boutique, aree di ricezione è interni curati. È ancu una scelta riflessiva per i collezionisti è chiunque attrattu da l'arte ispirata à l'Egittu.\n\nINFORMAZIONI DI SCARICA DIGITALE\n\nStu hè un pruduttu digitale. Ùn serà micca speditu un dipintu fisicu, un poster stampatu o una cornice. Dopu l'acquistu, scaricate i file furniti cù l'inserzione è verificate i so formati inclusi, dimensioni è termini d'usu prima di stampà. Sceglite una dimensione di stampa è un materiale adattu à u file furnitu è u vostru schermu preferitu. I colori ponu varià leggermente trà i schermi è i risultati stampati.\n\nA REGINA DI U NILE - UN ECU REGALE DI UN MUNDALE ANTICU.\n\nSALE DI GRANDEZZA\n\nSTAMPATA D'ARTE E DETTAGLI DI RICERCA\n\nScoprite sta stampa d'arte digitale The Queen Of The Nile 👑 per l'arte di a parete stampabile, decorazione domestica distintiva è interni pensati. Un'opera d'arte scaricabile per a visualizazione persunale, cù opzioni di stampa scelte per adattassi à u file fornitu è u vostru spaziu.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 file · ZIP · 44.0 MB",
+        "product_type": "Scaricamentu di opere d'arte digitale",
+        "delivery": "Scaricamentu digitale immediatu dopu l'acquistu",
+        "physical_item": "Nessuna stampa fisica o cornice serà spedita",
+        "printing": "Stampa i file furniti cù u vostru fornitore di stampa preferitu; verificate e dimensioni incluse prima di sceglie una dimensione",
+        "usage": "Seguite l'usu persunale è altri termini di licenza inclusi cù u download"
+      },
+      "_source_hash": "a4497ccda79c60d5130d5f8f09b9c6acc088280a4d67c8ca9e65d4ff49de7d69"
+    },
+    "csyqhm": {
+      "summary": "L'Anima Copta di l'Eggittu è n'interpretazioni artistica cuntemporanea ispirata di l'eredità visiva, u simbolismu e a memoria culturali di l'Eggittu Coppu.Creatu pi chiddi ca valurizanu l'incontru di storia, identità e espressioni artistica, fa na dichiarazioni significativa in case, uffici, gallerie e spazi culturali.",
+      "full_description": "L'ANIMA COTTICA DI L'EGITTU\n\nUn tributu artisticu cuntemporaneu à u patrimoniu coptu\n\nScoprite una interpretazioni artistica persunale di l'eredità copta egizziana attraversu The Coptic Soul of Egypt, un'opera d'arte digitale ispirata da a memoria visiva, u linguaghju simbòlicu è l'atmosfera culturali assuciata à l'arte copta.\n\nPiuttostu ca di prisintari lu patrimoniu comu na riproduzzioni archeulogica o na replica di n'icona istòrica spicifica, stu travagghiu si avvicina a lu patrimoniu attraversu na lente artistica cuntemporanea, riunendu la memoria culturali e l'espressioni visiva moderna pi invitari a riflessione supra l'identità, la continuità, la fede e la ricchezza di la storia stratificata di l'Eggittu.\n\nPi chiḍḍi ca apprezzunu l'arti significativa, l'òpira offre cchiù di na dicurazzioni: crea na connessione cu na tradizzioni culturali distinta e lu so postu duraturu ntâ storia di l'Eggittu.\n\nADATTU A SPAZI PENSATI\n\nUn'aggiunta cunzidirata a case, studi privati, uffici, gallerie, interni culturali e spazii unni l'eredità e l'espresiuni artistica eggizziana sò apprezzati.Pudeva puru esse un rigalu significativu pi l'ammiraturi di l'arte culturali eggizziana ispirata di l'arte copta.\n\nINFORMAZIONI DI PRODOTTU\n\nStu hè un scaricamentu diggittali. Nudda pittura fisica, poster stampatu, o cornice serà speditu. Per piacè rivisite i file furniti cù l'inserzione, cumpresi i so formati, dimensioni, è termini d'usu, prima di organizzà una stampa. I culori ponu varià un pocu secondu u schermu, a stampante, è u materiale sceltu.\n\nL'anima copta di l'Egittu - Heritage Remembered. Art Reimagined.\n\nSALA DI GRANDIZZA\n\nART PRINT & DETTAGLI DI RICERCA\n\nScoprite sta stampa d'arte digitale L'anima copta di l'Egittu per l'arte murale stampabile, decorazioni domestiche distintive è interni pensati. Un'opera d'arte scaricabile per a visualizazione persunale, cù opzioni di stampa scelte per adattassi à u file fornitu è u vostru spaziu.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "1 file · ZIP · 60.1 MB",
+        "product_type": "Scaricamentu di l'opera d'arte digitale",
+        "delivery": "Scaricamentu digitale immediatu dopu l'acquistu",
+        "physical_item": "Nessuna stampa fisica o cornice serà spedita",
+        "printing": "Stampate i file furniti cù u vostru fornitore di stampa preferitu; verificate e dimensioni incluse prima di sceglie una dimensione",
+        "usage": "Seguite l'usu persunale è altri termini di licenza inclusi cù u download"
+      },
+      "_source_hash": "2eca69141928e3e01281fed2b39524d668bb838241b109042d8477d2e941b1b2"
+    },
+    "jvffaq": {
+      "summary": "L'ETERNA GRAZIA DI U NILE celebra a bellezza senza tempu di l'Eggittu, riunendu una presenza regale è u ritmu duratu di u Nilu. Un'opera d'arte digitale ispirata à u patrimoniu per spazii chì valorizzanu a cultura egiziana è l'eleganza senza tempu.",
+      "category": "Patrimoniu",
+      "_source_hash": "b061cdc5a55b2e444a09cd7d8c3d8d1eb73ad3315fe38b35610ca590b595c16e"
+    },
+    "kjclzu": {
+      "summary": "A Bond Beyond Words celebra a rara cunnessione senza parolle trà un zitellu è un leali cumpagnu.Una calda, edificante opera d'arte nantu à a fiducia, l'amicizia, l'innocenza, è l'amore incondiziunale-creatu per purtà un sensu di tenerezza à i spazii di a famiglia è e case di l'amanti di l'animali.",
+      "full_description": "Un ligame di più di parolle\n\nLa bellezza di l'amore incondizionatu\n\nA so lingua hè di u tipu di lingue di u core, è ùn si pò parlà.\n\nCelebrate a straordinaria cunnessione trà un zitellu è un cane amatu cù A Bond Beyond Words, un'opera d'arte chì cattura e più pure espressioni di amicizia, lealtà, innocenza è amuri incondiziunale.\n\nIn un bellu giardinu bagnatu da u sole doratu, sta scena toccante rapprisenta un zitellu chì abbraccia dolcemente u so Golden Retriever. E so espressioni pacifiche è a so vicinanza affettuosa rivelanu un legame spiciali custruitu nantu à a fiducia, a felicità è a cumpassiune.\n\nIntornatu da fiori vibranti, erba verde lussureggiante, un affascinanti uccellinu di legnu, è u caldu ballu di a natura, a cumposizione crea un'atmosfera piena di tenerezza, cunfortu è ricordi d'infanzia.\n\nOgni dettagliu contribuisce à un bellu ricordu chì l'amore ùn hà micca sempre bisognu di parolle. A volte, un abbracciu simplice dice tuttu.\n\nPiù cà una stampa dicurativa, A Bond Beyond Words hè una celebrazione di e belle relazioni chì rendinu a vita più significativa.\n\n✨ PERCHÈ VUGLI AMÀ QUESTA OPERA D'ARTE\n\nA storia di a so vita hè assai cunfidenti, è si basa annantu à l'amicizia trà un zitellu è u so cane.\n\nCunnessione emotiva: Celebra a gentilezza, a fiducia, a cumpassiuni è l'amore incondiziunale.\n\nBellezza Golden-Hour: A luce calda di u sole crea un'atmosfera pacifica è edificante.\n\nVibrant Garden Dettagli: Fiori colorati è l'ambienti naturali portanu freschezza è vita à a cumposizione.\n\nA so urganizazione hè una cumunità di amuri, chì cunziddirà i zitelli, i zitelli\n\nIdea di Regalu Pensativa: Una bella scelta per chiunque apprezzi u legame speciale trà persone è animali domestici.\n\n10\n\nCamere di i zitelli è sale di ghjocu.\n\nA famiglia hà stallatu una casa è un ristorante.\n\nLi corsi è li lezioni.\n\nCliniche veterinarie è centri di cura di l'animali domestici.\n\nRifugi di animali è centri di adozione.\n\nAlberghi di famiglia è spazii di ospitalità accoglienti.\n\nScuole, centri di furmazione di l'infanzia, è spazii cumunitarii.\n\nAmichi di l'animali è famiglie chì celebranu a gioia di l'amicizia.\n\n10\n\nU vostru pacchettu di download digitale include:\n\nU travagliu artisticu digitale originale in formatu PNG.\n\nUn filu di stampa JPG di alta qualità 2:3 preparatu.\n\nOpzioni di stampa raccomandate.\n\nUna guida di stampa è dimensionamentu PDF.\n\nUn START HERE file cù istruzioni di scaricà è stampa.\n\nNitra l'infurmazioni supra a risuluzzioni di l'imaggini è i termini d'usu.\n\n10\n\nL'opera d'arte seguita un rapportu di ritrattu 2:3 versatile è hè adatta per:\n\n4 x 6 pollici\n\n8 x 12 pollici\n\n12 x 18 pollici\n\n16 x 24 pollici\n\n20 x 30 pollici\n\nPer a megghiu sperienza visiva, vi ricumandemu carta premium opaca, satinata o fine-art.\n\nINFORMAZIONI IMPORTANTI\n\nStu fugliali hè un scaricamentu diggitali. Nudda grafica o cornice fisica sarà spedita.\n\nLi culori ponu varià lievimenti a sicunna dû vostru schermu, stampanti, e carta.\n\nI fugliali digiàti sò destinati à l'usu persunale, a menu chì ùn sia acquistata una licenza cummerciale separata.\n\nL'esibizione cummerciale in l'imprese è in i spazii pubblici richiede una licenza cummerciale appropriata.\n\nI fugliali diggitali nun ponu èssiri rivenuti, ridistribuiti o spartuti.\n\n❤️ UN PICCULU AMORE FAREBBE UNA GRANDE DIFFERENZA\n\nPortate à casa un bellu ricordu di lealtà, amicizia è l'amore incondiziunale chì rende ogni ghjornu più luminosu.\n\nLasciate chì A Bond Beyond Words riempia u vostru spazio di calore, felicità è a magia senza tempu di un'amicizia chì ùn hà bisognu di spiegazione.\n\nA BOND ALTRE PAROLE - Un Cuore. Dui Anime. Amore senza fine.\n\nART PRINT & DETTAGLI DI RICERCA\n\nScoprite sta stampa d'arte digitale A BOND BEYOND WORDS A bellezza di l'amore incondiziunale per l'arte di a parete stampabile, decorazione domestica distintiva è interni pensati. Un'opera d'arte scaricabile per a visualizazione persunale, cù opzioni di stampa scelte per adattassi à u file fornitu è u vostru spaziu.",
+      "category": "Umanità",
+      "product_details": {
+        "files_included": "1 file · ZIP · 7.8 MB",
+        "product_type": "Scaricamentu di l'opera d'arte digitale",
+        "delivery": "Scaricamentu digitale immediatu dopu l'acquistu",
+        "physical_item": "Nessuna stampa fisica o cornice serà spedita",
+        "printing": "Stampa i file furniti cù u vostru fornitore di stampa preferitu; verificate e dimensioni incluse prima di sceglie una dimensione",
+        "usage": "Seguite l'usu persunale è altri termini di licenza inclusi cù u download"
+      },
+      "_source_hash": "af7fd1018209d1a0c50074203cc6c678ce973ea18a6dd07595de274e8d12da36"
+    },
+    "xvccaj": {
+      "summary": "Sette opere d'arte immaginative ispirate da u cosmos, e cità di u futuru, a natura è a bellezza mediterranea - una raccolta digitali espressiva per menti curiose è spazii criativi.",
+      "full_description": "ART GLOBAL & IMAGINATION - SEVEN ARTWORKS, LIMITLESS MONDS\n\nViaghjate oltre u familiare attraversu una raccolta di sette opere d'arte digitale ispirate da a maraviglia cosmica, a bellezza celeste, l'architettura visionaria, a natura è u spiritu mediterraniu.Ogni pezzu apre un mondu visivu diversu, portandu a curiosità, u muvimentu è l'imaginazione in i spazii cuntemporanee.\n\nDa u misteru di l'universu à e cità chì sognimu di custruì, da magnifichi paesaggi naturali à visioni costali espressive, sta cullizzioni celebra i tanti modi in cui l'arte pò espansioni u nostru sensu di pussibilità.\n\nCOSA C'È INCLUSU\n\nOltri l'universu\n\nU giardinu celestiali\n\nCittà di domani\n\nA maestà di a natura\n\nSogni Mediterrani\n\nLa musa mediterranea\n\nGeometria di l'eleganza\n\nDOVE PARTI\n\nUna cullizzioni distintiva per salotti, uffici, studii creativi, alberghi, ristoranti, aree di riception, è interni chì accogliunu l'arte espressiva è l'arredi chì inizianu a conversazione.\n\nScaricamentu\n\nStu hè un pruduttu diggittali. Nudda grafica fisica o cornice serà spedita. Scarica i file inclusi in u pacchettu è rivisita i so formati, dimensioni, è termini d'usu prima di stampà. Selezziuna una diminsioni di stampa è un materiale appropriatu per i file furniti. I culori ponu varià lievimenti trà i schermi è i risultati stampati.\n\nScopri l'arti senza cunfini. Lascia chì l'imaginazioni formi u vostru mondu.\n\nA stanza di a grannizza - l'arti senza cunfini.",
+      "category": "Eleganza",
+      "product_details": {
+        "product_type": "Scaricamentu di l'arti digitali",
+        "delivery": "Scaricamentu digitale immediatu dopu l'acquistu",
+        "physical_item": "Nudda stampa fisica o cornici sarà spedita",
+        "printing": "Stampa i fugliali furniti cù u vostru fornituri di stampa preferitu; verificate e dimensioni incluse prima di sceglie una dimensione",
+        "usage": "Segui i termini d'usu inclusi cu u scaricamentu",
+        "bundle_item_count": "Collezione di pacchetti; opere d'arte individuali elencate sottu"
+      },
+      "_source_hash": "d8641c6b467679268bbf7fa3a052b8f3d1afec3f69b284f8c9413088a02c671d"
+    },
+    "wjxgxb": {
+      "summary": "Portate u spiritu durabile di l'anticu Egittu in u vostru spazio. L'Eterno Egittu celebra a maestà di una civiltà furmata da l'architettura monumentale, u Nilu è un straordinariu retaghju culturale. Progettatu cum'è una stampa d'arte digitale impressionante per l'amanti di u patrimoniu egizianu, a storia è l'interni senza tempu.",
+      "full_description": "ETERNU EGITTU\n\nU Spìritu senza tempu di un'Antica Civiltà\n\nPortate a grandezza durabile di l'Anticu Egittu in i vostri dintorni cù l'Eterno Egittu, un'opera d'arte digitale ispirata da a presenza monumentale di e piramidi, a Grande Sfinge è u paisaghju senza tempu di u Nilu.\n\nCreatu per quelli chì sentenu una connessione à a storia, a memoria culturale è l'eredità artistica di l'Egittu, sta composizione offre più di un'immagine decorativa. Evoca a scala, u misteru è a continuità di una civiltà u cui linguaghju visivu continua à ispirà u mondu.\n\nA so atmosfera ispirata da u patrimoniu ne face un puntu focale distintu per case cuntemporanee, studii privati, uffici, alberghi, spazi culturali è interni chì celebranu a storia è l'arte.\n\nPERCHÈ PARTI IN U VOSTU SPAZIU\n\nUn omaggio visivu à u retaghju culturale durabile di l'Anticu Egittu.\n\nUn accentu distintivu ispiratu da u patrimoniu per interni moderni è classichi.\n\nUna scelta significativa per i collezionisti è l'ammiratori di a storia egiziana.\n\nUn'opera d'arte digitale espressiva chì pò esse stampata è incorniciata per adattassi à u vostru spazio.\n\nINFORMAZIONI DI PRODOTTU DIGITALE\n\nStu hè un download digitale. Nessun dipintu fisicu, poster stampatu o cornice serà speditu. Scaricate i file furniti cù u vostru acquistu è rivisu u so formatu, dimensioni è termini d'usu inclusi prima di stampà. I colori ponu varià leggermente secondu u vostru schermu, stampante è materiale sceltu.\n\nETERNU EGITTU - Una Civiltà in Memoria. Un Legacy Beyond Time.\n\nSALE DI GRANDEZZA\n\nDETTAGLI DI STAMPA E RICERCA D'ARTE\n\nScoprite sta stampa d'arte digitale ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization per l'arte di a parete stampabile, decorazione domestica distintiva è interni pensati. Un'opera d'arte scaricabile per a visualizazione persunale, cù opzioni di stampa scelte per adattassi à u file fornitu è u vostru spaziu.",
+      "category": "Heritage",
+      "product_details": {
+        "files_included": "4 files · JPG, PDF, PNG, TXT · 9.1 MB",
+        "product_type": "Scaricamentu di l'arte digitale",
+        "delivery": "Scaricamentu digitale immediatu dopu l'acquistu",
+        "physical_item": "Nessuna stampa fisica o cornice serà spedita",
+        "printing": "Stampa i file furniti cù u vostru fornitore di stampa preferitu; verificate e dimensioni incluse prima di sceglie una dimensione",
+        "usage": "Seguite l'usu persunale è altri termini di licenza inclusi cù u download"
+      },
+      "_source_hash": "af4bb9b510bcc457b6750421a6f2d14b3beabca71579f4cd5f83484617097abe"
+    },
+    "fgdpqp": {
+      "summary": "In un laboratoriu immaginariu, u tempu ùn hè micca misuratu ma sculpitu. THE CLOCKMAKER'S DREAM trasforma ingranaggi, meccanismi celesti è strumenti impossibili in una meditazione poètica nantu à a memoria, l'invenzione è u passaghju di u tempu. Un'incontro di immaginazione steampunk è surrealismu simbòlicu.",
+      "full_description": "In un laboratoriu immaginariu, u tempu ùn hè micca misuratu ma sculpitu. THE CLOCKMAKER'S DREAM trasforma ingranaggi, meccanismi celesti è strumenti impossibili in una meditazione poètica nantu à a memoria, l'invenzione è u passaghju di u tempu. Un'incontro di immaginazione steampunk è surrealismu simbòlicu. Una scelta accattivante per biblioteche, studii, uffici è interni di design. U download digitale hè furnitu cum'è un file ZIP. Per piacè rivisu i file inclusi è e specifiche dopu l'acquistu prima di sceglie una dimensione di stampa.",
+      "category": "Elegance",
+      "product_details": {
+        "files_included": "1 file · ZIP · 36.8 MB"
+      },
+      "_source_hash": "30ab80fd3d5210fdd5ec47f8f60c9b5f121908831ac3a07129ffe69e98b6bb2c"
+    }
+  },
+  "ui": {
+    "navFeatured": "In evidenza",
+    "navCollections": "Cullizzioni",
+    "navGallery": "Galleria",
+    "navArtist": "Artista",
+    "eyebrow": "Un munnu di arti stampabili",
+    "heroTitle": "<em>L'arte ca porta na storia.</em>",
+    "heroText": "Scoprite una galleria furmata da l'imaginazione, u patrimoniu, a cunnessione umana è a bellezza senza tempu di l'arte. Opere digitali significative, pronte à fà parte di u vostru spaziu.",
+    "explore": "Esplora li cullizzioni",
+    "discover": "Scuprìte a galleria",
+    "featuredEyebrow": "Li stòria di li visitatori tornanu",
+    "featuredTitle": "Opiri d'arte pruposti",
+    "featuredText": "Sei opere significative. Sei modi diversi di purtari l'arte è u sensu umanu in u vostru spazio.",
+    "collectionsEyebrow": "Cullezzioni",
+    "collectionsTitle": "Scopri li cullizzioni",
+    "collectionsText": "Viaghju curatu attraversu l'arte, a cultura è l'emozione. Esplora una collezione o vai drittu à u so checkout sicuru.",
+    "galleryEyebrow": "La galleria completa",
+    "galleryTitle": "Opiri artistichi singuli",
+    "galleryText": "Cerca per u titulu di l'opera d'arte, tema o categoria. Vedi l'anteprima di a storia o vai direttamente à u download digià.",
+    "search": "Cerca titoli è temi...",
+    "artistEyebrow": "Dietru a galleria",
+    "artistTitle": "A propositu di l'artista",
+    "artistP1": "hè l'artista dietru HALL OF GREATNESS, una galleria d'arte digitale indipendente chì porta storie visive originali à un publicu globale.",
+    "artistP2": "Ogni opera offre più di una dicurazzioni: un'atmosfera, una riminiscenza, o una storia umana, è hè un'opera chì pò esse vista in ogni locu.",
+    "artistP3": "Da l'eredità egiziana è copta à temi universali di compassione, dignità, speranza è immaginazione, a galleria vi invita à sperimentà l'arte à u vostru modu.",
+    "tagline": "Arte significativa. Presenza duratura.",
+    "digital": "Prodotti digitali · Scaricamentu immediatu attraversu Gumroad",
+    "privacy": "Privacità",
+    "terms": "Termini",
+    "contact": "Cuntattu",
+    "gumroad": "Magazzinu di Gumroad ↗",
+    "exploreArt": "Esplora l'opere d'arte ↗",
+    "discoverStory": "Scopri a storia ↗",
+    "buyDownload": "Acquistate u scaricamentu ↗",
+    "buyCollection": "Acquista a cullizzioni ↗",
+    "exploreCollection": "Esplora a raccolta ↗",
+    "printable": "Arte digitale stampabile",
+    "format": "File digitale · Stampa in una dimensione adatta à u vostru spaziu",
+    "noResults": "Nudda opera currispunni â vostra ricerca.",
+    "catalogError": "U catalogu dâ galleria è temporaneamenti nun dispunibbili. Ricarica la pàggina.",
+    "all": "Tutti",
+    "of": "di",
+    "artworks": "gràfichi",
+    "choose": "Sceglite una lingua"
+  },
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "_ui_translation_status": "machine-generated-unreviewed",
+  "landing_ui": {
+    "← Return to the gallery": "← Ritornu a la galleria",
+    "Language": "Lingua",
+    "An original digital artwork from HALL OF GREATNESS": "Un'opera d'arte digitale originali di HALL OF GREATNESS",
+    "A curated collection of meaningful digital artworks": "Una raccolta di opere d'arte diggitali significative",
+    "Explore & Get the Artwork ↗": "Esplorate è ottene l'opere d'arte ↗",
+    "Secure checkout and digital delivery on Gumroad.": "Secure checkout è consegna digitale in Gumroad.",
+    "Artwork presentation": "Presentazioni di l'arti",
+    "Imagine it in a refined frame": "Immaginallu in un quadru raffinatu",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "Una sicunna prisintazzioni vi aiuta a visualizà l'òpira d'arti comu una visualizzazzioni incorniciata, mantèninnu li so prupurzioni originali.",
+    "Digital download": "Scaricamentu digitale",
+    "Access your files after checkout": "Accedi a li vostri fichji dopu a scansione",
+    "Print your way": "Stampa a manera vostra",
+    "Choose a size suited to your space": "Sceglite una diminsioni adatta à u vostru spaziu",
+    "Made to display": "Fattu pi visualizà",
+    "For homes, studios, and meaningful spaces": "Pi casi, studii, e spazii significativi",
+    "The meaning behind the artwork": "U significatu di l'òpira",
+    "More than decoration. A feeling that stays.": "Più cà una decorazione. Un sentimentu chì rimane.",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "Criatu pi chiddi ca volenu ca l'ambienti rifletta una storia, na riminzioni, un valuri o un sensu di bellezza. Facci addivintari stu travagghiu parti di l'atmosfera ca crei e di u sensu ca voli ca u to spazio cuntena.",
+    "Inside this collection": "In sta cullizzioni",
+    "One collection. Many stories.": "Una raccolta. Tanti storie.",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "Esplorate l'opere d'arte individuali incluse in sta raccolta curata. Ogni pezzu hà u so caratteru, mentre chì inseme creanu un viaghju visivu più riccu.",
+    "Complete artwork story": "Storia di l'artwork completa",
+    "Full product description": "Descrizzioni di u pruduttu",
+    "What is included": "Cosa è inclusu",
+    "Product specifications": "Specificazioni di u pruduttu",
+    "Where it belongs": "Ddu appartinni",
+    "Art that finds its place": "L'arti ca trova lu so postu",
+    "Before you purchase": "Prima di cumprà",
+    "Digital download details": "Dettagli di scaricament' digitale",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "Stu hè un pruduttu digià. Nisun disegnu fisicu o cornice serà speditu. Dopu l'acquistu, Gumroad dà accessu à i file inclusi cù stu pruduttu. Si prega di rivedere e specifiche di u file furnitu è a licenza prima di stampà o aduprà l'opera d'arte.",
+    "From download to display": "Da scaricari a mustrari",
+    "Make the artwork part of your space": "Faci ca l'òpira faci parti di lu vostru spaziu",
+    "01 · Purchase": "Acquista",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "Completate u vostru checkout sicuru in Gumroad. U vostru acquistu hè per un pruduttu digitale.",
+    "02 · Download": "Scarica",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "Accede à i fugliali furniti cù stu pruduttu attraversu Gumroad è rivede e specifiche incluse.",
+    "03 · Print": "Stampa",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "Sceglite una diminsioni di stampa ca mantini li prupurzioni di l'òpira di grafica. Un prufessionista di stampa pò aiutà à abbinari li diminsioni a u filu furnitu.",
+    "Please note:": "Si prega di notà",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "Nisun'opera d'arte fisica o cornice hè spedita. I formati di file, a risoluzione, e proporzioni è i termini d'usu dispunibili sò quelli indicati in u scaricamentu di u pruduttu è a licenza inclusa.",
+    "Let your space tell a story.": "Lasciate chì u vostru spazio racconti una storia.",
+    "Choose art that reflects what you value—and let its meaning live with you.": "Sceglite l'arte chì riflette ciò chì valorete - è lasciate chì u so significatu vivi cun voi.",
+    "Get": "Acquistate",
+    "Art with a Soul. A Message Without Borders.": "Arte cù un'anima. Un messagiu senza cunfini.",
+    "Digital artwork · Instant download through Gumroad": "Opera d'arte digitale · Scaricamentu immediatu attraversu Gumroad",
+    "Privacy": "Privacy",
+    "Terms": "Termini",
+    "Contact": "Contattu",
+    "Gumroad store ↗": "Gumroad store ↗",
+    "· Digital download": "Scaricamentu digitale"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "Files inclusi",
+    "product_type": "Tipu di pruduttu",
+    "delivery": "Consegna",
+    "physical_item": "Articolu fisicu",
+    "printing": "Stampa",
+    "usage": "Usu",
+    "bundle_item_count": "Articoli in pacchettu"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Una raccolta d'arte coordinata per case, uffici, alberghi, gallerie, aree di ricezione è interni curati.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "Get THE ART OF ELEGANCE & SERENITY ↗",
+      "\\n": "\\n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Una raccolta d'arte coordinata per case, uffici, alberghi, gallerie, aree di ricezione è interni curati.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "Get EGYPTIAN & COPTIC HERITAGE ↗",
+      "\\n": "\\n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "A BOND BEYOND WORDS  The Beauty of Unconditional Love",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "Una cullizzioni d'arti coordinata per case, uffici, alberghi, gallerie, aree di riception, è interni curati.",
+      "Get THE HUMANITY LEGACY ↗": "Get THE HUMANITY LEGACY ↗",
+      "\\n": "\\n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un accentu raffinatu per salotti, camere da letto, uffici, boutique hotels, spazii di benessere è interni cunsiderati.",
+      "Get THE ART OF STILLNESS ↗": "Get THE ART OF STILLNESS ↗",
+      "\\n": "\\ n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un accentu raffinatu per salotti, camere da letto, uffici, boutique hotels, spazii di benessere è interni cunsiderati.",
+      "Get GEOMETRY OF ELEGANCE ↗": "Get GEOMETRY OF ELEGANCE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Una dichjarazione espressiva per case, studii creativi, uffici, spazii di ospitalità è interni furmati da l'imaginazione.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗",
+      "\\n": "\\ n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Una dichjarazione espressiva per case, studii creativi, uffici, spazii di ospitalità è interni furmati da l'imaginazione.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗",
+      "\\n": "\\ n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un accentu raffinatu per salotti, camere da letto, uffici, boutique hotels, spazii di benessere è interni cunsiderati.",
+      "Get MEDITERRANEAN DREAMS ↗": "Get MEDITERRANEAN DREAMS ↗",
+      "\\n": "\\ n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un accentu raffinatu per salotti, camere da letto, uffici, boutique hotels, spazii di benessere è interni cunsiderati.",
+      "Get SILENT HORIZONS . ↗": "Get SILENT HORIZONS . ↗",
+      "\\n": "\\ n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un accentu raffinatu per salotti, camere da letto, uffici, boutique hotels, spazii di benessere è interni cunsiderati.",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "Get GOLDEN FLOW   The Art of Timeless Luxury ↗",
+      "\\n": "\\ n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "Una dichjarazione espressiva per case, studii creativi, uffici, spazii di ospitalità è interni furmati da l'imaginazione.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "Get BEYOND THE UNIVERSE 🌏 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Un puntu focale significativu per case, uffici, spazi educativi, gallerie, è posti induve e storie umane contanu.",
+      "Get A Shelter of Love ♥ ↗": "Get A Shelter of Love ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un accentu raffinatu per salotti, camere da letto, uffici, boutique hotels, spazii di benessere è interni cunsiderati.",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "Get The Celestial Garden – A Dance Beneath the Moon ↗",
+      "\\n": "\\ n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un accentu raffinatu per salotti, camere da letto, uffici, boutique hotels, spazii di benessere è interni cunsiderati.",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "Get THE GOLDEN VEIL OF SERENITY ↗",
+      "\\n": "\\ n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "Un pianeta. Una responsabilità. Infinità di pussibulità.",
+      "The story behind the image": "A storia dietro l'imaghjini",
+      "More than decoration. A human story.": "Più chè decorazione. Una storia umana.",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "A manu rapprisinta a nostra capacità di agisce. A piantina significa una nova vita fragile; e farfalle suggeriscono trasformazione. U cuntrastu trà a terra danneggiata è a prumessa di rinnovu ci ricorda chì u domani hè influenzatu da ciò chì sceglimu di prutegge oggi.",
+      "Where the artwork belongs": "U locu di l'opera d'arte",
+      "Created to live with meaning": "Creata per vive cun sensu",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "Una dichjarazione impressionante per case, uffici, scuole, organizzazioni ambientali, aree di ricezione è spazii creativi.",
+      "A distinctive focal point for considered interiors": "Un puntu focale distintivu per interni cunsiderati",
+      "A conversation piece with a message beyond trends": "Un pezzu di conversazione cù un missaghju al di là di e tendenze",
+      "A thoughtful digital art choice for personal spaces": "Una scelta di arte digitale pensata per spazii persunali",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Stu hè un pruduttu digitale. Nessuna stampa fisica o cornice serà spedita. Dopu l'acquistu, scaricà i file furniti in Gumroad. Rivedere e specifiche di u file incluse, guida di stampa, è licenza d'usu persunale prima di stampà. Sceglite una dimensione di stampa è un serviziu appropriatu per i file furniti.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Sceglite un'opera d'arte chì rifletta ciò chì valorete - è lasciate chì u so significatu viva cun voi.",
+      "Get The Hand That Holds Tomorrow ↗": "Get The Hand That Holds Tomorrow ↗",
+      "\\n": "\\n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "Visti diversi. Una umanità. Una connessione eterna.",
+      "The story behind the image": "A storia dietro l'immagine",
+      "More than decoration. A human story.": "Più di decorazione. Una storia umana.",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "L'avoriu è l'ossidanu preservanu l'unicità di ogni faccia. U filu d'oru simbolizza emozioni, speranze è u desideriu di esse trattatu cun dignità. L'unità ùn richiede micca a stessa cosa; cumincia quandu ci riconosciamu l'una l'altra umanità.",
+      "Where the artwork belongs": "Dove appartiene l'opera d'arte",
+      "Created to live with meaning": "Creata per vive cù significatu",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "Una dichjarazione raffinata per case, uffici esecutivi, gallerie, spazi di ricezione è interni chì valorizzanu u dialogu culturale è a connessione umana.",
+      "A distinctive focal point for considered interiors": "Un puntu focale distintivu per interni cunsiderati",
+      "A conversation piece with a message beyond trends": "Un pezzu di conversazione cù un missaghju al di là di e tendenze",
+      "A thoughtful digital art choice for personal spaces": "Una scelta di arte digitale pensata per spazii persunali",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Stu hè un pruduttu digitale. Nessuna stampa fisica o cornice serà spedita. Dopu l'acquistu, scaricà i file furniti in Gumroad. Rivedere e specifiche di u file incluse, guida di stampa è licenza d'usu persunale prima di stampà. Sceglite una dimensione di stampa è un serviziu appropriatu per i file furniti.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Sceglite un'opera d'arte chì rifletta ciò chì valore - è lasciate chì u so significatu vive cun voi.",
+      "Get The Golden Thread of Humanity ↗": "Get The Golden Thread of Humanity ↗",
+      "\\n": "\\n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Un puntu focale significativu per case, uffici, spazi educativi, gallerie è posti induve e storie umane contanu.",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "Get ROOTS OF TENDERNESS ♥ ↗",
+      "\\n": "\\n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un accentu raffinatu per salotti, camere da letto, uffici, boutique hotels, spazii di benessere è interni cunsiderati.",
+      "Get AURELLE 👑 ↗": "Get AURELLE 👑 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "A bellezza di a quiete. A forza di l'internu.",
+      "The story behind the image": "A storia dietro l'imaghjini",
+      "More than decoration. A human story.": "Più di decorazione. Una storia umana.",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "Una figura umana composta diventa un sìmbulu di cunniscenza di sè. A luce dorata suggerisce a pienezza; i dettagli botanichi suggeriscono u rinnovu. L'opera ci ricorda chì a forza ùn hà micca bisognu di esse forte - è chì a calma pò esse una forma di bellezza.",
+      "Where the artwork belongs": "Dove appartiene l'opera d'arte",
+      "Created to live with meaning": "Creata per vive cù significatu",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "Un puntu focale elegante per salotti, uffici privati, aree di ricezione, alberghi, spazi di benessere, è interni cuntemporanee.",
+      "A distinctive focal point for considered interiors": "Un puntu focale distintivu per interni cunsiderati",
+      "A conversation piece with a message beyond trends": "Un pezzu di conversazione cù un missaghju al di là di e tendenze",
+      "A thoughtful digital art choice for personal spaces": "Una scelta di arte digitale pensata per spazii persunali",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Stu hè un pruduttu digitale. Nessuna stampa fisica o cornice serà spedita. Dopu l'acquistu, scaricà i file furniti in Gumroad. Rivedere e specifiche di u file incluse, guida di stampa, è licenza d'usu persunale prima di stampà. Sceglite una dimensione di stampa è un serviziu appropriatu per i file furniti.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Sceglite un'opera d'arte chì riflette ciò chì valore - è lasciate chì u so significatu vive cun voi.",
+      "Get The Art of Inner Peace ↗": "Get The Art of Inner Peace ↗",
+      "\\n": "\\n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un accentu raffinatu per salotti, camere da letto, uffici, boutique hotels, spazii di benessere è interni cunsiderati.",
+      "Get SERENITY 🤍 ↗": "Get SERENITY 🤍 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Un puntu focale significativu per case, uffici, spazi educativi, gallerie è posti induve e storie umane contanu.",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "Get THE TREE THAT REFUSED TO DIE ↗",
+      "\\n": "\\n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Un puntu focale significativu per case, uffici, spazi educativi, gallerie è posti induve e storie umane contanu.",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗",
+      "\\n": "\\n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "U futuru hè custruitu da parechje mani.",
+      "The story behind the image": "A storia dietro l'imaghjini",
+      "More than decoration. A human story.": "Più chè una decorazione. Una storia umana.",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "Ogni manu rapprisinta una vita, una gentilezza, un sacrificiu, o un'opportunità offerta. U zitellu hè per ogni ghjovanu i cui sogni anu bisognu di incoraggiamentu è supportu. Insieme, e mani diventanu una scala - è a speranza diventa qualcosa chì custruimu l'unu per l'altru.",
+      "Where the artwork belongs": "Dove l'opera appartiene",
+      "Created to live with meaning": "Creata per vive cù significatu",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "Una dichjarazione significativa per case di famiglia, scuole, biblioteche, uffici, studii è spazii chì celebranu l'educazione è a cunnessione umana.",
+      "A distinctive focal point for considered interiors": "Un puntu focale distintivu per interni cunsiderati",
+      "A conversation piece with a message beyond trends": "Un pezzu di conversazione cù un missaghju al di là di e tendenze",
+      "A thoughtful digital art choice for personal spaces": "Una scelta di arte digitale pensata per spazii persunali",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Stu hè un pruduttu digitale. Nessuna stampa fisica o cornice serà spedita. Dopu l'acquistu, scaricà i file furniti in Gumroad. Rivedere e specifiche di u file incluse, guida di stampa, è licenza d'usu persunale prima di stampà. Sceglite una dimensione di stampa è un serviziu appropriatu per i file furniti.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Sceglite un'opera d'arte chì rifletta ciò chì valore - è lasciate chì u so significatu vive cun voi.",
+      "Get A Stairway of Hands ↗": "Get A Stairway of Hands ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "Ciò chì pruteggemu oghje diventa u so domani.",
+      "The story behind the image": "A storia dietro l'imaghjini",
+      "More than decoration. A human story.": "Più chè decorazione. Una storia umana.",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "A generazione più vechja porta sperienza; a più giovane porta pussibilità. Tra di elli si trova una prumessa: di preservari ciò chì sustene a vita è di trasmette un futuru degnu di quelli chì l'erediscenu. Stu hè l'amore espressu cum'è responsabilità.",
+      "Where the artwork belongs": "Dove l'opera d'arte appartiene",
+      "Created to live with meaning": "Creata per vive cù significatu",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "Un pezzu pensatu per case di famiglia, studii, uffici, spazi educativi, è chiunque valorizzi a memoria, a famiglia, è u futuru.",
+      "A distinctive focal point for considered interiors": "Un puntu focale distintivu per interni cunsiderati",
+      "A conversation piece with a message beyond trends": "Un pezzu di conversazione cù un missaghju al di là di e tendenze",
+      "A thoughtful digital art choice for personal spaces": "Una scelta pensata di l'arte digitale per spazii persunali",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Stu hè un pruduttu digitale. Nessuna stampa fisica o cornice serà spedita. Dopu l'acquistu, scaricà i file furniti in Gumroad. Rivedere e specifiche di u file incluse, guida di stampa, è licenza d'usu persunale prima di stampà. Sceglite una dimensione di stampa è un serviziu appropriatu per i file furniti.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Sceglite un'opera d'arte chì rifletta ciò chì valorete - è lasciate chì u so significatu vivi cun voi.",
+      "Get The Legacy of Generations ↗": "Get The Legacy of Generations ↗",
+      "\\n": "\\n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un accentu raffinatu per salotti, camere da letto, uffici, boutique hotels, spazii di benessere è interni cunsiderati.",
+      "Get The Mediterranean Muse ↗": "Get The Mediterranean Muse ↗",
+      "\\n": "\\ n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "Una Terra. Una Umanità. Un Futuru.",
+      "The story behind the image": "A storia dietru l'imaghjini",
+      "More than decoration. A human story.": "Più chè una decorazione. Una storia umana.",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "E mani chì circondanu u globu rapprisentanu persone di ogni età è di ogni background. U paisaghju fratturatu parla di ciò chì hè in periculu; l'orizzonte verde è a luce dorata puntanu versu ciò chì pudemu ancora prutegge. U messaggio ùn hè micca disperazione. È una responsabilità cundivisa, resa visibile.",
+      "Where the artwork belongs": "U locu induve l'opera appartiene",
+      "Created to live with meaning": "Creata per vive cun sensu",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "Un puntu focale chì provoca a riflessione per case, uffici, spazi educativi, gallerie è ambienti dedicati à a sustenibilità.",
+      "A distinctive focal point for considered interiors": "Un puntu focale distintivu per interni cunsiderati",
+      "A conversation piece with a message beyond trends": "Un pezzu di conversazione cù un missaghju al di là di e tendenze",
+      "A thoughtful digital art choice for personal spaces": "Una scelta di arte digitale pensata per spazii persunali",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "Stu hè un pruduttu digitale. Nessuna stampa fisica o cornice serà spedita. Dopu l'acquistu, scaricà i file furniti in Gumroad. Rivedere e specifiche di u file incluse, guida di stampa, è licenza d'usu persunale prima di stampà. Sceglite una dimensione di stampa è un serviziu appropriatu per i file furniti.",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "Sceglite un'opera d'arte chì rifletta ciò chì valorete - è lasciate chì u so significatu vivi cun voi.",
+      "Get Last Cry of Earth ↗": "Get Last Cry of Earth ↗",
+      "\\n": "\\n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Un'aggiunta distintiva à case, studii privati, uffici, gallerie, musei, alberghi è spazii culturali.",
+      "Get THE GOLDEN GAZE 👁 ↗": "Get THE GOLDEN GAZE 👁 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Un'aggiunta distintiva à case, studii privati, uffici, gallerie, musei, alberghi è spazii culturali.",
+      "Get The Queen Of The Nile 👑 ↗": "Get The Queen Of The Nile 👑 ↗",
+      "\\n": "\\ n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Un'aggiunta distintiva à case, studii privati, uffici, gallerie, musei, alberghi è spazii culturali.",
+      "Get The Coptic Soul of Egypt ↗": "Get The Coptic Soul of Egypt ↗",
+      "\\n": "\\ n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "THE NILE'S ETERNAL GRACE Una celebrazione di a bellezza senza tempu di l'Egittu, induve a dignità tranquilla di una presenza regale incontra u ritmu eterno di u Nilu. Golden...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Un'aggiunta distintiva à case, studii privati, uffici, gallerie, musei, alberghi è spazii culturali.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "Get THE NILE'S ETERNAL GRACE ↗",
+      "\\n": "\\ n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "A BOND BEYOND WORDS The Beauty of Unconditional Love Alcune amicizie sò sentite da u cuore, micca spiegate da e parolle. Celebrate a connessione straordinaria...",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "Un puntu focale significativu per case, uffici, spazi educativi, gallerie è posti induve e storie umane contanu.",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗",
+      "\\n": "\\n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "GLOBAL ART & IMAGINATION - SEVEN ARTWORKS, LIMITLESS WORLDS Viaghjate oltre u familiare attraversu una raccolta di sette opere d'arte digitali ispirate da cosmiche...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un accentu raffinatu per salotti, camere da letto, uffici, boutique hotels, spazii di benessere è interni cunsiderati.",
+      "Get GLOBAL ART & IMAGINATION ↗": "Get GLOBAL ART & IMAGINATION ↗",
+      "\\n": "\\n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Porta a grandezza durata di l'anticu Egittu in i vostri dintorni cù l'Eterno Egittu, un...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "Un'aggiunta distintiva à case, studii privati, uffici, gallerie, musei, alberghi è spazii culturali.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗",
+      "\\n": "\\ n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "In un laboratoriu immaginatu, u tempu ùn hè micca misuratu ma scolpitu. THE CLOCKMAKER'S DREAM trasforma ingranaggi, meccanismi celesti è strumenti impossibili...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "Un accentu raffinatu per salotti, camere da letto, uffici, boutique hotels, spazii di benessere è interni cunsiderati.",
+      "Get THE CLOCKMAKER'S DREAM ↗": "Get THE CLOCKMAKER'S DREAM ↗",
+      "\\n": "\\ n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
+}

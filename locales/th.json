@@ -328,5 +328,382 @@
     "artworks": "งานศิลป์",
     "choose": "เลือกภาษา"
   },
-  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f"
+  "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
+  "landing_ui": {
+    "← Return to the gallery": "○ กลับ ไป ยัง หอ ดู ดาว",
+    "Language": "ภาษา",
+    "An original digital artwork from HALL OF GREATNESS": "งาน ศิลป์ แบบ ดิจิตอล ที่ มี มา แต่ ความ สุข",
+    "A curated collection of meaningful digital artworks": "การ สะสม ศิลปกรรม แบบ ดิจิตอล ที่ มี ความ หมาย",
+    "Explore & Get the Artwork ↗": "การ สํารวจ และ ได้ งาน ศิลปะ ↗",
+    "Secure checkout and digital delivery on Gumroad.": "เช็คเอาท์และส่งดิจิตอลทางกัมโร้ด",
+    "Artwork presentation": "นําเสนองานศิลป์",
+    "Imagine it in a refined frame": "ลองคิดดูในกรอบที่เรียบเรียง",
+    "A second presentation helps you picture the artwork as a framed display, while preserving its original proportions.": "การ ฉาย ครั้ง ที่ สอง ช่วย คุณ ให้ นึก ภาพ ภาพ จิตรกรรม เป็น ภาพ ที่ แสดง ให้ เห็น ขณะ ที่ ยัง คง รักษา สัดส่วน เดิม ของ ภาพ.",
+    "Digital download": "ดาวน์โหลดดิจิทัล",
+    "Access your files after checkout": "เข้าถึงแฟ้มของคุณหลังจากตรวจสอบแล้ว",
+    "Print your way": "พิมพ์วิธีของคุณ",
+    "Choose a size suited to your space": "เลือกขนาดที่เหมาะสมกับพื้นที่ของคุณ",
+    "Made to display": "ถูกสร้างให้แสดง",
+    "For homes, studios, and meaningful spaces": "สําหรับ บ้าน, โรง เรียน, และ พื้น ที่ ที่ มี ความ หมาย",
+    "The meaning behind the artwork": "ความ หมาย เบื้อง หลัง งาน ศิลปะ",
+    "More than decoration. A feeling that stays.": "มากกว่าการตกแต่ง ความรู้สึกที่ยังคงอยู่",
+    "Created for people who want their surroundings to reflect a story, a memory, a value, or a sense of beauty. Let this work become part of the atmosphere you create and the feeling you want your space to hold.": "สร้างขึ้นสําหรับคนที่ต้องการให้สภาพแวดล้อมของเขา สะท้อนเรื่องราว ความทรงจํา คุณค่า หรือความรู้สึกของความงาม ให้งานนี้เป็นส่วนหนึ่งของบรรยากาศที่คุณสร้างขึ้น และความรู้สึกที่คุณต้องการพื้นที่ของคุณ",
+    "Inside this collection": "ภายในคลังภาพนี้",
+    "One collection. Many stories.": "คอลเล็คชั่นเดียว หลายเรื่องเลย",
+    "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.": "การ สํารวจ ผล งาน ศิลป์ แต่ ละ ชิ้น ที่ รวม อยู่ ใน งาน รวบ รวม ที่ ทํา ด้วย ไม้ เคลือบ นี้. แต่ละชิ้นมีลักษณะของมันเอง ในขณะที่มันร่วมกันสร้างการเดินทางที่ดีขึ้น",
+    "Complete artwork story": "ภาพรวมของงานศิลป์",
+    "Full product description": "รายละเอียดผลิตภัณฑ์เต็ม",
+    "What is included": "รวม",
+    "Product specifications": "ข้อกําหนดโปรดักต์",
+    "Where it belongs": "ที่ๆมันควรอยู่",
+    "Art that finds its place": "ศิลปะที่ค้นพบสถานที่ของมัน",
+    "Before you purchase": "ก่อนที่คุณจะซื้อ",
+    "Digital download details": "รายละเอียดการดาวน์โหลดดิจิทัล",
+    "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork.": "นี่เป็นผลิตภัณฑ์ดิจิตอล จะ ไม่ มี การ ส่ง งาน ศิลปะ หรือ โครง สร้าง ทาง กายภาพ. หลัง จาก ซื้อ แล้ว กัมโรด ก็ จะ เข้า ไป ใน แฟ้ม ต่าง ๆ ที่ มี ผลิตภัณฑ์ นี้ รวม อยู่ ด้วย. โปรดอ่านข้อกําหนดและใบอนุญาตที่ส่งมาจากแฟ้ม ก่อนที่จะพิมพ์หรือใช้งานศิลป์",
+    "From download to display": "จากดาวน์โหลดไปแสดง",
+    "Make the artwork part of your space": "ทําให้ส่วนหนึ่งของงานศิลป์ของคุณ",
+    "01 · Purchase": "01 BAR ",
+    "Complete your secure checkout on Gumroad. Your purchase is for a digital product.": "เช็คเอาท์ของคุณเรียบร้อยแล้ว การซื้อของคุณสําหรับผลิตภัณฑ์ดิจิตอล",
+    "02 · Download": "02 ดาวน์โหลดแล้ว",
+    "Access the files supplied with this product through Gumroad and review the included specifications.": "เข้าถึงแฟ้มที่จัดหามาจากผลิตภัณฑ์นี้ผ่านทาง กัมโรด และทบทวนข้อกําหนดรวม",
+    "03 · Print": "03 การพิมพ์",
+    "Choose a print size that preserves the artwork's original proportions. A local print professional can help match the dimensions to the supplied file.": "เลือกขนาดการพิมพ์ที่รักษาสัดส่วนเดิมของภาพ ผู้ เชี่ยวชาญ ด้าน การ พิมพ์ ใน ท้อง ถิ่น สามารถ ช่วย ให้ เข้า กับ ขนาด ของ เอกสาร ที่ ส่ง มา.",
+    "Please note:": "โปรดจํา:",
+    "No physical artwork or frame is shipped. Available file formats, resolution, proportions, and usage terms are those stated in the product download and included license.": "ไม่มีการส่งงานศิลป์หรือเฟรมทางกายภาพ รูปแบบแฟ้มที่มีอยู่, ความละเอียด, สัดส่วน, และการใช้งาน เป็นที่ระบุไว้ในการดาวน์โหลดผลิตภัณฑ์ และรวมใบอนุญาต",
+    "Let your space tell a story.": "ให้พื้นที่ของคุณบอกเล่าเรื่องราว",
+    "Choose art that reflects what you value—and let its meaning live with you.": "เลือกศิลปะที่สะท้อนถึงคุณค่าของคุณ และให้ความหมายของมันอยู่กับคุณ",
+    "Get": "รับ",
+    "Art with a Soul. A Message Without Borders.": "ศิลปะกับวิญญาณ ข้อความไม่มีขอบ",
+    "Digital artwork · Instant download through Gumroad": "Digital Barty ดาวน์โหลดเมื่อเร็ว ๆ นี้ผ่าน Gamroad",
+    "Privacy": "พารามิเตอร์",
+    "Terms": "จํานวนงวด",
+    "Contact": "ติดต่อ",
+    "Gumroad store ↗": "ร้าน กัมโรด",
+    "· Digital download": "การดาวน์โหลดแบบ SHDS"
+  },
+  "_landing_ui_source_hash": "3b9e29f0ecc77493c840c0ece80ecca081ce5b8a0e4e9d74af9958541e56ac69",
+  "_landing_ui_translation_status": "machine-generated-unreviewed",
+  "product_detail_labels": {
+    "files_included": "รวมแฟ้มด้วย",
+    "product_type": "ประเภทโปรดักต์",
+    "delivery": "ส่งแล้ว",
+    "physical_item": "รายการทางกายภาพ",
+    "printing": "การพิมพ์",
+    "usage": "วิธีใช้",
+    "bundle_item_count": "รายการในกลุ่ม"
+  },
+  "_product_detail_labels_source_hash": "0751ebcb1e490422c7f3fb9f8ff424d0a5ccfe564d4451fb820761647d3a7cc1",
+  "_product_detail_labels_translation_status": "machine-generated-unreviewed",
+  "landing_pages": {
+    "oubirh": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "การ เก็บ รวบ รวม งาน ศิลปะ ที่ ประสาน กัน สําหรับ บ้าน, สํานักงาน, โรงแรม, ห้อง ระเบียง, บริเวณ งาน รับ แขก, และ ห้อง ภาย ใน ที่ ทํา งาน.",
+      "Get THE ART OF ELEGANCE & SERENITY ↗": "รับ ZXQOGTITLE0QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "a4271157610f18193dcbae56ed70198bd93ec2a563f439aaf553c65e237b9a1e",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "hqpird": {
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "การ เก็บ รวบ รวม งาน ศิลปะ ที่ ประสาน กัน สําหรับ บ้าน, สํานักงาน, โรงแรม, ห้อง ระเบียง, บริเวณ งาน รับ แขก, และ ห้อง ภาย ใน ที่ ทํา งาน.",
+      "Get EGYPTIAN & COPTIC HERITAGE ↗": "รับ ZXQOGTITSE1QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "d93af550dd4e18f09f0f54bd953adb7ff38beda918121c5d2dd22126849afcf7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wdtvt": {
+      "A BOND BEYOND WORDS  The Beauty of Unconditional Love": "ความ งาม แห่ง ความ รัก แบบ ไม่ มี เงื่อนไข",
+      "A coordinated art collection for homes, offices, hotels, galleries, reception areas, and curated interiors.": "การ เก็บ รวบ รวม งาน ศิลปะ ที่ ประสาน กัน สําหรับ บ้าน, สํานักงาน, โรงแรม, ห้อง ระเบียง, บริเวณ งาน รับ แขก, และ ห้อง ภาย ใน ที่ ทํา งาน.",
+      "Get THE HUMANITY LEGACY ↗": "รับ ZXQOGTITITIME2QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "79f816c9d15c094be73e30361dc386eabcce5e32f3c810443a87e8ab2aeae7aa",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mxrljy": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "สําเนียงเรียบเรียงสําหรับห้องรับแขก ห้องนอน ออฟฟิศ โรงแรมร้านบุรีนิก พื้นที่มีสุขภาพดี และพิจารณาภายใน",
+      "Get THE ART OF STILLNESS ↗": "รับ ZXQOGTITSE3QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "af0529877777b9e5decdb722dd9ff8a95bb8dcdbc082a7099152901f95dc4645",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gusqyc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "สําเนียงเรียบเรียงสําหรับห้องรับแขก ห้องนอน ออฟฟิศ โรงแรมร้านบุรีนิก พื้นที่มีสุขภาพดี และพิจารณาภายใน",
+      "Get GEOMETRY OF ELEGANCE ↗": "รับ ZXQOGTITSE4QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "10150b914ce25e247d2072c23f5fa1c0ed656ff41075281ad992809c4509dce4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aenwi": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "คํา กล่าว ที่ แสดง ถึง ความ กรุณา ต่อ บ้าน, โรง เรียน, สํานักงาน, สถาน ที่ พัก ผ่อน หย่อน ใจ, และ อาคาร ภาย ใน ที่ มี รูป แบบ เป็น จินตนาการ.",
+      "Get CITIES OF TOMORROW   Where Innovation Meets Imagination ↗": "รับ ZXQOGTITL5QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "305720b15d718d875d441024dafcadbd858046b196eb4370d68b9940c7a8b1f7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gynmhv": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "คํา กล่าว ที่ แสดง ถึง ความ กรุณา ต่อ บ้าน, โรง เรียน, สํานักงาน, สถาน ที่ พัก ผ่อน หย่อน ใจ, และ อาคาร ภาย ใน ที่ มี รูป แบบ เป็น จินตนาการ.",
+      "Get NATURE'S MAJESTY   The Timeless Beauty of Nature ↗": "รับ ZXQOGTITSE 6QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "db3a2e189d7ef9525d8de3b7e907046d9653d2d1f2de70a2e83575890b05bf94",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jrsgce": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "สําเนียงเรียบเรียงสําหรับห้องรับแขก ห้องนอน ออฟฟิศ โรงแรมร้านบุรีนิก พื้นที่มีสุขภาพดี และพิจารณาภายใน",
+      "Get MEDITERRANEAN DREAMS ↗": "รับ ZXQOGTITSE7QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "094b720a7fbe1c1418ccc6e0c733351426fc65eecddbe7bac1804b2bf6298bc6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ukxrmq": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "สําเนียงเรียบเรียงสําหรับห้องรับแขก ห้องนอน ออฟฟิศ โรงแรมร้านบุรีนิก พื้นที่มีสุขภาพดี และพิจารณาภายใน",
+      "Get SILENT HORIZONS . ↗": "รับ ZXQOGTITLE 8QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "324b3ea45315fb99dd134592762293a51b9ec8af0ad8bc693645cb93e256ffac",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "yhkokf": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "สําเนียงเรียบเรียงสําหรับห้องรับแขก ห้องนอน ออฟฟิศ โรงแรมร้านบุรีนิก พื้นที่มีสุขภาพดี และพิจารณาภายใน",
+      "Get GOLDEN FLOW   The Art of Timeless Luxury ↗": "รับ ZXQOGTITLE 9QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "73868cd36ba6c9c9305b4a73fe10b18170cff050ff6db0a021abf0224d3f4a2b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "nxkxyq": {
+      "An expressive statement for homes, creative studios, offices, hospitality spaces, and interiors shaped by imagination.": "คํา กล่าว ที่ แสดง ถึง ความ กรุณา ต่อ บ้าน, โรง เรียน, สํานักงาน, สถาน ที่ พัก ผ่อน หย่อน ใจ, และ อาคาร ภาย ใน ที่ มี รูป แบบ เป็น จินตนาการ.",
+      "Get BEYOND THE UNIVERSE 🌏 ↗": "รับ ZXQOGTITSE10QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "b579fa7c82abae607feb55ad6617fc0ab7e54fc9dbc5d5c0185433005410fb07",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "mzlqxg": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "จุดโฟกัสที่มีความหมายสําหรับบ้าน สํานักงาน พื้นที่การศึกษา ระเบียง และสถานที่ที่เรื่องราวของมนุษย์มีความสําคัญ",
+      "Get A Shelter of Love ♥ ↗": "รับ ZXQOGTITITSE11QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "85232912fcb928c71ae566128dbe3c0af2d7120597da839da44761c5f2ea5244",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "etqsav": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "สําเนียงเรียบเรียงสําหรับห้องรับแขก ห้องนอน ออฟฟิศ โรงแรมร้านบุรีนิก พื้นที่มีสุขภาพดี และพิจารณาภายใน",
+      "Get The Celestial Garden – A Dance Beneath the Moon ↗": "รับ ZXQOGTITSE 12QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "ac02151b1f4aa25cac8c6b64a67330005de6b93a125c8199fe164a7b5e40cf77",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "vwrllor": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "สําเนียงเรียบเรียงสําหรับห้องรับแขก ห้องนอน ออฟฟิศ โรงแรมร้านบุรีนิก พื้นที่มีสุขภาพดี และพิจารณาภายใน",
+      "Get THE GOLDEN VEIL OF SERENITY ↗": "รับ ZXQOGTITSE 13QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "4a07c568a1148b892f2330d4c28ebe92b0a75d16b9a4622b372e9fa49070c9f1",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "gkwadk": {
+      "One planet. One responsibility. Countless possibilities.": "ดาวเคราะห์ดวงเดียว ความรับผิดชอบเดียว ความเป็นไปได้นับไม่ถ้วน",
+      "The story behind the image": "เรื่องราวเบื้องหลังภาพ",
+      "More than decoration. A human story.": "มากกว่าการตกแต่ง เรื่องของมนุษย์",
+      "The hand represents our capacity to act. The seedling stands for fragile new life; the butterflies suggest transformation. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by what we choose to protect today.": "มือเป็นตัวแทนของความสามารถของเราที่จะทําหน้าที่ ต้น กล้า นี้ หมาย ถึง ชีวิต ใหม่ ที่ เปราะ บาง. ความ แตก ต่าง ระหว่าง แผ่น ดิน ที่ ได้ รับ ความ เสีย หาย และ คํา สัญญา เรื่อง การ บูรณะ ฟื้นฟู เตือน เรา ว่า พรุ่ง นี้ ได้ รับ อิทธิพล จาก สิ่ง ที่ เรา เลือก จะ ปก ป้อง ใน ทุก วัน นี้.",
+      "Where the artwork belongs": "ที่ๆ งานศิลปะควรอยู่",
+      "Created to live with meaning": "ถูกสร้างให้มีชีวิตที่มีความหมาย",
+      "A striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces.": "คํา แถลง ที่ น่า ประทับ ใจ สําหรับ บ้าน, สํานักงาน, โรง เรียน, องค์กร ด้าน สิ่ง แวด ล้อม, เขต ต้อนรับ, และ พื้น ที่ ใน การ สร้าง สรรค์.",
+      "A distinctive focal point for considered interiors": "จุดโฟกัสเฉพาะสําหรับพิจารณาภายใน",
+      "A conversation piece with a message beyond trends": "ชิ้นส่วนการสนทนาที่มีข้อความเกินแนวโน้ม",
+      "A thoughtful digital art choice for personal spaces": "ตัวเลือกด้านศิลปะดิจิทัลสําหรับพื้นที่ส่วนตัว",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "นี่เป็นผลิตภัณฑ์ดิจิตอล จะไม่มีการส่งการพิมพ์หรือเฟรมภาพ หลังจากซื้อแล้ว ให้ดาวน์โหลดไฟล์ที่ให้มาทางกัมโรด ทบทวนข้อกําหนดของแฟ้ม, คู่มือการพิมพ์, และใบอนุญาตที่ใช้ส่วนตัวก่อนที่จะพิมพ์ เลือกขนาดการพิมพ์และบริการที่เหมาะสมกับแฟ้มที่จัดหามาให้",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "เลือกงานศิลปะที่สะท้อนถึงคุณค่าของคุณ และให้ความหมายของมันอยู่กับคุณ",
+      "Get The Hand That Holds Tomorrow ↗": "รับ มือ ที่ จะ ถือ ใน วัน พรุ่ง นี้ ○",
+      "\\n": "n",
+      "_source_hash": "99a20743d95a5054feaa5c1ef133d7c368583f8f99bb3edac5becf083d40484b",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rglfun": {
+      "Different faces. One humanity. An eternal connection.": "หน้าต่างกัน หนึ่งมนุษยชาติ ความสัมพันธ์ตลอดกาล",
+      "The story behind the image": "เรื่องราวเบื้องหลังภาพ",
+      "More than decoration. A human story.": "มากกว่าการตกแต่ง เรื่องของมนุษย์",
+      "Ivory and obsidian preserve the uniqueness of each face. The golden thread symbolizes shared emotions, hopes, and the desire to be treated with dignity. Unity does not require sameness; it begins when we recognize one another's humanity.": "อิวอรี่ และ ออบซิเดียน รักษา หน้า แต่ ละ หน้า ไม่ เหมือน ใคร. เส้น ด้าย ทองคํา เป็น สัญลักษณ์ แสดง ถึง ความ รู้สึก, ความ หวัง, และ ความ ปรารถนา ที่ จะ ได้ รับ การ ปฏิบัติ อย่าง มี ศักดิ์ศรี. เอกภาพไม่ได้ต้องการความเหมือนกัน มันเริ่มต้นเมื่อเราตระหนักถึง ความเป็นมนุษย์ของกันและกัน",
+      "Where the artwork belongs": "ที่ๆ งานศิลปะควรอยู่",
+      "Created to live with meaning": "ถูกสร้างให้มีชีวิตที่มีความหมาย",
+      "A refined statement for contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and human connection.": "คํา แถลง ที่ ชัดเจน สําหรับ บ้าน สมัย เดียว กัน, สํานักงาน บริหาร, ห้อง ระเบียง, ห้อง ต้อนรับ, และ ห้อง ภาย ใน ซึ่ง มี คุณค่า ต่อ การ สนทนา ทาง วัฒนธรรม และ ความ สัมพันธ์ ระหว่าง มนุษย์.",
+      "A distinctive focal point for considered interiors": "จุดโฟกัสเฉพาะสําหรับพิจารณาภายใน",
+      "A conversation piece with a message beyond trends": "ชิ้นส่วนการสนทนาที่มีข้อความเกินแนวโน้ม",
+      "A thoughtful digital art choice for personal spaces": "ตัวเลือกด้านศิลปะดิจิทัลสําหรับพื้นที่ส่วนตัว",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "นี่เป็นผลิตภัณฑ์ดิจิตอล จะไม่มีการส่งการพิมพ์หรือเฟรมภาพ หลังจากซื้อแล้ว ให้ดาวน์โหลดไฟล์ที่ให้มาทางกัมโรด ทบทวนข้อกําหนดของแฟ้ม, คู่มือการพิมพ์, และใบอนุญาตที่ใช้ส่วนตัวก่อนที่จะพิมพ์ เลือกขนาดการพิมพ์และบริการที่เหมาะสมกับแฟ้มที่จัดหามาให้",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "เลือกงานศิลปะที่สะท้อนถึงคุณค่าของคุณ และให้ความหมายของมันอยู่กับคุณ",
+      "Get The Golden Thread of Humanity ↗": "เอา ผ้า ฝ้าย สี ทอง แห่ง ความ เป็น มนุษย์ ○",
+      "\\n": "n",
+      "_source_hash": "fec045be99afbf53f92282d75cf3a530b062c7afe3b81c1300a0dfbb7e5b9258",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cotnkm": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "จุดโฟกัสที่มีความหมายสําหรับบ้าน สํานักงาน พื้นที่การศึกษา ระเบียง และสถานที่ที่เรื่องราวของมนุษย์มีความสําคัญ",
+      "Get ROOTS OF TENDERNESS ♥ ↗": "รับ ZXQOGTITSE16QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "8699eee716c201d974631991fca5a4a3ac04cf0438dfb8c3f52f4a09556995e7",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kaztbw": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "สําเนียงเรียบเรียงสําหรับห้องรับแขก ห้องนอน ออฟฟิศ โรงแรมร้านบุรีนิก พื้นที่มีสุขภาพดี และพิจารณาภายใน",
+      "Get AURELLE 👑 ↗": "รับ ZXQOGTITSE 17QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "c0e7cec2c5bb33e140b5c3eeb79fbf3f845682291413b933af55cd2b315dfae6",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "cuitvq": {
+      "The beauty of stillness. The strength within.": "ความงามของความนิ่ง ความแข็งแกร่งภายใน",
+      "The story behind the image": "เรื่องราวเบื้องหลังภาพ",
+      "More than decoration. A human story.": "มากกว่าการตกแต่ง เรื่องของมนุษย์",
+      "A composed human figure becomes a symbol of self-awareness. Golden light suggests wholeness; botanical details hint at renewal. The work reminds us that strength need not be loud—and that calm can be a form of beauty.": "รูปที่มนุษย์แต่งขึ้น กลายเป็นสัญลักษณ์ของความตระหนักในตัวเอง แสง ทอง บ่ง ชี้ ถึง ความ ครบ ถ้วน; ราย ละเอียด ทาง พฤกษศาสตร์ บ่ง ชี้ ถึง การ สร้าง ใหม่. งานนี้เตือนเราว่า ความแข็งแกร่งไม่จําเป็นต้องดัง -- และความสงบสามารถเป็นความงามได้",
+      "Where the artwork belongs": "ที่ๆ งานศิลปะควรอยู่",
+      "Created to live with meaning": "ถูกสร้างให้มีชีวิตที่มีความหมาย",
+      "An elegant focal point for living rooms, private offices, reception areas, hotels, wellness spaces, and contemporary interiors.": "เป็นจุดโฟกัสที่สวยงามสําหรับห้องนั่งเล่น สํานักงานเอกชน บริเวณบริการ, โรงแรม, ที่จอดรถ, และภายในร่วมสมัย",
+      "A distinctive focal point for considered interiors": "จุดโฟกัสเฉพาะสําหรับพิจารณาภายใน",
+      "A conversation piece with a message beyond trends": "ชิ้นส่วนการสนทนาที่มีข้อความเกินแนวโน้ม",
+      "A thoughtful digital art choice for personal spaces": "ตัวเลือกด้านศิลปะดิจิทัลสําหรับพื้นที่ส่วนตัว",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "นี่เป็นผลิตภัณฑ์ดิจิตอล จะไม่มีการส่งการพิมพ์หรือเฟรมภาพ หลังจากซื้อแล้ว ให้ดาวน์โหลดไฟล์ที่ให้มาทางกัมโรด ทบทวนข้อกําหนดของแฟ้ม, คู่มือการพิมพ์, และใบอนุญาตที่ใช้ส่วนตัวก่อนที่จะพิมพ์ เลือกขนาดการพิมพ์และบริการที่เหมาะสมกับแฟ้มที่จัดหามาให้",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "เลือกงานศิลปะที่สะท้อนถึงคุณค่าของคุณ และให้ความหมายของมันอยู่กับคุณ",
+      "Get The Art of Inner Peace ↗": "หา ศิลปะ แห่ง สันติ สุข",
+      "\\n": "n",
+      "_source_hash": "4edb9e71484d109e30a2f8a82233e6144c1ecf5aace69014536817fa8b783f80",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "rabhc": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "สําเนียงเรียบเรียงสําหรับห้องรับแขก ห้องนอน ออฟฟิศ โรงแรมร้านบุรีนิก พื้นที่มีสุขภาพดี และพิจารณาภายใน",
+      "Get SERENITY 🤍 ↗": "รับ ZXQOGTITLE19QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "adbd6b8e7ffafa07cb0298d2ccfa742fe82a10fdd224113c8c1ddf26f58ba496",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "ycltf": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "จุดโฟกัสที่มีความหมายสําหรับบ้าน สํานักงาน พื้นที่การศึกษา ระเบียง และสถานที่ที่เรื่องราวของมนุษย์มีความสําคัญ",
+      "Get THE TREE THAT REFUSED TO DIE ↗": "รับ ZXQOGTITSE20QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "aae693da532026f0f447fdbfb620b165f3e7b0a3ae03ea4b7f1f6c5629a40540",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bctcdz": {
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "จุดโฟกัสที่มีความหมายสําหรับบ้าน สํานักงาน พื้นที่การศึกษา ระเบียง และสถานที่ที่เรื่องราวของมนุษย์มีความสําคัญ",
+      "Get THE LIGHT WE LEAVE EACH OTHER 🕯 ↗": "รับ ZXQHOGTITSE21QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "fc4f6e2240aeaed291a44d9c4ae330a20bf9b76da766d6953916569b3c65cc46",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "msuzc": {
+      "The future is built by many hands.": "อนาคตสร้างด้วยมือหลายมือ",
+      "The story behind the image": "เรื่องราวเบื้องหลังภาพ",
+      "More than decoration. A human story.": "มากกว่าการตกแต่ง เรื่องของมนุษย์",
+      "Each hand represents a life, a kindness, a sacrifice, or an opportunity offered. The child stands for every young person whose dreams need encouragement and support. Together, the hands become a staircase—and hope becomes something we build for one another.": "แต่ ละ มือ หมาย ถึง ชีวิต, ความ กรุณา, การ เสีย สละ, หรือ โอกาส ที่ จะ ได้ รับ. เด็กคนนั้นทําเพื่อเด็กทุกคน ที่ความฝันต้องการการให้กําลังใจ ร่วมกันมือกลายเป็นขั้นบันได -- และความหวังจะกลายเป็นสิ่งที่เราสร้างสําหรับอีกคนหนึ่ง",
+      "Where the artwork belongs": "ที่ๆ งานศิลปะควรอยู่",
+      "Created to live with meaning": "ถูกสร้างให้มีชีวิตที่มีความหมาย",
+      "A meaningful statement for family homes, schools, libraries, offices, studios, and spaces that celebrate education and human connection.": "คํา กล่าว ที่ มี ความ หมาย สําหรับ ครอบครัว, โรง เรียน, ห้อง สมุด, สํานักงาน, โรง เรียน, และ พื้น ที่ ซึ่ง ฉลอง การ ศึกษา และ ความ สัมพันธ์ ระหว่าง มนุษย์.",
+      "A distinctive focal point for considered interiors": "จุดโฟกัสเฉพาะสําหรับพิจารณาภายใน",
+      "A conversation piece with a message beyond trends": "ชิ้นส่วนการสนทนาที่มีข้อความเกินแนวโน้ม",
+      "A thoughtful digital art choice for personal spaces": "ตัวเลือกด้านศิลปะดิจิทัลสําหรับพื้นที่ส่วนตัว",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "นี่เป็นผลิตภัณฑ์ดิจิตอล จะไม่มีการส่งการพิมพ์หรือเฟรมภาพ หลังจากซื้อแล้ว ให้ดาวน์โหลดไฟล์ที่ให้มาทางกัมโรด ทบทวนข้อกําหนดของแฟ้ม, คู่มือการพิมพ์, และใบอนุญาตที่ใช้ส่วนตัวก่อนที่จะพิมพ์ เลือกขนาดการพิมพ์และบริการที่เหมาะสมกับแฟ้มที่จัดหามาให้",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "เลือกงานศิลปะที่สะท้อนถึงคุณค่าของคุณ และให้ความหมายของมันอยู่กับคุณ",
+      "Get A Stairway of Hands ↗": "รับบันไดของมือ ○",
+      "\\n": "n",
+      "_source_hash": "ef85605b076bf6a25556d0fce560f46685d6de0b1a2a9fe358f6095cbd354786",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "tzlsv": {
+      "What we protect today becomes their tomorrow.": "สิ่งที่เราปกป้องในวันนี้ กลายเป็นวันพรุ่งนี้ของพวกเขา",
+      "The story behind the image": "เรื่องราวเบื้องหลังภาพ",
+      "More than decoration. A human story.": "มากกว่าการตกแต่ง เรื่องของมนุษย์",
+      "The older generation carries experience; the younger carries possibility. Between them lies a promise: to preserve what sustains life and pass forward a future worthy of those who inherit it. This is love expressed as responsibility.": "ผู้ สูง อายุ มี ประสบการณ์; คน ที่ อ่อน วัย กว่า มี ความ เป็น ไป ได้. และในระหว่างพวกเขานั้นมีสัญญาหนึ่ง ซึ่งจะธํารงไว้ซึ่งชีวิต และขณะเดียวกันเขาก็เป็นผู้สืบมรดกมัน นี่ คือ การ แสดง ความ รัก ใน ความ รับ ผิด ชอบ.",
+      "Where the artwork belongs": "ที่ๆ งานศิลปะควรอยู่",
+      "Created to live with meaning": "ถูกสร้างให้มีชีวิตที่มีความหมาย",
+      "A thoughtful piece for family homes, studies, offices, educational spaces, and anyone who values memory, family, and the future.": "ผลงานชิ้นเอกของครอบครัว การศึกษา สํานักงาน พื้นที่การศึกษา และใครก็ตามที่เห็นค่าความทรงจํา ครอบครัว และอนาคต",
+      "A distinctive focal point for considered interiors": "จุดโฟกัสเฉพาะสําหรับพิจารณาภายใน",
+      "A conversation piece with a message beyond trends": "ชิ้นส่วนการสนทนาที่มีข้อความเกินแนวโน้ม",
+      "A thoughtful digital art choice for personal spaces": "ตัวเลือกด้านศิลปะดิจิทัลสําหรับพื้นที่ส่วนตัว",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "นี่เป็นผลิตภัณฑ์ดิจิตอล จะไม่มีการส่งการพิมพ์หรือเฟรมภาพ หลังจากซื้อแล้ว ให้ดาวน์โหลดไฟล์ที่ให้มาทางกัมโรด ทบทวนข้อกําหนดของแฟ้ม, คู่มือการพิมพ์, และใบอนุญาตที่ใช้ส่วนตัวก่อนที่จะพิมพ์ เลือกขนาดการพิมพ์และบริการที่เหมาะสมกับแฟ้มที่จัดหามาให้",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "เลือกงานศิลปะที่สะท้อนถึงคุณค่าของคุณ และให้ความหมายของมันอยู่กับคุณ",
+      "Get The Legacy of Generations ↗": "รับ มรดก จาก คน รุ่น ต่อ ๆ ไป",
+      "\\n": "n",
+      "_source_hash": "ef95ee02c12fda456fbd2c4e868ce56ddd9cb68e240ac8921fecdb4ec5078bf4",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "bgqxwm": {
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "สําเนียงเรียบเรียงสําหรับห้องรับแขก ห้องนอน ออฟฟิศ โรงแรมร้านบุรีนิก พื้นที่มีสุขภาพดี และพิจารณาภายใน",
+      "Get The Mediterranean Muse ↗": "รับ ZXQOGTITY24QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "5f6acbec46a749a855cefba9bb6573b004ff22886bbbe0347a46f1dab6c50870",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "aedllm": {
+      "One Earth. One Humanity. One Future.": "หนึ่งโลก มนุษย์หนึ่งคน อนาคตเดียว",
+      "The story behind the image": "เรื่องราวเบื้องหลังภาพ",
+      "More than decoration. A human story.": "มากกว่าการตกแต่ง เรื่องของมนุษย์",
+      "The hands surrounding the globe represent people of every age and background. The fractured landscape speaks of what is at risk; the green horizon and golden light point toward what we can still protect. The message is not despair. It is shared responsibility, made visible.": "มือ ที่ อยู่ รอบ โลก หมาย ถึง ผู้ คน ทุก วัย และ ภูมิ หลัง. ภูมิประเทศที่แตกร้าวพูดถึงสิ่งที่มีความเสี่ยง ขอบฟ้าสีเขียวและจุดแสงสีทอง ข่าวสาร ไม่ ใช่ ความ สิ้น หวัง. มันเป็นความรับผิดชอบร่วมกัน ทําให้มองเห็นได้",
+      "Where the artwork belongs": "ที่ๆ งานศิลปะควรอยู่",
+      "Created to live with meaning": "ถูกสร้างให้มีชีวิตที่มีความหมาย",
+      "A thought-provoking focal point for homes, offices, educational spaces, galleries, and environments devoted to sustainability.": "จุดโฟกัสทางความคิด สําหรับบ้าน สํานักงาน พื้นที่การศึกษา ระเบียง และสิ่งแวดล้อม ที่อุทิศให้กับความยั่งยืน",
+      "A distinctive focal point for considered interiors": "จุดโฟกัสเฉพาะสําหรับพิจารณาภายใน",
+      "A conversation piece with a message beyond trends": "ชิ้นส่วนการสนทนาที่มีข้อความเกินแนวโน้ม",
+      "A thoughtful digital art choice for personal spaces": "ตัวเลือกด้านศิลปะดิจิทัลสําหรับพื้นที่ส่วนตัว",
+      "This is a digital product. No physical print or frame will be shipped. After purchase, download the files supplied on Gumroad. Review the included file specifications, printing guide, and personal-use license before printing. Choose a print size and service appropriate to the supplied files.": "นี่เป็นผลิตภัณฑ์ดิจิตอล จะไม่มีการส่งการพิมพ์หรือเฟรมภาพ หลังจากซื้อแล้ว ให้ดาวน์โหลดไฟล์ที่ให้มาทางกัมโรด ทบทวนข้อกําหนดของแฟ้ม, คู่มือการพิมพ์, และใบอนุญาตที่ใช้ส่วนตัวก่อนที่จะพิมพ์ เลือกขนาดการพิมพ์และบริการที่เหมาะสมกับแฟ้มที่จัดหามาให้",
+      "Choose an artwork that reflects what you value—and let its meaning live with you.": "เลือกงานศิลปะที่สะท้อนถึงคุณค่าของคุณ และให้ความหมายของมันอยู่กับคุณ",
+      "Get Last Cry of Earth ↗": "รับ เสียง ร้อง สุด ท้าย ของ โลก ○",
+      "\\n": "n",
+      "_source_hash": "fbf3722099d1ef940be3f79a6b7949aba1e59bc33f8c4e0a1f91caa4214c6a08",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "smuewa": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "นอก เหนือ จาก บ้าน, การ ศึกษา ส่วน ตัว, สํานักงาน, พิพิธภัณฑ์, โรงแรม, และ พื้น ที่ ทาง วัฒนธรรม.",
+      "Get THE GOLDEN GAZE 👁 ↗": "รับ ZXQOGTITSE26QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "13f077ca561a864d2fca54b3f7f0685c5c7115b6c93073f2c3cfbadad5b95390",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jzjbrg": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "นอก เหนือ จาก บ้าน, การ ศึกษา ส่วน ตัว, สํานักงาน, พิพิธภัณฑ์, โรงแรม, และ พื้น ที่ ทาง วัฒนธรรม.",
+      "Get The Queen Of The Nile 👑 ↗": "รับ ZXQOGTITSE 27QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "9a0527d43c46532d4270d3827e76cf5542c534af84456bcf8928db331a5e5435",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "csyqhm": {
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "นอก เหนือ จาก บ้าน, การ ศึกษา ส่วน ตัว, สํานักงาน, พิพิธภัณฑ์, โรงแรม, และ พื้น ที่ ทาง วัฒนธรรม.",
+      "Get The Coptic Soul of Egypt ↗": "รับ ZXQOGTITSE28QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "2ee74e1d3755ccf89a56ffd2920a963171b5e6d09a474874b4c2a5f265707bcb",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "jvffaq": {
+      "THE NILE'S ETERNAL GRACE A celebration of Egypt's timeless beauty, where the quiet dignity of a regal presence meets the eternal rhythm of the Nile. Golden...": "ZXQOGTITSE29QXZ การเฉลิมฉลองความงามที่ไม่มีวันสิ้นสุดของอียิปต์ ที่ซึ่งศักดิ์ศรีอันเงียบงันของการดํารงอยู่แบบรีพับลิกัน ตรงกับจังหวะนิรันดร์ของแม่น้ําไนล์ ทอง...",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "นอก เหนือ จาก บ้าน, การ ศึกษา ส่วน ตัว, สํานักงาน, พิพิธภัณฑ์, โรงแรม, และ พื้น ที่ ทาง วัฒนธรรม.",
+      "Get THE NILE'S ETERNAL GRACE ↗": "รับ ZXQOGTITSE29QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "b80e7f9c793dc7787f45753cd76cf6e9c300e570f1b5808778dec7a38e9b6b7c",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "kjclzu": {
+      "A BOND BEYOND WORDS The Beauty of Unconditional Love Some Friendships Are Felt by the Heart, Not Explained by Words. Celebrate the extraordinary connection...": "ZXQOGTITITLE30QXZ มิตรภาพบางอย่างถูกสัมผัสจากหัวใจ ไม่ได้อธิบายด้วยคําพูด เฉลิมฉลองการเชื่อมต่อที่พิเศษ",
+      "A meaningful focal point for homes, offices, educational spaces, galleries, and places where human stories matter.": "จุดโฟกัสที่มีความหมายสําหรับบ้าน สํานักงาน พื้นที่การศึกษา ระเบียง และสถานที่ที่เรื่องราวของมนุษย์มีความสําคัญ",
+      "Get A BOND BEYOND WORDS The Beauty of Unconditional Love ↗": "รับ ZXQOGTITLE30QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "30bbb86b76b7464b270811b38348a5df7de4c7b6f550f36cd30ad5d23c33b2ef",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "xvccaj": {
+      "GLOBAL ART & IMAGINATION — SEVEN ARTWORKS, LIMITLESS WORLDS Travel beyond the familiar through a collection of seven digital artworks inspired by cosmic...": "ZXQOGTITITSE31QXZ — Sveren ARTWORKS, LIMIST Worlds เดินทางเกินความคุ้นเคย ผ่านคอลเลกชันของเจ็ด งานศิลปะดิจิตอล แรงบันดาลใจจากจักรวาล ...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "สําเนียงเรียบเรียงสําหรับห้องรับแขก ห้องนอน ออฟฟิศ โรงแรมร้านบุรีนิก พื้นที่มีสุขภาพดี และพิจารณาภายใน",
+      "Get GLOBAL ART & IMAGINATION ↗": "รับ ZXQOGTITSE31QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "6b30c44f0e43ad744dc4c12b3d322868e8498b018411d3ceef0b2dfd97181d37",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "wjxgxb": {
+      "ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization Bring the enduring grandeur of ancient Egypt into your surroundings with Eternal Egypt, a...": "ZXQOGTITLE32QXZ นําความยิ่งใหญ่อันยาวนานของอียิปต์โบราณ มาสู่สภาพแวดล้อมของเจ้ากับอียิปต์นิรันดร์",
+      "A distinctive addition to homes, private studies, offices, galleries, museums, hotels, and cultural spaces.": "นอก เหนือ จาก บ้าน, การ ศึกษา ส่วน ตัว, สํานักงาน, พิพิธภัณฑ์, โรงแรม, และ พื้น ที่ ทาง วัฒนธรรม.",
+      "Get ETERNAL EGYPT The Timeless Spirit of an Ancient Civilization ↗": "รับ ZXQOGTITLE32QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "489be3fb2a6ed147ba8fbde744a41722605736cea460f82eb00b29fe62a95b48",
+      "_review_status": "machine-generated-unreviewed"
+    },
+    "fgdpqp": {
+      "Inside an imagined workshop, time is not measured but sculpted. THE CLOCKMAKER'S DREAM transforms gears, celestial mechanisms, and impossible instruments...": "ภาย ใน โรง งาน ที่ คิด ขึ้น มา นั้น เวลา ไม่ ได้ วัด แต่ วัด ด้วย อุปกรณ์. ZXQOGTITTITLY33QXZ เปลี่ยนเกียร์, กลไกสวรรค์ และเครื่องมือที่เป็นไปไม่ได้...",
+      "A refined accent for living rooms, bedrooms, offices, boutique hotels, wellness spaces, and considered interiors.": "สําเนียงเรียบเรียงสําหรับห้องรับแขก ห้องนอน ออฟฟิศ โรงแรมร้านบุรีนิก พื้นที่มีสุขภาพดี และพิจารณาภายใน",
+      "Get THE CLOCKMAKER'S DREAM ↗": "รับ ZXQOGTITSE33QXZ ↗",
+      "\\n": "n",
+      "_source_hash": "d3b1dfed624eea1d5f0be3cfe337faa07b80b5f4f3da2632393cd565e6a9671c",
+      "_review_status": "machine-generated-unreviewed"
+    }
+  }
 }
