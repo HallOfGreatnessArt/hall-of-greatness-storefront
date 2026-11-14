@@ -127,7 +127,7 @@ def main():
                 card = page.locator(selector).first
                 if card.count():
                     destination = card.get_attribute("data-store-url")
-                    with page.expect_popup() as popup_info:
+                    with context.expect_page() as popup_info:
                         card.locator(".art-mockup").click()
                     popup = popup_info.value
                     record(popup.url == destination,
