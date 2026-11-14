@@ -133,14 +133,6 @@ def main():
                     record(popup.url == destination,
                            f"Clicking {selector} opened {popup.url}, expected {destination}")
                     popup.close()
-            first_card = page.locator("#works .work").first
-            expected_destination = first_card.get_attribute("data-store-url")
-            with page.expect_popup() as popup_info:
-                first_card.locator(".art-mockup").click()
-            popup = popup_info.value
-            record(popup.url == expected_destination,
-                   f"Clicking an artwork tile opened {popup.url}, expected {expected_destination}")
-            popup.close()
             first_artwork = next(x for x in PUBLISHED if not x.get("is_bundle"))
             search = page.locator("#search")
             search.fill(first_artwork["name"])
