@@ -387,21 +387,74 @@ function enableCardNavigation(){
 }
 enableCardNavigation();
 
+const GUMROAD_PRODUCT_ORIGIN="https://alshayebemad.gumroad.com";
+const GUMROAD_COVER_ORIGIN="https://public-files.gumroad.com";
+function validProductUrl(value){
+ try{const u=new URL(value);return u.protocol==="https:"&&u.origin===GUMROAD_PRODUCT_ORIGIN&&/^\\/l\\/[A-Za-z0-9_-]+\\/?$/.test(u.pathname);}
+ catch(_){return false;}
+}
+function validCoverUrl(value){
+ if(!value)return true;
+ try{const u=new URL(value);return u.protocol==="https:"&&u.origin===GUMROAD_COVER_ORIGIN;}
+ catch(_){return false;}
+}
+function validateCatalog(data){
+ if(!data||!Array.isArray(data.products))throw new Error("The catalogue response has no products array.");
+ const published=data.products.filter(p=>p&&p.published===true);
+ if(!published.length)throw new Error("The catalogue contains no published products.");
+ const permalinks=new Set(),slugs=new Set();
+ for(const p of published){
+  if(!p.name||!p.landing_slug||!validProductUrl(p.url))throw new Error("A published product has missing details or an invalid Gumroad URL.");
+  if(!Number.isFinite(Number(p.price_usd))||Number(p.price_usd)<0)throw new Error("A published product has an invalid display price.");
+  if(!validCoverUrl(p.cover_url))throw new Error("A published product has an unsafe or invalid cover URL.");
+  if(permalinks.has(p.permalink)||slugs.has(p.landing_slug))throw new Error("The catalogue contains duplicate product identifiers.");
+  permalinks.add(p.permalink);slugs.add(p.landing_slug);
+ }
+ return published;
+}
+async function loadCatalog(){
+ let lastError;
+ for(let attempt=1;attempt<=2;attempt++){
+  const controller=new AbortController();
+  const timeout=setTimeout(()=>controller.abort(),12000);
+  try{
+   const response=await fetch("./catalog-data.json?catalog_check="+Date.now(),{cache:"no-store",signal:controller.signal});
+   if(!response.ok)throw new Error("Catalogue request returned HTTP "+response.status+".");
+   const type=response.headers.get("content-type")||"";
+   if(!type.includes("json"))throw new Error("Catalogue response was not JSON.");
+   return validateCatalog(await response.json());
+  }catch(error){lastError=error;}
+  finally{clearTimeout(timeout);}
+ }
+ throw lastError||new Error("Catalogue could not be loaded.");
+}
+function showCatalogError(error){
+ const message="The product collection could not be loaded. Please check your connection and try again.";
+ document.getElementById("bundles").innerHTML='<p class="catalog-status" role="status">'+message+'</p>';
+ document.getElementById("filters").innerHTML="";
+ document.getElementById("result-count").textContent="";
+ const worksHost=document.getElementById("works");
+ worksHost.innerHTML='<div class="catalog-status" role="alert"><p>'+message+'</p><button id="retry-catalog" type="button" class="btn">Retry loading products</button></div>';
+ document.getElementById("retry-catalog").addEventListener("click",init,{once:true});
+ console.error("HALL OF GREATNESS catalogue load failed:",error);
+}
 async function init(){
- const response=await fetch("./catalog-data.json");
- if(!response.ok)throw new Error("Could not load the product catalogue.");
- const catalog=await response.json();
- const products=catalog.products.filter(p=>p.published && p.landing_slug && p.url);
+ const bundlesHost=document.getElementById("bundles");
+ const worksHost=document.getElementById("works");
+ bundlesHost.innerHTML='<p class="catalog-status" role="status">Loading collections…</p>';
+ worksHost.innerHTML='<p class="catalog-status" role="status">Loading published artworks…</p>';
+ try{
+ const products=await loadCatalog();
  const bundles=products.filter(p=>p.is_bundle),works=products.filter(p=>!p.is_bundle);
- document.getElementById("bundles").innerHTML=bundles.map(p=>{const x=window.HOG_PRODUCT?window.HOG_PRODUCT(p):p;return '<article class="bundle" tabindex="0" data-store-url="'+esc(p.url)+'" aria-label="Open collection on Gumroad"><div class="art-mockup scene-living" role="img" aria-label="'+esc(x.name)+' collection shown in a framed room mockup"><div class="mock-frame"><img loading="lazy" decoding="async" src="'+(p.cover_url||"")+'" alt="'+esc(x.name)+' collection cover"></div></div><div><h3>'+esc(x.name)+'</h3><p>'+esc(x.summary)+'</p><strong>'+money(p.price_usd)+'</strong><div class="bundle-actions"><a href="./landing/'+encodeURIComponent(p.landing_slug)+'/">Explore collection ↗</a><a class="primary" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">Buy collection ↗</a></div></div></article>';}).join("");
+ bundlesHost.innerHTML=bundles.map(p=>{const x=window.HOG_PRODUCT?window.HOG_PRODUCT(p):p;return '<article class="bundle" tabindex="0" data-store-url="'+esc(p.url)+'" aria-label="Open collection on Gumroad"><div class="art-mockup scene-living" role="img" aria-label="'+esc(x.name)+' collection shown in a framed room mockup"><div class="mock-frame">'+(p.cover_url?'<img loading="lazy" decoding="async" src="'+esc(p.cover_url)+'" alt="'+esc(x.name)+' collection cover">':'<span>'+esc(x.name)+'</span>')+'</div></div><div><h3>'+esc(x.name)+'</h3><p>'+esc(x.summary)+'</p><strong>'+money(p.price_usd)+'</strong><div class="bundle-actions"><a href="./landing/'+encodeURIComponent(p.landing_slug)+'/">Explore collection ↗</a><a class="primary" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">Buy collection ↗</a></div></div></article>';}).join("");
  const cats=["All",...new Set(works.map(p=>p.category).filter(Boolean))];let chosen="All";const host=document.getElementById("filters");
  host.innerHTML=cats.map(c=>'<button class="'+(c==="All"?"active":"")+'" data-c="'+esc(c)+'">'+esc(c)+'</button>').join("");
  function draw(){const T=window.HOG_T||((k)=>k);const q=document.getElementById("search").value.trim().toLowerCase();const shown=works.filter(p=>(chosen==="All"||p.category===chosen)&&[p.name,p.summary,p.category].some(v=>String(v||"").toLowerCase().includes(q)));
  document.getElementById("result-count").textContent=shown.length+" "+T("of")+" "+works.length+" "+T("artworks");
- document.getElementById("works").innerHTML=shown.length?shown.map(p=>{const x=window.HOG_PRODUCT?window.HOG_PRODUCT(p):p;return '<article class="work" tabindex="0" data-store-url="'+esc(p.url)+'" aria-label="Open artwork on Gumroad"><div class="art-mockup '+(x.category==="Global"?"scene-office":"scene-living")+'" role="img" aria-label="'+esc(x.name)+' artwork displayed in a premium gold frame"><div class="mock-frame">'+(p.cover_url?'<img loading="lazy" decoding="async" src="'+p.cover_url+'" alt="'+esc(x.name)+' artwork">':'<span>'+esc(x.name)+'</span>')+'</div></div><div class="info"><h3>'+esc(x.name)+'</h3><div class="tag">'+esc(x.category)+' · Printable digital art</div><p class="summary">'+esc(x.summary)+'</p><div class="format">'+T("format")+'</div><div class="actions"><strong>'+money(p.price_usd)+'</strong><a class="story" href="./landing/'+encodeURIComponent(p.landing_slug)+'/">'+T("discoverStory")+'</a><a href="'+p.url+'" target="_blank" rel="noopener">'+T("buyDownload")+'</a></div></div></article>';}).join(""):'<p>'+T("noResults")+'</p>';}
+ worksHost.innerHTML=shown.length?shown.map(p=>{const x=window.HOG_PRODUCT?window.HOG_PRODUCT(p):p;return '<article class="work" tabindex="0" data-store-url="'+esc(p.url)+'" aria-label="Open artwork on Gumroad"><div class="art-mockup '+(x.category==="Global"?"scene-office":"scene-living")+'" role="img" aria-label="'+esc(x.name)+' artwork displayed in a premium gold frame"><div class="mock-frame">'+(p.cover_url?'<img loading="lazy" decoding="async" src="'+esc(p.cover_url)+'" alt="'+esc(x.name)+' artwork">':'<span>'+esc(x.name)+'</span>')+'</div></div><div class="info"><h3>'+esc(x.name)+'</h3><div class="tag">'+esc(x.category)+' · Printable digital art</div><p class="summary">'+esc(x.summary)+'</p><div class="format">'+T("format")+'</div><div class="actions"><strong>'+money(p.price_usd)+'</strong><a class="story" href="./landing/'+encodeURIComponent(p.landing_slug)+'/">'+T("discoverStory")+'</a><a href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">'+T("buyDownload")+'</a></div></div></article>';}).join(""):'<p>'+T("noResults")+'</p>';}
  window.HOG_REDRAW=draw;
  host.addEventListener("click",e=>{const b=e.target.closest("button[data-c]");if(!b)return;chosen=b.dataset.c;host.querySelectorAll("button").forEach(x=>x.classList.toggle("active",x===b));draw();});
  document.getElementById("search").addEventListener("input",draw);draw();
+ }catch(error){showCatalogError(error);}
 }
-init().catch(err=>{document.getElementById("works").textContent=window.HOG_T?window.HOG_T("catalogError"):"The gallery catalogue is temporarily unavailable. Please refresh the page.";console.error(err);});
 </script><script src="./assets/i18n.js" defer></script></body></html>
