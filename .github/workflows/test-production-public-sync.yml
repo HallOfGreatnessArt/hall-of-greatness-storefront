@@ -1,6 +1,20 @@
 name: Test production public Gumroad sync without OAuth
 
 on:
+  # Run the same full validation on every repair-branch update as well as PR updates.
+  push:
+    branches:
+      - fix/gallery-card-navigation-and-live-catalog-2026-11-14
+    paths: &validation_paths
+      - ".github/workflows/publish-storefront.yml"
+      - ".github/workflows/test-production-public-sync.yml"
+      - "scripts/discover_public_gumroad_products.py"
+      - "scripts/import_public_gumroad_product.py"
+      - "scripts/generate_landing_pages.py"
+      - "scripts/enhance_landing_pages.py"
+      - "scripts/generate_sitemap.py"
+      - "scripts/validate_landing_pages.py"
+      - "scripts/test_responsive_storefront.py"
   pull_request:
     branches:
       - main
