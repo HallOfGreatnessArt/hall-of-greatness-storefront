@@ -101,7 +101,18 @@ def main():
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch()
-            page = browser.new_page(viewport={"width": 1440, "height": 900}, device_scale_factor=1)
+            context = browser.new_context(viewport={"width": 1440, "height": 900}, device_scale_factor=1)
+            # Mock product destinations so the test verifies exact URLs without
+            # depending on Gumroad's live page rendering or anti-bot checks.
+            context.route(
+                "https://alshayebemad.gumroad.com/l/**",
+                lambda route: route.fulfill(
+                    status=200,
+                    content_type="text/html",
+                    body="<html><head><title>Mock Gumroad destination</title></head><body>OK</body></html>",
+                ),
+            )
+            page = context.new_page()
             page.set_default_timeout(10000)
             inspect_page(page, "index.html", HOME_WIDTHS, expected_product=False)
             home_cards = page.locator("#works .work").count()
@@ -130,6 +141,7 @@ def main():
                     with context.expect_page() as popup_info:
                         card.locator(".art-mockup").click()
                     popup = popup_info.value
+                    popup.wait_for_load_state("domcontentloaded", timeout=10000)
                     record(popup.url == destination,
                            f"Clicking {selector} opened {popup.url}, expected {destination}")
                     popup.close()
