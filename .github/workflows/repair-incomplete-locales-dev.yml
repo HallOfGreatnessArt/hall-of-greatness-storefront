@@ -1,0 +1,139 @@
+name: Repair incomplete locale fields (development only)
+
+on:
+  push:
+    branches:
+      - feat/product-page-i18n-coverage
+    paths:
+      - scripts/translate_catalog.py
+      - scripts/translate_landing_pages.py
+      - .github/workflows/repair-incomplete-locales-dev.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repair-incomplete-locales-development
+  cancel-in-progress: false
+
+jobs:
+  repair-and-verify:
+    name: Repair the 14 incomplete locales and rerun final checks
+    if: github.ref == 'refs/heads/feat/product-page-i18n-coverage'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      PYTHONUNBUFFERED: "1"
+      REPAIR_LOCALES: "ig,xh,lb,st,yo,tt,ka,ug,am,ne,mr,si,my,zh-TW"
+    steps:
+      - name: Check out development branch only
+        uses: actions/checkout@v4
+        with:
+          ref: feat/product-page-i18n-coverage
+
+      - name: Cache free translation models
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.local/share/argos-translate
+            ~/.local/cache/argos-translate
+            ~/.cache/crispasr
+          key: locale-repair-models-v1-${{ runner.os }}-cpu
+
+      - name: Install pinned CPU-only MADLAD runtime
+        run: |
+          set -euo pipefail
+          mkdir -p .tools/crispasr
+          curl --fail --location --retry 3 \
+            https://github.com/CrispStrobe/CrispASR/releases/download/v0.8.53/crispasr-linux-x86_64.tar.gz \
+            -o /tmp/crispasr.tar.gz
+          echo "3396d49473642d1097b667270b54125279bdca740b735e15c3c96c1b32f787c0  /tmp/crispasr.tar.gz" | sha256sum --check
+          tar -xzf /tmp/crispasr.tar.gz -C .tools/crispasr
+          BIN="$(find .tools/crispasr -type f -name crispasr -perm -u+x | head -1)"
+          test -n "$BIN"
+          echo "CRISPASR_BIN=$GITHUB_WORKSPACE/$BIN" >> "$GITHUB_ENV"
+          "$GITHUB_WORKSPACE/$BIN" --version
+
+      - name: Install free Argos translation engine
+        run: python -m pip install --disable-pip-version-check argostranslate
+
+      - name: Repair missing shared UI, product-page, detail-label, and catalogue fields
+        run: python scripts/translate_catalog.py --locale-codes "$REPAIR_LOCALES"
+
+      - name: Repair missing artwork-specific page copy
+        run: python scripts/translate_landing_pages.py --locale-codes "$REPAIR_LOCALES"
+
+      - name: Regenerate and enhance localized product pages
+        run: |
+          python scripts/generate_landing_pages.py
+          python scripts/enhance_landing_pages.py
+
+      - name: Validate complete translation coverage
+        id: coverage
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          python scripts/validate_translation_coverage.py | tee translation-coverage-report.txt
+
+      - name: Install headless browser for Spanish and Arabic verification
+        if: steps.coverage.outcome == 'success'
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.56.0
+          python -m playwright install --with-deps chromium
+
+      - name: Verify Spanish and Arabic product pages in Chromium
+        id: browser
+        if: steps.coverage.outcome == 'success'
+        continue-on-error: true
+        run: python tests/browser/test_product_page_localization.py
+
+      - name: Persist repaired locale files on development branch
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add locales/*.json
+          if git diff --cached --quiet; then
+            echo "No locale changes to persist."
+          else
+            git commit -m "Repair incomplete multilingual locale fields"
+            git push origin "HEAD:feat/product-page-i18n-coverage"
+          fi
+
+      - name: Upload repair evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: incomplete-locale-repair-evidence
+          path: |
+            translation-coverage-report.txt
+            locales/ig.json
+            locales/xh.json
+            locales/lb.json
+            locales/st.json
+            locales/yo.json
+            locales/tt.json
+            locales/ka.json
+            locales/ug.json
+            locales/am.json
+            locales/ne.json
+            locales/mr.json
+            locales/si.json
+            locales/my.json
+            locales/zh-TW.json
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Require coverage and browser verification to pass
+        if: always()
+        run: |
+          if [ "${{ steps.coverage.outcome }}" != "success" ]; then
+            echo "Translation coverage remains incomplete; inspect the uploaded report."
+            exit 1
+          fi
+          if [ "${{ steps.browser.outcome }}" != "success" ]; then
+            echo "Browser verification did not pass."
+            exit 1
+          fi
