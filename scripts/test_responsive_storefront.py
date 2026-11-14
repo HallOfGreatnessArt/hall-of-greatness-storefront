@@ -119,10 +119,9 @@ def main():
             expected_works = len([x for x in PUBLISHED if not x.get("is_bundle")])
             # Verify bounded automatic retries, a visible recovery state, and
             # a successful user-triggered retry without changing the catalogue.
-            # Inject deterministic fetch failures at the browser API layer.
-            # This avoids route interception differences caused by browser cache,
-            # service workers, or URL matching. The third attempt reaches the local server.
-            page.add_init_script("""() => {
+            # Invoke the renderer directly with a controlled fetch stub. This
+            # avoids reload/init-script timing and makes the retry path deterministic.
+            page.evaluate("""async () => {
               const originalFetch = window.fetch.bind(window);
               window.__catalogFailuresInjected = 0;
               window.fetch = (input, init) => {
@@ -133,9 +132,9 @@ def main():
                 }
                 return originalFetch(input, init);
               };
+              await window.init();
             }""")
-            page.reload(wait_until="domcontentloaded")
-            page.locator("#retry-catalog").wait_for(state="visible", timeout=15000)
+            page.locator("#retry-catalog").wait_for(state="visible", timeout=5000)
             injected_failures = page.evaluate("window.__catalogFailuresInjected")
             record(injected_failures == 2,
                    f"Expected two injected catalogue failures; observed {injected_failures}")
