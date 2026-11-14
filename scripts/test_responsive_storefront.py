@@ -130,7 +130,7 @@ def main():
             # Use a page-scoped regex route to make the simulated failure
             # deterministic even when the cache-busting query string changes.
             import re
-            catalog_route = re.compile(r".*/catalog-data\\.json(?:\\?.*)?$")
+            catalog_route = re.compile(r".*/catalog-data\.json(?:\?.*)?$")
             page.route(catalog_route, fail_catalog_twice)
             page.reload(wait_until="domcontentloaded")
             page.locator("#retry-catalog").wait_for(state="visible", timeout=15000)
