@@ -119,23 +119,26 @@ def main():
             expected_works = len([x for x in PUBLISHED if not x.get("is_bundle")])
             # Verify bounded automatic retries, a visible recovery state, and
             # a successful user-triggered retry without changing the catalogue.
-            failures_remaining = {"count": 2, "intercepted": 0}
-            def fail_catalog_twice(route):
-                failures_remaining["intercepted"] += 1
-                if failures_remaining["count"] > 0:
-                    failures_remaining["count"] -= 1
-                    route.abort("failed")
-                else:
-                    route.continue_()
-            # Use a page-scoped regex route to make the simulated failure
-            # deterministic even when the cache-busting query string changes.
-            import re
-            catalog_route = re.compile(r".*/catalog-data\.json(?:\?.*)?$")
-            page.route(catalog_route, fail_catalog_twice)
+            # Inject deterministic fetch failures at the browser API layer.
+            # This avoids route interception differences caused by browser cache,
+            # service workers, or URL matching. The third attempt reaches the local server.
+            page.add_init_script("""() => {
+              const originalFetch = window.fetch.bind(window);
+              window.__catalogFailuresInjected = 0;
+              window.fetch = (input, init) => {
+                const url = typeof input === 'string' ? input : (input && input.url) || '';
+                if (url.includes('catalog-data.json') && window.__catalogFailuresInjected < 2) {
+                  window.__catalogFailuresInjected += 1;
+                  return Promise.reject(new TypeError('Simulated catalogue network failure'));
+                }
+                return originalFetch(input, init);
+              };
+            }""")
             page.reload(wait_until="domcontentloaded")
             page.locator("#retry-catalog").wait_for(state="visible", timeout=15000)
-            record(failures_remaining["intercepted"] >= 2,
-                   "The simulated catalogue network failure did not intercept both automatic attempts")
+            injected_failures = page.evaluate("window.__catalogFailuresInjected")
+            record(injected_failures == 2,
+                   f"Expected two injected catalogue failures; observed {injected_failures}")
             record(page.locator("#bundles .catalog-status").count() == 1,
                    "Catalogue failure did not show a collection status message")
             page.locator("#retry-catalog").click()
