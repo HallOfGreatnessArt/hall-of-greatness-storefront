@@ -5,7 +5,7 @@ on:
   push:
     branches:
       - fix/gallery-card-navigation-and-live-catalog-2026-11-14
-    paths: &validation_paths
+    paths:
       - ".github/workflows/publish-storefront.yml"
       - ".github/workflows/test-production-public-sync.yml"
       - "scripts/discover_public_gumroad_products.py"
