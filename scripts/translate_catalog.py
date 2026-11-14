@@ -48,13 +48,35 @@ def selected_language_codes():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--batch-index", type=int, default=0)
     parser.add_argument("--batch-count", type=int, default=1)
+    parser.add_argument("--locale-codes", help="Comma-separated locale codes to repair")
     args = parser.parse_args()
+    codes = [item["code"] for item in REG if item.get("code") != "en"]
+    if args.locale_codes:
+        requested = {code.strip() for code in args.locale_codes.split(",") if code.strip()}
+        unknown = requested - set(codes)
+        if unknown:
+            parser.error("Unknown locale codes: " + ", ".join(sorted(unknown)))
+        return requested
     if args.batch_count < 1 or not 0 <= args.batch_index < args.batch_count:
         parser.error("--batch-index must be within --batch-count")
-    codes = [item["code"] for item in REG if item.get("code") != "en"]
     size = (len(codes) + args.batch_count - 1) // args.batch_count
     start = args.batch_index * size
     return set(codes[start:start + size])
+
+
+def has_text(value):
+    return isinstance(value, str) and bool(value.strip())
+
+
+def product_translation_complete(product, translated):
+    if not isinstance(translated, dict):
+        return False
+    for field in ("summary", "full_description", "category"):
+        if product.get(field) and not has_text(translated.get(field)):
+            return False
+    details = product.get("product_details") or {}
+    translated_details = translated.get("product_details") or {}
+    return all(not value or has_text(translated_details.get(key)) for key, value in details.items())
 
 print("Refreshing the free Argos Translate model index...")
 argostranslate.package.update_package_index()
@@ -119,19 +141,28 @@ for lang in REG:
         key=p["permalink"]
         fields={k:p.get(k) for k in ("summary","full_description","category") if p.get(k)}
         fields["product_details"]=p.get("product_details") or {}
-        if products.get(key,{}).get("_source_hash")!=digest(fields):
+        existing_product = products.get(key, {})
+        # A matching source hash does not prove that an earlier interrupted
+        # translation wrote every catalogue field. Rebuild any partial record.
+        if existing_product.get("_source_hash")!=digest(fields) or not product_translation_complete(p, existing_product):
             pending.append((p,key,fields))
-    reviewed_ui = old.get("_ui_reviewed") is True and bool(old.get("ui"))
+    ui_values = old.get("ui") if isinstance(old.get("ui"), dict) else {}
+    ui_complete = all(isinstance(ui_values.get(key), str) and ui_values[key].strip() for key in ui)
+    reviewed_ui = old.get("_ui_reviewed") is True and ui_complete
     landing_hash=digest(landing_ui)
     detail_labels_hash=digest(detail_labels)
-    needs_detail_labels=old.get("_product_detail_labels_source_hash")!=detail_labels_hash
-    reviewed_landing = old.get("_landing_ui_reviewed") is True and bool(old.get("landing_ui"))
-    needs_landing = old.get("_landing_ui_source_hash") != landing_hash and not reviewed_landing
+    label_values = old.get("product_detail_labels") if isinstance(old.get("product_detail_labels"), dict) else {}
+    labels_complete = all(isinstance(label_values.get(key), str) and label_values[key].strip() for key in detail_labels)
+    needs_detail_labels=old.get("_product_detail_labels_source_hash")!=detail_labels_hash or not labels_complete
+    landing_values = old.get("landing_ui") if isinstance(old.get("landing_ui"), dict) else {}
+    landing_complete = all(isinstance(landing_values.get(key), str) and landing_values[key].strip() for key in landing_ui)
+    reviewed_landing = old.get("_landing_ui_reviewed") is True and landing_complete
+    needs_landing = (old.get("_landing_ui_source_hash") != landing_hash or not landing_complete) and not reviewed_landing
     if reviewed_landing and old.get("_landing_ui_source_hash") != landing_hash:
         print(f"REVIEW REQUIRED: {code} landing-page copy changed; preserving reviewed translation.")
     if reviewed_ui and old.get("_ui_source_hash") != ui_hash:
         print(f"REVIEW REQUIRED: {code} source UI changed; preserving reviewed translation.")
-    needs_ui=old.get("_ui_source_hash")!=ui_hash and not reviewed_ui
+    needs_ui=(old.get("_ui_source_hash")!=ui_hash or not ui_complete) and not reviewed_ui
     if not needs_ui and not pending and not needs_landing and not needs_detail_labels:
         print(f"Up to date: {code}; no model installation needed.")
         continue
