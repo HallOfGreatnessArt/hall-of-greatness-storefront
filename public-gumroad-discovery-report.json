@@ -6,7 +6,8 @@
   "new_products_discovered": 0,
   "new_products_imported": [],
   "catalog_products_after": 37,
-  "discovery_complete": true,
+  "discovery_complete": false,
   "unmatched_public_products_after_import": [],
-  "status": "no_new_products"
+  "status": "inconclusive",
+  "discovery_status": "inconclusive_public_total_unavailable"
 }
