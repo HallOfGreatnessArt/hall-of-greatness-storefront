@@ -140,6 +140,17 @@ def main():
                 return originalFetch(input, init);
               };
             })();""")
+            # The homepage intentionally defines init() but does not auto-run it
+            # in this isolated retry scenario. Trigger that real function from a
+            # test-only script appended to the served response; production files
+            # remain untouched while the failure/recovery path is exercised.
+            def start_catalog_for_retry(route):
+                response = route.fetch()
+                html = response.text().replace(
+                    "</body>", "<script>init()</script></body>"
+                )
+                route.fulfill(response=response, body=html)
+            retry_page.route("**/index.html", start_catalog_for_retry)
             retry_page.goto("http://127.0.0.1:8765/index.html",
                             wait_until="domcontentloaded", timeout=30000)
             retry_page.locator("#retry-catalog").wait_for(state="visible", timeout=15000)
