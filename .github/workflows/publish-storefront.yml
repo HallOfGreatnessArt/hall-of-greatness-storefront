@@ -184,6 +184,9 @@ jobs:
           cp -R landing _site/
           echo "Storefront artifact prepared with all product landing pages."
 
+      - name: Run responsive layout and full-card purchase navigation tests
+        run: python scripts/test_responsive_storefront.py
+
       - name: Persist newly synced catalogue and landing pages
         run: |
           set -euo pipefail

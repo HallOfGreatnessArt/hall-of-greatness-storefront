@@ -101,12 +101,80 @@ def main():
     try:
         with sync_playwright() as p:
             browser = p.chromium.launch()
-            page = browser.new_page(viewport={"width": 1440, "height": 900}, device_scale_factor=1)
+            context = browser.new_context(viewport={"width": 1440, "height": 900}, device_scale_factor=1)
+            # Mock product destinations so the test verifies exact URLs without
+            # depending on Gumroad's live page rendering or anti-bot checks.
+            context.route(
+                "https://alshayebemad.gumroad.com/l/**",
+                lambda route: route.fulfill(
+                    status=200,
+                    content_type="text/html",
+                    body="<html><head><title>Mock Gumroad destination</title></head><body>OK</body></html>",
+                ),
+            )
+            page = context.new_page()
             page.set_default_timeout(10000)
             inspect_page(page, "index.html", HOME_WIDTHS, expected_product=False)
             home_cards = page.locator("#works .work").count()
-            record(home_cards >= len([x for x in PUBLISHED if not x.get("is_bundle")]),
-                   f"Homepage gallery did not render the expected artwork cards ({home_cards})")
+            expected_works = len([x for x in PUBLISHED if not x.get("is_bundle")])
+            # Verify bounded automatic retries, a visible recovery state, and
+            # a successful user-triggered retry without changing the catalogue.
+            failures_remaining = {"count": 2}
+            def fail_catalog_twice(route):
+                if failures_remaining["count"] > 0:
+                    failures_remaining["count"] -= 1
+                    route.abort()
+                else:
+                    route.continue_()
+            context.route("**/catalog-data.json*", fail_catalog_twice)
+            page.reload(wait_until="domcontentloaded")
+            page.locator("#retry-catalog").wait_for(state="visible", timeout=15000)
+            record(page.locator("#bundles .catalog-status").count() == 1,
+                   "Catalogue failure did not show a collection status message")
+            page.locator("#retry-catalog").click()
+            page.locator("#works .work").first.wait_for(state="attached", timeout=15000)
+            record(page.locator("#works .work").count() == expected_works,
+                   "Manual retry did not restore the published artwork cards")
+            expected_bundle_count = len([x for x in PUBLISHED if x.get("is_bundle")])
+            record(page.locator("#bundles .bundle").count() == expected_bundle_count,
+                   "Manual retry did not restore the published collection cards")
+            context.unroute("**/catalog-data.json*", fail_catalog_twice)
+            record(page.evaluate("validProductUrl('https://alshayebemad.gumroad.com/l/safe-item')") is True,
+                   "Valid Gumroad product URL was rejected")
+            record(page.evaluate("validProductUrl('javascript:alert(1)')") is False,
+                   "Unsafe product URL was not rejected")
+            record(page.evaluate("validCoverUrl('https://public-files.gumroad.com/example')") is True,
+                   "Valid Gumroad cover URL was rejected")
+            record(page.evaluate("validCoverUrl('https://example.com/image.jpg')") is False,
+                   "Untrusted cover URL was not rejected")
+            record(home_cards == expected_works,
+                   f"Homepage gallery rendered {home_cards} artwork cards; expected {expected_works}")
+            navigable_cards = page.locator("#works .work[data-store-url]")
+            record(navigable_cards.count() == expected_works,
+                   "One or more artwork cards are missing their full-card Gumroad destination")
+            expected_bundles = len([x for x in PUBLISHED if x.get("is_bundle")])
+            bundle_cards = page.locator("#bundles .bundle[data-store-url]")
+            record(bundle_cards.count() == expected_bundles,
+                   f"Collection cards rendered {bundle_cards.count()} navigable cards; expected {expected_bundles}")
+            featured_cards = page.locator(".featured-grid .featured-card[data-store-url]")
+            record(featured_cards.count() == 6,
+                   f"Featured section rendered {featured_cards.count()} navigable cards; expected 6")
+            all_product_cards = page.locator(".featured-grid .featured-card[data-store-url], #bundles .bundle[data-store-url], #works .work[data-store-url]")
+            for card in all_product_cards.all():
+                destination = card.get_attribute("data-store-url") or ""
+                record(destination.startswith("https://alshayebemad.gumroad.com/l/"),
+                       f"Product card has an invalid Gumroad destination: {destination}")
+            for selector in (".featured-grid .featured-card", "#bundles .bundle", "#works .work"):
+                card = page.locator(selector).first
+                if card.count():
+                    destination = card.get_attribute("data-store-url")
+                    with context.expect_page() as popup_info:
+                        card.locator(".art-mockup").click()
+                    popup = popup_info.value
+                    popup.wait_for_load_state("domcontentloaded", timeout=10000)
+                    record(popup.url == destination,
+                           f"Clicking {selector} opened {popup.url}, expected {destination}")
+                    popup.close()
             first_artwork = next(x for x in PUBLISHED if not x.get("is_bundle"))
             search = page.locator("#search")
             search.fill(first_artwork["name"])

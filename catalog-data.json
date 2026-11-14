@@ -1,8 +1,8 @@
 {
   "source": "Public Gumroad product page (no OAuth)",
   "account": "Emad Alshayeb",
-  "verified_at": "2026-11-09",
-  "product_count": 37,
+  "verified_at": "2026-11-14",
+  "product_count": 36,
   "products": [
     {
       "name": "THE ART OF ELEGANCE & SERENITY",
@@ -345,26 +345,6 @@
         "usage": "Follow the personal-use and other license terms included with the download"
       },
       "full_description": "Share\n\nTHE HAND THAT HOLDS TOMORROW\n\nOne planet. One responsibility. Countless possibilities.\n\nThe future is not simply inherited. It is shaped by what we choose to protect.\n\nThe Hand That Holds Tomorrow turns the human hand into a symbol of responsibility and possibility. A young seedling rises from its center, accompanied by butterflies that suggest transformation and renewal. Around this hopeful image, contrasting landscapes evoke two directions humanity can take: continued environmental damage or a future shaped by care.\n\nTHE SYMBOLS BEHIND THE IMAGE\n\nThe hand represents our capacity to act. The seedling stands for fragile new life and the possibility of recovery. The butterflies suggest change. The contrast between damaged land and the promise of renewal reminds us that tomorrow is influenced by decisions made today.\n\nThis is not a message of despair. It is an invitation to recognize that even small acts of protection can become part of a larger movement toward a healthier world.\n\nFOR SPACES WITH A PURPOSE\n\nIts vivid colors and clear central symbol make it a striking statement for homes, offices, schools, environmental organizations, reception areas, and creative spaces. It is especially meaningful for people who want their surroundings to express hope, responsibility, and respect for nature.\n\nOur hands shape the future. Let them hold something worth protecting.\n\nYOUR DIGITAL ARTWORK\n\nDigital download; no physical print or frame will be shipped.\n\nDownload the files supplied with this product after purchase.\n\nReview the included file details, printing guide, and personal-use license before printing.\n\nChoose a print size and service that match the supplied file specifications.\n\nBring home an artwork with a story. Choose Download Artwork to make it part of your space.\n\nHALL OF GREATNESS — Art with a Soul. A Message Without Borders."
-    },
-    {
-      "name": "THE GOLDEN THREAD OF HUMANITY",
-      "price_usd": 5,
-      "url": "https://alshayebemad.gumroad.com/l/THEGOLDENTHREADOFHUMANITY",
-      "permalink": "rglfun",
-      "published": true,
-      "is_bundle": false,
-      "category": "Humanity",
-      "landing_slug": "the-golden-thread-of-humanity",
-      "cover_url": "https://public-files.gumroad.com/e62wdy1b966kn6j0pixrp3t83oyv",
-      "summary": "Two distinct identities, joined by a golden symbol of our shared human dignity.",
-      "product_details": {
-        "product_type": "Digital artwork download",
-        "delivery": "Instant digital download after purchase",
-        "physical_item": "No physical print or frame will be shipped",
-        "printing": "Print the supplied files with your preferred print provider; check the included dimensions before choosing a size",
-        "usage": "Follow the personal-use and other license terms included with the download"
-      },
-      "full_description": "Share\n\nTHE GOLDEN THREAD OF HUMANITY\n\nDifferent faces. One humanity. An eternal connection.\n\nUnity does not require sameness. It begins when we recognize one another's dignity.\n\nThe Golden Thread of Humanity is a contemporary digital sculpture about the bond that connects people beyond appearance, background, and difference. Two distinct profiles—one luminous ivory, the other deep obsidian—face opposite directions while a flowing golden ribbon moves between them, joining the composition without erasing either identity.\n\nTHE MEANING OF THE GOLDEN THREAD\n\nThe contrasting profiles represent individuality and the richness of human diversity. The golden form symbolizes the shared emotions and aspirations beneath our differences: hope, sorrow, belonging, compassion, and the desire to be treated with dignity.\n\nThe work's central idea is simple but enduring: we do not need to look alike or share the same story to recognize the humanity in one another. Difference gives the world its richness; connection gives it meaning.\n\nA REFINED STATEMENT WITH A UNIVERSAL MESSAGE\n\nIvory, obsidian, and gold create a sophisticated presence suited to contemporary homes, executive offices, galleries, reception spaces, and interiors that value cultural dialogue and thoughtful design. It can also be a meaningful gift for someone who believes in equality, respect, and human connection.\n\nOur differences make us distinct. Our shared humanity makes us connected.\n\nYOUR DIGITAL ARTWORK\n\nDigital download; no physical print or frame will be shipped.\n\nDownload the files supplied with this product after purchase.\n\nReview the included file details, printing guide, and personal-use license before printing.\n\nChoose a print size and service that match the supplied file specifications.\n\nBring home an artwork with a story. Choose Download Artwork to make it part of your space.\n\nHALL OF GREATNESS — Art with a Soul. A Message Without Borders."
     },
     {
       "name": "ROOTS OF TENDERNESS ♥ ",
@@ -757,7 +737,7 @@
     },
     {
       "name": "THE FIRST LIGHT",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/TheFirstLight",
       "permalink": "ngqan",
       "published": true,
@@ -778,7 +758,7 @@
     },
     {
       "name": "A PRAYER FOR TOMORROW",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/APRAYERFORTOMORROW",
       "permalink": "wgojq",
       "published": true,
@@ -799,7 +779,7 @@
     },
     {
       "name": "AHLAN RAMADAN 🌙",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/AhlanRamadan",
       "permalink": "gljhyf",
       "published": true,
@@ -820,5 +800,5 @@
       "description_source": "Public Gumroad product page; no OAuth"
     }
   ],
-  "metadata_updated_at": "2026-11-09"
+  "metadata_updated_at": "2026-11-14"
 }

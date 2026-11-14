@@ -18,6 +18,11 @@ on:
 permissions:
   contents: read
 
+# Keep only the newest full browser validation for a pull request.
+concurrency:
+  group: public-gumroad-sync-pr-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test-public-sync-and-storefront-build:
     runs-on: ubuntu-latest
