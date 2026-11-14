@@ -151,7 +151,16 @@ def main():
 
             source_hash = digest(source_texts)
             existing = page_translations.get(permalink, {})
-            if existing.get("_source_hash") == source_hash:
+            # A matching source hash is not sufficient when an earlier run saved
+            # only a partial translation map. Resume unless every current source
+            # string has a non-empty translation; never overwrite editorially
+            # reviewed copy automatically.
+            complete_existing = all(
+                isinstance(existing.get(source_text), str)
+                and existing[source_text].strip()
+                for source_text in source_texts
+            )
+            if existing.get("_source_hash") == source_hash and complete_existing:
                 continue
             if existing.get("_review_status") == REVIEWED:
                 print(f"REVIEW REQUIRED: {code}/{permalink}; preserving reviewed page copy.")
