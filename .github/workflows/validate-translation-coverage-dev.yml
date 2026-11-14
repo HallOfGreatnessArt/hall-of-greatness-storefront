@@ -1,10 +1,12 @@
 name: Validate translation coverage (development only)
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - feat/product-page-i18n-coverage
     paths:
+      - .github/workflows/validate-translation-coverage-dev.yml
       - scripts/validate_translation_coverage.py
       - locales/**
       - catalog-data.json
