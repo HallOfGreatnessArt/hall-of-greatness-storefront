@@ -117,37 +117,39 @@ def main():
             inspect_page(page, "index.html", HOME_WIDTHS, expected_product=False)
             home_cards = page.locator("#works .work").count()
             expected_works = len([x for x in PUBLISHED if not x.get("is_bundle")])
-            # Verify bounded automatic retries, a visible recovery state, and
-            # a successful user-triggered retry without changing the catalogue.
-            # Invoke the renderer directly with a controlled fetch stub. This
-            # avoids reload/init-script timing and makes the retry path deterministic.
-            page.evaluate("""async () => {
-              const originalFetch = window.fetch.bind(window);
-              window.__catalogFailuresInjected = 0;
-              window.fetch = (input, init) => {
-                const url = typeof input === 'string' ? input : (input && input.url) || '';
-                if (url.includes('catalog-data.json') && window.__catalogFailuresInjected < 2) {
-                  window.__catalogFailuresInjected += 1;
-                  return Promise.reject(new TypeError('Simulated catalogue network failure'));
-                }
-                return originalFetch(input, init);
-              };
-              await window.init();
-            }""")
-            page.locator("#retry-catalog").wait_for(state="visible", timeout=5000)
-            injected_failures = page.evaluate("window.__catalogFailuresInjected")
-            record(injected_failures == 2,
-                   f"Expected two injected catalogue failures; observed {injected_failures}")
-            record(page.locator("#bundles .catalog-status").count() == 1,
+            # Exercise the real page-load and retry-button path. Fail the first
+            # two catalogue HTTP requests (the bounded automatic attempts), then
+            # allow the user's explicit retry to reach the real catalogue.
+            retry_page = context.new_page()
+            retry_page.set_default_timeout(10000)
+            injected_failures = {"count": 0}
+            def fail_first_two_catalog_requests(route):
+                if injected_failures["count"] < 2:
+                    injected_failures["count"] += 1
+                    route.fulfill(
+                        status=503,
+                        content_type="application/json",
+                        body='{"error":"Simulated catalogue outage"}',
+                    )
+                else:
+                    route.continue_()
+            retry_page.route("**/catalog-data.json*", fail_first_two_catalog_requests)
+            retry_page.goto("http://127.0.0.1:8765/index.html",
+                            wait_until="domcontentloaded", timeout=30000)
+            retry_page.locator("#retry-catalog").wait_for(state="visible", timeout=10000)
+            record(injected_failures["count"] == 2,
+                   f"Expected two automatic catalogue failures; observed {injected_failures['count']}")
+            record(retry_page.locator("#bundles .catalog-status").count() == 1,
                    "Catalogue failure did not show a collection status message")
-            page.locator("#retry-catalog").click()
-            page.locator("#works .work").first.wait_for(state="attached", timeout=15000)
-            record(page.locator("#works .work").count() == expected_works,
+            retry_page.locator("#retry-catalog").click()
+            retry_page.locator("#works .work").first.wait_for(state="attached", timeout=15000)
+            record(retry_page.locator("#works .work").count() == expected_works,
                    "Manual retry did not restore the published artwork cards")
             expected_bundle_count = len([x for x in PUBLISHED if x.get("is_bundle")])
-            record(page.locator("#bundles .bundle").count() == expected_bundle_count,
+            record(retry_page.locator("#bundles .bundle").count() == expected_bundle_count,
                    "Manual retry did not restore the published collection cards")
-            page.unroute(catalog_route, fail_catalog_twice)
+            retry_page.unroute("**/catalog-data.json*", fail_first_two_catalog_requests)
+            retry_page.close()
             record(page.evaluate("validProductUrl('https://alshayebemad.gumroad.com/l/safe-item')") is True,
                    "Valid Gumroad product URL was rejected")
             record(page.evaluate("validProductUrl('javascript:alert(1)')") is False,
