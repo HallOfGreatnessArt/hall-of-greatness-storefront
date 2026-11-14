@@ -111,10 +111,28 @@ def main():
             navigable_cards = page.locator("#works .work[data-store-url]")
             record(navigable_cards.count() == expected_works,
                    "One or more artwork cards are missing their full-card Gumroad destination")
-            for card in navigable_cards.all():
+            expected_bundles = len([x for x in PUBLISHED if x.get("is_bundle")])
+            bundle_cards = page.locator("#bundles .bundle[data-store-url]")
+            record(bundle_cards.count() == expected_bundles,
+                   f"Collection cards rendered {bundle_cards.count()} navigable cards; expected {expected_bundles}")
+            featured_cards = page.locator(".featured-grid .featured-card[data-store-url]")
+            record(featured_cards.count() == 6,
+                   f"Featured section rendered {featured_cards.count()} navigable cards; expected 6")
+            all_product_cards = page.locator(".featured-grid .featured-card[data-store-url], #bundles .bundle[data-store-url], #works .work[data-store-url]")
+            for card in all_product_cards.all():
                 destination = card.get_attribute("data-store-url") or ""
                 record(destination.startswith("https://alshayebemad.gumroad.com/l/"),
-                       f"Artwork card has an invalid Gumroad destination: {destination}")
+                       f"Product card has an invalid Gumroad destination: {destination}")
+            for selector in (".featured-grid .featured-card", "#bundles .bundle", "#works .work"):
+                card = page.locator(selector).first
+                if card.count():
+                    destination = card.get_attribute("data-store-url")
+                    with page.expect_popup() as popup_info:
+                        card.locator(".art-mockup").click()
+                    popup = popup_info.value
+                    record(popup.url == destination,
+                           f"Clicking {selector} opened {popup.url}, expected {destination}")
+                    popup.close()
             first_card = page.locator("#works .work").first
             expected_destination = first_card.get_attribute("data-store-url")
             with page.expect_popup() as popup_info:
