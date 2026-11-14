@@ -36,10 +36,17 @@ def selected_language_codes(registry):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--batch-index", type=int, default=0)
     parser.add_argument("--batch-count", type=int, default=1)
+    parser.add_argument("--locale-codes", help="Comma-separated locale codes to repair")
     args = parser.parse_args()
+    codes = [item["code"] for item in registry.get("languages", []) if item.get("code") != "en"]
+    if args.locale_codes:
+        requested = {code.strip() for code in args.locale_codes.split(",") if code.strip()}
+        unknown = requested - set(codes)
+        if unknown:
+            parser.error("Unknown locale codes: " + ", ".join(sorted(unknown)))
+        return requested
     if args.batch_count < 1 or not 0 <= args.batch_index < args.batch_count:
         parser.error("--batch-index must be within --batch-count")
-    codes = [item["code"] for item in registry.get("languages", []) if item.get("code") != "en"]
     size = (len(codes) + args.batch_count - 1) // args.batch_count
     start = args.batch_index * size
     return set(codes[start:start + size])
