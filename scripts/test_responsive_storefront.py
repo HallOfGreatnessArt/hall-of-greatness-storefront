@@ -117,6 +117,36 @@ def main():
             inspect_page(page, "index.html", HOME_WIDTHS, expected_product=False)
             home_cards = page.locator("#works .work").count()
             expected_works = len([x for x in PUBLISHED if not x.get("is_bundle")])
+            # Verify bounded automatic retries, a visible recovery state, and
+            # a successful user-triggered retry without changing the catalogue.
+            failures_remaining = {"count": 2}
+            def fail_catalog_twice(route):
+                if failures_remaining["count"] > 0:
+                    failures_remaining["count"] -= 1
+                    route.abort()
+                else:
+                    route.continue_()
+            context.route("**/catalog-data.json*", fail_catalog_twice)
+            page.reload(wait_until="domcontentloaded")
+            page.locator("#retry-catalog").wait_for(state="visible", timeout=15000)
+            record(page.locator("#bundles .catalog-status").count() == 1,
+                   "Catalogue failure did not show a collection status message")
+            page.locator("#retry-catalog").click()
+            page.locator("#works .work").first.wait_for(state="attached", timeout=15000)
+            record(page.locator("#works .work").count() == expected_works,
+                   "Manual retry did not restore the published artwork cards")
+            expected_bundle_count = len([x for x in PUBLISHED if x.get("is_bundle")])
+            record(page.locator("#bundles .bundle").count() == expected_bundle_count,
+                   "Manual retry did not restore the published collection cards")
+            context.unroute("**/catalog-data.json*", fail_catalog_twice)
+            record(page.evaluate("validProductUrl('https://alshayebemad.gumroad.com/l/safe-item')") is True,
+                   "Valid Gumroad product URL was rejected")
+            record(page.evaluate("validProductUrl('javascript:alert(1)')") is False,
+                   "Unsafe product URL was not rejected")
+            record(page.evaluate("validCoverUrl('https://public-files.gumroad.com/example')") is True,
+                   "Valid Gumroad cover URL was rejected")
+            record(page.evaluate("validCoverUrl('https://example.com/image.jpg')") is False,
+                   "Untrusted cover URL was not rejected")
             record(home_cards == expected_works,
                    f"Homepage gallery rendered {home_cards} artwork cards; expected {expected_works}")
             navigable_cards = page.locator("#works .work[data-store-url]")
