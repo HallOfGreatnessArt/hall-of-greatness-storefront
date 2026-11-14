@@ -105,8 +105,24 @@ def main():
             page.set_default_timeout(10000)
             inspect_page(page, "index.html", HOME_WIDTHS, expected_product=False)
             home_cards = page.locator("#works .work").count()
-            record(home_cards >= len([x for x in PUBLISHED if not x.get("is_bundle")]),
-                   f"Homepage gallery did not render the expected artwork cards ({home_cards})")
+            expected_works = len([x for x in PUBLISHED if not x.get("is_bundle")])
+            record(home_cards == expected_works,
+                   f"Homepage gallery rendered {home_cards} artwork cards; expected {expected_works}")
+            navigable_cards = page.locator("#works .work[data-store-url]")
+            record(navigable_cards.count() == expected_works,
+                   "One or more artwork cards are missing their full-card Gumroad destination")
+            for card in navigable_cards.all():
+                destination = card.get_attribute("data-store-url") or ""
+                record(destination.startswith("https://alshayebemad.gumroad.com/l/"),
+                       f"Artwork card has an invalid Gumroad destination: {destination}")
+            first_card = page.locator("#works .work").first
+            expected_destination = first_card.get_attribute("data-store-url")
+            with page.expect_popup() as popup_info:
+                first_card.locator(".art-mockup").click()
+            popup = popup_info.value
+            record(popup.url == expected_destination,
+                   f"Clicking an artwork tile opened {popup.url}, expected {expected_destination}")
+            popup.close()
             first_artwork = next(x for x in PUBLISHED if not x.get("is_bundle"))
             search = page.locator("#search")
             search.fill(first_artwork["name"])
