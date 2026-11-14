@@ -208,7 +208,15 @@ def main():
         if str(item.get("permalink", "")).strip().lower() not in catalog_after_permalinks
         and urlparse(item.get("url", "")).path.rstrip("/").lower() not in catalog_after_paths
     ]
-    discovery_complete = public_total <= len(public_products) or public_total == 0
+    # A zero/unknown profile total is not evidence of a complete catalogue.
+    # Gumroad may expose only a few visible links on its public profile; never
+    # report a complete sync unless an authoritative total was actually found.
+    discovery_complete = public_total > 0 and public_total <= len(public_products)
+    discovery_status = (
+        "complete" if discovery_complete
+        else "inconclusive_public_total_unavailable" if public_total == 0
+        else "incomplete_public_products_missing"
+    )
     report = {
         "profile_url": PROFILE_URL,
         "public_products_total": public_total,
@@ -218,15 +226,21 @@ def main():
         "new_products_imported": imported,
         "catalog_products_after": len(catalog_after_products),
         "discovery_complete": discovery_complete,
+        "discovery_status": discovery_status,
         "unmatched_public_products_after_import": unmatched_after_import,
-        "status": "imported" if imported else "no_new_products",
+        "status": "imported" if imported else ("no_new_products" if discovery_complete else "inconclusive"),
     }
     REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2), flush=True)
-    if not discovery_complete:
+    if public_total > 0 and not discovery_complete:
         raise RuntimeError(
             f"Public Gumroad discovery was incomplete: expected at least {public_total} products, "
             f"found {len(public_products)}. See {REPORT_PATH}."
+        )
+    if public_total == 0:
+        print(
+            "::warning::Gumroad did not expose an authoritative public product total. "
+            "This run cannot certify full catalogue synchronization; inspect the discovery report."
         )
     if unmatched_after_import:
         raise RuntimeError(
