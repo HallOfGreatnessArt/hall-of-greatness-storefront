@@ -125,7 +125,7 @@ def main():
             # Intercept fetch before page scripts execute. This is deterministic
             # across Playwright routing/glob implementations and still exercises
             # the production loadCatalog() retry and manual-retry code paths.
-            retry_page.add_init_script("""() => {
+            retry_page.add_init_script("""(() => {
               const originalFetch = window.fetch.bind(window);
               window.__catalogInjectedFailures = 0;
               window.fetch = async (input, init) => {
@@ -139,7 +139,7 @@ def main():
                 }
                 return originalFetch(input, init);
               };
-            }""")
+            })();""")
             retry_page.goto("http://127.0.0.1:8765/index.html",
                             wait_until="domcontentloaded", timeout=30000)
             retry_page.locator("#retry-catalog").wait_for(state="visible", timeout=15000)
