@@ -119,16 +119,23 @@ def main():
             expected_works = len([x for x in PUBLISHED if not x.get("is_bundle")])
             # Verify bounded automatic retries, a visible recovery state, and
             # a successful user-triggered retry without changing the catalogue.
-            failures_remaining = {"count": 2}
+            failures_remaining = {"count": 2, "intercepted": 0}
             def fail_catalog_twice(route):
+                failures_remaining["intercepted"] += 1
                 if failures_remaining["count"] > 0:
                     failures_remaining["count"] -= 1
-                    route.abort()
+                    route.abort("failed")
                 else:
                     route.continue_()
-            context.route("**/catalog-data.json*", fail_catalog_twice)
+            # Use a page-scoped regex route to make the simulated failure
+            # deterministic even when the cache-busting query string changes.
+            import re
+            catalog_route = re.compile(r".*/catalog-data\\.json(?:\\?.*)?$")
+            page.route(catalog_route, fail_catalog_twice)
             page.reload(wait_until="domcontentloaded")
             page.locator("#retry-catalog").wait_for(state="visible", timeout=15000)
+            record(failures_remaining["intercepted"] >= 2,
+                   "The simulated catalogue network failure did not intercept both automatic attempts")
             record(page.locator("#bundles .catalog-status").count() == 1,
                    "Catalogue failure did not show a collection status message")
             page.locator("#retry-catalog").click()
@@ -138,7 +145,7 @@ def main():
             expected_bundle_count = len([x for x in PUBLISHED if x.get("is_bundle")])
             record(page.locator("#bundles .bundle").count() == expected_bundle_count,
                    "Manual retry did not restore the published collection cards")
-            context.unroute("**/catalog-data.json*", fail_catalog_twice)
+            page.unroute(catalog_route, fail_catalog_twice)
             record(page.evaluate("validProductUrl('https://alshayebemad.gumroad.com/l/safe-item')") is True,
                    "Valid Gumroad product URL was rejected")
             record(page.evaluate("validProductUrl('javascript:alert(1)')") is False,
