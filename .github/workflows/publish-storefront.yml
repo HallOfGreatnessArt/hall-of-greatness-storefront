@@ -14,6 +14,8 @@ on:
       - "scripts/generate_sitemap.py"
       - "scripts/validate_landing_pages.py"
       - "scripts/translate_catalog.py"
+      - "scripts/validate_locales.py"
+      - "scripts/enhance_landing_pages.py"
       - "locales/**"
       - "assets/i18n.js"
       - "assets/landing-i18n.js"
