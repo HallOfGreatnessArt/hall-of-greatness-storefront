@@ -167,11 +167,22 @@ for path in pages:
     if 'data-hog-category' not in page:
         page = page.replace('<div class="eyebrow">', '<div class="eyebrow" data-hog-category>', 1)
     if "data-hog-title" not in page:
-        page = re.sub(r"<h1\\b", '<h1 data-hog-title', page, count=1, flags=re.I)
+        page = re.sub(r"<h1\b", '<h1 data-hog-title', page, count=1, flags=re.I)
     if "data-hog-subtitle" not in page:
         page = page.replace('<div class="sub"', '<div class="sub" data-hog-subtitle', 1)
-    page = page.replace('id="full-description"', 'id="full-description" data-hog-full-description')
-    page = page.replace('id="product-details"', 'id="product-details" data-hog-product-details')
+    # Normalize localization markers on every run; the scheduled workflow runs repeatedly.
+    page = re.sub(
+        r'(<section\\b[^>]*\\bid="full-description")([^>]*)>',
+        lambda m: m.group(1) + re.sub(r"\\s+data-hog-full-description\\b", "", m.group(2)) + " data-hog-full-description>",
+        page,
+        count=1,
+    )
+    page = re.sub(
+        r'(<section\\b[^>]*\\bid="product-details")([^>]*)>',
+        lambda m: m.group(1) + re.sub(r"\\s+data-hog-product-details\\b", "", m.group(2)) + " data-hog-product-details>",
+        page,
+        count=1,
+    )
     # Ensure hand-crafted product pages expose the full catalogue copy to the locale switcher.
     if product and "data-hog-full-description" not in page and product.get("full_description"):
         raw = re.sub(r"^\s*Share\s*(?:\r?\n)+", "", str(product.get("full_description", "")), flags=re.I)
