@@ -157,7 +157,19 @@ for lang in REG:
             localized=json.loads(path.read_text(encoding='utf-8'))
             localized_ui=localized.get('ui',{})
             localized_products=localized.get('products',{})
-            complete=(expected_ui_keys.issubset(set(localized_ui)) and expected_product_keys.issubset(set(localized_products)))
+            products_current=True
+            for product in CAT["products"]:
+                if not product.get("published") or not product.get("permalink"):
+                    continue
+                fields={k:product.get(k) for k in ("summary","full_description","category") if product.get(k)}
+                fields["product_details"]=product.get("product_details") or {}
+                item=localized_products.get(product["permalink"],{})
+                if item.get("_source_hash")!=digest(fields):
+                    products_current=False
+                    break
+            complete=(expected_ui_keys.issubset(set(localized_ui)) and
+                      expected_product_keys.issubset(set(localized_products)) and
+                      products_current)
         except (UnicodeError,json.JSONDecodeError):
             complete=False
     lang['available']=complete
