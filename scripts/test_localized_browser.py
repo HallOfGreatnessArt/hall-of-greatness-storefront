@@ -54,7 +54,9 @@ def test_local_homepage(browser):
     page = browser.new_page(locale="en-US")
     page.add_init_script(PATCH_AR_AVAILABLE)
     page.goto(LOCAL_BASE, wait_until="domcontentloaded")
-    page.locator("#language-select option[value='ar']").wait_for()
+    page.wait_for_function("document.documentElement.dataset.language === 'en'")
+    home_options = page.locator("#language-select").evaluate("(el) => Array.from(el.options).map(option => option.value)")
+    assert "ar" in home_options, f"Arabic option missing from test registry: {home_options}"
     wait_language(page, "en", "ltr")
     english_hero = page.locator(".hero h1").inner_text()
     assert "Art that carries" in english_hero
@@ -89,7 +91,9 @@ def test_all_product_pages(browser):
         page.goto(LOCAL_BASE + "landing/" + landing_slug + "/", wait_until="domcontentloaded")
         selector = page.locator("#hog-page-language")
         selector.wait_for()
-        page.locator("#hog-page-language option[value='ar']").wait_for()
+        page.wait_for_function("document.querySelector('#hog-page-language').options.length > 1")
+        product_options = page.locator("#hog-page-language").evaluate("(el) => Array.from(el.options).map(option => option.value)")
+        assert "ar" in product_options, f"{slug}: Arabic option missing from test registry: {product_options}"
         wait_language(page, "en", "ltr")
         original_title = page.locator("[data-hog-title]").inner_text().strip()
         assert original_title, f"{slug}: empty English product title"
