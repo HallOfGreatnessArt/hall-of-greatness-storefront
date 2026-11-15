@@ -18,6 +18,7 @@ expected_keys = set(english)
 catalog = json.loads((ROOT / "catalog-data.json").read_text(encoding="utf-8"))
 published = [p for p in catalog.get("products", []) if p.get("published")]
 expected_products = {p.get("permalink") for p in published if p.get("permalink")}
+source_products = {p.get("permalink"): p for p in published if p.get("permalink")}
 
 errors = []
 warnings = []
@@ -96,9 +97,10 @@ for entry in registry.get("languages", []):
             arabic_chars = re.findall(r"[\u0600-\u06FF]", value)
             if len(latin_words) >= 8 and len(arabic_chars) < len(latin_words) * 2:
                 warnings.append(f"{code}/{slug}: substantial Latin-script copy remains in {field} ({len(latin_words)} words)")
-        fields = {k: item.get(k) for k in ("summary", "full_description", "category") if item.get(k)}
-        fields["product_details"] = item.get("product_details") or {}
-        expected_hash = __import__("hashlib").sha256(json.dumps(fields, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+        source_product = source_products.get(slug, {})
+        source_fields = {k: source_product.get(k) for k in ("summary", "full_description", "category") if source_product.get(k)}
+        source_fields["product_details"] = source_product.get("product_details") or {}
+        expected_hash = __import__("hashlib").sha256(json.dumps(source_fields, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
         if item.get("_source_hash") != expected_hash:
             warnings.append(f"{code}/{slug}: product translation source hash is missing or stale")
         status = item.get("_translation_status", "unmarked")
