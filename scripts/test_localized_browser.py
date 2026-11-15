@@ -135,14 +135,40 @@ def test_published_site(browser):
     assert page.locator(".hero h1").inner_text().strip()
     options = page.locator("#language-select option").evaluate_all("(nodes) => nodes.map(n => n.value)")
     print("PUBLISHED HOMEPAGE: loaded in Chromium; available language options:", options)
+    if "ar" in options:
+        page.select_option("#language-select", "ar")
+        wait_language(page, "ar", "rtl")
+        assert "فن يحمل حكاية." in normalized(page.locator(".hero h1").inner_text())
+        page.reload(wait_until="domcontentloaded")
+        wait_language(page, "ar", "rtl")
+        assert "فن يحمل حكاية." in normalized(page.locator(".hero h1").inner_text())
+        page.select_option("#language-select", "en")
+        wait_language(page, "en", "ltr")
+        page.reload(wait_until="domcontentloaded")
+        wait_language(page, "en", "ltr")
+        print("PUBLISHED HOMEPAGE SWITCH: Arabic ↔ English, RTL/LTR, and refresh persistence passed.")
+    else:
+        print("PUBLISHED HOMEPAGE SWITCH: Arabic is not present in the live selector.")
 
     page.goto(LIVE_BASE + "landing/the-coptic-soul-of-egypt/", wait_until="domcontentloaded", timeout=60000)
     page.locator("body[data-product-permalink='csyqhm']").wait_for(timeout=30000)
     page.wait_for_function("document.documentElement.lang === 'en'", timeout=20000)
     assert page.locator("h1").first.inner_text().strip()
     print("PUBLISHED PRODUCT PAGE: direct URL loaded in Chromium; default English layout verified.")
-    if "ar" not in options:
-        print("PUBLISHED ARABIC SWITCH: not available in the live selector; Arabic remains intentionally gated pending human editorial approval.")
+    product_select = page.locator("#hog-page-language")
+    if product_select.count() and "ar" in product_select.evaluate("(el) => Array.from(el.options).map(option => option.value)"):
+        page.select_option("#hog-page-language", "ar")
+        wait_language(page, "ar", "rtl")
+        assert re.search(r"[\\u0600-\\u06FF]", page.locator("body").inner_text())
+        page.reload(wait_until="domcontentloaded")
+        wait_language(page, "ar", "rtl")
+        page.select_option("#hog-page-language", "en")
+        wait_language(page, "en", "ltr")
+        page.reload(wait_until="domcontentloaded")
+        wait_language(page, "en", "ltr")
+        print("PUBLISHED PRODUCT SWITCH: Arabic ↔ English, RTL/LTR, and refresh persistence passed.")
+    else:
+        print("PUBLISHED PRODUCT SWITCH: Arabic option unavailable on the live product page.")
     page.close()
 
 def main():
