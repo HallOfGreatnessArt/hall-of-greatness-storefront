@@ -20,7 +20,7 @@ USAGE = {
 }
 
 def esc(value):
-    return html.escape(str(value or ""), quote=True)
+    return html.escape(html.unescape(str(value or "")), quote=True)
 
 def money(value):
     return f"${float(value):,.2f}"
@@ -122,6 +122,14 @@ header a.back,.btn{{min-height:44px;display:inline-flex;align-items:center;justi
  .closing p{{font-size:16px;line-height:1.65}}
  footer{{font-size:11px;line-height:1.6}}
 }}
+html[dir="rtl"] body{{text-align:right}}
+html[dir="rtl"] header,html[dir="rtl"] footer{{direction:rtl}}
+html[dir="rtl"] .hero,html[dir="rtl"] .section{{direction:rtl;text-align:right}}
+html[dir="rtl"] .hero-copy{{text-align:right}}
+html[dir="rtl"] .contents{{padding-left:0;padding-right:22px}}
+html[dir="rtl"] .purchase-chip{{text-align:right}}
+html[dir="rtl"] .btn{{direction:rtl}}
+html[dir="rtl"] .closing{{text-align:center}}
 
 </style></head>
 <body><div class="wrap">

@@ -1,0 +1,57 @@
+name: Read-only localization and landing-page QA
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/read-only-localization-qa.yml"
+      - "catalog-data.json"
+      - "locales/**"
+      - "assets/**"
+      - "scripts/**"
+      - "landing/**"
+      - "index.html"
+
+permissions:
+  contents: read
+
+jobs:
+  localization-and-landing-qa:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out pull request source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check Python script syntax
+        run: python -m compileall -q scripts
+
+      - name: Validate locale completeness and Arabic editorial checks
+        run: python scripts/validate_locales.py
+
+      - name: Generate product landing pages locally
+        run: |
+          python scripts/generate_landing_pages.py
+          python scripts/enhance_landing_pages.py
+          python scripts/generate_sitemap.py
+
+      - name: Validate product pages, localization markers, RTL, and SEO
+        run: python scripts/validate_landing_pages.py
+
+      - name: Install Playwright and Chromium
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+
+      - name: Start local storefront preview
+        run: |
+          nohup python -m http.server 8000 --bind 127.0.0.1 >/tmp/hog-local-preview.log 2>&1 &
+          echo $! >/tmp/hog-local-preview.pid
+
+      - name: Test language switching, refresh, RTL, all product pages, and published site
+        run: python scripts/test_localized_browser.py --local-only
