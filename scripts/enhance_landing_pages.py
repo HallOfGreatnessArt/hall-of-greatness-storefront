@@ -172,14 +172,14 @@ for path in pages:
         page = page.replace('<div class="sub"', '<div class="sub" data-hog-subtitle', 1)
     # Normalize localization markers on every run; the scheduled workflow runs repeatedly.
     page = re.sub(
-        r'(<section\\b[^>]*\\bid="full-description")([^>]*)>',
-        lambda m: m.group(1) + re.sub(r"\\s+data-hog-full-description\\b", "", m.group(2)) + " data-hog-full-description>",
+        r'(<section\b[^>]*\\bid="full-description")([^>]*)>',
+        lambda m: m.group(1) + re.sub(r"\s+data-hog-full-description\b", "", m.group(2)) + " data-hog-full-description>",
         page,
         count=1,
     )
     page = re.sub(
         r'(<section\\b[^>]*\\bid="product-details")([^>]*)>',
-        lambda m: m.group(1) + re.sub(r"\\s+data-hog-product-details\\b", "", m.group(2)) + " data-hog-product-details>",
+        lambda m: m.group(1) + re.sub(r"\s+data-hog-product-details\b", "", m.group(2)) + " data-hog-product-details>",
         page,
         count=1,
     )
