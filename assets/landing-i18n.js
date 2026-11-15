@@ -18,7 +18,7 @@ async function init(){
   if(p.summary){document.querySelectorAll("[data-hog-summary]").forEach(el=>el.textContent=p.summary);}
   if(p.category){document.querySelectorAll("[data-hog-category]").forEach(el=>el.textContent=p.category);}
   if(p.full_description){const box=document.querySelector("[data-hog-full-description]");if(box){box.querySelectorAll(":scope > p").forEach(el=>el.remove());p.full_description.split(/\n\s*\n/).filter(Boolean).forEach(t=>{const el=document.createElement("p");el.textContent=t;box.appendChild(el);});}}
-  if(p.product_details){const box=document.querySelector("[data-hog-product-details]");if(box){box.querySelectorAll(":scope > p").forEach(el=>el.remove());Object.entries(p.product_details).forEach(([k,v])=>{if(!v)return;const el=document.createElement("p"),strong=document.createElement("strong");strong.textContent=k.replace(/_/g," ")+": ";el.append(strong,document.createTextNode(v));box.appendChild(el);});}}
+  if(p.product_details){const box=document.querySelector("[data-hog-product-details]");if(box){box.querySelectorAll(":scope > p").forEach(el=>el.remove());const labels=lang==="ar"?{files_included:"الملفات المرفقة",product_type:"نوع المنتج",delivery:"التسليم",physical_item:"المنتج المادي",printing:"الطباعة",usage:"الاستخدام والترخيص",bundle_item_count:"محتويات المجموعة"}:{};Object.entries(p.product_details).forEach(([k,v])=>{if(!v)return;const el=document.createElement("p"),strong=document.createElement("strong");strong.textContent=(labels[k]||k.replace(/_/g," "))+": ";el.append(strong,document.createTextNode(v));box.appendChild(el);});}}
   if(select)select.value=code;
  }
  const initial=(saved&&saved!=="auto"&&!registry.some(x=>x.code===saved))?"auto":(saved||"auto");await apply(initial);
