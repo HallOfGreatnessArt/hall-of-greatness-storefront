@@ -67,6 +67,20 @@ header a.back,.btn{min-height:44px;display:inline-flex;align-items:center;justif
  footer{font-size:11px;line-height:1.6}
 }
 
+/* RTL support for Arabic product landing pages */
+html[dir="rtl"] body{text-align:right}
+html[dir="rtl"] header,html[dir="rtl"] footer{direction:rtl}
+html[dir="rtl"] .hero,html[dir="rtl"] .section{direction:rtl;text-align:right}
+html[dir="rtl"] .hero-copy{text-align:right}
+html[dir="rtl"] .contents{padding-left:0;padding-right:22px}
+html[dir="rtl"] .purchase-chip{text-align:right}
+html[dir="rtl"] .print-step{text-align:right}
+html[dir="rtl"] .digital-reminder{border-left:0;border-right:2px solid var(--gold)}
+html[dir="rtl"] .language-label{margin-left:0;margin-right:auto}
+html[dir="rtl"] #hog-page-language{direction:rtl;text-align:right}
+html[dir="rtl"] .btn{direction:rtl}
+html[dir="rtl"] .closing{text-align:center}
+
 """
 
 STRIP = """
