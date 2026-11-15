@@ -63,6 +63,9 @@ jobs:
       - name: Generate and refresh multilingual UI and product translations
         run: python scripts/translate_catalog.py
 
+      - name: Validate multilingual locale coverage and content
+        run: python scripts/validate_locales.py
+
       - name: Validate catalogue and generate landing pages
         run: |
           set -euo pipefail
