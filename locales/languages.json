@@ -1,486 +1,678 @@
 {
-  "provider": "Google Cloud Translation v2",
-  "translation_mode": "on-demand during GitHub Actions builds; cached by source hash",
+  "provider": "Argos Translate (open-source, offline models)",
+  "translation_mode": "Free offline translation during GitHub Actions builds; language availability depends on installed model pairs; incomplete languages are hidden from the storefront selector.",
   "languages": [
     {
       "code": "en",
       "name": "English",
-      "rtl": false
+      "rtl": false,
+      "available": true,
+      "availability_note": "source language"
     },
     {
       "code": "af",
       "name": "Afrikaans",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ig",
       "name": "Asụsụ Igbo",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "az",
       "name": "Azərbaycanca",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "id",
       "name": "Bahasa Indonesia",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ms",
       "name": "Bahasa Melayu",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "jv",
       "name": "Basa Jawa",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "su",
       "name": "Basa Sunda",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "bs",
       "name": "Bosanski",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ca",
       "name": "Català",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ceb",
       "name": "Cebuano",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "cs",
       "name": "Čeština",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ny",
       "name": "Chichewa",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "co",
       "name": "Corsu",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "cy",
       "name": "Cymraeg",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "da",
       "name": "Dansk",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "de",
       "name": "Deutsch",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "et",
       "name": "Eesti",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "es",
       "name": "Español",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "eo",
       "name": "Esperanto",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "eu",
       "name": "Euskara",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "tl",
       "name": "Filipino",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "fr",
       "name": "Français",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "fy",
       "name": "Frysk",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ga",
       "name": "Gaeilge",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "gd",
       "name": "Gàidhlig",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "gl",
       "name": "Galego",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ha",
       "name": "Hausa",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "hr",
       "name": "Hrvatski",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "xh",
       "name": "isiXhosa",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "zu",
       "name": "isiZulu",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "is",
       "name": "Íslenska",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "it",
       "name": "Italiano",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "sw",
       "name": "Kiswahili",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ht",
       "name": "Kreyòl ayisyen",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "lv",
       "name": "Latviešu",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "lb",
       "name": "Lëtzebuergesch",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "lt",
       "name": "Lietuvių",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "hu",
       "name": "Magyar",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "mg",
       "name": "Malagasy",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "mi",
       "name": "Māori",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "nl",
       "name": "Nederlands",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "no",
       "name": "Norsk",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "uz",
       "name": "O‘zbek",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "pl",
       "name": "Polski",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "pt",
       "name": "Português",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ro",
       "name": "Română",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "st",
       "name": "Sesotho",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "sq",
       "name": "Shqip",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "sk",
       "name": "Slovenčina",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "sl",
       "name": "Slovenščina",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "so",
       "name": "Soomaali",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "fi",
       "name": "Suomi",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "sv",
       "name": "Svenska",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "vi",
       "name": "Tiếng Việt",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "tr",
       "name": "Türkçe",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "yo",
       "name": "Yorùbá",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "el",
       "name": "Ελληνικά",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "bg",
       "name": "Български",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ky",
       "name": "Кыргызча",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "kk",
       "name": "Қазақша",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "mk",
       "name": "Македонски",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "mn",
       "name": "Монгол",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ru",
       "name": "Русский",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "sr",
       "name": "Српски",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "tt",
       "name": "Татарча",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "uk",
       "name": "Українська",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ka",
       "name": "ქართული",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "he",
       "name": "עברית",
-      "rtl": true
+      "rtl": true,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ug",
       "name": "ئۇيغۇرچە",
-      "rtl": true
+      "rtl": true,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ur",
       "name": "اردو",
-      "rtl": true
+      "rtl": true,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ar",
       "name": "العربية",
-      "rtl": true
+      "rtl": true,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ps",
       "name": "پښتو",
-      "rtl": true
+      "rtl": true,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "sd",
       "name": "سنڌي",
-      "rtl": true
+      "rtl": true,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "fa",
       "name": "فارسی",
-      "rtl": true
+      "rtl": true,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "am",
       "name": "አማርኛ",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ne",
       "name": "नेपाली",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "mr",
       "name": "मराठी",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "hi",
       "name": "हिन्दी",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "bn",
       "name": "বাংলা",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "pa",
       "name": "ਪੰਜਾਬੀ",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "gu",
       "name": "ગુજરાતી",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "or",
       "name": "ଓଡ଼ିଆ",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ta",
       "name": "தமிழ்",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "te",
       "name": "తెలుగు",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "kn",
       "name": "ಕನ್ನಡ",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ml",
       "name": "മലയാളം",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "si",
       "name": "සිංහල",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "th",
       "name": "ไทย",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "lo",
       "name": "ລາວ",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "my",
       "name": "မြန်မာ",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "km",
       "name": "ខ្មែរ",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ko",
       "name": "한국어",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "ja",
       "name": "日本語",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "zh-CN",
       "name": "简体中文",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     },
     {
       "code": "zh-TW",
       "name": "繁體中文",
-      "rtl": false
+      "rtl": false,
+      "available": false,
+      "availability_note": "awaiting complete UI and product translation file"
     }
   ]
 }
