@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 registry = json.loads((ROOT / "locales/languages.json").read_text(encoding="utf-8"))
 source = (ROOT / "assets/i18n.js").read_text(encoding="utf-8")
+landing_source = (ROOT / "assets/landing-i18n.js").read_text(encoding="utf-8")
 match = re.search(r"const M=(\{[\s\S]*?\});\nconst map=", source)
 if not match:
     raise SystemExit("ERROR: canonical UI dictionary not found in assets/i18n.js")
@@ -135,6 +136,16 @@ else:
         errors.append("Incorrect Arabic phrase 'فن يحمل حتة.' detected")
     if ar.get("_ui_reviewed") is not True or ar.get("_ui_translation_status") != "editorially-reviewed":
         errors.append("Arabic UI is not marked as editorially reviewed")
+    if not any(entry.get("code") == "ar" and entry.get("rtl") is True for entry in registry.get("languages", [])):
+        errors.append("Arabic is not registered as an RTL language")
+    if 'document.documentElement.dir=rtl?"rtl":"ltr"' not in source:
+        errors.append("Homepage language script does not set document direction")
+    if 'document.documentElement.dir=rtl?"rtl":"ltr"' not in landing_source:
+        errors.append("Product-page language script does not set document direction")
+    if "available!==false" not in source or "available!==false" not in landing_source:
+        errors.append("Homepage or product-page language selector does not filter unavailable locales")
+    if "hogDefaultHtml" not in landing_source:
+        errors.append("Product-page language switcher does not restore original content when changing languages")
 
 ar_product_status={"editorially-reviewed":0,"editorial-draft-ai-assisted":0,"unmarked-or-machine":0}
 if arabic_file.exists():
