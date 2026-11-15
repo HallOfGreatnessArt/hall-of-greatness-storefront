@@ -85,13 +85,13 @@ for entry in registry.get("languages", []):
             errors.append(f"{code}/{slug}: missing Arabic product display title")
         if code == "ar":
             first_line = next((line.strip() for line in str(item.get("full_description", "")).splitlines() if line.strip()), "")
-            if re.search(rf"[—–]\\s*{re.escape(slug)}$", first_line):
+            if re.search(rf"[—–]\s*{re.escape(slug)}$", first_line):
                 errors.append(f"{code}/{slug}: internal catalogue slug leaked into the Arabic description heading")
-            summary_latin = re.findall(r"\\b[A-Za-z]{3,}\\b", str(item.get("summary", "")))
+            summary_latin = re.findall(r"\b[A-Za-z]{3,}\b", str(item.get("summary", "")))
             if summary_latin:
                 warnings.append(f"{code}/{slug}: English words remain in the Arabic product summary: {', '.join(summary_latin[:6])}")
             file_copy = str((item.get("product_details") or {}).get("files_included", ""))
-            if re.search(r"(?:\\b\\d+ files?\\b|\\bMB\\b|\\bKB\\b|للزدحام|::|DF, TXT)", file_copy, re.I):
+            if re.search(r"(?:\b\d+ files?\b|\bMB\b|\bKB\b|للزدحام|::|DF, TXT)", file_copy, re.I):
                 warnings.append(f"{code}/{slug}: file-included metadata is not fully localized or may be corrupted")
         for field in ("summary", "full_description", "category"):
             value = item.get(field)
