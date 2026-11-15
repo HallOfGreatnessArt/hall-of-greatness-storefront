@@ -7,6 +7,11 @@ A mobile-first, responsive storefront for the HALL OF GREATNESS digital art cata
 - `catalog-data.json` — catalogue snapshot of 37 product records: 33 individual artworks and 4 bundles; public Gumroad visibility must be checked separately. Unpublished drafts are excluded.
 - `landing/` — individual product and collection landing pages.
 - `scripts/generate_landing_pages.py` — creates missing landing pages from the verified catalogue while preserving existing hand-crafted pages.
+- `locales/languages.json` and `locales/*.json` — registered languages, localized interface copy, and product descriptions.
+- `assets/i18n.js` and `assets/landing-i18n.js` — language selection, translation loading, and right-to-left support.
+- `scripts/translate_catalog.py` — free offline Argos Translate pipeline; preserves editorially tagged product copy and hides incomplete locales.
+- `scripts/validate_locales.py` — checks locale key parity, product coverage, English residue, encoding, source hashes, and editorial status.
+- `scripts/enhance_landing_pages.py` — adds localized full-description containers, product specifications, and RTL layout support to product pages.
 - `.github/workflows/publish-storefront.yml` — scheduled (every 15 minutes) and manually triggered catalogue sync, page generation, validation, and GitHub Pages deployment.
 - `scripts/sync_gumroad_catalog.py` — read-only Gumroad product sync that appends newly published products only; existing catalogue entries are not rewritten.
 
