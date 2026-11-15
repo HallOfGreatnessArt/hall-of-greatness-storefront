@@ -91,7 +91,7 @@ for entry in registry.get("languages", []):
                     warnings.append(f"{code}/{slug}: {len(entities)} HTML entities remain in {field}; renderer must decode before escaping")
 
 # The Arabic hero phrase is a release-critical copy requirement.
-arabic_hero = re.sub(r"<[^>]+>", "", str(canonical.get("ar", {}).get("heroTitle", "")))
+arabic_hero = re.sub(r"<[^>]+>", " ", str(canonical.get("ar", {}).get("heroTitle", "")))
 arabic_file = ROOT / "locales/ar.json"
 if not arabic_file.exists():
     errors.append("Arabic locale file is missing")
@@ -99,7 +99,7 @@ else:
     ar = json.loads(arabic_file.read_text(encoding="utf-8"))
     ar_ui = ar.get("ui", {})
     ar_phrase = "فن يحمل حكاية."
-    ar_text = " ".join([arabic_hero, str(ar_ui.get("heroTitle", "")), str(ar_ui.get("tagline", ""))])
+    ar_text = " ".join([arabic_hero, re.sub(r"<[^>]+>", " ", str(ar_ui.get("heroTitle", ""))), str(ar_ui.get("tagline", ""))])
     if ar_phrase not in re.sub(r"<[^>]+>", "", ar_text):
         errors.append("Arabic required phrase 'فن يحمل حكاية.' not found in canonical or locale UI copy")
     if "فن يحمل حتة." in source or "فن يحمل حتة." in json.dumps(ar, ensure_ascii=False):
