@@ -25,9 +25,16 @@ class PageParser(HTMLParser):
         self.title_parts = []
         self.local_scripts = []
         self.images_without_alt = []
+        self.attributes = []
+        self.duplicate_attributes = []
 
     def handle_starttag(self, tag, attrs):
         self.starts[tag] = self.starts.get(tag, 0) + 1
+        names = [name for name, _ in attrs]
+        repeated = sorted({name for name in names if names.count(name) > 1})
+        if repeated:
+            self.duplicate_attributes.append((tag, repeated))
+        self.attributes.append(dict(attrs))
         attrs = dict(attrs)
         if attrs.get("id"):
             self.ids.append(attrs["id"])
@@ -98,6 +105,20 @@ for product in published:
         fail(f"{path}: duplicate element IDs: {duplicates}")
     if parser.images_without_alt:
         fail(f"{path}: images missing alt text: {parser.images_without_alt}")
+    if parser.duplicate_attributes:
+        fail(f"{path}: duplicate HTML attributes: {parser.duplicate_attributes}")
+    for marker in ("data-hog-title", "data-hog-category", "data-hog-full-description"):
+        count = sum(marker in attrs for attrs in parser.attributes)
+        if count != 1:
+            fail(f"{path}: expected exactly one {marker} marker, found {count}")
+    if product.get("product_details"):
+        count = sum("data-hog-product-details" in attrs for attrs in parser.attributes)
+        if count != 1:
+            fail(f"{path}: expected exactly one data-hog-product-details marker, found {count}")
+    if 'html[dir="rtl"]' not in page:
+        fail(f"{path}: missing product-page RTL stylesheet rules")
+    if not any(script.endswith("assets/landing-i18n.js") for script in parser.local_scripts):
+        fail(f"{path}: missing multilingual product-page script")
     if product["cover_url"] not in page:
         fail(f"{path}: catalogue cover URL is missing")
     if product["url"] not in page:

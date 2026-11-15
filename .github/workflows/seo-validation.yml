@@ -38,3 +38,19 @@ jobs:
           python scripts/validate_landing_pages.py
       - name: Validate HTML, SEO metadata, robots.txt and sitemap XML
         run: python scripts/validate_seo.py
+
+      - name: Validate locale coverage and Arabic content
+        run: python scripts/validate_locales.py
+
+      - name: Install Chromium for localized browser checks
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+
+      - name: Start local storefront preview
+        run: |
+          nohup python -m http.server 8000 --bind 127.0.0.1 >/tmp/hog-local-preview.log 2>&1 &
+          echo $! >/tmp/hog-local-preview.pid
+
+      - name: Test homepage and all product pages in Arabic and English
+        run: python scripts/test_localized_browser.py --local-only

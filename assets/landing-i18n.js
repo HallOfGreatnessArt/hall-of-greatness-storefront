@@ -4,24 +4,51 @@ const body=document.body, permalink=body.dataset.productPermalink||"";
 const select=document.getElementById("hog-page-language");
 let registry=[];
 async function init(){
- try{const r=await fetch("../../locales/languages.json");if(r.ok)registry=(await r.json()).languages||[];}catch(e){}
+ try{const r=await fetch("../../locales/languages.json");if(r.ok)registry=((await r.json()).languages||[]).filter(x=>x.code==="en"||x.available!==false);}catch(e){}
  if(select&&registry.length)select.innerHTML='<option value="auto">🌐 Auto</option>'+registry.map(x=>'<option value="'+x.code+'">'+x.name+'</option>').join("");
  const saved=(()=>{try{return localStorage.getItem("hog-language")}catch(e){return null}})();
  const auto=()=>{for(const l of (navigator.languages||[navigator.language||"en"])){const exact=registry.find(x=>x.code.toLowerCase()===l.toLowerCase());if(exact)return exact.code;const base=l.split("-")[0];const match=registry.find(x=>x.code===base);if(match)return match.code;}return "en";};
  async function apply(code){
   const lang=code==="auto"?auto():code;let data={};
   if(lang!=="en"){try{const r=await fetch("../../locales/"+encodeURIComponent(lang)+".json");if(r.ok)data=await r.json();}catch(e){}}
+  const restoreSelectors=["[data-hog-title]","[data-hog-subtitle]","[data-hog-summary]","[data-hog-category]",".hero .btn",".closing .btn",".note",".price span","#full-description","#product-details","#printing .eyebrow","#printing h2",".print-step b",".print-step p",".digital-reminder",".room-showcase .eyebrow",".room-showcase h2",".room-showcase .room-intro p",".closing h2",".closing p",".purchase-chip"];
+  restoreSelectors.forEach(selector=>document.querySelectorAll(selector).forEach(el=>{if(el.dataset.hogDefaultHtml===undefined)el.dataset.hogDefaultHtml=el.innerHTML;el.innerHTML=el.dataset.hogDefaultHtml;}));
+  if(document.documentElement.dataset.hogDefaultTitle===undefined)document.documentElement.dataset.hogDefaultTitle=document.title;
+  document.title=document.documentElement.dataset.hogDefaultTitle;
   const p=(data.products||{})[permalink]||{};
+  if(lang==="ar"){
+   if(p.title_ar){const h=document.querySelector("[data-hog-title]");if(h)h.textContent=p.title_ar;document.title=p.title_ar+" | HALL OF GREATNESS";}
+   const sub=document.querySelector("[data-hog-subtitle]");if(sub)sub.textContent="عمل فني رقمي أصيل من HALL OF GREATNESS";
+   document.querySelectorAll(".hero .btn,.closing .btn").forEach((el,i)=>el.textContent=i===0?"استكشف واحصل على العمل الفني":"احصل على العمل الفني");
+   document.querySelectorAll(".note").forEach(el=>el.textContent="دفع آمن وتسليم رقمي عبر Gumroad.");
+   document.querySelectorAll(".price span").forEach(el=>el.textContent="· تنزيل رقمي");
+   const setText=(selector,value)=>{const el=document.querySelector(selector);if(el)el.textContent=value;};
+   setText("#full-description .eyebrow","حكاية العمل الفني");
+   setText("#full-description h2","قصة العمل كاملة");
+   setText("#product-details .eyebrow","محتويات التنزيل");
+   setText("#product-details h2","مواصفات المنتج");
+   setText("#printing .eyebrow","من التنزيل إلى العرض");
+   setText("#printing h2","اجعل العمل الفني جزءاً من مساحتك");
+   const steps=[["01 · الشراء","أتمم عملية الدفع الآمن عبر Gumroad. عملية الشراء تخص منتجاً رقمياً."],["02 · التنزيل","نزّل الملفات المتاحة لهذا المنتج وراجع المواصفات المرفقة."],["03 · الطباعة","اختر مقاساً يحافظ على النسب الأصلية للعمل، واستعن بمتخصص طباعة عند الحاجة."]];
+   document.querySelectorAll(".print-step").forEach((el,i)=>{if(steps[i]){const b=el.querySelector("b"),p=el.querySelector("p");if(b)b.textContent=steps[i][0];if(p)p.textContent=steps[i][1];}});
+   const reminder=document.querySelector(".digital-reminder");if(reminder)reminder.textContent="يرجى الانتباه: لن تُشحن لوحة مطبوعة أو إطار مادي. صيغ الملفات ودقتها وأبعادها وشروط استخدامها هي المحددة في ملفات المنتج والترخيص المرفق.";
+   setText(".room-showcase .eyebrow","عرض العمل الفني");
+   setText(".room-showcase h2","تخيّل العمل داخل إطار أنيق");
+   const room=document.querySelector(".room-showcase .room-intro p");if(room)room.textContent="معاينة تساعدك على تخيل العمل الفني في إطار، مع الحفاظ على أبعاده ونسبه الأصلية.";
+   setText(".closing h2","دع مساحتك تروي حكاية");
+   const closing=document.querySelector(".closing p");if(closing)closing.textContent="اختر فناً يعبر عما تقدّره، ودع معناه يرافق تفاصيل المكان.";
+   document.querySelectorAll(".purchase-chip").forEach((el,i)=>{const values=[["تنزيل رقمي","احصل على ملفاتك بعد إتمام الشراء"],["اطبع بطريقتك","اختر المقاس الملائم لمساحتك"],["فن يستحق العرض","للمنازل والاستوديوهات والمساحات ذات المعنى"]][i];if(values){const strong=document.createElement("strong");strong.textContent=values[0];el.replaceChildren(strong,document.createTextNode(values[1]));}});
+  }
   document.documentElement.lang=lang;
   const rtl=(registry.find(x=>x.code===lang)||{}).rtl||false;
   document.documentElement.dir=rtl?"rtl":"ltr";
   if(p.summary){document.querySelectorAll("[data-hog-summary]").forEach(el=>el.textContent=p.summary);}
   if(p.category){document.querySelectorAll("[data-hog-category]").forEach(el=>el.textContent=p.category);}
   if(p.full_description){const box=document.querySelector("[data-hog-full-description]");if(box){box.querySelectorAll(":scope > p").forEach(el=>el.remove());p.full_description.split(/\n\s*\n/).filter(Boolean).forEach(t=>{const el=document.createElement("p");el.textContent=t;box.appendChild(el);});}}
-  if(p.product_details){const box=document.querySelector("[data-hog-product-details]");if(box){box.querySelectorAll(":scope > p").forEach(el=>el.remove());Object.entries(p.product_details).forEach(([k,v])=>{if(!v)return;const el=document.createElement("p"),strong=document.createElement("strong");strong.textContent=k.replace(/_/g," ")+": ";el.append(strong,document.createTextNode(v));box.appendChild(el);});}}
+  if(p.product_details){const box=document.querySelector("[data-hog-product-details]");if(box){box.querySelectorAll(":scope > p").forEach(el=>el.remove());const labels=lang==="ar"?{files_included:"الملفات المرفقة",product_type:"نوع المنتج",delivery:"التسليم",physical_item:"المنتج المادي",printing:"الطباعة",usage:"الاستخدام والترخيص",bundle_item_count:"محتويات المجموعة"}:{};Object.entries(p.product_details).forEach(([k,v])=>{if(!v)return;const el=document.createElement("p"),strong=document.createElement("strong");strong.textContent=(labels[k]||k.replace(/_/g," "))+": ";el.append(strong,document.createTextNode(v));box.appendChild(el);});}}
   if(select)select.value=code;
  }
- const initial=saved||"auto";await apply(initial);
+ const initial=(saved&&saved!=="auto"&&!registry.some(x=>x.code===saved))?"auto":(saved||"auto");await apply(initial);
  if(select)select.addEventListener("change",()=>{const v=select.value;try{if(v==="auto")localStorage.removeItem("hog-language");else localStorage.setItem("hog-language",v)}catch(e){}apply(v);});
 }
 if(select)init();
