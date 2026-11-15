@@ -166,6 +166,10 @@ for path in pages:
         page = page.replace('<p class="desc">', '<p class="desc" data-hog-summary>', 1)
     if 'data-hog-category' not in page:
         page = page.replace('<div class="eyebrow">', '<div class="eyebrow" data-hog-category>', 1)
+    if "data-hog-title" not in page:
+        page = re.sub(r"<h1\\b", '<h1 data-hog-title', page, count=1, flags=re.I)
+    if "data-hog-subtitle" not in page:
+        page = page.replace('<div class="sub"', '<div class="sub" data-hog-subtitle', 1)
     page = page.replace('id="full-description"', 'id="full-description" data-hog-full-description')
     page = page.replace('id="product-details"', 'id="product-details" data-hog-product-details')
     # Ensure hand-crafted product pages expose the full catalogue copy to the locale switcher.
