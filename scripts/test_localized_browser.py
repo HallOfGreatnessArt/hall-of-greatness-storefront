@@ -64,7 +64,6 @@ def test_local_homepage(browser):
 
 def test_all_product_pages(browser):
     page = browser.new_page(locale="en-US")
-    page.add_init_script(PATCH_AR_AVAILABLE)
     tested = 0
     for product in PRODUCTS:
         slug = product["permalink"]
