@@ -11,6 +11,7 @@ A mobile-first, responsive storefront for the HALL OF GREATNESS digital art cata
 - `assets/i18n.js` and `assets/landing-i18n.js` — language selection, translation loading, and right-to-left support.
 - `scripts/translate_catalog.py` — free offline Argos Translate pipeline; preserves editorially tagged product copy and hides incomplete locales.
 - `scripts/validate_locales.py` — checks locale key parity, product coverage, English residue, encoding, source hashes, and editorial status.
+- `.github/workflows/read-only-localization-qa.yml` — runs non-deploying localization and landing-page checks on pull requests with read-only repository permissions.
 - `scripts/enhance_landing_pages.py` — adds localized full-description containers, product specifications, and RTL layout support to product pages.
 - `.github/workflows/publish-storefront.yml` — scheduled (every 15 minutes) and manually triggered catalogue sync, page generation, validation, and GitHub Pages deployment.
 - `scripts/sync_gumroad_catalog.py` — read-only Gumroad product sync that appends newly published products only; existing catalogue entries are not rewritten.
