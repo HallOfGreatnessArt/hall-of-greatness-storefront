@@ -3,6 +3,7 @@
 
 The catalogue cover is never cropped, stretched, or duplicated as two different mockups.
 """
+import html
 import json
 import re
 from pathlib import Path
@@ -167,6 +168,27 @@ for path in pages:
         page = page.replace('<div class="eyebrow">', '<div class="eyebrow" data-hog-category>', 1)
     page = page.replace('id="full-description"', 'id="full-description" data-hog-full-description')
     page = page.replace('id="product-details"', 'id="product-details" data-hog-product-details')
+    # Ensure hand-crafted product pages expose the full catalogue copy to the locale switcher.
+    if product and "data-hog-full-description" not in page and product.get("full_description"):
+        raw = re.sub(r"^\\s*Share\\s*(?:\\r?\\n)+", "", str(product.get("full_description", "")), flags=re.I)
+        paragraphs = [part.strip() for part in raw.split("\\n\\n") if part.strip()]
+        content = "".join(f"<p>{html.escape(html.unescape(part), quote=True)}</p>" for part in paragraphs)
+        section = '<section class="section" id="full-description" data-hog-full-description><div class="eyebrow">Complete artwork story</div><h2>Full product description</h2>' + content + '</section>\\n'
+        marker = '<section class="section" id="printing">'
+        if marker in page:
+            page = page.replace(marker, section + marker, 1)
+        else:
+            page = page.replace('<section class="closing"', section + '<section class="closing"', 1)
+    # Add product-specific specifications when a custom page has no details container.
+    if product and "data-hog-product-details" not in page and product.get("product_details"):
+        labels = {"files_included":"Files included","product_type":"Product type","delivery":"Delivery","physical_item":"Physical item","printing":"Printing","usage":"Usage and license","bundle_item_count":"Collection contents"}
+        rows = "".join(f'<p><strong>{html.escape(labels.get(k, k.replace("_", " ").title()))}:</strong> {html.escape(str(v), quote=True)}</p>' for k, v in product.get("product_details", {}).items() if v)
+        section = '<section class="section" id="product-details" data-hog-product-details><div class="eyebrow">What is included</div><h2>Product specifications</h2>' + rows + '</section>\\n'
+        marker = '<section class="section" id="printing">'
+        if marker in page:
+            page = page.replace(marker, section + marker, 1)
+        else:
+            page = page.replace('<section class="closing"', section + '<section class="closing"', 1)
     # Repair pages produced by older enhancer versions that emitted a literal \\n.
     page = page.replace("</script>\\n</body>", "</script>\n</body>")
     if 'landing-i18n.js' not in page:
