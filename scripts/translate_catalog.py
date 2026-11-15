@@ -12,7 +12,9 @@ import argostranslate.package
 import argostranslate.translate
 
 ROOT=Path(__file__).resolve().parents[1]
-REG=json.loads((ROOT/"locales/languages.json").read_text(encoding="utf-8"))["languages"]
+REGISTRY_PATH=ROOT/"locales/languages.json"
+REGISTRY_DATA=json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
+REG=REGISTRY_DATA["languages"]
 CAT=json.loads((ROOT/"catalog-data.json").read_text(encoding="utf-8"))
 source=(ROOT/"assets/i18n.js").read_text(encoding="utf-8")
 match=re.search(r"const M=(\{[\s\S]*?\});\nconst map=",source)
@@ -85,7 +87,13 @@ for lang in REG:
         key=p["permalink"]
         fields={k:p.get(k) for k in ("summary","full_description","category") if p.get(k)}
         fields["product_details"]=p.get("product_details") or {}
-        if products.get(key,{}).get("_source_hash")!=digest(fields):
+        existing=products.get(key,{})
+        existing_status=existing.get("_translation_status")
+        if existing_status in ("editorial-draft-ai-assisted","editorially-reviewed"):
+            if existing.get("_source_hash")!=digest(fields):
+                print(f"REVIEW REQUIRED: {code}/{key} source changed; preserving editorial copy.")
+            continue
+        if existing.get("_source_hash")!=digest(fields):
             pending.append((p,key,fields))
     reviewed_ui = old.get("_ui_reviewed") is True and bool(old.get("ui"))
     if reviewed_ui and old.get("_ui_source_hash") != ui_hash:
@@ -130,3 +138,31 @@ for lang in REG:
     path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Localized {code}: {len(products)} products")
+
+
+# Only expose languages with complete UI and product translation files.
+# Unsupported languages remain documented in the registry but are hidden from the selector.
+expected_product_keys={p['permalink'] for p in CAT['products'] if p.get('published') and p.get('permalink')}
+expected_ui_keys=set(ui)
+for lang in REG:
+    code=lang['code']
+    if code=='en':
+        lang['available']=True
+        lang['availability_note']='source language'
+        continue
+    path=ROOT/'locales'/(code+'.json')
+    complete=False
+    if path.exists():
+        try:
+            localized=json.loads(path.read_text(encoding='utf-8'))
+            localized_ui=localized.get('ui',{})
+            localized_products=localized.get('products',{})
+            complete=(expected_ui_keys.issubset(set(localized_ui)) and expected_product_keys.issubset(set(localized_products)))
+        except (UnicodeError,json.JSONDecodeError):
+            complete=False
+    lang['available']=complete
+    lang['availability_note']='complete UI and product translations' if complete else 'translation file/model unavailable or incomplete'
+REGISTRY_DATA['provider']='Argos Translate (open-source, offline models)'
+REGISTRY_DATA['translation_mode']='Free offline translation during GitHub Actions builds; language availability depends on installed model pairs; incomplete languages are hidden from the storefront selector.'
+REGISTRY_PATH.write_text(json.dumps(REGISTRY_DATA,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print('Updated language availability flags; incomplete locales remain hidden until complete.')
