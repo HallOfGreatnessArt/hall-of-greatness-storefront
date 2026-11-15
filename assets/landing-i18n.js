@@ -11,6 +11,10 @@ async function init(){
  async function apply(code){
   const lang=code==="auto"?auto():code;let data={};
   if(lang!=="en"){try{const r=await fetch("../../locales/"+encodeURIComponent(lang)+".json");if(r.ok)data=await r.json();}catch(e){}}
+  const restoreSelectors=["[data-hog-title]","[data-hog-subtitle]","[data-hog-summary]","[data-hog-category]",".hero .btn",".closing .btn",".note",".price span","#full-description","#product-details","#printing .eyebrow","#printing h2",".print-step b",".print-step p",".digital-reminder",".room-showcase .eyebrow",".room-showcase h2",".room-showcase .room-intro p",".closing h2",".closing p",".purchase-chip"];
+  restoreSelectors.forEach(selector=>document.querySelectorAll(selector).forEach(el=>{if(el.dataset.hogDefaultHtml===undefined)el.dataset.hogDefaultHtml=el.innerHTML;el.innerHTML=el.dataset.hogDefaultHtml;}));
+  if(document.documentElement.dataset.hogDefaultTitle===undefined)document.documentElement.dataset.hogDefaultTitle=document.title;
+  document.title=document.documentElement.dataset.hogDefaultTitle;
   const p=(data.products||{})[permalink]||{};
   if(lang==="ar"){
    if(p.title_ar){const h=document.querySelector("[data-hog-title]");if(h)h.textContent=p.title_ar;document.title=p.title_ar+" | HALL OF GREATNESS";}
