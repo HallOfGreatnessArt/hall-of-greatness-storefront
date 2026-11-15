@@ -305,8 +305,12 @@ section[id]{scroll-margin-top:20px}
 #language-select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 [dir="rtl"] body{text-align:right}
-[dir="rtl"] header,[dir="rtl"] footer{direction:rtl}
+[dir="rtl"] header,[dir="rtl"] footer,[dir="rtl"] nav{direction:rtl}
 [dir="rtl"] .header-tools{margin-left:0;margin-right:auto}
+[dir="rtl"] .featured-card .copy,[dir="rtl"] .bundle>div,[dir="rtl"] .work .info{text-align:right}
+[dir="rtl"] .bundle .bundle-actions,[dir="rtl"] .work .actions{direction:rtl}
+[dir="rtl"] .work .buy,[dir="rtl"] .bundle .buy{direction:rtl}
+[dir="rtl"] .hero{text-align:center}
 @media(max-width:760px){.header-tools{margin-left:0}#language-select{max-width:100%;width:100%}}
 
 /* Artwork-first gallery standard: enlarge the artwork, preserve its ratio, remove black matte */
