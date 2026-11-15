@@ -107,11 +107,22 @@ else:
     if ar.get("_ui_reviewed") is not True or ar.get("_ui_translation_status") != "editorially-reviewed":
         errors.append("Arabic UI is not marked as editorially reviewed")
 
+ar_product_status={"editorially-reviewed":0,"editorial-draft-ai-assisted":0,"unmarked-or-machine":0}
+if arabic_file.exists():
+    ar_data=json.loads(arabic_file.read_text(encoding="utf-8"))
+    for item in ar_data.get("products",{}).values():
+        status=item.get("_translation_status")
+        if status in ("editorially-reviewed","editorial-draft-ai-assisted"):
+            ar_product_status[status]+=1
+        else:
+            ar_product_status["unmarked-or-machine"]+=1
+
 print("LOCALE QUALITY SUMMARY")
 print(f"Registered non-English languages: {counts['registered']}")
 print(f"Locale files present: {counts['files']}")
 print(f"UI review status: reviewed={counts['reviewed']}, machine-unreviewed={counts['machine']}, unmarked={counts['unmarked']}")
 print(f"Published products in catalogue: {len(expected_products)}")
+print("Arabic product copy status: " + ", ".join(f"{k}={v}" for k,v in ar_product_status.items()))
 if rtl_missing:
     print("RTL locales without files: " + ", ".join(rtl_missing))
 for warning in warnings:
