@@ -115,7 +115,7 @@ for product in published:
         count = sum("data-hog-product-details" in attrs for attrs in parser.attributes)
         if count != 1:
             fail(f"{path}: expected exactly one data-hog-product-details marker, found {count}")
-    if "html[dir=\\"rtl\\"]" not in page and 'html[dir="rtl"]' not in page:
+    if 'html[dir="rtl"]' not in page:
         fail(f"{path}: missing product-page RTL stylesheet rules")
     if not any(script.endswith("assets/landing-i18n.js") for script in parser.local_scripts):
         fail(f"{path}: missing multilingual product-page script")
