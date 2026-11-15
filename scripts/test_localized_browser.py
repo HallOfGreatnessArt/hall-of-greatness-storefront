@@ -15,28 +15,10 @@ LOCAL_BASE = "http://127.0.0.1:8000/"
 LIVE_BASE = "https://hallofgreatnessart.github.io/hall-of-greatness-storefront/"
 CATALOG = json.loads((ROOT / "catalog-data.json").read_text(encoding="utf-8"))
 ARABIC = json.loads((ROOT / "locales/ar.json").read_text(encoding="utf-8"))
+LANGUAGES = json.loads((ROOT / "locales/languages.json").read_text(encoding="utf-8"))
+ARABIC_ENTRY = next(item for item in LANGUAGES["languages"] if item["code"] == "ar")
+assert ARABIC_ENTRY["available"] is True, "Arabic must be genuinely enabled in locales/languages.json"
 PRODUCTS = [p for p in CATALOG["products"] if p.get("published") is True]
-
-PATCH_AR_AVAILABLE = r"""
-(() => {
-  const originalFetch = window.fetch.bind(window);
-  window.fetch = async (...args) => {
-    const response = await originalFetch(...args);
-    const input = args[0];
-    const url = new URL(typeof input === "string" ? input : input.url, window.location.href);
-    if (url.pathname.endsWith("/locales/languages.json")) {
-      const registry = await response.clone().json();
-      const arabic = (registry.languages || []).find(item => item.code === "ar");
-      if (arabic) arabic.available = true;
-      return new Response(JSON.stringify(registry), {
-        status: response.status,
-        headers: {"Content-Type": "application/json"}
-      });
-    }
-    return response;
-  };
-})();
-"""
 
 def wait_language(page, code: str, direction: str):
     page.wait_for_function(
@@ -52,7 +34,6 @@ def normalized(text: str) -> str:
 
 def test_local_homepage(browser):
     page = browser.new_page(locale="en-US")
-    page.add_init_script(PATCH_AR_AVAILABLE)
     page.goto(LOCAL_BASE, wait_until="domcontentloaded")
     page.wait_for_function("document.documentElement.dataset.language === 'en'")
     home_options = page.locator("#language-select").evaluate("(el) => Array.from(el.options).map(option => option.value)")
@@ -132,43 +113,46 @@ def test_published_site(browser):
     page.goto(LIVE_BASE, wait_until="domcontentloaded", timeout=60000)
     page.locator("#language-select").wait_for(timeout=30000)
     page.wait_for_function("document.documentElement.lang === 'en'", timeout=20000)
-    assert page.locator(".hero h1").inner_text().strip()
     options = page.locator("#language-select option").evaluate_all("(nodes) => nodes.map(n => n.value)")
-    print("PUBLISHED HOMEPAGE: loaded in Chromium; available language options:", options)
-    if "ar" in options:
-        page.select_option("#language-select", "ar")
-        wait_language(page, "ar", "rtl")
-        assert "فن يحمل حكاية." in normalized(page.locator(".hero h1").inner_text())
-        page.reload(wait_until="domcontentloaded")
-        wait_language(page, "ar", "rtl")
-        assert "فن يحمل حكاية." in normalized(page.locator(".hero h1").inner_text())
-        page.select_option("#language-select", "en")
-        wait_language(page, "en", "ltr")
-        page.reload(wait_until="domcontentloaded")
-        wait_language(page, "en", "ltr")
-        print("PUBLISHED HOMEPAGE SWITCH: Arabic ↔ English, RTL/LTR, and refresh persistence passed.")
-    else:
-        print("PUBLISHED HOMEPAGE SWITCH: Arabic is not present in the live selector.")
+    assert "ar" in options, f"Arabic missing from published homepage selector: {options}"
+    page.select_option("#language-select", "ar")
+    wait_language(page, "ar", "rtl")
+    assert "فن يحمل حكاية." in normalized(page.locator(".hero h1").inner_text())
+    page.reload(wait_until="domcontentloaded")
+    wait_language(page, "ar", "rtl")
+    assert "فن يحمل حكاية." in normalized(page.locator(".hero h1").inner_text())
+    page.select_option("#language-select", "en")
+    wait_language(page, "en", "ltr")
+    page.reload(wait_until="domcontentloaded")
+    wait_language(page, "en", "ltr")
+    assert "Art that carries" in page.locator(".hero h1").inner_text()
+    print("PUBLISHED HOMEPAGE: genuine Arabic option, Arabic ↔ English, RTL/LTR, and refresh persistence passed.")
 
-    page.goto(LIVE_BASE + "landing/the-coptic-soul-of-egypt/", wait_until="domcontentloaded", timeout=60000)
-    page.locator("body[data-product-permalink='csyqhm']").wait_for(timeout=30000)
-    page.wait_for_function("document.documentElement.lang === 'en'", timeout=20000)
-    assert page.locator("h1").first.inner_text().strip()
-    print("PUBLISHED PRODUCT PAGE: direct URL loaded in Chromium; default English layout verified.")
-    product_select = page.locator("#hog-page-language")
-    if product_select.count() and "ar" in product_select.evaluate("(el) => Array.from(el.options).map(option => option.value)"):
+    tested = 0
+    for product in PRODUCTS:
+        slug = product["permalink"]
+        landing_slug = product["landing_slug"]
+        page.goto(LIVE_BASE + "landing/" + landing_slug + "/", wait_until="domcontentloaded", timeout=60000)
+        page.locator(f"body[data-product-permalink='{slug}']").wait_for(timeout=30000)
+        page.wait_for_function("document.documentElement.lang === 'en'", timeout=20000)
+        selector = page.locator("#hog-page-language")
+        selector.wait_for(timeout=15000)
+        options = selector.evaluate("(el) => Array.from(el.options).map(option => option.value)")
+        assert "ar" in options, f"{slug}: Arabic missing from published product selector: {options}"
+        english_title = page.locator("[data-hog-title]").inner_text().strip()
+        assert english_title, f"{slug}: published English title is empty"
         page.select_option("#hog-page-language", "ar")
         wait_language(page, "ar", "rtl")
-        assert re.search(r"[\\u0600-\\u06FF]", page.locator("body").inner_text())
-        page.reload(wait_until="domcontentloaded")
-        wait_language(page, "ar", "rtl")
+        expected_title = ARABIC["products"][slug]["title_ar"]
+        actual_title = page.locator("[data-hog-title]").inner_text().strip()
+        assert actual_title == expected_title, f"{slug}: expected Arabic title {expected_title!r}, got {actual_title!r}"
+        description = page.locator("[data-hog-full-description]").inner_text().strip()
+        assert description, f"{slug}: published Arabic description is empty"
         page.select_option("#hog-page-language", "en")
         wait_language(page, "en", "ltr")
-        page.reload(wait_until="domcontentloaded")
-        wait_language(page, "en", "ltr")
-        print("PUBLISHED PRODUCT SWITCH: Arabic ↔ English, RTL/LTR, and refresh persistence passed.")
-    else:
-        print("PUBLISHED PRODUCT SWITCH: Arabic option unavailable on the live product page.")
+        assert page.locator("[data-hog-title]").inner_text().strip() == english_title, f"{slug}: English title did not restore"
+        tested += 1
+    print(f"PUBLISHED PRODUCT PAGES: {tested}/{len(PRODUCTS)} passed genuine Arabic ↔ English switching, RTL/LTR, title and description checks.")
     page.close()
 
 def main():
