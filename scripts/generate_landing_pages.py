@@ -20,7 +20,7 @@ USAGE = {
 }
 
 def esc(value):
-    return html.escape(str(value or ""), quote=True)
+    return html.escape(html.unescape(str(value or "")), quote=True)
 
 def money(value):
     return f"${float(value):,.2f}"
