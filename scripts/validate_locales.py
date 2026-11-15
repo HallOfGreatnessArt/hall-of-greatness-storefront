@@ -73,22 +73,37 @@ for entry in registry.get("languages", []):
     missing_products = sorted(expected_products - set(products))
     if missing_products:
         warnings.append(f"{code}: {len(missing_products)} published product translations missing")
-    for slug, item in products.items():
+    extra_products = sorted(set(products) - expected_products)
+    if extra_products:
+        warnings.append(f"{code}: {len(extra_products)} product translation keys are not in the published catalogue")
+    for slug in expected_products:
+        item = products.get(slug)
         if not isinstance(item, dict):
-            errors.append(f"{code}/{slug}: product translation is not an object")
             continue
-        for field in ("summary", "full_description"):
+        for field in ("summary", "full_description", "category"):
             value = item.get(field)
-            if value is not None and (not isinstance(value, str) or not value.strip()):
-                errors.append(f"{code}/{slug}: empty or invalid {field}")
-            if isinstance(value, str):
-                if "\ufffd" in value:
-                    errors.append(f"{code}/{slug}: Unicode replacement character in {field}")
-                if re.search(r"(?:Ã.|Â.|Ø[ء-ي]|Ù[ء-ي])", value):
-                    warnings.append(f"{code}/{slug}: possible mojibake in {field}")
-                entities = re.findall(r"&(?:quot|apos|amp|lt|gt);", value)
-                if entities:
-                    warnings.append(f"{code}/{slug}: {len(entities)} HTML entities remain in {field}; renderer must decode before escaping")
+            if not isinstance(value, str) or not value.strip():
+                errors.append(f"{code}/{slug}: missing, empty, or invalid {field}")
+                continue
+            if "\ufffd" in value:
+                errors.append(f"{code}/{slug}: Unicode replacement character in {field}")
+            if re.search(r"(?:Ã.|Â.|Ø[ء-ي]|Ù[ء-ي])", value):
+                warnings.append(f"{code}/{slug}: possible mojibake in {field}")
+            entities = re.findall(r"&(?:quot|apos|amp|lt|gt);", value)
+            if entities:
+                warnings.append(f"{code}/{slug}: {len(entities)} HTML entities remain in {field}; renderer must decode before escaping")
+            latin_words = re.findall(r"\b[A-Za-z]{3,}\b", value)
+            arabic_chars = re.findall(r"[\u0600-\u06FF]", value)
+            if len(latin_words) >= 8 and len(arabic_chars) < len(latin_words) * 2:
+                warnings.append(f"{code}/{slug}: substantial Latin-script copy remains in {field} ({len(latin_words)} words)")
+        fields = {k: item.get(k) for k in ("summary", "full_description", "category") if item.get(k)}
+        fields["product_details"] = item.get("product_details") or {}
+        expected_hash = __import__("hashlib").sha256(json.dumps(fields, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+        if item.get("_source_hash") != expected_hash:
+            warnings.append(f"{code}/{slug}: product translation source hash is missing or stale")
+        status = item.get("_translation_status", "unmarked")
+        if status not in ("editorially-reviewed", "editorial-draft-ai-assisted"):
+            warnings.append(f"{code}/{slug}: translation review status is {status}")
 
 # The Arabic hero phrase is a release-critical copy requirement.
 arabic_hero = re.sub(r"<[^>]+>", " ", str(canonical.get("ar", {}).get("heroTitle", "")))
