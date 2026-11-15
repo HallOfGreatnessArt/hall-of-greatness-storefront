@@ -81,6 +81,8 @@ for entry in registry.get("languages", []):
         item = products.get(slug)
         if not isinstance(item, dict):
             continue
+        if code == "ar" and not str(item.get("title_ar", "")).strip():
+            errors.append(f"{code}/{slug}: missing Arabic product display title")
         for field in ("summary", "full_description", "category"):
             value = item.get(field)
             if not isinstance(value, str) or not value.strip():
