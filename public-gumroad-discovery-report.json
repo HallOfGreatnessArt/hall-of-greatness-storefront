@@ -2,13 +2,11 @@
   "profile_url": "https://alshayebemad.gumroad.com/",
   "public_products_total": 47,
   "public_products_discovered": 47,
-  "catalog_products_before": 47,
-  "new_products_discovered": 1,
-  "new_products_imported": [
-    "isbsay"
-  ],
+  "catalog_products_before": 48,
+  "new_products_discovered": 0,
+  "new_products_imported": [],
   "catalog_products_after": 48,
   "discovery_complete": true,
   "unmatched_public_products_after_import": [],
-  "status": "imported"
+  "status": "no_new_products"
 }
