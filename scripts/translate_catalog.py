@@ -99,7 +99,12 @@ for lang in REG:
     if reviewed_ui and old.get("_ui_source_hash") != ui_hash:
         print(f"REVIEW REQUIRED: {code} source UI changed; preserving reviewed translation.")
     needs_ui=old.get("_ui_source_hash")!=ui_hash and not reviewed_ui
-    if not needs_ui and not pending:
+    needs_ar_titles = code=="ar" and any(
+        p.get("published") and p.get("permalink") and
+        not str(products.get(p["permalink"],{}).get("title_ar","")).strip()
+        for p in CAT["products"]
+    )
+    if not needs_ui and not pending and not needs_ar_titles:
         print(f"Up to date: {code}; no model installation needed.")
         continue
     translator=get_translator(target)
@@ -135,6 +140,22 @@ for lang in REG:
             else: item[k]=value
         item["_source_hash"]=source_hash
         products[key]=item
+
+    # Arabic product cards require a localized display title in addition to
+    # the translated description. Generate missing titles for newly imported
+    # products while preserving any existing editorially prepared title.
+    if code=="ar":
+        for p in CAT["products"]:
+            if not p.get("published") or not p.get("permalink"):
+                continue
+            item=products.setdefault(p["permalink"],{})
+            if str(item.get("title_ar","")).strip():
+                continue
+            title_values=translate_many([p.get("name","")],code)
+            if title_values and title_values[0].strip():
+                item["title_ar"]=title_values[0].strip()
+                item["_title_translation_status"]="machine-generated-unreviewed"
+
     path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print(f"Localized {code}: {len(products)} products")
