@@ -130,7 +130,7 @@ for product in published:
         if 'id="printing"' not in page or 'id="room-showcase"' not in page:
             fail(f"{path}: art product missing print guidance or artwork presentation")
     elif content_type in {"ebook", "course"}:
-        forbidden = ("room-showcase", "id=\"printing\"", "purchase-strip", "Imagine it in a refined frame", "Make the artwork part of your space", "More than decoration. A feeling that stays.", "Let your space tell a story.")
+        forbidden = ('id="room-showcase"', 'id="printing"', 'class="purchase-strip"', "Imagine it in a refined frame", "Make the artwork part of your space", "More than decoration. A feeling that stays.", "Let your space tell a story.")
         leaked = [phrase for phrase in forbidden if phrase in page]
         if leaked:
             fail(f"{path}: art-only presentation leaked into {content_type} page: {leaked}")
