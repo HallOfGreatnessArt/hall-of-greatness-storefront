@@ -141,6 +141,12 @@ pages = sorted((ROOT / "landing").glob("*/index.html"))
 for path in pages:
     page = path.read_text(encoding="utf-8")
     product = PRODUCT_BY_SLUG.get(path.parent.name, {})
+    content_type = str(product.get("content_type", "art-decor")).strip().lower()
+    is_art = content_type == "art-decor"
+    is_ebook = content_type == "ebook"
+    is_course = content_type == "course"
+    if content_type not in {"art-decor", "ebook", "course"}:
+        raise SystemExit(f"Unknown content_type for {path}: {content_type!r}")
     permalink = str(product.get("permalink", ""))
     if permalink:
         if not re.fullmatch(r"[A-Za-z0-9_-]+", permalink):
@@ -211,17 +217,52 @@ for path in pages:
     if "</style>" in page:
         page = re.sub(r'/\* Buyer clarity and print guidance \*/.*?(?=</style>)', '', page, flags=re.S)
         page = page.replace("</style>", STYLE + "\n</style>", 1)
-    if 'class="purchase-strip"' not in page:
+    if is_art and 'class="purchase-strip"' not in page:
         start = page.find('<section class="hero"')
         end = page.find("</section>", start)
         if start < 0 or end < 0:
             raise SystemExit(f"Missing hero section: {path}")
         page = page[:end + len("</section>")] + "\n" + STRIP + page[end + len("</section>"):]
-    if 'id="printing"' not in page:
+    if is_art and 'id="printing"' not in page:
         if '<section class="closing"' not in page:
             raise SystemExit(f"Missing closing CTA section: {path}")
         page = page.replace('<section class="closing"', DETAILS + '\n<section class="closing"', 1)
-    page = room_showcase(page, path)
+    if is_art:
+        page = room_showcase(page, path)
+    else:
+        # Non-art products must never inherit framing, wall-display, or print-oriented modules.
+        page = re.sub(r'<section class="room-showcase" id="room-showcase">.*?</section>', '', page, flags=re.S)
+        page = re.sub(r'<div class="purchase-strip".*?</div>\\s*</div>', '', page, flags=re.S)
+        page = re.sub(r'<section class="section" id="printing">.*?</section>', '', page, flags=re.S)
+        page = re.sub(r'<section class="section"><div class="eyebrow">The meaning behind the artwork</div>.*?</section>', '', page, flags=re.S)
+        page = re.sub(r'<section class="section"><div class="eyebrow">Where it belongs</div>.*?</section>', '', page, flags=re.S)
+        if is_ebook:
+            experience = """<section class="section product-experience ebook-experience" id="reading-experience">
+  <div class="eyebrow">A thoughtful reading experience</div><h2>Ideas worth understanding. Knowledge worth keeping.</h2>
+  <p>Explore the subject at your own pace with a digital edition designed for convenient reading and reference. Review the included formats, companion resources, and edition details before purchase.</p>
+  <div class="experience-points"><div><strong>Read at your pace</strong><p>Access your digital book on compatible devices and reading applications.</p></div><div><strong>Useful beyond the page</strong><p>Use the book's ideas and included resources as a reference for further learning and reflection.</p></div><div><strong>Instant digital access</strong><p>Download the files supplied with this edition after checkout through Gumroad.</p></div></div>
+</section>
+<section class="section digital-delivery" id="digital-delivery"><div class="eyebrow">Your digital edition</div><h2>Purchase, download, begin reading</h2><p>After checkout, access the files included with this product through Gumroad. No physical book will be shipped. File formats, language, edition information, and usage terms are listed in the product specifications and included license.</p></section>
+"""
+            page = page.replace('<section class="closing"', experience + '<section class="closing"', 1)
+            page = page.replace("Let your space tell a story.", "Make room for new ideas.")
+            page = page.replace("Choose art that reflects what you value—and let its meaning live with you.", "Choose a subject worth exploring and begin your next reading journey.")
+            page = page.replace("Get " + str(product.get("name", "")) + " ↗", "Get the e-book ↗")
+        elif is_course:
+            experience = """<section class="section product-experience course-experience" id="learning-experience">
+  <div class="eyebrow">A guided learning experience</div><h2>Learn with direction. Put knowledge into practice.</h2>
+  <p>Explore a structured educational experience designed to help you build understanding and develop practical skills. Review the course scope, learning outcomes, included materials, and access instructions before enrolling.</p>
+  <div class="experience-points"><div><strong>Clear learning path</strong><p>Understand the topics and learning outcomes covered by this course.</p></div><div><strong>Learn at your pace</strong><p>Use the supplied lessons and materials according to the access terms stated for this course.</p></div><div><strong>Apply what you learn</strong><p>Connect new knowledge with practical questions, exercises, or projects where provided.</p></div></div>
+</section>
+<section class="section digital-delivery" id="course-access"><div class="eyebrow">Course access</div><h2>Enroll, access, make progress</h2><p>Course delivery and access instructions are provided through the product checkout and materials. Review the listed requirements, format, duration, and access terms before purchase. No physical course materials are shipped unless explicitly stated.</p></section>
+"""
+            page = page.replace('<section class="closing"', experience + '<section class="closing"', 1)
+            page = page.replace("Let your space tell a story.", "Take the next step in your learning.")
+            page = page.replace("Choose art that reflects what you value—and let its meaning live with you.", "Choose a learning experience that supports your goals and start building new skills.")
+            page = page.replace("Get " + str(product.get("name", "")) + " ↗", "Explore the course ↗")
+        page = page.replace("Art with a Soul. A Message Without Borders.", "Knowledge. Ideas. Discovery.")
+        page = page.replace("Digital artwork · Instant download through Gumroad", "Digital product · Access through Gumroad")
+        page = page.replace("Digital art", "Digital product")
     # Add consistent search/social metadata and trust links to every product landing page.
     social = """<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="HALL OF GREATNESS | Digital Art">
