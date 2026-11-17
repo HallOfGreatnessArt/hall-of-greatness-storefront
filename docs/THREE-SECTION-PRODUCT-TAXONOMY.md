@@ -8,6 +8,12 @@ The public storefront has three mutually exclusive product sections:
 | E-Books | `ebooks` | `ebook` |
 | Educational Courses | `courses` | `course` |
 
+## Required GitHub Actions connection
+
+Automatic reading of product tags requires a repository Actions secret named `GUMROAD_ACCESS_TOKEN`. Add it in the repository's **Settings → Secrets and variables → Actions → New repository secret**. The token must belong to `https://alshayebemad.gumroad.com` and permit reading the seller's products. Do not place the token in source files, workflow YAML, or chat messages.
+
+If this secret is absent, Actions logs explicitly report that account tag synchronization was skipped. The existing catalogue can still use its curated compatibility classifications, but newly published products cannot be guaranteed automatic section placement until the secret is configured.
+
 ## Publishing a new product
 
 1. Create and publish the product in the HALL OF GREATNESS Gumroad account.
