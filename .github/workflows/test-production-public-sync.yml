@@ -91,8 +91,18 @@ jobs:
               assert product["url"] in page, f"Gumroad URL missing: {product['name']}"
               assert product["cover_url"] in page, f"Cover missing: {product['name']}"
               assert "HALL OF GREATNESS" in page, f"Brand missing: {product['name']}"
-              assert 'id="printing"' in page, f"Print guidance missing: {product['name']}"
-              assert 'id="room-showcase"' in page, f"Room showcase missing: {product['name']}"
+              content_type = product.get("content_type", "art-decor")
+              if content_type == "art-decor":
+                  assert 'id="printing"' in page, f"Print guidance missing: {product['name']}"
+                  assert 'id="room-showcase"' in page, f"Room showcase missing: {product['name']}"
+              elif content_type == "ebook":
+                  assert 'id="reading-experience"' in page and 'id="digital-delivery"' in page, f"E-book reading experience missing: {product['name']}"
+                  assert 'id="printing"' not in page and 'id="room-showcase"' not in page, f"Art-only modules leaked into e-book: {product['name']}"
+              elif content_type == "course":
+                  assert 'id="learning-experience"' in page and 'id="course-access"' in page, f"Course learning experience missing: {product['name']}"
+                  assert 'id="printing"' not in page and 'id="room-showcase"' not in page, f"Art-only modules leaked into course: {product['name']}"
+              else:
+                  raise AssertionError(f"Unknown content type {content_type!r}: {product['name']}")
           sitemap = ET.parse("sitemap.xml").getroot()
           ns = {
               "sm": "http://www.sitemaps.org/schemas/sitemap/0.9",
