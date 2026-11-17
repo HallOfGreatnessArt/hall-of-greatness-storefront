@@ -249,6 +249,8 @@ for path in pages:
 <section class="section digital-delivery" id="digital-delivery"><div class="eyebrow">Your digital edition</div><h2>Purchase, download, begin reading</h2><p>After checkout, access the files included with this product through Gumroad. No physical book will be shipped. File formats, language, edition information, and usage terms are listed in the product specifications and included license.</p></section>
 """
             page = page.replace('<section class="closing"', experience + '<section class="closing"', 1)
+            page = page.replace("An original digital artwork from HALL OF GREATNESS", "A digital book from HALL OF GREATNESS")
+            page = page.replace("Explore &amp; Get the Artwork ↗", "Explore the E-Book ↗")
             page = page.replace("Let your space tell a story.", "Make room for new ideas.")
             page = page.replace("Choose art that reflects what you value—and let its meaning live with you.", "Choose a subject worth exploring and begin your next reading journey.")
             page = page.replace("Get " + str(product.get("name", "")) + " ↗", "Get the e-book ↗")
@@ -261,6 +263,8 @@ for path in pages:
 <section class="section digital-delivery" id="course-access"><div class="eyebrow">Course access</div><h2>Enroll, access, make progress</h2><p>Course delivery and access instructions are provided through the product checkout and materials. Review the listed requirements, format, duration, and access terms before purchase. No physical course materials are shipped unless explicitly stated.</p></section>
 """
             page = page.replace('<section class="closing"', experience + '<section class="closing"', 1)
+            page = page.replace("An original digital artwork from HALL OF GREATNESS", "A guided learning experience from HALL OF GREATNESS")
+            page = page.replace("Explore &amp; Get the Artwork ↗", "Explore the Course ↗")
             page = page.replace("Let your space tell a story.", "Take the next step in your learning.")
             page = page.replace("Choose art that reflects what you value—and let its meaning live with you.", "Choose a learning experience that supports your goals and start building new skills.")
             page = page.replace("Get " + str(product.get("name", "")) + " ↗", "Explore the course ↗")
