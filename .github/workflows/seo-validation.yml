@@ -39,6 +39,12 @@ jobs:
       - name: Validate HTML, SEO metadata, robots.txt and sitemap XML
         run: python scripts/validate_seo.py
 
+      - name: Install offline translation engine
+        run: python -m pip install --disable-pip-version-check argostranslate
+
+      - name: Generate missing multilingual section UI keys
+        run: python scripts/translate_catalog.py
+
       - name: Validate locale coverage and Arabic content
         run: python scripts/validate_locales.py
 
