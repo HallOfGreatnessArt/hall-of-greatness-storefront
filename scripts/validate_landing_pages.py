@@ -125,8 +125,20 @@ for product in published:
         fail(f"{path}: exact Gumroad product URL is missing")
     if 'rel="canonical"' not in page or 'name="description"' not in page:
         fail(f"{path}: missing canonical or meta description")
-    if 'id="printing"' not in page or 'id="room-showcase"' not in page:
-        fail(f"{path}: missing buyer guidance or artwork presentation")
+    content_type = str(product.get("content_type", "art-decor")).strip().lower()
+    if content_type == "art-decor":
+        if 'id="printing"' not in page or 'id="room-showcase"' not in page:
+            fail(f"{path}: art product missing print guidance or artwork presentation")
+    elif content_type in {"ebook", "course"}:
+        forbidden = ("room-showcase", "id=\"printing\"", "purchase-strip", "Imagine it in a refined frame", "Make the artwork part of your space", "More than decoration. A feeling that stays.", "Let your space tell a story.")
+        leaked = [phrase for phrase in forbidden if phrase in page]
+        if leaked:
+            fail(f"{path}: art-only presentation leaked into {content_type} page: {leaked}")
+        expected = "ebook-experience" if content_type == "ebook" else "course-experience"
+        if expected not in page:
+            fail(f"{path}: missing dedicated {content_type} experience module")
+    else:
+        fail(f"{path}: unknown product content_type {content_type!r}")
     for script_src in parser.local_scripts:
         parsed = urlparse(script_src)
         if parsed.scheme or script_src.startswith("//"):
