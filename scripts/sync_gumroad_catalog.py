@@ -21,6 +21,8 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG_PATH = ROOT / "catalog-data.json"
 API_URL = "https://api.gumroad.com/v2/products"
+USER_API_URL = "https://api.gumroad.com/v2/user"
+EXPECTED_STORE_HOST = "alshayebemad.gumroad.com"
 STORE_BASE = "https://alshayebemad.gumroad.com/l/"
 
 
@@ -192,6 +194,32 @@ def build_record(product: dict, used_slugs: set[str]) -> dict:
     return record
 
 
+def verify_connected_store(token: str) -> None:
+    """Fail closed unless the read-only token belongs to the intended Gumroad store."""
+    request = urllib.request.Request(
+        USER_API_URL,
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Accept": "application/json",
+            "User-Agent": "HALL-OF-GREATNESS-storefront-sync/1.0",
+        },
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except (urllib.error.HTTPError, urllib.error.URLError) as exc:
+        raise RuntimeError(f"Could not verify the connected Gumroad account: {exc}") from exc
+    user = payload.get("user") if payload.get("success") is True else None
+    profile_url = str((user or {}).get("url") or "").strip()
+    host = (urlparse(profile_url).hostname or "").lower()
+    if host != EXPECTED_STORE_HOST:
+        raise RuntimeError(
+            "Gumroad token account mismatch. Refusing to import or synchronize tags; "
+            f"expected {EXPECTED_STORE_HOST}, received {host or 'no verifiable profile URL'}."
+        )
+    print(f"Verified read-only Gumroad account: {EXPECTED_STORE_HOST}")
+
+
 def fetch_products(token: str) -> list[dict]:
     request = urllib.request.Request(
         API_URL,
@@ -275,6 +303,7 @@ def main() -> int:
         print("::warning::GUMROAD_ACCESS_TOKEN is not configured. Sync was skipped; add it in GitHub Actions repository secrets to enable automatic discovery.")
         return 0
 
+    verify_connected_store(token)
     catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
     gumroad_products = fetch_products(token)
     added, tag_updates = sync(gumroad_products, catalog)
