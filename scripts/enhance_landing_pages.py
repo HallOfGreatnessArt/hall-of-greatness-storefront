@@ -236,7 +236,7 @@ for path in pages:
     else:
         # Non-art products must never inherit framing, wall-display, or print-oriented modules.
         page = re.sub(r'<section class="room-showcase" id="room-showcase">.*?</section>', '', page, flags=re.S)
-        page = re.sub(r'<div class="purchase-strip".*?</div>\s*</div>\s*</div>\s*</div>', '', page, flags=re.S)
+        page = re.sub(r'<div class="purchase-strip".*?</div>\s*</div>', '', page, flags=re.S)
         page = re.sub(r'<section class="section" id="printing">.*?</section>', '', page, flags=re.S)
         page = re.sub(r'<section class="section"><div class="eyebrow">The meaning behind the artwork</div>.*?</section>', '', page, flags=re.S)
         page = re.sub(r'<section class="section"><div class="eyebrow">Where it belongs</div>.*?</section>', '', page, flags=re.S)
