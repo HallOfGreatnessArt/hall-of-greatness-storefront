@@ -85,6 +85,12 @@ def test_all_product_pages(browser):
         wait_language(page, "en", "ltr")
         original_title = page.locator("[data-hog-title]").inner_text().strip()
         assert original_title, f"{slug}: empty English product title"
+        content_type = product.get("content_type", "art-decor")
+        assert page.locator("body").get_attribute("data-content-type") == content_type, f"{slug}: content type marker mismatch"
+        if content_type in {"ebook", "course"}:
+            assert page.locator("#room-showcase, #printing, .purchase-strip").count() == 0, f"{slug}: art-only display or print copy leaked into {content_type}"
+            module = "#reading-experience.ebook-experience" if content_type == "ebook" else "#learning-experience.course-experience"
+            assert page.locator(module).count() == 1, f"{slug}: dedicated {content_type} module missing"
 
         page.select_option("#hog-page-language", "ar")
         wait_language(page, "ar", "rtl")
@@ -93,6 +99,12 @@ def test_all_product_pages(browser):
         assert actual_title == expected_title, f"{slug}: expected {expected_title!r}, got {actual_title!r}"
         assert page.locator("[data-hog-full-description]").count() == 1
         assert page.locator("[data-hog-full-description]").inner_text().strip()
+        if content_type == "ebook":
+            assert "كتاب إلكتروني" in page.locator("[data-hog-category]").inner_text(), f"{slug}: Arabic e-book category label missing"
+            assert "افتح آفاقاً جديدة" in page.locator(".closing h2").inner_text(), f"{slug}: Arabic e-book call to action missing"
+        elif content_type == "course":
+            assert "دورة تعليمية" in page.locator("[data-hog-category]").inner_text(), f"{slug}: Arabic course category label missing"
+            assert "خطوتك التالية" in page.locator(".closing h2").inner_text(), f"{slug}: Arabic course call to action missing"
 
         page.select_option("#hog-page-language", "en")
         wait_language(page, "en", "ltr")

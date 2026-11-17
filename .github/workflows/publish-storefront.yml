@@ -127,11 +127,20 @@ jobs:
               assert p["cover_url"] in page, f"Wrong or missing cover: {path}"
               assert p["url"] in page, f"Wrong or missing Gumroad link: {path}"
               assert "HALL OF GREATNESS" in page, f"Missing brand: {path}"
-              assert 'id="printing"' in page, f"Missing buyer print guidance: {path}"
-              assert "Digital download" in page, f"Missing digital product clarity: {path}"
-              assert 'id="room-showcase"' in page, f"Missing room mockup section: {path}"
-              assert page.count('class="room-artwork"') == 1, f"Expected one clean, proportion-preserving artwork presentation: {path}"
-              assert page.count(p["cover_url"]) >= 2, f"Original cover missing from hero or artwork presentation: {path}"
+              content_type = p.get("content_type", "art-decor")
+              if content_type == "art-decor":
+                  assert 'id="printing"' in page, f"Missing buyer print guidance: {path}"
+                  assert 'id="room-showcase"' in page, f"Missing room mockup section: {path}"
+                  assert page.count('class="room-artwork"') == 1, f"Expected one clean, proportion-preserving artwork presentation: {path}"
+                  assert page.count(p["cover_url"]) >= 2, f"Original cover missing from hero or artwork presentation: {path}"
+              elif content_type == "ebook":
+                  assert 'id="reading-experience"' in page and 'id="digital-delivery"' in page, f"Missing e-book reading/delivery modules: {path}"
+                  assert 'id="room-showcase"' not in page and 'id="printing"' not in page, f"Art-only copy leaked into e-book page: {path}"
+              elif content_type == "course":
+                  assert 'id="learning-experience"' in page and 'id="course-access"' in page, f"Missing course learning/access modules: {path}"
+                  assert 'id="room-showcase"' not in page and 'id="printing"' not in page, f"Art-only copy leaked into course page: {path}"
+              else:
+                  raise AssertionError(f"Unknown content type {content_type!r}: {path}")
           pages = list(Path("landing").glob("*/index.html"))
           assert len(pages) == len(published), f"Expected {len(published)} landing pages, found {len(pages)}"
           print(f"Landing pages OK: {len(pages)} pages; titles, covers, and exact Gumroad URLs verified.")
