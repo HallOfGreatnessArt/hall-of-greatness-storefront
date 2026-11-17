@@ -8,6 +8,10 @@ on:
       - ".github/workflows/publish-storefront.yml"
       - ".github/workflows/test-production-public-sync.yml"
       - "scripts/apply_product_classifications.py"
+      - "scripts/sync_gumroad_catalog.py"
+      - "assets/i18n.js"
+      - "index.html"
+      - "tests/test_product_classifications.py"
       - "product-classifications.json"
       - "catalog-data.json"
       - "scripts/discover_public_gumroad_products.py"
@@ -40,6 +44,7 @@ jobs:
         run: |
           set -euo pipefail
           python scripts/discover_public_gumroad_products.py
+          python scripts/sync_gumroad_catalog.py
           python scripts/apply_product_classifications.py
           python tests/test_product_classifications.py
       - name: Generate landing pages
