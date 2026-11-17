@@ -11,7 +11,7 @@ async function init(){
  async function apply(code){
   const lang=code==="auto"?auto():code;let data={};
   if(lang!=="en"){try{const r=await fetch("../../locales/"+encodeURIComponent(lang)+".json");if(r.ok)data=await r.json();}catch(e){}}
-  const restoreSelectors=["[data-hog-title]","[data-hog-subtitle]","[data-hog-summary]","[data-hog-category]",".hero .btn",".closing .btn",".note",".price span","#full-description","#product-details","#printing .eyebrow","#printing h2",".print-step b",".print-step p",".digital-reminder",".room-showcase .eyebrow",".room-showcase h2",".room-showcase .room-intro p",".closing h2",".closing p",".purchase-chip"];
+  const restoreSelectors=["[data-hog-title]","[data-hog-subtitle]","[data-hog-summary]","[data-hog-category]",".hero .btn",".closing .btn",".note",".price span","#full-description","#product-details","#reading-experience","#digital-delivery","#learning-experience","#course-access",".experience-points","#printing .eyebrow","#printing h2",".print-step b",".print-step p",".digital-reminder",".room-showcase .eyebrow",".room-showcase h2",".room-showcase .room-intro p",".closing h2",".closing p",".purchase-chip"];
   restoreSelectors.forEach(selector=>document.querySelectorAll(selector).forEach(el=>{if(el.dataset.hogDefaultHtml===undefined)el.dataset.hogDefaultHtml=el.innerHTML;el.innerHTML=el.dataset.hogDefaultHtml;}));
   if(document.documentElement.dataset.hogDefaultTitle===undefined)document.documentElement.dataset.hogDefaultTitle=document.title;
   document.title=document.documentElement.dataset.hogDefaultTitle;
@@ -82,6 +82,8 @@ async function init(){
   if(p.category){document.querySelectorAll("[data-hog-category]").forEach(el=>el.textContent=p.category);}
   if(p.full_description){const box=document.querySelector("[data-hog-full-description]");if(box){box.querySelectorAll(":scope > p").forEach(el=>el.remove());p.full_description.split(/\n\s*\n/).filter(Boolean).forEach(t=>{const el=document.createElement("p");el.textContent=t;box.appendChild(el);});}}
   if(p.product_details){const box=document.querySelector("[data-hog-product-details]");if(box){box.querySelectorAll(":scope > p").forEach(el=>el.remove());const labels=lang==="ar"?{files_included:"الملفات المرفقة",product_type:"نوع المنتج",delivery:"التسليم",physical_item:"المنتج المادي",printing:"الطباعة",usage:"الاستخدام والترخيص",bundle_item_count:"محتويات المجموعة"}:{};Object.entries(p.product_details).forEach(([k,v])=>{if(!v)return;const el=document.createElement("p"),strong=document.createElement("strong");strong.textContent=(labels[k]||k.replace(/_/g," "))+": ";el.append(strong,document.createTextNode(v));box.appendChild(el);});}}
+  if(lang==="ar" && body.dataset.contentType==="ebook"){const cat=document.querySelector("[data-hog-category]");if(cat)cat.textContent="كتاب إلكتروني · HALL OF GREATNESS";}
+  if(lang==="ar" && body.dataset.contentType==="course"){const cat=document.querySelector("[data-hog-category]");if(cat)cat.textContent="دورة تعليمية · HALL OF GREATNESS";}
   if(select)select.value=code;
  }
  const initial=(saved&&saved!=="auto"&&!registry.some(x=>x.code===saved))?"auto":(saved||"auto");await apply(initial);
