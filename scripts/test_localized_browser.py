@@ -40,12 +40,20 @@ def test_local_homepage(browser):
     assert "ar" in home_options, f"Arabic option missing from test registry: {home_options}"
     wait_language(page, "en", "ltr")
     english_hero = page.locator(".hero h1").inner_text()
-    assert "Art that carries" in english_hero
+    assert "Art, knowledge" in english_hero
+    assert page.locator("#art-decor .head h2").inner_text() == "Art & Decor"
+    assert page.locator("#ebooks .head h2").inner_text() == "E-Books"
+    assert page.locator("#courses .head h2").inner_text() == "Educational Courses"
+    section_descriptions = [page.locator(f"#{section} .head p").inner_text() for section in ("art-decor", "ebooks", "courses")]
+    assert len(set(section_descriptions)) == 3, "Each storefront section must have its own description"
 
     page.select_option("#language-select", "ar")
     wait_language(page, "ar", "rtl")
     arabic_hero = normalized(page.locator(".hero h1").inner_text())
     assert "فن يحمل حكاية." in arabic_hero, arabic_hero
+    assert page.locator("#art-decor .head h2").inner_text() == "الفن والديكور"
+    assert page.locator("#ebooks .head h2").inner_text() == "الكتب الإلكترونية"
+    assert page.locator("#courses .head h2").inner_text() == "الكورسات التعليمية"
     assert page.evaluate("localStorage.getItem('hog-language')") == "ar"
 
     page.reload(wait_until="domcontentloaded")
@@ -54,12 +62,12 @@ def test_local_homepage(browser):
 
     page.select_option("#language-select", "en")
     wait_language(page, "en", "ltr")
-    assert "Art that carries" in page.locator(".hero h1").inner_text()
+    assert "Art, knowledge" in page.locator(".hero h1").inner_text()
     assert page.evaluate("localStorage.getItem('hog-language')") == "en"
 
     page.reload(wait_until="domcontentloaded")
     wait_language(page, "en", "ltr")
-    assert "Art that carries" in page.locator(".hero h1").inner_text()
+    assert "Art, knowledge" in page.locator(".hero h1").inner_text()
     page.close()
 
 def test_all_product_pages(browser):
@@ -124,7 +132,7 @@ def test_published_site(browser):
     wait_language(page, "en", "ltr")
     page.reload(wait_until="domcontentloaded")
     wait_language(page, "en", "ltr")
-    assert "Art that carries" in page.locator(".hero h1").inner_text()
+    assert "Art, knowledge" in page.locator(".hero h1").inner_text()
     print("PUBLISHED HOMEPAGE: genuine Arabic option, Arabic ↔ English, RTL/LTR, and refresh persistence passed.")
 
     tested = 0
