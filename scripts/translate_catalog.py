@@ -119,7 +119,7 @@ for lang in REG:
             old["_ui_fallback_keys"]=sorted(fallback_ui_keys.union(missing_ui_keys))
             old["_ui_translation_status"]="english-fallback-incomplete"
             path.parent.mkdir(parents=True,exist_ok=True)
-            path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+            path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
             print(f"English fallback added for unsupported UI keys: {code} ({len(missing_ui_keys)} key(s)); locale remains unavailable.")
         continue
     if needs_ui or needs_missing_ui:
