@@ -10,6 +10,9 @@ on:
       - "scripts/discover_public_gumroad_products.py"
       - "scripts/import_public_gumroad_product.py"
       - "scripts/apply_product_classifications.py"
+      - "scripts/sync_gumroad_catalog.py"
+      - "tests/test_product_classifications.py"
+      - "scripts/test_responsive_storefront.py"
       - "product-classifications.json"
       - "scripts/generate_landing_pages.py"
       - "scripts/enhance_landing_pages.py"
@@ -53,8 +56,16 @@ jobs:
           set -euo pipefail
           python scripts/discover_public_gumroad_products.py
 
-      - name: Apply explicit product-type tags for downstream galleries
-        run: python scripts/apply_product_classifications.py
+      - name: Read Gumroad product tags from the connected account (read-only)
+        env:
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+        run: python scripts/sync_gumroad_catalog.py
+
+      - name: Classify products into Art & Decor, E-Books and Courses
+        run: |
+          set -euo pipefail
+          python scripts/apply_product_classifications.py
+          python tests/test_product_classifications.py
 
       - name: Cache free translation models
         uses: actions/cache@v4
@@ -83,6 +94,9 @@ jobs:
           products = data["products"]
           published = [p for p in products if p.get("published")]
           bundles = [p for p in published if p.get("is_bundle")]
+          valid_types = {"art-decor", "ebook", "course"}
+          unclassified = [p.get("permalink") for p in published if p.get("content_type") not in valid_types]
+          assert not unclassified, f"Published products require one valid Gumroad section tag: {unclassified}"
           assert len(products) == len(published), "Catalogue must contain published products only"
           assert all(p.get("url", "").startswith("https://") for p in published)
           assert all(p.get("landing_slug") and p.get("cover_url", "").startswith("https://") and p.get("summary") for p in published)
@@ -193,6 +207,9 @@ jobs:
           cp -R assets locales _site/
           cp -R landing _site/
           echo "Storefront artifact prepared with all product landing pages."
+
+      - name: Run responsive layout and three-section browser checks
+        run: python scripts/test_responsive_storefront.py
 
       - name: Persist newly synced catalogue and landing pages
         run: |

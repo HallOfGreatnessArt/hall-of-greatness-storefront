@@ -1,6 +1,7 @@
 name: Test production public Gumroad sync without OAuth
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - main
@@ -8,6 +9,12 @@ on:
       - ".github/workflows/publish-storefront.yml"
       - ".github/workflows/test-production-public-sync.yml"
       - "scripts/apply_product_classifications.py"
+      - "scripts/sync_gumroad_catalog.py"
+      - "assets/i18n.js"
+      - "scripts/translate_catalog.py"
+      - "scripts/validate_locales.py"
+      - "index.html"
+      - "tests/test_product_classifications.py"
       - "product-classifications.json"
       - "catalog-data.json"
       - "scripts/discover_public_gumroad_products.py"
@@ -40,6 +47,13 @@ jobs:
         run: |
           set -euo pipefail
           python scripts/discover_public_gumroad_products.py
+      - name: Read Gumroad product tags from the connected account (read-only)
+        env:
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+        run: python scripts/sync_gumroad_catalog.py
+      - name: Apply and test three-section classifications
+        run: |
+          set -euo pipefail
           python scripts/apply_product_classifications.py
           python tests/test_product_classifications.py
       - name: Generate landing pages
@@ -62,6 +76,8 @@ jobs:
           products = data["products"]
           published = [p for p in products if p.get("published")]
           assert products and len(products) == len(published), "Catalogue contains drafts or is empty"
+          valid_types = {"art-decor", "ebook", "course"}
+          assert all(p.get("content_type") in valid_types for p in published), "Every published product must map to exactly one storefront section"
           assert len({p["permalink"] for p in published}) == len(published), "Duplicate product permalinks"
           assert len({p["landing_slug"] for p in published}) == len(published), "Duplicate landing slugs"
           assert report["public_products_discovered"] >= report["public_products_total"] or report["public_products_total"] == 0

@@ -99,29 +99,49 @@ for lang in REG:
     if reviewed_ui and old.get("_ui_source_hash") != ui_hash:
         print(f"REVIEW REQUIRED: {code} source UI changed; preserving reviewed translation.")
     needs_ui=old.get("_ui_source_hash")!=ui_hash and not reviewed_ui
+    existing_ui=old.setdefault("ui",{})
+    fallback_ui_keys=set(old.get("_ui_fallback_keys",[]))
+    missing_ui_keys=[key for key in ui if key not in existing_ui or key in fallback_ui_keys]
+    needs_missing_ui=bool(missing_ui_keys)
     needs_ar_titles = code=="ar" and any(
         p.get("published") and p.get("permalink") and
         not str(products.get(p["permalink"],{}).get("title_ar","")).strip()
         for p in CAT["products"]
     )
-    if not needs_ui and not pending and not needs_ar_titles:
+    if not needs_ui and not needs_missing_ui and not pending and not needs_ar_titles:
         print(f"Up to date: {code}; no model installation needed.")
         continue
     translator=get_translator(target)
     if translator is None:
+        if needs_missing_ui:
+            existing_ui.update({key: ui[key] for key in missing_ui_keys})
+            old["ui"]=existing_ui
+            old["_ui_fallback_keys"]=sorted(fallback_ui_keys.union(missing_ui_keys))
+            old["_ui_translation_status"]="english-fallback-incomplete"
+            path.parent.mkdir(parents=True,exist_ok=True)
+            path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+            print(f"English fallback added for unsupported UI keys: {code} ({len(missing_ui_keys)} key(s)); locale remains unavailable.")
         continue
-    if needs_ui:
-        keys=list(ui)
+    if needs_ui or needs_missing_ui:
+        keys=list(ui) if needs_ui else missing_ui_keys
         raw=[re.sub(r"<[^>]+>","",ui[k]) if "<" in ui[k] else ui[k] for k in keys]
         vals=translate_many(raw,code)
-        if vals is None: continue
-        translated=dict(zip(keys,vals))
-        if "<em>" in ui.get("heroTitle",""):
-            translated["heroTitle"]="<em>"+translated["heroTitle"]+"</em>"
-        old["ui"]=translated
-        old["_ui_source_hash"]=ui_hash
-        old["_ui_translation_status"]="machine-generated-unreviewed"
-    if reviewed_ui:
+        if vals is not None:
+            translated=dict(zip(keys,vals))
+            if "heroTitle" in translated and "<em>" in ui.get("heroTitle",""):
+                translated["heroTitle"]="<em>"+translated["heroTitle"]+"</em>"
+            if needs_ui:
+                old["ui"]=translated
+                old["_ui_source_hash"]=ui_hash
+                old["_ui_translation_status"]="machine-generated-unreviewed"
+            else:
+                # Preserve editorially reviewed strings; add only newly introduced
+                # keys so the expanded navigation and three sections stay translated.
+                existing_ui.update(translated)
+                old["ui"]=existing_ui
+                old["_ui_translation_status"]="editorially-reviewed-with-new-machine-keys"
+            old["_ui_fallback_keys"]=sorted(fallback_ui_keys.difference(keys))
+    if reviewed_ui and not needs_missing_ui:
         old["_ui_translation_status"]="editorially-reviewed"
     for p,key,fields in pending:
         source_hash=digest(fields)
@@ -189,6 +209,7 @@ for lang in REG:
                     products_current=False
                     break
             complete=(expected_ui_keys.issubset(set(localized_ui)) and
+                      not localized.get("_ui_fallback_keys") and
                       expected_product_keys.issubset(set(localized_products)) and
                       products_current)
         except (UnicodeError,json.JSONDecodeError):

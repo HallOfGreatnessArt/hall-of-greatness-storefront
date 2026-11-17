@@ -1,7 +1,294 @@
 {
-  "schema_version": 1,
-  "description": "Curated product-type metadata for the HALL OF GREATNESS public catalogue. Use exact Gumroad permalinks; tags drive the dedicated EBOOKS LIBRARY.",
+  "schema_version": 2,
+  "description": "Three-section product taxonomy for HALL OF GREATNESS. Gumroad tags are authoritative when present; this exact-permalink registry preserves the classification of the existing published catalogue.",
+  "tag_taxonomy": {
+    "art-decor": "art-decor",
+    "ebooks": "ebook",
+    "courses": "course"
+  },
   "products": {
+    "oubirh": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "hqpird": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "wdtvt": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "mxrljy": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "gusqyc": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "aenwi": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "gynmhv": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "jrsgce": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "ukxrmq": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "yhkokf": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "nxkxyq": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "mzlqxg": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "etqsav": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "vwrllor": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "gkwadk": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "rglfun": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "cotnkm": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "kaztbw": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "cuitvq": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "rabhc": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "ycltf": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "bctcdz": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "msuzc": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "tzlsv": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "bgqxwm": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "aedllm": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "smuewa": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "jzjbrg": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "csyqhm": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "jvffaq": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "kjclzu": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "xvccaj": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "wjxgxb": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "fgdpqp": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "ngqan": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "wgojq": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "gljhyf": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "dveiqu": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "bqgrph": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "wpottc": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "lvrxre": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "csytag": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "dtgnt": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "mfpenw": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "oyzmq": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "ygyyhg": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
+    "dovnhc": {
+      "content_type": "art-decor",
+      "tags": [
+        "art-decor"
+      ]
+    },
     "isbsay": {
       "content_type": "ebook",
       "tags": [
