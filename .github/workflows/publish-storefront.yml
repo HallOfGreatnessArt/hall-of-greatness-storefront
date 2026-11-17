@@ -9,6 +9,8 @@ on:
       - "index.html"
       - "scripts/discover_public_gumroad_products.py"
       - "scripts/import_public_gumroad_product.py"
+      - "scripts/apply_product_classifications.py"
+      - "product-classifications.json"
       - "scripts/generate_landing_pages.py"
       - "scripts/enhance_landing_pages.py"
       - "scripts/generate_sitemap.py"
@@ -50,6 +52,9 @@ jobs:
         run: |
           set -euo pipefail
           python scripts/discover_public_gumroad_products.py
+
+      - name: Apply explicit product-type tags for downstream galleries
+        run: python scripts/apply_product_classifications.py
 
       - name: Cache free translation models
         uses: actions/cache@v4
