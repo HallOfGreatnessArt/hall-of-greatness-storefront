@@ -162,6 +162,8 @@ for path in pages:
                 attrs = attribute.sub(f' data-product-permalink="{permalink}"', attrs)
             else:
                 attrs += f' data-product-permalink="{permalink}"'
+            attrs = re.sub(r'\sdata-content-type\s*=\s*("[^"]*"|\'[^\']*\'|[^\s>]*)', "", attrs, flags=re.I)
+            attrs += f' data-content-type="{content_type}"'
             return f"<body{attrs}>"
         page = body_pattern.sub(repair_body_tag, page, count=1)
     if 'id="hog-page-language"' not in page:
@@ -215,6 +217,8 @@ for path in pages:
     if 'landing-i18n.js' not in page:
         page = page.replace("</body>", '<script src="../../assets/landing-i18n.js" defer></script>\n</body>', 1)
     if "</style>" in page:
+        if ".product-experience" not in page:
+            page = page.replace("</style>", "\n/* Product-category learning and reading modules */\n.product-experience{margin:30px 0;padding:28px;border:1px solid var(--line);background:linear-gradient(135deg,#1d2422,#171b19)}\n.ebook-experience{border-color:#398d88;background:linear-gradient(135deg,#132f30,#171d1d)}\n.course-experience{border-color:#8762b5;background:linear-gradient(135deg,#2a2038,#191720)}\n.experience-points{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}\n.experience-points>div{padding:16px;border:1px solid #ffffff22;background:#ffffff08}\n.experience-points strong{display:block;color:#b8e8e2;font:600 15px Georgia;margin-bottom:8px}\n.course-experience .experience-points strong{color:#dfcaff}\n.experience-points p{font:14px/1.7 Arial,sans-serif!important;margin:0}\n.digital-delivery{border-left:3px solid #398d88;padding-left:22px}\n.course-experience~.digital-delivery{border-left-color:#8762b5}\n@media(max-width:760px){.product-experience{padding:18px}.experience-points{grid-template-columns:1fr}.digital-delivery{padding-left:16px}}\n" + "\n</style>", 1)
         page = re.sub(r'/\* Buyer clarity and print guidance \*/.*?(?=</style>)', '', page, flags=re.S)
         page = page.replace("</style>", STYLE + "\n</style>", 1)
     if is_art and 'class="purchase-strip"' not in page:
