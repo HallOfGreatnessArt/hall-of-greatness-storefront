@@ -1,6 +1,7 @@
 name: Test production public Gumroad sync without OAuth
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - main
