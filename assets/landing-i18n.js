@@ -39,6 +39,28 @@ async function init(){
    const closing=document.querySelector(".closing p");if(closing)closing.textContent="اختر فناً يعبر عما تقدّره، ودع معناه يرافق تفاصيل المكان.";
    document.querySelectorAll(".purchase-chip").forEach((el,i)=>{const values=[["تنزيل رقمي","احصل على ملفاتك بعد إتمام الشراء"],["اطبع بطريقتك","اختر المقاس الملائم لمساحتك"],["فن يستحق العرض","للمنازل والاستوديوهات والمساحات ذات المعنى"]][i];if(values){const strong=document.createElement("strong");strong.textContent=values[0];el.replaceChildren(strong,document.createTextNode(values[1]));}});
   }
+  if(lang==="ar" && body.dataset.contentType==="ebook"){
+   const sub=document.querySelector("[data-hog-subtitle]");if(sub)sub.textContent="كتاب رقمي من HALL OF GREATNESS";
+   const cat=document.querySelector("[data-hog-category]");if(cat)cat.textContent="كتاب إلكتروني · HALL OF GREATNESS";
+   document.querySelectorAll(".hero .btn,.closing .btn").forEach((el,i)=>el.textContent=i===0?"استكشف الكتاب الإلكتروني":"احصل على الكتاب");
+   setText(".closing h2","افتح آفاقاً جديدة بالمعرفة");
+   const closing=document.querySelector(".closing p");if(closing)closing.textContent="ابدأ رحلة قراءة توسّع فهمك وتمنحك أفكاراً تستحق التأمل والتطبيق.";
+   setText("#full-description .eyebrow","محتوى الكتاب");
+   setText("#full-description h2","عن هذا الكتاب");
+   setText("#product-details .eyebrow","تفاصيل النسخة الرقمية");
+   setText("#product-details h2","مواصفات الكتاب");
+  }
+  if(lang==="ar" && body.dataset.contentType==="course"){
+   const sub=document.querySelector("[data-hog-subtitle]");if(sub)sub.textContent="تجربة تعليمية من HALL OF GREATNESS";
+   const cat=document.querySelector("[data-hog-category]");if(cat)cat.textContent="دورة تعليمية · HALL OF GREATNESS";
+   document.querySelectorAll(".hero .btn,.closing .btn").forEach((el,i)=>el.textContent=i===0?"استكشف الدورة":"ابدأ رحلة التعلم");
+   setText(".closing h2","ابدأ خطوتك التالية في التعلم");
+   const closing=document.querySelector(".closing p");if(closing)closing.textContent="اختر تجربة تعليمية تدعم أهدافك وتساعدك على اكتساب معرفة ومهارات جديدة.";
+   setText("#full-description .eyebrow","محتوى الدورة");
+   setText("#full-description h2","ماذا ستتعلم؟");
+   setText("#product-details .eyebrow","تفاصيل الدورة");
+   setText("#product-details h2","المحتوى ومتطلبات الوصول");
+  }
   document.documentElement.lang=lang;
   const rtl=(registry.find(x=>x.code===lang)||{}).rtl||false;
   document.documentElement.dir=rtl?"rtl":"ltr";
