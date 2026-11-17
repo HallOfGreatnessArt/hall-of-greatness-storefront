@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Add newly published Gumroad products to the HALL OF GREATNESS storefront.
+"""Read published Gumroad products and synchronize section tags into the storefront catalogue.
 
-Existing catalogue records are immutable here: this script only appends records
-for newly published products. It never edits Gumroad products or their prices.
+This script is read-only against Gumroad. It appends new published products and
+refreshes only the local catalogue tag field for known products; it never writes
+products, prices, files, publication state, or account settings back to Gumroad.
 """
 from __future__ import annotations
 
@@ -119,6 +120,21 @@ def product_identity_url(value: object) -> str:
     return ""
 
 
+
+def normalize_gumroad_tags(value: object) -> list[str]:
+    if not isinstance(value, list):
+        return []
+    result = []
+    for item in value:
+        if isinstance(item, dict):
+            item = item.get("name")
+        if isinstance(item, str) and item.strip():
+            tag = item.strip().lower().replace("_", "-").replace(" ", "-")
+            if tag not in result:
+                result.append(tag)
+    return result
+
+
 def price_in_usd(product: dict) -> float:
     currency = str(product.get("currency") or "usd").lower()
     if currency != "usd":
@@ -165,15 +181,9 @@ def build_record(product: dict, used_slugs: set[str]) -> dict:
         "cover_url": cover,
         "summary": summary,
     }
-    incoming_tags = product.get("tags")
-    if isinstance(incoming_tags, list):
-        normalized_tags = [tag.get("name") if isinstance(tag, dict) else tag for tag in incoming_tags]
-        record["tags"] = list(dict.fromkeys(
-            str(tag).strip().lower() for tag in normalized_tags
-            if isinstance(tag, str) and tag.strip()
-        ))
-        if any(tag in {"ebooks", "digital-ebook", "digital-book"} for tag in record["tags"]):
-            record["content_type"] = "ebook"
+    incoming_tags = normalize_gumroad_tags(product.get("tags"))
+    if incoming_tags:
+        record["tags"] = incoming_tags
     if is_bundle:
         record["bundle_contents"] = [
             item.get("permalink") if isinstance(item, dict) else str(item)
@@ -208,26 +218,39 @@ def fetch_products(token: str) -> list[dict]:
     return products
 
 
-def sync(products: list[dict], catalog: dict) -> list[str]:
+def sync(products: list[dict], catalog: dict) -> tuple[list[str], list[str]]:
     existing = catalog.setdefault("products", [])
-    known = {str(p.get("permalink")).strip().lower() for p in existing if p.get("permalink")}
-    known_urls = {
-        identity for p in existing
-        if (identity := product_identity_url(p.get("url")))
+    by_permalink = {
+        str(p.get("permalink", "")).strip().lower(): p
+        for p in existing if p.get("permalink")
+    }
+    by_url = {
+        product_identity_url(p.get("url")): p
+        for p in existing if product_identity_url(p.get("url"))
     }
     used_slugs = {str(p.get("landing_slug")) for p in existing if p.get("landing_slug")}
-    added = []
+    added: list[str] = []
+    tag_updates: list[str] = []
 
     for product in products:
         if product.get("published") is not True:
             continue
         permalink = extract_permalink(product)
         incoming_url = product_identity_url(product_url(product, permalink)) if permalink else ""
-        if (
-            not permalink
-            or permalink.strip().lower() in known
-            or (incoming_url and incoming_url in known_urls)
-        ):
+        current = by_permalink.get(permalink.strip().lower()) if permalink else None
+        if current is None and incoming_url:
+            current = by_url.get(incoming_url)
+
+        # Keep current product content and presentation untouched; synchronize
+        # only the tags that the owner configured in Gumroad product settings.
+        if current is not None:
+            incoming_tags = normalize_gumroad_tags(product.get("tags"))
+            if incoming_tags and current.get("tags") != incoming_tags:
+                current["tags"] = incoming_tags
+                tag_updates.append(str(current.get("name") or permalink))
+            continue
+
+        if not permalink:
             continue
         try:
             record = build_record(product, used_slugs)
@@ -235,17 +258,16 @@ def sync(products: list[dict], catalog: dict) -> list[str]:
             print(f"::warning::Skipping {product.get('name', permalink)}: {exc}")
             continue
         existing.append(record)
-        known.add(permalink.strip().lower())
+        by_permalink[permalink.strip().lower()] = record
         record_url_identity = product_identity_url(record.get("url"))
         if record_url_identity:
-            known_urls.add(record_url_identity)
+            by_url[record_url_identity] = record
         used_slugs.add(record["landing_slug"])
         added.append(record["name"])
 
     catalog["product_count"] = len(existing)
     catalog["verified_at"] = dt.datetime.now(dt.timezone.utc).date().isoformat()
-    return added
-
+    return added, tag_updates
 
 def main() -> int:
     token = os.environ.get("GUMROAD_ACCESS_TOKEN", "").strip()
@@ -255,18 +277,18 @@ def main() -> int:
 
     catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
     gumroad_products = fetch_products(token)
-    added = sync(gumroad_products, catalog)
+    added, tag_updates = sync(gumroad_products, catalog)
 
-    if added:
+    if added or tag_updates:
         CATALOG_PATH.write_text(
             json.dumps(catalog, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
-        print(f"Added {len(added)} newly published Gumroad product(s):")
-        for name in added:
-            print(f" - {name}")
-    else:
-        print("No newly published Gumroad products found. Existing catalogue records were left unchanged.")
+    print(f"Added {len(added)} newly published Gumroad product(s).")
+    print(f"Refreshed Gumroad tag metadata for {len(tag_updates)} existing product(s).")
+    if tag_updates:
+        for name in tag_updates:
+            print(f" - tags refreshed: {name}")
     print(f"Catalogue now contains {len(catalog['products'])} products.")
     return 0
 
