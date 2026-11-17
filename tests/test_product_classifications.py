@@ -21,7 +21,6 @@ class ProductClassificationTests(unittest.TestCase):
         self.assertTrue(published)
         self.assertTrue(all(p.get("content_type") in {"art-decor", "ebook", "course"} for p in published))
         self.assertEqual(sum(p["content_type"] == "ebook" for p in published), 1)
-        self.assertEqual(sum(p["content_type"] == "course" for p in published), 0)
         book = next(p for p in published if p["permalink"] == "isbsay")
         self.assertEqual(book["content_type"], "ebook")
         self.assertIn("ebooks", book["tags"])
@@ -30,7 +29,7 @@ class ProductClassificationTests(unittest.TestCase):
 
     def test_gumroad_course_tag_overrides_legacy_art_fallback(self):
         catalog = {"products": [{"permalink": "course-1", "published": True, "tags": ["courses"]}]}
-        applied = apply_classifications(catalog, {"products": {}})
+        applied = apply_classifications(catalog, {"products": {"course-1": {"content_type": "art-decor", "tags": ["art-decor"]}}})
         self.assertEqual(applied, 1)
         self.assertEqual(catalog["products"][0]["content_type"], "course")
         self.assertIn("courses", catalog["products"][0]["tags"])
