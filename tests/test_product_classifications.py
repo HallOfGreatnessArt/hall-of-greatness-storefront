@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Regression tests for the curated public-catalogue product classifications."""
 import json
+import sys
 import unittest
 from pathlib import Path
 
-from scripts.apply_product_classifications import apply_classifications
-
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from scripts.apply_product_classifications import apply_classifications
 
 
 class ProductClassificationTests(unittest.TestCase):
