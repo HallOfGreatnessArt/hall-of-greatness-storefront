@@ -16,6 +16,7 @@ async function init(){
   if(document.documentElement.dataset.hogDefaultTitle===undefined)document.documentElement.dataset.hogDefaultTitle=document.title;
   document.title=document.documentElement.dataset.hogDefaultTitle;
   const p=(data.products||{})[permalink]||{};
+  const setText=(selector,value)=>{const el=document.querySelector(selector);if(el)el.textContent=value;};
   if(lang==="ar"){
    if(p.title_ar){const h=document.querySelector("[data-hog-title]");if(h)h.textContent=p.title_ar;document.title=p.title_ar+" | HALL OF GREATNESS";}
    const sub=document.querySelector("[data-hog-subtitle]");if(sub)sub.textContent="عمل فني رقمي أصيل من HALL OF GREATNESS";
