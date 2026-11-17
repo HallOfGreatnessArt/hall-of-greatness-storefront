@@ -165,6 +165,15 @@ def build_record(product: dict, used_slugs: set[str]) -> dict:
         "cover_url": cover,
         "summary": summary,
     }
+    incoming_tags = product.get("tags")
+    if isinstance(incoming_tags, list):
+        normalized_tags = [tag.get("name") if isinstance(tag, dict) else tag for tag in incoming_tags]
+        record["tags"] = list(dict.fromkeys(
+            str(tag).strip().lower() for tag in normalized_tags
+            if isinstance(tag, str) and tag.strip()
+        ))
+        if any(tag in {"ebooks", "digital-ebook", "digital-book"} for tag in record["tags"]):
+            record["content_type"] = "ebook"
     if is_bundle:
         record["bundle_contents"] = [
             item.get("permalink") if isinstance(item, dict) else str(item)

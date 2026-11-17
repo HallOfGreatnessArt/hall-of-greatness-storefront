@@ -7,6 +7,9 @@ on:
     paths:
       - ".github/workflows/publish-storefront.yml"
       - ".github/workflows/test-production-public-sync.yml"
+      - "scripts/apply_product_classifications.py"
+      - "product-classifications.json"
+      - "catalog-data.json"
       - "scripts/discover_public_gumroad_products.py"
       - "scripts/import_public_gumroad_product.py"
       - "scripts/generate_landing_pages.py"
@@ -37,6 +40,8 @@ jobs:
         run: |
           set -euo pipefail
           python scripts/discover_public_gumroad_products.py
+          python scripts/apply_product_classifications.py
+          python tests/test_product_classifications.py
       - name: Generate landing pages
         run: |
           set -euo pipefail

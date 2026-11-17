@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "description": "Curated product-type metadata for the HALL OF GREATNESS public catalogue. Use exact Gumroad permalinks; tags drive the dedicated EBOOKS LIBRARY.",
+  "products": {
+    "isbsay": {
+      "content_type": "ebook",
+      "tags": [
+        "ebooks"
+      ]
+    }
+  }
+}
