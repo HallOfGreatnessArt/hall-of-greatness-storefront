@@ -104,20 +104,65 @@ def main():
             page = browser.new_page(viewport={"width": 1440, "height": 900}, device_scale_factor=1)
             page.set_default_timeout(10000)
             inspect_page(page, "index.html", HOME_WIDTHS, expected_product=False)
-            home_cards = page.locator("#works .work").count()
-            record(home_cards >= len([x for x in PUBLISHED if not x.get("is_bundle")]),
-                   f"Homepage gallery did not render the expected artwork cards ({home_cards})")
-            first_artwork = next(x for x in PUBLISHED if not x.get("is_bundle"))
-            search = page.locator("#search")
+            section_specs = [
+                ("art-decor", "art-products", "art-decor"),
+                ("ebooks", "ebook-products", "ebook"),
+                ("courses", "course-products", "course"),
+            ]
+            for section_id, grid_id, content_type in section_specs:
+                expected = [p for p in PUBLISHED if p.get("content_type") == content_type]
+                cards = page.locator(f"#{grid_id} .product-card")
+                record(cards.count() == len(expected),
+                       f"{section_id}: expected {len(expected)} product cards, found {cards.count()}")
+                for product in expected:
+                    card = page.locator(f'#{grid_id} .product-card[data-permalink="{product["permalink"]}"]')
+                    record(card.count() == 1,
+                           f"{section_id}: product {product['permalink']} is missing or duplicated")
+                    if card.count() == 1:
+                        record(card.get_attribute("data-product-url") == product["url"],
+                               f"{section_id}: incorrect Gumroad destination for {product['permalink']}")
+                        record(card.locator(f'a[href="{product["url"]}"]').count() == 1,
+                               f"{section_id}: exact Gumroad purchase link missing for {product['permalink']}")
+            # The same product must never leak into another section.
+            for product in PUBLISHED:
+                expected_grid = {"art-decor": "art-products", "ebook": "ebook-products", "course": "course-products"}[product["content_type"]]
+                for _, grid_id, _ in section_specs:
+                    count = page.locator(f'#{grid_id} .product-card[data-permalink="{product["permalink"]}"]').count()
+                    record(count == (1 if grid_id == expected_grid else 0),
+                           f"{product['permalink']}: duplicated or misclassified across section grids")
+
+            # Preserve the original art search and category filtering behavior.
+            first_artwork = next(p for p in PUBLISHED if p.get("content_type") == "art-decor" and not p.get("is_bundle"))
+            search = page.locator("#art-search")
             search.fill(first_artwork["name"])
-            record(page.locator("#works .work").count() >= 1, "Artwork title search did not return its matching item")
+            record(page.locator("#art-products .product-card").count() >= 1,
+                   "Art title search did not return its matching product")
             search.fill("no-such-artwork-query")
-            record(page.locator("#works .work").count() == 0, "Empty search results did not clear the gallery")
+            record(page.locator("#art-products .product-card").count() == 0,
+                   "Empty art search did not clear the art section")
             search.fill("")
             category = first_artwork.get("category")
             if category:
-                page.locator("#filters button").filter(has_text=category).first.click()
-                record(page.locator("#works .work").count() >= 1, "Artwork category filter returned no matching items")
+                page.locator("#art-filters button").filter(has_text=category).first.click()
+                record(page.locator("#art-products .product-card").count() >= 1,
+                       "Art category filter returned no matching item")
+                page.locator("#art-filters button").filter(has_text="All").first.click()
+
+            # Verify that clicking the card surface and keyboard activation open
+            # the exact Gumroad product, while explicit detail links remain intact.
+            first_card = page.locator("#art-products .product-card").first
+            expected_url = first_card.get_attribute("data-product-url")
+            with page.expect_popup() as popup_info:
+                first_card.click(position={"x": 12, "y": 12})
+            popup = popup_info.value
+            record(popup.url == expected_url, "Card-surface click did not open its exact Gumroad URL")
+            popup.close()
+            first_card.focus()
+            with page.expect_popup() as keyboard_popup_info:
+                page.keyboard.press("Enter")
+            keyboard_popup = keyboard_popup_info.value
+            record(keyboard_popup.url == expected_url, "Keyboard activation did not open the exact Gumroad URL")
+            keyboard_popup.close()
             for product in PUBLISHED:
                 path = f"landing/{product['landing_slug']}/index.html"
                 inspect_page(page, path, PRODUCT_WIDTHS, expected_product=True)
