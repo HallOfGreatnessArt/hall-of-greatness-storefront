@@ -414,6 +414,7 @@ async function init(){
   document.getElementById("ebook-products").innerHTML=ebooks.length?ebooks.map(p=>productCard(p,"ebook")).join(""):((window.HOG_T||((k)=>k))("noEbooks"));
   document.getElementById("course-products").innerHTML=courses.length?courses.map(p=>productCard(p,"course")).join(""):((window.HOG_T||((k)=>k))("noCourses"));
  };
+ if(window.HOG_LANG)window.HOG_REDRAW();
  host.addEventListener("click",e=>{const b=e.target.closest("button[data-c]");if(!b)return;chosen=b.dataset.c;host.querySelectorAll("button").forEach(x=>x.classList.toggle("active",x===b));drawArt();});
  search.addEventListener("input",drawArt);
  document.addEventListener("click",e=>{const card=e.target.closest(".product-card");if(!card||e.target.closest("a,button,input,select"))return;window.open(card.dataset.productUrl,"_blank","noopener,noreferrer");});
