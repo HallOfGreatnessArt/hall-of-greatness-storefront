@@ -49,6 +49,13 @@ async function init(){
    setText("#full-description h2","عن هذا الكتاب");
    setText("#product-details .eyebrow","تفاصيل النسخة الرقمية");
    setText("#product-details h2","مواصفات الكتاب");
+   setText("#reading-experience .eyebrow","تجربة قراءة ثرية");
+   setText("#reading-experience h2","أفكار تستحق الفهم ومعرفة تستحق الاحتفاظ بها");
+   const bookPoints=[["اقرأ وفق وتيرتك","استمتع بكتابك الرقمي على الأجهزة وتطبيقات القراءة المتوافقة."],["معرفة تتجاوز الصفحات","استخدم أفكار الكتاب وموارده المرفقة مرجعاً للتعلم والتأمل."],["وصول رقمي فوري","نزّل الملفات المرفقة بهذه النسخة بعد إتمام الشراء عبر Gumroad."]];
+   document.querySelectorAll("#reading-experience .experience-points>div").forEach((el,i)=>{if(bookPoints[i]){const b=el.querySelector("strong"),p=el.querySelector("p");if(b)b.textContent=bookPoints[i][0];if(p)p.textContent=bookPoints[i][1];}});
+   setText("#digital-delivery .eyebrow","نسختك الرقمية");
+   setText("#digital-delivery h2","اشترِ، نزّل، وابدأ القراءة");
+   setText("#digital-delivery p","بعد إتمام الشراء، يمكنك الوصول إلى الملفات المرفقة بهذا المنتج عبر Gumroad. لن يتم شحن كتاب ورقي. راجع صيغ الملفات واللغة وبيانات الإصدار وشروط الاستخدام الموضحة في مواصفات المنتج والترخيص المرفق.");
   }
   if(lang==="ar" && body.dataset.contentType==="course"){
    const sub=document.querySelector("[data-hog-subtitle]");if(sub)sub.textContent="تجربة تعليمية من HALL OF GREATNESS";
@@ -60,6 +67,13 @@ async function init(){
    setText("#full-description h2","ماذا ستتعلم؟");
    setText("#product-details .eyebrow","تفاصيل الدورة");
    setText("#product-details h2","المحتوى ومتطلبات الوصول");
+   setText("#learning-experience .eyebrow","تجربة تعلم موجهة");
+   setText("#learning-experience h2","تعلّم بوضوح، وطبّق المعرفة عملياً");
+   const coursePoints=[["مسار تعلم واضح","تعرّف على الموضوعات والنتائج التعليمية التي تقدمها الدورة."],["تعلّم وفق وتيرتك","استخدم الدروس والمواد المتاحة وفق شروط الوصول المحددة للدورة."],["حوّل المعرفة إلى ممارسة","اربط ما تتعلمه بالأسئلة أو التدريبات أو المشروعات العملية عند توفرها."]];
+   document.querySelectorAll("#learning-experience .experience-points>div").forEach((el,i)=>{if(coursePoints[i]){const b=el.querySelector("strong"),p=el.querySelector("p");if(b)b.textContent=coursePoints[i][0];if(p)p.textContent=coursePoints[i][1];}});
+   setText("#course-access .eyebrow","الوصول إلى الدورة");
+   setText("#course-access h2","سجّل، ابدأ، وتقدّم");
+   setText("#course-access p","تُقدّم تعليمات الوصول إلى الدورة وموادها عبر صفحة المنتج ومواد الشراء. راجع المتطلبات والصيغة والمدة وشروط الوصول قبل الشراء. لا تُشحن مواد تعليمية مادية ما لم يُذكر ذلك صراحة.");
   }
   document.documentElement.lang=lang;
   const rtl=(registry.find(x=>x.code===lang)||{}).rtl||false;
