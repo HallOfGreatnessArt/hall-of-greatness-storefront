@@ -12,7 +12,6 @@
   ["se","Sweden"],["no","Norway"],["ch","Switzerland"],["za","South Africa"]
  ];
  const orbit=mount.querySelector(".hog-orbit");
- const core=mount.querySelector(".hog-core");
  const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
  const flags=[];
  const size=mount.getBoundingClientRect().width;
@@ -51,7 +50,7 @@
   img.setAttribute("role","img");
   img.style.setProperty("--hog-from-x",flag.x+"px");
   img.style.setProperty("--hog-from-y",flag.y+"px");
-  core.appendChild(img);
+  mount.appendChild(img);
   active=img;
   if(reduced){img.classList.add("is-center");}
   else requestAnimationFrame(()=>requestAnimationFrame(()=>img.classList.add("is-center")));
