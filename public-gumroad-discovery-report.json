@@ -2,24 +2,11 @@
   "profile_url": "https://alshayebemad.gumroad.com/",
   "public_products_total": 60,
   "public_products_discovered": 60,
-  "catalog_products_before": 48,
-  "new_products_discovered": 12,
-  "new_products_imported": [
-    "xqeqaf",
-    "auccyj",
-    "lgrqvk",
-    "bdtgaq",
-    "hjheeq",
-    "pfpru",
-    "frjnal",
-    "pmfah",
-    "aaiaau",
-    "sngdim",
-    "kmnqsqe",
-    "wcgqob"
-  ],
+  "catalog_products_before": 60,
+  "new_products_discovered": 0,
+  "new_products_imported": [],
   "catalog_products_after": 60,
   "discovery_complete": true,
   "unmatched_public_products_after_import": [],
-  "status": "imported"
+  "status": "no_new_products"
 }
