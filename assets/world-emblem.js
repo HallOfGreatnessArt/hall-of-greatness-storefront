@@ -1,4 +1,4 @@
-/* Sequential flag presentation: one flag fills the fixed gold emblem for 3 seconds. */
+/* Sequential flag presentation: each flag remains centered for a full 3 seconds. */
 (()=>{
  const mount=document.querySelector("[data-hog-world-emblem]");
  if(!mount||mount.dataset.ready==="true")return;
@@ -31,17 +31,10 @@
   orbit.appendChild(img);
   flags.push({code,name,x:x-size/2,y:y-size/2});
  });
+ const wait=ms=>new Promise(resolve=>window.setTimeout(resolve,ms));
  let index=0;
  let active=null;
- let stopped=false;
- const showNext=()=>{
-  if(stopped)return;
-  if(active){
-   active.classList.remove("is-center");
-   active.classList.add("is-returning");
-   const old=active;
-   window.setTimeout(()=>old.remove(),reduced?0:600);
-  }
+ const showNext=async()=>{
   const flag=flags[index%flags.length];
   const img=document.createElement("img");
   img.className="hog-active-flag";
@@ -52,14 +45,23 @@
   img.style.setProperty("--hog-from-y",flag.y+"px");
   mount.appendChild(img);
   active=img;
-  if(reduced){img.classList.add("is-center");}
+  if(reduced)img.classList.add("is-center");
   else requestAnimationFrame(()=>requestAnimationFrame(()=>img.classList.add("is-center")));
   index++;
-  window.setTimeout(showNext,3000);
+  await wait(reduced?0:600);
+  if(active!==img)return;
+  await wait(3000);
+  if(active!==img)return;
+  img.classList.remove("is-center");
+  img.classList.add("is-returning");
+  await wait(reduced?0:600);
+  img.remove();
+  if(active===img)active=null;
+  showNext();
  };
  showNext();
  document.addEventListener("visibilitychange",()=>{
-  if(document.hidden&&active){active.style.transition="none";}
-  else if(active){active.style.transition="";}
+  if(document.hidden&&active)active.style.transition="none";
+  else if(active)active.style.transition="";
  });
 })();
