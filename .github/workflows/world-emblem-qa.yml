@@ -1,0 +1,41 @@
+name: Animated world emblem QA
+
+on:
+  push:
+    branches:
+      - "feat/animated-world-emblem"
+    paths:
+      - "index.html"
+      - "assets/world-emblem.css"
+      - "assets/world-emblem.js"
+      - "tests/test_world_emblem.py"
+      - ".github/workflows/world-emblem-qa.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "index.html"
+      - "assets/world-emblem.css"
+      - "assets/world-emblem.js"
+      - "tests/test_world-emblem.py"
+      - ".github/workflows/world-emblem-qa.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  emblem-browser-test:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out isolated emblem changes
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install browser test dependencies
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Test sequential flags, fixed emblem, and preserved storefront sections
+        run: python tests/test_world_emblem.py
