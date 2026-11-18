@@ -241,14 +241,20 @@ for path in pages:
         page = re.sub(r'<section class="section"><div class="eyebrow">The meaning behind the artwork</div>.*?</section>', '', page, flags=re.S)
         page = re.sub(r'<section class="section"><div class="eyebrow">Where it belongs</div>.*?</section>', '', page, flags=re.S)
         if is_ebook:
-            experience = """<section class="section product-experience ebook-experience" id="reading-experience">
+            reading_experience = """<section class="section product-experience ebook-experience" id="reading-experience">
   <div class="eyebrow">A thoughtful reading experience</div><h2>Ideas worth understanding. Knowledge worth keeping.</h2>
   <p>Explore the subject at your own pace with a digital edition designed for convenient reading and reference. Review the included formats, companion resources, and edition details before purchase.</p>
   <div class="experience-points"><div><strong>Read at your pace</strong><p>Access your digital book on compatible devices and reading applications.</p></div><div><strong>Useful beyond the page</strong><p>Use the book's ideas and included resources as a reference for further learning and reflection.</p></div><div><strong>Instant digital access</strong><p>Download the files supplied with this edition after checkout through Gumroad.</p></div></div>
 </section>
-<section class="section digital-delivery" id="digital-delivery"><div class="eyebrow">Your digital edition</div><h2>Purchase, download, begin reading</h2><p>After checkout, access the files included with this product through Gumroad. No physical book will be shipped. File formats, language, edition information, and usage terms are listed in the product specifications and included license.</p></section>
 """
-            page = page.replace('<section class="closing"', experience + '<section class="closing"', 1)
+            digital_delivery = """<section class="section digital-delivery" id="digital-delivery"><div class="eyebrow">Your digital edition</div><h2>Purchase, download, begin reading</h2><p>After checkout, access the files included with this product through Gumroad. No physical book will be shipped. File formats, language, edition information, and usage terms are listed in the product specifications and included license.</p></section>
+"""
+            # The scheduled enhancer runs repeatedly. Preserve existing hand-crafted
+            # modules and add only whichever required module is genuinely absent.
+            if 'id="reading-experience"' not in page:
+                page = page.replace('<section class="closing"', reading_experience + '<section class="closing"', 1)
+            if 'id="digital-delivery"' not in page:
+                page = page.replace('<section class="closing"', digital_delivery + '<section class="closing"', 1)
             page = page.replace("An original digital artwork from HALL OF GREATNESS", "A digital book from HALL OF GREATNESS")
             page = page.replace("Explore &amp; Get the Artwork ↗", "Explore the E-Book ↗")
             page = page.replace("Let your space tell a story.", "Make room for new ideas.")
