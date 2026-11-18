@@ -25,20 +25,27 @@ def main():
             page.wait_for_function("document.querySelectorAll('.hog-orbit-flag').length === 24")
             page.wait_for_function("document.querySelector('.hog-active-flag.is-center') !== null")
             first = page.locator(".hog-active-flag.is-center").get_attribute("alt")
+            # The first flag must remain centered for the full three seconds,
+            # even after its entrance animation has completed.
             page.wait_for_timeout(3200)
-            page.wait_for_function("document.querySelector('.hog-active-flag.is-center')?.alt !== null && document.querySelector('.hog-active-flag.is-center')?.alt !== undefined")
+            still_first = page.locator(".hog-active-flag.is-center").get_attribute("alt")
+            assert still_first == first, f"Flag left the center before 3 seconds: {first!r} -> {still_first!r}"
+            # The previous flag returns before the next flag takes the center.
+            page.wait_for_function(
+                "(first) => { const el=document.querySelector('.hog-active-flag.is-center'); return el && el.alt !== first; }",
+                arg=first,
+                timeout=2500,
+            )
             second = page.locator(".hog-active-flag.is-center").get_attribute("alt")
             assert first != second, f"Sequential flag did not advance: {first!r}"
             assert page.locator(".hog-active-flag.is-center").count() == 1
             assert page.locator(".hog-orbit-flag").count() == 24
             assert page.locator(".hog-brand .hog-wordmark").inner_text() == "HALL OF GREATNESS"
-            # The emblem itself remains fixed; only the flag image is animated.
             transform = page.locator(".hog-emblem").evaluate("(el) => getComputedStyle(el).transform")
             assert transform in ("none", "matrix(1, 0, 0, 1, 0, 0)"), f"Gold emblem moved: {transform}"
-            # Existing storefront sections remain present and untouched.
             for section in ("art-decor", "ebooks", "courses", "artist"):
                 assert page.locator(f"#{section}").count() == 1, f"Missing existing section: {section}"
-            print(f"PASS: 24 orbit flags; active flag advanced from {first} to {second}; fixed emblem; existing sections present.")
+            print(f"PASS: 24 orbit flags; each flag holds center for 3 seconds; sequence advances {first} -> {second}; fixed emblem; existing sections present.")
             browser.close()
     finally:
         server.shutdown()
