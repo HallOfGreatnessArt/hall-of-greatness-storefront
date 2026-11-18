@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   localization-and-landing-qa:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Check out pull request source
         uses: actions/checkout@v4
