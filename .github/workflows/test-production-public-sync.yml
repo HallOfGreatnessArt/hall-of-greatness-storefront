@@ -30,7 +30,7 @@ permissions:
 
 jobs:
   test-public-sync-and-storefront-build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Check out proposed production changes
         uses: actions/checkout@v4
