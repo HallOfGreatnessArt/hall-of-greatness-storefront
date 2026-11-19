@@ -11,9 +11,9 @@
   const compact=window.scrollY>threshold;
   header.classList.toggle("is-compact",compact);
   header.dataset.compact=compact?"true":"false";
-  if(controls){controls.hidden=compact;controls.setAttribute("aria-hidden",compact?"true":"false");}
-  if(language){language.hidden=compact;language.setAttribute("aria-hidden",compact?"true":"false");}
-  if(navigation){navigation.hidden=compact;navigation.setAttribute("aria-hidden",compact?"true":"false");}
+  if(controls){controls.setAttribute("aria-hidden",compact?"true":"false");}
+  if(language){language.setAttribute("aria-hidden",compact?"true":"false");}
+  if(navigation){navigation.setAttribute("aria-hidden",compact?"true":"false");}
   scheduled=false;
  };
  const onScroll=()=>{
