@@ -104,6 +104,12 @@ def main():
             page = browser.new_page(viewport={"width": 1440, "height": 900}, device_scale_factor=1)
             page.set_default_timeout(10000)
             inspect_page(page, "index.html", HOME_WIDTHS, expected_product=False)
+            for width in (320, 360, 390, 520):
+                page.set_viewport_size({"width": width, "height": 844})
+                for grid_id in ("art-products", "ebook-products", "course-products"):
+                    columns = page.locator(f"#{grid_id}").evaluate("(el) => getComputedStyle(el).gridTemplateColumns.split(' ').length")
+                    record(columns == 2, f"{grid_id}: expected two columns at {width}px, found {columns}")
+            page.set_viewport_size({"width": 1440, "height": 900})
             # Five independent units, fixed header/footer, and two-column product grids.
             units = page.locator("[data-gallery-unit]")
             record(units.count() == 4, f"Expected 4 lower-page units (three product units plus artist/footer), found {units.count()}")
@@ -171,6 +177,21 @@ def main():
             record(page.locator("#art-products .product-card").count() == 0,
                    "Empty art search did not clear the art section")
             search.fill("")
+            # Each product destination has independent search and category controls.
+            for content_type, search_id, grid_id in (
+                ("ebook", "ebook-search", "ebook-products"),
+                ("course", "course-search", "course-products"),
+            ):
+                matching = [p for p in PUBLISHED if p.get("content_type") == content_type]
+                if matching:
+                    section_search = page.locator(f"#{search_id}")
+                    section_search.fill(matching[0]["name"])
+                    record(page.locator(f"#{grid_id} .product-card").count() == 1,
+                           f"{content_type}: section-specific title search did not return its product")
+                    section_search.fill("no-such-section-product")
+                    record(page.locator(f"#{grid_id} .product-card").count() == 0,
+                           f"{content_type}: unmatched search did not clear its section")
+                    section_search.fill("")
             category = first_artwork.get("category")
             if category:
                 page.locator("#art-filters button").filter(has_text=category).first.click()
