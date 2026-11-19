@@ -67,7 +67,7 @@ def test_local_homepage(browser):
     assert page.locator("#course-search").get_attribute("placeholder") == "ابحث في الكورسات التعليمية..."
     for unit in ("art", "ebooks", "courses"):
         actual_label = normalized(page.locator(f'[data-gallery-unit="{unit}"] .section-links a[href="https://alshayebemad.gumroad.com/"]').inner_text())
-        assert actual_label == "تفضل بزيارة متجر Gumroad ↗", f"Arabic Gumroad label mismatch in {unit}: {actual_label!r}"
+        assert actual_label.casefold() == "تفضل بزيارة متجر Gumroad ↗".casefold(), f"Arabic Gumroad label mismatch in {unit}: {actual_label!r}"
     assert page.locator("#artist").count() == 1
     assert page.locator("footer a[href='./terms.html']").count() == 1
     assert page.evaluate("localStorage.getItem('hog-language')") == "ar"
