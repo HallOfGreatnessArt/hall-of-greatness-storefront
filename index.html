@@ -824,12 +824,22 @@ async function init(){
   const categories=["All",...new Set(group.items.map(p=>p.category).filter(Boolean))];let chosen="All";
   function renderFilters(){
    const T=window.HOG_T||((k)=>k);
-   host.innerHTML=categories.map(c=>'<button class="'+(c===chosen?"active":"")+'" data-c="'+esc(c)+'">'+esc(c==="All"?T("all"):c)+'</button>').join("");
+   host.innerHTML=categories.map(c=>{
+    const sample=group.items.find(p=>p.category===c);
+    const translated=sample&&window.HOG_PRODUCT?window.HOG_PRODUCT(sample).category:c;
+    return '<button class="'+(c===chosen?"active":"")+'" data-c="'+esc(c)+'">'+esc(c==="All"?T("all"):(translated||c))+'</button>';
+   }).join("");
   }
   renderFilters();
   function filtered(){
    const q=search.value.trim().toLowerCase();
-   return group.items.filter(p=>(chosen==="All"||p.category===chosen)&&[p.name,p.summary,p.category].some(v=>String(v||"").toLowerCase().includes(q)));
+   return group.items.filter(p=>{
+    const localized=window.HOG_PRODUCT?window.HOG_PRODUCT(p):p;
+    const categoryMatches=chosen==="All"||p.category===chosen;
+    const textMatches=[p.name,p.summary,p.category,localized.name,localized.summary,localized.category]
+     .some(v=>String(v||"").toLowerCase().includes(q));
+    return categoryMatches&&textMatches;
+   });
   }
   function draw(reset=false){
    if(reset)pagers[key].reset();
