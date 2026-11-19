@@ -822,7 +822,11 @@ async function init(){
  function setupController(key,group){
   const host=document.getElementById(group.filters),search=document.getElementById(group.search);
   const categories=["All",...new Set(group.items.map(p=>p.category).filter(Boolean))];let chosen="All";
-  host.innerHTML=categories.map(c=>'<button class="'+(c==="All"?"active":"")+'" data-c="'+esc(c)+'">'+esc(c==="All"?(window.HOG_T||((k)=>k))("all"):c)+'</button>').join("");
+  function renderFilters(){
+   const T=window.HOG_T||((k)=>k);
+   host.innerHTML=categories.map(c=>'<button class="'+(c===chosen?"active":"")+'" data-c="'+esc(c)+'">'+esc(c==="All"?T("all"):c)+'</button>').join("");
+  }
+  renderFilters();
   function filtered(){
    const q=search.value.trim().toLowerCase();
    return group.items.filter(p=>(chosen==="All"||p.category===chosen)&&[p.name,p.summary,p.category].some(v=>String(v||"").toLowerCase().includes(q)));
@@ -840,11 +844,11 @@ async function init(){
    draw(true);
   });
   search.addEventListener("input",()=>draw(true));
-  return {draw};
+  return {draw,renderFilters};
  }
  const controllers={};
  for(const [key,group] of Object.entries(groups))controllers[key]=setupController(key,group);
- window.HOG_REDRAW=()=>Object.values(controllers).forEach(controller=>controller.draw(false));
+ window.HOG_REDRAW=()=>Object.values(controllers).forEach(controller=>{controller.renderFilters();controller.draw(false);});
  document.addEventListener("click",e=>{
   const card=e.target.closest(".product-card");
   if(!card||e.target.closest("a,button,input,select"))return;
