@@ -54,6 +54,12 @@ def test_local_homepage(browser):
     assert page.locator("#art-decor .head h2").inner_text() == "الفن والديكور"
     assert page.locator("#ebooks .head h2").inner_text() == "الكتب الإلكترونية"
     assert page.locator("#courses .head h2").inner_text() == "الكورسات التعليمية"
+    assert page.locator("#ebook-search").get_attribute("placeholder") == "ابحث في الكتب الإلكترونية..."
+    assert page.locator("#course-search").get_attribute("placeholder") == "ابحث في الكورسات التعليمية..."
+    for unit in ("art", "ebooks", "courses"):
+        assert page.locator(f'[data-gallery-unit="{unit}"] .section-links a[href="https://alshayebemad.gumroad.com/"]').inner_text() == "تفضل بزيارة متجر Gumroad ↗"
+    assert page.locator("#artist").count() == 1
+    assert page.locator("footer a[href='./terms.html']").count() == 1
     assert page.evaluate("localStorage.getItem('hog-language')") == "ar"
 
     page.reload(wait_until="domcontentloaded")
