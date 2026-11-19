@@ -7,7 +7,7 @@ on:
     paths:
       - "index.html"
       - "assets/world-emblem.css"
-      - "assets/world-emblem.js"
+      - "assets/world-emblem.js"\n      - "assets/sticky-header.js"
       - "tests/test_world_emblem.py"
       - ".github/workflows/world-emblem-qa.yml"
   pull_request:
