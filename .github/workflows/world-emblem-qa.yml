@@ -9,6 +9,7 @@ on:
       - "fix/sticky-header-layout-stability"
       - "fix/permanent-compact-header"
       - "fix/mobile-emblem-full-visibility"
+      - "style/enlarge-gallery-wordmark-only"
     paths:
       - "index.html"
       - "assets/world-emblem.css"
