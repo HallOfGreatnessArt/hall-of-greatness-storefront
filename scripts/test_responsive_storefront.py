@@ -111,6 +111,8 @@ def main():
                     record(columns == 2, f"{grid_id}: expected two columns at {width}px, found {columns}")
             page.set_viewport_size({"width": 1440, "height": 900})
             # Five independent units, fixed header/footer, and two-column product grids.
+            record(page.locator(".wrap > header").count() == 1,
+                   "The protected sticky header must remain a direct child of the main wrapper")
             units = page.locator("[data-gallery-unit]")
             record(units.count() == 4, f"Expected 4 lower-page units (three product units plus artist/footer), found {units.count()}")
             for unit_name in ("art", "ebooks", "courses", "about"):
