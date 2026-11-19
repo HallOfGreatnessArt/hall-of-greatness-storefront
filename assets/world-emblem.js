@@ -1,50 +1,56 @@
-/* Sequential flag presentation: each flag remains centered for a full 3 seconds. */
+/* ISO 3166-1 global flag sequence; orbit stays intentionally curated for clarity. */
 (()=>{
  const mount=document.querySelector("[data-hog-world-emblem]");
  if(!mount||mount.dataset.ready==="true")return;
  mount.dataset.ready="true";
- const countries=[
-  ["eg","Egypt"],["gb","United Kingdom"],["us","United States"],["fr","France"],
-  ["de","Germany"],["it","Italy"],["es","Spain"],["pt","Portugal"],
-  ["gr","Greece"],["in","India"],["jp","Japan"],["cn","China"],
-  ["kr","South Korea"],["ca","Canada"],["au","Australia"],["br","Brazil"],
-  ["mx","Mexico"],["sa","Saudi Arabia"],["ae","United Arab Emirates"],["tr","Türkiye"],
-  ["se","Sweden"],["no","Norway"],["ch","Switzerland"],["za","South Africa"]
- ];
+ const allCodes=["eg","sa","us","gb","fr","de","it","es","pt","gr","in","jp","cn","kr","ca","au","br","mx","ae","tr","se","no","ch","za","ad","af","ag","ai","al","am","ao","aq","ar","as","at","aw","ax","az","ba","bb","bd","be","bf","bg","bh","bi","bj","bl","bm","bn","bo","bq","bs","bt","bv","bw","by","bz","cc","cd","cf","cg","ci","ck","cl","cm","co","cr","cu","cv","cw","cx","cy","cz","dj","dk","dm","do","dz","ec","ee","eh","er","et","fi","fj","fk","fm","fo","ga","gd","ge","gf","gg","gi","gl","gm","gn","gp","gq","gs","gt","gu","gw","gy","hk","hm","hn","hr","ht","hu","id","ie","il","im","io","iq","ir","is","je","jm","jo","ke","kg","kh","ki","km","kn","kp","kw","ky","kz","la","lb","lc","li","lk","lr","ls","lt","lu","lv","ly","ma","mc","md","me","mf","mg","mh","mk","ml","mm","mn","mo","mp","mq","mr","ms","mt","mu","mv","mw","my","mz","na","nc","ne","nf","ng","ni","nl","np","nr","nu","nz","om","pa","pe","pf","pg","ph","pk","pl","pm","pn","pr","ps","pw","py","qa","re","ro","rs","ru","rw","sb","sc","sd","sg","sh","si","sj","sk","sl","sm","sn","so","sr","ss","st","sv","sx","sy","sz","tc","td","tf","tg","th","tj","tk","tl","tm","tn","to","tt","tv","tw","tz","ua","ug","um","uy","uz","va","vc","ve","vg","vi","vn","vu","wf","ws","ye","yt","zm","zw"];
+ const orbitCodes=["eg","gb","us","fr","de","it","es","pt","gr","in","jp","cn","kr","ca","au","br","mx","sa","ae","tr","se","no","ch","za"];
+ const regionNames=new Intl.DisplayNames(["en"],{type:"region"});
+ const label=code=>regionNames.of(code.toUpperCase())||code.toUpperCase();
  const orbit=mount.querySelector(".hog-orbit");
  const reduced=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
  const flags=[];
  const size=mount.getBoundingClientRect().width;
  const radius=size*.365;
- countries.forEach(([code,name],i)=>{
-  const angle=(i/countries.length)*Math.PI*2-Math.PI/2;
+ orbitCodes.forEach((code,i)=>{
+  const angle=(i/orbitCodes.length)*Math.PI*2-Math.PI/2;
   const x=size/2+Math.cos(angle)*radius;
   const y=size/2+Math.sin(angle)*radius;
   const img=document.createElement("img");
   img.className="hog-orbit-flag";
   img.src="https://flagcdn.com/w80/"+code+".png";
-  img.alt=name+" flag";
+  img.alt=label(code)+" flag";
   img.loading="eager";
   img.decoding="async";
   img.style.left=x+"px";
   img.style.top=y+"px";
   orbit.appendChild(img);
-  flags.push({code,name,x:x-size/2,y:y-size/2});
+  flags.push({code,name:label(code),x:x-size/2,y:y-size/2});
  });
+ const sequence=allCodes.map(code=>({code,name:label(code)}));
  const wait=ms=>new Promise(resolve=>window.setTimeout(resolve,ms));
  let index=0;
  let active=null;
+ let nextPreload=null;
+ const preloadNext=()=>{
+  if(nextPreload)nextPreload.src="";
+  const next=sequence[(index+1)%sequence.length];
+  nextPreload=new Image();
+  nextPreload.src="https://flagcdn.com/w320/"+next.code+".png";
+ };
  const showNext=async()=>{
-  const flag=flags[index%flags.length];
+  const flag=sequence[index%sequence.length];
+  const orbitFlag=flags.find(item=>item.code===flag.code)||flags[index%flags.length];
   const img=document.createElement("img");
   img.className="hog-active-flag";
-  img.src="https://flagcdn.com/w640/"+flag.code+".png";
+  img.src="https://flagcdn.com/w320/"+flag.code+".png";
   img.alt=flag.name+" flag";
   img.setAttribute("role","img");
-  img.style.setProperty("--hog-from-x",flag.x+"px");
-  img.style.setProperty("--hog-from-y",flag.y+"px");
+  img.style.setProperty("--hog-from-x",orbitFlag.x+"px");
+  img.style.setProperty("--hog-from-y",orbitFlag.y+"px");
   mount.appendChild(img);
   active=img;
+  preloadNext();
   if(reduced)img.classList.add("is-center");
   else requestAnimationFrame(()=>requestAnimationFrame(()=>img.classList.add("is-center")));
   index++;
