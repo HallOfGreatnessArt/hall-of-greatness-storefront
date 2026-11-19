@@ -753,11 +753,11 @@ section[id]{scroll-margin-top:104px}
 <nav class="section-links" aria-label="Art and decor destinations"><a href="#ebooks" data-ui-key="navEbooks">E-Books</a><a href="#courses" data-ui-key="navCourses">Courses</a><a href="https://alshayebemad.gumroad.com/" target="_blank" rel="noopener noreferrer" data-ui-key="visitGumroadStore">Visit Gumroad store ↗</a></nav>
 </div>
 <div class="gallery-unit gallery-unit-ebooks" data-gallery-unit="ebooks">
-<section class="section section-ebooks" id="ebooks"><div class="head"><div class="section-ribbon ribbon-ebooks" data-section-ribbon="ebooks">E-Books Section 📚</div><div class="eyebrow">Ideas to read, explore and remember</div><h2>E-Books</h2><p>Explore digital books that share knowledge, perspectives, and practical ideas across a range of subjects. Thoughtful reading designed to expand understanding and open new horizons.</p></div><div class="grid product-grid" id="ebook-products" aria-live="polite" aria-relevant="additions text"></div><div class="load-more-wrap" id="ebook-load-more-wrap"></div></section>
+<section class="section section-ebooks" id="ebooks"><div class="head"><div class="section-ribbon ribbon-ebooks" data-section-ribbon="ebooks">E-Books Section 📚</div><div class="eyebrow">Ideas to read, explore and remember</div><h2>E-Books</h2><p>Explore digital books that share knowledge, perspectives, and practical ideas across a range of subjects. Thoughtful reading designed to expand understanding and open new horizons.</p></div><div class="tools section-tools" id="ebook-tools"><input id="ebook-search" type="search" placeholder="Search e-books..." aria-label="Search e-books"><p id="ebook-result-count" class="result-count" aria-live="polite"></p><div class="filters" id="ebook-filters" role="group" aria-label="Filter e-books by category"></div></div><div class="grid product-grid" id="ebook-products" aria-live="polite" aria-relevant="additions text"></div><div class="load-more-wrap" id="ebook-load-more-wrap"></div></section>
 <nav class="section-links" aria-label="E-book destinations"><a href="#art-decor" data-ui-key="navArt">Art &amp; Decor</a><a href="#courses" data-ui-key="navCourses">Courses</a><a href="https://alshayebemad.gumroad.com/" target="_blank" rel="noopener noreferrer" data-ui-key="visitGumroadStore">Visit Gumroad store ↗</a></nav>
 </div>
 <div class="gallery-unit gallery-unit-courses" data-gallery-unit="courses">
-<section class="section section-courses" id="courses"><div class="head"><div class="section-ribbon ribbon-courses" data-section-ribbon="courses">Educational Courses 📖</div><div class="eyebrow">Build skills through guided learning</div><h2>Educational Courses</h2><p>Discover structured learning experiences that turn ideas into skills. Learn step by step, practice with purpose, and apply new knowledge with confidence.</p></div><div class="grid product-grid" id="course-products" aria-live="polite" aria-relevant="additions text"></div><div class="load-more-wrap" id="course-load-more-wrap"></div></section>
+<section class="section section-courses" id="courses"><div class="head"><div class="section-ribbon ribbon-courses" data-section-ribbon="courses">Educational Courses 📖</div><div class="eyebrow">Build skills through guided learning</div><h2>Educational Courses</h2><p>Discover structured learning experiences that turn ideas into skills. Learn step by step, practice with purpose, and apply new knowledge with confidence.</p></div><div class="tools section-tools" id="course-tools"><input id="course-search" type="search" placeholder="Search courses..." aria-label="Search courses"><p id="course-result-count" class="result-count" aria-live="polite"></p><div class="filters" id="course-filters" role="group" aria-label="Filter courses by category"></div></div><div class="grid product-grid" id="course-products" aria-live="polite" aria-relevant="additions text"></div><div class="load-more-wrap" id="course-load-more-wrap"></div></section>
 <nav class="section-links" aria-label="Educational course destinations"><a href="#art-decor" data-ui-key="navArt">Art &amp; Decor</a><a href="#ebooks" data-ui-key="navEbooks">E-Books</a><a href="https://alshayebemad.gumroad.com/" target="_blank" rel="noopener noreferrer" data-ui-key="visitGumroadStore">Visit Gumroad store ↗</a></nav>
 </div>
 </main>
@@ -811,38 +811,39 @@ async function init(){
  if(!Array.isArray(catalog.products))throw new Error("The product catalogue has an invalid structure.");
  const products=catalog.products.filter(p=>p.published===true&&p.url&&SECTION_TYPES.has(p.content_type));
  const byType=type=>products.filter(p=>p.content_type===type);
- const art=byType("art-decor"),ebooks=byType("ebook"),courses=byType("course");
- const T=window.HOG_T||((k)=>k);
- const artPager=createPager("art-products","art-load-more-wrap","art-decor");
- const ebookPager=createPager("ebook-products","ebook-load-more-wrap","ebook");
- const coursePager=createPager("course-products","course-load-more-wrap","course");
- const host=document.getElementById("art-filters"),search=document.getElementById("art-search");
- const cats=["All",...new Set(art.map(p=>p.category).filter(Boolean))];let chosen="All";
- host.innerHTML=cats.map(c=>'<button class="'+(c==="All"?"active":"")+'" data-c="'+esc(c)+'">'+esc(c==="All"?T("all"):c)+'</button>').join("");
- function filteredArt(){
-  const q=search.value.trim().toLowerCase();
-  return art.filter(p=>(chosen==="All"||p.category===chosen)&&[p.name,p.summary,p.category].some(v=>String(v||"").toLowerCase().includes(q)));
+ const groups={
+  art:{items:byType("art-decor"),kind:"art-decor",grid:"art-products",more:"art-load-more-wrap",search:"art-search",filters:"art-filters",count:"art-result-count",label:"artItems",placeholder:"search",empty:"noArtProducts"},
+  ebook:{items:byType("ebook"),kind:"ebook",grid:"ebook-products",more:"ebook-load-more-wrap",search:"ebook-search",filters:"ebook-filters",count:"ebook-result-count",label:"ebookItems",placeholder:"searchEbooks",empty:"noEbooks"},
+  course:{items:byType("course"),kind:"course",grid:"course-products",more:"course-load-more-wrap",search:"course-search",filters:"course-filters",count:"course-result-count",label:"courseItems",placeholder:"searchCourses",empty:"noCourses"}
+ };
+ const pagers={};
+ for(const [key,group] of Object.entries(groups))pagers[key]=createPager(group.grid,group.more,group.kind);
+ function setupController(key,group){
+  const host=document.getElementById(group.filters),search=document.getElementById(group.search);
+  const categories=["All",...new Set(group.items.map(p=>p.category).filter(Boolean))];let chosen="All";
+  host.innerHTML=categories.map(c=>'<button class="'+(c==="All"?"active":"")+'" data-c="'+esc(c)+'">'+esc(c==="All"?(window.HOG_T||((k)=>k))("all"):c)+'</button>').join("");
+  function filtered(){
+   const q=search.value.trim().toLowerCase();
+   return group.items.filter(p=>(chosen==="All"||p.category===chosen)&&[p.name,p.summary,p.category].some(v=>String(v||"").toLowerCase().includes(q)));
+  }
+  function draw(reset=false){
+   if(reset)pagers[key].reset();
+   const shown=filtered(),T=window.HOG_T||((k)=>k);
+   document.getElementById(group.count).textContent=shown.length+" "+T("of")+" "+group.items.length+" "+T(group.label);
+   pagers[key].render(shown,T(group.empty));
+  }
+  host.addEventListener("click",e=>{
+   const b=e.target.closest("button[data-c]");if(!b)return;
+   chosen=b.dataset.c;
+   host.querySelectorAll("button").forEach(x=>x.classList.toggle("active",x===b));
+   draw(true);
+  });
+  search.addEventListener("input",()=>draw(true));
+  return {draw};
  }
- function drawArt(reset=false){
-  if(reset)artPager.reset();
-  const shown=filteredArt(),currentT=window.HOG_T||((k)=>k);
-  document.getElementById("art-result-count").textContent=shown.length+" "+currentT("of")+" "+art.length+" "+currentT("artItems");
-  artPager.render(shown,currentT("noArtProducts"));
- }
- function drawOtherSections(reset=false){
-  if(reset){ebookPager.reset();coursePager.reset();}
-  const currentT=window.HOG_T||((k)=>k);
-  ebookPager.render(ebooks,currentT("noEbooks"));
-  coursePager.render(courses,currentT("noCourses"));
- }
- window.HOG_REDRAW=()=>{drawArt(false);drawOtherSections(false);};
- host.addEventListener("click",e=>{
-  const b=e.target.closest("button[data-c]");if(!b)return;
-  chosen=b.dataset.c;
-  host.querySelectorAll("button").forEach(x=>x.classList.toggle("active",x===b));
-  drawArt(true);
- });
- search.addEventListener("input",()=>drawArt(true));
+ const controllers={};
+ for(const [key,group] of Object.entries(groups))controllers[key]=setupController(key,group);
+ window.HOG_REDRAW=()=>Object.values(controllers).forEach(controller=>controller.draw(false));
  document.addEventListener("click",e=>{
   const card=e.target.closest(".product-card");
   if(!card||e.target.closest("a,button,input,select"))return;
@@ -853,7 +854,7 @@ async function init(){
   if(!card||e.target!==card||(e.key!=="Enter"&&e.key!==" "))return;
   e.preventDefault();window.open(card.dataset.productUrl,"_blank","noopener,noreferrer");
  });
- drawArt(true);drawOtherSections(true);
+ Object.values(controllers).forEach(controller=>controller.draw(true));
 }
 init().catch(err=>{for(const id of ["art-products","ebook-products","course-products"]){const el=document.getElementById(id);if(el)el.textContent=window.HOG_T?window.HOG_T("catalogError"):"The gallery catalogue is temporarily unavailable. Please refresh the page.";}console.error(err);});
 </script><script src="./assets/world-emblem.js" defer></script><script src="./assets/sticky-header.js" defer></script><script src="./assets/i18n.js" defer></script><!-- Deployment refresh: sticky header release --></body></html>
