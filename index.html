@@ -438,6 +438,20 @@ section[id]{scroll-margin-top:104px}
   font-size:clamp(11px,3.8vw,16px);letter-spacing:clamp(.6px,.4vw,1.8px);
  }
 }
+/* Explicitly restore the full controls when leaving compact mode. */
+.wrap>header:not(.is-compact) .header-tools{
+ display:flex;visibility:visible;opacity:1;pointer-events:auto;
+}
+.wrap>header:not(.is-compact) .header-tools #language-select{
+ display:block;visibility:visible;opacity:1;pointer-events:auto;
+}
+.wrap>header:not(.is-compact) nav{
+ display:flex;visibility:visible;opacity:1;pointer-events:auto;
+}
+.wrap>header.is-compact .header-tools,
+.wrap>header.is-compact nav{
+ display:none;visibility:hidden;pointer-events:none;
+}
 @media(prefers-reduced-motion:reduce){
  .wrap>header{transition:none}
 }
