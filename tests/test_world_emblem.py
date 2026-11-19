@@ -66,15 +66,32 @@ def check_viewport(browser, width, height):
     select = page.locator("#language-select")
     assert select.is_visible(), "Language selector is not visibly rendered after returning to page top"
     assert select.locator("option").count() >= 2, "Language selector has no usable choices"
-    rect = select.bounding_box()
-    assert rect and rect["width"] >= 100 and rect["height"] >= 32, f"Language selector has no usable touch target: {rect}"
+    # Read rendered geometry in-page to avoid a transient Playwright
+    # bounding_box None during native select/layout updates.
+    geometry = page.evaluate("""() => {
+        const el = document.querySelector('#language-select');
+        if (!el) return null;
+        const r = el.getBoundingClientRect();
+        const style = getComputedStyle(el);
+        return {
+            x: r.x, y: r.y, width: r.width, height: r.height,
+            display: style.display, visibility: style.visibility,
+            opacity: Number(style.opacity)
+        };
+    }""")
+    assert geometry, "Language selector has no rendered geometry"
+    assert geometry["display"] != "none" and geometry["visibility"] == "visible" and geometry["opacity"] > 0, f"Language selector is visually hidden: {geometry}"
+    assert geometry["width"] >= 100 and geometry["height"] >= 32, f"Language selector has no usable touch target: {geometry}"
     hit = page.evaluate("""() => {
         const el = document.querySelector('#language-select');
         const r = el.getBoundingClientRect();
-        const top = document.elementFromPoint(r.left + r.width/2, r.top + r.height/2);
-        return !!top && (top === el || el.contains(top));
+        const x = r.left + r.width / 2;
+        const y = r.top + r.height / 2;
+        const top = document.elementFromPoint(x, y);
+        return {hit: !!top && (top === el || el.contains(top)), x, y,
+                viewport: {width: innerWidth, height: innerHeight}};
     }""")
-    assert hit, "Language selector is covered and cannot receive a tap"
+    assert hit["hit"], f"Language selector is covered and cannot receive a tap: {hit}"
     # Verify the actual navigation controls, not only the nav wrapper's
     # visibility (the wrapper may report a zero-area box during flex reflow).
     nav = page.locator("header nav")
