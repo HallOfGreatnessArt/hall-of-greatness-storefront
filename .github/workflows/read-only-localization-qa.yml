@@ -61,3 +61,6 @@ jobs:
 
       - name: Test language switching, refresh, RTL, all product pages, and published site
         run: python scripts/test_localized_browser.py --local-only
+
+      - name: Test five-unit gallery layout, pagination, Gumroad links, and mobile grids
+        run: python scripts/test_responsive_storefront.py
