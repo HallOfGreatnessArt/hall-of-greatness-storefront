@@ -5,6 +5,7 @@ on:
     branches:
       - "feat/animated-world-emblem"
       - "feat/sticky-identity-scroll-header"
+      - "feat/compact-header-full-navigation"
     paths:
       - "index.html"
       - "assets/world-emblem.css"
