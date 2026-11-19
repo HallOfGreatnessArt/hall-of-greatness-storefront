@@ -1006,7 +1006,13 @@
     "viewDetails": "عرض التفاصيل ↗",
     "getEbook": "احصل على الكتاب ↗",
     "enrollCourse": "استكشف الكورس ↗",
-    "openOnGumroad": "فتح المنتج على Gumroad"
+    "openOnGumroad": "فتح المنتج على Gumroad",
+    "showMore": "شاهد المزيد",
+    "visitGumroadStore": "تفضل بزيارة متجر Gumroad ↗",
+    "searchEbooks": "ابحث في الكتب الإلكترونية...",
+    "searchCourses": "ابحث في الكورسات التعليمية...",
+    "ebookItems": "كتاباً",
+    "courseItems": "كورساً"
   },
   "_ui_source_hash": "bbad7351c9110285e3569056ca611c98da8f61b9dbd12442aae4c59748c7358f",
   "_ui_reviewed": true,

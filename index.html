@@ -528,6 +528,72 @@ section[id]{scroll-margin-top:104px}
 }
 @media(prefers-reduced-motion:reduce){.wrap>header{transition:none}}
 
+
+/* Five independent gallery units — the header remains deliberately untouched. */
+.gallery-unit{
+  margin:10px 0;
+  padding:clamp(12px,2.2vw,26px);
+  border:1px solid rgba(216,182,107,.34);
+  border-radius:16px;
+  background:linear-gradient(155deg,rgba(43,36,25,.72),rgba(23,22,19,.96) 58%,rgba(31,27,21,.9));
+  box-shadow:0 10px 28px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,239,198,.035);
+}
+.gallery-unit + .gallery-unit{margin-top:10px}
+.gallery-unit .section{padding:28px 0 24px}
+.gallery-unit .hero{padding:38px 0 28px}
+.gallery-unit .head{margin-bottom:22px}
+.product-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:16px;
+}
+.product-grid .product-card .info{min-height:0}
+.product-grid .product-card .actions{gap:8px;align-items:center}
+.load-more-wrap{display:flex;justify-content:center;min-height:0;margin:18px 0 4px}
+.load-more-button{
+  min-height:46px;padding:11px 24px;border:1px solid var(--gold);border-radius:999px;
+  background:linear-gradient(135deg,#d8b66b,#a9823f);color:#17140e;
+  font:700 12px/1.2 Arial,sans-serif;letter-spacing:.7px;text-transform:uppercase;
+  cursor:pointer;box-shadow:0 5px 16px #0005;
+}
+.load-more-button:hover{filter:brightness(1.08)}
+.load-more-button:active{transform:translateY(1px)}
+.section-links{
+  display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px 18px;
+  padding:12px 0 2px;border-top:1px solid rgba(216,182,107,.2);
+}
+.section-links a{
+  display:inline-flex;align-items:center;justify-content:center;min-height:44px;
+  color:var(--gold);text-decoration:none;font-size:12px;letter-spacing:.25px;
+}
+.section-links a:hover{text-decoration:underline}
+.gallery-unit-about{padding-bottom:12px}
+.gallery-unit-about .section{padding:18px 0 22px}
+.gallery-unit-about footer{margin-top:10px}
+@media(max-width:520px){
+  .gallery-unit{padding:11px;border-radius:12px;margin-block:9px}
+  .gallery-unit .section{padding:22px 0 18px}
+  .gallery-unit .hero{padding:28px 0 20px}
+  .product-grid{gap:10px}
+  .product-grid .product-card .info{padding:10px}
+  .product-grid .product-card h3{font-size:14px;line-height:1.25}
+  .product-grid .product-card .summary{font-size:11px;line-height:1.45}
+  .product-grid .product-card .tag{font-size:9px;letter-spacing:.55px}
+  .product-grid .product-card .format{font-size:8px;line-height:1.35}
+  .product-grid .product-card .actions{gap:5px}
+  .product-grid .product-card .actions a{font-size:9px;letter-spacing:0;padding:7px 6px}
+  .product-grid .product-card .actions strong{font-size:14px}
+  .section-links{gap:4px 12px}
+  .section-links a{font-size:11px}
+  .load-more-button{width:min(100%,260px)}
+}
+@media(max-width:380px){
+  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .product-grid .product-card .art-mockup{min-height:145px}
+  .product-grid .product-card .mock-frame{width:68%;padding:5px}
+  .product-grid .product-card .info{padding:8px}
+  .product-grid .product-card .actions a{font-size:8px;padding:6px 4px}
+}
+
 </style><link rel="stylesheet" href="./assets/world-emblem.css"><style>
 /* Permanent compact header: one fixed layout at every scroll position. */
 .wrap>header{
@@ -681,13 +747,24 @@ section[id]{scroll-margin-top:104px}
 </style></head><body><div class="wrap">
 <header><div class="header-tools"><label class="sr-only" for="language-select">Choose language</label><select id="language-select" aria-label="Choose language"><option value="auto">🌐 Auto</option><option value="en">English</option><option value="ar">العربية</option><option value="fr">Français</option><option value="hi">हिन्दी</option><option value="bn">বাংলা</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="es">Español</option><option value="de">Deutsch</option><option value="pt">Português</option><option value="ru">Русский</option><option value="ja">日本語</option><option value="it">Italiano</option></select></div><div class="hog-header-identity"><a class="hog-brand" href="./" aria-label="HALL OF GREATNESS home"><div class="hog-emblem" data-hog-world-emblem role="img" aria-label="HALL OF GREATNESS golden emblem with sequential national flags"><div class="hog-orbit" aria-hidden="true"></div><div class="hog-core" aria-hidden="true"></div><div class="hog-emblem-glint" aria-hidden="true"></div></div></a><div class="hog-crown-tile" role="img" aria-label="Golden royal crown emblem"><svg viewBox="0 0 240 240" aria-hidden="true" focusable="false"><defs><linearGradient id="hog-crown-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0b5"/><stop offset=".22" stop-color="#b98532"/><stop offset=".48" stop-color="#f5d98e"/><stop offset=".72" stop-color="#94631f"/><stop offset="1" stop-color="#ffe8a1"/></linearGradient></defs><path d="M42 166 29 73l48 38 43-64 43 64 48-38-13 93z" fill="url(#hog-crown-gold)" stroke="#ffe9a5" stroke-width="5" stroke-linejoin="round"/><path d="M42 166h156l-8 25H50z" fill="url(#hog-crown-gold)" stroke="#8b5c1d" stroke-width="4"/><path d="m29 73 13 93m150 0 19-93M77 111l43-64 43 64" fill="none" stroke="#fff2c4" stroke-width="3" opacity=".8"/><circle cx="29" cy="69" r="10" fill="#f8dfa0" stroke="#9c6a24" stroke-width="3"/><circle cx="120" cy="42" r="11" fill="#f8dfa0" stroke="#9c6a24" stroke-width="3"/><circle cx="211" cy="69" r="10" fill="#f8dfa0" stroke="#9c6a24" stroke-width="3"/><path d="M68 136h104" stroke="#fff1bd" stroke-width="4" opacity=".7"/><path d="M91 150q29-18 58 0" fill="none" stroke="#8a5c20" stroke-width="3" opacity=".7"/></svg></div><div class="hog-wordmark">HALL OF <span>GREATNESS</span></div></div><nav aria-label="Main navigation"><a href="#art-decor">Art &amp; Decor</a><a href="#ebooks">E-Books</a><a href="#courses">Courses</a><a href="#artist">Artist</a></nav></header>
 <main>
+<div class="gallery-unit gallery-unit-art" data-gallery-unit="art">
 <section class="hero"><div class="eyebrow">A curated world of creativity and knowledge</div><h1>Art, knowledge<br><em>and discovery.</em></h1><p>Explore a world of original art, thoughtful digital books, and practical learning experiences. Three distinct destinations, one independent creative house.</p><a class="btn" href="#art-decor">Explore Art &amp; Decor</a><a class="btn" href="#ebooks" style="background:transparent;color:var(--gold);border:1px solid var(--gold)">Discover Books &amp; Courses</a></section>
-<section class="section section-art" id="art-decor"><div class="head"><div class="section-ribbon ribbon-art" data-section-ribbon="art">ART DIGITAL Section 📋</div><div class="eyebrow">Original works for meaningful spaces</div><h2>Art &amp; Decor</h2><p>Discover original printable artworks and curated collections inspired by imagination, heritage, beauty, and the human story. Bring character and meaning to homes, offices, and inspiring spaces.</p></div><div class="tools" id="art-tools"><input id="art-search" type="search" placeholder="Search artworks and themes..." aria-label="Search art and decor"><p id="art-result-count" class="result-count" aria-live="polite"></p><div class="filters" id="art-filters" role="group" aria-label="Filter art by category"></div></div><div class="grid" id="art-products" aria-live="polite" aria-relevant="additions text"></div></section>
-<section class="section section-ebooks" id="ebooks"><div class="head"><div class="section-ribbon ribbon-ebooks" data-section-ribbon="ebooks">E-Books Section 📚</div><div class="eyebrow">Ideas to read, explore and remember</div><h2>E-Books</h2><p>Explore digital books that share knowledge, perspectives, and practical ideas across a range of subjects. Thoughtful reading designed to expand understanding and open new horizons.</p></div><div class="grid" id="ebook-products" aria-live="polite" aria-relevant="additions text"></div></section>
-<section class="section section-courses" id="courses"><div class="head"><div class="section-ribbon ribbon-courses" data-section-ribbon="courses">Educational Courses 📖</div><div class="eyebrow">Build skills through guided learning</div><h2>Educational Courses</h2><p>Discover structured learning experiences that turn ideas into skills. Learn step by step, practice with purpose, and apply new knowledge with confidence.</p></div><div class="grid" id="course-products" aria-live="polite" aria-relevant="additions text"></div></section>
-<section class="section" id="artist"><div class="about"><div class="eyebrow">Behind the gallery</div><h2 style="font:32px Georgia;font-weight:400">About the Artist</h2><p><strong class="gold">Emad Alshayeb</strong> is the artist behind HALL OF GREATNESS, an independent digital art gallery bringing original visual stories to a global audience.</p><p>His artistic practice brings together sculpture, experimentation, and digital transformation. Each work offers more than decoration: an atmosphere, a memory, or a human story.</p><p>From Egyptian and Coptic heritage to universal themes of compassion, dignity, hope, and imagination, the gallery invites you to experience art in your own way.</p></div></section>
+<section class="section section-art" id="art-decor"><div class="head"><div class="section-ribbon ribbon-art" data-section-ribbon="art">ART DIGITAL Section 📋</div><div class="eyebrow">Original works for meaningful spaces</div><h2>Art &amp; Decor</h2><p>Discover original printable artworks and curated collections inspired by imagination, heritage, beauty, and the human story. Bring character and meaning to homes, offices, and inspiring spaces.</p></div><div class="tools" id="art-tools"><input id="art-search" type="search" placeholder="Search artworks and themes..." aria-label="Search art and decor"><p id="art-result-count" class="result-count" aria-live="polite"></p><div class="filters" id="art-filters" role="group" aria-label="Filter art by category"></div></div><div class="grid product-grid" id="art-products" aria-live="polite" aria-relevant="additions text"></div><div class="load-more-wrap" id="art-load-more-wrap"></div></section>
+<nav class="section-links" aria-label="Art and decor destinations"><a href="#ebooks" data-ui-key="navEbooks">E-Books</a><a href="#courses" data-ui-key="navCourses">Courses</a><a href="https://alshayebemad.gumroad.com/" target="_blank" rel="noopener noreferrer" data-ui-key="visitGumroadStore">Visit Gumroad store ↗</a></nav>
+</div>
+<div class="gallery-unit gallery-unit-ebooks" data-gallery-unit="ebooks">
+<section class="section section-ebooks" id="ebooks"><div class="head"><div class="section-ribbon ribbon-ebooks" data-section-ribbon="ebooks">E-Books Section 📚</div><div class="eyebrow">Ideas to read, explore and remember</div><h2>E-Books</h2><p>Explore digital books that share knowledge, perspectives, and practical ideas across a range of subjects. Thoughtful reading designed to expand understanding and open new horizons.</p></div><div class="tools section-tools" id="ebook-tools"><input id="ebook-search" type="search" placeholder="Search e-books..." aria-label="Search e-books"><p id="ebook-result-count" class="result-count" aria-live="polite"></p><div class="filters" id="ebook-filters" role="group" aria-label="Filter e-books by category"></div></div><div class="grid product-grid" id="ebook-products" aria-live="polite" aria-relevant="additions text"></div><div class="load-more-wrap" id="ebook-load-more-wrap"></div></section>
+<nav class="section-links" aria-label="E-book destinations"><a href="#art-decor" data-ui-key="navArt">Art &amp; Decor</a><a href="#courses" data-ui-key="navCourses">Courses</a><a href="https://alshayebemad.gumroad.com/" target="_blank" rel="noopener noreferrer" data-ui-key="visitGumroadStore">Visit Gumroad store ↗</a></nav>
+</div>
+<div class="gallery-unit gallery-unit-courses" data-gallery-unit="courses">
+<section class="section section-courses" id="courses"><div class="head"><div class="section-ribbon ribbon-courses" data-section-ribbon="courses">Educational Courses 📖</div><div class="eyebrow">Build skills through guided learning</div><h2>Educational Courses</h2><p>Discover structured learning experiences that turn ideas into skills. Learn step by step, practice with purpose, and apply new knowledge with confidence.</p></div><div class="tools section-tools" id="course-tools"><input id="course-search" type="search" placeholder="Search courses..." aria-label="Search courses"><p id="course-result-count" class="result-count" aria-live="polite"></p><div class="filters" id="course-filters" role="group" aria-label="Filter courses by category"></div></div><div class="grid product-grid" id="course-products" aria-live="polite" aria-relevant="additions text"></div><div class="load-more-wrap" id="course-load-more-wrap"></div></section>
+<nav class="section-links" aria-label="Educational course destinations"><a href="#art-decor" data-ui-key="navArt">Art &amp; Decor</a><a href="#ebooks" data-ui-key="navEbooks">E-Books</a><a href="https://alshayebemad.gumroad.com/" target="_blank" rel="noopener noreferrer" data-ui-key="visitGumroadStore">Visit Gumroad store ↗</a></nav>
+</div>
 </main>
-<footer><span><span class="gold">HALL OF GREATNESS</span><br>Meaningful art. Lasting presence.</span><span>Digital products · Instant download through Gumroad<br>© 2026 Hall of Greatness</span><nav class="footer-links" aria-label="Information and support"><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="./contact.html">Contact</a><a href="https://alshayebemad.gumroad.com/" target="_blank" rel="noopener">Gumroad store ↗</a></nav></footer></div>
+<div class="gallery-unit gallery-unit-about" data-gallery-unit="about">
+<section class="section" id="artist"><div class="about"><div class="eyebrow">Behind the gallery</div><h2 style="font:32px Georgia;font-weight:400">About the Artist</h2><p><strong class="gold">Emad Alshayeb</strong> is the artist behind HALL OF GREATNESS, an independent digital art gallery bringing original visual stories to a global audience.</p><p>His artistic practice brings together sculpture, experimentation, and digital transformation. Each work offers more than decoration: an atmosphere, a memory, or a human story.</p><p>From Egyptian and Coptic heritage to universal themes of compassion, dignity, hope, and imagination, the gallery invites you to experience art in your own way.</p></div></section>
+<footer><span><span class="gold">HALL OF GREATNESS</span><br>Meaningful art. Lasting presence.</span><span>Digital products · Instant download through Gumroad<br>© 2026 Hall of Greatness</span><nav class="footer-links" aria-label="Information and support"><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a><a href="./contact.html">Contact</a><a href="https://alshayebemad.gumroad.com/" target="_blank" rel="noopener">Gumroad store ↗</a></nav></footer>
+</div></div>
 <script>
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const money=n=>"$"+Number(n||0).toFixed(2);
@@ -702,6 +779,32 @@ function productCard(p,kind){
  const scene=kind==="art-decor"?(x.category==="Global"?"scene-office":"scene-living"):"scene-office";
  return '<article class="work product-card" role="link" tabindex="0" data-product-url="'+esc(p.url)+'" data-permalink="'+esc(p.permalink)+'" aria-label="'+esc(x.name)+' — '+esc(T("openOnGumroad"))+'"><div class="art-mockup '+scene+'" role="img" aria-label="'+esc(x.name)+' cover displayed in a premium frame"><div class="mock-frame">'+(p.cover_url?'<img loading="lazy" decoding="async" src="'+esc(p.cover_url)+'" alt="'+esc(x.name)+' cover">':'<span>'+esc(x.name)+'</span>')+'</div></div><div class="info"><h3>'+esc(x.name)+'</h3><div class="tag">'+esc(label)+(kind==="art-decor"&&p.category?" · "+esc(p.category):"")+'</div><p class="summary">'+esc(x.summary||"")+'</p><div class="format">'+esc(format)+'</div><div class="actions"><strong>'+money(p.price_usd)+'</strong><a class="story" href="'+esc(detail)+'">'+esc(detailLabel)+'</a><a href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">'+esc(action)+'</a></div></div></article>';
 }
+const PAGE_SIZE=4;
+function createPager(gridId,moreId,kind){
+ const grid=document.getElementById(gridId),more=document.getElementById(moreId);
+ const pager={limit:PAGE_SIZE,items:[],emptyText:""};
+ pager.render=(items,emptyText)=>{
+  pager.items=items;
+  pager.emptyText=emptyText;
+  const visible=items.slice(0,pager.limit);
+  grid.innerHTML=visible.length?visible.map(p=>productCard(p,kind)).join(""):'<p>'+emptyText+'</p>';
+  more.innerHTML=items.length>pager.limit?'<button class="load-more-button" type="button" aria-controls="'+gridId+'">'+esc((window.HOG_T||((k)=>k))("showMore"))+'</button>':"";
+  const button=more.querySelector("button");
+  if(button)button.addEventListener("click",()=>{
+   const previous=pager.limit;
+   pager.limit=Math.min(items.length,pager.limit+PAGE_SIZE);
+   pager.render(pager.items,pager.emptyText);
+   if(pager.limit>previous){
+    const cards=grid.querySelectorAll(".product-card");
+    const nextButton=more.querySelector("button");
+    if(nextButton)nextButton.focus();
+    else if(cards[previous])cards[previous].focus();
+   }
+  });
+ };
+ pager.reset=()=>{pager.limit=PAGE_SIZE;};
+ return pager;
+}
 async function init(){
  const response=await fetch("./catalog-data.json",{cache:"no-store"});
  if(!response.ok)throw new Error("Could not load the product catalogue.");
@@ -709,30 +812,65 @@ async function init(){
  if(!Array.isArray(catalog.products))throw new Error("The product catalogue has an invalid structure.");
  const products=catalog.products.filter(p=>p.published===true&&p.url&&SECTION_TYPES.has(p.content_type));
  const byType=type=>products.filter(p=>p.content_type===type);
- const art=byType("art-decor"),ebooks=byType("ebook"),courses=byType("course");
- const T=window.HOG_T||((k)=>k);
- document.getElementById("ebook-products").innerHTML=ebooks.length?ebooks.map(p=>productCard(p,"ebook")).join(""):'<p>'+T("noEbooks")+'</p>';
- document.getElementById("course-products").innerHTML=courses.length?courses.map(p=>productCard(p,"course")).join(""):'<p>'+T("noCourses")+'</p>';
- const host=document.getElementById("art-filters"),search=document.getElementById("art-search");
- const cats=["All",...new Set(art.map(p=>p.category).filter(Boolean))];let chosen="All";
- host.innerHTML=cats.map(c=>'<button class="'+(c==="All"?"active":"")+'" data-c="'+esc(c)+'">'+esc(c==="All"?T("all"):c)+'</button>').join("");
- function drawArt(){
-  const currentT=window.HOG_T||((k)=>k),q=search.value.trim().toLowerCase();
-  const shown=art.filter(p=>(chosen==="All"||p.category===chosen)&&[p.name,p.summary,p.category].some(v=>String(v||"").toLowerCase().includes(q)));
-  document.getElementById("art-result-count").textContent=shown.length+" "+currentT("of")+" "+art.length+" "+currentT("artItems");
-  document.getElementById("art-products").innerHTML=shown.length?shown.map(p=>productCard(p,"art-decor")).join(""):'<p>'+currentT("noArtProducts")+'</p>';
- }
- window.HOG_REDRAW=()=>{
-  drawArt();
-  document.getElementById("ebook-products").innerHTML=ebooks.length?ebooks.map(p=>productCard(p,"ebook")).join(""):((window.HOG_T||((k)=>k))("noEbooks"));
-  document.getElementById("course-products").innerHTML=courses.length?courses.map(p=>productCard(p,"course")).join(""):((window.HOG_T||((k)=>k))("noCourses"));
+ const groups={
+  art:{items:byType("art-decor"),kind:"art-decor",grid:"art-products",more:"art-load-more-wrap",search:"art-search",filters:"art-filters",count:"art-result-count",label:"artItems",placeholder:"search",empty:"noArtProducts"},
+  ebook:{items:byType("ebook"),kind:"ebook",grid:"ebook-products",more:"ebook-load-more-wrap",search:"ebook-search",filters:"ebook-filters",count:"ebook-result-count",label:"ebookItems",placeholder:"searchEbooks",empty:"noEbooks"},
+  course:{items:byType("course"),kind:"course",grid:"course-products",more:"course-load-more-wrap",search:"course-search",filters:"course-filters",count:"course-result-count",label:"courseItems",placeholder:"searchCourses",empty:"noCourses"}
  };
+ const pagers={};
+ for(const [key,group] of Object.entries(groups))pagers[key]=createPager(group.grid,group.more,group.kind);
+ function setupController(key,group){
+  const host=document.getElementById(group.filters),search=document.getElementById(group.search);
+  const categories=["All",...new Set(group.items.map(p=>p.category).filter(Boolean))];let chosen="All";
+  function renderFilters(){
+   const T=window.HOG_T||((k)=>k);
+   host.innerHTML=categories.map(c=>{
+    const sample=group.items.find(p=>p.category===c);
+    const translated=sample&&window.HOG_PRODUCT?window.HOG_PRODUCT(sample).category:c;
+    return '<button class="'+(c===chosen?"active":"")+'" data-c="'+esc(c)+'">'+esc(c==="All"?T("all"):(translated||c))+'</button>';
+   }).join("");
+  }
+  renderFilters();
+  function filtered(){
+   const q=search.value.trim().toLowerCase();
+   return group.items.filter(p=>{
+    const localized=window.HOG_PRODUCT?window.HOG_PRODUCT(p):p;
+    const categoryMatches=chosen==="All"||p.category===chosen;
+    const textMatches=[p.name,p.summary,p.category,localized.name,localized.summary,localized.category]
+     .some(v=>String(v||"").toLowerCase().includes(q));
+    return categoryMatches&&textMatches;
+   });
+  }
+  function draw(reset=false){
+   if(reset)pagers[key].reset();
+   const shown=filtered(),T=window.HOG_T||((k)=>k);
+   document.getElementById(group.count).textContent=shown.length+" "+T("of")+" "+group.items.length+" "+T(group.label);
+   pagers[key].render(shown,T(group.empty));
+  }
+  host.addEventListener("click",e=>{
+   const b=e.target.closest("button[data-c]");if(!b)return;
+   chosen=b.dataset.c;
+   host.querySelectorAll("button").forEach(x=>x.classList.toggle("active",x===b));
+   draw(true);
+  });
+  search.addEventListener("input",()=>draw(true));
+  return {draw,renderFilters};
+ }
+ const controllers={};
+ for(const [key,group] of Object.entries(groups))controllers[key]=setupController(key,group);
+ window.HOG_REDRAW=()=>Object.values(controllers).forEach(controller=>{controller.renderFilters();controller.draw(false);});
+ document.addEventListener("click",e=>{
+  const card=e.target.closest(".product-card");
+  if(!card||e.target.closest("a,button,input,select"))return;
+  window.open(card.dataset.productUrl,"_blank","noopener,noreferrer");
+ });
+ document.addEventListener("keydown",e=>{
+  const card=e.target.closest&&e.target.closest(".product-card");
+  if(!card||e.target!==card||(e.key!=="Enter"&&e.key!==" "))return;
+  e.preventDefault();window.open(card.dataset.productUrl,"_blank","noopener,noreferrer");
+ });
+ Object.values(controllers).forEach(controller=>controller.draw(true));
  if(window.HOG_LANG)window.HOG_REDRAW();
- host.addEventListener("click",e=>{const b=e.target.closest("button[data-c]");if(!b)return;chosen=b.dataset.c;host.querySelectorAll("button").forEach(x=>x.classList.toggle("active",x===b));drawArt();});
- search.addEventListener("input",drawArt);
- document.addEventListener("click",e=>{const card=e.target.closest(".product-card");if(!card||e.target.closest("a,button,input,select"))return;window.open(card.dataset.productUrl,"_blank","noopener,noreferrer");});
- document.addEventListener("keydown",e=>{const card=e.target.closest&&e.target.closest(".product-card");if(!card||e.target!==card||(e.key!=="Enter"&&e.key!==" "))return;e.preventDefault();window.open(card.dataset.productUrl,"_blank","noopener,noreferrer");});
- drawArt();
 }
 init().catch(err=>{for(const id of ["art-products","ebook-products","course-products"]){const el=document.getElementById(id);if(el)el.textContent=window.HOG_T?window.HOG_T("catalogError"):"The gallery catalogue is temporarily unavailable. Please refresh the page.";}console.error(err);});
 </script><script src="./assets/world-emblem.js" defer></script><script src="./assets/sticky-header.js" defer></script><script src="./assets/i18n.js" defer></script><!-- Deployment refresh: sticky header release --></body></html>

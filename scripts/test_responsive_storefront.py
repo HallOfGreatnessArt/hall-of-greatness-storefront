@@ -104,29 +104,67 @@ def main():
             page = browser.new_page(viewport={"width": 1440, "height": 900}, device_scale_factor=1)
             page.set_default_timeout(10000)
             inspect_page(page, "index.html", HOME_WIDTHS, expected_product=False)
+            for width in (320, 360, 390, 520):
+                page.set_viewport_size({"width": width, "height": 844})
+                for grid_id in ("art-products", "ebook-products", "course-products"):
+                    columns = page.locator(f"#{grid_id}").evaluate("(el) => getComputedStyle(el).gridTemplateColumns.split(' ').length")
+                    record(columns == 2, f"{grid_id}: expected two columns at {width}px, found {columns}")
+            page.set_viewport_size({"width": 1440, "height": 900})
+            # Five independent units, fixed header/footer, and two-column product grids.
+            record(page.locator(".wrap > header").count() == 1,
+                   "The protected sticky header must remain a direct child of the main wrapper")
+            units = page.locator("[data-gallery-unit]")
+            record(units.count() == 4, f"Expected 4 lower-page units (three product units plus artist/footer), found {units.count()}")
+            for unit_name in ("art", "ebooks", "courses", "about"):
+                record(page.locator(f'[data-gallery-unit="{unit_name}"]').count() == 1,
+                       f"Missing or duplicated {unit_name} gallery unit")
+            for grid_id in ("art-products", "ebook-products", "course-products"):
+                columns = page.locator(f"#{grid_id}").evaluate("(el) => getComputedStyle(el).gridTemplateColumns.split(' ').length")
+                record(columns == 2, f"{grid_id}: expected two columns at desktop, found {columns}")
+            for unit in page.locator("[data-gallery-unit]").all():
+                margin = unit.evaluate("(el) => parseFloat(getComputedStyle(el).marginTop)")
+                record(margin >= 7.5, f"{unit.get_attribute('data-gallery-unit')}: unit spacing is below 2mm")
+
             section_specs = [
-                ("art-decor", "art-products", "art-decor"),
-                ("ebooks", "ebook-products", "ebook"),
-                ("courses", "course-products", "course"),
+                ("art-decor", "art-products", "art-decor", "art-load-more-wrap", "art"),
+                ("ebooks", "ebook-products", "ebook", "ebook-load-more-wrap", "ebooks"),
+                ("courses", "course-products", "course", "course-load-more-wrap", "courses"),
             ]
-            for section_id, grid_id, content_type in section_specs:
+            for section_id, grid_id, content_type, more_id, unit_id in section_specs:
                 expected = [p for p in PUBLISHED if p.get("content_type") == content_type]
                 cards = page.locator(f"#{grid_id} .product-card")
+                initial = min(4, len(expected))
+                record(cards.count() == initial,
+                       f"{section_id}: expected {initial} initial product cards, found {cards.count()}")
+                previous = initial
+                while page.locator(f"#{more_id} button").count():
+                    page.locator(f"#{more_id} button").click()
+                    current = cards.count()
+                    record(current == min(previous + 4, len(expected)),
+                           f"{section_id}: Show more should reveal four additional products (or final remainder); found {current}")
+                    record(current > previous, f"{section_id}: Show more did not reveal additional products")
+                    previous = current
                 record(cards.count() == len(expected),
-                       f"{section_id}: expected {len(expected)} product cards, found {cards.count()}")
+                       f"{section_id}: pagination did not reveal all {len(expected)} products")
+                seen = set()
                 for product in expected:
                     card = page.locator(f'#{grid_id} .product-card[data-permalink="{product["permalink"]}"]')
                     record(card.count() == 1,
                            f"{section_id}: product {product['permalink']} is missing or duplicated")
                     if card.count() == 1:
+                        seen.add(product["permalink"])
                         record(card.get_attribute("data-product-url") == product["url"],
                                f"{section_id}: incorrect Gumroad destination for {product['permalink']}")
                         record(card.locator(f'a[href="{product["url"]}"]').count() == 1,
                                f"{section_id}: exact Gumroad purchase link missing for {product['permalink']}")
-            # The same product must never leak into another section.
+                record(len(seen) == len(expected), f"{section_id}: product set is incomplete after pagination")
+                record(page.locator(f'[data-gallery-unit="{unit_id}"] .section-links a[href="https://alshayebemad.gumroad.com/"]').count() == 1,
+                       f"{section_id}: Gumroad store referral link is missing")
+
+            # No product may leak into a different section after all batches are expanded.
             for product in PUBLISHED:
                 expected_grid = {"art-decor": "art-products", "ebook": "ebook-products", "course": "course-products"}[product["content_type"]]
-                for _, grid_id, _ in section_specs:
+                for _, grid_id, _, _, _ in section_specs:
                     count = page.locator(f'#{grid_id} .product-card[data-permalink="{product["permalink"]}"]').count()
                     record(count == (1 if grid_id == expected_grid else 0),
                            f"{product['permalink']}: duplicated or misclassified across section grids")
@@ -141,6 +179,21 @@ def main():
             record(page.locator("#art-products .product-card").count() == 0,
                    "Empty art search did not clear the art section")
             search.fill("")
+            # Each product destination has independent search and category controls.
+            for content_type, search_id, grid_id in (
+                ("ebook", "ebook-search", "ebook-products"),
+                ("course", "course-search", "course-products"),
+            ):
+                matching = [p for p in PUBLISHED if p.get("content_type") == content_type]
+                if matching:
+                    section_search = page.locator(f"#{search_id}")
+                    section_search.fill(matching[0]["name"])
+                    record(page.locator(f"#{grid_id} .product-card").count() == 1,
+                           f"{content_type}: section-specific title search did not return its product")
+                    section_search.fill("no-such-section-product")
+                    record(page.locator(f"#{grid_id} .product-card").count() == 0,
+                           f"{content_type}: unmatched search did not clear its section")
+                    section_search.fill("")
             category = first_artwork.get("category")
             if category:
                 page.locator("#art-filters button").filter(has_text=category).first.click()

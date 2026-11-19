@@ -20,12 +20,21 @@ ARABIC_ENTRY = next(item for item in LANGUAGES["languages"] if item["code"] == "
 assert ARABIC_ENTRY["available"] is True, "Arabic must be genuinely enabled in locales/languages.json"
 PRODUCTS = [p for p in CATALOG["products"] if p.get("published") is True]
 
-def wait_language(page, code: str, direction: str):
+def wait_language(page, code: str, direction: str, gumroad_label: str | None = None):
     page.wait_for_function(
-        """([lang, dir]) =>
-          document.documentElement.lang === lang &&
-          document.documentElement.dir === dir""",
-        arg=[code, direction],
+        """([lang, dir, label]) => {
+          const gumroadLinks = Array.from(document.querySelectorAll(
+            '[data-gallery-unit] .section-links a[href="https://alshayebemad.gumroad.com/"]'
+          ));
+          const labelsReady = label === null || (
+            gumroadLinks.length === 3 &&
+            gumroadLinks.every(link => link.textContent.trim() === label)
+          );
+          return document.documentElement.lang === lang &&
+            document.documentElement.dir === dir &&
+            labelsReady;
+        }""",
+        arg=[code, direction, gumroad_label],
         timeout=15000,
     )
 
@@ -38,7 +47,7 @@ def test_local_homepage(browser):
     page.wait_for_function("document.documentElement.dataset.language === 'en'")
     home_options = page.locator("#language-select").evaluate("(el) => Array.from(el.options).map(option => option.value)")
     assert "ar" in home_options, f"Arabic option missing from test registry: {home_options}"
-    wait_language(page, "en", "ltr")
+    wait_language(page, "en", "ltr", "Visit Gumroad store ↗")
     english_hero = page.locator(".hero h1").inner_text()
     assert "Art, knowledge" in english_hero
     assert page.locator("#art-decor .head h2").inner_text() == "Art & Decor"
@@ -48,12 +57,19 @@ def test_local_homepage(browser):
     assert len(set(section_descriptions)) == 3, "Each storefront section must have its own description"
 
     page.select_option("#language-select", "ar")
-    wait_language(page, "ar", "rtl")
+    wait_language(page, "ar", "rtl", "تفضل بزيارة متجر Gumroad ↗")
     arabic_hero = normalized(page.locator(".hero h1").inner_text())
     assert "فن يحمل حكاية." in arabic_hero, arabic_hero
     assert page.locator("#art-decor .head h2").inner_text() == "الفن والديكور"
     assert page.locator("#ebooks .head h2").inner_text() == "الكتب الإلكترونية"
     assert page.locator("#courses .head h2").inner_text() == "الكورسات التعليمية"
+    assert page.locator("#ebook-search").get_attribute("placeholder") == "ابحث في الكتب الإلكترونية..."
+    assert page.locator("#course-search").get_attribute("placeholder") == "ابحث في الكورسات التعليمية..."
+    for unit in ("art", "ebooks", "courses"):
+        actual_label = normalized(page.locator(f'[data-gallery-unit="{unit}"] .section-links a[href="https://alshayebemad.gumroad.com/"]').inner_text())
+        assert actual_label.casefold() == "تفضل بزيارة متجر Gumroad ↗".casefold(), f"Arabic Gumroad label mismatch in {unit}: {actual_label!r}"
+    assert page.locator("#artist").count() == 1
+    assert page.locator("footer a[href='./terms.html']").count() == 1
     assert page.evaluate("localStorage.getItem('hog-language')") == "ar"
 
     page.reload(wait_until="domcontentloaded")
