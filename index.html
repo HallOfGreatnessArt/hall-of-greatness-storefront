@@ -456,6 +456,12 @@ section[id]{scroll-margin-top:104px}
 .wrap>header.is-compact nav{
  display:none;visibility:hidden;pointer-events:none;
 }
+/* Force native controls themselves out of layout in compact mode. */
+.wrap>header.is-compact .header-tools,
+.wrap>header.is-compact #language-select,
+.wrap>header.is-compact nav{
+ display:none!important;visibility:hidden!important;pointer-events:none!important;
+}
 @media(prefers-reduced-motion:reduce){
  .wrap>header{transition:none}
 }
