@@ -480,6 +480,47 @@ section[id]{scroll-margin-top:104px}
   letter-spacing:0;white-space:nowrap;flex:0 1 auto;
  }
 }
+/* Give the animated flag orbit enough room on phones without restoring the oversized header. */
+@media(max-width:900px){
+ .wrap>header{
+  grid-template-rows:74px 30px;
+  height:112px;min-height:112px;padding:4px 0;
+ }
+ .wrap>header .hog-header-identity{
+  height:74px;min-height:74px;max-height:74px;
+  grid-template-columns:66px minmax(0,1fr) 52px;
+  grid-template-rows:74px;grid-auto-rows:74px;gap:5px;
+ }
+ .wrap>header .hog-header-identity .hog-brand{
+  width:66px;height:70px;align-items:center;justify-content:center;
+ }
+ .wrap>header .hog-header-identity .hog-emblem{
+  --hog-size:66px;width:66px;height:66px;flex-basis:66px;
+ }
+ .wrap>header .hog-header-identity .hog-core,
+ .wrap>header .hog-header-identity .hog-active-flag{
+  width:40px;height:40px;
+ }
+ .wrap>header .hog-header-identity .hog-orbit-flag{
+  width:12px;height:8px;border-radius:1px;
+ }
+ .wrap>header .hog-header-identity .hog-crown-tile{
+  width:48px;height:48px;justify-self:center;
+ }
+}
+@media(max-width:360px){
+ .wrap>header{grid-template-rows:70px 30px;height:108px;min-height:108px}
+ .wrap>header .hog-header-identity{
+  height:70px;min-height:70px;max-height:70px;
+  grid-template-columns:62px minmax(0,1fr) 48px;
+  grid-template-rows:70px;grid-auto-rows:70px;
+ }
+ .wrap>header .hog-header-identity .hog-brand{width:62px;height:66px}
+ .wrap>header .hog-header-identity .hog-emblem{
+  --hog-size:62px;width:62px;height:62px;flex-basis:62px;
+ }
+ .wrap>header .hog-header-identity .hog-crown-tile{width:44px;height:44px}
+}
 @media(max-width:360px){
  .wrap>header.is-compact{grid-template-columns:100px minmax(0,1fr);column-gap:6px}
  .wrap>header.is-compact #language-select{width:100px;max-width:100px;font-size:11px}
