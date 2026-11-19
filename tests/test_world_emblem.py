@@ -56,7 +56,13 @@ def check_viewport(browser, width, height):
                getComputedStyle(nav).display !== 'none';
     }""", timeout=3000)
     assert page.locator("#language-select").is_visible()
-    assert page.locator("header nav").is_visible()
+    # Verify the actual navigation controls, not only the nav wrapper's
+    # visibility (the wrapper may report a zero-area box during flex reflow).
+    nav = page.locator("header nav")
+    assert nav.count() == 1
+    assert nav.locator("a").count() == 4
+    for link in nav.locator("a").all():
+        assert link.is_visible(), f"Navigation link is not visible: {link.inner_text()}"
     page.close()
 
 def main():
