@@ -39,8 +39,23 @@ def check_viewport(browser, width, height):
     assert compact_height <= 100, f"Compact header too tall: {compact_height}px"
     overflow = page.evaluate("document.documentElement.scrollWidth > document.documentElement.clientWidth")
     assert not overflow, f"Horizontal overflow at viewport width {width}"
-    page.evaluate("window.scrollTo(0, 0)")
-    page.wait_for_function("document.querySelector('.wrap>header').dataset.compact === 'false'")
+    page.evaluate("""() => {
+        window.scrollTo({top: 0, behavior: 'instant'});
+        window.dispatchEvent(new Event('scroll'));
+    }""")
+    page.wait_for_function("""() => {
+        const header = document.querySelector('.wrap>header');
+        return window.scrollY === 0 &&
+               header.dataset.compact === 'false' &&
+               !header.classList.contains('is-compact');
+    }""", timeout=3000)
+    page.wait_for_function("""() => {
+        const language = document.querySelector('#language-select');
+        const nav = document.querySelector('header nav');
+        return !!language && !!nav &&
+               getComputedStyle(language).display !== 'none' &&
+               getComputedStyle(nav).display !== 'none';
+    }""", timeout=3000)
     assert page.locator("#language-select").is_visible()
     assert page.locator("header nav").is_visible()
     page.close()
