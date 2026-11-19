@@ -7,6 +7,7 @@ on:
       - "feat/sticky-identity-scroll-header"
       - "feat/compact-header-full-navigation"
       - "fix/sticky-header-layout-stability"
+      - "fix/permanent-compact-header"
     paths:
       - "index.html"
       - "assets/world-emblem.css"
