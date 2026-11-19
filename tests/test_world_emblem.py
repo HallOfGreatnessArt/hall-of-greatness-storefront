@@ -33,6 +33,7 @@ def check_viewport(browser, width, height):
     assert language.is_visible(), "Language selector must be visible in the full header"
     assert all(link.is_visible() for link in nav.locator("a").all()), "All section links must be visible in the full header"
 
+    original_hero_document_y = page.evaluate("() => document.querySelector('main .hero').getBoundingClientRect().top + window.scrollY")
     page.evaluate("window.scrollTo(0, 500)")
     page.wait_for_function("document.querySelector('.wrap>header').dataset.compact === 'true'")
     page.wait_for_function("""() => {
@@ -46,7 +47,10 @@ def check_viewport(browser, width, height):
           return r.width >= 24 && r.height >= 24 && s.visibility === 'visible' && s.opacity !== '0';
         });
     }""", timeout=5000)
+    page.wait_for_timeout(450)
     box = header.bounding_box()
+    compact_hero_document_y = page.evaluate("() => document.querySelector('main .hero').getBoundingClientRect().top + window.scrollY")
+    assert abs(compact_hero_document_y - original_hero_document_y) <= 2, f"Header transition shifted page content by {compact_hero_document_y - original_hero_document_y:.2f}px"
     assert box and box["y"] <= 1, f"Sticky header moved off screen: {box}"
     assert page.locator(".hog-emblem").is_visible()
     assert page.locator(".hog-crown-tile").is_visible()
@@ -64,6 +68,7 @@ def check_viewport(browser, width, height):
       const h=document.querySelector('.wrap>header');
       return window.scrollY <= 1 && h.dataset.compact === 'false' && !h.classList.contains('is-compact');
     }""", timeout=5000)
+    page.wait_for_timeout(450)
     assert language.is_visible(), "Language selector did not restore at page top"
     assert all(link.is_visible() for link in nav.locator("a").all()), "Navigation did not restore at page top"
     page.close()
