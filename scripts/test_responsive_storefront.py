@@ -120,7 +120,7 @@ def main():
                 columns = page.locator(f"#{grid_id}").evaluate("(el) => getComputedStyle(el).gridTemplateColumns.split(' ').length")
                 record(columns == 2, f"{grid_id}: expected two columns at desktop, found {columns}")
             for unit in page.locator("[data-gallery-unit]").all():
-                margin = page.evaluate("(el) => parseFloat(getComputedStyle(el).marginTop)", unit)
+                margin = unit.evaluate("(el) => parseFloat(getComputedStyle(el).marginTop)")
                 record(margin >= 7.5, f"{unit.get_attribute('data-gallery-unit')}: unit spacing is below 2mm")
 
             section_specs = [
