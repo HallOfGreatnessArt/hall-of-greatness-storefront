@@ -4,10 +4,12 @@ on:
   push:
     branches:
       - "feat/animated-world-emblem"
+      - "feat/sticky-identity-scroll-header"
     paths:
       - "index.html"
       - "assets/world-emblem.css"
       - "assets/world-emblem.js"
+      - "assets/sticky-header.js"
       - "tests/test_world_emblem.py"
       - ".github/workflows/world-emblem-qa.yml"
   pull_request:
@@ -17,6 +19,7 @@ on:
       - "index.html"
       - "assets/world-emblem.css"
       - "assets/world-emblem.js"
+      - "assets/sticky-header.js"
       - "tests/test_world-emblem.py"
       - ".github/workflows/world-emblem-qa.yml"
 
