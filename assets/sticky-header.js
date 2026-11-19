@@ -3,11 +3,15 @@
  const header=document.querySelector(".wrap>header");
  if(!header)return;
  const threshold=120;
+ const controls=header.querySelector(".header-tools");
+ const navigation=header.querySelector("nav");
  let scheduled=false;
  const update=()=>{
   const compact=window.scrollY>threshold;
   header.classList.toggle("is-compact",compact);
   header.dataset.compact=compact?"true":"false";
+  if(controls){controls.hidden=compact;controls.setAttribute("aria-hidden",compact?"true":"false");}
+  if(navigation){navigation.hidden=compact;navigation.setAttribute("aria-hidden",compact?"true":"false");}
   scheduled=false;
  };
  const onScroll=()=>{
