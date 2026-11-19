@@ -46,7 +46,15 @@ def check_viewport(browser, width, height):
         assert language.is_visible(), "Language selector disappeared while scrolling"
         assert all(link.is_visible() for link in nav.locator("a").all()), "Navigation link disappeared while scrolling"
     box = header.bounding_box()
-    assert box and box["height"] <= (90 if width <= 900 else 76), f"Fixed header takes too much space: {box}"
+    assert box and box["height"] <= (120 if width <= 900 else 76), f"Fixed header takes too much space: {box}"
+    emblem_box = page.locator(".hog-emblem").bounding_box()
+    identity_box = page.locator(".hog-header-identity").bounding_box()
+    assert emblem_box and identity_box
+    assert emblem_box["height"] >= (60 if width <= 900 else 38), f"Emblem is too small: {emblem_box}"
+    assert emblem_box["y"] >= identity_box["y"] - 1 and emblem_box["y"] + emblem_box["height"] <= identity_box["y"] + identity_box["height"] + 1, f"Emblem orbit is clipped by identity row: emblem={emblem_box}, identity={identity_box}"
+    orbit_flags = page.locator(".hog-orbit-flag")
+    page.wait_for_function("document.querySelectorAll('.hog-orbit-flag').length === 24")
+    assert orbit_flags.count() == 24
     assert page.locator(".hog-emblem").is_visible()
     assert page.locator(".hog-crown-tile").is_visible()
     assert page.locator(".hog-wordmark").is_visible()
