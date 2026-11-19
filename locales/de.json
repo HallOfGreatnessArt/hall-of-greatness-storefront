@@ -796,7 +796,7 @@
     "terms": "Bedingungen",
     "contact": "Kontakt",
     "gumroad": "Gumroad-Laden",
-    "exploreArt": "Erkunden Sie Kunstwerke",
+    "exploreArt": "Entdecken Sie Kunst",
     "discoverStory": "Entdecken Sie die Geschichte",
     "buyDownload": "Kaufen / downloaden",
     "buyCollection": "Sammlung kaufen",
@@ -820,7 +820,7 @@
     "ebooksText": "Entdecken Sie digitale Bücher, die Wissen, Perspektiven und praktische Ideen zu einer Reihe von Themen teilen. Nachdenkliche Lektüre soll das Verständnis erweitern und neue Horizonte eröffnen.",
     "coursesEyebrow": "Aufbau von Fähigkeiten durch geführtes Lernen",
     "coursesTitle": "Bildungskurse",
-    "coursesText": "Entdecken Sie strukturierte Lernerfahrungen, die Ideen in Fähigkeiten verwandeln. Lernen Sie Schritt für Schritt, üben Sie zielgerichtet und wenden Sie neues Wissen mit Zuversicht an.",
+    "coursesText": "Entdecken Sie strukturierte Lernerfahrungen, die Ideen in Fähigkeiten verwandeln. Lernen Sie Schritt für Schritt, üben Sie mit Absicht und wenden Sie neues Wissen mit Zuversicht an.",
     "artItems": "Kunstwerke",
     "noArtProducts": "Neue Kunstwerke und Sammlungen kommen bald.",
     "noEbooks": "Neue E-Books kommen bald. Überprüfen Sie zurück für die neuesten Releases.",
@@ -834,9 +834,15 @@
     "viewDetails": "Details ansehen",
     "getEbook": "Holen Sie sich E-Book",
     "enrollCourse": "Entdecken Sie den Kurs",
-    "openOnGumroad": "Offenes Produkt auf Gumroad"
+    "openOnGumroad": "Offenes Produkt auf Gumroad",
+    "showMore": "Mehr anzeigen",
+    "visitGumroadStore": "Besuchen Sie Gumroad Store",
+    "searchEbooks": "E-Books durchsuchen...",
+    "searchCourses": "Suche Bildungskurse...",
+    "ebookItems": "Bücher",
+    "courseItems": "Kurse"
   },
-  "_ui_source_hash": "57dde9068327d4a71004dac6ddb473c8240ad12c14a7a1a19d85c3e1c150240e",
+  "_ui_source_hash": "9946acfa5a414653a7d08d2f6c8a74f1e5ca94a6635f4914433b3b64152d13aa",
   "_ui_translation_status": "machine-generated-unreviewed",
   "_ui_fallback_keys": []
 }

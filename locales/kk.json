@@ -69,7 +69,13 @@
     "viewDetails": "View details ↗",
     "getEbook": "Get e-book ↗",
     "enrollCourse": "Explore course ↗",
-    "openOnGumroad": "Open product on Gumroad"
+    "openOnGumroad": "Open product on Gumroad",
+    "showMore": "Show more",
+    "visitGumroadStore": "Visit Gumroad store ↗",
+    "searchEbooks": "Search e-books...",
+    "searchCourses": "Search educational courses...",
+    "ebookItems": "books",
+    "courseItems": "courses"
   },
   "_ui_fallback_keys": [
     "all",
@@ -94,6 +100,7 @@
     "collectionsTitle",
     "contact",
     "courseFormat",
+    "courseItems",
     "courseProductType",
     "coursesEyebrow",
     "coursesText",
@@ -102,6 +109,7 @@
     "discover",
     "discoverStory",
     "ebookFormat",
+    "ebookItems",
     "ebookProductType",
     "ebooksEyebrow",
     "ebooksText",
@@ -138,9 +146,13 @@
     "printable",
     "privacy",
     "search",
+    "searchCourses",
+    "searchEbooks",
+    "showMore",
     "tagline",
     "terms",
-    "viewDetails"
+    "viewDetails",
+    "visitGumroadStore"
   ],
   "_ui_translation_status": "english-fallback-incomplete"
 }
