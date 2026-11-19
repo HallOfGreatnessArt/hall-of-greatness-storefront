@@ -48,14 +48,33 @@ def check_viewport(browser, width, height):
         return header.dataset.compact === 'false' &&
                !header.classList.contains('is-compact');
     }""", timeout=5000)
+    # Assert the real mobile control is rendered, has a usable hit area,
+    # and is not covered/hidden after the full header is restored.
     page.wait_for_function("""() => {
-        const language = document.querySelector('#language-select');
+        const select = document.querySelector('#language-select');
+        const tools = document.querySelector('header .header-tools');
         const nav = document.querySelector('header nav');
-        return !!language && !!nav &&
-               getComputedStyle(language).display !== 'none' &&
+        if (!select || !tools || !nav) return false;
+        const r = select.getBoundingClientRect();
+        const s = getComputedStyle(select);
+        const p = getComputedStyle(tools);
+        return s.display !== 'none' && s.visibility === 'visible' &&
+               p.display !== 'none' && p.visibility === 'visible' &&
+               r.width >= 100 && r.height >= 32 &&
                getComputedStyle(nav).display !== 'none';
-    }""", timeout=3000)
-    assert page.locator("#language-select").is_visible()
+    }""", timeout=5000)
+    select = page.locator("#language-select")
+    assert select.is_visible(), "Language selector is not visibly rendered after returning to page top"
+    assert select.locator("option").count() >= 2, "Language selector has no usable choices"
+    rect = select.bounding_box()
+    assert rect and rect["width"] >= 100 and rect["height"] >= 32, f"Language selector has no usable touch target: {rect}"
+    hit = page.evaluate("""() => {
+        const el = document.querySelector('#language-select');
+        const r = el.getBoundingClientRect();
+        const top = document.elementFromPoint(r.left + r.width/2, r.top + r.height/2);
+        return !!top && (top === el || el.contains(top));
+    }""")
+    assert hit, "Language selector is covered and cannot receive a tap"
     # Verify the actual navigation controls, not only the nav wrapper's
     # visibility (the wrapper may report a zero-area box during flex reflow).
     nav = page.locator("header nav")
