@@ -20,16 +20,19 @@ ARABIC_ENTRY = next(item for item in LANGUAGES["languages"] if item["code"] == "
 assert ARABIC_ENTRY["available"] is True, "Arabic must be genuinely enabled in locales/languages.json"
 PRODUCTS = [p for p in CATALOG["products"] if p.get("published") is True]
 
-def wait_language(page, code: str, direction: str, gumroad_label: str):
+def wait_language(page, code: str, direction: str, gumroad_label: str | None = None):
     page.wait_for_function(
         """([lang, dir, label]) => {
           const gumroadLinks = Array.from(document.querySelectorAll(
             '[data-gallery-unit] .section-links a[href="https://alshayebemad.gumroad.com/"]'
           ));
+          const labelsReady = label === null || (
+            gumroadLinks.length === 3 &&
+            gumroadLinks.every(link => link.textContent.trim() === label)
+          );
           return document.documentElement.lang === lang &&
             document.documentElement.dir === dir &&
-            gumroadLinks.length === 3 &&
-            gumroadLinks.every(link => link.textContent.trim() === label);
+            labelsReady;
         }""",
         arg=[code, direction, gumroad_label],
         timeout=15000,
