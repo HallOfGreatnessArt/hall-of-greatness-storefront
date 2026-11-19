@@ -1,19 +1,17 @@
-/* Keep the gallery identity visible while the visitor browses the storefront. */
+/* Keep the complete gallery header available as one compact navigation unit. */
 (()=>{
  const header=document.querySelector(".wrap>header");
  if(!header)return;
  const threshold=120;
- const controls=header.querySelector(".header-tools");
- const language=header.querySelector("#language-select");
- const navigation=header.querySelector("nav");
  let scheduled=false;
  const update=()=>{
   const compact=window.scrollY>threshold;
   header.classList.toggle("is-compact",compact);
   header.dataset.compact=compact?"true":"false";
-  if(controls){controls.setAttribute("aria-hidden",compact?"true":"false");}
-  if(language){language.setAttribute("aria-hidden",compact?"true":"false");}
-  if(navigation){navigation.setAttribute("aria-hidden",compact?"true":"false");}
+  /* Language and navigation remain visible and accessible in both states. */
+  header.querySelectorAll(".header-tools,#language-select,nav").forEach(el=>{
+   el.setAttribute("aria-hidden","false");
+  });
   scheduled=false;
  };
  const onScroll=()=>{
