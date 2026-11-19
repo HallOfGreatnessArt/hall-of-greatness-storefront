@@ -8,6 +8,7 @@ on:
       - "feat/compact-header-full-navigation"
       - "fix/sticky-header-layout-stability"
       - "fix/permanent-compact-header"
+      - "fix/mobile-emblem-full-visibility"
     paths:
       - "index.html"
       - "assets/world-emblem.css"
