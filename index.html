@@ -796,8 +796,9 @@ function createPager(gridId,moreId,kind){
    pager.render(pager.items,pager.emptyText);
    if(pager.limit>previous){
     const cards=grid.querySelectorAll(".product-card");
-    const focusCard=cards[Math.max(0,previous-1)];
-    if(focusCard)focusCard.setAttribute("data-last-batch-anchor","true");
+    const nextButton=more.querySelector("button");
+    if(nextButton)nextButton.focus();
+    else if(cards[previous])cards[previous].focus();
    }
   });
  };
