@@ -2,7 +2,7 @@
   "source": "Public Gumroad product page (no OAuth)",
   "account": "Emad Alshayeb",
   "verified_at": "2026-11-23",
-  "product_count": 64,
+  "product_count": 65,
   "products": [
     {
       "name": "THE ART OF ELEGANCE & SERENITY",
@@ -1319,7 +1319,7 @@
     },
     {
       "name": "THE LAST LIBRARY OF HUMANITY",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/THELASTLIBRARYOFHUMANITY",
       "permalink": "xqeqaf",
       "published": true,
@@ -1345,7 +1345,7 @@
     },
     {
       "name": "THE ARCHITECTURE OF SILENCE",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/THEARCHITECTUREOFSILENCE",
       "permalink": "auccyj",
       "published": true,
@@ -1371,7 +1371,7 @@
     },
     {
       "name": "THE GARDEN OF IMPOSSIBLE FLOWERS",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/lgrqvk",
       "permalink": "lgrqvk",
       "published": true,
@@ -1397,7 +1397,7 @@
     },
     {
       "name": "JAZZ AFTER MIDNIGHT",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/bdtgaq",
       "permalink": "bdtgaq",
       "published": true,
@@ -1423,7 +1423,7 @@
     },
     {
       "name": "THE HANDS THAT HEAL THE WORLD",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/THEHANDSTHATHEALTHEWORLD",
       "permalink": "hjheeq",
       "published": true,
@@ -1449,7 +1449,7 @@
     },
     {
       "name": "WHEN HUMANITY BECOMES ONE",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/WHENHUMANITYBECOMESONE",
       "permalink": "pfpru",
       "published": true,
@@ -1474,7 +1474,7 @@
     },
     {
       "name": "THE GUARDIANS OF TOMORROW",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/THEGUARDIANSOFTOMORROW",
       "permalink": "frjnal",
       "published": true,
@@ -1500,7 +1500,7 @@
     },
     {
       "name": "A THOUSAND HEARTS, ONE HOPE",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/ATHOUSANDHEARTSONEHOPE",
       "permalink": "pmfah",
       "published": true,
@@ -1526,7 +1526,7 @@
     },
     {
       "name": "THE SILENT HEROES",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/THESILENTHEROES",
       "permalink": "aaiaau",
       "published": true,
@@ -1552,7 +1552,7 @@
     },
     {
       "name": "THE BRIDGE OF A THOUSAND SOULS",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/THEBRIDGEOFATHOUSANDSOULS",
       "permalink": "sngdim",
       "published": true,
@@ -1577,7 +1577,7 @@
     },
     {
       "name": "THE LIGHT BETWEEN GENERATIONS",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/THELIGHTBETWEENGENERATIONS",
       "permalink": "kmnqsqe",
       "published": true,
@@ -1603,7 +1603,7 @@
     },
     {
       "name": "THE GUIDING STAR",
-      "price_usd": 5.0,
+      "price_usd": 5,
       "url": "https://alshayebemad.gumroad.com/l/wcgqob",
       "permalink": "wcgqob",
       "published": true,
@@ -1696,7 +1696,7 @@
     },
     {
       "name": "THE ALGORITHM EMPIRE",
-      "price_usd": 12.0,
+      "price_usd": 12,
       "url": "https://alshayebemad.gumroad.com/l/THEALGORITHMEMPIRE",
       "permalink": "ylxtub",
       "published": true,
@@ -1752,6 +1752,51 @@
         "digital-book",
         "future-of-work",
         "ebooks"
+      ],
+      "content_type": "ebook"
+    },
+    {
+      "name": "THE AI AGE — THE COMPLETE FIVE-BOOK COLLECTION",
+      "price_usd": 20,
+      "url": "https://alshayebemad.gumroad.com/l/THEAIAGETHECOMPLETEFIVE-BOOKCOLLECTION",
+      "permalink": "wydjxz",
+      "published": true,
+      "is_bundle": true,
+      "category": "E-Book Collection",
+      "landing_slug": "the-ai-age-complete-five-book-collection",
+      "cover_url": "https://public-files.gumroad.com/uifloep77rxh0u3z2g2wo4bzjipq",
+      "summary": "Five connected books on AI foundations, hidden systems, humanity, global technological power, and the future of work — together for $20.",
+      "bundle_contents": [
+        "isbsay",
+        "qsznm",
+        "wdwtbf",
+        "ylxtub",
+        "qccitx"
+      ],
+      "product_details": {
+        "author": "EMAD ALSHAYEB",
+        "publisher": "HALL OF GREATNESS Publishing",
+        "collection": "THE AI AGE",
+        "books_included": "5 complete English-language books",
+        "topics": "AI foundations, AI systems, human values, digital power, and the future of work",
+        "product_type": "Digital book bundle",
+        "language": "English",
+        "delivery": "Digital access to all five books through your Gumroad purchase library",
+        "price": "$20.00 USD",
+        "physical_item": "No physical books will be shipped"
+      },
+      "full_description": "THE AI AGE\nTHE COMPLETE FIVE-BOOK COLLECTION\nFive essential books. One connected journey through the age of artificial intelligence.\n\nArtificial intelligence is changing how we understand the world, how decisions are made, how power is distributed, how people work, and what societies must protect. To navigate this transformation, we need more than technical explanations or predictions. We need a clear view of the systems, the human questions, and the choices shaping what comes next.\n\nTHE AI AGE — THE COMPLETE FIVE-BOOK COLLECTION brings together five complementary books by EMAD ALSHAYEB, published by HALL OF GREATNESS Publishing. Together, they move from understanding AI’s foundations to examining its hidden mechanisms, its implications for humanity, the global structures of technological power, and the future of work.\n\nTHE FIVE BOOKS\n\n1. THE AI POWER GAME — UNDERSTAND • ADAPT • THRIVE\nYour guide to the new era of artificial intelligence. Explore the foundations of AI, its economic and social impact, global competition, business, work, security, trust, responsible use, and practical ways to prepare for change.\n\n2. THE AI BLACK BOX\nGo beyond the interface to understand how AI systems learn, why their inner workings can be difficult to inspect, how they are evaluated, where they fail, and why transparency, evidence, accountability, and human oversight matter.\n\n3. THE HUMANITY TEST\nCan humanity remain human in the age of superintelligence? Examine dignity, identity, consciousness, empathy, relationships, privacy, freedom, human agency, and the values that should guide technological progress.\n\n4. THE ALGORITHM EMPIRE\nWho controls the intelligence that increasingly shapes our world? Investigate data, chips, computing infrastructure, platforms, energy, surveillance, cybersecurity, digital sovereignty, geopolitics, and the rules governing technological power.\n\n5. THE LAST JOB\nHow will AI transform work—and what must humans do next? Explore changing tasks and occupations, productivity, skills, AI coworkers and agents, workplace monitoring, worker voice, fair employment, and the choices required for a human-centred transition.\n\nWHY READ THE COLLECTION?\nSee the AI transformation from five connected perspectives: foundations, systems, humanity, power, and work. Build a balanced understanding beyond hype and fear. Connect technical developments with economic, social, ethical, and institutional consequences. Keep human judgment, dignity, responsibility, and agency at the centre of progress.\n\nWHO IS THIS COLLECTION FOR?\nStudents, professionals, educators, entrepreneurs, business leaders, technology practitioners, policymakers, and curious readers who want to understand artificial intelligence and its consequences without needing to be technical specialists.\n\nWHAT YOU RECEIVE\nOne digital bundle containing all five published books and the digital materials attached to their individual Gumroad products. Each book remains a separate title within the collection. Access and download the included products through your Gumroad purchase library.\n\nCOLLECTION DETAILS\nAuthor: EMAD ALSHAYEB\nPublisher: HALL OF GREATNESS Publishing\nCollection: THE AI AGE\nBooks included: 5 complete books\nLanguage: English\nProduct type: Digital book bundle\nDelivery: Digital access through Gumroad after purchase\nPrice: $20.00 USD\n\nThe future of AI is shaped by human choices—by what we build, what we question, what we protect, and who benefits. This collection is an invitation to understand those choices and take part in shaping a more thoughtful future.\n\nThis is a digital product. No physical books will be shipped.",
+      "tags": [
+        "ebook",
+        "technology",
+        "ai",
+        "governance",
+        "ai-safety",
+        "ai-ethics",
+        "ai-books",
+        "digital-power",
+        "future-work",
+        "human-future"
       ],
       "content_type": "ebook"
     }
