@@ -14,13 +14,37 @@ class ProductClassificationTests(unittest.TestCase):
     def setUp(self):
         self.catalog = json.loads((ROOT / "catalog-data.json").read_text(encoding="utf-8"))
         self.manifest = json.loads((ROOT / "product-classifications.json").read_text(encoding="utf-8"))
+        # Keep the regression fixture stable both before and after public Gumroad
+        # discovery. The four books are imported during CI and synthesized here
+        # only when running the test directly against the checked-in base catalogue.
+        expected_new_books = {
+            "qsznm": "The AI Black Box",
+            "wdwtbf": "The Humanity Test",
+            "ylxtub": "THE ALGORITHM EMPIRE",
+            "qccitx": "THE LAST JOB",
+        }
+        known = {p.get("permalink") for p in self.catalog["products"]}
+        for permalink, name in expected_new_books.items():
+            if permalink not in known:
+                self.catalog["products"].append({
+                    "name": name,
+                    "permalink": permalink,
+                    "published": True,
+                    "tags": [],
+                })
 
     def test_existing_catalogue_is_classified_into_exactly_three_sections(self):
         apply_classifications(self.catalog, self.manifest)
         published = [p for p in self.catalog["products"] if p.get("published") is True]
         self.assertTrue(published)
         self.assertTrue(all(p.get("content_type") in {"art-decor", "ebook", "course"} for p in published))
-        self.assertEqual(sum(p["content_type"] == "ebook" for p in published), 1)
+        # One legacy ebook plus the four newly imported books.
+        self.assertEqual(sum(p["content_type"] == "ebook" for p in published), 5)
+        new_book_permalinks = {"qsznm", "wdwtbf", "ylxtub", "qccitx"}
+        classified_new_books = {
+            p["permalink"] for p in published if p["content_type"] == "ebook"
+        } & new_book_permalinks
+        self.assertEqual(classified_new_books, new_book_permalinks)
         book = next(p for p in published if p["permalink"] == "isbsay")
         self.assertEqual(book["content_type"], "ebook")
         self.assertIn("ebooks", book["tags"])
