@@ -60,15 +60,18 @@ def render(product):
             items.append(f'<li><a href="../{esc(item["landing_slug"])}/">{esc(item["name"].strip())}</a></li>')
     contents_html = ""
     if is_bundle:
+        bundle_heading = "Inside this five-book collection" if product.get("content_type") == "ebook" else "Inside this collection"
+        bundle_title = "Five books. One connected journey." if product.get("content_type") == "ebook" else "One collection. Many stories."
+        bundle_intro = "Explore the five individual books included in this collection. Each title examines a different dimension of the AI age, and together they form a connected reading journey." if product.get("content_type") == "ebook" else "Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey."
         contents_html = f"""
 <section class="section">
-  <div class="eyebrow">Inside this collection</div>
-  <h2>One collection. Many stories.</h2>
-  <p>Explore the individual artworks included in this curated collection. Each piece has its own character, while together they create a richer visual journey.</p>
+  <div class="eyebrow">{bundle_heading}</div>
+  <h2>{bundle_title}</h2>
+  <p>{bundle_intro}</p>
   <ul class="contents">{''.join(items)}</ul>
 </section>"""
-    subtitle = "A curated collection of meaningful digital artworks" if is_bundle else "An original digital artwork from HALL OF GREATNESS"
-    digital_note = "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork."
+    subtitle = ("The complete five-book collection on artificial intelligence" if product.get("content_type") == "ebook" else "A curated collection of meaningful digital artworks") if is_bundle else ("A digital book from HALL OF GREATNESS" if product.get("content_type") == "ebook" else "An original digital artwork from HALL OF GREATNESS")
+    digital_note = "This is a digital book bundle. No physical books will be shipped. After purchase, access the five books and their included digital materials through your Gumroad library. Each title remains a separate product within the collection." if product.get("content_type") == "ebook" else "This is a digital product. No physical artwork or frame will be shipped. After purchase, Gumroad provides access to the files included with this product. Please review the supplied file specifications and license before printing or using the artwork."
     return f'''<!doctype html>
 <html lang="en">
 <head>
