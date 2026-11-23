@@ -25,6 +25,12 @@ on:
       - "assets/i18n.js"
       - "assets/landing-i18n.js"
   workflow_dispatch:
+    inputs:
+      publish:
+        description: "Deploy to GitHub Pages after reviewing successful validation"
+        required: true
+        type: boolean
+        default: false
   schedule:
     # Keep the production catalogue in sync with newly published Gumroad products.
     - cron: "*/15 * * * *"
@@ -239,6 +245,7 @@ jobs:
           path: _site
 
   deploy:
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish == true }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
