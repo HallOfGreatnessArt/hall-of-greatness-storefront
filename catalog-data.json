@@ -1,8 +1,8 @@
 {
   "source": "Public Gumroad product page (no OAuth)",
   "account": "Emad Alshayeb",
-  "verified_at": "2026-11-20",
-  "product_count": 60,
+  "verified_at": "2026-11-23",
+  "product_count": 64,
   "products": [
     {
       "name": "THE ART OF ELEGANCE & SERENITY",
@@ -1633,6 +1633,98 @@
         "art-decor"
       ],
       "content_type": "art-decor"
+    },
+    {
+      "name": "The AI Black Box",
+      "price_usd": 12.99,
+      "url": "https://alshayebemad.gumroad.com/l/Theaiblackbox",
+      "permalink": "qsznm",
+      "published": true,
+      "is_bundle": false,
+      "bundle_contents": [],
+      "bundle_item_names": [],
+      "category": "Global",
+      "landing_slug": "the-ai-black-box",
+      "cover_url": "https://public-files.gumroad.com/78g5vblxhuur70jt6huw3jirkiqc",
+      "summary": ".",
+      "full_description": "Share\n\n.",
+      "product_details": {
+        "files_included": "1 file · ZIP · 1.1 MB"
+      },
+      "description_source": "Public Gumroad product page; no OAuth",
+      "tags": [
+        "ebooks"
+      ],
+      "content_type": "ebook"
+    },
+    {
+      "name": "The Humanity Test",
+      "price_usd": 12.99,
+      "url": "https://alshayebemad.gumroad.com/l/TheHumanityTest",
+      "permalink": "wdwtbf",
+      "published": true,
+      "is_bundle": false,
+      "bundle_contents": [],
+      "bundle_item_names": [],
+      "category": "Humanity",
+      "landing_slug": "the-humanity-test",
+      "cover_url": "https://public-files.gumroad.com/982vjxadhr17jle6bo5ygq4h3vq0",
+      "summary": ".",
+      "full_description": "Share\n\n.",
+      "product_details": {
+        "files_included": "1 file · ZIP · 4.7 MB"
+      },
+      "description_source": "Public Gumroad product page; no OAuth",
+      "tags": [
+        "ebooks"
+      ],
+      "content_type": "ebook"
+    },
+    {
+      "name": "THE ALGORITHM EMPIRE",
+      "price_usd": 12.0,
+      "url": "https://alshayebemad.gumroad.com/l/THEALGORITHMEMPIRE",
+      "permalink": "ylxtub",
+      "published": true,
+      "is_bundle": false,
+      "bundle_contents": [],
+      "bundle_item_names": [],
+      "category": "Global",
+      "landing_slug": "the-algorithm-empire",
+      "cover_url": "https://public-files.gumroad.com/gizvcznh8f79i8i5ivqgbihyupfl",
+      "summary": "Available on Gumroad",
+      "full_description": "Share",
+      "product_details": {
+        "files_included": "1 file · ZIP · 1.4 MB"
+      },
+      "description_source": "Public Gumroad product page; no OAuth",
+      "tags": [
+        "ebooks"
+      ],
+      "content_type": "ebook"
+    },
+    {
+      "name": "THE LAST JOB ?",
+      "price_usd": 9.99,
+      "url": "https://alshayebemad.gumroad.com/l/THELASTJOB",
+      "permalink": "qccitx",
+      "published": true,
+      "is_bundle": false,
+      "bundle_contents": [],
+      "bundle_item_names": [],
+      "category": "Global",
+      "landing_slug": "the-last-job",
+      "cover_url": "https://public-files.gumroad.com/4fetqv9aem5ithqlvncfe0yiyto9",
+      "summary": "Available on Gumroad",
+      "full_description": "Share",
+      "product_details": {
+        "files_included": "1 file · ZIP · 569.4 KB"
+      },
+      "description_source": "Public Gumroad product page; no OAuth",
+      "tags": [
+        "ebooks"
+      ],
+      "content_type": "ebook"
     }
   ],
   "metadata_updated_at": "2026-11-09"

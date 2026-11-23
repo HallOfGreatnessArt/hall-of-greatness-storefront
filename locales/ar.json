@@ -935,6 +935,50 @@
       "_source_hash": "b560643cf1f5eb316f70770ce54a3594cfdaa13fb4aff78be047174d70578946",
       "title_ar": "الوصية",
       "_title_translation_status": "machine-generated-unreviewed"
+    },
+    "qsznm": {
+      "summary": ".",
+      "full_description": "Share\n\n.",
+      "category": "Global",
+      "product_details": {
+        "files_included": "ملف واحد؛ ZIP ; 1.1 MB"
+      },
+      "_source_hash": "a75c32d6e772dafbcdd163066fdac99f1330d91f981e0da6beaceabd5a661d52",
+      "title_ar": "AI Black Box",
+      "_title_translation_status": "machine-generated-unreviewed"
+    },
+    "wdwtbf": {
+      "summary": ".",
+      "full_description": "Share\n\n.",
+      "category": "الإنسانية",
+      "product_details": {
+        "files_included": "1 file ; ZIP ; 4.7 MB"
+      },
+      "_source_hash": "2ceb1375ea699daced988a5775708591a823191e5f88e17de674f8ee5556d73d",
+      "title_ar": "اختبار الإنسانية",
+      "_title_translation_status": "machine-generated-unreviewed"
+    },
+    "ylxtub": {
+      "summary": "Available on Gumroad",
+      "full_description": "Share",
+      "category": "Global",
+      "product_details": {
+        "files_included": "ملف واحد؛ صفر 1.4 ميغابايت"
+      },
+      "_source_hash": "4351433d3157ad0288edeeb5d38b2a460bcf29041e151c5f675a41a61b615a04",
+      "title_ar": "الـ \"ألغاريث إمبير\"",
+      "_title_translation_status": "machine-generated-unreviewed"
+    },
+    "qccitx": {
+      "summary": "Available on Gumroad",
+      "full_description": "Share",
+      "category": "Global",
+      "product_details": {
+        "files_included": "569.4 KB"
+      },
+      "_source_hash": "0510198c75507e48fe3ca852fa28e7da74ee5adcf07ae4b8a323385dc7aad457",
+      "title_ar": "\"العملية الأخيرة\"؟",
+      "_title_translation_status": "machine-generated-unreviewed"
     }
   },
   "ui": {
