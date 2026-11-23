@@ -39,7 +39,7 @@ class ProductClassificationTests(unittest.TestCase):
         self.assertTrue(published)
         self.assertTrue(all(p.get("content_type") in {"art-decor", "ebook", "course"} for p in published))
         # One legacy ebook plus the four newly imported books.
-        self.assertEqual(sum(p["content_type"] == "ebook" for p in published), 5)
+        self.assertEqual(sum(p["content_type"] == "ebook" for p in published), 6)
         new_book_permalinks = {"qsznm", "wdwtbf", "ylxtub", "qccitx"}
         classified_new_books = {
             p["permalink"] for p in published if p["content_type"] == "ebook"
@@ -48,6 +48,11 @@ class ProductClassificationTests(unittest.TestCase):
         book = next(p for p in published if p["permalink"] == "isbsay")
         self.assertEqual(book["content_type"], "ebook")
         self.assertIn("ebooks", book["tags"])
+        bundle = next(p for p in published if p["permalink"] == "wydjxz")
+        self.assertEqual(bundle["content_type"], "ebook")
+        self.assertTrue(bundle["is_bundle"])
+        self.assertEqual(bundle["price_usd"], 20)
+        self.assertEqual(len(bundle["bundle_contents"]), 5)
         self.assertTrue(book["cover_url"].startswith("https://"))
         self.assertTrue(book["url"].startswith("https://alshayebemad.gumroad.com/l/"))
 
