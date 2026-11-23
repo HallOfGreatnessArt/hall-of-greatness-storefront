@@ -1304,16 +1304,16 @@
       },
       "description_source": "Public Gumroad product page; no OAuth",
       "tags": [
+        "ebook",
         "technology",
         "innovation",
-        "ebooks",
         "ai",
         "ai-guide",
         "digital-book",
         "future-of-work",
-        "digital-ebook",
         "ai-business",
-        "ai-literacy"
+        "ai-literacy",
+        "ebooks"
       ],
       "content_type": "ebook"
     },
@@ -1653,6 +1653,13 @@
       },
       "description_source": "Public Gumroad product page; no OAuth",
       "tags": [
+        "ebook",
+        "technology",
+        "ai",
+        "governance",
+        "digital-book",
+        "ai-safety",
+        "ai-ethics",
         "ebooks"
       ],
       "content_type": "ebook"
@@ -1676,6 +1683,13 @@
       },
       "description_source": "Public Gumroad product page; no OAuth",
       "tags": [
+        "ebook",
+        "technology",
+        "humanity",
+        "digital-book",
+        "ai-ethics",
+        "responsible-ai",
+        "human-rights",
         "ebooks"
       ],
       "content_type": "ebook"
@@ -1699,6 +1713,14 @@
       },
       "description_source": "Public Gumroad product page; no OAuth",
       "tags": [
+        "ebook",
+        "technology",
+        "ai",
+        "governance",
+        "geopolitics",
+        "cybersecurity",
+        "digital-book",
+        "digital-power",
         "ebooks"
       ],
       "content_type": "ebook"
@@ -1722,6 +1744,13 @@
       },
       "description_source": "Public Gumroad product page; no OAuth",
       "tags": [
+        "ebook",
+        "employment",
+        "ai",
+        "workplace",
+        "careers",
+        "digital-book",
+        "future-of-work",
         "ebooks"
       ],
       "content_type": "ebook"
