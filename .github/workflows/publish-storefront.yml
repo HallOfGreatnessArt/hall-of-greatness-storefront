@@ -7,6 +7,8 @@ on:
     paths:
       - ".github/workflows/publish-storefront.yml"
       - "index.html"
+      - "catalog-data.json"
+      - "landing/**"
       - "scripts/discover_public_gumroad_products.py"
       - "scripts/import_public_gumroad_product.py"
       - "scripts/apply_product_classifications.py"
@@ -15,6 +17,7 @@ on:
       - "scripts/test_responsive_storefront.py"
       - "product-classifications.json"
       - "scripts/generate_landing_pages.py"
+      - "scripts/enhance_landing_pages.py"
       - "scripts/enhance_landing_pages.py"
       - "scripts/generate_sitemap.py"
       - "scripts/validate_landing_pages.py"
@@ -245,7 +248,7 @@ jobs:
           path: _site
 
   deploy:
-    if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish == true }}
+    if: ${{ github.event_name == 'schedule' || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish == true) }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
