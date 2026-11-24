@@ -67,6 +67,21 @@ assert root.tag == "{http://www.sitemaps.org/schemas/sitemap/0.9}urlset"
 locs = [node.text for node in root.findall("sm:url/sm:loc", sm)]
 expected = {BASE, BASE + "privacy.html", BASE + "terms.html", BASE + "contact.html"}
 expected.update(BASE + "landing/" + p["landing_slug"].strip("/") + "/" for p in published)
+publishing_pages = [
+    "publishing/", "publishing/books/",
+    "publishing/books/the-ai-power-game/",
+    "publishing/books/the-ai-black-box/",
+    "publishing/books/the-humanity-test/",
+    "publishing/books/the-algorithm-empire/",
+    "publishing/about/", "publishing/rights/",
+]
+for relative in publishing_pages:
+    page_path = ROOT / relative / "index.html"
+    assert page_path.is_file(), f"Missing Publishing page: {page_path}"
+    source = page_path.read_text(encoding="utf-8")
+    assert "<title>" in source and "</title>" in source, f"Missing Publishing page title: {page_path}"
+    assert 'name="description"' in source, f"Missing Publishing meta description: {page_path}"
+    assert "noindex" not in source.lower(), f"Unexpected noindex on Publishing page: {page_path}"
 assert len(locs) == len(set(locs)), "Duplicate sitemap URLs"
 assert set(locs) == expected, f"Sitemap mismatch: expected {len(expected)} URLs, got {len(locs)}"
 image_entries = root.findall("sm:url/image:image", sm)
