@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hallofgreatnessart.github.io/hall-of-greatness-storefront/sitemap.xml
