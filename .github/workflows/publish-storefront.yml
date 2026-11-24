@@ -169,7 +169,21 @@ jobs:
               assert 'name="twitter:card"' in page, f"Missing social metadata in {p['landing_slug']}"
           assert Path("robots.txt").is_file() and Path("sitemap.xml").is_file()
           assert "Sitemap: " in Path("robots.txt").read_text(encoding="utf-8")
-          assert len(list(Path("sitemap.xml").read_text(encoding="utf-8").split("<loc>"))) - 1 == len(published) + 4
+          publishing_sitemap_paths = [
+              "publishing/", "publishing/books/",
+              "publishing/books/the-ai-power-game/",
+              "publishing/books/the-ai-black-box/",
+              "publishing/books/the-humanity-test/",
+              "publishing/books/the-algorithm-empire/",
+              "publishing/about/", "publishing/rights/",
+          ]
+          sitemap_url_count = len(list(Path("sitemap.xml").read_text(encoding="utf-8").split("<loc>"))) - 1
+          expected_sitemap_url_count = len(published) + 4 + len(publishing_sitemap_paths)
+          assert sitemap_url_count == expected_sitemap_url_count, (
+              f"Expected {expected_sitemap_url_count} sitemap URLs "
+              f"({len(published)} products + 4 core URLs + {len(publishing_sitemap_paths)} Publishing URLs), "
+              f"found {sitemap_url_count}"
+          )
           print("Trust and SEO checks OK: legal/contact pages, social metadata, robots.txt, and sitemap.")
 
           import xml.etree.ElementTree as ET
