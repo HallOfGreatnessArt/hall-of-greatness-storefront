@@ -1834,7 +1834,8 @@
         "home-decor",
         "gift-idea",
         "2x3-print",
-        "hope-art"
+        "hope-art",
+        "art-decor"
       ],
       "content_type": "art-decor"
     },
@@ -1871,7 +1872,8 @@
         "home-decor",
         "meaningful-gift",
         "2x3-print",
-        "grace-art"
+        "grace-art",
+        "art-decor"
       ],
       "content_type": "art-decor"
     },
@@ -1908,7 +1910,8 @@
         "positive-art",
         "gift-idea",
         "2x3-print",
-        "hope-art"
+        "hope-art",
+        "art-decor"
       ],
       "content_type": "art-decor"
     },
@@ -1945,7 +1948,8 @@
         "minimal-art",
         "2x3-print",
         "quiet-moments",
-        "thoughtful-gift"
+        "thoughtful-gift",
+        "art-decor"
       ],
       "content_type": "art-decor"
     },
@@ -1982,7 +1986,8 @@
         "2x3-print",
         "earth-inspired",
         "nature-art",
-        "nature-lover"
+        "nature-lover",
+        "art-decor"
       ],
       "content_type": "art-decor"
     },
@@ -2019,7 +2024,8 @@
         "blue-art",
         "modern-interior",
         "2x3-print",
-        "azure-art"
+        "azure-art",
+        "art-decor"
       ],
       "content_type": "art-decor"
     },
@@ -2056,7 +2062,8 @@
         "meaningful-gift",
         "2x3-print",
         "family-values",
-        "legacy-art"
+        "legacy-art",
+        "art-decor"
       ],
       "content_type": "art-decor"
     }
