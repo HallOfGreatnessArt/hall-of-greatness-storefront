@@ -75,6 +75,7 @@ publishing_pages = [
     "publishing/books/the-algorithm-empire/",
     "publishing/about/", "publishing/rights/",
 ]
+expected.update(BASE + relative for relative in publishing_pages)
 for relative in publishing_pages:
     page_path = ROOT / relative / "index.html"
     assert page_path.is_file(), f"Missing Publishing page: {page_path}"
