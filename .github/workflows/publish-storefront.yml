@@ -7,6 +7,9 @@ on:
     paths:
       - ".github/workflows/publish-storefront.yml"
       - "index.html"
+      - "publishing/**"
+      - "scripts/generate_sitemap.py"
+      - "scripts/validate_seo.py"
       - "catalog-data.json"
       - "landing/**"
       - "scripts/discover_public_gumroad_products.py"
@@ -211,7 +214,20 @@ jobs:
           expected = {"https://hallofgreatnessart.github.io/hall-of-greatness-storefront/"}
           expected.update("https://hallofgreatnessart.github.io/hall-of-greatness-storefront/" + x for x in ("privacy.html", "terms.html", "contact.html"))
           expected.update("https://hallofgreatnessart.github.io/hall-of-greatness-storefront/landing/" + p["landing_slug"].strip("/") + "/" for p in published)
+          publishing_paths = [
+              "publishing/", "publishing/books/",
+              "publishing/books/the-ai-power-game/",
+              "publishing/books/the-ai-black-box/",
+              "publishing/books/the-humanity-test/",
+              "publishing/books/the-algorithm-empire/",
+              "publishing/about/", "publishing/rights/",
+          ]
+          expected.update("https://hallofgreatnessart.github.io/hall-of-greatness-storefront/" + path for path in publishing_paths)
           assert set(locs) == expected, f"Sitemap URL mismatch: expected {len(expected)}, found {len(locs)}"
+          for relative in publishing_paths:
+              page = Path(relative) / "index.html"
+              assert page.is_file() and page.stat().st_size > 500, f"Missing Publishing page: {page}"
+          print(f"Publishing integration OK: {len(publishing_paths)} pages included in sitemap.")
           image_entries = root.findall("sm:url/image:image", ns)
           assert len(image_entries) == len(published), f"Expected {len(published)} image sitemap entries, found {len(image_entries)}"
 
@@ -224,6 +240,7 @@ jobs:
           cp index.html catalog-data.json robots.txt sitemap.xml privacy.html terms.html contact.html _site/
           cp -R assets locales _site/
           cp -R landing _site/
+          cp -R publishing _site/
           echo "Storefront artifact prepared with all product landing pages."
 
       - name: Run responsive layout and three-section browser checks
@@ -272,5 +289,31 @@ jobs:
           python -m pip install playwright==1.56.0
           python -m playwright install --with-deps chromium
 
-      - name: Verify published homepage and product language switching
-        run: python scripts/test_localized_browser.py --live-only
+      - name: Verify published homepage, Publishing pages, and gallery integrity
+        run: |
+          set -euo pipefail
+          python scripts/test_localized_browser.py --live-only
+          python - <<'PY'
+          from urllib.request import urlopen
+          base = "https://hallofgreatnessart.github.io/hall-of-greatness-storefront/"
+          paths = [
+              "", "publishing/", "publishing/books/",
+              "publishing/books/the-ai-power-game/",
+              "publishing/books/the-ai-black-box/",
+              "publishing/books/the-humanity-test/",
+              "publishing/books/the-algorithm-empire/",
+              "publishing/about/", "publishing/rights/",
+              "sitemap.xml", "robots.txt",
+          ]
+          for path in paths:
+              with urlopen(base + path, timeout=30) as response:
+                  body = response.read().decode("utf-8", errors="replace")
+                  assert response.status == 200, f"{path}: HTTP {response.status}"
+                  if path == "":
+                      assert "Art &amp; Decor" in body and "E-Books" in body and "Courses" in body, "Gallery sections missing"
+                      assert 'href="./publishing/"' in body, "Publishing navigation link missing"
+                  if path and path.startswith("publishing/"):
+                      assert "<title>" in body and "</title>" in body, f"{path}: missing title"
+                  print(f"PASS live {path or 'homepage'}")
+          print("Live gallery and Publishing smoke checks passed.")
+          PY

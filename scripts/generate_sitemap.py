@@ -11,7 +11,18 @@ PUBLISHED = [
     product for product in CATALOG["products"]
     if product.get("published") and product.get("landing_slug")
 ]
+PUBLISHING_PAGES = [
+    "publishing/",
+    "publishing/books/",
+    "publishing/books/the-ai-power-game/",
+    "publishing/books/the-ai-black-box/",
+    "publishing/books/the-humanity-test/",
+    "publishing/books/the-algorithm-empire/",
+    "publishing/about/",
+    "publishing/rights/",
+]
 URLS = [BASE, BASE + "privacy.html", BASE + "terms.html", BASE + "contact.html"]
+URLS.extend(BASE + path for path in PUBLISHING_PAGES)
 
 lines = [
     '<?xml version="1.0" encoding="UTF-8"?>',
