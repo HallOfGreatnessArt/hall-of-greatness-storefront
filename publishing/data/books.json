@@ -1,0 +1,91 @@
+{
+  "publisher": "HALL OF GREATNESS Publishing",
+  "collection": "THE INTELLIGENCE AGE COLLECTION",
+  "currency": "USD",
+  "books": [
+    {
+      "slug": "the-ai-power-game",
+      "title": "THE AI POWER GAME",
+      "subtitle": "Understand • Adapt • Thrive",
+      "category": "Artificial Intelligence",
+      "collection": "The Intelligence Age Collection",
+      "author": "EMAD ALSHAYEB",
+      "language": "English",
+      "format": "PDF + EPUB with companion resources",
+      "chapters": "12 chapters + AI Readiness Playbook",
+      "summary": "A practical, reader-focused guide to the forces behind the new intelligence age—and the choices individuals and organizations can make to navigate it wisely.",
+      "themes": [
+        "AI foundations and infrastructure",
+        "Work, skills, business, and the human advantage",
+        "Information integrity, security, and trust",
+        "Rules, rights, and responsible use"
+      ],
+      "cover": "https://public-files.gumroad.com/kwb1ouwkd5vj7pscyzr5nz19anrg",
+      "url": "https://alshayebemad.gumroad.com/l/THEAIPOWERGAME",
+      "editionNote": "Digital edition. The Gumroad package listing identifies PDF and EPUB editions plus companion resources."
+    },
+    {
+      "slug": "the-ai-black-box",
+      "title": "THE AI BLACK BOX",
+      "subtitle": "Understanding AI Transparency & Accountability",
+      "category": "Artificial Intelligence",
+      "collection": "The Intelligence Age Collection",
+      "author": "EMAD ALSHAYEB",
+      "language": "English",
+      "format": "Digital download (ZIP package)",
+      "chapters": "Chapter details available on the product page",
+      "summary": "An exploration of the hidden processes behind AI systems, and the questions of transparency, explainability, accountability, and trust that emerge when automated decisions affect human lives.",
+      "themes": [
+        "AI transparency and explainability",
+        "Accountability and oversight",
+        "Trust in automated decisions",
+        "The human impact of opaque systems"
+      ],
+      "cover": "https://public-files.gumroad.com/78g5vblxhuur70jt6huw3jirkiqc",
+      "url": "https://alshayebemad.gumroad.com/l/Theaiblackbox",
+      "editionNote": "Digital edition. Consult the Gumroad product page for the current package contents and license."
+    },
+    {
+      "slug": "the-humanity-test",
+      "title": "THE HUMANITY TEST",
+      "subtitle": "Human Values in an Age of Transformation",
+      "category": "Humanity & Society",
+      "collection": "The Intelligence Age Collection",
+      "author": "EMAD ALSHAYEB",
+      "language": "English",
+      "format": "Digital download (ZIP package)",
+      "chapters": "Chapter details available on the product page",
+      "summary": "A human-centered inquiry into the values, responsibilities, and choices that shape our shared future as technology and society continue to change.",
+      "themes": [
+        "Human values and dignity",
+        "Ethics and collective responsibility",
+        "Society in transition",
+        "The future we choose to build"
+      ],
+      "cover": "https://public-files.gumroad.com/982vjxadhr17jle6bo5ygq4h3vq0",
+      "url": "https://alshayebemad.gumroad.com/l/TheHumanityTest",
+      "editionNote": "Digital edition. Consult the Gumroad product page for the current package contents and license."
+    },
+    {
+      "slug": "the-algorithm-empire",
+      "title": "THE ALGORITHM EMPIRE",
+      "subtitle": "Digital Power & Geopolitics",
+      "category": "Technology & Global Affairs",
+      "collection": "The Intelligence Age Collection",
+      "author": "EMAD ALSHAYEB",
+      "language": "English",
+      "format": "Digital download (ZIP package)",
+      "chapters": "Chapter details available on the product page",
+      "summary": "A study of how algorithms, data, platforms, and digital infrastructure are reshaping influence, competition, and power in the modern world.",
+      "themes": [
+        "Digital power and influence",
+        "Algorithms, platforms, and data",
+        "Technology and global competition",
+        "The geopolitics of the digital age"
+      ],
+      "cover": "https://public-files.gumroad.com/gizvcznh8f79i8i5ivqgbihyupfl",
+      "url": "https://alshayebemad.gumroad.com/l/THEALGORITHMEMPIRE",
+      "editionNote": "Digital edition. Consult the Gumroad product page for the current package contents and license."
+    }
+  ]
+}
