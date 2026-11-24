@@ -1,0 +1,126 @@
+name: Publishing branch visual preview (no deployment)
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/publishing-visual-preview.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publishing-visual-preview
+  cancel-in-progress: true
+
+jobs:
+  browser-preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out workflow host (main)
+        uses: actions/checkout@v4
+
+      - name: Check out isolated publishing development branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/publishing-foundation
+          path: preview-source
+
+      - name: Install Playwright and Chromium
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.56.0
+          python -m playwright install --with-deps chromium
+
+      - name: Validate publishing files and run desktop/mobile browser checks
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path("preview-source/publishing")
+          required = [
+              root / "index.html",
+              root / "books/index.html",
+              root / "books/the-ai-power-game/index.html",
+              root / "books/the-ai-black-box/index.html",
+              root / "books/the-humanity-test/index.html",
+              root / "books/the-algorithm-empire/index.html",
+              root / "about/index.html",
+              root / "rights/index.html",
+              root / "assets/publishing.css",
+              root / "assets/publishing.js",
+              root / "data/books.json",
+          ]
+          missing = [str(p) for p in required if not p.is_file()]
+          assert not missing, "Missing required publishing files: " + ", ".join(missing)
+          data = json.loads((root / "data/books.json").read_text(encoding="utf-8"))
+          assert len(data.get("books", [])) == 4, "Expected exactly four book records in preview data"
+          print("Static file and JSON checks passed.")
+          PY
+          mkdir -p preview-artifacts/screenshots
+          nohup python -m http.server 4173 --bind 127.0.0.1 --directory preview-source >/tmp/publishing-preview-server.log 2>&1 &
+          echo $! >/tmp/publishing-preview-server.pid
+          python - <<'PY'
+          import time
+          import urllib.request
+          for attempt in range(30):
+              try:
+                  urllib.request.urlopen("http://127.0.0.1:4173/publishing/", timeout=2)
+                  break
+              except Exception:
+                  time.sleep(1)
+          else:
+              raise SystemExit("Local preview server did not start.")
+          PY
+          python - <<'PY'
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+
+          pages = [
+              ("home", "/publishing/"),
+              ("library", "/publishing/books/"),
+              ("ai-power-game", "/publishing/books/the-ai-power-game/"),
+              ("ai-black-box", "/publishing/books/the-ai-black-box/"),
+              ("humanity-test", "/publishing/books/the-humanity-test/"),
+              ("algorithm-empire", "/publishing/books/the-algorithm-empire/"),
+              ("about", "/publishing/about/"),
+              ("rights", "/publishing/rights/"),
+          ]
+          errors = []
+          base = "http://127.0.0.1:4173"
+          with sync_playwright() as p:
+              browser = p.chromium.launch()
+              for viewport_name, viewport in [
+                  ("desktop", {"width": 1440, "height": 1000}),
+                  ("mobile", {"width": 390, "height": 844}),
+              ]:
+                  page = browser.new_page(viewport=viewport, device_scale_factor=1)
+                  page.on("pageerror", lambda exc: errors.append(str(exc)))
+                  for slug, path in pages:
+                      response = page.goto(base + path, wait_until="networkidle", timeout=30000)
+                      assert response and response.status == 200, f"{path}: HTTP response {response.status if response else 'none'}"
+                      page.locator("body").wait_for()
+                      title = page.title().strip()
+                      assert title, f"Missing document title: {path}"
+                      assert page.locator("body").inner_text().strip(), f"Empty page body: {path}"
+                      if slug == "home":
+                          body = page.locator("body").inner_text()
+                          assert "HALL OF GREATNESS" in body, "Publisher brand missing from home page"
+                      page.screenshot(path=f"preview-artifacts/screenshots/{viewport_name}-{slug}.png", full_page=True)
+                      print(f"PASS {viewport_name}: {path} | {title}")
+                  page.close()
+              browser.close()
+          assert not errors, "Browser JavaScript errors: " + " | ".join(errors)
+          print("All 16 desktop/mobile page loads passed; screenshots captured.")
+          PY
+
+      - name: Upload preview screenshots and test evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: hall-of-greatness-publishing-preview
+          path: preview-artifacts/screenshots/
+          if-no-files-found: error
+          retention-days: 7
