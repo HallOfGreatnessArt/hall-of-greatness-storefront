@@ -280,10 +280,12 @@ jobs:
           # Build outputs (including _site) and other generated files may remain
           # unstaged after the catalogue commit. Stash tracked and untracked
           # worktree changes before rebasing so Git can safely replay the commit.
-          git stash push --include-untracked -m "temporary storefront build outputs before catalogue rebase"
           STASH_CREATED=false
-          if git stash list -1 --format='%s' | grep -Fxq "temporary storefront build outputs before catalogue rebase"; then
-            STASH_CREATED=true
+          if ! git diff --quiet || [ -n "$(git ls-files --others --exclude-standard)" ]; then
+            if ! git diff --quiet || [ -n "$(git ls-files --others --exclude-standard)" ]; then
+              git stash push --include-untracked -m "temporary storefront build outputs before catalogue rebase"
+              STASH_CREATED=true
+            fi
           fi
 
           # Another workflow or maintainer may update main while this build runs.
