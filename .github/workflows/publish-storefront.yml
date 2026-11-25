@@ -277,14 +277,34 @@ jobs:
 
           git commit -m "Sync newly published Gumroad products"
 
+          # Build outputs (including _site) and other generated files may remain
+          # unstaged after the catalogue commit. Stash tracked and untracked
+          # worktree changes before rebasing so Git can safely replay the commit.
+          STASH_CREATED=false
+          if ! git diff --quiet || [ -n "$(git ls-files --others --exclude-standard)" ]; then
+            git stash push --include-untracked -m "temporary storefront build outputs before catalogue rebase"
+            STASH_CREATED=true
+          fi
+
           # Another workflow or maintainer may update main while this build runs.
           # Rebase this generated commit onto the newest main and retry the push.
           for attempt in $(seq 1 "$PUSH_RETRIES"); do
             git fetch origin main
             if ! git rebase origin/main; then
               git rebase --abort || true
+              if [ "$STASH_CREATED" = "true" ]; then
+                git stash pop || true
+              fi
               echo "::error::Generated catalogue changes conflict with newer main content. No remote changes were overwritten; rerun after reviewing the concurrent update."
               exit 1
+            fi
+
+            if [ "$STASH_CREATED" = "true" ]; then
+              if ! git stash pop; then
+                echo "::error::Could not safely restore temporary build outputs after rebase. No remote changes were pushed."
+                exit 1
+              fi
+              STASH_CREATED=false
             fi
 
             if git push origin HEAD:main; then
@@ -294,6 +314,11 @@ jobs:
 
             echo "Push attempt $attempt/$PUSH_RETRIES raced with another main update; refreshing and retrying."
             sleep $((attempt * 2))
+            # Re-stash worktree outputs before the next rebase attempt.
+            if ! git diff --quiet || [ -n "$(git ls-files --others --exclude-standard)" ]; then
+              git stash push --include-untracked -m "temporary storefront build outputs before catalogue rebase"
+              STASH_CREATED=true
+            fi
           done
 
           echo "::error::Unable to persist catalogue after $PUSH_RETRIES safe retries."
