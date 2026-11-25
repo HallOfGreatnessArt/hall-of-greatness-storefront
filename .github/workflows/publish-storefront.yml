@@ -56,6 +56,8 @@ jobs:
     steps:
       - name: Check out storefront repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install Playwright for public Gumroad discovery
         run: |
@@ -261,6 +263,8 @@ jobs:
         run: python scripts/test_responsive_storefront.py
 
       - name: Persist newly synced catalogue and landing pages
+        env:
+          PUSH_RETRIES: "5"
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
@@ -268,10 +272,32 @@ jobs:
           git add catalog-data.json landing/ locales/ public-gumroad-discovery-report.json
           if git diff --cached --quiet; then
             echo "No catalogue or landing-page changes to persist."
-          else
-            git commit -m "Sync newly published Gumroad products"
-            git push
+            exit 0
           fi
+
+          git commit -m "Sync newly published Gumroad products"
+
+          # Another workflow or maintainer may update main while this build runs.
+          # Rebase this generated commit onto the newest main and retry the push.
+          for attempt in $(seq 1 "$PUSH_RETRIES"); do
+            git fetch origin main
+            if ! git rebase origin/main; then
+              git rebase --abort || true
+              echo "::error::Generated catalogue changes conflict with newer main content. No remote changes were overwritten; rerun after reviewing the concurrent update."
+              exit 1
+            fi
+
+            if git push origin HEAD:main; then
+              echo "Catalogue changes persisted successfully on attempt $attempt."
+              exit 0
+            fi
+
+            echo "Push attempt $attempt/$PUSH_RETRIES raced with another main update; refreshing and retrying."
+            sleep $((attempt * 2))
+          done
+
+          echo "::error::Unable to persist catalogue after $PUSH_RETRIES safe retries."
+          exit 1
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
