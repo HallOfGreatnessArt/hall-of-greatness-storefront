@@ -1,0 +1,52 @@
+version: 2.1
+
+jobs:
+  structural-validation:
+    docker:
+      - image: cimg/python:3.12
+    resource_class: small
+    steps:
+      - checkout
+      - run:
+          name: Validate bilingual Academy Unit 01 structure
+          command: python scripts/academy/validate_unit01_pilot.py
+
+  build-bilingual-samples:
+    docker:
+      - image: cimg/python:3.12
+    resource_class: medium
+    steps:
+      - checkout
+      - run:
+          name: Install free PDF and EPUB toolchain
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y --no-install-recommends pandoc texlive-xetex texlive-latex-extra fonts-noto-core fontconfig poppler-utils unzip
+            fc-match "Noto Serif"
+            fc-match "Noto Sans"
+            fc-match "Noto Naskh Arabic"
+            fc-match "Noto Sans Arabic"
+      - run:
+          name: Build and validate English and Arabic PDF/EPUB samples
+          command: python3 scripts/academy/build_unit01_samples.py
+      - store_artifacts:
+          path: build/academy-unit01
+          destination: academy-unit01-bilingual-pdf-epub
+
+workflows:
+  academy-unit01:
+    jobs:
+      - structural-validation:
+          filters:
+            branches:
+              only:
+                - academy/circleci-migration
+                - academy/ai-mastery-phase0-foundation
+      - build-bilingual-samples:
+          requires:
+            - structural-validation
+          filters:
+            branches:
+              only:
+                - academy/circleci-migration
+                - academy/ai-mastery-phase0-foundation
