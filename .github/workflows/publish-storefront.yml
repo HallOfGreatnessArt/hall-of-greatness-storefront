@@ -282,10 +282,8 @@ jobs:
           # worktree changes before rebasing so Git can safely replay the commit.
           STASH_CREATED=false
           if ! git diff --quiet || [ -n "$(git ls-files --others --exclude-standard)" ]; then
-            if ! git diff --quiet || [ -n "$(git ls-files --others --exclude-standard)" ]; then
-              git stash push --include-untracked -m "temporary storefront build outputs before catalogue rebase"
-              STASH_CREATED=true
-            fi
+            git stash push --include-untracked -m "temporary storefront build outputs before catalogue rebase"
+            STASH_CREATED=true
           fi
 
           # Another workflow or maintainer may update main while this build runs.
@@ -317,8 +315,10 @@ jobs:
             echo "Push attempt $attempt/$PUSH_RETRIES raced with another main update; refreshing and retrying."
             sleep $((attempt * 2))
             # Re-stash worktree outputs before the next rebase attempt.
-            git stash push --include-untracked -m "temporary storefront build outputs before catalogue rebase"
-            STASH_CREATED=true
+            if ! git diff --quiet || [ -n "$(git ls-files --others --exclude-standard)" ]; then
+              git stash push --include-untracked -m "temporary storefront build outputs before catalogue rebase"
+              STASH_CREATED=true
+            fi
           done
 
           echo "::error::Unable to persist catalogue after $PUSH_RETRIES safe retries."
