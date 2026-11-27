@@ -65,8 +65,9 @@ def main() -> None:
             check(actual_urls == expected_urls, f"{key}: related-book links do not match the verified five-book bundle")
 
             page.select_option("#lang", "ar")
-            page.wait_for_function("document.documentElement.lang === 'ar' && document.documentElement.dir === 'rtl'")
-            check(page.locator("#title").inner_text() == arabic["title"], f"{key}: Arabic title mismatch")
+            page.wait_for_function("(expected) => document.documentElement.lang === 'ar' && document.documentElement.dir === 'rtl' && document.querySelector('#title')?.textContent === expected", arabic["title"])
+            actual_arabic_title = page.locator("#title").text_content()
+            check(actual_arabic_title == arabic["title"], f"{key}: Arabic title mismatch; expected={arabic['title']!r}, actual={actual_arabic_title!r}")
             check(page.title() == arabic["title"] + " | HALL OF GREATNESS Publishing", f"{key}: Arabic document title metadata mismatch")
             check(page.locator("#buy").inner_text() == "اقتَنِ نسختك الرقمية", f"{key}: Arabic CTA missing")
             check(page.locator("#meta .meta").count() == 6, f"{key}: Arabic metadata incomplete")
