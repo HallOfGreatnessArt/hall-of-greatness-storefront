@@ -23,6 +23,7 @@ def render(key):
  data={"key":key,"product":{"name":p["name"],"price":p.get("price_usd"),"url":p["url"],"cover":p["cover_url"]},"translations":c}
  return TEMPLATE.replace("__DATA__",js(data))
 TEMPLATE=r"""<!doctype html><html lang="en" dir="ltr"><head>
+<title>HALL OF GREATNESS Publishing — E-book</title><meta name="description" content="Bilingual editorial e-book product page from HALL OF GREATNESS Publishing."><link rel="icon" href="data:,">
 <style>
 :root{--bg:#10151b;--panel:#18212b;--ink:#f5f3ee;--muted:#c6cbd1;--accent:#d9b879;--line:#35414d}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.82 Georgia,"Times New Roman",serif}.shell{width:min(1120px,calc(100% - 44px));margin:auto}
@@ -62,6 +63,8 @@ const el=id=>document.getElementById(id);
 function list(id,items){const box=el(id);box.replaceChildren();(items||[]).forEach(x=>{const li=document.createElement("li");li.textContent=x;box.append(li)})}
 function render(code){
  const t=DATA.translations[code]||DATA.translations.en, u=UI[code]||UI.en, rtl=code==="ar";
+ document.title=t.title+" | HALL OF GREATNESS Publishing";
+ const description=document.querySelector('meta[name="description"]'); if(description) description.content=t.overview;
  document.documentElement.lang=code;document.documentElement.dir=rtl?"rtl":"ltr";
  el("langLabel").textContent=u.lang;el("buy").textContent=u.buy;el("buyBottom").textContent=u.buy;
  el("deliveryNote").textContent=u.delivery;el("exploreLabel").textContent=u.explore;el("exploreHeading").textContent=u.exploreH;
