@@ -84,7 +84,7 @@ jobs:
               # Other scheduled catalogue syncs may update main while Gumroad publishing runs.
               # Rebase this verified page-source commit onto the latest main before pushing.
               subprocess.run(["git", "fetch", "origin", "main"], check=True)
-              subprocess.run(["git", "rebase", "origin/main"], check=True)
+              subprocess.run(["git", "rebase", "--autostash", "origin/main"], check=True)
               subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
           else:
               print("No newly published landing page sources or manifest changes to commit.")
