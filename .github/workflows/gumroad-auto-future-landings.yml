@@ -80,7 +80,11 @@ jobs:
               if item.get("status") == "published":
                   subprocess.run(["git", "add", "--", item["landing_file"]], check=True)
           if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode != 0:
-              subprocess.run(["git", "commit", "-m", "Publish Gumroad landing pages for newly published products"], check=True)
+              subprocess.run(["git", "commit", "-m", "Publish Gumroad landing pages for eligible published products"], check=True)
+              # Other scheduled catalogue syncs may update main while Gumroad publishing runs.
+              # Rebase this verified page-source commit onto the latest main before pushing.
+              subprocess.run(["git", "fetch", "origin", "main"], check=True)
+              subprocess.run(["git", "rebase", "origin/main"], check=True)
               subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
           else:
               print("No newly published landing page sources or manifest changes to commit.")
