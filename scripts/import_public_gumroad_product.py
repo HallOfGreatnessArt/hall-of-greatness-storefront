@@ -157,7 +157,7 @@ def detail_between(text, start, end):
     chrome = ("add to wishlist", "share", "explore our collection", "more from this creator", "powered by gumroad")
     if any(marker in value.lower() for marker in chrome):
         return ""
-    if re.search(r"(.)\\1{5,}", value, flags=re.I):
+    if re.search(r"(.)\1{5,}", value, flags=re.I):
         return ""
     return value
 
