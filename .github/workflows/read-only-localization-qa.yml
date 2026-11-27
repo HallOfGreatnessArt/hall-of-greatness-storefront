@@ -12,6 +12,7 @@ on:
       - "scripts/**"
       - "landing/**"
       - "index.html"
+      - "tests/**"
 
 permissions:
   contents: read
@@ -30,6 +31,9 @@ jobs:
 
       - name: Check Python script syntax
         run: python -m compileall -q scripts
+
+      - name: Test Gumroad product-detail extraction boundaries
+        run: python -m unittest tests/test_gumroad_product_detail_extraction.py
 
       - name: Install offline translation engine
         run: python -m pip install --disable-pip-version-check argostranslate
