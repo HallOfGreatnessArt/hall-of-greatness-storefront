@@ -9,8 +9,10 @@ I18N=(ROOT/"assets/i18n.js").read_text(encoding="utf-8")
 m=re.search(r"const M=(\{[\s\S]*?\});\nconst map=",I18N)
 if not m: raise SystemExit("Cannot read UI translations.")
 UI=json.loads(m.group(1))
+LOCAL_ONLY="--local-only" in __import__("sys").argv[1:]
+PREVIEW_PERMALINK=os.environ.get("PREVIEW_PERMALINK","mxrljy").strip()
 TOKEN=os.environ.get("GUMROAD_ACCESS_TOKEN","").strip()
-if not TOKEN: raise SystemExit("GUMROAD_ACCESS_TOKEN is required.")
+if not LOCAL_ONLY and not TOKEN: raise SystemExit("GUMROAD_ACCESS_TOKEN is required.")
 ENV=os.environ.copy()
 EVIDENCE=ROOT/"gumroad-landing-refresh-evidence"; EVIDENCE.mkdir(exist_ok=True)
 def digest(obj): return hashlib.sha256(json.dumps(obj,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
@@ -19,6 +21,10 @@ def js(v): return json.dumps(v,ensure_ascii=False).replace("<","\\u003c").replac
 def slug(v): return re.sub(r"[^a-z0-9]+","-",str(v).lower()).strip("-") or "product"
 PROTECTED_UNPUBLISHED={"jrsgce","ukxrmq","yhkokf","nxkxyq"}
 products=[p for p in CAT.get("products",[]) if p.get("published") and p.get("permalink") not in PROTECTED_UNPUBLISHED and p.get("url","").startswith("https://") and p.get("cover_url","").startswith("https://")]
+if LOCAL_ONLY:
+    products=[p for p in products if p.get("permalink")==PREVIEW_PERMALINK]
+    if len(products)!=1:
+        raise SystemExit(f"Local preview requires exactly one published product; found {len(products)} for {PREVIEW_PERMALINK!r}.")
 groups={}
 for p in products: groups.setdefault(p.get("content_type",""),[]).append(p)
 def translations(p):
@@ -74,6 +80,11 @@ for p in products:
     generated.append({"permalink":p["permalink"],"name":p["name"],"file":str(path.relative_to(ROOT))})
 (EVIDENCE/"generated-pages.json").write_text(json.dumps(generated,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print("Generated",len(generated),"published product pages.")
+if LOCAL_ONLY:
+    report={"generated":len(generated),"previewed":0,"published":0,"errors":0,"mode":"local-only","products":generated}
+    (EVIDENCE/"refresh-report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+    print(json.dumps(report,ensure_ascii=False))
+    raise SystemExit(0)
 outcomes=[]
 for x in generated:
     key=x["permalink"]; path=x["file"]
