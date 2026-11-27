@@ -73,6 +73,7 @@ function render(code){
  el("packageSection").hidden=!t.package.length;el("collectionSection").hidden=DATA.product.name.indexOf("COLLECTION")<0;
  const links=el("bookLinks");links.replaceChildren();BOOKS.forEach(([id,name,url])=>{if(id===DATA.key)return;const a=document.createElement("a");a.href=url;a.textContent=name;links.append(a)});
  el("cover").src=DATA.product.cover;el("cover").alt=t.title+" book cover";
+el("buy").href=DATA.product.url;el("buyBottom").href=DATA.product.url;
  const price="$"+Number(DATA.product.price).toFixed(2)+" USD";el("price").textContent=price;el("priceBottom").textContent=price;
 }
 render("en");
