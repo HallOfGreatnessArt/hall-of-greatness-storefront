@@ -16,6 +16,14 @@ if not LOCAL_ONLY and not TOKEN: raise SystemExit("GUMROAD_ACCESS_TOKEN is requi
 ENV=os.environ.copy()
 EVIDENCE=ROOT/"gumroad-landing-refresh-evidence"; EVIDENCE.mkdir(exist_ok=True)
 def digest(obj): return hashlib.sha256(json.dumps(obj,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+ALLOWED_DETAIL_KEYS={"files_included","product_type","delivery","physical_item","printing","usage","bundle_item_count"}
+def translation_text_is_safe(value, max_length=12000):
+    if not isinstance(value,str): return False
+    text=value.strip()
+    if not text or len(text)>max_length or re.search(r"(.)\\1{5,}",text,re.I): return False
+    if re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection",text,re.I): return False
+    if re.search(r"[\\uFFFD]|(?:Ã.|Â.|Ø[ء-ي]|Ù[ء-ي])",text): return False
+    return True
 def esc(v): return html.escape(str(v or ""),quote=True)
 def js(v): return json.dumps(v,ensure_ascii=False).replace("<","\\u003c").replace(">","\\u003e").replace("&","\\u0026")
 def slug(v): return re.sub(r"[^a-z0-9]+","-",str(v).lower()).strip("-") or "product"
@@ -39,8 +47,14 @@ def translations(p):
         try: loc=json.loads(path.read_text(encoding="utf-8"))
         except Exception: continue
         item=loc.get("products",{}).get(key,{})
+        # Machine translations and AI-assisted drafts are not publication copy.
+        # Only explicitly editorially approved product translations may reach Gumroad.
+        if item.get("_translation_status")!="editorially-reviewed": continue
         if item.get("_source_hash")!=expected or not item.get("summary") or not item.get("full_description"): continue
-        out[code]={"name":item.get("title_ar") or p["name"],"summary":item["summary"],"full_description":item["full_description"],"details":item.get("product_details") or p.get("product_details") or {}}
+        if not translation_text_is_safe(item.get("summary","")) or not translation_text_is_safe(item.get("full_description","")): continue
+        details=item.get("product_details") or p.get("product_details") or {}
+        details={k:v for k,v in details.items() if k in ALLOWED_DETAIL_KEYS and translation_text_is_safe(v, max_length=500)}
+        out[code]={"name":item.get("title_ar") or p["name"],"summary":item["summary"],"full_description":item["full_description"],"details":details}
     return out
 def render(p):
     tr=translations(p); related=[{"name":x["name"],"url":x["url"]} for x in groups.get(p.get("content_type",""),[]) if x["permalink"]!=p["permalink"]][:4]
