@@ -17,7 +17,8 @@ def digest(obj): return hashlib.sha256(json.dumps(obj,ensure_ascii=False,sort_ke
 def esc(v): return html.escape(str(v or ""),quote=True)
 def js(v): return json.dumps(v,ensure_ascii=False).replace("<","\\u003c").replace(">","\\u003e").replace("&","\\u0026")
 def slug(v): return re.sub(r"[^a-z0-9]+","-",str(v).lower()).strip("-") or "product"
-products=[p for p in CAT.get("products",[]) if p.get("published") and p.get("permalink") and p.get("url","").startswith("https://") and p.get("cover_url","").startswith("https://")]
+PROTECTED_UNPUBLISHED={"jrsgce","ukxrmq","yhkokf","nxkxyq"}
+products=[p for p in CAT.get("products",[]) if p.get("published") and p.get("permalink") not in PROTECTED_UNPUBLISHED and p.get("url","").startswith("https://") and p.get("cover_url","").startswith("https://")]
 groups={}
 for p in products: groups.setdefault(p.get("content_type",""),[]).append(p)
 def translations(p):
@@ -41,7 +42,7 @@ def render(p):
     kind={"art-decor":"DIGITAL ARTWORK","ebook":"DIGITAL BOOK","course":"DIGITAL COURSE"}.get(p.get("content_type"),"DIGITAL PRODUCT")
     data={"translations":tr,"related":related}
     name=esc(p["name"]); cover=esc(p["cover_url"]); summary=esc(p.get("summary",""))
-    page=f"""<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{summary}"><title>{name} | HALL OF GREATNESS</title>
+    page=f"""<!doctype html><html lang="en" dir="ltr"><head>
 <style>
 :root{{--bg:#141310;--surface:#201d18;--ink:#f5eee2;--muted:#d0c5b4;--gold:#dfbd78;--line:#514634}}
 *{{box-sizing:border-box}}html{{scroll-behavior:smooth}}body{{margin:0;background:var(--bg);color:var(--ink);font:19px/1.85 Georgia,"Times New Roman",serif}}a{{color:var(--gold)}}.shell{{width:min(980px,calc(100% - 40px));margin:auto}}
