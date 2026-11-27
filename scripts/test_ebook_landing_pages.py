@@ -36,6 +36,8 @@ def main() -> None:
             arabic = COPY[key]["ar"]
 
             check(page.locator("#title").inner_text() == english["title"], f"{key}: English title mismatch")
+            check(page.title() == english["title"] + " | HALL OF GREATNESS Publishing", f"{key}: document title metadata mismatch")
+            check(bool(page.locator('meta[name="description"]').get_attribute("content")), f"{key}: SEO description metadata missing")
             check(page.locator("html").get_attribute("lang") == "en", f"{key}: initial language is not English")
             check(page.locator("html").get_attribute("dir") == "ltr", f"{key}: English direction is not LTR")
             check(page.locator("#buy").get_attribute("href") == product["url"], f"{key}: primary CTA URL mismatch")
@@ -54,12 +56,18 @@ def main() -> None:
             check(package_visible == bool(english["package"]), f"{key}: package visibility does not match documented files")
             collection_visible = page.locator("#collectionSection").evaluate("(el) => !el.hidden")
             check(collection_visible == (key == "wydjxz"), f"{key}: collection section visibility mismatch")
-            expected_links = 5 if key == "wydjxz" else 4
-            check(page.locator("#bookLinks a").count() == expected_links, f"{key}: expected {expected_links} related-book links")
+            bundle = next(p for p in CATALOG["products"] if p.get("permalink") == "wydjxz")
+            included = list(bundle["bundle_contents"])
+            if key in included:
+                included.remove(key)
+            expected_urls = sorted(PRODUCTS[item]["url"] for item in included)
+            actual_urls = sorted(page.locator("#bookLinks a").evaluate_all("(nodes) => nodes.map(a => a.href)"))
+            check(actual_urls == expected_urls, f"{key}: related-book links do not match the verified five-book bundle")
 
             page.select_option("#lang", "ar")
             page.wait_for_function("document.documentElement.lang === 'ar' && document.documentElement.dir === 'rtl'")
             check(page.locator("#title").inner_text() == arabic["title"], f"{key}: Arabic title mismatch")
+            check(page.title() == arabic["title"] + " | HALL OF GREATNESS Publishing", f"{key}: Arabic document title metadata mismatch")
             check(page.locator("#buy").inner_text() == "اقتَنِ نسختك الرقمية", f"{key}: Arabic CTA missing")
             check(page.locator("#meta .meta").count() == 6, f"{key}: Arabic metadata incomplete")
             page.select_option("#lang", "en")
