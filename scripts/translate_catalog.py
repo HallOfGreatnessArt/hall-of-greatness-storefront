@@ -209,10 +209,18 @@ for lang in REG:
                 if item.get("_source_hash")!=digest(fields):
                     products_current=False
                     break
+            # Expose a locale only after both its interface and every published
+            # product translation have explicit human editorial approval.
+            ui_approved=(localized.get("_ui_reviewed") is True and
+                         localized.get("_ui_translation_status")=="editorially-reviewed")
+            products_approved=all(
+                localized_products.get(product["permalink"],{}).get("_translation_status")=="editorially-reviewed"
+                for product in CAT["products"] if product.get("published") and product.get("permalink")
+            )
             complete=(expected_ui_keys.issubset(set(localized_ui)) and
                       not localized.get("_ui_fallback_keys") and
                       expected_product_keys.issubset(set(localized_products)) and
-                      products_current)
+                      products_current and ui_approved and products_approved)
         except (UnicodeError,json.JSONDecodeError):
             complete=False
     lang['available']=complete
