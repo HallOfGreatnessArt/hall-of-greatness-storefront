@@ -1,0 +1,121 @@
+name: Publish Gumroad Custom Landing Page
+
+on:
+  workflow_dispatch:
+    inputs:
+      permalink:
+        description: "Gumroad product permalink (approved product only)"
+        required: true
+        default: "dynbtp"
+        type: string
+      landing_file:
+        description: "Repository path to the approved product landing.html"
+        required: true
+        default: "gumroad-landings/embrace-of-eternity/landing.html"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gumroad-landing-publish-${{ inputs.permalink }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out storefront repository
+        uses: actions/checkout@v4
+
+      - name: Validate approved product and landing file
+        env:
+          PRODUCT_PERMALINK: ${{ inputs.permalink }}
+          LANDING_FILE: ${{ inputs.landing_file }}
+        run: |
+          set -euo pipefail
+          test "$PRODUCT_PERMALINK" = "dynbtp" || {
+            echo "::error::This workflow is restricted to the explicitly approved product dynbtp."
+            exit 1
+          }
+          test "$LANDING_FILE" = "gumroad-landings/embrace-of-eternity/landing.html" || {
+            echo "::error::This workflow is restricted to the reviewed EMBRACE OF ETERNITY landing file."
+            exit 1
+          }
+          test -s "$LANDING_FILE"
+          grep -q 'data-gumroad-action="buy"' "$LANDING_FILE"
+
+      - name: Install Gumroad CLI
+        run: |
+          set -euo pipefail
+          curl -fsSL https://gumroad.com/install-cli.sh | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          command -v gumroad
+          gumroad --help >/dev/null
+
+      - name: Re-run Gumroad sanitization preview
+        env:
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+          PRODUCT_PERMALINK: ${{ inputs.permalink }}
+          LANDING_FILE: ${{ inputs.landing_file }}
+        run: |
+          set -euo pipefail
+          test -n "${GUMROAD_ACCESS_TOKEN:-}" || {
+            echo "::error::Repository secret GUMROAD_ACCESS_TOKEN is not configured."
+            exit 1
+          }
+          mkdir -p gumroad-publish-evidence
+          gumroad products page preview "$PRODUCT_PERMALINK" "$LANDING_FILE" \
+            --json --no-input --non-interactive > gumroad-publish-evidence/preview.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("gumroad-publish-evidence/preview.json").read_text(encoding="utf-8"))
+          report = data.get("sanitization_report")
+          if not isinstance(report, dict):
+              raise SystemExit("Missing sanitization_report; publishing is blocked.")
+          Path("gumroad-publish-evidence/sanitization-report.json").write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8"
+          )
+          removed_tags = report.get("removed_tags")
+          removed_attributes = report.get("removed_attributes")
+          total_removed = report.get("total_removed")
+          truncated = report.get("truncated")
+          if removed_tags != [] or removed_attributes != [] or total_removed != 0 or truncated is not False:
+              raise SystemExit("Sanitization report is not completely clean; publishing is blocked.")
+          print("Sanitization report is clean: zero removals and not truncated.")
+          PY
+
+      - name: Publish approved Gumroad landing page
+        env:
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+          PRODUCT_PERMALINK: ${{ inputs.permalink }}
+          LANDING_FILE: ${{ inputs.landing_file }}
+        run: |
+          set -euo pipefail
+          gumroad products page publish "$PRODUCT_PERMALINK" "$LANDING_FILE" \
+            --json --no-input --non-interactive > gumroad-publish-evidence/publish.json
+          echo "Gumroad accepted the custom landing page publish command."
+
+      - name: Retrieve published landing URL
+        env:
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+          PRODUCT_PERMALINK: ${{ inputs.permalink }}
+        run: |
+          set -euo pipefail
+          gumroad products page url "$PRODUCT_PERMALINK" \
+            --json --jq '.product.landing_url' --no-input --non-interactive \
+            > gumroad-publish-evidence/landing-url.txt
+          test -s gumroad-publish-evidence/landing-url.txt
+          echo "Published landing URL retrieved."
+
+      - name: Upload publish evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gumroad-landing-publish-evidence
+          path: gumroad-publish-evidence/
+          if-no-files-found: warn
+          retention-days: 14
