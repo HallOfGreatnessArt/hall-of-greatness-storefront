@@ -73,6 +73,18 @@ def main() -> None:
             check(page.title() == arabic["title"] + " | HALL OF GREATNESS Publishing", f"{key}: Arabic document title metadata mismatch")
             check(page.locator("#buy").inner_text() == "اقتَنِ نسختك الرقمية", f"{key}: Arabic CTA missing")
             check(page.locator("#meta .meta").count() == 6, f"{key}: Arabic metadata incomplete")
+
+            # Capture actual Arabic RTL rendering at desktop and mobile sizes.
+            page.wait_for_function("document.fonts.status === 'loaded'", timeout=10000)
+            page.screenshot(path=str(EVIDENCE / f"{key}-arabic-desktop.png"), full_page=True)
+            page.set_viewport_size({"width": 390, "height": 844})
+            page.wait_for_timeout(150)
+            arabic_overflow = page.evaluate("document.documentElement.scrollWidth > document.documentElement.clientWidth")
+            check(not arabic_overflow, f"{key}: Arabic horizontal overflow at 390px")
+            page.screenshot(path=str(EVIDENCE / f"{key}-arabic-mobile.png"), full_page=True)
+            page.set_viewport_size({"width": 1440, "height": 1000})
+            page.wait_for_timeout(100)
+
             page.select_option("#lang", "en")
             page.wait_for_function("document.documentElement.lang === 'en' && document.documentElement.dir === 'ltr'")
             check(page.locator("#title").inner_text() == english["title"], f"{key}: English title did not restore")
