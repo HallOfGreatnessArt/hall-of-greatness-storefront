@@ -11,7 +11,9 @@ ENV=os.environ.copy()
 OUT=ROOT/"ebook-landing-refresh-evidence"; OUT.mkdir(exist_ok=True)
 PRODUCTS={p["permalink"]:p for p in CAT.get("products",[]) if p.get("published")}
 EXPECTED=set(COPY)
-missing=[k for k in EXPECTED if k not in PRODUCTS or not PRODUCTS[k].get("url","").startswith("https://") or not PRODUCTS[k].get("cover_url","").startswith("https://")]
+# Verified Gumroad product IDs; permalinks are not accepted by the page-preview API.
+GUMROAD_IDS={"isbsay":"rY4PnUT0tfE7HwMU1-PUhw==","qsznm":"79yd7jyexODACUFlHMtYzg==","wdwtbf":"lercTJf7VOGMGJBFzBY5sw==","ylxtub":"YUeb8io0HAxxwyJyGJcj_w==","qccitx":"K6DM7xWtceYKQMShd7D07A==","wydjxz":"qWtAJywZX6nv0urFCKus2Q=="}
+missing=[k for k in EXPECTED if k not in PRODUCTS or k not in GUMROAD_IDS or not PRODUCTS[k].get("url","").startswith("https://") or not PRODUCTS[k].get("cover_url","").startswith("https://")]
 if missing: raise SystemExit("Missing published ebook metadata or verified cover/URL: "+", ".join(sorted(missing)))
 def esc(v): return html.escape(str(v or ""),quote=True)
 def js(v): return json.dumps(v,ensure_ascii=False).replace("<","\\u003c").replace(">","\\u003e").replace("&","\\u0026")
@@ -45,8 +47,8 @@ a:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-off
 <script>
 const DATA=__DATA__;
 const UI={
-en:{lang:"Language",buy:"Get the book",delivery:"Digital edition · Instant delivery through Gumroad · No physical book will be shipped.",explore:"SUBJECTS AND THEMES",exploreH:"What the book examines",take:"READER VALUE",takeH:"What you will gain",aud:"INTENDED READERS",audH:"Who should read this book?",edition:"EDITION AND DELIVERY",editionH:"Edition information",pkg:"YOUR DOWNLOAD",pkgH:"Files included",collection:"THE COMPLETE COLLECTION",collectionH:"Explore the five-book series",closing:"CONTINUE YOUR READING",trust:"Secure checkout through Gumroad · Digital delivery",meta:["Author","Publisher","Language","Structure","Format","Delivery"]},
-ar:{lang:"اللغة",buy:"اقتَنِ نسختك الرقمية",delivery:"إصدار رقمي · تسليم فوري عبر Gumroad · لن يُشحن كتاب ورقي.",explore:"الموضوعات والمحاور",exploreH:"ما الذي يناقشه الكتاب؟",take:"القيمة المعرفية للقارئ",takeH:"ما الذي ستخرج به من القراءة؟",aud:"القراء المستهدفون",audH:"لمن وُجّه هذا الكتاب؟",edition:"الإصدار والتسليم",editionH:"بيانات الإصدار",pkg:"محتويات التنزيل",pkgH:"الملفات المرفقة",collection:"المجموعة الكاملة",collectionH:"اكتشف سلسلة الكتب الخمسة",closing:"ابدأ رحلتك المعرفية",trust:"دفع آمن عبر Gumroad · تسليم رقمي",meta:["المؤلف","الناشر","اللغة","البنية","الصيغة","التسليم"]}
+en:{lang:"Language",buy:"Get the book",delivery:"Digital edition · Instant delivery through Gumroad · No physical book will be shipped.",explore:"SUBJECTS AND THEMES",exploreH:"What the book examines",take:"READER VALUE",takeH:"What you will gain",aud:"INTENDED READERS",audH:"Who should read this book?",edition:"EDITION AND DELIVERY",editionH:"Edition information",pkg:"YOUR DOWNLOAD",pkgH:"Files included",collection:"THE COMPLETE COLLECTION",collectionH:"Explore the five books in this collection",closing:"CONTINUE YOUR READING",trust:"Secure checkout through Gumroad · Digital delivery",meta:["Author","Publisher","Language","Structure","Format","Delivery"]},
+ar:{lang:"اللغة",buy:"اقتَنِ نسختك الرقمية",delivery:"إصدار رقمي · تسليم فوري عبر Gumroad · لن يُشحن كتاب ورقي.",explore:"الموضوعات والمحاور",exploreH:"ما الذي يناقشه الكتاب؟",take:"القيمة المعرفية للقارئ",takeH:"ما الذي ستخرج به من القراءة؟",aud:"القراء المستهدفون",audH:"لمن وُجّه هذا الكتاب؟",edition:"الإصدار والتسليم",editionH:"بيانات الإصدار",pkg:"محتويات التنزيل",pkgH:"الملفات المرفقة",collection:"المجموعة الكاملة",collectionH:"تعرّف على الكتب الخمسة في هذه المجموعة",closing:"ابدأ رحلتك المعرفية",trust:"دفع آمن عبر Gumroad · تسليم رقمي",meta:["المؤلف","الناشر","اللغة","البنية","الصيغة","التسليم"]}
 };
 const BOOKS=[
 ["isbsay","THE AI POWER GAME — UNDERSTAND • ADAPT • THRIVE","https://alshayebemad.gumroad.com/l/THEAIPOWERGAME"],
@@ -92,7 +94,7 @@ def main():
  for item in generated:
   key=item["permalink"]; path=item["file"]; last=""
   for attempt in range(4):
-   r=subprocess.run(["gumroad","products","page","preview",key,path,"--json","--no-input","--non-interactive"],cwd=ROOT,env=ENV,text=True,capture_output=True)
+   r=subprocess.run(["gumroad","products","page","preview",GUMROAD_IDS[key],path,"--json","--no-input","--non-interactive"],cwd=ROOT,env=ENV,text=True,capture_output=True)
    raw=r.stdout or r.stderr; last=raw[-1600:]
    try: payload=json.loads(raw)
    except Exception: payload={}
