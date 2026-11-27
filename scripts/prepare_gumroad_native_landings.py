@@ -96,10 +96,13 @@ for p in CATALOG.get("products",[]):
         continue
     target=ROOT/"gumroad-landings"/slug(p.get("landing_slug") or p["name"])/"landing.html"
     if target.exists():
-        skipped.append({"permalink":key,"name":p.get("name"),"reasons":["landing file already exists; manual review required"]})
-        continue
-    target.parent.mkdir(parents=True,exist_ok=True)
-    target.write_text(render(p),encoding="utf-8")
+        existing_html=target.read_text(encoding="utf-8")
+        if 'data-gumroad-action="buy"' not in existing_html:
+            skipped.append({"permalink":key,"name":p.get("name"),"reasons":["existing landing file lacks a Gumroad buy action; manual review required"]})
+            continue
+    else:
+        target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_text(render(p),encoding="utf-8")
     pending.append({"permalink":key,"name":p["name"],"landing_file":str(target.relative_to(ROOT)),"content_type":p["content_type"]})
 
 report={"pending":pending,"skipped":skipped}
