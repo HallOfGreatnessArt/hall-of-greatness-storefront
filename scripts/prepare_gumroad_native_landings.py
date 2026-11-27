@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare Gumroad-native landing pages for newly published, eligible products only."""
+"""Prepare Gumroad-native landing pages for every live, eligible published product not already completed."""
 from __future__ import annotations
 import html, json, re
 from pathlib import Path
@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 CATALOG=json.loads((ROOT/"catalog-data.json").read_text(encoding="utf-8"))
 MANIFEST_PATH=ROOT/"gumroad-landings/automation-manifest.json"
 manifest=json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
-known=set(manifest.get("existing_products",[]))|set(manifest.get("automatically_published_products",[]))
+known=set(manifest.get("automatically_published_products",[]))
 valid_types={"art-decor","ebook","course"}
 pending=[]
 skipped=[]
