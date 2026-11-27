@@ -40,6 +40,10 @@ jobs:
           grep -qi 'THE AI BLACK BOX' gumroad-landings/the-ai-black-box/landing.html
           grep -q 'data-gumroad-action="buy"' gumroad-landings/the-art-of-stillness/landing.html
           grep -q 'data-gumroad-action="buy"' gumroad-landings/the-ai-black-box/landing.html
+          if grep -Eiq '<meta([[:space:]>])' gumroad-landings/the-art-of-stillness/landing.html gumroad-landings/the-ai-black-box/landing.html; then
+            echo "::error::Generated Gumroad HTML fragments must not contain document-level meta tags."
+            exit 1
+          fi
 
       - name: Preview both approved pages in Gumroad
         env:
