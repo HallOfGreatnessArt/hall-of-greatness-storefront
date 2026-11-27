@@ -32,5 +32,11 @@ class ProductDetailExtractionTests(unittest.TestCase):
         text="Delivery nnnnnnnnnnn Physical item"
         self.assertEqual(MODULE.detail_between(text,"Delivery","Physical item"),"")
 
+    def test_gumroad_publish_workflow_is_manual_only(self):
+        workflow=(ROOT/".github/workflows/refresh-gumroad-product-landings.yml").read_text(encoding="utf-8")
+        trigger_block=workflow.split("permissions:",1)[0]
+        self.assertIn("workflow_dispatch:",trigger_block)
+        self.assertNotIn("\\n  push:",trigger_block)
+
 if __name__=="__main__":
     unittest.main()
