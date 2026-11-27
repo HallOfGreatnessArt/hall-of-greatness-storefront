@@ -57,6 +57,11 @@ jobs:
       - name: Generate six e-book pages locally (no Gumroad API or token)
         run: python scripts/refresh_ebook_landing_pages.py --local-only
 
+      - name: Generate one artwork product page locally (no Gumroad API or token)
+        env:
+          PREVIEW_PERMALINK: mxrljy
+        run: python scripts/refresh_gumroad_landing_pages.py --local-only
+
       - name: Start local storefront preview
         run: |
           nohup python -m http.server 8000 --bind 127.0.0.1 >/tmp/hog-local-preview.log 2>&1 &
@@ -70,6 +75,54 @@ jobs:
 
       - name: Test all six e-book pages in Chromium and capture screenshots
         run: python scripts/test_ebook_landing_pages.py
+
+      - name: Capture independent artwork and e-book previews on desktop and mobile
+        run: |
+          mkdir -p product-preview-evidence/artwork product-preview-evidence/ebook
+          cp gumroad-landings/the-art-of-stillness/landing.html product-preview-evidence/artwork/index.html
+          cp gumroad-ebook-landings/qsznm/landing.html product-preview-evidence/ebook/index.html
+          python - <<'PY'
+          from playwright.sync_api import sync_playwright
+          base = "http://127.0.0.1:8000"
+          pages = [
+              ("artwork", "/gumroad-landings/the-art-of-stillness/landing.html", "product-preview-evidence/artwork"),
+              ("ebook", "/gumroad-ebook-landings/qsznm/landing.html", "product-preview-evidence/ebook"),
+          ]
+          with sync_playwright() as p:
+              browser = p.chromium.launch()
+              for kind, path, output in pages:
+                  for device, viewport in [
+                      ("desktop", {"width": 1440, "height": 1000}),
+                      ("mobile", {"width": 390, "height": 844}),
+                  ]:
+                      page = browser.new_page(viewport=viewport, device_scale_factor=1)
+                      errors = []
+                      page.on("pageerror", lambda exc: errors.append(str(exc)))
+                      response = page.goto(base + path, wait_until="networkidle", timeout=30000)
+                      assert response and response.status == 200, f"{kind} {device}: page failed to load"
+                      assert page.locator("body").inner_text().strip(), f"{kind} {device}: empty page"
+                      page.screenshot(path=f"{output}/{device}.png", full_page=True)
+                      assert not errors, f"{kind} {device}: JavaScript errors: {errors}"
+                      print(f"PASS {kind} {device}: {page.title()}")
+                      page.close()
+              browser.close()
+          PY
+
+      - name: Upload independent artwork preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: artwork-product-preview
+          path: product-preview-evidence/artwork/
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload independent e-book preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: ebook-product-preview
+          path: product-preview-evidence/ebook/
+          if-no-files-found: error
+          retention-days: 30
 
       - name: Upload six-page e-book browser evidence
         if: always()
