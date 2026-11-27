@@ -35,21 +35,6 @@ jobs:
         run: |
           set -euo pipefail
           python scripts/refresh_ebook_landing_pages.py
-      - name: Commit ebook landing sources and evidence
-        if: success()
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add gumroad-ebook-landings/ ebook-landing-refresh-evidence/
-          if git diff --cached --quiet; then
-            echo "No ebook landing source changes."
-          else
-            git commit -m "Build dedicated editorial e-book landing pages"
-            git fetch origin main
-            git rebase --autostash origin/main
-            git push origin HEAD:main
-          fi
       - name: Upload ebook landing evidence
         if: always()
         uses: actions/upload-artifact@v4
