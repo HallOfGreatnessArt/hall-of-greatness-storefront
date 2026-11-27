@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Build a dedicated editorial landing experience for HALL OF GREATNESS e-books."""
-import html, json, os, re, subprocess, time
+import html, json, os, re, subprocess, sys, time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 CAT=json.loads((ROOT/"catalog-data.json").read_text(encoding="utf-8"))
 COPY=json.loads((ROOT/"ebook-copy.json").read_text(encoding="utf-8"))
+LOCAL_ONLY="--local-only" in sys.argv[1:]
 TOKEN=os.environ.get("GUMROAD_ACCESS_TOKEN","").strip()
-if not TOKEN: raise SystemExit("GUMROAD_ACCESS_TOKEN is required.")
+if not LOCAL_ONLY and not TOKEN: raise SystemExit("GUMROAD_ACCESS_TOKEN is required.")
 ENV=os.environ.copy()
 OUT=ROOT/"ebook-landing-refresh-evidence"; OUT.mkdir(exist_ok=True)
 PRODUCTS={p["permalink"]:p for p in CAT.get("products",[]) if p.get("published")}
@@ -90,6 +91,11 @@ def main():
   dest.parent.mkdir(parents=True,exist_ok=True); dest.write_text(page,encoding="utf-8")
   generated.append({"permalink":key,"name":p["name"],"file":str(dest.relative_to(ROOT))})
  (OUT/"generated-pages.json").write_text(json.dumps(generated,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ if LOCAL_ONLY:
+  report={"generated":len(generated),"previewed":0,"published":0,"errors":0,"mode":"local-only"}
+  (OUT/"refresh-report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+  print(json.dumps(report,ensure_ascii=False))
+  return
  results=[]
  for item in generated:
   key=item["permalink"]; path=item["file"]; last=""
