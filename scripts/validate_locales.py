@@ -102,7 +102,10 @@ for entry in registry.get("languages", []):
                 or re.search(r"(.)\1{5,}", value, re.I)
                 or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection", value, re.I)
             ):
-                errors.append(f"{code}/{slug}: unsafe or page-scraped product_details.{field}")
+                if item.get("_translation_status")=="editorially-reviewed" or entry.get("available") is True:
+                    errors.append(f"{code}/{slug}: unsafe or page-scraped product_details.{field}")
+                else:
+                    warnings.append(f"{code}/{slug}: unreviewed product_details.{field} is unsafe and must not be published")
         if item.get("_translation_status") == "editorially-reviewed":
             for field in ("summary", "full_description", "category"):
                 approved_value = str(item.get(field, ""))
