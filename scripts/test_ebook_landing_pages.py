@@ -74,7 +74,7 @@ def main() -> None:
             page.wait_for_function("document.documentElement.lang === 'en' && document.documentElement.dir === 'ltr'")
             check(page.locator("#title").inner_text() == english["title"], f"{key}: English title did not restore")
 
-            page.evaluate("document.fonts.ready")
+            page.wait_for_function("document.fonts.status === 'loaded'", timeout=10000)
             page.screenshot(path=str(EVIDENCE / f"{key}-desktop.png"), full_page=True)
             page.set_viewport_size({"width": 390, "height": 844})
             page.wait_for_timeout(150)
