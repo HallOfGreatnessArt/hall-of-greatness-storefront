@@ -38,7 +38,9 @@ for p in products: groups.setdefault(p.get("content_type",""),[]).append(p)
 def translations(p):
     key=p["permalink"]; fields={k:p.get(k) for k in ("summary","full_description","category") if p.get(k)}; fields["product_details"]=p.get("product_details") or {}
     expected=digest(fields)
-    out={"en":{"name":p["name"],"summary":p.get("summary",""),"full_description":p.get("full_description") or p.get("summary",""),"details":p.get("product_details") or {}}}
+    base_details=p.get("product_details") or {}
+    base_details={k:v for k,v in base_details.items() if k in ALLOWED_DETAIL_KEYS and translation_text_is_safe(v, max_length=500)}
+    out={"en":{"name":p["name"],"summary":p.get("summary",""),"full_description":p.get("full_description") or p.get("summary",""),"details":base_details}}
     for lang in REG:
         code=lang["code"]
         if code=="en" or not lang.get("available"): continue
