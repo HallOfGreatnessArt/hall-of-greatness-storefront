@@ -54,8 +54,6 @@ jobs:
           python scripts/sync_gumroad_catalog.py
 
       - name: Generate landing pages for all live eligible published products not yet completed
-        env:
-          GUMROAD_LANDING_LIMIT: "1"
         run: |
           set -euo pipefail
           python scripts/prepare_gumroad_native_landings.py
