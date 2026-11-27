@@ -73,6 +73,8 @@ publishing_pages = [
     "publishing/books/the-ai-black-box/",
     "publishing/books/the-humanity-test/",
     "publishing/books/the-algorithm-empire/",
+    "publishing/books/the-last-job/",
+    "publishing/books/the-ai-age-complete-five-book-collection/",
     "publishing/about/", "publishing/rights/",
 ]
 expected.update(BASE + relative for relative in publishing_pages)

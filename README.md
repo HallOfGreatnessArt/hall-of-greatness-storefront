@@ -1,38 +1,23 @@
-# HALL OF GREATNESS — Digital Art Gallery
+# HALL OF GREATNESS — Digital Storefront
 
-A mobile-first, responsive storefront for the HALL OF GREATNESS digital art catalogue.
+HALL OF GREATNESS is the umbrella creative brand with three distinct destinations: Art & Decor, HALL OF GREATNESS Publishing, and Educational Courses.
 
-## Contents
-- `index.html` — dark-and-gold gallery with featured works, live product covers, collections, search, and category filters.
-- `catalog-data.json` — catalogue snapshot of 37 product records: 33 individual artworks and 4 bundles; public Gumroad visibility must be checked separately. Unpublished drafts are excluded.
-- `landing/` — individual product and collection landing pages.
-- `scripts/generate_landing_pages.py` — creates missing landing pages from the verified catalogue while preserving existing hand-crafted pages.
-- `locales/languages.json` and `locales/*.json` — registered languages, localized interface copy, and product descriptions.
-- `assets/i18n.js` and `assets/landing-i18n.js` — language selection, translation loading, and right-to-left support.
-- `scripts/translate_catalog.py` — free offline Argos Translate pipeline; preserves editorially tagged product copy and hides incomplete locales.
-- `scripts/validate_locales.py` — checks locale key parity, product coverage, English residue, encoding, source hashes, and editorial status.
-- `.github/workflows/read-only-localization-qa.yml` — runs non-deploying localization and landing-page checks on pull requests with read-only repository permissions.
-- `scripts/enhance_landing_pages.py` — adds localized full-description containers, product specifications, and RTL layout support to product pages.
-- `.github/workflows/publish-storefront.yml` — scheduled (every 15 minutes) and manually triggered catalogue sync, page generation, validation, and GitHub Pages deployment.
-- `scripts/sync_gumroad_catalog.py` — read-only Gumroad product sync that appends newly published products only; existing catalogue entries are not rewritten.
+## Structure
+- `index.html` — main storefront and navigation to three separate destinations.
+- `#art-decor` — printable art and decor products only (`content_type: art-decor`).
+- `#ebooks` — digital books with a direct route to the dedicated Publishing Library.
+- `#courses` — educational courses only (`content_type: course`).
+- `publishing/` — dedicated publishing identity, editorial library, individual book pages, About, and Rights.
+- `publishing/data/books.json` — editorial catalogue of five individual books and the five-book collection.
+- `publishing/assets/` — publishing-specific presentation and bilingual interface.
+- `catalog-data.json` — current product catalogue snapshot; count changes as the catalogue is reconciled.
+- `landing/` — individual product landing pages.
+- `scripts/refresh_ebook_landing_pages.py` — preview-only Gumroad e-book page refresh; it does not publish pages or change live products.
 
-## Product and account integrity
-The storefront is a presentation layer. It links to existing Gumroad product pages and does not change product names, prices, files, covers, bundle contents, or publication settings. The catalogue includes only published products from the connected Emad Alshayeb creator account.
+## Separation and product integrity
+The homepage renders products by explicit `content_type`: `art-decor`, `ebook`, or `course`. Publishing is a distinct editorial imprint within HALL OF GREATNESS, not a claim that a separate legal company has been incorporated. Its navigation returns readers to the Publishing Library rather than the general Gumroad account homepage.
 
-## Landing-page generation
-The generator uses each product's verified public Gumroad cover, current selling URL, listed price, product summary, and (for bundles) the exact included-product list returned by Gumroad. Existing custom landing pages are preserved. All other published products receive a responsive page using the shared dark-and-gold design.
+Repository changes do not change Gumroad product names, prices, files, covers, bundle contents, or publication states. Payment and digital delivery remain on the relevant Gumroad product page.
 
-## Automatic Gumroad sync
-1. Create a Gumroad personal access token for the **Emad Alshayeb** account with permission to read products.
-2. In this repository, open Settings → Secrets and variables → Actions → New repository secret.
-3. Set the secret name to `GUMROAD_ACCESS_TOKEN` and paste the token as its value. Never commit the token to a file.
-4. The scheduled workflow checks Gumroad every 15 minutes. It appends newly published products only; unpublished drafts are ignored. Existing catalogue records, prices, product URLs, and landing-page slugs are left unchanged.
-5. New bundles are added only when their included-product list is available to verify. Products missing a usable public cover or description are skipped with a warning rather than creating a broken landing page.
-
-Without the repository secret, scheduled runs safely skip the Gumroad API sync and only rebuild the existing storefront. GitHub Actions may delay scheduled runs during high load.
-
-## Publish and test
-1. In repository Settings → Pages, set the build and deployment source to **GitHub Actions**.
-2. Add `GUMROAD_ACCESS_TOKEN` as described above.
-3. Open Actions → **Publish HALL OF GREATNESS storefront** and run it manually for the first test.
-4. Confirm both the sync and deployment jobs complete successfully before considering a newly discovered product published on the storefront.
+## Deployment
+The existing GitHub Actions workflow controls catalogue validation, page generation, sitemap checks, and GitHub Pages deployment. Do not dispatch a publishing workflow merely to preview changes. Gumroad credentials must remain in GitHub Actions secrets and must never be committed.

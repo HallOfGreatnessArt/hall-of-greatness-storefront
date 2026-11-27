@@ -22,7 +22,8 @@
       ],
       "cover": "https://public-files.gumroad.com/kwb1ouwkd5vj7pscyzr5nz19anrg",
       "url": "https://alshayebemad.gumroad.com/l/THEAIPOWERGAME",
-      "editionNote": "Gumroad lists PDF and EPUB editions in one ZIP package containing 9 customer files. A personal-use license is included."
+      "editionNote": "Gumroad lists PDF and EPUB editions in one ZIP package containing 9 customer files. A personal-use license is included.",
+      "permalink": "isbsay"
     },
     {
       "slug": "the-ai-black-box",
@@ -43,7 +44,8 @@
       ],
       "cover": "https://public-files.gumroad.com/78g5vblxhuur70jt6huw3jirkiqc",
       "url": "https://alshayebemad.gumroad.com/l/Theaiblackbox",
-      "editionNote": "Gumroad lists a digital ZIP download. The product page directs buyers to the included guide and license for exact package contents and usage terms."
+      "editionNote": "Gumroad lists a digital ZIP download. The product page directs buyers to the included guide and license for exact package contents and usage terms.",
+      "permalink": "qsznm"
     },
     {
       "slug": "the-humanity-test",
@@ -64,7 +66,8 @@
       ],
       "cover": "https://public-files.gumroad.com/982vjxadhr17jle6bo5ygq4h3vq0",
       "url": "https://alshayebemad.gumroad.com/l/TheHumanityTest",
-      "editionNote": "Gumroad lists a digital ZIP download. The product page directs buyers to the included guide and license for exact package contents and usage terms."
+      "editionNote": "Gumroad lists a digital ZIP download. The product page directs buyers to the included guide and license for exact package contents and usage terms.",
+      "permalink": "wdwtbf"
     },
     {
       "slug": "the-algorithm-empire",
@@ -85,7 +88,57 @@
       ],
       "cover": "https://public-files.gumroad.com/gizvcznh8f79i8i5ivqgbihyupfl",
       "url": "https://alshayebemad.gumroad.com/l/THEALGORITHMEMPIRE",
-      "editionNote": "Gumroad lists a digital ZIP download. The product page directs buyers to the included guide and license for exact package contents and usage terms."
+      "editionNote": "Gumroad lists a digital ZIP download. The product page directs buyers to the included guide and license for exact package contents and usage terms.",
+      "permalink": "ylxtub"
+    },
+    {
+      "slug": "the-last-job",
+      "title": "THE LAST JOB",
+      "subtitle": "How AI Will Transform Work—and What Humans Must Do Next",
+      "category": "Global",
+      "collection": "The Intelligence Age Collection",
+      "author": "EMAD ALSHAYEB",
+      "language": "English",
+      "format": "Digital ZIP package",
+      "chapters": "15 chapters",
+      "summary": "Artificial intelligence is changing the tasks people perform, the skills employers seek, and the organization of work. But the future is not a simple story of jobs disappearing or effortless prosperity. This book distinguishes task exposure from job-loss predictions and examines how workers, employers, educators, businesses, and governments can shape a fair, human-centred transition.",
+      "themes": [
+        "Why a job is more than a list of tasks—and why task exposure is not a forecast of job loss.",
+        "The shift from automation to collaboration and the organizational choices behind it.",
+        "Changing occupations, productivity, skills, reskilling, and education.",
+        "AI coworkers, agents, delegated tasks, and the continuing role of human judgment.",
+        "Small businesses, entrepreneurship, adoption barriers, and technological dependence.",
+        "Algorithmic management, workplace monitoring, worker voice, privacy, accountability, and fair employment."
+      ],
+      "cover": "https://public-files.gumroad.com/4fetqv9aem5ithqlvncfe0yiyto9",
+      "url": "https://alshayebemad.gumroad.com/l/THELASTJOB",
+      "editionNote": "Gumroad lists a digital ZIP download. The product page directs buyers to the included guide and license for exact package contents and usage terms.",
+      "permalink": "qccitx",
+      "isBundle": false
+    },
+    {
+      "slug": "the-ai-age-complete-five-book-collection",
+      "title": "THE AI AGE — THE COMPLETE FIVE-BOOK COLLECTION",
+      "subtitle": "THE COMPLETE FIVE-BOOK COLLECTION",
+      "category": "Five-Book Collection",
+      "collection": "The Intelligence Age Collection",
+      "author": "EMAD ALSHAYEB",
+      "language": "English",
+      "format": "Five-book digital collection",
+      "chapters": "5 complete books",
+      "summary": "A coordinated five-book collection examining artificial intelligence from complementary perspectives: its foundations, hidden systems, implications for humanity, global technological power, and the future of work. Together, the books connect technical developments with economic, social, ethical, and institutional choices.",
+      "themes": [
+        "THE AI POWER GAME — understand the foundations and consequences of the new intelligence age.",
+        "THE AI BLACK BOX — examine hidden systems, evaluation, explainability, and oversight.",
+        "THE HUMANITY TEST — consider dignity, identity, privacy, freedom, and human agency.",
+        "THE ALGORITHM EMPIRE — investigate data, chips, platforms, infrastructure, and digital power.",
+        "THE LAST JOB — explore changing work, skills, productivity, and a fair human-centred transition."
+      ],
+      "cover": "https://public-files.gumroad.com/uifloep77rxh0u3z2g2wo4bzjipq",
+      "url": "https://alshayebemad.gumroad.com/l/THEAIAGETHECOMPLETEFIVE-BOOKCOLLECTION",
+      "editionNote": "A five-book digital collection containing THE AI POWER GAME, THE AI BLACK BOX, THE HUMANITY TEST, THE ALGORITHM EMPIRE, and THE LAST JOB. Digital access to the five included titles is provided through the Gumroad purchase library.",
+      "permalink": "wydjxz",
+      "isBundle": true
     }
   ]
 }
