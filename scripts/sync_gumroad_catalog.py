@@ -267,8 +267,6 @@ def sync(products: list[dict], catalog: dict) -> tuple[list[str], list[str]]:
     tag_updates: list[str] = []
 
     for product in products:
-        if product.get("published") is not True:
-            continue
         permalink = extract_permalink(product)
         incoming_url = product_identity_url(product_url(product, permalink)) if permalink else ""
         current = by_permalink.get(permalink.strip().lower()) if permalink else None
@@ -278,13 +276,22 @@ def sync(products: list[dict], catalog: dict) -> tuple[list[str], list[str]]:
         # Keep current product content and presentation untouched; synchronize
         # only the tags that the owner configured in Gumroad product settings.
         if current is not None:
+            # Keep product copy, price, files, and Gumroad settings untouched.
+            # Refresh only read-only state metadata needed for safe page rollout.
+            current["published"] = product.get("published") is True
+            customizable = product.get("customizable_price", product.get("pay_what_you_want"))
+            if customizable is not None:
+                current["pay_what_you_want"] = bool(customizable)
+            if product.get("currency"):
+                current["currency"] = str(product["currency"]).lower()
             incoming_tags = normalize_gumroad_tags(product.get("tags"))
             if incoming_tags and current.get("tags") != incoming_tags:
                 current["tags"] = incoming_tags
                 tag_updates.append(str(current.get("name") or permalink))
             continue
 
-        if not permalink:
+        # Never import or prepare a product that Gumroad currently marks unpublished.
+        if product.get("published") is not True or not permalink:
             continue
         try:
             record = build_record(product, used_slugs)
