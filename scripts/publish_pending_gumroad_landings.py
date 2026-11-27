@@ -79,5 +79,5 @@ report={"processed":len(outcomes),"published":sum(x["status"]=="published" for x
 if report["published"]:
     manifest_path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print(json.dumps({k:report[k] for k in ("processed","published","blocked","errors")},ensure_ascii=False))
-if report["errors"]:
+if report["errors"] or report["blocked"]:
     raise SystemExit(1)
