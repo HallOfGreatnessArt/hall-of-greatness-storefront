@@ -1,0 +1,1 @@
+Owner-authorized rollout: generate, preview, verify, and publish independent Gumroad custom landing pages for every currently published, eligible storefront product not already completed. Refresh live publication state from Gumroad first. Exclude every product currently unpublished. Preserve all Gumroad product settings, prices, files, descriptions, and publication states.
