@@ -11,6 +11,8 @@ on:
       - "assets/**"
       - "scripts/**"
       - "landing/**"
+      - "publishing/**"
+      - "tests/test_publishing_separation.py"
       - "index.html"
 
 permissions:
@@ -48,6 +50,9 @@ jobs:
 
       - name: Validate product pages, localization markers, RTL, and SEO
         run: python scripts/validate_landing_pages.py
+
+      - name: Test Publishing catalogue separation and detail pages
+        run: python tests/test_publishing_separation.py
 
       - name: Install Playwright and Chromium
         run: |
