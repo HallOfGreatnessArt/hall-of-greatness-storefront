@@ -1,0 +1,97 @@
+name: Gumroad Landing Page Preview
+
+on:
+  workflow_dispatch:
+    inputs:
+      permalink:
+        description: "Gumroad product permalink"
+        required: true
+        default: "dynbtp"
+        type: string
+      landing_file:
+        description: "Repository path to the product landing.html file"
+        required: true
+        default: "gumroad-landings/embrace-of-eternity/landing.html"
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gumroad-landing-preview
+  cancel-in-progress: false
+
+jobs:
+  preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out storefront repository
+        uses: actions/checkout@v4
+
+      - name: Validate requested landing file
+        env:
+          LANDING_FILE: ${{ inputs.landing_file }}
+        run: |
+          set -euo pipefail
+          case "$LANDING_FILE" in
+            *.html) ;;
+            *) echo "::error::The landing file must be an HTML file."; exit 1 ;;
+          esac
+          test -f "$LANDING_FILE" || { echo "::error::Landing file not found: $LANDING_FILE"; exit 1; }
+          test -s "$LANDING_FILE" || { echo "::error::Landing file is empty."; exit 1; }
+          grep -q 'data-gumroad-action="buy"' "$LANDING_FILE" || {
+            echo "::error::A Gumroad buy action is required before preview."; exit 1;
+          }
+          echo "Landing file exists and contains a Gumroad buy action."
+
+      - name: Install Gumroad CLI
+        run: |
+          set -euo pipefail
+          curl -fsSL https://gumroad.com/install-cli.sh | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          command -v gumroad || {
+            echo "::error::Gumroad CLI was not found after installation."
+            exit 1
+          }
+          gumroad --help >/dev/null
+
+      - name: Run Gumroad sanitization preview (no publishing)
+        env:
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+          PRODUCT_PERMALINK: ${{ inputs.permalink }}
+          LANDING_FILE: ${{ inputs.landing_file }}
+        run: |
+          set -euo pipefail
+          test -n "${GUMROAD_ACCESS_TOKEN:-}" || {
+            echo "::error::Repository secret GUMROAD_ACCESS_TOKEN is not configured."
+            exit 1
+          }
+          mkdir -p gumroad-preview
+          gumroad products page preview "$PRODUCT_PERMALINK" "$LANDING_FILE" \
+            --json --no-input --non-interactive > gumroad-preview/preview.json
+          echo "Preview completed. No Gumroad page was published or changed."
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          path = Path("gumroad-preview/preview.json")
+          data = json.loads(path.read_text(encoding="utf-8"))
+          report = data.get("sanitization_report")
+          if report is None:
+              raise SystemExit("Preview output did not include sanitization_report; manual review is required.")
+          Path("gumroad-preview/sanitization-report.json").write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8"
+          )
+          print("Sanitization report extracted for review.")
+          PY
+
+      - name: Upload preview and sanitization report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gumroad-landing-preview
+          path: gumroad-preview/
+          if-no-files-found: warn
+          retention-days: 14
