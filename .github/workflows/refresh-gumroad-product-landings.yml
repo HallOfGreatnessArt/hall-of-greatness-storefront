@@ -2,6 +2,11 @@ name: Refresh Gumroad Product Landing Pages
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/refresh_gumroad_landing_pages.py'
+      - '.github/workflows/refresh-gumroad-product-landings.yml'
 
 permissions:
   contents: write
