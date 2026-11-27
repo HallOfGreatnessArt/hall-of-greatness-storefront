@@ -1,0 +1,65 @@
+name: Refresh E-book Product Landing Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'ebook-copy.json'
+      - 'scripts/refresh_ebook_landing_pages.py'
+      - '.github/workflows/refresh-ebook-product-landings.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gumroad-ebook-landing-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-ebooks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - name: Check out storefront
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Install Gumroad CLI
+        run: |
+          set -euo pipefail
+          curl -fsSL https://gumroad.com/install-cli.sh | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          command -v gumroad
+          gumroad --help >/dev/null
+      - name: Generate, preview, validate and publish e-book pages only
+        env:
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+        run: |
+          set -euo pipefail
+          python scripts/refresh_ebook_landing_pages.py
+      - name: Commit ebook landing sources and evidence
+        if: success()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gumroad-ebook-landings/ ebook-landing-refresh-evidence/
+          if git diff --cached --quiet; then
+            echo "No ebook landing source changes."
+          else
+            git commit -m "Build dedicated editorial e-book landing pages"
+            git fetch origin main
+            git rebase --autostash origin/main
+            git push origin HEAD:main
+          fi
+      - name: Upload ebook landing evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ebook-landing-refresh-evidence
+          path: ebook-landing-refresh-evidence/
+          if-no-files-found: warn
+          retention-days: 30
