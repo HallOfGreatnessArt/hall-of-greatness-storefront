@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build, preview and safely publish the refreshed multilingual Gumroad landing pages."""
-import hashlib, html, json, os, re, subprocess
+import hashlib, html, json, os, re, subprocess, time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 CAT=json.loads((ROOT/"catalog-data.json").read_text(encoding="utf-8"))
@@ -75,11 +75,49 @@ print("Generated",len(generated),"published product pages.")
 outcomes=[]
 for x in generated:
     key=x["permalink"]; path=x["file"]
-    r=subprocess.run(["gumroad","products","page","preview",key,path,"--json","--no-input","--non-interactive"],cwd=ROOT,env=ENV,text=True,capture_output=True)
-    if r.returncode:
-        outcomes.append({"permalink":key,"status":"preview_error","error":(r.stderr or r.stdout)[-1200:]}); break
-    try: report=json.loads(r.stdout).get("sanitization_report")
-    except Exception: report=None
+    r=None
+    # Gumroad occasionally returns a transient review-service error (HTTP 200).
+    # Retry only that temporary service failure; never bypass a failed preview.
+    for attempt in range(4):
+        r=subprocess.run(["gumroad","products","page","preview",key,path,"--json","--no-input","--non-interactive"],cwd=ROOT,env=ENV,text=True,capture_output=True)
+        if r.returncode == 0:
+            try:
+                payload=json.loads(r.stdout)
+            except Exception:
+                payload={}
+            if payload.get("success") is True:
+                break
+            error=payload.get("error") or {}
+            temporary=(error.get("code")=="api_error" and ("temporary issue" in error.get("message","").lower() or "try again" in error.get("message","").lower()))
+            if not temporary:
+                outcomes.append({"permalink":key,"status":"preview_error","error":payload}); break
+        else:
+            raw=(r.stderr or r.stdout)
+            try:
+                payload=json.loads(raw)
+                error=payload.get("error") or {}
+            except Exception:
+                error={}
+            temporary=(error.get("code")=="api_error" and ("temporary issue" in error.get("message","").lower() or "try again" in error.get("message","").lower()))
+            if not temporary:
+                outcomes.append({"permalink":key,"status":"preview_error","error":raw[-1200:]}); break
+        if attempt < 3:
+            delay=10*(attempt+1)
+            print(f"Temporary Gumroad preview outage for {key}; retry {attempt+1}/3 in {delay}s.")
+            time.sleep(delay)
+    else:
+        outcomes.append({"permalink":key,"status":"preview_temporary_outage","error":(r.stderr or r.stdout)[-1200:]})
+    if outcomes and outcomes[-1].get("permalink")==key and outcomes[-1]["status"]!="preview_ok":
+        break
+    if r is None or r.returncode:
+        if not outcomes or outcomes[-1].get("permalink")!=key:
+            outcomes.append({"permalink":key,"status":"preview_error","error":(r.stderr or r.stdout)[-1200:]})
+        break
+    try: payload=json.loads(r.stdout)
+    except Exception: payload={}
+    if payload.get("success") is not True:
+        outcomes.append({"permalink":key,"status":"preview_error","error":payload}); break
+    report=payload.get("sanitization_report")
     (EVIDENCE/(key+"-preview.json")).write_text(r.stdout,encoding="utf-8")
     if not isinstance(report,dict) or report.get("removed_tags")!=[] or report.get("removed_attributes")!=[] or report.get("total_removed")!=0 or report.get("truncated") is not False:
         outcomes.append({"permalink":key,"status":"blocked_sanitization","report":report}); break
