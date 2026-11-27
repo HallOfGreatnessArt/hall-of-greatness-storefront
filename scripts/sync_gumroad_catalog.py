@@ -178,6 +178,8 @@ def build_record(product: dict, used_slugs: set[str]) -> dict:
         "permalink": permalink,
         "published": True,
         "is_bundle": is_bundle,
+        "pay_what_you_want": bool(product.get("customizable_price", product.get("pay_what_you_want", False))),
+        "currency": str(product.get("currency") or "usd").lower(),
         "category": infer_category(product),
         "landing_slug": slug,
         "cover_url": cover,
