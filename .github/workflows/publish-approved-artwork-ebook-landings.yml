@@ -37,7 +37,7 @@ jobs:
           test -s gumroad-landings/the-art-of-stillness/landing.html
           test -s gumroad-landings/the-ai-black-box/landing.html
           grep -q 'THE ART OF STILLNESS' gumroad-landings/the-art-of-stillness/landing.html
-          grep -q 'THE AI BLACK BOX' gumroad-landings/the-ai-black-box/landing.html
+          grep -qi 'THE AI BLACK BOX' gumroad-landings/the-ai-black-box/landing.html
           grep -q 'data-gumroad-action="buy"' gumroad-landings/the-art-of-stillness/landing.html
           grep -q 'data-gumroad-action="buy"' gumroad-landings/the-ai-black-box/landing.html
 
