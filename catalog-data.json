@@ -2107,7 +2107,9 @@
         "comfort-art",
         "art-decor"
       ],
-      "content_type": "art-decor"
+      "content_type": "art-decor",
+      "pay_what_you_want": false,
+      "currency": "usd"
     },
     {
       "name": "THE GIFT OF LOVE ♥",
@@ -2144,7 +2146,9 @@
         "gift-of-love",
         "art-decor"
       ],
-      "content_type": "art-decor"
+      "content_type": "art-decor",
+      "pay_what_you_want": false,
+      "currency": "usd"
     },
     {
       "name": "THE RISE OF KINDNESS",
@@ -2181,7 +2185,9 @@
         "kindness-art",
         "art-decor"
       ],
-      "content_type": "art-decor"
+      "content_type": "art-decor",
+      "pay_what_you_want": false,
+      "currency": "usd"
     },
     {
       "name": "THE SANCTUARY OF LOVE",
@@ -2218,7 +2224,9 @@
         "compassion-art",
         "art-decor"
       ],
-      "content_type": "art-decor"
+      "content_type": "art-decor",
+      "pay_what_you_want": false,
+      "currency": "usd"
     },
     {
       "name": "THE EMBRACE OF ETERNITY",
@@ -2255,7 +2263,9 @@
         "romantic-art",
         "art-decor"
       ],
-      "content_type": "art-decor"
+      "content_type": "art-decor",
+      "pay_what_you_want": false,
+      "currency": "usd"
     },
     {
       "name": "HARMONY IN MOTION",
@@ -2292,7 +2302,9 @@
         "harmony-art",
         "art-decor"
       ],
-      "content_type": "art-decor"
+      "content_type": "art-decor",
+      "pay_what_you_want": false,
+      "currency": "usd"
     },
     {
       "name": "THE AWAKENING OF GRACE",
@@ -2329,7 +2341,9 @@
         "renewal-art",
         "art-decor"
       ],
-      "content_type": "art-decor"
+      "content_type": "art-decor",
+      "pay_what_you_want": false,
+      "currency": "usd"
     },
     {
       "name": "THE ART OF LIFTING EACH OTHER",
@@ -2366,7 +2380,9 @@
         "solidarity-art",
         "art-decor"
       ],
-      "content_type": "art-decor"
+      "content_type": "art-decor",
+      "pay_what_you_want": false,
+      "currency": "usd"
     },
     {
       "name": "THE GOLDEN THREAD OF CONNECTION",
@@ -2403,7 +2419,9 @@
         "human-connection",
         "art-decor"
       ],
-      "content_type": "art-decor"
+      "content_type": "art-decor",
+      "pay_what_you_want": false,
+      "currency": "usd"
     },
     {
       "name": "EMBRACE OF ETERNITY",
@@ -2440,7 +2458,9 @@
         "romantic-art",
         "art-decor"
       ],
-      "content_type": "art-decor"
+      "content_type": "art-decor",
+      "pay_what_you_want": false,
+      "currency": "usd"
     }
   ],
   "metadata_updated_at": "2026-11-09"
