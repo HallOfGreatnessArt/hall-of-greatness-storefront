@@ -112,19 +112,9 @@ def main():
  if len(results)!=len(generated) or any(x["status"]!="preview_ok" for x in results):
   (OUT/"refresh-report.json").write_text(json.dumps({"generated":len(generated),"published":0,"results":results},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
   raise SystemExit("Safe stop: ebook preview failed; no ebook pages were published.")
- for item in generated:
-  key=item["permalink"]; path=item["file"]
-  r=subprocess.run(["gumroad","products","page","publish",key,path,"--json","--no-input","--non-interactive"],cwd=ROOT,env=ENV,text=True,capture_output=True)
-  raw=r.stdout or r.stderr
-  try: payload=json.loads(raw)
-  except Exception: payload={}
-  if r.returncode or payload.get("success") is False:
-   results.append({"permalink":key,"status":"publish_error","error":raw[-1600:]}); break
-  u=subprocess.run(["gumroad","products","page","url",key,"--json","--jq",".product.landing_url","--no-input","--non-interactive"],cwd=ROOT,env=ENV,text=True,capture_output=True)
-  url=(u.stdout or "").strip().strip('"')
-  results.append({"permalink":key,"status":"published" if u.returncode==0 and url.startswith("https://") else "url_unverified","landing_url":url})
-  if results[-1]["status"]!="published": break
- report={"generated":len(generated),"previewed":sum(x["status"]=="preview_ok" for x in results),"published":sum(x["status"]=="published" for x in results),"errors":sum(x["status"] not in ("preview_ok","published") for x in results),"results":results}
+ # Preview-only safeguard: publishing requires a separate, explicit approval and workflow.
+
+ report={"generated":len(generated),"previewed":sum(x["status"]=="preview_ok" for x in results),"published":0,"errors":sum(x["status"] not in ("preview_ok","published") for x in results),"results":results}
  (OUT/"refresh-report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
  print(json.dumps({k:report[k] for k in ("generated","previewed","published","errors")},ensure_ascii=False))
  if report["errors"]: raise SystemExit(1)
