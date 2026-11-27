@@ -20,9 +20,9 @@ ALLOWED_DETAIL_KEYS={"files_included","product_type","delivery","physical_item",
 def translation_text_is_safe(value, max_length=12000):
     if not isinstance(value,str): return False
     text=value.strip()
-    if not text or len(text)>max_length or re.search(r"(.)\\1{5,}",text,re.I): return False
+    if not text or len(text)>max_length or re.search(r"(.)\1{5,}",text,re.I): return False
     if re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection",text,re.I): return False
-    if re.search(r"[\\uFFFD]|(?:Ã.|Â.|Ø[ء-ي]|Ù[ء-ي])",text): return False
+    if re.search(r"[\uFFFD]|(?:Ã.|Â.|Ø[ء-ي]|Ù[ء-ي])",text): return False
     return True
 def esc(v): return html.escape(str(v or ""),quote=True)
 def js(v): return json.dumps(v,ensure_ascii=False).replace("<","\\u003c").replace(">","\\u003e").replace("&","\\u0026")
