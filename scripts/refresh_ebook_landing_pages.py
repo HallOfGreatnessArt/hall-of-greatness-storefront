@@ -110,7 +110,28 @@ def main():
    except Exception: payload={}
    if r.returncode==0 and payload.get("success") is True:
     report=payload.get("sanitization_report") or {}
-    if report.get("removed_tags")!=[] or report.get("removed_attributes")!=[] or report.get("total_removed")!=0 or report.get("truncated") is not False:
+    # Gumroad's preview sanitizer removes these non-rendering document-head
+    # elements by design. Permit only this exact set; any content, style, or
+    # attribute removal remains a hard safety stop.
+    expected_head_removals = {
+     ("meta", (("charset", "utf-8"),)),
+     ("title", ()),
+     ("meta", (("content", "Bilingual editorial e-book product page from HALL OF GREATNESS Publishing."), ("name", "description"))),
+     ("link", (("href", "data:,"), ("rel", "icon"))),
+    }
+    removed_tags = report.get("removed_tags") or []
+    actual_head_removals = {
+     (entry.get("tag"), tuple(sorted((entry.get("attrs") or {}).items())))
+     for entry in removed_tags
+    }
+    safe_head_only = (
+     len(removed_tags) == len(expected_head_removals)
+     and actual_head_removals == expected_head_removals
+     and report.get("removed_attributes") == []
+     and report.get("total_removed") == len(expected_head_removals)
+     and report.get("truncated") is False
+    )
+    if not safe_head_only:
      results.append({"permalink":key,"status":"blocked_sanitization","report":report}); break
     (OUT/(key+"-preview.json")).write_text(raw,encoding="utf-8")
     results.append({"permalink":key,"status":"preview_ok"}); break
