@@ -40,6 +40,10 @@ jobs:
           grep -qi 'THE AI BLACK BOX' gumroad-landings/the-ai-black-box/landing.html
           grep -q 'data-gumroad-action="buy"' gumroad-landings/the-art-of-stillness/landing.html
           grep -q 'data-gumroad-action="buy"' gumroad-landings/the-ai-black-box/landing.html
+          if grep -Eiq '<meta([[:space:]>])' gumroad-landings/the-art-of-stillness/landing.html gumroad-landings/the-ai-black-box/landing.html; then
+            echo "::error::Generated Gumroad HTML fragments must not contain document-level meta tags."
+            exit 1
+          fi
 
       - name: Preview both approved pages in Gumroad
         env:
@@ -87,9 +91,24 @@ jobs:
           set -euo pipefail
           gumroad products page publish mxrljy gumroad-landings/the-art-of-stillness/landing.html \
             --json --no-input --non-interactive > gumroad-approved-publish-evidence/artwork-publish.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("gumroad-approved-publish-evidence/artwork-publish.json").read_text(encoding="utf-8"))
+          if data.get("success") is not True:
+              raise SystemExit("artwork: publish response did not confirm success; ebook publish blocked.")
+          print("PASS artwork publish response.")
+          PY
           gumroad products page publish qsznm gumroad-landings/the-ai-black-box/landing.html \
             --json --no-input --non-interactive > gumroad-approved-publish-evidence/ebook-publish.json
-          echo "Both Gumroad publish commands completed."
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("gumroad-approved-publish-evidence/ebook-publish.json").read_text(encoding="utf-8"))
+          if data.get("success") is not True:
+              raise SystemExit("ebook: publish response did not confirm success.")
+          print("PASS ebook publish response.")
+          PY
 
       - name: Retrieve and verify both published landing URLs
         env:
@@ -102,12 +121,14 @@ jobs:
             --no-input --non-interactive > gumroad-approved-publish-evidence/ebook-landing-url.txt
           python - <<'PY'
           from pathlib import Path
+          from urllib.parse import urlparse
           root = Path("gumroad-approved-publish-evidence")
           for name in ("artwork", "ebook"):
               value = (root / f"{name}-landing-url.txt").read_text(encoding="utf-8").strip().strip('"')
-              if not value.startswith("https://"):
-                  raise SystemExit(f"{name}: published landing URL could not be verified.")
-              print(f"{name}: {value}")
+              parsed = urlparse(value)
+              if parsed.scheme != "https" or parsed.netloc.lower() != "alshayebemad.gumroad.com" or not parsed.path.startswith("/l/"):
+                  raise SystemExit(f"{name}: landing URL missing or outside the approved Gumroad store.")
+              print(f"PASS {name}: {value}")
           PY
 
       - name: Upload product-specific publishing evidence
