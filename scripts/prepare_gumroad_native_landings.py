@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 """Prepare Gumroad-native landing pages for every live, eligible published product not already completed."""
 from __future__ import annotations
-import html, json, re
+import html, json, os, re
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 CATALOG=json.loads((ROOT/"catalog-data.json").read_text(encoding="utf-8"))
 MANIFEST_PATH=ROOT/"gumroad-landings/automation-manifest.json"
 manifest=json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
-known=set(manifest.get("automatically_published_products",[]))
+known=set(manifest.get("automatically_published_products",[]))|set(manifest.get("excluded_products",[]))
+limit=max(0,int(os.environ.get("GUMROAD_LANDING_LIMIT","0")))
+
 valid_types={"art-decor","ebook","course"}
 pending=[]
 skipped=[]
@@ -32,9 +34,6 @@ def render(p):
     return f"""<!doctype html>
 <html lang="en" data-theme="auto">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="{summary[:250]}">
-<title>{title} | HALL OF GREATNESS</title>
 <style>
 :root{{color-scheme:light dark;--bg:#f5f0e8;--surface:#fffaf2;--ink:#29241e;--muted:#74695b;--gold:#98733b;--line:#dfd3bf}}
 @media(prefers-color-scheme:dark){{:root{{--bg:#141310;--surface:#201d18;--ink:#f5eee2;--muted:#c2b6a3;--gold:#dfbd78;--line:#4b4030}}}}
@@ -82,12 +81,13 @@ a:focus-visible{{outline:3px solid var(--gold);outline-offset:4px}}
 """
 
 for p in CATALOG.get("products",[]):
+    if limit and len(pending)>=limit:
+        break
     key=str(p.get("permalink","")).strip()
     if not p.get("published") or not key or key in known:
         continue
     reasons=[]
     if p.get("content_type") not in valid_types: reasons.append("missing or unsupported content_type")
-    if p.get("pay_what_you_want") is not False: reasons.append("pay-what-you-want status is not verified as fixed-price")
     if not p.get("name") or not p.get("summary") or not p.get("cover_url","").startswith("https://"): reasons.append("missing product name, summary, or HTTPS cover")
     if not p.get("url","").startswith("https://"): reasons.append("missing HTTPS Gumroad product URL")
     if p.get("currency","usd").lower()!="usd": reasons.append("unsupported currency")
