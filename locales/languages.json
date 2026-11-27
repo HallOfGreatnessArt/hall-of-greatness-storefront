@@ -14,665 +14,665 @@
       "name": "Afrikaans",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ig",
       "name": "Asụsụ Igbo",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "az",
       "name": "Azərbaycanca",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "id",
       "name": "Bahasa Indonesia",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ms",
       "name": "Bahasa Melayu",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "jv",
       "name": "Basa Jawa",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "su",
       "name": "Basa Sunda",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "bs",
       "name": "Bosanski",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ca",
       "name": "Català",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ceb",
       "name": "Cebuano",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "cs",
       "name": "Čeština",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ny",
       "name": "Chichewa",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "co",
       "name": "Corsu",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "cy",
       "name": "Cymraeg",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "da",
       "name": "Dansk",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "de",
       "name": "Deutsch",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "et",
       "name": "Eesti",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "es",
       "name": "Español",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "eo",
       "name": "Esperanto",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "eu",
       "name": "Euskara",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "tl",
       "name": "Filipino",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "fr",
       "name": "Français",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "fy",
       "name": "Frysk",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ga",
       "name": "Gaeilge",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "gd",
       "name": "Gàidhlig",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "gl",
       "name": "Galego",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ha",
       "name": "Hausa",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "hr",
       "name": "Hrvatski",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "xh",
       "name": "isiXhosa",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "zu",
       "name": "isiZulu",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "is",
       "name": "Íslenska",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "it",
       "name": "Italiano",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "sw",
       "name": "Kiswahili",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ht",
       "name": "Kreyòl ayisyen",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "lv",
       "name": "Latviešu",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "lb",
       "name": "Lëtzebuergesch",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "lt",
       "name": "Lietuvių",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "hu",
       "name": "Magyar",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "mg",
       "name": "Malagasy",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "mi",
       "name": "Māori",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "nl",
       "name": "Nederlands",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "no",
       "name": "Norsk",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "uz",
       "name": "O‘zbek",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "pl",
       "name": "Polski",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "pt",
       "name": "Português",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ro",
       "name": "Română",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "st",
       "name": "Sesotho",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "sq",
       "name": "Shqip",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "sk",
       "name": "Slovenčina",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "sl",
       "name": "Slovenščina",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "so",
       "name": "Soomaali",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "fi",
       "name": "Suomi",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "sv",
       "name": "Svenska",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "vi",
       "name": "Tiếng Việt",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "tr",
       "name": "Türkçe",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "yo",
       "name": "Yorùbá",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "el",
       "name": "Ελληνικά",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "bg",
       "name": "Български",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ky",
       "name": "Кыргызча",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "kk",
       "name": "Қазақша",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "mk",
       "name": "Македонски",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "mn",
       "name": "Монгол",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ru",
       "name": "Русский",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "sr",
       "name": "Српски",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "tt",
       "name": "Татарча",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "uk",
       "name": "Українська",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ka",
       "name": "ქართული",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "he",
       "name": "עברית",
       "rtl": true,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ug",
       "name": "ئۇيغۇرچە",
       "rtl": true,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ur",
       "name": "اردو",
       "rtl": true,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ar",
       "name": "العربية",
       "rtl": true,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ps",
       "name": "پښتو",
       "rtl": true,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "sd",
       "name": "سنڌي",
       "rtl": true,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "fa",
       "name": "فارسی",
       "rtl": true,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "am",
       "name": "አማርኛ",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ne",
       "name": "नेपाली",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "mr",
       "name": "मराठी",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "hi",
       "name": "हिन्दी",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "bn",
       "name": "বাংলা",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "pa",
       "name": "ਪੰਜਾਬੀ",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "gu",
       "name": "ગુજરાતી",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "or",
       "name": "ଓଡ଼ିଆ",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ta",
       "name": "தமிழ்",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "te",
       "name": "తెలుగు",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "kn",
       "name": "ಕನ್ನಡ",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ml",
       "name": "മലയാളം",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "si",
       "name": "සිංහල",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "th",
       "name": "ไทย",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "lo",
       "name": "ລາວ",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "my",
       "name": "မြန်မာ",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "km",
       "name": "ខ្មែរ",
       "rtl": false,
       "available": false,
-      "availability_note": "translation file/model unavailable or incomplete"
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ko",
       "name": "한국어",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "ja",
       "name": "日本語",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "zh-CN",
       "name": "简体中文",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     },
     {
       "code": "zh-TW",
       "name": "繁體中文",
       "rtl": false,
-      "available": true,
-      "availability_note": "complete UI and product translations"
+      "available": false,
+      "availability_note": "hidden pending human editorial review of every published product translation"
     }
   ]
 }
