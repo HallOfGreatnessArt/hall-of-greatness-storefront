@@ -49,7 +49,6 @@ def render(p):
     data={"translations":tr,"related":related}
     name=esc(p["name"]); cover=esc(p["cover_url"]); summary=esc(p.get("summary",""))
     page=f"""<!doctype html><html lang="en" dir="ltr"><head>
-<meta charset="utf-8">
 <style>
 :root{{--bg:#141310;--surface:#201d18;--ink:#f5eee2;--muted:#d0c5b4;--gold:#dfbd78;--line:#514634}}
 *{{box-sizing:border-box}}html{{scroll-behavior:smooth}}body{{margin:0;background:var(--bg);color:var(--ink);font:18px/1.8 Georgia,"Times New Roman",serif}}a{{color:var(--gold)}}.shell{{width:min(980px,calc(100% - 40px));margin:auto}}
