@@ -21,9 +21,11 @@ outcomes=[]
 
 def run(args, output_path):
     result=subprocess.run(args,cwd=ROOT,env=env,text=True,capture_output=True)
-    output_path.write_text(result.stdout or "",encoding="utf-8")
+    safe_stdout=(result.stdout or "").replace(token,"[REDACTED]")
+    output_path.write_text(safe_stdout,encoding="utf-8")
     if result.returncode:
-        (output_path.with_suffix(output_path.suffix+".stderr.txt")).write_text(result.stderr or "",encoding="utf-8")
+        safe_stderr=(result.stderr or "").replace(token,"[REDACTED]")
+        (output_path.with_suffix(output_path.suffix+".stderr.txt")).write_text(safe_stderr,encoding="utf-8")
         raise RuntimeError(f"command failed with exit code {result.returncode}")
     return result.stdout
 
