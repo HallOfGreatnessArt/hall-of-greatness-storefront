@@ -65,7 +65,7 @@ def main() -> None:
             check(actual_urls == expected_urls, f"{key}: related-book links do not match the verified five-book bundle")
 
             page.select_option("#lang", "ar")
-            page.wait_for_function("(expected) => document.documentElement.lang === 'ar' && document.documentElement.dir === 'rtl' && document.querySelector('#title')?.textContent === expected", arabic["title"])
+            page.wait_for_function("(expected) => document.documentElement.lang === 'ar' && document.documentElement.dir === 'rtl' && document.querySelector('#title')?.textContent === expected", arg=arabic["title"])
             actual_arabic_title = page.locator("#title").text_content()
             check(actual_arabic_title == arabic["title"], f"{key}: Arabic title mismatch; expected={arabic['title']!r}, actual={actual_arabic_title!r}")
             check(page.title() == arabic["title"] + " | HALL OF GREATNESS Publishing", f"{key}: Arabic document title metadata mismatch")
