@@ -2,3 +2,4 @@ Owner-authorized rollout: generate, preview, verify, and publish independent Gum
 Pilot 1 eligible published product first; verify Gumroad sanitizer before continuing to the remaining catalogue.
 Full rollout: process all remaining currently published eligible products after successful one-product sanitizer pilot.
 Retry full eligible landing-page rollout after fixing GitHub main-branch persistence race (re-preview and verify existing Gumroad custom pages, then persist every source and manifest entry).
+Retry persistence after enabling git rebase --autostash; publish any eligible products not already completed and commit verified sources plus manifest.
