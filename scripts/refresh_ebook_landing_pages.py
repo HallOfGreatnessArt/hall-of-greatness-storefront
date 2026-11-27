@@ -17,7 +17,7 @@ def esc(v): return html.escape(str(v or ""),quote=True)
 def js(v): return json.dumps(v,ensure_ascii=False).replace("<","\\u003c").replace(">","\\u003e").replace("&","\\u0026")
 def render(key):
  p=PRODUCTS[key]; c=COPY[key]
- data={"product":{"name":p["name"],"price":p.get("price_usd"),"url":p["url"],"cover":p["cover_url"]},"translations":c}
+ data={"key":key,"product":{"name":p["name"],"price":p.get("price_usd"),"url":p["url"],"cover":p["cover_url"]},"translations":c}
  return TEMPLATE.replace("__DATA__",js(data))
 TEMPLATE=r"""<!doctype html><html lang="en" dir="ltr"><head>
 <style>
@@ -75,7 +75,6 @@ function render(code){
  el("cover").src=DATA.product.cover;el("cover").alt=t.title+" book cover";
  const price="$"+Number(DATA.product.price).toFixed(2)+" USD";el("price").textContent=price;el("priceBottom").textContent=price;
 }
-DATA.key=Object.keys(DATA.translations)[0] && DATA.key;
 render("en");
 el("lang").addEventListener("change",e=>render(e.target.value));
 </script></body></html>"""
