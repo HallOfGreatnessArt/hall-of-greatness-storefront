@@ -1,0 +1,80 @@
+name: Auto-publish Gumroad Landing Pages for Future Products
+
+on:
+  workflow_run:
+    workflows:
+      - Publish HALL OF GREATNESS storefront
+    types:
+      - completed
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gumroad-future-landing-pages
+  cancel-in-progress: false
+
+jobs:
+  discover-preview-publish:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out the refreshed storefront catalogue
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Install Gumroad CLI
+        run: |
+          set -euo pipefail
+          curl -fsSL https://gumroad.com/install-cli.sh | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          command -v gumroad
+          gumroad --help >/dev/null
+
+      - name: Generate landing pages for eligible products added after automation baseline
+        run: |
+          set -euo pipefail
+          python scripts/prepare_gumroad_native_landings.py
+
+      - name: Preview, verify sanitization, and publish eligible new products
+        env:
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+        run: |
+          set -euo pipefail
+          python scripts/publish_pending_gumroad_landings.py
+
+      - name: Commit only successfully published page sources and manifest
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add gumroad-landings/automation-manifest.json
+          python - <<'PY'
+          import json
+          import subprocess
+          from pathlib import Path
+          report = json.loads(Path("gumroad-landing-evidence/automation-report.json").read_text(encoding="utf-8"))
+          for item in report.get("results", []):
+              if item.get("status") == "published":
+                  subprocess.run(["git", "add", "--", item["landing_file"]], check=True)
+          if subprocess.run(["git", "diff", "--cached", "--quiet"]).returncode != 0:
+              subprocess.run(["git", "commit", "-m", "Publish Gumroad landing pages for newly published products"], check=True)
+              subprocess.run(["git", "push", "origin", "HEAD:main"], check=True)
+          else:
+              print("No newly published landing page sources or manifest changes to commit.")
+          PY
+
+      - name: Upload automation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gumroad-future-landing-automation-evidence
+          path: gumroad-landing-evidence/
+          if-no-files-found: warn
+          retention-days: 30
