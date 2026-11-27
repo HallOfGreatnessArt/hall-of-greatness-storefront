@@ -94,6 +94,22 @@ for entry in registry.get("languages", []):
             file_copy = str((item.get("product_details") or {}).get("files_included", ""))
             if re.search(r"(?:\b\d+ files?\b|\bMB\b|\bKB\b|للزدحام|::|DF, TXT)", file_copy, re.I):
                 warnings.append(f"{code}/{slug}: file-included metadata is not fully localized or may be corrupted")
+        # Reject obvious scraped Gumroad chrome and placeholder/corruption
+        # in all customer-facing translation fields, not merely warn about it.
+        for field, value in (item.get("product_details") or {}).items():
+            if isinstance(value, str) and (
+                len(value) > 500
+                or re.search(r"(.)\\1{5,}", value, re.I)
+                or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection", value, re.I)
+            ):
+                errors.append(f"{code}/{slug}: unsafe or page-scraped product_details.{field}")
+        if item.get("_translation_status") == "editorially-reviewed":
+            for field in ("summary", "full_description", "category"):
+                approved_value = str(item.get(field, ""))
+                if re.search(r"(.)\\1{5,}", approved_value, re.I):
+                    errors.append(f"{code}/{slug}: repeated-character corruption in approved {field}")
+                if re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection", approved_value, re.I):
+                    errors.append(f"{code}/{slug}: Gumroad page chrome leaked into approved {field}")
         for field in ("summary", "full_description", "category"):
             value = item.get(field)
             if not isinstance(value, str) or not value.strip():
