@@ -159,6 +159,7 @@ for lang in REG:
             if k=="detail": item.setdefault("product_details",{})[dk]=value
             else: item[k]=value
         item["_source_hash"]=source_hash
+        item["_translation_status"]="machine-generated-unreviewed"
         products[key]=item
 
     # Arabic product cards require a localized display title in addition to
