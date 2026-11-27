@@ -4,7 +4,7 @@
       "title": "THE AI POWER GAME",
       "subtitle": "UNDERSTAND • ADAPT • THRIVE",
       "strapline": "A practical guide to the forces reshaping the new intelligence age.",
-      "overview": "Artificial intelligence is transforming economies, businesses, careers, information, security, and the balance of global influence. Understanding this shift requires more than headlines or technical jargon. This book connects the systems behind AI with their economic, professional, social, and geopolitical consequences—and examines how individuals and organizations can respond thoughtfully.",
+      "overview": "Artificial intelligence is reshaping how economies grow, businesses compete, people work, information circulates, and nations exercise influence. Yet the headlines rarely explain the systems beneath these changes. This book connects the foundations of AI—data, models, computing, and infrastructure—to their consequences for markets, careers, institutions, and society. It explores both the opportunities and the difficult questions around trust, security, responsibility, and human contribution. The aim is practical understanding: helping readers recognize what is changing, ask better questions, and make more informed choices.",
       "explore": [
         "The rise of the AI-driven economy and the forces accelerating adoption.",
         "How modern AI systems work, learn, and produce outputs.",
@@ -40,7 +40,7 @@
       "title": "لعبة الذكاء الاصطناعي",
       "subtitle": "افهم • تكيف • انطلق",
       "strapline": "دليل عملي لفهم القوى التي تعيد تشكيل عصر الذكاء الاصطناعي.",
-      "overview": "يعيد الذكاء الاصطناعي تشكيل الاقتصادات والأعمال والمهن والمعلومات والأمن وموازين النفوذ العالمي. وفهم هذا التحول يتطلب أكثر من متابعة العناوين الرائجة أو الإحاطة بالمصطلحات التقنية. يربط هذا الكتاب بين الأنظمة التي تقوم عليها تقنيات الذكاء الاصطناعي وبين آثارها الاقتصادية والمهنية والاجتماعية والجيوسياسية، ويبحث في الخيارات المتاحة للأفراد والمؤسسات للاستجابة لهذا التحول بوعي.",
+      "overview": "يعيد الذكاء الاصطناعي تشكيل نمو الاقتصادات، ومنافسة الشركات، وطبيعة العمل، وتداول المعلومات، وموازين النفوذ بين الدول. لكن العناوين اليومية نادرًا ما تشرح الأنظمة التي تقف وراء هذه التحولات. يربط هذا الكتاب أسس الذكاء الاصطناعي، من البيانات والنماذج إلى الحوسبة والبنية التحتية، بتأثيراتها في الأسواق والمهن والمؤسسات والمجتمع. كما يتناول الفرص والأسئلة الصعبة المتعلقة بالثقة والأمن والمسؤولية ودور الإنسان. وغايته تقديم فهم عملي يساعد القارئ على إدراك ما يتغير، وطرح أسئلة أفضل، واتخاذ قرارات أكثر وعيًا.",
       "explore": [
         "صعود اقتصاد الذكاء الاصطناعي والعوامل التي تسرّع انتشاره.",
         "كيفية عمل أنظمة الذكاء الاصطناعي الحديثة وتعلّمها وإنتاج مخرجاتها.",
@@ -78,7 +78,7 @@
       "title": "THE AI BLACK BOX",
       "subtitle": "Understanding the Hidden Systems Behind Artificial Intelligence",
       "strapline": "Look beyond the answer. Examine the systems, evidence, and limits behind AI.",
-      "overview": "AI can produce a fluent answer, but that does not mean we understand how it reached that answer—or whether it deserves our trust. This book examines the inner workings and surrounding infrastructure of modern AI, what can be measured and explained, where uncertainty remains, and why human judgment and accountability still matter.",
+      "overview": "An AI system may sound certain while offering little visibility into how its answer was produced. THE AI BLACK BOX explores that gap between fluent output and genuine understanding. It examines how models are trained, how data and computing infrastructure shape their capabilities, what benchmarks and explanations can—and cannot—tell us, and where bias, uncertainty, and confident errors arise. It also considers newer challenges involving AI agents, delegated permissions, prompt injection, and human oversight. Readers are equipped to question performance claims and assess when reliance on an AI system is justified.",
       "explore": [
         "Opacity and transparency: what AI systems reveal, conceal, and make difficult to know.",
         "Models, training data, pattern learning, and generalization.",
@@ -104,7 +104,7 @@
       "title": "الصندوق الأسود للذكاء الاصطناعي",
       "subtitle": "فهم الأنظمة الخفية وراء الذكاء الاصطناعي",
       "strapline": "تجاوز الإجابة الظاهرة وافحص الأنظمة والأدلة والحدود التي تقف وراءها.",
-      "overview": "قد يقدم الذكاء الاصطناعي إجابة متماسكة، لكن ذلك لا يعني أننا نفهم كيف توصّل إليها أو ما إذا كان من الحكمة الوثوق بها. يتناول هذا الكتاب البنية الداخلية للأنظمة الحديثة والبنية التحتية التي تدعمها، وما يمكن قياسه وتفسيره، وما يظل محاطًا بعدم اليقين، ولماذا تظل أحكام الإنسان والمساءلة ضرورية.",
+      "overview": "قد يبدو نظام الذكاء الاصطناعي واثقًا من إجابته، بينما لا يكشف لنا إلا القليل عن كيفية إنتاجها. يستكشف كتاب «الصندوق الأسود للذكاء الاصطناعي» الفجوة بين المخرجات المتماسكة والفهم الحقيقي لما يجري داخل النظام. ويتناول تدريب النماذج، ودور البيانات والقدرات الحاسوبية، وما تستطيع المعايير والتفسيرات إثباته وما تعجز عنه، ومصادر التحيز وعدم اليقين والأخطاء الواثقة. كما يناقش تحديات وكلاء الذكاء الاصطناعي والصلاحيات المفوضة وحقن التعليمات والرقابة البشرية. والغاية أن يمتلك القارئ أدوات نقدية لفحص ادعاءات الأداء وتقدير متى يكون الاعتماد على النظام مبررًا.",
       "explore": [
         "الغموض والشفافية: ما تكشفه أنظمة الذكاء الاصطناعي وما تخفيه وما يصعب التحقق منه.",
         "النماذج وبيانات التدريب وتعلّم الأنماط والقدرة على التعميم.",
@@ -132,7 +132,7 @@
       "title": "THE HUMANITY TEST",
       "subtitle": "Can Humanity Remain Human in the Age of Superintelligence?",
       "strapline": "A human-centred inquiry into the values technology must not displace.",
-      "overview": "As artificial intelligence becomes more capable, the defining question is not only what machines may do, but what people and societies must protect. This book examines dignity, identity, consciousness, relationships, privacy, freedom, and agency—and asks how human values can remain central as technological power grows.",
+      "overview": "As artificial intelligence grows more capable, the central question is not simply what machines will be able to do. It is what people must preserve as technological power expands. THE HUMANITY TEST examines the values that shape a meaningful human life: dignity, identity, consciousness, emotion, relationships, care, privacy, freedom, and the ability to choose. It considers how these values may be challenged by increasingly capable systems, and what individuals, institutions, and societies can do to keep human well-being and agency at the centre of decisions about the future.",
       "explore": [
         "Human worth, dignity, and the meaning of progress.",
         "Identity, selfhood, memory, and personal narratives.",
@@ -158,7 +158,7 @@
       "title": "اختبار الإنسانية",
       "subtitle": "هل تستطيع الإنسانية أن تظل إنسانية في عصر الذكاء الفائق؟",
       "strapline": "بحث يتمحور حول الإنسان والقيم التي ينبغي ألا تزيحها التكنولوجيا.",
-      "overview": "مع تزايد قدرات الذكاء الاصطناعي، لا يقتصر السؤال الحاسم على ما تستطيع الآلات فعله، بل يمتد إلى ما ينبغي للإنسان والمجتمعات حمايته. يتناول هذا الكتاب الكرامة والهوية والوعي والعلاقات والخصوصية والحرية والقدرة على الاختيار، ويسأل كيف يمكن أن تظل القيم الإنسانية في قلب التقدم مع اتساع القوة التكنولوجية.",
+      "overview": "كلما ازدادت قدرات الذكاء الاصطناعي، لم يعد السؤال الأساسي مقتصرًا على ما ستستطيع الآلات فعله، بل أصبح متعلقًا بما ينبغي للإنسان أن يحافظ عليه مع اتساع القوة التكنولوجية. يتناول كتاب «اختبار الإنسانية» القيم التي تمنح الحياة معناها: الكرامة والهوية والوعي والعاطفة والعلاقات والرعاية والخصوصية والحرية والقدرة على الاختيار. ويناقش كيف يمكن أن تواجه هذه القيم تحديات جديدة، وما الذي يستطيع الأفراد والمؤسسات والمجتمعات فعله حتى تظل رفاهية الإنسان وفاعليته في صميم القرارات التي ترسم المستقبل.",
       "explore": [
         "قيمة الإنسان وكرامته ومعنى التقدم.",
         "الهوية والذات والذاكرة والسرديات الشخصية.",
@@ -186,7 +186,7 @@
       "title": "THE ALGORITHM EMPIRE",
       "subtitle": "Who Controls the Intelligence That Controls Our World?",
       "strapline": "An investigation of the infrastructure and institutions behind algorithmic power.",
-      "overview": "Artificial intelligence is not only a technological breakthrough. It is infrastructure, economic force, and an arena of global power. Its reach depends on data, chips, computing capacity, platforms, energy, capital, and rules. This book investigates who controls these foundations—and what that control means for countries, institutions, businesses, and individuals.",
+      "overview": "Artificial intelligence is also an infrastructure of power. Its influence rests on data, semiconductors, computing capacity, cloud platforms, energy, capital, and the rules that govern access to them. THE ALGORITHM EMPIRE follows these foundations to examine who owns, controls, and depends on the systems shaping the digital world. It connects technological concentration with economic competition, national security, digital sovereignty, surveillance, and public accountability. Rather than treating AI as an isolated invention, the book asks how control over its underlying infrastructure can affect countries, institutions, businesses, and everyday life.",
       "explore": [
         "The foundations of algorithmic power and data as a strategic resource.",
         "Semiconductors, computing capacity, cloud infrastructure, data centres, and energy.",
@@ -212,7 +212,7 @@
       "title": "إمبراطورية الخوارزميات",
       "subtitle": "من يسيطر على الذكاء الذي يعيد تشكيل عالمنا؟",
       "strapline": "تحقيق في البنية التحتية والمؤسسات التي تقوم عليها القوة الخوارزمية.",
-      "overview": "ليس الذكاء الاصطناعي مجرد إنجاز تقني؛ إنه بنية تحتية وقوة اقتصادية وساحة جديدة للتنافس العالمي. وتعتمد أنظمته على البيانات والرقائق والقدرات الحاسوبية والمنصات والطاقة ورأس المال والقواعد المنظمة. يبحث هذا الكتاب في الجهات التي تسيطر على هذه الأسس، وما تعنيه هذه السيطرة للدول والمؤسسات والشركات والأفراد.",
+      "overview": "الذكاء الاصطناعي ليس تقنية مستقلة فحسب، بل أصبح أيضًا بنية تحتية للقوة. ويستند نفوذه إلى البيانات وأشباه الموصلات والقدرات الحاسوبية والمنصات السحابية والطاقة ورأس المال والقواعد التي تنظم الوصول إلى هذه الموارد. يتتبع كتاب «إمبراطورية الخوارزميات» هذه الأسس لبحث الجهات التي تملك الأنظمة التي تشكل العالم الرقمي وتتحكم فيها، والجهات التي تعتمد عليها. ويربط تركّز القوة التكنولوجية بالمنافسة الاقتصادية والأمن القومي والسيادة الرقمية والمراقبة والمساءلة العامة، ويسأل كيف تؤثر السيطرة على البنية التحتية في الدول والمؤسسات والشركات والحياة اليومية.",
       "explore": [
         "أسس القوة الخوارزمية والبيانات بوصفها موردًا استراتيجيًا.",
         "أشباه الموصلات والقدرات الحاسوبية والحوسبة السحابية ومراكز البيانات والطاقة.",
@@ -240,7 +240,7 @@
       "title": "THE LAST JOB",
       "subtitle": "How AI Will Transform Work—and What Humans Must Do Next",
       "strapline": "A clear-eyed examination of work, workers, and the choices behind a fair transition.",
-      "overview": "Artificial intelligence is changing the tasks people perform, the skills employers seek, and the organization of work. But the future is not a simple story of jobs disappearing or effortless prosperity. This book distinguishes task exposure from job-loss predictions and examines how workers, employers, educators, businesses, and governments can shape a fair, human-centred transition.",
+      "overview": "AI is changing the tasks people perform, the skills employers value, and the way organizations structure work. But neither mass job loss nor effortless prosperity is a reliable description of what comes next. THE LAST JOB separates task automation from claims about entire occupations, and examines how technology may reshape productivity, job quality, wages, opportunity, and inequality. It considers the choices facing workers, employers, educators, businesses, and governments—and the policies and practical responses that can support a fair transition in which people retain dignity, voice, and opportunity.",
       "explore": [
         "Why a job is more than a list of tasks—and why task exposure is not a forecast of job loss.",
         "The shift from automation to collaboration and the organizational choices behind it.",
@@ -266,7 +266,7 @@
       "title": "الوظيفة الأخيرة",
       "subtitle": "كيف سيحوّل الذكاء الاصطناعي عالم العمل، وما الذي ينبغي للبشر فعله بعد ذلك؟",
       "strapline": "قراءة واقعية لمستقبل العمل والعاملين والخيارات التي تصنع انتقالًا عادلًا.",
-      "overview": "يغيّر الذكاء الاصطناعي المهام التي يؤديها الناس والمهارات التي يبحث عنها أصحاب الأعمال وطرق تنظيم بيئات العمل. لكن المستقبل ليس حكاية بسيطة عن اختفاء الوظائف أو ازدهار يتحقق بلا جهد. يميّز هذا الكتاب بين قابلية المهام للتأثر بالأتمتة وبين التنبؤ بفقدان الوظائف، ويدرس كيف يستطيع العاملون وأصحاب الأعمال والمعلمون والشركات والحكومات تشكيل انتقال عادل يتمحور حول الإنسان.",
+      "overview": "يغيّر الذكاء الاصطناعي المهام التي يؤديها الناس، والمهارات التي يقدّرها أصحاب الأعمال، والطريقة التي تنظم بها المؤسسات العمل. لكن اختفاء الوظائف على نطاق واسع أو تحقق الازدهار بلا جهد ليس وصفًا موثوقًا لما ينتظرنا. يميّز كتاب «الوظيفة الأخيرة» بين أتمتة بعض المهام والادعاء باختفاء مهن كاملة، ويناقش أثر التقنية في الإنتاجية وجودة الوظائف والأجور والفرص واللامساواة. كما يستعرض الخيارات المطروحة أمام العاملين وأصحاب الأعمال والمعلمين والشركات والحكومات، والسياسات والاستجابات العملية التي يمكن أن تدعم انتقالًا عادلًا يحفظ للإنسان كرامته وصوته وفرصته.",
       "explore": [
         "لماذا تتجاوز الوظيفة مجرد قائمة من المهام، ولماذا لا تعني قابلية المهمة للأتمتة حتمية فقدان الوظيفة.",
         "الانتقال من الأتمتة إلى التعاون، والقرارات التنظيمية التي تحدد شكل هذا التحول.",
@@ -294,7 +294,7 @@
       "title": "THE AI AGE",
       "subtitle": "THE COMPLETE FIVE-BOOK COLLECTION",
       "strapline": "Five essential books. One connected journey through the age of artificial intelligence.",
-      "overview": "A coordinated five-book collection examining artificial intelligence from complementary perspectives: its foundations, hidden systems, implications for humanity, global technological power, and the future of work. Together, the books connect technical developments with economic, social, ethical, and institutional choices.",
+      "overview": "THE AI AGE brings together five complementary books to create a broader view of artificial intelligence and the choices surrounding it. The collection moves from the foundations and hidden workings of AI to its implications for human values, the global infrastructure of technological power, and the future of work. Each volume approaches a different part of the same transformation; together, they connect technical developments with economic, social, ethical, and institutional questions. This is a structured reading journey for anyone who wants more than isolated headlines or a single perspective on AI.",
       "explore": [
         "THE AI POWER GAME — understand the foundations and consequences of the new intelligence age.",
         "THE AI BLACK BOX — examine hidden systems, evaluation, explainability, and oversight.",
@@ -319,7 +319,7 @@
       "title": "عصر الذكاء الاصطناعي",
       "subtitle": "المجموعة الكاملة المكوّنة من خمسة كتب",
       "strapline": "خمسة كتب أساسية، ورحلة معرفية مترابطة عبر عصر الذكاء الاصطناعي.",
-      "overview": "مجموعة متكاملة من خمسة كتب تتناول الذكاء الاصطناعي من زوايا متكاملة: أسسه، وأنظمته الخفية، وآثاره على الإنسانية، وموازين القوة التكنولوجية العالمية، ومستقبل العمل. وتربط الكتب مجتمعةً بين التطورات التقنية والاختيارات الاقتصادية والاجتماعية والأخلاقية والمؤسسية التي ترسم ملامح المستقبل.",
+      "overview": "يجمع كتاب «عصر الذكاء الاصطناعي» خمسة كتب متكاملة لتقديم رؤية أوسع للتقنية والاختيارات التي تفرضها على الإنسان والمجتمع. تنتقل المجموعة من أسس الذكاء الاصطناعي وأنظمته الخفية إلى آثاره في القيم الإنسانية، ثم البنية التحتية للقوة التكنولوجية العالمية ومستقبل العمل. يتناول كل كتاب جانبًا مختلفًا من التحول نفسه، بينما تربط الكتب مجتمعةً التطورات التقنية بالأسئلة الاقتصادية والاجتماعية والأخلاقية والمؤسسية. إنها رحلة قراءة مترابطة لمن يريد تجاوز العناوين المتفرقة والنظرة الأحادية إلى فهم أعمق وأكثر توازنًا.",
       "explore": [
         "THE AI POWER GAME — فهم أسس عصر الذكاء الاصطناعي الجديد وتداعياته.",
         "THE AI BLACK BOX — فحص الأنظمة الخفية والتقييم وقابلية التفسير والرقابة.",

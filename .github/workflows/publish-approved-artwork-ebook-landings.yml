@@ -1,0 +1,120 @@
+name: Publish Approved Artwork and Ebook Landing Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish-approved-artwork-and-ebook-landings
+  cancel-in-progress: false
+
+jobs:
+  publish-approved-products:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Check out approved storefront source
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Install Gumroad CLI
+        run: |
+          set -euo pipefail
+          curl -fsSL https://gumroad.com/install-cli.sh | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          command -v gumroad
+          gumroad --help >/dev/null
+
+      - name: Generate only the two approved product pages locally
+        run: |
+          set -euo pipefail
+          PREVIEW_PERMALINK=mxrljy python scripts/refresh_gumroad_landing_pages.py --local-only
+          PREVIEW_PERMALINK=qsznm python scripts/refresh_gumroad_landing_pages.py --local-only
+          test -s gumroad-landings/the-art-of-stillness/landing.html
+          test -s gumroad-landings/the-ai-black-box/landing.html
+          grep -q 'THE ART OF STILLNESS' gumroad-landings/the-art-of-stillness/landing.html
+          grep -qi 'THE AI BLACK BOX' gumroad-landings/the-ai-black-box/landing.html
+          grep -q 'data-gumroad-action="buy"' gumroad-landings/the-art-of-stillness/landing.html
+          grep -q 'data-gumroad-action="buy"' gumroad-landings/the-ai-black-box/landing.html
+
+      - name: Preview both approved pages in Gumroad
+        env:
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+        run: |
+          set -euo pipefail
+          test -n "${GUMROAD_ACCESS_TOKEN:-}" || {
+            echo "::error::GUMROAD_ACCESS_TOKEN is not configured."
+            exit 1
+          }
+          mkdir -p gumroad-approved-publish-evidence
+          gumroad products page preview mxrljy gumroad-landings/the-art-of-stillness/landing.html \
+            --json --no-input --non-interactive > gumroad-approved-publish-evidence/artwork-preview.json
+          gumroad products page preview qsznm gumroad-landings/the-ai-black-box/landing.html \
+            --json --no-input --non-interactive > gumroad-approved-publish-evidence/ebook-preview.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path("gumroad-approved-publish-evidence")
+          for name in ("artwork", "ebook"):
+              path = root / f"{name}-preview.json"
+              data = json.loads(path.read_text(encoding="utf-8"))
+              if data.get("success") is not True:
+                  raise SystemExit(f"{name}: Gumroad preview did not report success.")
+              report = data.get("sanitization_report")
+              if not isinstance(report, dict):
+                  raise SystemExit(f"{name}: missing sanitization report; publishing blocked.")
+              if (report.get("removed_tags") != []
+                  or report.get("removed_attributes") != []
+                  or report.get("total_removed") != 0
+                  or report.get("truncated") is not False):
+                  raise SystemExit(f"{name}: sanitization is not clean; publishing both pages is blocked.")
+              (root / f"{name}-sanitization-report.json").write_text(
+                  json.dumps(report, ensure_ascii=False, indent=2) + "\\n",
+                  encoding="utf-8"
+              )
+              print(f"PASS {name}: preview clean; zero removals; not truncated.")
+          PY
+
+      - name: Publish the two prevalidated pages
+        env:
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+        run: |
+          set -euo pipefail
+          gumroad products page publish mxrljy gumroad-landings/the-art-of-stillness/landing.html \
+            --json --no-input --non-interactive > gumroad-approved-publish-evidence/artwork-publish.json
+          gumroad products page publish qsznm gumroad-landings/the-ai-black-box/landing.html \
+            --json --no-input --non-interactive > gumroad-approved-publish-evidence/ebook-publish.json
+          echo "Both Gumroad publish commands completed."
+
+      - name: Retrieve and verify both published landing URLs
+        env:
+          GUMROAD_ACCESS_TOKEN: ${{ secrets.GUMROAD_ACCESS_TOKEN }}
+        run: |
+          set -euo pipefail
+          gumroad products page url mxrljy --json --jq '.product.landing_url' \
+            --no-input --non-interactive > gumroad-approved-publish-evidence/artwork-landing-url.txt
+          gumroad products page url qsznm --json --jq '.product.landing_url' \
+            --no-input --non-interactive > gumroad-approved-publish-evidence/ebook-landing-url.txt
+          python - <<'PY'
+          from pathlib import Path
+          root = Path("gumroad-approved-publish-evidence")
+          for name in ("artwork", "ebook"):
+              value = (root / f"{name}-landing-url.txt").read_text(encoding="utf-8").strip().strip('"')
+              if not value.startswith("https://"):
+                  raise SystemExit(f"{name}: published landing URL could not be verified.")
+              print(f"{name}: {value}")
+          PY
+
+      - name: Upload product-specific publishing evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: approved-artwork-ebook-publish-evidence
+          path: gumroad-approved-publish-evidence/
+          if-no-files-found: warn
+          retention-days: 30
