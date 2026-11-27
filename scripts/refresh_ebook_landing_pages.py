@@ -38,14 +38,14 @@ a:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-off
 </style></head><body><div class="shell">
 <header><a class="brand" href="https://alshayebemad.gumroad.com/">HALL OF <span>GREATNESS</span> PUBLISHING</a><div class="controls"><label for="lang" id="langLabel">Language</label><select id="lang" aria-label="Language"><option value="en">English</option><option value="ar">العربية</option></select></div></header>
 <main>
-<section class="hero"><div class="cover-frame"><img class="cover" id="cover" alt="" loading="eager"></div><div class="hero-copy"><div class="eyebrow">HALL OF GREATNESS PUBLISHING · DIGITAL BOOK</div><h1 id="title"></h1><div class="subtitle" id="subtitle"></div><p class="strapline" id="strapline"></p><p class="overview" id="overview"></p><div class="price-row"><div class="price" id="price"></div><a class="buy" id="buy" href="#" data-gumroad-action="buy">Get the book</a></div><p class="delivery-note" id="deliveryNote">Digital edition · Instant delivery through Gumroad · No physical book will be shipped.</p></div></section>
+<section class="hero"><div class="cover-frame"><img class="cover" id="cover" alt="" loading="eager"></div><div class="hero-copy"><div class="eyebrow">HALL OF GREATNESS PUBLISHING · DIGITAL BOOK</div><h1 id="title"></h1><div class="subtitle" id="subtitle"></div><p class="strapline" id="strapline"></p><p class="overview" id="overview"></p><div class="price-row"><div class="price" id="price"></div><a class="buy" id="buy" href="#" data-gumroad-action="buy" data-gumroad-single-product="true">Get the book</a></div><p class="delivery-note" id="deliveryNote">Digital edition · Instant delivery through Gumroad · No physical book will be shipped.</p></div></section>
 <section class="section"><div class="section-inner"><div class="section-label" id="exploreLabel">SUBJECTS AND THEMES</div><h2 id="exploreHeading">What the book examines</h2><ul class="bullet-list" id="explore"></ul></div></section>
 <section class="section"><div class="section-inner"><div class="section-label" id="takeawayLabel">READER VALUE</div><h2 id="takeawayHeading">What you will gain</h2><ul class="bullet-list" id="takeaways"></ul></div></section>
 <section class="section"><div class="section-inner"><div class="section-label" id="audienceLabel">INTENDED READERS</div><h2 id="audienceHeading">Who should read this book?</h2><p id="audience"></p></div></section>
 <section class="section"><div class="section-inner"><div class="section-label" id="editionLabel">EDITION AND DELIVERY</div><h2 id="editionHeading">Edition information</h2><div class="meta-grid" id="meta"></div></div></section>
 <section class="section" id="packageSection"><div class="section-inner"><div class="section-label" id="packageLabel">YOUR DOWNLOAD</div><h2 id="packageHeading">Files included</h2><ol class="package-list" id="package"></ol></div></section>
 <section class="section" id="collectionSection"><div class="section-inner"><div class="section-label" id="collectionLabel">THE COMPLETE COLLECTION</div><h2 id="collectionHeading">Explore the five-book series</h2><div class="book-links" id="bookLinks"></div></div></section>
-<section class="purchase"><div class="section-label" id="closingLabel">CONTINUE YOUR READING</div><h2 id="closingTitle"></h2><p id="closingText"></p><div class="price" id="priceBottom"></div><a class="buy" id="buyBottom" href="#" data-gumroad-action="buy">Get the book</a><div class="trust" id="trust">Secure checkout through Gumroad · Digital delivery</div></section>
+<section class="purchase"><div class="section-label" id="closingLabel">CONTINUE YOUR READING</div><h2 id="closingTitle"></h2><p id="closingText"></p><div class="price" id="priceBottom"></div><a class="buy" id="buyBottom" href="#" data-gumroad-action="buy" data-gumroad-single-product="true">Get the book</a><div class="trust" id="trust">Secure checkout through Gumroad · Digital delivery</div></section>
 </main><footer><span>HALL OF GREATNESS Publishing · EMAD ALSHAYEB</span><span>Knowledge with Purpose.</span></footer></div>
 <script>
 const DATA=__DATA__;
@@ -80,7 +80,7 @@ function render(code){
  el("packageSection").hidden=!t.package.length;el("collectionSection").hidden=DATA.product.name.indexOf("COLLECTION")<0;
  const links=el("bookLinks");links.replaceChildren();BOOKS.forEach(([id,name,url])=>{if(id===DATA.key)return;const a=document.createElement("a");a.href=url;a.textContent=name;links.append(a)});
  el("cover").src=DATA.product.cover;el("cover").alt=t.title+" book cover";
-el("buy").href=DATA.product.url;el("buyBottom").href=DATA.product.url;
+const checkoutUrl=DATA.product.url+(DATA.product.url.includes("?")?"&":"?")+"wanted=true";el("buy").href=checkoutUrl;el("buyBottom").href=checkoutUrl;
  const price="$"+Number(DATA.product.price).toFixed(2)+" USD";el("price").textContent=price;el("priceBottom").textContent=price;
 }
 render("en");
