@@ -23,6 +23,7 @@ def render(key):
  data={"key":key,"product":{"name":p["name"],"price":p.get("price_usd"),"url":p["url"],"cover":p["cover_url"]},"translations":c}
  return TEMPLATE.replace("__DATA__",js(data))
 TEMPLATE=r"""<!doctype html><html lang="en" dir="ltr"><head>
+<meta charset="utf-8">
 <title>HALL OF GREATNESS Publishing — E-book</title><meta name="description" content="Bilingual editorial e-book product page from HALL OF GREATNESS Publishing."><link rel="icon" href="data:,">
 <style>
 :root{--bg:#10151b;--panel:#18212b;--ink:#f5f3ee;--muted:#c6cbd1;--accent:#d9b879;--line:#35414d}
