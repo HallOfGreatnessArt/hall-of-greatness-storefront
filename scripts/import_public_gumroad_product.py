@@ -144,10 +144,10 @@ def fetch_public_page(url):
 def detail_between(text, start, end):
     # A missing closing label must never consume the rest of Gumroad's page
     # (wishlist controls, product story, related products, footer, etc.).
-    start_match = re.search(rf"(?<![\\w]){re.escape(start)}\\s*:?", text, flags=re.I)
+    start_match = re.search(rf"(?<![\w]){re.escape(start)}\s*:?", text, flags=re.I)
     if not start_match:
         return ""
-    end_match = re.search(rf"(?<![\\w]){re.escape(end)}\\s*:?", text[start_match.end():], flags=re.I)
+    end_match = re.search(rf"(?<![\w]){re.escape(end)}\s*:?", text[start_match.end():], flags=re.I)
     if not end_match:
         return ""
     value = clean(text[start_match.end():start_match.end() + end_match.start()])
