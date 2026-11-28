@@ -52,7 +52,10 @@ def main():
                 check(actual==expected,f"{product['permalink']}/{code}: product summary differs from gallery locale source")
                 check(len(actual.strip())>=20 and actual.strip() not in (".","..","..."),f"{product['permalink']}/{code}: placeholder summary leaked")
                 check("nnnnnn" not in page.locator("body").inner_text().lower(),f"{product['permalink']}/{code}: repeated-character corruption leaked")
-                check("share" not in page.locator("#fullDescription").inner_text().strip().splitlines()[0].lower(),f"{product['permalink']}/{code}: Gumroad Share control leaked into description")
+                description_text=(page.locator("#fullDescription").text_content() or "").strip()
+                description_lines=[line.strip() for line in description_text.splitlines() if line.strip()]
+                check(bool(description_lines),f"{product['permalink']}/{code}: full product description is empty")
+                check(description_lines[0].casefold() not in ("share","compartir","partager","поделиться"),f"{product['permalink']}/{code}: Gumroad Share control leaked into description")
                 locale_ui=json.loads((ROOT/"locales"/(code+".json")).read_text(encoding="utf-8"))["ui"] if code!="en" else json.loads((ROOT/"locales/ar.json").read_text(encoding="utf-8"))["ui"]
                 expected_buy=locale_ui["landingBuy"] if code!="en" else "Buy / download"
                 check(page.locator("#buy").inner_text()==expected_buy,f"{product['permalink']}/{code}: localized purchase CTA mismatch")
