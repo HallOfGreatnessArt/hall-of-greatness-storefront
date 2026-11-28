@@ -83,6 +83,9 @@ for entry in registry.get("languages", []):
         warnings.append(f"{code}: {len(missing_ebooks)} curated e-book translations missing; those individual books must not offer this locale: {', '.join(missing_ebooks[:6])}")
     for book_key, source_copy in ebook_copy.items():
         translated = ebooks.get(book_key, {})
+        if not isinstance(translated, dict):
+            warnings.append(f"{code}/{book_key}: curated e-book translation is missing or malformed; this book must omit the locale")
+            continue
         expected_hash = __import__("hashlib").sha256(json.dumps(source_copy.get("en", {}), ensure_ascii=False, sort_keys=True).encode()).hexdigest()
         if translated.get("_source_hash") != expected_hash:
             warnings.append(f"{code}/{book_key}: curated e-book translation source hash is missing or stale; this book must omit the locale")
