@@ -24,7 +24,7 @@ UI_DICTIONARY=json.loads(match.group(1))
 ui=UI_DICTIONARY["en"]
 
 # Argos package language codes are not always identical to BCP-47 storefront tags.
-CODE_MAP={"zh-CN":"zh","zh-TW":"zh","pt":"pt","fa":"fa","he":"he","ar":"ar"}
+CODE_MAP={"zh-CN":"zh","pt":"pt","fa":"fa","he":"he","ar":"ar"}
 def digest(obj):
     return hashlib.sha256(json.dumps(obj,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
 
@@ -324,6 +324,8 @@ for lang in REG:
     path=ROOT/'locales'/(code+'.json')
     complete=False
     reasons=[]
+    if code=="zh-TW":
+        reasons.append("Traditional Chinese translation model is not configured; Simplified Chinese is not an acceptable fallback")
     if path.exists():
         try:
             localized=json.loads(path.read_text(encoding='utf-8'))
