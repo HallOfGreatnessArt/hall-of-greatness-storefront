@@ -57,12 +57,12 @@ for entry in registry.get("languages", []):
     empty = sorted(k for k, v in ui.items() if not isinstance(v, str) or not v.strip())
     if missing:
         message=f"{code}: {len(missing)} missing UI keys: {', '.join(missing[:8])}"
-        (errors if entry.get("product_pages_available") is True else warnings).append(message + ("" if entry.get("product_pages_available") is True else " (locale not offered on product pages)"))
+        warnings.append(message + " (only product pages with complete UI and content may offer this locale)")
     if extra:
         errors.append(f"{code}: {len(extra)} unexpected UI keys: {', '.join(extra[:8])}")
     if empty:
         message=f"{code}: {len(empty)} empty/non-string UI values: {', '.join(empty[:8])}"
-        (errors if entry.get("product_pages_available") is True else warnings).append(message + ("" if entry.get("product_pages_available") is True else " (locale not offered on product pages)"))
+        warnings.append(message + " (affected product pages must omit this locale)")
     unchanged = [k for k in expected_keys if ui.get(k) == english.get(k)]
     if unchanged:
         warnings.append(f"{code}: {len(unchanged)} UI values exactly match English (possible untranslated copy)")
@@ -74,19 +74,19 @@ for entry in registry.get("languages", []):
     else:
         counts["unmarked"] += 1
 
-    if entry.get("available") is True and entry.get("product_pages_available") is not True:
-        warnings.append(f"{code}: gallery language is enabled; product-page availability is determined independently for each product by the landing-page builders")
+    # Gallery availability is a separate public-catalogue setting. Product-page
+    # readiness is evaluated independently for each product below and by builders.
     products = data.get("products", {})
     ebooks = data.get("ebooks", {})
     missing_ebooks = sorted(set(ebook_copy) - set(ebooks))
-    if missing_ebooks and entry.get("product_pages_available") is True:
-        errors.append(f"{code}: {len(missing_ebooks)} curated e-book translations missing: {', '.join(missing_ebooks[:6])}")
+    if missing_ebooks:
+        warnings.append(f"{code}: {len(missing_ebooks)} curated e-book translations missing; those individual books must not offer this locale: {', '.join(missing_ebooks[:6])}")
     for book_key, source_copy in ebook_copy.items():
         translated = ebooks.get(book_key, {})
         expected_hash = __import__("hashlib").sha256(json.dumps(source_copy.get("en", {}), ensure_ascii=False, sort_keys=True).encode()).hexdigest()
-        if entry.get("product_pages_available") is True and translated.get("_source_hash") != expected_hash:
-            errors.append(f"{code}/{book_key}: curated e-book translation source hash is missing or stale")
-        if entry.get("product_pages_available") is True:
+        if translated.get("_source_hash") != expected_hash:
+            warnings.append(f"{code}/{book_key}: curated e-book translation source hash is missing or stale; this book must omit the locale")
+        if isinstance(translated, dict) and translated:
             # Only title and overview are required by the product-page renderer.
             # Subtitle, strapline and audience are optional editorial enhancements;
             # do not block every locale when an optional field is legitimately absent.
@@ -96,20 +96,20 @@ for entry in registry.get("languages", []):
                 value = translated.get(field)
                 minimum_length = {"title": 1, "subtitle": 8, "strapline": 8, "overview": 80, "audience": 30, "cta": 8, "format": 8, "structure": 3, "delivery": 8}[field]
                 if not isinstance(value, str) or len(value.strip()) < minimum_length:
-                    errors.append(f"{code}/{book_key}: missing or implausibly short curated e-book {field} (minimum {minimum_length})")
+                    warnings.append(f"{code}/{book_key}: missing or implausibly short curated e-book {field} (minimum {minimum_length}); this book must omit the locale")
                 elif re.search(r"(.)\1{5,}", value, re.I) or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|^\s*(?:share|compartir|partager)\s*$", value, re.I | re.M):
-                    errors.append(f"{code}/{book_key}: corrupted or scraped curated e-book {field}")
+                    warnings.append(f"{code}/{book_key}: corrupted or scraped curated e-book {field}; this book must omit the locale")
             if str(translated.get("overview", "") or "").strip() == str(source_copy.get("en", {}).get("overview", "") or "").strip():
-                errors.append(f"{code}/{book_key}: curated e-book overview is still English")
+                warnings.append(f"{code}/{book_key}: curated e-book overview is still English; this book must omit the locale")
             if any(ui.get(key) == english.get(key) for key in ("landingBuy", "landingLanguage", "landingDelivery")):
-                errors.append(f"{code}: critical product-page UI labels remain in English")
+                warnings.append(f"{code}: critical product-page UI labels remain in English; affected product pages must omit the locale")
             for field in ("explore", "takeaways", "package"):
                 source_values = source_copy.get("en", {}).get(field, [])
                 translated_values = translated.get(field)
                 if not isinstance(translated_values, list) or len(translated_values) != len(source_values):
-                    errors.append(f"{code}/{book_key}: curated e-book {field} list is missing or incomplete")
+                    warnings.append(f"{code}/{book_key}: curated e-book {field} list is missing or incomplete; this book must omit the locale")
                 elif any(not isinstance(value, str) or len(value.strip()) < 10 or re.search(r"(.)\\1{5,}", value, re.I) for value in translated_values):
-                    errors.append(f"{code}/{book_key}: curated e-book {field} contains empty or corrupted items")
+                    warnings.append(f"{code}/{book_key}: curated e-book {field} contains empty or corrupted items; this book must omit the locale")
             for field in optional_fields:
                 value = translated.get(field)
                 if value and (not isinstance(value, str) or len(value.strip()) < 8 or re.search(r"(.)\1{5,}", value, re.I) or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection", value, re.I)):
