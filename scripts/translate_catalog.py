@@ -116,7 +116,7 @@ for lang in REG:
         not isinstance(old.get("ebooks",{}).get(book_key),dict)
         or old.get("ebooks",{}).get(book_key,{}).get("_source_hash") != digest(copy.get("en",{}))
         or not isinstance(old.get("ebooks",{}).get(book_key,{}).get("title"),str)
-        or len(old.get("ebooks",{}).get(book_key,{}).get("title","").strip()) < 3
+        or len(old.get("ebooks",{}).get(book_key,{}).get("title","").strip()) < 1
         or not isinstance(old.get("ebooks",{}).get(book_key,{}).get("overview"),str)
         or len(old.get("ebooks",{}).get(book_key,{}).get("overview","").strip()) < 80
         or any(
@@ -253,7 +253,7 @@ for lang in REG:
                 existing[field]=current
             elif isinstance(value,str) and value.strip():
                 current_value=existing.get(field)
-                minimum=3 if field=="title" else (30 if field=="overview" else 8)
+                minimum=1 if field=="title" else (30 if field=="overview" else 8)
                 valid=isinstance(current_value,str) and len(current_value.strip())>=minimum and not re.search(r"(.)\1{5,}",current_value,re.I)
                 if not valid:
                     pending_paths.append((field,None))
@@ -360,7 +360,7 @@ for lang in REG:
                 if item.get('_source_hash')!=digest(copy.get('en',{})):
                     reasons.append('stale/missing curated e-book source')
                     break
-                ebook_minimums={"title":3,"subtitle":8,"strapline":8,"overview":80,"audience":30,"cta":8}
+                ebook_minimums={"title":1,"subtitle":8,"strapline":8,"overview":80,"audience":30,"cta":8}
                 if any(not safe_text(item.get(field),minimum,12000) for field,minimum in ebook_minimums.items()):
                     reasons.append('incomplete curated e-book required fields')
                     break
