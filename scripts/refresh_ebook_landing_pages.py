@@ -5,6 +5,17 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 CAT=json.loads((ROOT/"catalog-data.json").read_text(encoding="utf-8"))
 COPY=json.loads((ROOT/"ebook-copy.json").read_text(encoding="utf-8"))
+REG=json.loads((ROOT/"locales/languages.json").read_text(encoding="utf-8"))["languages"]
+I18N=(ROOT/"assets/i18n.js").read_text(encoding="utf-8")
+match=re.search(r"const M=(\\{[\\s\\S]*?\\});\\nconst map=",I18N)
+if not match: raise SystemExit("Cannot read gallery language dictionary.")
+UI=json.loads(match.group(1))
+def digest(obj): return __import__("hashlib").sha256(json.dumps(obj,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+def safe_copy(value, minimum=20):
+    if not isinstance(value,str) or len(value.strip())<minimum or len(value)>12000: return False
+    if re.search(r"(.)\\\\1{5,}",value,re.I): return False
+    if re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|^\\\\s*(?:share|compartir|partager|поделиться)\\\\s*$",value,re.I|re.M): return False
+    return True
 LOCAL_ONLY="--local-only" in sys.argv[1:]
 TOKEN=os.environ.get("GUMROAD_ACCESS_TOKEN","").strip()
 if not LOCAL_ONLY and not TOKEN: raise SystemExit("GUMROAD_ACCESS_TOKEN is required.")
@@ -19,8 +30,33 @@ if missing: raise SystemExit("Missing published ebook metadata or verified cover
 def esc(v): return html.escape(str(v or ""),quote=True)
 def js(v): return json.dumps(v,ensure_ascii=False).replace("<","\\u003c").replace(">","\\u003e").replace("&","\\u0026")
 def render(key):
- p=PRODUCTS[key]; c=COPY[key]
- data={"key":key,"product":{"name":p["name"],"price":p.get("price_usd"),"url":p["url"],"cover":p["cover_url"]},"translations":c}
+ p=PRODUCTS[key]
+ translations={}
+ english=dict(COPY[key]["en"]); english["ui"]=UI.get("en",{})
+ translations["en"]=english
+ for lang in REG:
+  code=lang["code"]
+  if code=="en" or not lang.get("available"): continue
+  if code=="ar":
+   localized=dict(COPY[key]["ar"])
+   locale_path=ROOT/"locales"/"ar.json"
+   locale=json.loads(locale_path.read_text(encoding="utf-8")) if locale_path.exists() else {}
+   localized["ui"]=locale.get("ui") or UI.get("ar",{})
+   translations[code]=localized
+   continue
+  locale_path=ROOT/"locales"/(code+".json")
+  if not locale_path.exists(): continue
+  try: locale=json.loads(locale_path.read_text(encoding="utf-8"))
+  except Exception: continue
+  item=(locale.get("ebooks") or {}).get(key,{})
+  if item.get("_source_hash")!=digest(COPY[key]["en"]): continue
+  if not all(safe_copy(item.get(field,"")) for field in ("title","subtitle","strapline","overview","audience","cta")): continue
+  if not all(isinstance(item.get(field),list) and all(safe_copy(x,10) for x in item[field]) for field in ("explore","takeaways")): continue
+  localized={k:v for k,v in item.items() if k!="_source_hash"}
+  localized["ui"]=locale.get("ui") or UI.get(code) or UI.get("en",{})
+  translations[code]=localized
+ languages=[{"code":"en","name":"English","rtl":False}]+[{"code":x["code"],"name":x["name"],"rtl":bool(x.get("rtl"))} for x in REG if x["code"] in translations and x["code"]!="en"]
+ data={"key":key,"product":{"name":p["name"],"price":p.get("price_usd"),"url":p["url"],"cover":p["cover_url"]},"translations":translations,"languages":languages}
  return TEMPLATE.replace("__DATA__",js(data))
 TEMPLATE=r"""<!doctype html><html lang="en" dir="ltr"><head>
 <meta charset="utf-8">
