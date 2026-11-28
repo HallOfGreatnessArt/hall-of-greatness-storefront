@@ -132,6 +132,23 @@ for lang in REG:
         not str(products.get(p["permalink"],{}).get("title_ar","")).strip()
         for p in CAT["products"]
     )
+    if code=="ar":
+        # Persist the already-curated Arabic e-book copy even if the Argos
+        # model index is unavailable; this content does not require machine translation.
+        ebook_translations=old.setdefault("ebooks",{})
+        for book_key,source_copy in EBOOK_COPY.items():
+            if not isinstance(source_copy.get("ar"),dict):
+                continue
+            item=dict(ebook_translations.get(book_key,{}) or {})
+            for field,value in source_copy["ar"].items():
+                if not item.get(field):
+                    item[field]=value
+            item["_source_hash"]=digest(source_copy.get("en",{}))
+            item["_translation_status"]="editorially-reviewed"
+            ebook_translations[book_key]=item
+        path.parent.mkdir(parents=True,exist_ok=True)
+        path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+        needs_ebooks=False
     if not needs_ui and not needs_missing_ui and not pending and not needs_ebooks and not needs_ar_titles:
         print(f"Up to date: {code}; no model installation needed.")
         continue
