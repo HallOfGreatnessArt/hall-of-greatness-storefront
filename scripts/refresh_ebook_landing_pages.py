@@ -86,10 +86,6 @@ a:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-off
 </main><footer><span>HALL OF GREATNESS Publishing · EMAD ALSHAYEB</span><span>Knowledge with Purpose.</span></footer></div>
 <script>
 const DATA=__DATA__;
-const UI={
-en:{lang:"Language",buy:"Get the book",delivery:"Digital edition · Instant delivery through Gumroad · No physical book will be shipped.",explore:"SUBJECTS AND THEMES",exploreH:"What the book examines",take:"READER VALUE",takeH:"What you will gain",aud:"INTENDED READERS",audH:"Who should read this book?",edition:"EDITION AND DELIVERY",editionH:"Edition information",pkg:"YOUR DOWNLOAD",pkgH:"Files included",collection:"THE COMPLETE COLLECTION",collectionH:"Explore the five books in this collection",closing:"CONTINUE YOUR READING",trust:"Secure checkout through Gumroad · Digital delivery",meta:["Author","Publisher","Language","Structure","Format","Delivery"]},
-ar:{lang:"اللغة",buy:"اقتَنِ نسختك الرقمية",delivery:"إصدار رقمي · تسليم فوري عبر Gumroad · لن يُشحن كتاب ورقي.",explore:"الموضوعات والمحاور",exploreH:"ما الذي يناقشه الكتاب؟",take:"القيمة المعرفية للقارئ",takeH:"ما الذي ستخرج به من القراءة؟",aud:"القراء المستهدفون",audH:"لمن وُجّه هذا الكتاب؟",edition:"الإصدار والتسليم",editionH:"بيانات الإصدار",pkg:"محتويات التنزيل",pkgH:"الملفات المرفقة",collection:"المجموعة الكاملة",collectionH:"تعرّف على الكتب الخمسة في هذه المجموعة",closing:"ابدأ رحلتك المعرفية",trust:"دفع آمن عبر Gumroad · تسليم رقمي",meta:["المؤلف","الناشر","اللغة","البنية","الصيغة","التسليم"]}
-};
 const BOOKS=[
 ["isbsay","THE AI POWER GAME — UNDERSTAND • ADAPT • THRIVE","https://alshayebemad.gumroad.com/l/THEAIPOWERGAME"],
 ["qsznm","THE AI BLACK BOX","https://alshayebemad.gumroad.com/l/Theaiblackbox"],
@@ -100,28 +96,38 @@ const BOOKS=[
 const el=id=>document.getElementById(id);
 function list(id,items){const box=el(id);box.replaceChildren();(items||[]).forEach(x=>{const li=document.createElement("li");li.textContent=x;box.append(li)})}
 function render(code){
- const t=DATA.translations[code]||DATA.translations.en, u=UI[code]||UI.en, rtl=code==="ar";
+ code=resolveLanguage(code);const t=DATA.translations[code]||DATA.translations.en,u=t.ui||DATA.translations.en.ui||{},w=k=>u[k]||DATA.translations.en.ui[k]||k,rtl=!!((DATA.languages||[]).find(x=>x.code===code)||{}).rtl;
  document.title=t.title+" | HALL OF GREATNESS Publishing";
  const description=document.querySelector('meta[name="description"]'); if(description) description.content=t.overview;
  document.documentElement.lang=code;document.documentElement.dir=rtl?"rtl":"ltr";
- el("langLabel").textContent=u.lang;el("navExplore").textContent=code==="ar"?"الموضوعات":"Explore";el("navEdition").textContent=code==="ar"?"التفاصيل":"Details";el("navPurchase").textContent=code==="ar"?"الشراء":"Buy";el("buy").textContent=u.buy;el("buyBottom").textContent=u.buy;
- el("deliveryNote").textContent=u.delivery;el("exploreLabel").textContent=u.explore;el("exploreHeading").textContent=u.exploreH;
- el("takeawayLabel").textContent=u.take;el("takeawayHeading").textContent=u.takeH;el("audienceLabel").textContent=u.aud;el("audienceHeading").textContent=u.audH;
- el("editionLabel").textContent=u.edition;el("editionHeading").textContent=u.editionH;el("packageLabel").textContent=u.pkg;el("packageHeading").textContent=u.pkgH;
- el("collectionLabel").textContent=u.collection;el("collectionHeading").textContent=u.collectionH;el("closingLabel").textContent=u.closing;el("trust").textContent=u.trust;
+ el("langLabel").textContent=w("landingLanguage");el("navExplore").textContent=w("landingStory");el("navEdition").textContent=w("landingDetails");el("navPurchase").textContent=w("landingPurchase");el("buy").textContent=w("landingBuy");el("buyBottom").textContent=w("landingBuy");
+ el("deliveryNote").textContent=w("landingDelivery");el("exploreLabel").textContent=w("landingStory");el("exploreHeading").textContent=w("landingStoryHeading");
+ el("takeawayLabel").textContent=w("landingReaderValue");el("takeawayHeading").textContent=w("landingReaderValueHeading");el("audienceLabel").textContent=w("landingAudience");el("audienceHeading").textContent=w("landingAudienceHeading");
+ el("editionLabel").textContent=w("landingEdition");el("editionHeading").textContent=w("landingEditionHeading");el("packageLabel").textContent=w("landingPackage");el("packageHeading").textContent=w("landingPackageHeading");
+ el("collectionLabel").textContent=w("landingCollection");el("collectionHeading").textContent=w("landingCollectionHeading");el("closingLabel").textContent=w("landingContinue");el("trust").textContent=w("landingTrust");
  el("title").textContent=t.title;el("subtitle").textContent=t.subtitle;el("strapline").textContent=t.strapline;el("overview").textContent=t.overview;
  el("audience").textContent=t.audience;el("closingTitle").textContent=t.strapline;el("closingText").textContent=t.cta;
  list("explore",t.explore);list("takeaways",t.takeaways);list("package",t.package);
  const meta=[["Author","EMAD ALSHAYEB"],["Publisher","HALL OF GREATNESS Publishing"],["Language",code==="ar"?"الإنجليزية":"English"],["Structure",t.structure],["Format",t.format],["Delivery",t.delivery]];
- const m=el("meta");m.replaceChildren();meta.forEach((x,i)=>{const d=document.createElement("div");d.className="meta";const b=document.createElement("b");b.textContent=u.meta[i];const s=document.createElement("span");s.textContent=x[1];d.append(b,s);m.append(d)});
+ const m=el("meta");m.replaceChildren();meta.forEach((x,i)=>{const d=document.createElement("div");d.className="meta";const b=document.createElement("b");b.textContent=w(["landingMetaAuthor","landingMetaPublisher","landingMetaLanguage","landingMetaStructure","landingMetaFormat","landingMetaDelivery"][i]);const s=document.createElement("span");s.textContent=x[1];d.append(b,s);m.append(d)});
  el("packageSection").hidden=!t.package.length;el("collectionSection").hidden=DATA.product.name.indexOf("COLLECTION")<0;
  const links=el("bookLinks");links.replaceChildren();BOOKS.forEach(([id,name,url])=>{if(id===DATA.key)return;const a=document.createElement("a");a.href=url;a.textContent=name;links.append(a)});
  el("cover").src=DATA.product.cover;el("cover").alt=t.title+" book cover";
 el("buy").href=DATA.product.url;el("buyBottom").href=DATA.product.url;
  const price="$"+Number(DATA.product.price).toFixed(2)+" USD";el("price").textContent=price;el("priceBottom").textContent=price;
 }
-render("en");
-el("lang").addEventListener("change",e=>render(e.target.value));
+function resolveLanguage(code){
+ if(code!=="auto")return code;
+ const prefs=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"en"];
+ for(const pref of prefs){const exact=(DATA.languages||[]).find(x=>x.code.toLowerCase()===pref.toLowerCase());if(exact)return exact.code;const base=pref.split("-")[0];const match=(DATA.languages||[]).find(x=>x.code===base);if(match)return match.code;}
+ return "en";
+}
+const languageSelect=el("lang");languageSelect.replaceChildren();
+const autoOption=document.createElement("option");autoOption.value="auto";autoOption.textContent="🌐 Auto";languageSelect.append(autoOption);
+(DATA.languages||[{code:"en",name:"English"}]).forEach(x=>{const option=document.createElement("option");option.value=x.code;option.textContent=x.name;languageSelect.append(option)});
+const saved=(()=>{try{return localStorage.getItem("hog-language")||"auto"}catch(e){return "auto"}})();
+render(saved);
+languageSelect.addEventListener("change",e=>{const value=e.target.value;try{if(value==="auto")localStorage.removeItem("hog-language");else localStorage.setItem("hog-language",value)}catch(err){}render(value)});
 </script></body></html>"""
 def main():
  generated=[]
