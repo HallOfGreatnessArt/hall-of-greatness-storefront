@@ -50,9 +50,9 @@ def render(key):
   except Exception: continue
   item=(locale.get("ebooks") or {}).get(key,{})
   if item.get("_source_hash")!=digest(COPY[key]["en"]): continue
-  minimums={"title":1,"subtitle":8,"strapline":8,"overview":30,"audience":30,"cta":8}
+  minimums={"title":1,"subtitle":8,"strapline":8,"overview":30,"audience":30,"cta":8,"format":8,"structure":3,"delivery":8}
   if not all(safe_copy(item.get(field,""),minimums[field]) for field in minimums): continue
-  if not all(isinstance(item.get(field),list) and all(safe_copy(x,10) for x in item[field]) for field in ("explore","takeaways")): continue
+  if not all(isinstance(item.get(field),list) and all(safe_copy(x,10) for x in item[field]) for field in ("explore","takeaways","package")): continue
   localized={k:v for k,v in item.items() if k!="_source_hash"}
   localized["ui"]=locale.get("ui") or UI.get(code) or UI.get("en",{})
   translations[code]=localized
