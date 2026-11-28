@@ -212,7 +212,7 @@ for lang in REG:
                     current.extend([""]*(len(value)-len(current)))
                 for index,source_value in enumerate(value):
                     current_value=current[index]
-                    valid=isinstance(current_value,str) and len(current_value.strip())>=10 and not re.search(r"(.)\\1{5,}",current_value,re.I)
+                    valid=isinstance(current_value,str) and len(current_value.strip())>=10 and not re.search(r"(.)\1{5,}",current_value,re.I)
                     if not valid and isinstance(source_value,str) and source_value.strip():
                         pending_paths.append((field,index))
                         pending_values.append(source_value)
@@ -220,7 +220,7 @@ for lang in REG:
             elif isinstance(value,str) and value.strip():
                 current_value=existing.get(field)
                 minimum=3 if field=="title" else (30 if field=="overview" else 8)
-                valid=isinstance(current_value,str) and len(current_value.strip())>=minimum and not re.search(r"(.)\\1{5,}",current_value,re.I)
+                valid=isinstance(current_value,str) and len(current_value.strip())>=minimum and not re.search(r"(.)\1{5,}",current_value,re.I)
                 if not valid:
                     pending_paths.append((field,None))
                     pending_values.append(value)
@@ -269,7 +269,7 @@ for lang in REG:
 # exposed only when every required page field is present, current, and safe.
 def safe_text(value, minimum=1, maximum=12000):
     return (isinstance(value,str) and minimum <= len(value.strip()) <= maximum
-            and not re.search(r"(.)\\1{5,}",value,re.I)
+            and not re.search(r"(.)\1{5,}",value,re.I)
             and not re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection",value,re.I))
 
 expected_product_keys={p['permalink'] for p in CAT['products'] if p.get('published') and p.get('permalink')}
@@ -334,5 +334,5 @@ for lang in REG:
     lang['availability_note']='complete, current product-page translations' if complete else 'not offered on product pages: '+', '.join(dict.fromkeys(reasons or ['translation file/model unavailable']))
 REGISTRY_DATA['provider']='Argos Translate (open-source, offline models)'
 REGISTRY_DATA['translation_mode']='Free offline translation; product pages expose only complete, current, safe locales. Existing editorial translations are preserved; unsupported or incomplete locales are hidden rather than misrepresented.'
-REGISTRY_PATH.write_text(json.dumps(REGISTRY_DATA,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+REGISTRY_PATH.write_text(json.dumps(REGISTRY_DATA,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 print('Updated product-page availability flags using full UI, product, and curated e-book completeness checks.')
