@@ -129,9 +129,12 @@ jobs:
         run: python scripts/test_localized_browser.py --local-only
 
       - name: Test Gumroad product landing translations against gallery locale files
+        env:
+          TARGET_PRODUCT: ${{ inputs.product_permalink }}
+          TARGET_LANGUAGE: ${{ inputs.language }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.suite }}" = "gumroad-landing-localization" ]; then
-            python scripts/test_gumroad_landing_localization.py --product "${{ inputs.product_permalink }}" --language "${{ inputs.language }}"
+            python scripts/test_gumroad_landing_localization.py --product "$TARGET_PRODUCT" --language "$TARGET_LANGUAGE"
           else
             python scripts/test_gumroad_landing_localization.py
           fi
