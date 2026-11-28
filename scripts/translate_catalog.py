@@ -16,6 +16,7 @@ REGISTRY_PATH=ROOT/"locales/languages.json"
 REGISTRY_DATA=json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
 REG=REGISTRY_DATA["languages"]
 CAT=json.loads((ROOT/"catalog-data.json").read_text(encoding="utf-8"))
+EBOOK_COPY=json.loads((ROOT/"ebook-copy.json").read_text(encoding="utf-8"))
 source=(ROOT/"assets/i18n.js").read_text(encoding="utf-8")
 match=re.search(r"const M=(\{[\s\S]*?\});\nconst map=",source)
 if not match: raise SystemExit("Could not locate canonical UI dictionary.")
@@ -160,6 +161,38 @@ for lang in REG:
             else: item[k]=value
         item["_source_hash"]=source_hash
         products[key]=item
+
+    # Translate the curated e-book editorial copy, not the scraped Gumroad
+    # description fields (which may contain page chrome or incomplete metadata).
+    ebook_translations=old.setdefault("ebooks",{})
+    for book_key, source_copy in EBOOK_COPY.items():
+        source_english=source_copy.get("en",{})
+        if not source_english:
+            continue
+        source_hash=digest(source_english)
+        existing=ebook_translations.get(book_key,{})
+        if existing.get("_source_hash")==source_hash:
+            continue
+        flat=[]; paths=[]
+        for field,value in source_english.items():
+            if isinstance(value,list):
+                for index,part in enumerate(value):
+                    if isinstance(part,str) and part.strip():
+                        paths.append((field,index)); flat.append(part)
+            elif isinstance(value,str) and value.strip():
+                paths.append((field,None)); flat.append(value)
+        translated_values=translate_many(flat,code)
+        if translated_values is None:
+            continue
+        translated_copy={}
+        for (field,index),value in zip(paths,translated_values):
+            if index is None:
+                translated_copy[field]=value
+            else:
+                translated_copy.setdefault(field,[None]*len(source_english[field]))
+                translated_copy[field][index]=value
+        ebook_translations[book_key]={**translated_copy,"_source_hash":source_hash}
+        print(f"Localized curated e-book copy {code}/{book_key}")
 
     # Arabic product cards require a localized display title in addition to
     # the translated description. Generate missing titles for newly imported
