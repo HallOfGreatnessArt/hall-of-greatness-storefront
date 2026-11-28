@@ -120,6 +120,11 @@ for lang in REG:
         or not isinstance(old.get("ebooks",{}).get(book_key,{}).get("overview"),str)
         or len(old.get("ebooks",{}).get(book_key,{}).get("overview","").strip()) < 80
         or any(
+            not isinstance(old.get("ebooks",{}).get(book_key,{}).get(field),str)
+            or len(old.get("ebooks",{}).get(book_key,{}).get(field,"").strip()) < minimum
+            for field,minimum in (("subtitle",8),("strapline",8),("audience",30),("cta",8))
+        )
+        or any(
             not isinstance(old.get("ebooks",{}).get(book_key,{}).get(field),list)
             or len(old.get("ebooks",{}).get(book_key,{}).get(field,[])) != len(copy.get("en",{}).get(field,[]))
             or any(not isinstance(part,str) or len(part.strip()) < 10 for part in old.get("ebooks",{}).get(book_key,{}).get(field,[]))
