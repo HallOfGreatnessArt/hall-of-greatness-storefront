@@ -241,10 +241,15 @@ for lang in REG:
                 if item.get("_source_hash")!=digest(fields):
                     products_current=False
                     break
+            localized_ebooks=localized.get("ebooks",{})
+            ebooks_current=all(
+                localized_ebooks.get(book_key,{}).get("_source_hash")==digest(copy.get("en",{}))
+                for book_key,copy in EBOOK_COPY.items()
+            )
             complete=(expected_ui_keys.issubset(set(localized_ui)) and
                       not localized.get("_ui_fallback_keys") and
                       expected_product_keys.issubset(set(localized_products)) and
-                      products_current)
+                      products_current and ebooks_current)
         except (UnicodeError,json.JSONDecodeError):
             complete=False
     lang['available']=complete
