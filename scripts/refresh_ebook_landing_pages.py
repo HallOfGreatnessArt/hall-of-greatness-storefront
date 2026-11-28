@@ -36,12 +36,19 @@ def render(key):
  translations["en"]=english
  for lang in REG:
   code=lang["code"]
-  if code=="en" or not lang.get("available"): continue
+  if code=="en": continue
   if code=="ar":
    localized=dict(COPY[key]["ar"])
    locale_path=ROOT/"locales"/"ar.json"
    locale=json.loads(locale_path.read_text(encoding="utf-8")) if locale_path.exists() else {}
-   localized["ui"]=locale.get("ui") or UI.get("ar",{})
+   localized_ui=locale.get("ui") or {}
+   required_ui=[k for k in UI.get("en",{}) if k.startswith("landing")]
+   required_fields=("title","subtitle","strapline","overview","audience","cta","format","structure","delivery")
+   minimums={"title":1,"subtitle":8,"strapline":8,"overview":80,"audience":30,"cta":8,"format":8,"structure":3,"delivery":8}
+   if not all(safe_copy(localized.get(field,""),minimums[field]) for field in required_fields): continue
+   if not all(isinstance(localized.get(field),list) and all(safe_copy(x,10) for x in localized[field]) for field in ("explore","takeaways","package")): continue
+   if not required_ui or any(not isinstance(localized_ui.get(k),str) or not localized_ui.get(k).strip() or localized_ui.get(k)==UI.get("en",{}).get(k) for k in required_ui): continue
+   localized["ui"]=localized_ui
    translations[code]=localized
    continue
   locale_path=ROOT/"locales"/(code+".json")
@@ -54,7 +61,10 @@ def render(key):
   if not all(safe_copy(item.get(field,""),minimums[field]) for field in minimums): continue
   if not all(isinstance(item.get(field),list) and all(safe_copy(x,10) for x in item[field]) for field in ("explore","takeaways","package")): continue
   localized={k:v for k,v in item.items() if k!="_source_hash"}
-  localized["ui"]=locale.get("ui") or UI.get(code) or UI.get("en",{})
+  localized_ui=locale.get("ui") or {}
+  required_ui=[k for k in UI.get("en",{}) if k.startswith("landing")]
+  if not required_ui or any(not isinstance(localized_ui.get(k),str) or not localized_ui.get(k).strip() or localized_ui.get(k)==UI.get("en",{}).get(k) for k in required_ui): continue
+  localized["ui"]=localized_ui
   translations[code]=localized
  languages=[{"code":"en","name":"English","rtl":False}]+[{"code":x["code"],"name":x["name"],"rtl":bool(x.get("rtl"))} for x in REG if x["code"] in translations and x["code"]!="en"]
  data={"key":key,"product":{"name":p["name"],"price":p.get("price_usd"),"url":p["url"],"cover":p["cover_url"]},"translations":translations,"languages":languages}
