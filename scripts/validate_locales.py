@@ -97,7 +97,7 @@ for entry in registry.get("languages", []):
                     errors.append(f"{code}/{book_key}: missing or implausibly short curated e-book {field} (minimum {minimum_length})")
                 elif re.search(r"(.)\1{5,}", value, re.I) or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|^\s*(?:share|compartir|partager)\s*$", value, re.I | re.M):
                     errors.append(f"{code}/{book_key}: corrupted or scraped curated e-book {field}")
-            if translated.get("overview", "").strip() == source_copy.get("en", {}).get("overview", "").strip():
+            if str(translated.get("overview", "") or "").strip() == str(source_copy.get("en", {}).get("overview", "") or "").strip():
                 errors.append(f"{code}/{book_key}: curated e-book overview is still English")
             if any(ui.get(key) == english.get(key) for key in ("landingBuy", "landingLanguage", "landingDelivery")):
                 errors.append(f"{code}: critical product-page UI labels remain in English")
