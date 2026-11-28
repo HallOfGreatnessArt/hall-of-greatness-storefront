@@ -25,15 +25,15 @@ def clean_page_copy(value):
     lines=value.strip().splitlines()
     while lines and lines[0].strip().strip(":") in SHARE_LABELS:
         lines.pop(0)
-    return "\\n".join(lines).strip()
+    return "\n".join(lines).strip()
 def translation_text_is_safe(value, max_length=12000, min_length=8):
     if not isinstance(value,str): return False
     text=clean_page_copy(value)
     if not text or len(text)>max_length or len(text)<min_length: return False
-    if not re.search(r"[\\w\\u0600-\\u06FF]",text,re.UNICODE): return False
-    if re.search(r"(.)\\1{5,}",text,re.I): return False
+    if not re.search(r"[\w\u0600-\u06FF]",text,re.UNICODE): return False
+    if re.search(r"(.)\1{5,}",text,re.I): return False
     if PAGE_CHROME.search(text): return False
-    if re.search(r"[\\uFFFD]|(?:Ã.|Â.|Ø[ء-ي]|Ù[ء-ي])",text): return False
+    if re.search(r"[\uFFFD]|(?:Ã.|Â.|Ø[ء-ي]|Ù[ء-ي])",text): return False
     if text.strip(" .。،,:;!?-—…")=="": return False
     return True
 def ebook_page_copy(source):
@@ -42,10 +42,10 @@ def ebook_page_copy(source):
     paragraphs=[source.get("strapline",""),overview]
     for field in ("explore","takeaways"):
         values=source.get(field) or []
-        if values: paragraphs.append("\\n".join("• "+str(x) for x in values))
+        if values: paragraphs.append("\n".join("• "+str(x) for x in values))
     if source.get("audience"): paragraphs.append(source["audience"])
     if source.get("cta"): paragraphs.append(source["cta"])
-    full="\\n\\n".join(x for x in paragraphs if x)
+    full="\n\n".join(x for x in paragraphs if x)
     details={
       "product_type":source.get("format","Digital book"),
       "delivery":source.get("delivery","Digital delivery through Gumroad"),
