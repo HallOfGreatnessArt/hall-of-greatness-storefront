@@ -4,25 +4,7 @@ const body=document.body, permalink=body.dataset.productPermalink||"";
 const select=document.getElementById("hog-page-language");
 let registry=[];
 async function init(){
- try{
-  const r=await fetch("../../locales/languages.json");
-  if(r.ok){
-   const candidates=((await r.json()).languages||[]).filter(x=>x.code!=="en"&&x.available!==false);
-   registry=[{code:"en",name:"English",rtl:false}];
-   // A language is offered on this product page only when this exact product
-   // has a human-approved translation. Machine output is never customer copy.
-   for(const candidate of candidates){
-    try{
-     const lr=await fetch("../../locales/"+encodeURIComponent(candidate.code)+".json");
-     if(!lr.ok)continue;
-     const ld=await lr.json(), product=(ld.products||{})[permalink]||{};
-     if(product._translation_status==="editorially-reviewed" && product.summary && product.full_description){
-      registry.push(candidate);
-     }
-    }catch(e){}
-   }
-  }
- }catch(e){}
+ try{const r=await fetch("../../locales/languages.json");if(r.ok)registry=((await r.json()).languages||[]).filter(x=>x.code==="en"||x.available!==false);}catch(e){}
  if(select&&registry.length)select.innerHTML='<option value="auto">🌐 Auto</option>'+registry.map(x=>'<option value="'+x.code+'">'+x.name+'</option>').join("");
  const saved=(()=>{try{return localStorage.getItem("hog-language")}catch(e){return null}})();
  const auto=()=>{for(const l of (navigator.languages||[navigator.language||"en"])){const exact=registry.find(x=>x.code.toLowerCase()===l.toLowerCase());if(exact)return exact.code;const base=l.split("-")[0];const match=registry.find(x=>x.code===base);if(match)return match.code;}return "en";};
