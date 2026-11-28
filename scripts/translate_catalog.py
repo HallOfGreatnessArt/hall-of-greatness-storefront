@@ -119,6 +119,12 @@ for lang in REG:
         or len(old.get("ebooks",{}).get(book_key,{}).get("title","").strip()) < 3
         or not isinstance(old.get("ebooks",{}).get(book_key,{}).get("overview"),str)
         or len(old.get("ebooks",{}).get(book_key,{}).get("overview","").strip()) < 80
+        or any(
+            not isinstance(old.get("ebooks",{}).get(book_key,{}).get(field),list)
+            or len(old.get("ebooks",{}).get(book_key,{}).get(field,[])) != len(copy.get("en",{}).get(field,[]))
+            or any(not isinstance(part,str) or len(part.strip()) < 10 for part in old.get("ebooks",{}).get(book_key,{}).get(field,[]))
+            for field in ("explore","takeaways")
+        )
         for book_key,copy in EBOOK_COPY.items()
     )
     needs_ar_titles = code=="ar" and any(
@@ -231,14 +237,16 @@ for lang in REG:
                     if not isinstance(translated_value,str) or not translated_value.strip():
                         continue
                     if index is None:
-                        # Existing editorial fields are never overwritten; this
-                        # branch only fills a missing or structurally invalid field.
-                        if not str(existing.get(field,"")).strip():
+                        # Replace invalid machine copy, but never overwrite
+                        # editorially prepared content.
+                        if not editorial:
+                            existing[field]=translated_value.strip()
+                        elif not str(existing.get(field,"")).strip():
                             existing[field]=translated_value.strip()
                     else:
                         values=existing.setdefault(field,[])
                         while len(values)<=index: values.append("")
-                        if not str(values[index]).strip():
+                        if not editorial or not str(values[index]).strip():
                             values[index]=translated_value.strip()
                 if not editorial:
                     existing["_translation_status"]="machine-generated-unreviewed"
