@@ -17,6 +17,7 @@ canonical = json.loads(match.group(1))
 english = canonical.get("en", {})
 expected_keys = set(english)
 catalog = json.loads((ROOT / "catalog-data.json").read_text(encoding="utf-8"))
+ebook_copy = json.loads((ROOT / "ebook-copy.json").read_text(encoding="utf-8"))
 published = [p for p in catalog.get("products", []) if p.get("published")]
 expected_products = {p.get("permalink") for p in published if p.get("permalink")}
 source_products = {p.get("permalink"): p for p in published if p.get("permalink")}
@@ -72,6 +73,22 @@ for entry in registry.get("languages", []):
         counts["unmarked"] += 1
 
     products = data.get("products", {})
+    ebooks = data.get("ebooks", {})
+    missing_ebooks = sorted(set(ebook_copy) - set(ebooks))
+    if missing_ebooks and entry.get("available") is True:
+        errors.append(f"{code}: {len(missing_ebooks)} curated e-book translations missing: {', '.join(missing_ebooks[:6])}")
+    for book_key, source_copy in ebook_copy.items():
+        translated = ebooks.get(book_key, {})
+        expected_hash = __import__("hashlib").sha256(json.dumps(source_copy.get("en", {}), ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+        if entry.get("available") is True and translated.get("_source_hash") != expected_hash:
+            errors.append(f"{code}/{book_key}: curated e-book translation source hash is missing or stale")
+        if entry.get("available") is True:
+            for field in ("overview", "subtitle", "strapline", "audience"):
+                value = translated.get(field)
+                if not isinstance(value, str) or len(value.strip()) < 20:
+                    errors.append(f"{code}/{book_key}: missing or implausibly short curated e-book {field}")
+                elif re.search(r"(.)\\1{5,}", value, re.I) or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|^\\s*(?:share|compartir|partager)\\s*$", value, re.I | re.M):
+                    errors.append(f"{code}/{book_key}: corrupted or scraped curated e-book {field}")
     missing_products = sorted(expected_products - set(products))
     if missing_products:
         warnings.append(f"{code}: {len(missing_products)} published product translations missing")
