@@ -97,6 +97,13 @@ for entry in registry.get("languages", []):
                     errors.append(f"{code}/{book_key}: missing or implausibly short curated e-book {field} (minimum {minimum_length})")
                 elif re.search(r"(.)\1{5,}", value, re.I) or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|^\s*(?:share|compartir|partager)\s*$", value, re.I | re.M):
                     errors.append(f"{code}/{book_key}: corrupted or scraped curated e-book {field}")
+            for field in ("explore", "takeaways"):
+                source_values = source_copy.get("en", {}).get(field, [])
+                translated_values = translated.get(field)
+                if not isinstance(translated_values, list) or len(translated_values) != len(source_values):
+                    errors.append(f"{code}/{book_key}: curated e-book {field} list is missing or incomplete")
+                elif any(not isinstance(value, str) or len(value.strip()) < 10 or re.search(r"(.)\\1{5,}", value, re.I) for value in translated_values):
+                    errors.append(f"{code}/{book_key}: curated e-book {field} contains empty or corrupted items")
             for field in optional_fields:
                 value = translated.get(field)
                 if value and (not isinstance(value, str) or len(value.strip()) < 8 or re.search(r"(.)\1{5,}", value, re.I) or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection", value, re.I)):
