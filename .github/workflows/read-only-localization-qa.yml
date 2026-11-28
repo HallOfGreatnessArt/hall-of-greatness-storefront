@@ -1,6 +1,20 @@
 name: Read-only localization and landing-page QA
 
 on:
+  # Run the same read-only checks on every repair-branch update, not only
+  # after PR events. This makes iterative localization fixes testable at once.
+  push:
+    branches:
+      - "fix/**"
+    paths:
+      - ".github/workflows/read-only-localization-qa.yml"
+      - "catalog-data.json"
+      - "locales/**"
+      - "assets/**"
+      - "scripts/**"
+      - "landing/**"
+      - "index.html"
+      - "tests/**"
   pull_request:
     branches:
       - main
