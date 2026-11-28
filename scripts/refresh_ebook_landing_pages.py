@@ -7,14 +7,14 @@ CAT=json.loads((ROOT/"catalog-data.json").read_text(encoding="utf-8"))
 COPY=json.loads((ROOT/"ebook-copy.json").read_text(encoding="utf-8"))
 REG=json.loads((ROOT/"locales/languages.json").read_text(encoding="utf-8"))["languages"]
 I18N=(ROOT/"assets/i18n.js").read_text(encoding="utf-8")
-match=re.search(r"const M=(\\{[\\s\\S]*?\\});\\nconst map=",I18N)
+match=re.search(r"const M=(\{[\s\S]*?\});\nconst map=",I18N)
 if not match: raise SystemExit("Cannot read gallery language dictionary.")
 UI=json.loads(match.group(1))
 def digest(obj): return __import__("hashlib").sha256(json.dumps(obj,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
 def safe_copy(value, minimum=20):
     if not isinstance(value,str) or len(value.strip())<minimum or len(value)>12000: return False
-    if re.search(r"(.)\\1{5,}",value,re.I): return False
-    if re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|^\\s*(?:share|compartir|partager|поделиться)\\s*$",value,re.I|re.M): return False
+    if re.search(r"(.)\1{5,}",value,re.I): return False
+    if re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|^\s*(?:share|compartir|partager|поделиться)\s*$",value,re.I|re.M): return False
     return True
 LOCAL_ONLY="--local-only" in sys.argv[1:]
 TOKEN=os.environ.get("GUMROAD_ACCESS_TOKEN","").strip()
