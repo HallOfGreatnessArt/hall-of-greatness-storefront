@@ -118,7 +118,7 @@ el("buy").href=DATA.product.url;el("buyBottom").href=DATA.product.url;
  const price="$"+Number(DATA.product.price).toFixed(2)+" USD";el("price").textContent=price;el("priceBottom").textContent=price;
 }
 function resolveLanguage(code){
- if(code!=="auto")return code;
+ if(code!=="auto")return DATA.translations[code]?code:"en";
  const prefs=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"en"];
  for(const pref of prefs){const exact=(DATA.languages||[]).find(x=>x.code.toLowerCase()===pref.toLowerCase());if(exact)return exact.code;const base=pref.split("-")[0];const match=(DATA.languages||[]).find(x=>x.code===base);if(match)return match.code;}
  return "en";
