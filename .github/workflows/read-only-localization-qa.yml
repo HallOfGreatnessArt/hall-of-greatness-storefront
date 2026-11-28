@@ -66,6 +66,11 @@ jobs:
           PREVIEW_PERMALINK: mxrljy
         run: python scripts/refresh_gumroad_landing_pages.py --local-only
 
+      - name: Generate one curated e-book product page locally (no Gumroad API or token)
+        env:
+          PREVIEW_PERMALINK: qsznm
+        run: python scripts/refresh_gumroad_landing_pages.py --local-only
+
       - name: Start local storefront preview
         run: |
           nohup python -m http.server 8000 --bind 127.0.0.1 >/tmp/hog-local-preview.log 2>&1 &
@@ -73,6 +78,9 @@ jobs:
 
       - name: Test language switching, refresh, RTL, all product pages, and published site
         run: python scripts/test_localized_browser.py --local-only
+
+      - name: Test Gumroad product landing translations against gallery locale files
+        run: python scripts/test_gumroad_landing_localization.py
 
       - name: Test five-unit gallery layout, pagination, Gumroad links, and mobile grids
         run: python scripts/test_responsive_storefront.py
@@ -84,7 +92,7 @@ jobs:
         run: |
           mkdir -p product-preview-evidence/artwork product-preview-evidence/ebook
           cp gumroad-landings/the-art-of-stillness/landing.html product-preview-evidence/artwork/index.html
-          cp gumroad-ebook-landings/qsznm/landing.html product-preview-evidence/ebook/index.html
+          cp gumroad-landings/the-ai-black-box/landing.html product-preview-evidence/ebook/index.html
           python - <<'PY'
           from playwright.sync_api import sync_playwright
           base = "http://127.0.0.1:8000"
