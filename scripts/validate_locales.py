@@ -57,12 +57,12 @@ for entry in registry.get("languages", []):
     empty = sorted(k for k, v in ui.items() if not isinstance(v, str) or not v.strip())
     if missing:
         message=f"{code}: {len(missing)} missing UI keys: {', '.join(missing[:8])}"
-        (errors if entry.get("available") is True else warnings).append(message + ("" if entry.get("available") is True else " (locale not offered on product pages)"))
+        (errors if entry.get("product_pages_available") is True else warnings).append(message + ("" if entry.get("product_pages_available") is True else " (locale not offered on product pages)"))
     if extra:
         errors.append(f"{code}: {len(extra)} unexpected UI keys: {', '.join(extra[:8])}")
     if empty:
         message=f"{code}: {len(empty)} empty/non-string UI values: {', '.join(empty[:8])}"
-        (errors if entry.get("available") is True else warnings).append(message + ("" if entry.get("available") is True else " (locale not offered on product pages)"))
+        (errors if entry.get("product_pages_available") is True else warnings).append(message + ("" if entry.get("product_pages_available") is True else " (locale not offered on product pages)"))
     unchanged = [k for k in expected_keys if ui.get(k) == english.get(k)]
     if unchanged:
         warnings.append(f"{code}: {len(unchanged)} UI values exactly match English (possible untranslated copy)")
@@ -74,17 +74,19 @@ for entry in registry.get("languages", []):
     else:
         counts["unmarked"] += 1
 
+    if entry.get("available") is True and entry.get("product_pages_available") is not True:
+        warnings.append(f"{code}: gallery language is enabled; product-page availability is determined independently for each product by the landing-page builders")
     products = data.get("products", {})
     ebooks = data.get("ebooks", {})
     missing_ebooks = sorted(set(ebook_copy) - set(ebooks))
-    if missing_ebooks and entry.get("available") is True:
+    if missing_ebooks and entry.get("product_pages_available") is True:
         errors.append(f"{code}: {len(missing_ebooks)} curated e-book translations missing: {', '.join(missing_ebooks[:6])}")
     for book_key, source_copy in ebook_copy.items():
         translated = ebooks.get(book_key, {})
         expected_hash = __import__("hashlib").sha256(json.dumps(source_copy.get("en", {}), ensure_ascii=False, sort_keys=True).encode()).hexdigest()
-        if entry.get("available") is True and translated.get("_source_hash") != expected_hash:
+        if entry.get("product_pages_available") is True and translated.get("_source_hash") != expected_hash:
             errors.append(f"{code}/{book_key}: curated e-book translation source hash is missing or stale")
-        if entry.get("available") is True:
+        if entry.get("product_pages_available") is True:
             # Only title and overview are required by the product-page renderer.
             # Subtitle, strapline and audience are optional editorial enhancements;
             # do not block every locale when an optional field is legitimately absent.
