@@ -351,8 +351,9 @@ for lang in REG:
                 if item.get('_source_hash')!=digest(copy.get('en',{})):
                     reasons.append('stale/missing curated e-book source')
                     break
-                if not safe_text(item.get('title'),3,300) or not safe_text(item.get('overview'),80,12000):
-                    reasons.append('incomplete curated e-book title/overview')
+                ebook_minimums={"title":3,"subtitle":8,"strapline":8,"overview":80,"audience":30,"cta":8}
+                if any(not safe_text(item.get(field),minimum,12000) for field,minimum in ebook_minimums.items()):
+                    reasons.append('incomplete curated e-book required fields')
                     break
                 for field in ('explore','takeaways'):
                     source_list=copy.get('en',{}).get(field,[])
