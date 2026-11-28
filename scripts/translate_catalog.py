@@ -20,7 +20,8 @@ EBOOK_COPY=json.loads((ROOT/"ebook-copy.json").read_text(encoding="utf-8"))
 source=(ROOT/"assets/i18n.js").read_text(encoding="utf-8")
 match=re.search(r"const M=(\{[\s\S]*?\});\nconst map=",source)
 if not match: raise SystemExit("Could not locate canonical UI dictionary.")
-ui=json.loads(match.group(1))["en"]
+UI_DICTIONARY=json.loads(match.group(1))
+ui=UI_DICTIONARY["en"]
 
 # Argos package language codes are not always identical to BCP-47 storefront tags.
 CODE_MAP={"zh-CN":"zh","zh-TW":"zh","pt":"pt","fa":"fa","he":"he","ar":"ar"}
@@ -96,11 +97,18 @@ for lang in REG:
             continue
         if existing.get("_source_hash")!=digest(fields):
             pending.append((p,key,fields))
-    reviewed_ui = old.get("_ui_reviewed") is True and bool(old.get("ui"))
+    existing_ui=old.setdefault("ui",{})
+    # Reuse the exact hand-authored gallery dictionary wherever it exists.
+    # For all other locales, add only missing keys through the same Argos engine;
+    # never regenerate or overwrite the gallery's existing product/UI translations.
+    manual_ui=UI_DICTIONARY.get(code,{})
+    for key in ui:
+        if key not in existing_ui and key in manual_ui:
+            existing_ui[key]=manual_ui[key]
+    reviewed_ui = old.get("_ui_reviewed") is True and bool(existing_ui)
     if reviewed_ui and old.get("_ui_source_hash") != ui_hash:
         print(f"REVIEW REQUIRED: {code} source UI changed; preserving reviewed translation.")
-    needs_ui=old.get("_ui_source_hash")!=ui_hash and not reviewed_ui
-    existing_ui=old.setdefault("ui",{})
+    needs_ui=not bool(existing_ui)
     fallback_ui_keys=set(old.get("_ui_fallback_keys",[]))
     missing_ui_keys=[key for key in ui if key not in existing_ui or key in fallback_ui_keys]
     needs_missing_ui=bool(missing_ui_keys)
@@ -136,11 +144,13 @@ for lang in REG:
                 old["_ui_source_hash"]=ui_hash
                 old["_ui_translation_status"]="machine-generated-unreviewed"
             else:
-                # Preserve editorially reviewed strings; add only newly introduced
-                # keys so the expanded navigation and three sections stay translated.
+                # Preserve all existing gallery strings and add only missing keys.
                 existing_ui.update(translated)
                 old["ui"]=existing_ui
-                old["_ui_translation_status"]="editorially-reviewed-with-new-machine-keys"
+                if reviewed_ui:
+                    old["_ui_translation_status"]="editorially-reviewed-with-new-machine-keys"
+                else:
+                    old["_ui_translation_status"]=old.get("_ui_translation_status","machine-generated-unreviewed")
             old["_ui_fallback_keys"]=sorted(fallback_ui_keys.difference(keys))
     if reviewed_ui and not needs_missing_ui:
         old["_ui_translation_status"]="editorially-reviewed"
