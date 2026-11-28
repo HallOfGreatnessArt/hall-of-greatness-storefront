@@ -323,13 +323,19 @@ for lang in REG:
         try:
             localized=json.loads(path.read_text(encoding='utf-8'))
             localized_ui=localized.get('ui',{})
-            if not isinstance(localized_ui,dict) or not expected_ui_keys.issubset(set(localized_ui)):
+            if not isinstance(localized_ui,dict):
+                reasons.append('invalid UI dictionary')
+                localized_ui={}
+            if not expected_ui_keys.issubset(set(localized_ui)):
                 reasons.append('incomplete UI')
             if localized.get('_ui_fallback_keys'):
                 reasons.append('English UI fallback present')
             elif any(not safe_text(localized_ui.get(key),1,2000) for key in expected_ui_keys):
                 reasons.append('unsafe/empty UI')
             localized_products=localized.get('products',{})
+            if not isinstance(localized_products,dict):
+                reasons.append('invalid product dictionary')
+                localized_products={}
             if not expected_product_keys.issubset(set(localized_products)):
                 reasons.append('incomplete product catalogue')
             for product in CAT['products']:
@@ -346,6 +352,9 @@ for lang in REG:
                     reasons.append('unsafe/incomplete product copy')
                     break
             localized_ebooks=localized.get('ebooks',{})
+            if not isinstance(localized_ebooks,dict):
+                reasons.append('invalid curated e-book dictionary')
+                localized_ebooks={}
             for book_key,copy in EBOOK_COPY.items():
                 item=localized_ebooks.get(book_key,{})
                 if item.get('_source_hash')!=digest(copy.get('en',{})):
@@ -364,7 +373,7 @@ for lang in REG:
                 if reasons:
                     break
             complete=not reasons
-        except (UnicodeError,json.JSONDecodeError,TypeError):
+        except (UnicodeError,json.JSONDecodeError,TypeError,AttributeError):
             complete=False
             reasons.append('invalid locale data')
     lang['available']=complete
