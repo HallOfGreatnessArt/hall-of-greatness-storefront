@@ -152,7 +152,7 @@ for lang in REG:
             item["_translation_status"]="editorially-reviewed"
             ebook_translations[book_key]=item
         path.parent.mkdir(parents=True,exist_ok=True)
-        path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+        path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
         needs_ebooks=False
     if not needs_ui and not needs_missing_ui and not pending and not needs_ebooks and not needs_ar_titles:
         print(f"Up to date: {code}; no model installation needed.")
