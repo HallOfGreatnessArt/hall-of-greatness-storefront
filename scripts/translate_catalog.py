@@ -337,6 +337,8 @@ for lang in REG:
                 reasons.append('English UI fallback present')
             elif any(not safe_text(localized_ui.get(key),1,2000) for key in expected_ui_keys):
                 reasons.append('unsafe/empty UI')
+            if any(localized_ui.get(key)==ui.get(key) for key in ("landingBuy","landingLanguage","landingDelivery")):
+                reasons.append('critical product-page UI labels remain in English')
             localized_products=localized.get('products',{})
             if not isinstance(localized_products,dict):
                 reasons.append('invalid product dictionary')
