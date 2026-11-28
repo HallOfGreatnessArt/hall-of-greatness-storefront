@@ -23,7 +23,7 @@ SHARE_LABELS={"share","Partager","Compartir","Anteil","Compartilhar","Condividi"
 def clean_page_copy(value):
     if not isinstance(value,str): return ""
     lines=value.strip().splitlines()
-    while lines and lines[0].strip().strip(":") in SHARE_LABELS:
+    while lines and lines[0].strip().strip(":").casefold() in {label.casefold() for label in SHARE_LABELS}:
         lines.pop(0)
     return "\n".join(lines).strip()
 def translation_text_is_safe(value, max_length=12000, min_length=8):
