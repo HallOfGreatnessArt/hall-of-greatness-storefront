@@ -112,12 +112,21 @@ for lang in REG:
     fallback_ui_keys=set(old.get("_ui_fallback_keys",[]))
     missing_ui_keys=[key for key in ui if key not in existing_ui or key in fallback_ui_keys]
     needs_missing_ui=bool(missing_ui_keys)
+    needs_ebooks = any(
+        not isinstance(old.get("ebooks",{}).get(book_key),dict)
+        or old.get("ebooks",{}).get(book_key,{}).get("_source_hash") != digest(copy.get("en",{}))
+        or not isinstance(old.get("ebooks",{}).get(book_key,{}).get("title"),str)
+        or len(old.get("ebooks",{}).get(book_key,{}).get("title","").strip()) < 3
+        or not isinstance(old.get("ebooks",{}).get(book_key,{}).get("overview"),str)
+        or len(old.get("ebooks",{}).get(book_key,{}).get("overview","").strip()) < 80
+        for book_key,copy in EBOOK_COPY.items()
+    )
     needs_ar_titles = code=="ar" and any(
         p.get("published") and p.get("permalink") and
         not str(products.get(p["permalink"],{}).get("title_ar","")).strip()
         for p in CAT["products"]
     )
-    if not needs_ui and not needs_missing_ui and not pending and not needs_ar_titles:
+    if not needs_ui and not needs_missing_ui and not pending and not needs_ebooks and not needs_ar_titles:
         print(f"Up to date: {code}; no model installation needed.")
         continue
     translator=get_translator(target)
@@ -152,6 +161,15 @@ for lang in REG:
                 else:
                     old["_ui_translation_status"]=old.get("_ui_translation_status","machine-generated-unreviewed")
             old["_ui_fallback_keys"]=sorted(fallback_ui_keys.difference(keys))
+        else:
+            # A model may be installed but fail on individual UI strings.
+            # Keep the selector structurally safe using explicitly labelled
+            # English fallback keys; this locale remains unavailable for pages.
+            still_missing=[key for key in ui if key not in existing_ui]
+            existing_ui.update({key:ui[key] for key in still_missing})
+            old["ui"]=existing_ui
+            old["_ui_fallback_keys"]=sorted(set(old.get("_ui_fallback_keys",[])).union(still_missing))
+            old["_ui_translation_status"]="english-fallback-incomplete"
     if reviewed_ui and not needs_missing_ui:
         old["_ui_translation_status"]="editorially-reviewed"
     for p,key,fields in pending:
