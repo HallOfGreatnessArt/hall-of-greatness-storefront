@@ -88,11 +88,11 @@ for entry in registry.get("languages", []):
             # Only title and overview are required by the product-page renderer.
             # Subtitle, strapline and audience are optional editorial enhancements;
             # do not block every locale when an optional field is legitimately absent.
-            required_fields = ("title", "overview")
-            optional_fields = ("subtitle", "strapline", "audience")
+            required_fields = ("title", "subtitle", "strapline", "overview", "audience", "cta")
+            optional_fields = ()
             for field in required_fields:
                 value = translated.get(field)
-                minimum_length = 3 if field == "title" else 80
+                minimum_length = {"title": 3, "subtitle": 8, "strapline": 8, "overview": 80, "audience": 30, "cta": 8}[field]
                 if not isinstance(value, str) or len(value.strip()) < minimum_length:
                     errors.append(f"{code}/{book_key}: missing or implausibly short curated e-book {field} (minimum {minimum_length})")
                 elif re.search(r"(.)\1{5,}", value, re.I) or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|^\s*(?:share|compartir|partager)\s*$", value, re.I | re.M):
