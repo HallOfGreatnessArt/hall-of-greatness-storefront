@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
@@ -84,6 +85,10 @@ def main() -> None:
                 expected_buy = locale_data["ui"]["landingBuy"]
                 check(page.locator("#buy").inner_text() == expected_buy, f"{key}/{code}: localized CTA mismatch")
                 check(bool(page.locator("#overview").inner_text().strip()), f"{key}/{code}: translated overview missing")
+                visible_copy=page.locator("body").inner_text()
+                check(not re.search(r"(.)\\1{5,}",visible_copy,re.I), f"{key}/{code}: repeated-character corruption leaked")
+                first_story_line=next((line.strip().casefold() for line in page.locator("#overview").inner_text().splitlines() if line.strip()), "")
+                check(first_story_line not in {"share","compartir","partager","поделиться"}, f"{key}/{code}: Gumroad page chrome leaked into copy")
                 check(page.locator("#meta .meta").count() == 6, f"{key}/{code}: metadata incomplete")
 
             page.select_option("#lang", "ar")
