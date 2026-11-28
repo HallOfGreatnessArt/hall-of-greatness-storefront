@@ -122,13 +122,13 @@ for lang in REG:
         or any(
             not isinstance(old.get("ebooks",{}).get(book_key,{}).get(field),str)
             or len(old.get("ebooks",{}).get(book_key,{}).get(field,"").strip()) < minimum
-            for field,minimum in (("subtitle",8),("strapline",8),("audience",30),("cta",8))
+            for field,minimum in (("subtitle",8),("strapline",8),("audience",30),("cta",8),("format",8),("structure",3),("delivery",8))
         )
         or any(
             not isinstance(old.get("ebooks",{}).get(book_key,{}).get(field),list)
             or len(old.get("ebooks",{}).get(book_key,{}).get(field,[])) != len(copy.get("en",{}).get(field,[]))
             or any(not isinstance(part,str) or len(part.strip()) < 10 for part in old.get("ebooks",{}).get(book_key,{}).get(field,[]))
-            for field in ("explore","takeaways")
+            for field in ("explore","takeaways","package")
         )
         for book_key,copy in EBOOK_COPY.items()
     )
@@ -369,11 +369,11 @@ for lang in REG:
                 if item.get('_source_hash')!=digest(copy.get('en',{})):
                     reasons.append('stale/missing curated e-book source')
                     break
-                ebook_minimums={"title":1,"subtitle":8,"strapline":8,"overview":80,"audience":30,"cta":8}
+                ebook_minimums={"title":1,"subtitle":8,"strapline":8,"overview":80,"audience":30,"cta":8,"format":8,"structure":3,"delivery":8}
                 if any(not safe_text(item.get(field),minimum,12000) for field,minimum in ebook_minimums.items()):
                     reasons.append('incomplete curated e-book required fields')
                     break
-                for field in ('explore','takeaways'):
+                for field in ('explore','takeaways','package'):
                     source_list=copy.get('en',{}).get(field,[])
                     values=item.get(field,[])
                     if not isinstance(values,list) or len(values)!=len(source_list) or any(not safe_text(x,10,2000) for x in values):
