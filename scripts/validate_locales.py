@@ -87,7 +87,7 @@ for entry in registry.get("languages", []):
                 value = translated.get(field)
                 if not isinstance(value, str) or len(value.strip()) < 20:
                     errors.append(f"{code}/{book_key}: missing or implausibly short curated e-book {field}")
-                elif re.search(r"(.)\\1{5,}", value, re.I) or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|^\\s*(?:share|compartir|partager)\\s*$", value, re.I | re.M):
+                elif re.search(r"(.)\1{5,}", value, re.I) or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|^\s*(?:share|compartir|partager)\s*$", value, re.I | re.M):
                     errors.append(f"{code}/{book_key}: corrupted or scraped curated e-book {field}")
     missing_products = sorted(expected_products - set(products))
     if missing_products:
