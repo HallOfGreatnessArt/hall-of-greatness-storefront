@@ -98,7 +98,7 @@ jobs:
           base = "http://127.0.0.1:8000"
           pages = [
               ("artwork", "/gumroad-landings/the-art-of-stillness/landing.html", "product-preview-evidence/artwork"),
-              ("ebook", "/gumroad-ebook-landings/qsznm/landing.html", "product-preview-evidence/ebook"),
+              ("ebook", "/gumroad-landings/the-ai-black-box/landing.html", "product-preview-evidence/ebook"),
           ]
           with sync_playwright() as p:
               browser = p.chromium.launch()
