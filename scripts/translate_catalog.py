@@ -206,6 +206,17 @@ for lang in REG:
             continue
         source_hash=digest(source_english)
         existing=dict(ebook_translations.get(book_key,{}) or {})
+        if code=="ar" and isinstance(source_copy.get("ar"),dict):
+            # The Arabic book copy is already curated in the editorial source.
+            # Reuse it verbatim rather than producing a second machine translation.
+            for field,value in source_copy["ar"].items():
+                if field not in existing or not existing.get(field):
+                    existing[field]=value
+            existing["_source_hash"]=source_hash
+            existing["_translation_status"]="editorially-reviewed"
+            ebook_translations[book_key]=existing
+            print(f"Reused curated Arabic e-book copy {book_key}.")
+            continue
         status=existing.get("_translation_status","")
         editorial=status in ("editorially-reviewed","editorial-draft-ai-assisted")
         pending_paths=[]
