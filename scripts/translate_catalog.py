@@ -172,38 +172,61 @@ for lang in REG:
         item["_source_hash"]=source_hash
         products[key]=item
 
-    # Translate the curated e-book editorial copy, not the scraped Gumroad
-    # description fields (which may contain page chrome or incomplete metadata).
+    # Translate curated e-book copy field-by-field. Never replace existing
+    # editorial text: only fill missing/unsafe fields, preserving every approved
+    # string and list item even when the source hash has changed.
     ebook_translations=old.setdefault("ebooks",{})
     for book_key, source_copy in EBOOK_COPY.items():
         source_english=source_copy.get("en",{})
         if not source_english:
             continue
         source_hash=digest(source_english)
-        existing=ebook_translations.get(book_key,{})
-        if existing.get("_source_hash")==source_hash:
-            continue
-        flat=[]; paths=[]
+        existing=dict(ebook_translations.get(book_key,{}) or {})
+        status=existing.get("_translation_status","")
+        editorial=status in ("editorially-reviewed","editorial-draft-ai-assisted")
+        pending_paths=[]
+        pending_values=[]
         for field,value in source_english.items():
             if isinstance(value,list):
-                for index,part in enumerate(value):
-                    if isinstance(part,str) and part.strip():
-                        paths.append((field,index)); flat.append(part)
+                current=existing.get(field)
+                current=list(current) if isinstance(current,list) else []
+                if len(current)<len(value):
+                    current.extend([""]*(len(value)-len(current)))
+                for index,source_value in enumerate(value):
+                    current_value=current[index]
+                    valid=isinstance(current_value,str) and len(current_value.strip())>=10 and not re.search(r"(.)\\1{5,}",current_value,re.I)
+                    if not valid and isinstance(source_value,str) and source_value.strip():
+                        pending_paths.append((field,index))
+                        pending_values.append(source_value)
+                existing[field]=current
             elif isinstance(value,str) and value.strip():
-                paths.append((field,None)); flat.append(value)
-        translated_values=translate_many(flat,code)
-        if translated_values is None:
-            continue
-        translated_copy={}
-        for (field,index),value in zip(paths,translated_values):
-            if index is None:
-                translated_copy[field]=value
-            else:
-                translated_copy.setdefault(field,[None]*len(source_english[field]))
-                translated_copy[field][index]=value
-        ebook_translations[book_key]={**translated_copy,"_source_hash":source_hash}
-        print(f"Localized curated e-book copy {code}/{book_key}")
-
+                current_value=existing.get(field)
+                minimum=3 if field=="title" else (30 if field=="overview" else 8)
+                valid=isinstance(current_value,str) and len(current_value.strip())>=minimum and not re.search(r"(.)\\1{5,}",current_value,re.I)
+                if not valid:
+                    pending_paths.append((field,None))
+                    pending_values.append(value)
+        if pending_values:
+            translated_values=translate_many(pending_values,code)
+            if translated_values is not None and len(translated_values)==len(pending_paths):
+                for (field,index),translated_value in zip(pending_paths,translated_values):
+                    if not isinstance(translated_value,str) or not translated_value.strip():
+                        continue
+                    if index is None:
+                        # Existing editorial fields are never overwritten; this
+                        # branch only fills a missing or structurally invalid field.
+                        if not str(existing.get(field,"")).strip():
+                            existing[field]=translated_value.strip()
+                    else:
+                        values=existing.setdefault(field,[])
+                        while len(values)<=index: values.append("")
+                        if not str(values[index]).strip():
+                            values[index]=translated_value.strip()
+                if not editorial:
+                    existing["_translation_status"]="machine-generated-unreviewed"
+        existing["_source_hash"]=source_hash
+        ebook_translations[book_key]=existing
+        print(f"Checked curated e-book translation {code}/{book_key}; preserved existing editorial fields.")
     # Arabic product cards require a localized display title in addition to
     # the translated description. Generate missing titles for newly imported
     # products while preserving any existing editorially prepared title.
@@ -224,8 +247,13 @@ for lang in REG:
     print(f"Localized {code}: {len(products)} products")
 
 
-# Only expose languages with complete UI and product translation files.
-# Unsupported languages remain documented in the registry but are hidden from the selector.
+# Product-page availability is stricter than gallery registration. A locale is
+# exposed only when every required page field is present, current, and safe.
+def safe_text(value, minimum=1, maximum=12000):
+    return (isinstance(value,str) and minimum <= len(value.strip()) <= maximum
+            and not re.search(r"(.)\\1{5,}",value,re.I)
+            and not re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection",value,re.I))
+
 expected_product_keys={p['permalink'] for p in CAT['products'] if p.get('published') and p.get('permalink')}
 expected_ui_keys=set(ui)
 for lang in REG:
@@ -236,35 +264,57 @@ for lang in REG:
         continue
     path=ROOT/'locales'/(code+'.json')
     complete=False
+    reasons=[]
     if path.exists():
         try:
             localized=json.loads(path.read_text(encoding='utf-8'))
             localized_ui=localized.get('ui',{})
+            if not isinstance(localized_ui,dict) or not expected_ui_keys.issubset(set(localized_ui)):
+                reasons.append('incomplete UI')
+            if localized.get('_ui_fallback_keys'):
+                reasons.append('English UI fallback present')
+            elif any(not safe_text(localized_ui.get(key),1,2000) for key in expected_ui_keys):
+                reasons.append('unsafe/empty UI')
             localized_products=localized.get('products',{})
-            products_current=True
-            for product in CAT["products"]:
-                if not product.get("published") or not product.get("permalink"):
+            if not expected_product_keys.issubset(set(localized_products)):
+                reasons.append('incomplete product catalogue')
+            for product in CAT['products']:
+                if not product.get('published') or not product.get('permalink'):
                     continue
-                fields={k:product.get(k) for k in ("summary","full_description","category") if product.get(k)}
-                fields["product_details"]=product.get("product_details") or {}
-                item=localized_products.get(product["permalink"],{})
-                if item.get("_source_hash")!=digest(fields):
-                    products_current=False
+                item=localized_products.get(product['permalink'],{})
+                fields={k:product.get(k) for k in ('summary','full_description','category') if product.get(k)}
+                fields['product_details']=product.get('product_details') or {}
+                if item.get('_source_hash')!=digest(fields):
+                    reasons.append('stale product source')
                     break
-            localized_ebooks=localized.get("ebooks",{})
-            ebooks_current=all(
-                localized_ebooks.get(book_key,{}).get("_source_hash")==digest(copy.get("en",{}))
-                for book_key,copy in EBOOK_COPY.items()
-            )
-            complete=(expected_ui_keys.issubset(set(localized_ui)) and
-                      not localized.get("_ui_fallback_keys") and
-                      expected_product_keys.issubset(set(localized_products)) and
-                      products_current and ebooks_current)
-        except (UnicodeError,json.JSONDecodeError):
+                if any(not safe_text(item.get(field),20 if field in ('summary','full_description') else 1)
+                       for field in ('summary','full_description','category')):
+                    reasons.append('unsafe/incomplete product copy')
+                    break
+            localized_ebooks=localized.get('ebooks',{})
+            for book_key,copy in EBOOK_COPY.items():
+                item=localized_ebooks.get(book_key,{})
+                if item.get('_source_hash')!=digest(copy.get('en',{})):
+                    reasons.append('stale/missing curated e-book source')
+                    break
+                if not safe_text(item.get('title'),3,300) or not safe_text(item.get('overview'),80,12000):
+                    reasons.append('incomplete curated e-book title/overview')
+                    break
+                for field in ('explore','takeaways'):
+                    source_list=copy.get('en',{}).get(field,[])
+                    values=item.get(field,[])
+                    if not isinstance(values,list) or len(values)!=len(source_list) or any(not safe_text(x,10,2000) for x in values):
+                        reasons.append('incomplete curated e-book lists')
+                        break
+                if reasons:
+                    break
+            complete=not reasons
+        except (UnicodeError,json.JSONDecodeError,TypeError):
             complete=False
+            reasons.append('invalid locale data')
     lang['available']=complete
-    lang['availability_note']='complete UI and product translations' if complete else 'translation file/model unavailable or incomplete'
+    lang['availability_note']='complete, current product-page translations' if complete else 'not offered on product pages: '+', '.join(dict.fromkeys(reasons or ['translation file/model unavailable']))
 REGISTRY_DATA['provider']='Argos Translate (open-source, offline models)'
-REGISTRY_DATA['translation_mode']='Free offline translation during GitHub Actions builds; language availability depends on installed model pairs; incomplete languages are hidden from the storefront selector.'
-REGISTRY_PATH.write_text(json.dumps(REGISTRY_DATA,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print('Updated language availability flags; incomplete locales remain hidden until complete.')
+REGISTRY_DATA['translation_mode']='Free offline translation; product pages expose only complete, current, safe locales. Existing editorial translations are preserved; unsupported or incomplete locales are hidden rather than misrepresented.'
+REGISTRY_PATH.write_text(json.dumps(REGISTRY_DATA,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+print('Updated product-page availability flags using full UI, product, and curated e-book completeness checks.')
