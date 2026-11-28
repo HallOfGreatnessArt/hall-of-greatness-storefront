@@ -18,6 +18,26 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      suite:
+        description: "Run the full QA or isolate the Gumroad landing localization test"
+        required: true
+        type: choice
+        default: full
+        options:
+          - full
+          - gumroad-landing-localization
+      product_permalink:
+        description: "Product permalink for the targeted landing test"
+        required: false
+        type: string
+        default: mxrljy
+      language:
+        description: "Language code for the targeted landing test"
+        required: false
+        type: string
+        default: en
     paths:
       - ".github/workflows/read-only-localization-qa.yml"
       - "catalog-data.json"
@@ -91,18 +111,27 @@ jobs:
           echo $! >/tmp/hog-local-preview.pid
 
       - name: Test language switching, refresh, RTL, all product pages, and published site
+        if: github.event_name != 'workflow_dispatch' || inputs.suite == 'full'
         run: python scripts/test_localized_browser.py --local-only
 
       - name: Test Gumroad product landing translations against gallery locale files
-        run: python scripts/test_gumroad_landing_localization.py
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.suite }}" = "gumroad-landing-localization" ]; then
+            python scripts/test_gumroad_landing_localization.py --product "${{ inputs.product_permalink }}" --language "${{ inputs.language }}"
+          else
+            python scripts/test_gumroad_landing_localization.py
+          fi
 
       - name: Test five-unit gallery layout, pagination, Gumroad links, and mobile grids
+        if: github.event_name != 'workflow_dispatch' || inputs.suite == 'full'
         run: python scripts/test_responsive_storefront.py
 
       - name: Test all six e-book pages in Chromium and capture screenshots
+        if: github.event_name != 'workflow_dispatch' || inputs.suite == 'full'
         run: python scripts/test_ebook_landing_pages.py
 
       - name: Capture independent artwork and e-book previews on desktop and mobile
+        if: github.event_name != 'workflow_dispatch' || inputs.suite == 'full'
         run: |
           mkdir -p product-preview-evidence/artwork product-preview-evidence/ebook
           cp gumroad-landings/the-art-of-stillness/landing.html product-preview-evidence/artwork/index.html
@@ -135,6 +164,7 @@ jobs:
           PY
 
       - name: Upload independent artwork preview
+        if: github.event_name != 'workflow_dispatch' || inputs.suite == 'full'
         uses: actions/upload-artifact@v4
         with:
           name: artwork-product-preview
@@ -143,6 +173,7 @@ jobs:
           retention-days: 30
 
       - name: Upload independent e-book preview
+        if: github.event_name != 'workflow_dispatch' || inputs.suite == 'full'
         uses: actions/upload-artifact@v4
         with:
           name: ebook-product-preview
@@ -151,6 +182,7 @@ jobs:
           retention-days: 30
 
       - name: Upload six-page e-book browser evidence
+        if: github.event_name != 'workflow_dispatch' || inputs.suite == 'full'
         if: always()
         uses: actions/upload-artifact@v4
         with:
