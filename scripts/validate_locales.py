@@ -56,11 +56,13 @@ for entry in registry.get("languages", []):
     extra = sorted(set(ui) - expected_keys)
     empty = sorted(k for k, v in ui.items() if not isinstance(v, str) or not v.strip())
     if missing:
-        errors.append(f"{code}: {len(missing)} missing UI keys: {', '.join(missing[:8])}")
+        message=f"{code}: {len(missing)} missing UI keys: {', '.join(missing[:8])}"
+        (errors if entry.get("available") is True else warnings).append(message + ("" if entry.get("available") is True else " (locale not offered on product pages)"))
     if extra:
         errors.append(f"{code}: {len(extra)} unexpected UI keys: {', '.join(extra[:8])}")
     if empty:
-        errors.append(f"{code}: {len(empty)} empty/non-string UI values: {', '.join(empty[:8])}")
+        message=f"{code}: {len(empty)} empty/non-string UI values: {', '.join(empty[:8])}"
+        (errors if entry.get("available") is True else warnings).append(message + ("" if entry.get("available") is True else " (locale not offered on product pages)"))
     unchanged = [k for k in expected_keys if ui.get(k) == english.get(k)]
     if unchanged:
         warnings.append(f"{code}: {len(unchanged)} UI values exactly match English (possible untranslated copy)")
@@ -90,8 +92,9 @@ for entry in registry.get("languages", []):
             optional_fields = ("subtitle", "strapline", "audience")
             for field in required_fields:
                 value = translated.get(field)
-                if not isinstance(value, str) or len(value.strip()) < 20:
-                    errors.append(f"{code}/{book_key}: missing or implausibly short curated e-book {field}")
+                minimum_length = 3 if field == "title" else 80
+                if not isinstance(value, str) or len(value.strip()) < minimum_length:
+                    errors.append(f"{code}/{book_key}: missing or implausibly short curated e-book {field} (minimum {minimum_length})")
                 elif re.search(r"(.)\1{5,}", value, re.I) or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|^\s*(?:share|compartir|partager)\s*$", value, re.I | re.M):
                     errors.append(f"{code}/{book_key}: corrupted or scraped curated e-book {field}")
             for field in optional_fields:
