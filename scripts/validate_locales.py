@@ -88,11 +88,11 @@ for entry in registry.get("languages", []):
             # Only title and overview are required by the product-page renderer.
             # Subtitle, strapline and audience are optional editorial enhancements;
             # do not block every locale when an optional field is legitimately absent.
-            required_fields = ("title", "subtitle", "strapline", "overview", "audience", "cta")
+            required_fields = ("title", "subtitle", "strapline", "overview", "audience", "cta", "format", "structure", "delivery")
             optional_fields = ()
             for field in required_fields:
                 value = translated.get(field)
-                minimum_length = {"title": 1, "subtitle": 8, "strapline": 8, "overview": 80, "audience": 30, "cta": 8}[field]
+                minimum_length = {"title": 1, "subtitle": 8, "strapline": 8, "overview": 80, "audience": 30, "cta": 8, "format": 8, "structure": 3, "delivery": 8}[field]
                 if not isinstance(value, str) or len(value.strip()) < minimum_length:
                     errors.append(f"{code}/{book_key}: missing or implausibly short curated e-book {field} (minimum {minimum_length})")
                 elif re.search(r"(.)\1{5,}", value, re.I) or re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|^\s*(?:share|compartir|partager)\s*$", value, re.I | re.M):
@@ -101,7 +101,7 @@ for entry in registry.get("languages", []):
                 errors.append(f"{code}/{book_key}: curated e-book overview is still English")
             if any(ui.get(key) == english.get(key) for key in ("landingBuy", "landingLanguage", "landingDelivery")):
                 errors.append(f"{code}: critical product-page UI labels remain in English")
-            for field in ("explore", "takeaways"):
+            for field in ("explore", "takeaways", "package"):
                 source_values = source_copy.get("en", {}).get(field, [])
                 translated_values = translated.get(field)
                 if not isinstance(translated_values, list) or len(translated_values) != len(source_values):
