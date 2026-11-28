@@ -161,7 +161,8 @@ for entry in registry.get("languages", []):
         for field in ("summary", "full_description", "category"):
             value = item.get(field)
             if not isinstance(value, str) or not value.strip():
-                errors.append(f"{code}/{slug}: missing, empty, or invalid {field}")
+                message=f"{code}/{slug}: missing, empty, or invalid {field}"
+                (errors if item.get("_translation_status") == "editorially-reviewed" else warnings).append(message + (" (approved copy requires correction)" if item.get("_translation_status") == "editorially-reviewed" else " (this product must omit the locale until its field is safe)"))
                 continue
             if "\ufffd" in value:
                 errors.append(f"{code}/{slug}: Unicode replacement character in {field}")
