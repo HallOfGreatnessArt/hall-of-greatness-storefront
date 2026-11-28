@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = "http://127.0.0.1:8000/gumroad-ebook-landings"
 CATALOG = json.loads((ROOT / "catalog-data.json").read_text(encoding="utf-8"))
 COPY = json.loads((ROOT / "ebook-copy.json").read_text(encoding="utf-8"))
+LANGUAGES = json.loads((ROOT / "locales/languages.json").read_text(encoding="utf-8"))
 PRODUCTS = {p["permalink"]: p for p in CATALOG["products"] if p.get("permalink") in COPY}
 EVIDENCE = ROOT / "ebook-landing-refresh-evidence" / "screenshots"
 EVIDENCE.mkdir(parents=True, exist_ok=True)
