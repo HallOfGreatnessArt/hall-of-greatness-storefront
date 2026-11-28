@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
@@ -10,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = "http://127.0.0.1:8000/gumroad-ebook-landings"
 CATALOG = json.loads((ROOT / "catalog-data.json").read_text(encoding="utf-8"))
 COPY = json.loads((ROOT / "ebook-copy.json").read_text(encoding="utf-8"))
+LANGUAGES = json.loads((ROOT / "locales/languages.json").read_text(encoding="utf-8"))
 PRODUCTS = {p["permalink"]: p for p in CATALOG["products"] if p.get("permalink") in COPY}
 EVIDENCE = ROOT / "ebook-landing-refresh-evidence" / "screenshots"
 EVIDENCE.mkdir(parents=True, exist_ok=True)
@@ -64,14 +66,36 @@ def main() -> None:
             actual_urls = sorted(page.locator("#bookLinks a").evaluate_all("(nodes) => nodes.map(a => a.href)"))
             check(actual_urls == expected_urls, f"{key}: related-book links do not match the verified five-book bundle")
 
+            locale_options = page.locator("#lang").evaluate("(el) => Array.from(el.options).map(option => option.value)")
+            check("ar" in locale_options, f"{key}: Arabic missing from validated e-book language options: {locale_options}")
+            for code in [value for value in locale_options if value not in ("auto", "en")]:
+                page.select_option("#lang", code)
+                rtl_entry = next((item for item in LANGUAGES["languages"] if item["code"] == code), {"rtl": False})
+                direction = "rtl" if rtl_entry.get("rtl") else "ltr"
+                page.wait_for_function("(args) => document.documentElement.lang === args[0] && document.documentElement.dir === args[1]", arg=[code, direction])
+                if code == "ar":
+                    translated = arabic
+                    locale_data = json.loads((ROOT / "locales" / "ar.json").read_text(encoding="utf-8"))
+                else:
+                    locale_data = json.loads((ROOT / "locales" / f"{code}.json").read_text(encoding="utf-8"))
+                    translated = locale_data["ebooks"][key]
+                actual_title = page.locator("#title").text_content()
+                check(actual_title == translated["title"], f"{key}/{code}: translated title mismatch")
+                check(page.title() == translated["title"] + " | HALL OF GREATNESS Publishing", f"{key}/{code}: document title metadata mismatch")
+                expected_buy = locale_data["ui"]["landingBuy"]
+                check(page.locator("#buy").inner_text() == expected_buy, f"{key}/{code}: localized CTA mismatch")
+                check(bool(page.locator("#overview").inner_text().strip()), f"{key}/{code}: translated overview missing")
+                visible_copy=page.locator("body").inner_text()
+                check(not re.search(r"(.)\1{5,}",visible_copy,re.I), f"{key}/{code}: repeated-character corruption leaked")
+                first_story_line=next((line.strip().casefold() for line in page.locator("#overview").inner_text().splitlines() if line.strip()), "")
+                check(first_story_line not in {"share","compartir","partager","поделиться"}, f"{key}/{code}: Gumroad page chrome leaked into copy")
+                check(page.locator("#meta .meta").count() == 6, f"{key}/{code}: metadata incomplete")
+
             page.select_option("#lang", "ar")
-            # Wait for the language switch itself, then assert the title separately.
-            # This keeps a title mismatch diagnostic instead of hiding it in a timeout.
             page.wait_for_function("document.documentElement.lang === 'ar' && document.documentElement.dir === 'rtl'")
             actual_arabic_title = page.locator("#title").text_content()
             check(actual_arabic_title == arabic["title"], f"{key}: Arabic title mismatch; expected={arabic['title']!r}, actual={actual_arabic_title!r}")
             check(page.title() == arabic["title"] + " | HALL OF GREATNESS Publishing", f"{key}: Arabic document title metadata mismatch")
-            check(page.locator("#buy").inner_text() == "اقتَنِ نسختك الرقمية", f"{key}: Arabic CTA missing")
             check(page.locator("#meta .meta").count() == 6, f"{key}: Arabic metadata incomplete")
 
             # Capture actual Arabic RTL rendering at desktop and mobile sizes.

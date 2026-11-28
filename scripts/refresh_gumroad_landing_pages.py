@@ -4,6 +4,7 @@ import hashlib, html, json, os, re, subprocess, time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 CAT=json.loads((ROOT/"catalog-data.json").read_text(encoding="utf-8"))
+EBOOK_COPY=json.loads((ROOT/"ebook-copy.json").read_text(encoding="utf-8"))
 REG=json.loads((ROOT/"locales/languages.json").read_text(encoding="utf-8"))["languages"]
 I18N=(ROOT/"assets/i18n.js").read_text(encoding="utf-8")
 m=re.search(r"const M=(\{[\s\S]*?\});\nconst map=",I18N)
@@ -16,6 +17,42 @@ if not LOCAL_ONLY and not TOKEN: raise SystemExit("GUMROAD_ACCESS_TOKEN is requi
 ENV=os.environ.copy()
 EVIDENCE=ROOT/"gumroad-landing-refresh-evidence"; EVIDENCE.mkdir(exist_ok=True)
 def digest(obj): return hashlib.sha256(json.dumps(obj,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
+ALLOWED_DETAIL_KEYS={"files_included","product_type","delivery","physical_item","printing","usage","bundle_item_count","structure"}
+PAGE_CHROME=re.compile(r"add to wishlist|powered by gumroad|more from this creator|explore our collection|available on gumroad",re.I)
+SHARE_LABELS={"share","Partager","Compartir","Anteil","Compartilhar","Condividi","Поделиться","शेयर","শেয়ার","シェア","份额"}
+def clean_page_copy(value):
+    if not isinstance(value,str): return ""
+    lines=value.strip().splitlines()
+    while lines and lines[0].strip().strip(":").casefold() in {label.casefold() for label in SHARE_LABELS}:
+        lines.pop(0)
+    return "\n".join(lines).strip()
+def translation_text_is_safe(value, max_length=12000, min_length=8):
+    if not isinstance(value,str): return False
+    text=clean_page_copy(value)
+    if not text or len(text)>max_length or len(text)<min_length: return False
+    if not re.search(r"[\w\u0600-\u06FF]",text,re.UNICODE): return False
+    if re.search(r"(.)\1{5,}",text,re.I): return False
+    if PAGE_CHROME.search(text): return False
+    if re.search(r"[\uFFFD]|(?:Ã.|Â.|Ø[ء-ي]|Ù[ء-ي])",text): return False
+    if text.strip(" .。،,:;!?-—…")=="": return False
+    return True
+def ebook_page_copy(source):
+    overview=source.get("overview","")
+    summary=overview if translation_text_is_safe(overview, min_length=30) else source.get("strapline","")
+    paragraphs=[source.get("strapline",""),overview]
+    for field in ("explore","takeaways"):
+        values=source.get(field) or []
+        if values: paragraphs.append("\n".join("• "+str(x) for x in values))
+    if source.get("audience"): paragraphs.append(source["audience"])
+    if source.get("cta"): paragraphs.append(source["cta"])
+    full="\n\n".join(x for x in paragraphs if x)
+    details={
+      "product_type":source.get("format","Digital book"),
+      "delivery":source.get("delivery","Digital delivery through Gumroad"),
+      "structure":source.get("structure",""),
+    }
+    if source.get("package"): details["files_included"]="; ".join(source["package"])
+    return {"name":source.get("title",""),"summary":summary,"full_description":full,"details":details}
 def esc(v): return html.escape(str(v or ""),quote=True)
 def js(v): return json.dumps(v,ensure_ascii=False).replace("<","\\u003c").replace(">","\\u003e").replace("&","\\u0026")
 def slug(v): return re.sub(r"[^a-z0-9]+","-",str(v).lower()).strip("-") or "product"
@@ -28,23 +65,60 @@ if LOCAL_ONLY:
 groups={}
 for p in products: groups.setdefault(p.get("content_type",""),[]).append(p)
 def translations(p):
-    key=p["permalink"]; fields={k:p.get(k) for k in ("summary","full_description","category") if p.get(k)}; fields["product_details"]=p.get("product_details") or {}
+    key=p["permalink"]
+    fields={k:p.get(k) for k in ("summary","full_description","category") if p.get(k)}
+    fields["product_details"]=p.get("product_details") or {}
     expected=digest(fields)
-    out={"en":{"name":p["name"],"summary":p.get("summary",""),"full_description":p.get("full_description") or p.get("summary",""),"details":p.get("product_details") or {}}}
+    out={}
+    english_ui=UI.get("en",{})
+    if p.get("content_type")=="ebook" and key in EBOOK_COPY:
+        base=ebook_page_copy(EBOOK_COPY[key].get("en",{}))
+        out["en"]={**base,"ui":english_ui}
+    else:
+        base_summary=p.get("summary","")
+        base_full=clean_page_copy(p.get("full_description") or base_summary)
+        if not translation_text_is_safe(base_summary, min_length=20):
+            base_summary=p.get("name","")
+        if not translation_text_is_safe(base_full, min_length=20):
+            base_full=base_summary
+        base_details=p.get("product_details") or {}
+        base_details={k:v for k,v in base_details.items() if k in ALLOWED_DETAIL_KEYS and translation_text_is_safe(v,max_length=500,min_length=3)}
+        out["en"]={"name":p["name"],"summary":base_summary,"full_description":base_full,"details":base_details,"ui":english_ui}
     for lang in REG:
         code=lang["code"]
-        if code=="en" or not lang.get("available"): continue
-        path=ROOT/"locales"/(code+".json")
-        if not path.exists(): continue
-        try: loc=json.loads(path.read_text(encoding="utf-8"))
+        if code=="en": continue
+        locale_path=ROOT/"locales"/(code+".json")
+        if not locale_path.exists(): continue
+        try: loc=json.loads(locale_path.read_text(encoding="utf-8"))
         except Exception: continue
-        item=loc.get("products",{}).get(key,{})
-        if item.get("_source_hash")!=expected or not item.get("summary") or not item.get("full_description"): continue
-        out[code]={"name":item.get("title_ar") or p["name"],"summary":item["summary"],"full_description":item["full_description"],"details":item.get("product_details") or p.get("product_details") or {}}
+        localized_ui=loc.get("ui") or {}
+        required_ui=[k for k in english_ui if k.startswith("landing")]
+        if not required_ui or any(not isinstance(localized_ui.get(k),str) or not localized_ui.get(k).strip() or localized_ui.get(k)==english_ui.get(k) for k in required_ui):
+            continue
+        if p.get("content_type")=="ebook" and key in EBOOK_COPY:
+            item=(loc.get("ebooks") or {}).get(key,{})
+            source_hash=digest(EBOOK_COPY[key].get("en",{}))
+            if item.get("_source_hash")!=source_hash: continue
+            translated=ebook_page_copy(item)
+            if not translation_text_is_safe(translated["summary"],min_length=30): continue
+            if not translation_text_is_safe(translated["full_description"],min_length=40): continue
+            out[code]={**translated,"ui":localized_ui}
+            continue
+        item=(loc.get("products") or {}).get(key,{})
+        if item.get("_source_hash")!=expected: continue
+        summary=item.get("summary","")
+        if not translation_text_is_safe(summary,min_length=20): continue
+        full=clean_page_copy(item.get("full_description",""))
+        if not translation_text_is_safe(full,min_length=40):
+            full=summary
+        details=item.get("product_details") or {}
+        details={k:v for k,v in details.items() if k in ALLOWED_DETAIL_KEYS and translation_text_is_safe(v,max_length=500,min_length=3)}
+        localized_name=item.get("title_ar") if code=="ar" else p["name"]
+        out[code]={"name":localized_name or p["name"],"summary":summary,"full_description":full,"details":details,"ui":localized_ui}
     return out
 def render(p):
     tr=translations(p); related=[{"name":x["name"],"url":x["url"]} for x in groups.get(p.get("content_type",""),[]) if x["permalink"]!=p["permalink"]][:4]
-    languages=[{"code":"en","name":"English"}]+[{"code":x["code"],"name":x["name"]} for x in REG if x["code"] in tr and x["code"]!="en"]
+    languages=[{"code":"en","name":"English","rtl":False}]+[{"code":x["code"],"name":x["name"],"rtl":bool(x.get("rtl"))} for x in REG if x["code"] in tr and x["code"]!="en"]
     kind={"art-decor":"DIGITAL ARTWORK","ebook":"DIGITAL BOOK","course":"DIGITAL COURSE"}.get(p.get("content_type"),"DIGITAL PRODUCT")
     data={"translations":tr,"related":related}
     name=esc(p["name"]); cover=esc(p["cover_url"]); summary=esc(p.get("summary",""))
@@ -71,7 +145,7 @@ header{{min-height:76px;display:flex;align-items:center;justify-content:space-be
 <section class="section"><div class="section-inner"><div class="kicker" id="relatedLabel">EXPLORE MORE</div><h2 id="relatedTitle">More from HALL OF GREATNESS</h2><div class="related" id="related"></div></div></section>
 <section class="purchase" id="purchase"><div class="kicker" id="purchaseLabel">MAKE IT YOURS</div><h2 id="purchaseTitle">Bring this story into your world.</h2><p id="purchaseText">{summary}</p><div class="price" data-gumroad-field="price"></div><a class="buy" href="#" data-gumroad-action="buy" id="buyBottom">Get this digital product</a><div class="trust">Secure checkout through Gumroad · Instant digital delivery</div><div class="trust" data-gumroad-field="rating"></div><div class="trust" data-gumroad-field="review-count"></div></section></main>
 <footer><span>HALL OF GREATNESS</span><span>Art with a Soul. A Message Without Borders.</span></footer></div>
-<script>const DATA=__DATA__;const LANGS=__LANGS__;const WORDS={{en:["Choose language","Get this digital product","Instant digital delivery after purchase. Please review the product details before purchase.","THE STORY","The meaning behind this product","PRODUCT DETAILS","What you should know","EXPLORE MORE","More from HALL OF GREATNESS","MAKE IT YOURS","Bring this story into your world."],ar:["اختر اللغة","احصل على المنتج الرقمي","تنزيل رقمي فوري بعد الشراء. يرجى مراجعة تفاصيل المنتج قبل إتمام الشراء.","الحكاية","المعنى وراء هذا المنتج","تفاصيل المنتج","معلومات مهمة قبل الشراء","اكتشف المزيد","المزيد من HALL OF GREATNESS","اجعله جزءاً من عالمك","دع هذه الحكاية تجد مكانها في عالمك."],fr:["Choisir la langue","Obtenir ce produit numérique","Téléchargement numérique instantané après l'achat.","L'HISTOIRE","Le sens de ce produit","DÉTAILS DU PRODUIT","À savoir avant l'achat","DÉCOUVRIR PLUS","Plus de HALL OF GREATNESS","FAITES-LE VÔTRE","Faites entrer cette histoire dans votre univers."]}};const DETAIL={{en:["Product type","Delivery","Physical item","Printing","Usage","Files included","Collection contents"],ar:["نوع المنتج","التسليم","المنتج المادي","الطباعة","الاستخدام","الملفات المرفقة","محتويات المجموعة"],fr:["Type de produit","Livraison","Article physique","Impression","Utilisation","Fichiers inclus","Contenu de la collection"]}};const KEYS=["product_type","delivery","physical_item","printing","usage","files_included","bundle_item_count"];const select=document.getElementById("lang");LANGS.forEach(x=>{{const o=document.createElement("option");o.value=x.code;o.textContent=x.name;select.appendChild(o)}});function setLanguage(code){{const t=DATA.translations[code]||DATA.translations.en;const w=WORDS[code]||WORDS.en;const labels=DETAIL[code]||DETAIL.en;document.documentElement.lang=code;document.documentElement.dir=["ar","fa","he","ur"].includes(code)?"rtl":"ltr";document.getElementById("languageLabel").textContent=w[0];document.getElementById("buy").textContent=w[1];document.getElementById("buyBottom").textContent=w[1];document.getElementById("delivery").textContent=w[2];document.getElementById("storyLabel").textContent=w[3];document.getElementById("storyTitle").textContent=w[4];document.getElementById("detailsLabel").textContent=w[5];document.getElementById("detailsTitle").textContent=w[6];document.getElementById("relatedLabel").textContent=w[7];document.getElementById("relatedTitle").textContent=w[8];document.getElementById("purchaseLabel").textContent=w[9];document.getElementById("purchaseTitle").textContent=w[10];document.getElementById("navStory").textContent=code==="ar"?"القصة":code==="fr"?"Histoire":"Story";document.getElementById("navDetails").textContent=code==="ar"?"التفاصيل":code==="fr"?"Détails":"Details";document.getElementById("navBuy").textContent=code==="ar"?"الشراء":code==="fr"?"Acheter":"Buy";document.getElementById("productTitle").textContent=t.name;document.getElementById("summary").textContent=t.summary;document.getElementById("purchaseText").textContent=t.summary;document.getElementById("fullDescription").textContent=t.full_description;document.getElementById("fullDescriptionToggle").textContent=code==="ar"?"اقرأ الوصف الكامل":code==="fr"?"Lire la description complète":"Read the full product story";const box=document.getElementById("details");box.replaceChildren();Object.entries(t.details||{{}}).forEach(([k,v])=>{{if(!v)return;const i=document.createElement("div");i.className="detail";const b=document.createElement("b");const idx=KEYS.indexOf(k);b.textContent=idx>=0?labels[idx]:k.replace(/_/g," ");const s=document.createElement("span");s.textContent=v;i.append(b,s);box.append(i)}});const rel=document.getElementById("related");rel.replaceChildren();DATA.related.forEach(x=>{{const a=document.createElement("a");a.href=x.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=x.name;rel.append(a)}})}}select.addEventListener("change",()=>setLanguage(select.value));setLanguage("en");</script></body></html>"""
+<script>const DATA=__DATA__;const LANGS=__LANGS__;const select=document.getElementById("lang");const autoOption=document.createElement("option");autoOption.value="auto";autoOption.textContent="🌐 Auto";select.appendChild(autoOption);LANGS.forEach(x=>{{const o=document.createElement("option");o.value=x.code;o.textContent=x.name;select.appendChild(o)}});const ENUI=(DATA.translations.en||{{}}).ui||{{}};function preferredLanguage(){{const prefs=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"en"];for(const pref of prefs){{const exact=LANGS.find(x=>x.code.toLowerCase()===pref.toLowerCase());if(exact)return exact.code;const base=pref.split("-")[0];const match=LANGS.find(x=>x.code===base);if(match)return match.code;}}return "en";}}function setLanguage(code){{const actual=code==="auto"?preferredLanguage():(DATA.translations[code]?code:"en");const t=DATA.translations[actual]||DATA.translations.en;const u=t.ui||ENUI;const w=k=>u[k]||ENUI[k]||k;const rtl=!!((LANGS.find(x=>x.code===actual)||{{}}).rtl);document.documentElement.lang=actual;document.documentElement.dir=rtl?"rtl":"ltr";document.getElementById("languageLabel").textContent=w("landingLanguage");document.getElementById("buy").textContent=w("landingBuy");document.getElementById("buyBottom").textContent=w("landingBuy");document.getElementById("delivery").textContent=w("landingDelivery");document.getElementById("storyLabel").textContent=w("landingStory");document.getElementById("storyTitle").textContent=w("landingStoryHeading");document.getElementById("detailsLabel").textContent=w("landingDetails");document.getElementById("detailsTitle").textContent=w("landingDetailsHeading");document.getElementById("relatedLabel").textContent=w("landingRelated");document.getElementById("relatedTitle").textContent=w("landingRelatedHeading");document.getElementById("purchaseLabel").textContent=w("landingPurchase");document.getElementById("purchaseTitle").textContent=w("landingPurchaseHeading");document.getElementById("navStory").textContent=w("landingStory");document.getElementById("navDetails").textContent=w("landingDetails");document.getElementById("navBuy").textContent=w("landingPurchase");document.getElementById("productTitle").textContent=t.name;document.getElementById("summary").textContent=t.summary;document.getElementById("purchaseText").textContent=t.summary;document.getElementById("fullDescription").textContent=t.full_description;document.getElementById("fullDescriptionToggle").textContent=w("landingReadMore");document.querySelector(".purchase .trust").textContent=w("landingSecureCheckout");const detailKeys={{product_type:"landingDetailProductType",delivery:"landingDetailDelivery",physical_item:"landingDetailPhysical",printing:"landingDetailPrinting",usage:"landingDetailUsage",files_included:"landingDetailFiles",bundle_item_count:"landingDetailCollection",structure:"landingDetailStructure"}};const box=document.getElementById("details");box.replaceChildren();Object.entries(t.details||{{}}).forEach(([k,v])=>{{if(!v)return;const i=document.createElement("div");i.className="detail";const b=document.createElement("b");b.textContent=w(detailKeys[k]||k);const s=document.createElement("span");s.textContent=v;i.append(b,s);box.append(i)}});const rel=document.getElementById("related");rel.replaceChildren();DATA.related.forEach(x=>{{const a=document.createElement("a");a.href=x.url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=x.name;rel.append(a)}});if(select.value!==actual)select.value=actual;}}const saved=(()=>{{try{{return localStorage.getItem("hog-language")||"auto"}}catch(e){{return "auto"}}}})();select.addEventListener("change",()=>{{const v=select.value;try{{if(v==="auto")localStorage.removeItem("hog-language");else localStorage.setItem("hog-language",v)}}catch(e){{}}setLanguage(v)}});setLanguage(saved);</script></body></html>"""
     return page.replace("__DATA__",js(data)).replace("__LANGS__",js(languages))
 generated=[]
 for p in products:

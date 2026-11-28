@@ -16,13 +16,15 @@ REGISTRY_PATH=ROOT/"locales/languages.json"
 REGISTRY_DATA=json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
 REG=REGISTRY_DATA["languages"]
 CAT=json.loads((ROOT/"catalog-data.json").read_text(encoding="utf-8"))
+EBOOK_COPY=json.loads((ROOT/"ebook-copy.json").read_text(encoding="utf-8"))
 source=(ROOT/"assets/i18n.js").read_text(encoding="utf-8")
 match=re.search(r"const M=(\{[\s\S]*?\});\nconst map=",source)
 if not match: raise SystemExit("Could not locate canonical UI dictionary.")
-ui=json.loads(match.group(1))["en"]
+UI_DICTIONARY=json.loads(match.group(1))
+ui=UI_DICTIONARY["en"]
 
 # Argos package language codes are not always identical to BCP-47 storefront tags.
-CODE_MAP={"zh-CN":"zh","zh-TW":"zh","pt":"pt","fa":"fa","he":"he","ar":"ar"}
+CODE_MAP={"zh-CN":"zh","pt":"pt","fa":"fa","he":"he","ar":"ar"}
 def digest(obj):
     return hashlib.sha256(json.dumps(obj,ensure_ascii=False,sort_keys=True).encode()).hexdigest()
 
@@ -95,20 +97,64 @@ for lang in REG:
             continue
         if existing.get("_source_hash")!=digest(fields):
             pending.append((p,key,fields))
-    reviewed_ui = old.get("_ui_reviewed") is True and bool(old.get("ui"))
+    existing_ui=old.setdefault("ui",{})
+    # Reuse the exact hand-authored gallery dictionary wherever it exists.
+    # For all other locales, add only missing keys through the same Argos engine;
+    # never regenerate or overwrite the gallery's existing product/UI translations.
+    manual_ui=UI_DICTIONARY.get(code,{})
+    for key in ui:
+        if key not in existing_ui and key in manual_ui:
+            existing_ui[key]=manual_ui[key]
+    reviewed_ui = old.get("_ui_reviewed") is True and bool(existing_ui)
     if reviewed_ui and old.get("_ui_source_hash") != ui_hash:
         print(f"REVIEW REQUIRED: {code} source UI changed; preserving reviewed translation.")
-    needs_ui=old.get("_ui_source_hash")!=ui_hash and not reviewed_ui
-    existing_ui=old.setdefault("ui",{})
+    needs_ui=not bool(existing_ui)
     fallback_ui_keys=set(old.get("_ui_fallback_keys",[]))
     missing_ui_keys=[key for key in ui if key not in existing_ui or key in fallback_ui_keys]
     needs_missing_ui=bool(missing_ui_keys)
+    needs_ebooks = any(
+        not isinstance(old.get("ebooks",{}).get(book_key),dict)
+        or old.get("ebooks",{}).get(book_key,{}).get("_source_hash") != digest(copy.get("en",{}))
+        or not isinstance(old.get("ebooks",{}).get(book_key,{}).get("title"),str)
+        or len(old.get("ebooks",{}).get(book_key,{}).get("title","").strip()) < 1
+        or not isinstance(old.get("ebooks",{}).get(book_key,{}).get("overview"),str)
+        or len(old.get("ebooks",{}).get(book_key,{}).get("overview","").strip()) < 80
+        or any(
+            not isinstance(old.get("ebooks",{}).get(book_key,{}).get(field),str)
+            or len(old.get("ebooks",{}).get(book_key,{}).get(field,"").strip()) < minimum
+            for field,minimum in (("subtitle",8),("strapline",8),("audience",30),("cta",8),("format",8),("structure",3),("delivery",8))
+        )
+        or any(
+            not isinstance(old.get("ebooks",{}).get(book_key,{}).get(field),list)
+            or len(old.get("ebooks",{}).get(book_key,{}).get(field,[])) != len(copy.get("en",{}).get(field,[]))
+            or any(not isinstance(part,str) or len(part.strip()) < 10 for part in old.get("ebooks",{}).get(book_key,{}).get(field,[]))
+            for field in ("explore","takeaways","package")
+        )
+        for book_key,copy in EBOOK_COPY.items()
+    )
     needs_ar_titles = code=="ar" and any(
         p.get("published") and p.get("permalink") and
         not str(products.get(p["permalink"],{}).get("title_ar","")).strip()
         for p in CAT["products"]
     )
-    if not needs_ui and not needs_missing_ui and not pending and not needs_ar_titles:
+    if code=="ar":
+        # Persist the already-curated Arabic e-book copy even if the Argos
+        # model index is unavailable; this content does not require machine translation.
+        ebook_translations=old.setdefault("ebooks",{})
+        for book_key,source_copy in EBOOK_COPY.items():
+            if not isinstance(source_copy.get("ar"),dict):
+                continue
+            item=dict(ebook_translations.get(book_key,{}) or {})
+            for field,value in source_copy["ar"].items():
+                if not item.get(field):
+                    item[field]=value
+            item["_source_hash"]=digest(source_copy.get("en",{}))
+            item["_translation_status"]="editorially-reviewed"
+            ebook_translations[book_key]=item
+        path.parent.mkdir(parents=True,exist_ok=True)
+        path.write_text(json.dumps(old,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+        needs_ebooks=False
+    if not needs_ui and not needs_missing_ui and not pending and not needs_ebooks and not needs_ar_titles:
         print(f"Up to date: {code}; no model installation needed.")
         continue
     translator=get_translator(target)
@@ -135,12 +181,23 @@ for lang in REG:
                 old["_ui_source_hash"]=ui_hash
                 old["_ui_translation_status"]="machine-generated-unreviewed"
             else:
-                # Preserve editorially reviewed strings; add only newly introduced
-                # keys so the expanded navigation and three sections stay translated.
+                # Preserve all existing gallery strings and add only missing keys.
                 existing_ui.update(translated)
                 old["ui"]=existing_ui
-                old["_ui_translation_status"]="editorially-reviewed-with-new-machine-keys"
+                if reviewed_ui:
+                    old["_ui_translation_status"]="editorially-reviewed-with-new-machine-keys"
+                else:
+                    old["_ui_translation_status"]=old.get("_ui_translation_status","machine-generated-unreviewed")
             old["_ui_fallback_keys"]=sorted(fallback_ui_keys.difference(keys))
+        else:
+            # A model may be installed but fail on individual UI strings.
+            # Keep the selector structurally safe using explicitly labelled
+            # English fallback keys; this locale remains unavailable for pages.
+            still_missing=[key for key in ui if key not in existing_ui]
+            existing_ui.update({key:ui[key] for key in still_missing})
+            old["ui"]=existing_ui
+            old["_ui_fallback_keys"]=sorted(set(old.get("_ui_fallback_keys",[])).union(still_missing))
+            old["_ui_translation_status"]="english-fallback-incomplete"
     if reviewed_ui and not needs_missing_ui:
         old["_ui_translation_status"]="editorially-reviewed"
     for p,key,fields in pending:
@@ -161,6 +218,74 @@ for lang in REG:
         item["_source_hash"]=source_hash
         products[key]=item
 
+    # Translate curated e-book copy field-by-field. Never replace existing
+    # editorial text: only fill missing/unsafe fields, preserving every approved
+    # string and list item even when the source hash has changed.
+    ebook_translations=old.setdefault("ebooks",{})
+    for book_key, source_copy in EBOOK_COPY.items():
+        source_english=source_copy.get("en",{})
+        if not source_english:
+            continue
+        source_hash=digest(source_english)
+        existing=dict(ebook_translations.get(book_key,{}) or {})
+        if code=="ar" and isinstance(source_copy.get("ar"),dict):
+            # The Arabic book copy is already curated in the editorial source.
+            # Reuse it verbatim rather than producing a second machine translation.
+            for field,value in source_copy["ar"].items():
+                if field not in existing or not existing.get(field):
+                    existing[field]=value
+            existing["_source_hash"]=source_hash
+            existing["_translation_status"]="editorially-reviewed"
+            ebook_translations[book_key]=existing
+            print(f"Reused curated Arabic e-book copy {book_key}.")
+            continue
+        status=existing.get("_translation_status","")
+        editorial=status in ("editorially-reviewed","editorial-draft-ai-assisted")
+        pending_paths=[]
+        pending_values=[]
+        for field,value in source_english.items():
+            if isinstance(value,list):
+                current=existing.get(field)
+                current=list(current) if isinstance(current,list) else []
+                if len(current)<len(value):
+                    current.extend([""]*(len(value)-len(current)))
+                for index,source_value in enumerate(value):
+                    current_value=current[index]
+                    valid=isinstance(current_value,str) and len(current_value.strip())>=10 and not re.search(r"(.)\1{5,}",current_value,re.I)
+                    if not valid and isinstance(source_value,str) and source_value.strip():
+                        pending_paths.append((field,index))
+                        pending_values.append(source_value)
+                existing[field]=current
+            elif isinstance(value,str) and value.strip():
+                current_value=existing.get(field)
+                minimum=1 if field=="title" else (30 if field=="overview" else 8)
+                valid=isinstance(current_value,str) and len(current_value.strip())>=minimum and not re.search(r"(.)\1{5,}",current_value,re.I)
+                if not valid:
+                    pending_paths.append((field,None))
+                    pending_values.append(value)
+        if pending_values:
+            translated_values=translate_many(pending_values,code)
+            if translated_values is not None and len(translated_values)==len(pending_paths):
+                for (field,index),translated_value in zip(pending_paths,translated_values):
+                    if not isinstance(translated_value,str) or not translated_value.strip():
+                        continue
+                    if index is None:
+                        # Replace invalid machine copy, but never overwrite
+                        # editorially prepared content.
+                        if not editorial:
+                            existing[field]=translated_value.strip()
+                        elif not str(existing.get(field,"")).strip():
+                            existing[field]=translated_value.strip()
+                    else:
+                        values=existing.setdefault(field,[])
+                        while len(values)<=index: values.append("")
+                        if not editorial or not str(values[index]).strip():
+                            values[index]=translated_value.strip()
+                if not editorial:
+                    existing["_translation_status"]="machine-generated-unreviewed"
+        existing["_source_hash"]=source_hash
+        ebook_translations[book_key]=existing
+        print(f"Checked curated e-book translation {code}/{book_key}; preserved existing editorial fields.")
     # Arabic product cards require a localized display title in addition to
     # the translated description. Generate missing titles for newly imported
     # products while preserving any existing editorially prepared title.
@@ -181,42 +306,10 @@ for lang in REG:
     print(f"Localized {code}: {len(products)} products")
 
 
-# Only expose languages with complete UI and product translation files.
-# Unsupported languages remain documented in the registry but are hidden from the selector.
-expected_product_keys={p['permalink'] for p in CAT['products'] if p.get('published') and p.get('permalink')}
-expected_ui_keys=set(ui)
-for lang in REG:
-    code=lang['code']
-    if code=='en':
-        lang['available']=True
-        lang['availability_note']='source language'
-        continue
-    path=ROOT/'locales'/(code+'.json')
-    complete=False
-    if path.exists():
-        try:
-            localized=json.loads(path.read_text(encoding='utf-8'))
-            localized_ui=localized.get('ui',{})
-            localized_products=localized.get('products',{})
-            products_current=True
-            for product in CAT["products"]:
-                if not product.get("published") or not product.get("permalink"):
-                    continue
-                fields={k:product.get(k) for k in ("summary","full_description","category") if product.get(k)}
-                fields["product_details"]=product.get("product_details") or {}
-                item=localized_products.get(product["permalink"],{})
-                if item.get("_source_hash")!=digest(fields):
-                    products_current=False
-                    break
-            complete=(expected_ui_keys.issubset(set(localized_ui)) and
-                      not localized.get("_ui_fallback_keys") and
-                      expected_product_keys.issubset(set(localized_products)) and
-                      products_current)
-        except (UnicodeError,json.JSONDecodeError):
-            complete=False
-    lang['available']=complete
-    lang['availability_note']='complete UI and product translations' if complete else 'translation file/model unavailable or incomplete'
-REGISTRY_DATA['provider']='Argos Translate (open-source, offline models)'
-REGISTRY_DATA['translation_mode']='Free offline translation during GitHub Actions builds; language availability depends on installed model pairs; incomplete languages are hidden from the storefront selector.'
-REGISTRY_PATH.write_text(json.dumps(REGISTRY_DATA,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print('Updated language availability flags; incomplete locales remain hidden until complete.')
+
+# Product-page readiness is evaluated per product by the landing-page builders.
+# Do not write product-page completeness into locales/languages.json: that file
+# is the canonical PUBLIC GALLERY registry. A single incomplete/scraped Gumroad
+# product (or an ebook whose authoritative copy lives in ebook-copy.json) must
+# never disable a language across the main gallery.
+print("Preserved canonical gallery language availability; product pages apply per-product content safety checks.")

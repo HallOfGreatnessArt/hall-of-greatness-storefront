@@ -142,9 +142,24 @@ def fetch_public_page(url):
     return parser, final_url, rendered_text, article_h2, article_h4
 
 def detail_between(text, start, end):
-    pattern = rf"{re.escape(start)}\s*:?\s*(.*?)(?={re.escape(end)}\s*:?\s*|$)"
-    match = re.search(pattern, text, flags=re.I | re.S)
-    return clean(match.group(1)) if match else ""
+    # A missing closing label must never consume the rest of Gumroad's page
+    # (wishlist controls, product story, related products, footer, etc.).
+    start_match = re.search(rf"(?<![\w]){re.escape(start)}\s*:?", text, flags=re.I)
+    if not start_match:
+        return ""
+    end_match = re.search(rf"(?<![\w]){re.escape(end)}\s*:?", text[start_match.end():], flags=re.I)
+    if not end_match:
+        return ""
+    value = clean(text[start_match.end():start_match.end() + end_match.start()])
+    # Product metadata fields are short labels, not a second copy of the page.
+    if not value or len(value) > 500:
+        return ""
+    chrome = ("add to wishlist", "share", "explore our collection", "more from this creator", "powered by gumroad")
+    if any(marker in value.lower() for marker in chrome):
+        return ""
+    if re.search(r"(.)\1{5,}", value, flags=re.I):
+        return ""
+    return value
 
 def extract_full_description(parser, rendered_text, article_h2=None):
     if rendered_text:
@@ -156,7 +171,7 @@ def extract_full_description(parser, rendered_text, article_h2=None):
                 text = description_heading + "\n" + text
         if "Add to wishlist" in text:
             text = text.split("Add to wishlist", 1)[1]
-        for marker in ("EXPLORE OUR COLLECTION", "More from this creator"):
+        for marker in ("EXPLORE OUR COLLECTION", "More from this creator", "Powered by Gumroad"):
             if marker in text:
                 text = text.split(marker, 1)[0]
         lines = [clean(line) for line in text.splitlines()]
