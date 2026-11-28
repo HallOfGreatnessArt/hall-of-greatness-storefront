@@ -86,12 +86,15 @@ def translations(p):
         out["en"]={"name":p["name"],"summary":base_summary,"full_description":base_full,"details":base_details,"ui":english_ui}
     for lang in REG:
         code=lang["code"]
-        if code=="en" or not lang.get("available"): continue
+        if code=="en": continue
         locale_path=ROOT/"locales"/(code+".json")
         if not locale_path.exists(): continue
         try: loc=json.loads(locale_path.read_text(encoding="utf-8"))
         except Exception: continue
-        localized_ui=loc.get("ui") or UI.get(code) or english_ui
+        localized_ui=loc.get("ui") or {}
+        required_ui=[k for k in english_ui if k.startswith("landing")]
+        if not required_ui or any(not isinstance(localized_ui.get(k),str) or not localized_ui.get(k).strip() or localized_ui.get(k)==english_ui.get(k) for k in required_ui):
+            continue
         if p.get("content_type")=="ebook" and key in EBOOK_COPY:
             item=(loc.get("ebooks") or {}).get(key,{})
             source_hash=digest(EBOOK_COPY[key].get("en",{}))
