@@ -306,88 +306,10 @@ for lang in REG:
     print(f"Localized {code}: {len(products)} products")
 
 
-# Product-page availability is stricter than gallery registration. A locale is
-# exposed only when every required page field is present, current, and safe.
-def safe_text(value, minimum=1, maximum=12000):
-    return (isinstance(value,str) and minimum <= len(value.strip()) <= maximum
-            and not re.search(r"(.)\1{5,}",value,re.I)
-            and not re.search(r"add to wishlist|powered by gumroad|more from this creator|explore our collection",value,re.I))
 
-expected_product_keys={p['permalink'] for p in CAT['products'] if p.get('published') and p.get('permalink')}
-expected_ui_keys=set(ui)
-for lang in REG:
-    code=lang['code']
-    if code=='en':
-        lang['available']=True
-        lang['availability_note']='source language'
-        continue
-    path=ROOT/'locales'/(code+'.json')
-    complete=False
-    reasons=[]
-    if code=="zh-TW":
-        reasons.append("Traditional Chinese translation model is not configured; Simplified Chinese is not an acceptable fallback")
-    if path.exists():
-        try:
-            localized=json.loads(path.read_text(encoding='utf-8'))
-            localized_ui=localized.get('ui',{})
-            if not isinstance(localized_ui,dict):
-                reasons.append('invalid UI dictionary')
-                localized_ui={}
-            if not expected_ui_keys.issubset(set(localized_ui)):
-                reasons.append('incomplete UI')
-            if localized.get('_ui_fallback_keys'):
-                reasons.append('English UI fallback present')
-            elif any(not safe_text(localized_ui.get(key),1,2000) for key in expected_ui_keys):
-                reasons.append('unsafe/empty UI')
-            if any(localized_ui.get(key)==ui.get(key) for key in ("landingBuy","landingLanguage","landingDelivery")):
-                reasons.append('critical product-page UI labels remain in English')
-            localized_products=localized.get('products',{})
-            if not isinstance(localized_products,dict):
-                reasons.append('invalid product dictionary')
-                localized_products={}
-            if not expected_product_keys.issubset(set(localized_products)):
-                reasons.append('incomplete product catalogue')
-            for product in CAT['products']:
-                if not product.get('published') or not product.get('permalink'):
-                    continue
-                item=localized_products.get(product['permalink'],{})
-                fields={k:product.get(k) for k in ('summary','full_description','category') if product.get(k)}
-                fields['product_details']=product.get('product_details') or {}
-                if item.get('_source_hash')!=digest(fields):
-                    reasons.append('stale product source')
-                    break
-                if any(not safe_text(item.get(field),20 if field in ('summary','full_description') else 1)
-                       for field in ('summary','full_description','category')):
-                    reasons.append('unsafe/incomplete product copy')
-                    break
-            localized_ebooks=localized.get('ebooks',{})
-            if not isinstance(localized_ebooks,dict):
-                reasons.append('invalid curated e-book dictionary')
-                localized_ebooks={}
-            for book_key,copy in EBOOK_COPY.items():
-                item=localized_ebooks.get(book_key,{})
-                if item.get('_source_hash')!=digest(copy.get('en',{})):
-                    reasons.append('stale/missing curated e-book source')
-                    break
-                ebook_minimums={"title":1,"subtitle":8,"strapline":8,"overview":80,"audience":30,"cta":8,"format":8,"structure":3,"delivery":8}
-                if any(not safe_text(item.get(field),minimum,12000) for field,minimum in ebook_minimums.items()):
-                    reasons.append('incomplete curated e-book required fields')
-                    break
-                for field in ('explore','takeaways','package'):
-                    source_list=copy.get('en',{}).get(field,[])
-                    values=item.get(field,[])
-                    if not isinstance(values,list) or len(values)!=len(source_list) or any(not safe_text(x,10,2000) for x in values):
-                        reasons.append('incomplete curated e-book lists')
-                        break
-                if reasons:
-                    break
-            complete=not reasons
-        except (UnicodeError,json.JSONDecodeError,TypeError,AttributeError):
-            complete=False
-            reasons.append('invalid locale data')
-    lang['available']=complete
-    lang['availability_note']='complete, current product-page translations' if complete else 'not offered on product pages: '+', '.join(dict.fromkeys(reasons or ['translation file/model unavailable']))
-REGISTRY_DATA['provider']='Argos Translate (open-source, offline models)'
-REGISTRY_DATA['translation_mode']='Free offline translation; product pages expose only complete, current, safe locales. Existing editorial translations are preserved; unsupported or incomplete locales are hidden rather than misrepresented.'
-REGISTRY_PATH.write_text(json.dumps(REGISTRY_DATA,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-print('Updated product-page availability flags using full UI, product, and curated e-book completeness checks.')
+# Product-page readiness is evaluated per product by the landing-page builders.
+# Do not write product-page completeness into locales/languages.json: that file
+# is the canonical PUBLIC GALLERY registry. A single incomplete/scraped Gumroad
+# product (or an ebook whose authoritative copy lives in ebook-copy.json) must
+# never disable a language across the main gallery.
+print("Preserved canonical gallery language availability; product pages apply per-product content safety checks.")
