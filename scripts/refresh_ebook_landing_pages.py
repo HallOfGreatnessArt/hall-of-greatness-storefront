@@ -100,7 +100,7 @@ function render(code){
  code=resolveLanguage(code);const t=DATA.translations[code]||DATA.translations.en,u=t.ui||DATA.translations.en.ui||{},w=k=>u[k]||DATA.translations.en.ui[k]||k,rtl=!!((DATA.languages||[]).find(x=>x.code===code)||{}).rtl;
  document.title=t.title+" | HALL OF GREATNESS Publishing";
  const description=document.querySelector('meta[name="description"]'); if(description) description.content=t.overview;
- document.documentElement.lang=code;document.documentElement.dir=rtl?"rtl":"ltr";
+ document.documentElement.lang=code;document.documentElement.dir=rtl?"rtl":"ltr";el("lang").value=code;
  el("langLabel").textContent=w("landingLanguage");el("navExplore").textContent=w("landingStory");el("navEdition").textContent=w("landingDetails");el("navPurchase").textContent=w("landingPurchase");el("buy").textContent=w("landingBuy");el("buyBottom").textContent=w("landingBuy");
  el("deliveryNote").textContent=w("landingDelivery");el("exploreLabel").textContent=w("landingStory");el("exploreHeading").textContent=w("landingStoryHeading");
  el("takeawayLabel").textContent=w("landingReaderValue");el("takeawayHeading").textContent=w("landingReaderValueHeading");el("audienceLabel").textContent=w("landingAudience");el("audienceHeading").textContent=w("landingAudienceHeading");
